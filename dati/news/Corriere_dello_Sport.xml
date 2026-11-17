@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 17 Nov 2026 18:02:09 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 17 Nov 2026 18:55:15 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Kean ancora alle prese con l&#39;infortunio alla tibia: il Como conferma nuovi esami medici]]></title>
+            <description><![CDATA[L&#39;attaccante della Nazionale &egrave; fermo da inizio ottobre: il comunicato ufficiale del club biancobl&ugrave; in merito alle sue condizioni]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/como/2026/11/17-152656816/kean_ancora_alle_prese_con_l_infortunio_alla_tibia_il_como_conferma_nuovi_esami_medici/</link>
+            <guid isPermaLink="false">sn:cds:152656816</guid>
+            <category><![CDATA[Kean]]></category>
+            <category><![CDATA[Como]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <pubDate>Tue, 17 Nov 2026 18:42:51 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/17/182803581-99b8dded-74b3-45cb-b29f-d31d6a00397b.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/182803581-99b8dded-74b3-45cb-b29f-d31d6a00397b.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/182803581-99b8dded-74b3-45cb-b29f-d31d6a00397b.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[L&#39;attaccante della Nazionale &egrave; fermo da inizio ottobre: il comunicato ufficiale del club biancobl&ugrave; in merito alle sue condizioni]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Napoli, De Bryune torna ad allenarsi da domani: sar&agrave; a disposizione di Allegri&nbsp;]]></title>
             <description><![CDATA[Cambio di programma: il belga, dopo la pausa con le nazionali, rientrer&agrave; alla base con 24 ore di ritardo&nbsp;]]></description>
@@ -536,25 +554,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Dall&rsquo;arrivo di Palladino ha segnato 2 volte&nbsp; Tesi in 3 punti: lui e Bernardeschi, i gol e l&rsquo;azzurro]]></dcterms:alternative>
             <dc:creator><![CDATA[Claudio Beneforti]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Rinnovo Calhanoglu: la trattativa con l&#39;Inter entra nel vivo]]></title>
-            <description><![CDATA[Hakan vuole restare e ha aperto anche alla riduzione dell&rsquo;ingaggio: tutte le modalit&agrave; per arrivare alla firma]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/15-152601050/rinnovo_calhanoglu_la_trattativa_con_l_inter_entra_nel_vivo/</link>
-            <guid isPermaLink="false">sn:cds:152601050</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Inter]]></category>
-            <category><![CDATA[Calhanoglu]]></category>
-            <category><![CDATA[rinnovo]]></category>
-            <pubDate>Sun, 15 Nov 2026 07:32:44 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/15/070945622-88227382-9364-4d26-8181-e5b39406ec6e.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/070945622-88227382-9364-4d26-8181-e5b39406ec6e.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Inter via Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/070945622-88227382-9364-4d26-8181-e5b39406ec6e.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Hakan vuole restare e ha aperto anche alla riduzione dell&rsquo;ingaggio: tutte le modalit&agrave; per arrivare alla firma]]></dcterms:alternative>
-            <dc:creator><![CDATA[Daniele Vitiello]]></dc:creator>
         </item>
     </channel>
 </rss>

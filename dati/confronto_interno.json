@@ -1,0 +1,16 @@
+{
+ "1x2": {
+  "previsioni": 0,
+  "logloss": null,
+  "brier": null,
+  "piu_precisa": null
+ },
+ "gol": {
+  "previsioni": 0,
+  "logloss": null,
+  "brier": null,
+  "piu_precisa": null
+ },
+ "partite": 0,
+ "aggiornato": "2026-11-17T18:59:06+00:00"
+}

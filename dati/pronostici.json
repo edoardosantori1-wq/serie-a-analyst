@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-17T18:09:53+00:00",
+ "generato": "2026-11-17T18:59:05+00:00",
  "giornata": 12,
  "partite": [
   {
@@ -25,6 +25,14 @@
     "U3.5": 0.7344
    },
    "risultato_modello": "1-0",
+   "assenze": {
+    "Como": [],
+    "Cagliari": []
+   },
+   "effetto_assenze": [
+    1.0,
+    1.0
+   ],
    "lam": [
     1.83,
     0.77
@@ -477,6 +485,7 @@
      2.31
     ]
    },
+   "p_pin": {},
    "selezioni": [
     {
      "k": "1",
@@ -744,12 +753,12 @@
      "k": "C:1 + Under 3.5",
      "label": "1 + Under 3.5",
      "p": 0.4226,
-     "quota": 2.35,
-     "p_impl": 0.4255,
-     "ev": -0.0069,
+     "quota": 2.2,
+     "p_impl": 0.4545,
+     "ev": -0.0703,
      "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.4021,
+     "fonte": "manuale",
+     "rilevata": "2026-11-17T19:30",
      "cat": "senza valore"
     },
     {
@@ -904,6 +913,14 @@
     "U3.5": 0.7562
    },
    "risultato_modello": "1-0",
+   "assenze": {
+    "Lazio": [],
+    "Lecce": []
+   },
+   "effetto_assenze": [
+    1.0,
+    1.0
+   ],
    "lam": [
     1.78,
     0.73
@@ -1360,6 +1377,7 @@
      2.29
     ]
    },
+   "p_pin": {},
    "selezioni": [
     {
      "k": "1",
@@ -1661,12 +1679,12 @@
      "k": "C:1 + Over 2.5",
      "label": "1 + Over 2.5",
      "p": 0.3509,
-     "quota": 2.02,
-     "p_impl": 0.495,
-     "ev": -0.2912,
+     "quota": 1.85,
+     "p_impl": 0.5405,
+     "ev": -0.3508,
      "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.4655,
+     "fonte": "manuale",
+     "rilevata": "2026-11-17T18:55:03+00:00",
      "cat": "senza valore"
     },
     {
@@ -1785,6 +1803,14 @@
     "U3.5": 0.748
    },
    "risultato_modello": "0-1",
+   "assenze": {
+    "Parma": [],
+    "Roma": []
+   },
+   "effetto_assenze": [
+    1.0,
+    1.0
+   ],
    "lam": [
     0.76,
     1.78
@@ -2237,6 +2263,7 @@
      2.17
     ]
    },
+   "p_pin": {},
    "selezioni": [
     {
      "k": "1",
@@ -2528,12 +2555,12 @@
      "k": "C:2 + Over 2.5",
      "label": "2 + Over 2.5",
      "p": 0.3524,
-     "quota": 1.81,
-     "p_impl": 0.5525,
-     "ev": -0.3622,
+     "quota": 2.08,
+     "p_impl": 0.4808,
+     "ev": -0.267,
      "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.5145,
+     "fonte": "manuale",
+     "rilevata": "2026-11-17T19:30",
      "cat": "senza valore"
     },
     {
@@ -2576,12 +2603,12 @@
      "k": "C:2 + Goal",
      "label": "2 + Goal",
      "p": 0.2289,
-     "quota": 2.99,
-     "p_impl": 0.3344,
-     "ev": -0.3156,
+     "quota": 2.65,
+     "p_impl": 0.3774,
+     "ev": -0.3934,
      "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.3127,
+     "fonte": "manuale",
+     "rilevata": "2026-11-17T19:40",
      "cat": "alto rischio"
     },
     {
@@ -2666,6 +2693,14 @@
     "U3.5": 0.7384
    },
    "risultato_modello": "1-0",
+   "assenze": {
+    "Napoli": [],
+    "Torino": []
+   },
+   "effetto_assenze": [
+    1.0,
+    1.0
+   ],
    "lam": [
     1.76,
     0.83
@@ -3126,6 +3161,7 @@
      2.32
     ]
    },
+   "p_pin": {},
    "selezioni": [
     {
      "k": "1",
@@ -3403,12 +3439,12 @@
      "k": "C:1 + Under 3.5",
      "label": "1 + Under 3.5",
      "p": 0.4029,
-     "quota": 2.3,
-     "p_impl": 0.4348,
-     "ev": -0.0733,
+     "quota": 2.25,
+     "p_impl": 0.4444,
+     "ev": -0.0935,
      "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.4051,
+     "fonte": "manuale",
+     "rilevata": "2026-11-17T19:30",
      "cat": "senza valore"
     },
     {
@@ -3563,6 +3599,14 @@
     "U3.5": 0.7029
    },
    "risultato_modello": "2-0",
+   "assenze": {
+    "Juventus": [],
+    "Venezia": []
+   },
+   "effetto_assenze": [
+    1.0,
+    1.0
+   ],
    "lam": [
     2.01,
     0.74
@@ -4023,6 +4067,7 @@
      2.21
     ]
    },
+   "p_pin": {},
    "selezioni": [
     {
      "k": "1",
@@ -4300,12 +4345,12 @@
      "k": "C:1 + Under 3.5",
      "label": "1 + Under 3.5",
      "p": 0.4332,
-     "quota": 2.22,
-     "p_impl": 0.4505,
-     "ev": -0.0383,
+     "quota": 2.1,
+     "p_impl": 0.4762,
+     "ev": -0.0903,
      "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.4222,
+     "fonte": "manuale",
+     "rilevata": "2026-11-17T19:40",
      "cat": "senza valore"
     },
     {
@@ -4324,12 +4369,12 @@
      "k": "C:1 + No Goal",
      "label": "1 + No Goal",
      "p": 0.4074,
-     "quota": 2.3,
-     "p_impl": 0.4348,
-     "ev": -0.063,
+     "quota": 2.2,
+     "p_impl": 0.4545,
+     "ev": -0.1037,
      "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.408,
+     "fonte": "manuale",
+     "rilevata": "2026-11-17T19:30",
      "cat": "senza valore"
     },
     {
@@ -4486,6 +4531,14 @@
     "U3.5": 0.7209
    },
    "risultato_modello": "1-1",
+   "assenze": {
+    "Bologna": [],
+    "Udinese": []
+   },
+   "effetto_assenze": [
+    1.0,
+    1.0
+   ],
    "lam": [
     1.66,
     1.01
@@ -4942,6 +4995,7 @@
      2.4
     ]
    },
+   "p_pin": {},
    "selezioni": [
     {
      "k": "1",
@@ -5231,12 +5285,12 @@
      "k": "C:1 + Over 2.5",
      "label": "1 + Over 2.5",
      "p": 0.3149,
-     "quota": 2.86,
-     "p_impl": 0.3497,
-     "ev": -0.0994,
+     "quota": 2.61,
+     "p_impl": 0.3831,
+     "ev": -0.1781,
      "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.3271,
+     "fonte": "manuale",
+     "rilevata": "2026-11-17T19:30",
      "cat": "alto rischio"
     },
     {
@@ -5369,6 +5423,14 @@
     "U3.5": 0.7328
    },
    "risultato_modello": "1-1",
+   "assenze": {
+    "Sassuolo": [],
+    "Genoa": []
+   },
+   "effetto_assenze": [
+    1.0,
+    1.0
+   ],
    "lam": [
     1.32,
     1.29
@@ -5941,6 +6003,7 @@
      2.58
     ]
    },
+   "p_pin": {},
    "selezioni": [
     {
      "k": "1",
@@ -6218,12 +6281,12 @@
      "k": "C:1X + Over 1.5",
      "label": "1X + Over 1.5",
      "p": 0.4782,
-     "quota": 2.01,
-     "p_impl": 0.4975,
-     "ev": -0.0388,
+     "quota": 1.77,
+     "p_impl": 0.565,
+     "ev": -0.1536,
      "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.4642,
+     "fonte": "manuale",
+     "rilevata": "2026-11-17T19:30",
      "cat": "senza valore"
     },
     {
@@ -6254,12 +6317,12 @@
      "k": "C:1X + Goal",
      "label": "1X + Goal",
      "p": 0.3737,
-     "quota": 2.48,
-     "p_impl": 0.4032,
-     "ev": -0.0732,
+     "quota": 2.2,
+     "p_impl": 0.4545,
+     "ev": -0.1779,
      "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.3766,
+     "fonte": "manuale",
+     "rilevata": "2026-11-17T19:40",
      "cat": "senza valore"
     },
     {
@@ -6714,6 +6777,14 @@
     "U3.5": 0.5639
    },
    "risultato_modello": "1-1",
+   "assenze": {
+    "Milan": [],
+    "Frosinone": []
+   },
+   "effetto_assenze": [
+    1.0,
+    1.0
+   ],
    "lam": [
     2.03,
     1.34
@@ -7174,6 +7245,7 @@
      3.48
     ]
    },
+   "p_pin": {},
    "selezioni": [
     {
      "k": "1",
@@ -7601,6 +7673,14 @@
     "U3.5": 0.6262
    },
    "risultato_modello": "1-1",
+   "assenze": {
+    "Atalanta": [],
+    "Inter": []
+   },
+   "effetto_assenze": [
+    1.0,
+    1.0
+   ],
    "lam": [
     1.22,
     1.87
@@ -8065,6 +8145,7 @@
      3.44
     ]
    },
+   "p_pin": {},
    "selezioni": [
     {
      "k": "1",
@@ -8514,6 +8595,14 @@
     "U3.5": 0.6721
    },
    "risultato_modello": "1-1",
+   "assenze": {
+    "Monza": [],
+    "Fiorentina": []
+   },
+   "effetto_assenze": [
+    1.0,
+    1.0
+   ],
    "lam": [
     1.16,
     1.73
@@ -8978,6 +9067,7 @@
      2.99
     ]
    },
+   "p_pin": {},
    "selezioni": [
     {
      "k": "1",
@@ -9501,49 +9591,49 @@
       "k": "C:1 + Under 3.5",
       "label": "1 + Under 3.5",
       "p": 0.4226,
-      "quota": 2.35,
-      "p_impl": 0.4255,
-      "ev": -0.0069,
+      "quota": 2.2,
+      "p_impl": 0.4545,
+      "ev": -0.0703,
       "ht": false,
-      "fonte": "stimata",
-      "p_mercato": 0.4021,
+      "fonte": "manuale",
+      "rilevata": "2026-11-17T19:30",
       "cat": "senza valore",
       "match": "Como-Cagliari",
       "mid": 558525
      },
      {
-      "k": "C:1 + Under 3.5",
-      "label": "1 + Under 3.5",
-      "p": 0.4357,
-      "quota": 2.3,
-      "p_impl": 0.4348,
-      "ev": 0.0021,
+      "k": "C:1 + No Goal + Under 3.5",
+      "label": "1 + No Goal + Under 3.5",
+      "p": 0.3418,
+      "quota": 3.01,
+      "p_impl": 0.3322,
+      "ev": 0.0288,
       "ht": false,
       "fonte": "stimata",
-      "p_mercato": 0.4077,
-      "cat": "senza valore",
+      "p_mercato": 0.3119,
+      "cat": "alto rischio",
       "match": "Lazio-Lecce",
       "mid": 558528
      },
      {
-      "k": "C:2 + Under 3.5",
-      "label": "2 + Under 3.5",
-      "p": 0.4252,
-      "quota": 2.21,
-      "p_impl": 0.4525,
-      "ev": -0.0603,
+      "k": "C:1 + Under 3.5",
+      "label": "1 + Under 3.5",
+      "p": 0.4029,
+      "quota": 2.25,
+      "p_impl": 0.4444,
+      "ev": -0.0935,
       "ht": false,
-      "fonte": "stimata",
-      "p_mercato": 0.4231,
+      "fonte": "manuale",
+      "rilevata": "2026-11-17T19:30",
       "cat": "senza valore",
-      "match": "Parma-Roma",
-      "mid": 558526
+      "match": "Napoli-Torino",
+      "mid": 558527
      }
     ],
-    "quota": 11.95,
-    "p": 0.0783,
-    "ev": -0.0648,
-    "giudizio": "Neutra: nessun vantaggio significativo"
+    "quota": 14.9,
+    "p": 0.0582,
+    "ev": -0.1329,
+    "giudizio": "EV negativo: solo test virtuale"
    }
   },
   "domenica": {
@@ -9641,26 +9731,26 @@
       "k": "C:1 + Under 3.5",
       "label": "1 + Under 3.5",
       "p": 0.4332,
-      "quota": 2.22,
-      "p_impl": 0.4505,
-      "ev": -0.0383,
+      "quota": 2.1,
+      "p_impl": 0.4762,
+      "ev": -0.0903,
       "ht": false,
-      "fonte": "stimata",
-      "p_mercato": 0.4222,
+      "fonte": "manuale",
+      "rilevata": "2026-11-17T19:40",
       "cat": "senza valore",
       "match": "Juventus-Venezia",
       "mid": 558521
      },
      {
-      "k": "C:1X + Over 1.5",
-      "label": "1X + Over 1.5",
-      "p": 0.4782,
-      "quota": 2.01,
-      "p_impl": 0.4975,
-      "ev": -0.0388,
+      "k": "C:1X + Under 3.5",
+      "label": "1X + Under 3.5",
+      "p": 0.4797,
+      "quota": 2.04,
+      "p_impl": 0.4902,
+      "ev": -0.0214,
       "ht": false,
       "fonte": "stimata",
-      "p_mercato": 0.4642,
+      "p_mercato": 0.4577,
       "cat": "senza valore",
       "match": "Sassuolo-Genoa",
       "mid": 558524
@@ -9680,10 +9770,10 @@
       "mid": 558520
      }
     ],
-    "quota": 14.86,
-    "p": 0.0628,
-    "ev": -0.0667,
-    "giudizio": "Neutra: nessun vantaggio significativo"
+    "quota": 14.27,
+    "p": 0.063,
+    "ev": -0.1012,
+    "giudizio": "EV negativo: solo test virtuale"
    }
   }
  },
@@ -10102,6 +10192,7 @@
    "stessa_partita": false
   }
  },
+ "assenze_stato": "assenze non disponibili: {\"plan\": \"Free plans do not have access to this season, try from 2022 to 2024.\"}",
  "metodo": {
   "modalita": "AI",
   "W_1X2": 1.0,
@@ -10127,7 +10218,7 @@
    "logloss_ou_mix25": 0.7041
   },
   "taratura": {
-   "generato": "2026-11-17T18:09:53+00:00",
+   "generato": "2026-11-17T18:59:05+00:00",
    "stagioni": [
     "2122",
     "2223",
@@ -10176,7 +10267,134 @@
   }
  },
  "calibrazione_combo": {
-  "confronti": [],
-  "scarto_medio": null
+  "confronti": [
+   {
+    "partita": "Como-Cagliari",
+    "combo": "1 + Under 3.5",
+    "stimata": 2.35,
+    "reale": 2.2,
+    "scarto": -0.0638
+   },
+   {
+    "partita": "Lazio-Lecce",
+    "combo": "1 + Over 2.5",
+    "stimata": 2.02,
+    "reale": 1.85,
+    "scarto": -0.0842
+   },
+   {
+    "partita": "Parma-Roma",
+    "combo": "2 + Over 2.5",
+    "stimata": 1.81,
+    "reale": 2.08,
+    "scarto": 0.1492
+   },
+   {
+    "partita": "Parma-Roma",
+    "combo": "2 + Goal",
+    "stimata": 2.99,
+    "reale": 2.65,
+    "scarto": -0.1137
+   },
+   {
+    "partita": "Parma-Roma",
+    "combo": "X2 + Under 3.5",
+    "stimata": 1.72,
+    "reale": 1.72,
+    "scarto": 0.0
+   },
+   {
+    "partita": "Napoli-Torino",
+    "combo": "1 + Under 3.5",
+    "stimata": 2.3,
+    "reale": 2.25,
+    "scarto": -0.0217
+   },
+   {
+    "partita": "Napoli-Torino",
+    "combo": "1X + Goal",
+    "stimata": 2.12,
+    "reale": 2.05,
+    "scarto": -0.033
+   },
+   {
+    "partita": "Juventus-Venezia",
+    "combo": "1 + Under 3.5",
+    "stimata": 2.22,
+    "reale": 2.1,
+    "scarto": -0.0541
+   },
+   {
+    "partita": "Juventus-Venezia",
+    "combo": "1 + No Goal",
+    "stimata": 2.3,
+    "reale": 2.2,
+    "scarto": -0.0435
+   },
+   {
+    "partita": "Juventus-Venezia",
+    "combo": "1X + Under 3.5",
+    "stimata": 1.67,
+    "reale": 1.67,
+    "scarto": 0.0
+   },
+   {
+    "partita": "Bologna-Udinese",
+    "combo": "1 + Over 2.5",
+    "stimata": 2.86,
+    "reale": 2.61,
+    "scarto": -0.0874
+   },
+   {
+    "partita": "Bologna-Udinese",
+    "combo": "12 + Over 1.5",
+    "stimata": 1.68,
+    "reale": 1.62,
+    "scarto": -0.0357
+   },
+   {
+    "partita": "Sassuolo-Genoa",
+    "combo": "1X + Over 1.5",
+    "stimata": 2.01,
+    "reale": 1.77,
+    "scarto": -0.1194
+   },
+   {
+    "partita": "Sassuolo-Genoa",
+    "combo": "1X + Goal",
+    "stimata": 2.48,
+    "reale": 2.2,
+    "scarto": -0.1129
+   },
+   {
+    "partita": "Sassuolo-Genoa",
+    "combo": "12 + Over 1.5",
+    "stimata": 1.76,
+    "reale": 1.7,
+    "scarto": -0.0341
+   },
+   {
+    "partita": "Milan-Frosinone",
+    "combo": "12 + Goal",
+    "stimata": 1.88,
+    "reale": 1.8,
+    "scarto": -0.0426
+   },
+   {
+    "partita": "Atalanta-Inter",
+    "combo": "X2 + Over 1.5",
+    "stimata": 1.35,
+    "reale": 1.3,
+    "scarto": -0.037
+   },
+   {
+    "partita": "Monza-Fiorentina",
+    "combo": "X2 + Goal",
+    "stimata": 1.99,
+    "reale": 1.95,
+    "scarto": -0.0201
+   }
+  ],
+  "scarto_medio": -0.0419
  }
 }

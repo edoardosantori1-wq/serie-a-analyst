@@ -1,7 +1,19 @@
 ﻿partita;combo;prob_stimata;quota_minima;quota_eurobet;rilevata
-Como-Cagliari;1 + Under 3.5;42.3%;2,37;;
-Lazio-Lecce;1 + Under 3.5;43.6%;2,30;;
-Parma-Roma;2 + Under 3.5;42.5%;2,35;;
-Juventus-Venezia;1 + Under 3.5;43.3%;2,31;;
-Sassuolo-Genoa;1X + Over 1.5;47.8%;2,09;;
-Atalanta-Inter;2 + Under 3.5;30.3%;3,30;;
+Como-Cagliari;1 + Under 3.5;;;2,20;2026-11-17T19:30
+Parma-Roma;2 + Over 2.5;;;2,08;2026-11-17T19:30
+Napoli-Torino;1 + Under 3.5;;;2,25;2026-11-17T19:30
+Juventus-Venezia;1 + No Goal;;;2,20;2026-11-17T19:30
+Bologna-Udinese;1 + Over 2.5;;;2,61;2026-11-17T19:30
+Sassuolo-Genoa;1X + Over 1.5;;;1,77;2026-11-17T19:30
+Lazio-Lecce;1 + Over 2.5;;;1,85;
+Parma-Roma;X2 + Under 3.5;;;1,72;
+Napoli-Torino;1X + Goal;;;2,05;
+Juventus-Venezia;1X + Under 3.5;;;1,67;
+Bologna-Udinese;12 + Over 1.5;;;1,62;
+Sassuolo-Genoa;12 + Over 1.5;;;1,70;
+Milan-Frosinone;12 + Goal;;;1,80;
+Atalanta-Inter;X2 + Over 1.5;;;1,30;
+Monza-Fiorentina;X2 + Goal;;;1,95;
+Parma-Roma;2 + Goal;;;2,65;2026-11-17T19:40
+Juventus-Venezia;1 + Under 3.5;;;2,10;2026-11-17T19:40
+Sassuolo-Genoa;1X + Goal;;;2,20;2026-11-17T19:40

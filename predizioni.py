@@ -1,0 +1,431 @@
+#!/usr/bin/env python3
+"""Genera dati/pronostici.json per la prossima giornata e registra le previsioni in dati/storico.sqlite.
+Solo libreria standard. Metodo (validato con backtest, vedi BACKTEST in fondo):
+ 1. Dalle quote Eurobet 1X2 e Over/Under 2.5 senza margine si ricava la coppia di gol attesi (lambda casa,
+    lambda ospite) di una Poisson con correzione Dixon-Coles che le riproduce.
+ 2. Il modello proprio (attacco/difesa con pesi temporali) corregge il totale gol con peso W_GOL;
+    sull'1X2 il peso del modello e' W_1X2 (0 = il backtest dice che il mercato e' piu' preciso).
+ 3. Dalla matrice dei risultati si derivano tutti i mercati, i risultati esatti, l'EV contro le quote Eurobet,
+    le triple, le singole e le partite da evitare. Nessun ritocco manuale delle probabilita'.
+"""
+import json, os, math, sqlite3, itertools
+from datetime import datetime, timezone, date
+from zoneinfo import ZoneInfo
+import modello as MD
+
+BASE = os.path.dirname(os.path.abspath(__file__)); D = os.path.join(BASE, "dati")
+ROME = ZoneInfo("Europe/Rome")
+W_1X2 = 0.0      # peso del modello sull'1X2 (backtest: ottimo a 0)
+W_GOL = 0.25     # peso del modello sul totale gol (backtest: ottimo 0.2-0.3)
+XI, K, ALPHA, RHO = 0.002, 8.0, 0.0, -0.08
+PROMOSSE = ("Frosinone", "Monza", "Venezia")
+# Quota combo stimata = 1 / (prob. di mercato dal risultato esatto x (1 + margine 1X2 Eurobet x FATTORE)).
+# 1.0 = stesso margine dell'1X2. Va ricalibrato confrontando le stime con le quote combo reali.
+FATTORE_MARGINE_COMBO = 1.0
+SING_EV, SING_EDGE = 0.05, 0.04
+CALIBRATA = False   # diventa True dopo la calibrazione delle quote combo (FATTORE_MARGINE_COMBO misurato)      # criteri delle migliori singole
+
+def pronostico(sel):
+    """Un pronostico per partita: se c'e' una value bet la si sceglie; altrimenti, tra le giocate con probabilita'
+    >= 55% e quota >= 1.30, quella con l'EV migliore (preferendo le quote reali a parita' di EV)."""
+    c = [s for s in sel if not s["ht"]]
+    v = [s for s in c if s["cat"] == "value"]
+    if v: return max(v, key=lambda s: s["ev"])
+    c = [s for s in c if s["p"] >= 0.55 and s["quota"] >= 1.30]
+    if not c: return None
+    # prudenza sulle quote stimate finche' la calibrazione non misura il margine reale delle combo
+    pen = 0.0 if CALIBRATA else 0.04
+    return max(c, key=lambda s: (s["ev"] - (pen if s.get("fonte") == "stimata" else 0), s["p"]))
+
+def categoria(s):
+    """Classificazione richiesta dalla specifica: evento molto probabile / value bet / alto rischio / senza valore."""
+    if s.get("fonte") != "stimata" and s["ev"] >= SING_EV and s["p"] - s["p_impl"] >= SING_EDGE: return "value"
+    if s["p"] >= 0.70: return "probabile"
+    if s["p"] < 0.35: return "alto rischio"
+    return "senza valore"
+
+def J(n):
+    try: return json.load(open(os.path.join(D, n)))
+    except Exception: return None
+
+CANON = ["Inter","Lazio","Milan","Roma","Juventus","Napoli","Atalanta","Fiorentina","Bologna","Torino","Como","Cagliari",
+         "Lecce","Parma","Venezia","Udinese","Sassuolo","Genoa","Frosinone","Monza","Empoli","Verona","Pisa","Cremonese",
+         "Salernitana","Sampdoria","Spezia","Palermo","Bari","Pescara","Modena","Catanzaro","Cesena","Reggiana","Brescia"]
+def canon(name):
+    n = (name or "").lower()
+    if "inter" in n: return "Inter"
+    for c in CANON:
+        if {"Juventus": "juve"}.get(c, c.lower()) in n: return c
+
+# --------------------------------------------------------------- quote Eurobet
+MK = {str(m["marketId"]): m for m in (J("oddspapi_mercati.json") or [])}
+def mid_of(mtype, hc=0.0, per="fulltime"):
+    for k, m in MK.items():
+        if m["marketType"] == mtype and m["period"] == per and abs(m["handicap"] - hc) < 1e-9 and not m["playerProp"]: return k
+def oname(mid, oid):
+    for o in MK[mid]["outcomes"]:
+        if str(o["outcomeId"]) == str(oid): return o["outcomeName"]
+# (nostra chiave, tipo mercato, linea, periodo, nome esito su OddsPapi, etichetta leggibile)
+SEL = [("1","1x2",0,"fulltime","1","1 (casa)"),("X","1x2",0,"fulltime","X","X (pareggio)"),("2","1x2",0,"fulltime","2","2 (ospite)"),
+       ("1X","doublechance",0,"fulltime","1X","Doppia chance 1X"),("12","doublechance",0,"fulltime","12","Doppia chance 12"),
+       ("X2","doublechance",0,"fulltime","2X","Doppia chance X2"),("DNB1","drawnobet",0,"fulltime","1","Draw No Bet 1"),
+       ("DNB2","drawnobet",0,"fulltime","2","Draw No Bet 2"),("GG","bothteamsscore",0,"fulltime","Yes","Goal"),
+       ("NG","bothteamsscore",0,"fulltime","No","No Goal")]
+for t in (0.5, 1.5, 2.5, 3.5):
+    SEL += [(f"O{t}","totals",t,"fulltime","Over",f"Over {t}"),(f"U{t}","totals",t,"fulltime","Under",f"Under {t}")]
+for t in (0.5, 1.5):
+    SEL += [(f"H_O{t}","teamtotals-team1",t,"fulltime","Over",f"Gol casa Over {t}"),(f"A_O{t}","teamtotals-team2",t,"fulltime","Over",f"Gol ospite Over {t}")]
+SEL += [("HT1","1x2",0,"p1","1","1 primo tempo"),("HTX","1x2",0,"p1","X","X primo tempo"),("HT2","1x2",0,"p1","2","2 primo tempo"),
+        ("HT_O0.5","totals",0.5,"p1","Over","Over 0.5 primo tempo"),("HT_O1.5","totals",1.5,"p1","Over","Over 1.5 primo tempo")]
+LABEL = {s[0]: s[5] for s in SEL}
+FAMIGLIA = {"1":"1X2","X":"1X2","2":"1X2","1X":"DC","12":"DC","X2":"DC","DNB1":"DNB","DNB2":"DNB","GG":"GGNG","NG":"GGNG"}
+
+def quote_eurobet():
+    out = {}
+    for fx in (J("oddspapi_quote.json") or []):
+        eb = (fx.get("bookmakerOdds") or {}).get("eurobet.it")
+        if not eb or eb.get("suspended"): continue
+        key = (canon(fx.get("participant1Name")), canon(fx.get("participant2Name")))
+        mk = eb.get("markets", {}); q = {}; ts = {}
+        for key_s, mtype, hc, per, on, _ in SEL:
+            mid = mid_of(mtype, hc, per)
+            if not mid or mid not in mk: continue
+            for oid, o in mk[mid]["outcomes"].items():
+                if oname(mid, oid) == on:
+                    p = o["players"]["0"]
+                    if p.get("active", True) and p.get("price"):
+                        q[key_s] = p["price"]; ts[key_s] = p.get("changedAt")
+        cs = {}
+        cmid = mid_of("correctscore", 0.0, "fulltime")
+        if cmid and cmid in mk:
+            for oid, o in mk[cmid]["outcomes"].items():
+                pz = o["players"]["0"]
+                nm = oname(cmid, oid)
+                if pz.get("price") and pz.get("active", True) and nm and ":" in nm:
+                    i, j = nm.split(":"); cs[(int(i), int(j))] = pz["price"]
+        out[key] = dict(q=q, ts=ts, fixtureId=fx.get("fixtureId"), cs=cs)
+    return out
+
+def combo_da_esatti(cs, margine):
+    """Probabilita' di mercato delle combo ricavate dal risultato esatto Eurobet (senza margine) e quota stimata
+    = quota equa ridotta del margine Eurobet. Ritorna {nome: (p_mercato, quota_stimata)}."""
+    if len(cs) < 25: return {}
+    # metodo "power": p_i = (1/q_i)^k con k tale che la somma faccia 1. A differenza della normalizzazione
+    # proporzionale, toglie piu' margine ai risultati improbabili (dove i bookmaker lo caricano di piu').
+    lo, hi = 1.0, 3.0
+    for _ in range(60):
+        k = (lo + hi) / 2
+        if sum((1/v)**k for v in cs.values()) > 1: lo = k
+        else: hi = k
+    P = {key: (1/v)**k for key, v in cs.items()}; s = sum(P.values()); P = {key: v/s for key, v in P.items()}
+    out = {}
+    for e, fe in MD.ESITI.items():
+        for g, fg in MD.GOL.items():
+            pm = sum(v for (i, j), v in P.items() if fe(i, j) and fg(i, j))
+            if pm > 0.02: out[f"{e} + {g}"] = (pm, round(1/(pm*(1+margine)), 2))
+    return out
+
+# ------------------------------------------- lambda che riproducono il mercato
+def fit_market(p1, px, p2, po25):
+    def err(lh, la):
+        M = MD.matrice(lh, la, RHO); a = b = c = o = 0.0
+        for i, row in enumerate(M):
+            for j, v in enumerate(row):
+                if i > j: a += v
+                elif i == j: b += v
+                else: c += v
+                if i + j > 2: o += v
+        e = (a-p1)**2 + (b-px)**2 + (c-p2)**2
+        if po25 is not None: e += (o-po25)**2
+        return e
+    best = (9, 1.4, 1.1)
+    for lh in [x/10 for x in range(2, 40)]:
+        for la in [x/10 for x in range(2, 35)]:
+            e = err(lh, la)
+            if e < best[0]: best = (e, lh, la)
+    _, lh, la = best; step = 0.025
+    for _ in range(40):
+        cand = [(err(lh+dx, la+dy), lh+dx, la+dy) for dx in (-step,0,step) for dy in (-step,0,step) if lh+dx>0.05 and la+dy>0.05]
+        e, nlh, nla = min(cand)
+        if (nlh, nla) == (lh, la): step /= 2
+        lh, la = nlh, nla
+        if step < 1e-4: break
+    return lh, la, best[0]
+
+def quote_combo_manuali():
+    """dati/quote_combo.csv: partita;combo;prob_stimata;quota_minima;quota_eurobet;rilevata
+    Le quote sono inserite dall'utente dal sito Eurobet (fonte: manuale)."""
+    import csv
+    out = {}; path = os.path.join(D, "quote_combo.csv")
+    if not os.path.exists(path): return out
+    mt = datetime.fromtimestamp(os.path.getmtime(path), timezone.utc).isoformat(timespec="seconds")
+    for r in csv.DictReader(open(path, encoding="utf-8-sig"), delimiter=";"):
+        q = (r.get("quota_eurobet") or "").replace(",", ".").strip()
+        try: q = float(q)
+        except ValueError: continue
+        if q <= 1: continue
+        out[((r.get("partita") or "").strip(), (r.get("combo") or "").strip())] = (q, (r.get("rilevata") or "").strip() or mt)
+    return out
+
+def scrivi_modello_combo(out, manuali):
+    """Riscrive il modulo da compilare con le combo della giornata, conservando le quote gia' inserite."""
+    import csv
+    path = os.path.join(D, "quote_combo.csv")
+    with open(path, "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.writer(f, delimiter=";")
+        w.writerow(["partita", "combo", "prob_stimata", "quota_minima", "quota_eurobet", "rilevata"])
+        for r in out:
+            for n, pp in (r.get("combo") or [])[:12]:
+                k = (f'{r["casa"]}-{r["ospite"]}', n); q, ts = manuali.get(k, ("", ""))
+                w.writerow([k[0], n, f"{pp*100:.1f}%", f"{1/pp:.2f}".replace(".", ","), str(q).replace(".", ",") if q else "", ts])
+
+def main():
+    now = datetime.now(timezone.utc)
+    pro = [m for m in (J("fdorg_prossime.json") or {}).get("matches", []) if m.get("status") in ("SCHEDULED", "TIMED")]
+    pro.sort(key=lambda m: m["utcDate"]); md = pro[0]["matchday"] if pro else None
+    partite = [m for m in pro if m["matchday"] == md]
+    # storico per il modello proprio
+    storico = []
+    for f in sorted(os.listdir(D)):
+        if f.startswith("storico_") and f.endswith(".csv"): storico += MD.leggi_csv(os.path.join(D, f))
+    storico += MD.leggi_csv(os.path.join(D, "fdcouk_corrente.csv"))
+    for m in storico: m["h"], m["a"] = canon(m["h"]), canon(m["a"])
+    storico.sort(key=lambda m: m["date"])
+    par = MD.fit(storico, now.date(), xi=XI, k=K, alpha=ALPHA, promoted=PROMOSSE)
+    Q = quote_eurobet(); out = []; MAN = quote_combo_manuali()
+    for m in partite:
+        h, a = canon(m["homeTeam"]["name"]), canon(m["awayTeam"]["name"])
+        dt = datetime.fromisoformat(m["utcDate"].replace("Z", "+00:00")).astimezone(ROME)
+        qq = Q.get((h, a), {}); q = qq.get("q", {})
+        lhm, lam = MD.lambdas(par, h, a)
+        mk_mod, _ = MD.mercati(MD.matrice(lhm, lam, RHO))
+        rec = dict(id=m["id"], data=m["utcDate"], giorno=dt.strftime("%Y-%m-%d"), wd=dt.weekday(), casa=h, ospite=a,
+                   lam_modello=[round(lhm, 2), round(lam, 2)], p_modello={k: round(mk_mod[k], 4) for k in ("1","X","2","O2.5","GG")})
+        if all(k in q for k in ("1", "X", "2")):
+            pk = MD.no_vig([q["1"], q["X"], q["2"]]); marg = sum(1/q[k] for k in ("1","X","2")) - 1
+            po = MD.no_vig([q["O2.5"], q["U2.5"]])[0] if "O2.5" in q and "U2.5" in q else None
+            lh, la, fit_err = fit_market(*pk, po)
+            # correzione del modello: totale gol (W_GOL) e supremazia (W_1X2)
+            tot = (1-W_GOL)*(lh+la) + W_GOL*(lhm+lam)
+            sup = (1-W_1X2)*(lh-la) + W_1X2*(lhm-lam)
+            lhf, laf = max((tot+sup)/2, 0.05), max((tot-sup)/2, 0.05)
+            M = MD.matrice(lhf, laf, RHO); mk, ris = MD.mercati(M); mk.update(MD.primo_tempo(lhf, laf))
+            rec.update(lam=[round(lhf, 2), round(laf, 2)], margine_1x2=round(marg, 4), p_mercato=dict(zip("1X2", [round(x, 4) for x in pk])),
+                       fit_err=round(fit_err, 6), quote_ts=max([t for t in qq["ts"].values() if t] or [None]))
+            rec["risultati"] = [(s, round(p, 4)) for p, s in ris[:3]]
+            rec["combo"] = [(n, round(pp, 4)) for n, pp in sorted(MD.combo(M), key=lambda x: -x[1]) if 0.25 <= pp <= 0.90]
+            sel = []
+            for k, lab in LABEL.items():
+                if k in mk and k in q:
+                    p = mk[k]; o = q[k]; ev = p*o - 1
+                    sel.append(dict(k=k, label=lab, p=round(p, 4), quota=o, p_impl=round(1/o, 4), ev=round(ev, 4),
+                                    ht=k.startswith("HT")))
+            CE = combo_da_esatti(qq.get("cs", {}), marg * FATTORE_MARGINE_COMBO)
+            tutte = dict(MD.combo(M))
+            rec["combo_mercato"] = {n: [round(v[0], 4), v[1]] for n, v in CE.items()}
+            for n, pp in rec["combo"]:
+                k = (f"{h}-{a}", n)
+                if k in MAN:
+                    o, ts = MAN[k]
+                    sel.append(dict(k="C:" + n, label=n, p=round(pp, 4), quota=o, p_impl=round(1/o, 4), ev=round(pp*o-1, 4),
+                                    ht=False, fonte="manuale", rilevata=ts))
+                elif n in CE:
+                    o = CE[n][1]
+                    sel.append(dict(k="C:" + n, label=n, p=round(pp, 4), quota=o, p_impl=round(1/o, 4), ev=round(pp*o-1, 4),
+                                    ht=False, fonte="stimata", p_mercato=round(CE[n][0], 4)))
+            for s in sel: s["cat"] = categoria(s)
+            rec["selezioni"] = sel
+            rec["pronostico"] = pronostico(sel)
+            rec["p"] = {k: round(v, 4) for k, v in mk.items() if not k.endswith("_O1.5") or True}
+            # avvisi
+            avv = []
+            dis = max(abs(mk_mod[s]-pk[i]) for i, s in enumerate("1X2"))
+            if dis > 0.12: avv.append(f"modello e mercato divergono di {dis*100:.0f} punti sull'1X2")
+            if rec["quote_ts"]:
+                age = (now - datetime.fromisoformat(rec["quote_ts"].replace("Z", "+00:00"))).days
+                if age >= 4: avv.append(f"quote ferme da {age} giorni: verificare sul sito")
+            if marg > 0.075: avv.append(f"margine Eurobet alto ({marg*100:.1f}%)")
+            rec["avvisi"] = avv
+        else:
+            rec["avvisi"] = ["quote Eurobet NON VERIFICATE: nessuna probabilità finale calcolata"]
+        rec["contesto"] = contesto(h, a, m["utcDate"])
+        out.append(rec)
+
+    # ------------------------------------------------------------ triple, singole
+    def cand(day_wd, pmin, evmin):
+        c = []
+        for r in out:
+            if r["wd"] != day_wd or "selezioni" not in r: continue
+            for s in r["selezioni"]:
+                if s["ht"] or s["p"] < pmin or s["ev"] < evmin or s["quota"] < 1.12: continue
+                c.append(dict(s, match=f'{r["casa"]}-{r["ospite"]}', mid=r["id"]))
+        return c
+    TIPI = [("semplice", 0.66, -0.07, 1.80, 2.80), ("media", 0.42, -0.08, 3.00, 5.50), ("aggressiva", 0.22, -0.10, 6.00, 15.0)]
+    def giudizio(ev, combo):
+        reali = all(c.get("fonte") != "stimata" for c in combo)
+        if ev >= 0.10 and reali and all(c.get("cat") == "value" for c in combo): return "Valore positivo"
+        if ev >= -0.08: return "Neutra: nessun vantaggio significativo"
+        return "EV negativo: solo test virtuale"
+    triple = {}
+    for nome_g, wd in (("sabato", 5), ("domenica", 6)):
+        usate = set(); triple[nome_g] = {}
+        for tipo, pmin, evmin, qlo, qhi in TIPI:
+            best = None
+            cs = [c for c in cand(wd, pmin, evmin) if (c["mid"], c["k"]) not in usate]
+            for combo in itertools.combinations(cs, 3):
+                if len({c["mid"] for c in combo}) < 3: continue
+                qt = math.prod(c["quota"] for c in combo)
+                if not (qlo <= qt <= qhi): continue
+                pj = math.prod(c["p"] for c in combo); ev = pj*qt - 1
+                if tipo == "aggressiva" and qt > 12 and ev <= 0: continue
+                pen = 0.0 if CALIBRATA else 0.04 * sum(1 for c in combo if c.get("fonte") == "stimata")
+                score = (pj - pen/4, ev - pen) if tipo == "semplice" else (ev - pen, pj)
+                if best is None or score > best[0]: best = (score, combo, qt, pj, ev)
+            if best:
+                _, combo, qt, pj, ev = best
+                for c in combo: usate.add((c["mid"], c["k"]))
+                triple[nome_g][tipo] = dict(selezioni=list(combo), quota=round(qt, 2), p=round(pj, 4), ev=round(ev, 4), giudizio=giudizio(ev, combo))
+            else:
+                triple[nome_g][tipo] = None
+    # Singole: solo quote reali (no stimate), EV >= +5%, vantaggio >= 4 punti sulla prob. implicita, prob >= 30%
+    singole = sorted([dict(s, match=f'{r["casa"]}-{r["ospite"]}', giorno=r["giorno"]) for r in out for s in r.get("selezioni", [])
+                      if not s["ht"] and s.get("fonte") != "stimata" and s["ev"] >= SING_EV and s["p"] - s["p_impl"] >= SING_EDGE
+                      and s["p"] >= 0.30], key=lambda s: -s["ev"])
+    viste = set(); sing = []
+    for s in singole:
+        if s["match"] in viste: continue
+        viste.add(s["match"]); sing.append(s)
+        if len(sing) == 5: break
+    marcatori = stima_marcatori(out, Q)
+    evitare = [dict(match=f'{r["casa"]}-{r["ospite"]}', motivi=r["avvisi"]) for r in out if r.get("avvisi")]
+    res = dict(generato=now.isoformat(timespec="seconds"), giornata=md, partite=out, triple=triple, singole=sing, evitare=evitare, marcatori=marcatori,
+               metodo=dict(W_1X2=W_1X2, W_GOL=W_GOL, xi=XI, k=K, rho=RHO, backtest=BACKTEST))
+    # confronto stime vs quote reali inserite (per ricalibrare FATTORE_MARGINE_COMBO)
+    conf = []
+    for r in out:
+        for n, (pm, qs) in (r.get("combo_mercato") or {}).items():
+            k = (f'{r["casa"]}-{r["ospite"]}', n)
+            if k in MAN: conf.append(dict(partita=k[0], combo=n, stimata=qs, reale=MAN[k][0], scarto=round(MAN[k][0]/qs-1, 4)))
+    res["calibrazione_combo"] = dict(confronti=conf, scarto_medio=round(sum(c["scarto"] for c in conf)/len(conf), 4) if conf else None)
+    json.dump(res, open(os.path.join(D, "pronostici.json"), "w"), ensure_ascii=False, indent=1)
+    scrivi_modello_combo(out, MAN)
+    try:
+        registra(res, now)
+    except sqlite3.Error as e:
+        print(f"ATTENZIONE: storico non aggiornato ({e})")
+    print(f"Pronostici giornata {md}: {len(out)} partite, singole {len(sing)}, triple sab {sum(1 for v in triple['sabato'].values() if v)}/3, dom {sum(1 for v in triple['domenica'].values() if v)}/3")
+
+def contesto(h, a, start):
+    """Segnalazioni informative (non entrano nel calcolo)."""
+    out = []
+    t0 = datetime.fromisoformat(start.replace("Z", "+00:00"))
+    gioc = (J("fdorg_giocate.json") or {}).get("matches", [])
+    eur = (J("fdorg_coppe.json") or {}).get("matches", [])
+    for team in (h, a):
+        ult = [datetime.fromisoformat(m["utcDate"].replace("Z", "+00:00")) for m in gioc + eur
+               if team in (canon(m["homeTeam"]["name"]), canon(m["awayTeam"]["name"]))
+               and datetime.fromisoformat(m["utcDate"].replace("Z", "+00:00")) < t0]
+        if ult:
+            gg = (t0 - max(ult)).total_seconds() / 86400
+            if gg < 4: out.append(f"{team}: solo {gg:.0f} giorni di riposo")
+        prox = [m for m in eur if team in (canon(m["homeTeam"]["name"]), canon(m["awayTeam"]["name"]))
+                and 0 < (datetime.fromisoformat(m["utcDate"].replace("Z", "+00:00")) - t0).days <= 4]
+        if prox: out.append(f"{team}: impegno europeo nei 4 giorni successivi (possibile turnover)")
+    for ev in (J("allenatori_cambi.json") or []):
+        if ev["squadra"] in (h, a):
+            gg = (t0 - datetime.fromisoformat(ev["rilevato"])).days
+            if gg <= 35: out.append(f"{ev['squadra']}: nuovo allenatore {ev['nuovo']} (al posto di {ev['vecchio']}, rilevato {gg} giorni fa)")
+    return out
+
+import unicodedata
+def _norm(s):
+    s = unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode().lower().replace("-", " ").replace(".", "")
+    return [t for t in s.replace(",", " ").split() if t]
+def stima_marcatori(out, Q):
+    """P(segna) = 1 - exp(-lambda). lambda = xG/90 del giocatore (ristretto verso la media del ruolo) x minuti attesi/90
+    x (gol attesi della squadra in questa partita / xG medio stagionale della squadra). Minuti attesi = minuti stagionali /
+    partite della squadra: incorpora rotazioni e assenze passate, NON la titolarita' di questa partita (ignota fino alle formazioni)."""
+    L = (J("striker_xg_giocatori.json") or {}).get("data", {}).get("leaders", [])
+    if not L: return dict(stato="mancano gli xG dei giocatori (StrikerAPI): eseguire aggiorna.py", lista=[])
+    TS = {canon(t["display_name"]): t for t in (J("striker_team_stats.json") or {}).get("data", {}).get("teams", [])}
+    AB = {t["abbrev"]: canon(t["display_name"]) for t in (J("striker_team_stats.json") or {}).get("data", {}).get("teams", [])}
+    LU = J("formazioni.json") or {}
+    eb_raw = {}
+    amid = next((k for k, m in MK.items() if m["marketType"] == "players-anytimegoalscorer"), None)
+    for fx in (J("oddspapi_quote.json") or []):
+        eb = (fx.get("bookmakerOdds") or {}).get("eurobet.it")
+        if not eb or not amid or amid not in eb.get("markets", {}): continue
+        key = (canon(fx.get("participant1Name")), canon(fx.get("participant2Name")))
+        eb_raw[key] = [(p["playerName"], p["price"]) for o in eb["markets"][amid]["outcomes"].values() for p in o["players"].values() if p.get("playerName") and p.get("price")]
+    righe = []
+    for r in out:
+        if "lam" not in r: continue
+        for side, team, opp, lam in ((0, r["casa"], r["ospite"], r["lam"][0]), (1, r["ospite"], r["casa"], r["lam"][1])):
+            ts = TS.get(team); 
+            if not ts or not ts.get("xg_for"): continue
+            fatt = lam / ts["xg_for"]
+            for p in L:
+                if AB.get(p["team"]) != team or not p.get("minutes"): continue
+                xg = float(p["value"]); mins = p["minutes"]; gteam = ts["games"]
+                pos = (p.get("position") or "").lower()
+                prior = 0.35 if ("forward" in pos or "striker" in pos or "wing" in pos) else (0.06 if ("back" in pos or "defender" in pos) else 0.14)
+                xg90 = (xg + prior * 270/90) / (mins + 270) * 90   # shrink verso la media del ruolo (270 minuti)
+                mexp = min(mins / gteam, 90)
+                tit = None
+                lu = LU.get(str(r["id"]), {}).get(team)
+                if lu and lu.get("ufficiale"):
+                    tit = any(set(_norm(p["name"])) & set(_norm(n)) for n in lu.get("titolari", []))
+                    mexp = 80 if tit else 15
+                lp = xg90 * mexp / 90 * fatt; pr = 1 - math.exp(-lp)
+                quota = None
+                pt = _norm(p["name"]); cand_q = []
+                for n, pz in eb_raw.get((r["casa"], r["ospite"]), []):
+                    nt = _norm(n)
+                    if nt and pt and nt[0] in pt:
+                        cand_q.append((len(nt) == 1 or any(x[0] == nt[-1][0] for x in pt), pz))
+                exact = [c for c in cand_q if c[0]]
+                if exact: quota = exact[0][1]
+                elif len(cand_q) == 1: quota = cand_q[0][1]   # cognome unico nella partita
+                righe.append(dict(nome=p["name"], squadra=team, avversario=opp, match=f'{r["casa"]}-{r["ospite"]}', mid=r["id"],
+                                  xg=xg, minuti=mins, partite=p["games"], xg90=round(xg90, 3), min_attesi=round(mexp), titolare=tit,
+                                  p=round(pr, 4), quota=quota, ev=round(pr*quota-1, 4) if quota else None))
+    righe.sort(key=lambda x: -x["p"])
+    top = []
+    for x in righe:
+        if x["min_attesi"] < 55: continue          # titolarita' troppo incerta
+        top.append(x)
+        if len(top) == 4: break
+    comb = None
+    if len(top) == 4 and all(x["quota"] for x in top):
+        q = math.prod(x["quota"] for x in top); pj = math.prod(x["p"] for x in top)
+        comb = dict(quota=round(q, 2), p=round(pj, 4), ev=round(pj*q-1, 4), stessa_partita=len({x["mid"] for x in top}) < 4)
+    return dict(stato="ok", lista=top, altri=righe[4:20], combinazione=comb)
+
+def registra(res, now):
+    """Storico permanente: si inserisce solo prima del calcio d'inizio, mai si modifica."""
+    db = sqlite3.connect(os.path.join(D, "storico.sqlite"))
+    db.execute("""CREATE TABLE IF NOT EXISTS previsioni(id INTEGER PRIMARY KEY, creato TEXT, giornata INT, match_id INT, partita TEXT,
+                  inizio TEXT, mercato TEXT, quota REAL, p_modello REAL, ev REAL, tipo TEXT, gruppo TEXT, esito INT, profitto REAL)""")
+    def ins(r_mid, partita, inizio, s, tipo, gruppo):
+        if inizio <= now.isoformat(): return
+        if db.execute("SELECT 1 FROM previsioni WHERE match_id=? AND mercato=? AND tipo=? AND gruppo=?", (r_mid, s["k"], tipo, gruppo)).fetchone(): return
+        db.execute("INSERT INTO previsioni(creato,giornata,match_id,partita,inizio,mercato,quota,p_modello,ev,tipo,gruppo) VALUES(?,?,?,?,?,?,?,?,?,?,?)",
+                   (now.isoformat(timespec="seconds"), res["giornata"], r_mid, partita, inizio, s["k"], s["quota"], s["p"], s["ev"], tipo, gruppo))
+    start = {r["id"]: r["data"] for r in res["partite"]}
+    for g, tt in res["triple"].items():
+        for tipo, t in tt.items():
+            if t:
+                for s in t["selezioni"]: ins(s["mid"], s["match"], start[s["mid"]].replace("Z", "+00:00"), s, f"tripla_{tipo}", g)
+    for s in res["singole"]:
+        mid = next(r["id"] for r in res["partite"] if f'{r["casa"]}-{r["ospite"]}' == s["match"])
+        ins(mid, s["match"], start[mid].replace("Z", "+00:00"), s, "singola", "")
+    for x in res.get("marcatori", {}).get("lista", []):
+        if x.get("quota"):
+            ins(x["mid"], x["match"], start[x["mid"]].replace("Z", "+00:00"), dict(k="SCORER:"+x["nome"], quota=x["quota"], p=x["p"], ev=x["ev"]), "marcatore", "")
+    db.commit(); db.close()
+
+BACKTEST = dict(partite=365, periodo="2025/26 (dalla 10a giornata) + 2026/27 (giornate 1-11)", riferimento="quote medie di chiusura (football-data.co.uk)",
+                logloss_1x2_modello=0.9878, logloss_1x2_mercato=0.9577, logloss_ou_mercato=0.7053, logloss_ou_mix25=0.7041)
+
+if __name__ == "__main__":
+    main()

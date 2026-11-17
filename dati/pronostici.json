@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-17T18:02:39+00:00",
+ "generato": "2026-11-17T18:09:53+00:00",
  "giornata": 12,
  "partite": [
   {
@@ -26,8 +26,8 @@
    },
    "risultato_modello": "1-0",
    "lam": [
-    2.44,
-    0.81
+    1.83,
+    0.77
    ],
    "margine_1x2": 0.0589,
    "p_mercato": {
@@ -41,66 +41,54 @@
    "quote_ts": "2026-11-16T16:53:39.321Z",
    "risultati": [
     [
+     "1-0",
+     0.1269
+    ],
+    [
      "2-0",
-     0.1149
+     0.124
     ],
     [
-     "2-1",
-     0.0936
-    ],
-    [
-     "3-0",
-     0.0935
+     "1-1",
+     0.1129
     ]
    ],
    "combo": [
     [
      "1 + Over 1.5",
-     0.6376
-    ],
-    [
-     "1 + Over 2.5",
-     0.5226
-    ],
-    [
-     "1 + No Goal",
-     0.3983
+     0.4907
     ],
     [
      "1 + Under 3.5",
-     0.3901
+     0.4226
     ],
     [
-     "1 + No Goal + Under 4.5",
-     0.3536
+     "1 + No Goal",
+     0.3795
     ],
     [
-     "1 + Goal",
-     0.3273
-    ],
-    [
-     "1 + No Goal + Over 1.5",
-     0.3103
+     "1 + Over 2.5",
+     0.3667
     ],
     [
      "1 + No Goal + Under 3.5",
-     0.2965
+     0.3267
     ],
     [
-     "1 + Goal + Over 3.5",
-     0.2337
+     "1 + No Goal + Over 1.5",
+     0.2526
     ],
     [
      "1 + Under 2.5",
-     0.203
+     0.2509
     ],
     [
-     "1 + No Goal + Over 2.5",
-     0.1953
+     "1 + Goal",
+     0.2381
     ],
     [
      "1 + Goal + Under 4.5",
-     0.1697
+     0.1545
     ]
    ],
    "combo_mercato": {
@@ -493,392 +481,356 @@
     {
      "k": "1",
      "label": "1 (casa)",
-     "p": 0.7256,
+     "p": 0.6176,
      "quota": 1.3,
      "p_impl": 0.7692,
-     "ev": -0.0567,
+     "ev": -0.1972,
      "ht": false,
-     "cat": "probabile"
+     "cat": "senza valore"
     },
     {
      "k": "X",
      "label": "X (pareggio)",
-     "p": 0.1752,
+     "p": 0.2384,
      "quota": 5.6,
      "p_impl": 0.1786,
-     "ev": -0.019,
+     "ev": 0.3353,
      "ht": false,
-     "cat": "alto rischio"
+     "cat": "value"
     },
     {
      "k": "2",
      "label": "2 (ospite)",
-     "p": 0.0992,
+     "p": 0.144,
      "quota": 9.0,
      "p_impl": 0.1111,
-     "ev": -0.1073,
+     "ev": 0.2958,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "1X",
      "label": "Doppia chance 1X",
-     "p": 0.9008,
+     "p": 0.856,
      "quota": 1.03,
      "p_impl": 0.9709,
-     "ev": -0.0722,
+     "ev": -0.1183,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "12",
      "label": "Doppia chance 12",
-     "p": 0.8248,
+     "p": 0.7616,
      "quota": 1.12,
      "p_impl": 0.8929,
-     "ev": -0.0762,
+     "ev": -0.1471,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "X2",
      "label": "Doppia chance X2",
-     "p": 0.2744,
+     "p": 0.3824,
      "quota": 3.2,
      "p_impl": 0.3125,
-     "ev": -0.1221,
+     "ev": 0.2238,
      "ht": false,
-     "cat": "alto rischio"
+     "cat": "value"
     },
     {
      "k": "DNB1",
      "label": "Draw No Bet 1",
-     "p": 0.8798,
+     "p": 0.8109,
      "quota": 1.06,
      "p_impl": 0.9434,
-     "ev": -0.0675,
+     "ev": -0.1404,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "DNB2",
      "label": "Draw No Bet 2",
-     "p": 0.1202,
+     "p": 0.1891,
      "quota": 7.0,
      "p_impl": 0.1429,
-     "ev": -0.1583,
+     "ev": 0.3234,
      "ht": false,
-     "cat": "alto rischio"
+     "cat": "value"
     },
     {
      "k": "GG",
      "label": "Goal",
-     "p": 0.5146,
+     "p": 0.4608,
      "quota": 1.8,
      "p_impl": 0.5556,
-     "ev": -0.0738,
+     "ev": -0.1705,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "NG",
      "label": "No Goal",
-     "p": 0.4854,
+     "p": 0.5392,
      "quota": 1.88,
      "p_impl": 0.5319,
-     "ev": -0.0874,
+     "ev": 0.0137,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U0.5",
      "label": "Under 0.5",
-     "p": 0.0447,
+     "p": 0.0821,
      "quota": 16.0,
      "p_impl": 0.0625,
-     "ev": -0.2843,
+     "ev": 0.3132,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "O1.5",
      "label": "Over 1.5",
-     "p": 0.8419,
+     "p": 0.7424,
      "quota": 1.11,
      "p_impl": 0.9009,
-     "ev": -0.0655,
+     "ev": -0.1759,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "U1.5",
      "label": "Under 1.5",
-     "p": 0.1581,
+     "p": 0.2576,
      "quota": 5.2,
      "p_impl": 0.1923,
-     "ev": -0.178,
+     "ev": 0.3393,
      "ht": false,
-     "cat": "alto rischio"
+     "cat": "value"
     },
     {
      "k": "O2.5",
      "label": "Over 2.5",
-     "p": 0.6314,
+     "p": 0.4835,
      "quota": 1.47,
      "p_impl": 0.6803,
-     "ev": -0.0719,
+     "ev": -0.2893,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U2.5",
      "label": "Under 2.5",
-     "p": 0.3686,
+     "p": 0.5165,
      "quota": 2.5,
      "p_impl": 0.4,
-     "ev": -0.0784,
+     "ev": 0.2913,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "value"
     },
     {
      "k": "O3.5",
      "label": "Over 3.5",
-     "p": 0.4096,
+     "p": 0.2656,
      "quota": 2.15,
      "p_impl": 0.4651,
-     "ev": -0.1194,
+     "ev": -0.4289,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "alto rischio"
     },
     {
      "k": "U3.5",
      "label": "Under 3.5",
-     "p": 0.5904,
+     "p": 0.7344,
      "quota": 1.57,
      "p_impl": 0.6369,
-     "ev": -0.0731,
+     "ev": 0.1529,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "value"
     },
     {
      "k": "A_O0.5",
      "label": "Gol ospite Over 0.5",
-     "p": 0.5569,
+     "p": 0.5384,
      "quota": 1.65,
      "p_impl": 0.6061,
-     "ev": -0.081,
+     "ev": -0.1116,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "H_O1.5",
      "label": "Gol casa Over 1.5",
-     "p": 0.7003,
+     "p": 0.5473,
      "quota": 1.28,
      "p_impl": 0.7812,
-     "ev": -0.1036,
+     "ev": -0.2994,
      "ht": false,
-     "cat": "probabile"
+     "cat": "senza valore"
     },
     {
      "k": "A_O1.5",
      "label": "Gol ospite Over 1.5",
-     "p": 0.1963,
+     "p": 0.1816,
      "quota": 4.5,
      "p_impl": 0.2222,
-     "ev": -0.1168,
+     "ev": -0.1828,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "HT1",
      "label": "1 primo tempo",
-     "p": 0.5431,
+     "p": 0.4483,
      "quota": 1.7,
      "p_impl": 0.5882,
-     "ev": -0.0766,
+     "ev": -0.2379,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "HTX",
      "label": "X primo tempo",
-     "p": 0.334,
+     "p": 0.4047,
      "quota": 2.7,
      "p_impl": 0.3704,
-     "ev": -0.0983,
+     "ev": 0.0928,
      "ht": true,
-     "cat": "alto rischio"
+     "cat": "senza valore"
     },
     {
      "k": "HT2",
      "label": "2 primo tempo",
-     "p": 0.1229,
+     "p": 0.147,
      "quota": 7.2,
      "p_impl": 0.1389,
-     "ev": -0.1152,
+     "ev": 0.058,
      "ht": true,
      "cat": "alto rischio"
     },
     {
      "k": "HT_O0.5",
      "label": "Over 0.5 primo tempo",
-     "p": 0.7688,
+     "p": 0.6907,
      "quota": 1.21,
      "p_impl": 0.8264,
-     "ev": -0.0697,
-     "ht": true,
-     "cat": "probabile"
-    },
-    {
-     "k": "HT_O1.5",
-     "label": "Over 1.5 primo tempo",
-     "p": 0.4303,
-     "quota": 2.15,
-     "p_impl": 0.4651,
-     "ev": -0.0749,
+     "ev": -0.1643,
      "ht": true,
      "cat": "senza valore"
     },
     {
+     "k": "HT_O1.5",
+     "label": "Over 1.5 primo tempo",
+     "p": 0.3277,
+     "quota": 2.15,
+     "p_impl": 0.4651,
+     "ev": -0.2954,
+     "ht": true,
+     "cat": "alto rischio"
+    },
+    {
      "k": "C:1 + Over 1.5",
      "label": "1 + Over 1.5",
-     "p": 0.6376,
+     "p": 0.4907,
      "quota": 1.49,
      "p_impl": 0.6711,
-     "ev": -0.05,
+     "ev": -0.2689,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.6339,
      "cat": "senza valore"
     },
     {
-     "k": "C:1 + Over 2.5",
-     "label": "1 + Over 2.5",
-     "p": 0.5226,
-     "quota": 1.83,
-     "p_impl": 0.5464,
-     "ev": -0.0436,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.5154,
-     "cat": "senza valore"
-    },
-    {
-     "k": "C:1 + No Goal",
-     "label": "1 + No Goal",
-     "p": 0.3983,
-     "quota": 2.31,
-     "p_impl": 0.4329,
-     "ev": -0.0799,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.4094,
-     "cat": "senza valore"
-    },
-    {
      "k": "C:1 + Under 3.5",
      "label": "1 + Under 3.5",
-     "p": 0.3901,
+     "p": 0.4226,
      "quota": 2.35,
      "p_impl": 0.4255,
-     "ev": -0.0833,
+     "ev": -0.0069,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.4021,
      "cat": "senza valore"
     },
     {
-     "k": "C:1 + No Goal + Under 4.5",
-     "label": "1 + No Goal + Under 4.5",
-     "p": 0.3536,
-     "quota": 2.56,
-     "p_impl": 0.3906,
-     "ev": -0.0948,
+     "k": "C:1 + No Goal",
+     "label": "1 + No Goal",
+     "p": 0.3795,
+     "quota": 2.31,
+     "p_impl": 0.4329,
+     "ev": -0.1234,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.3685,
+     "p_mercato": 0.4094,
      "cat": "senza valore"
     },
     {
-     "k": "C:1 + Goal",
-     "label": "1 + Goal",
-     "p": 0.3273,
-     "quota": 2.95,
-     "p_impl": 0.339,
-     "ev": -0.0345,
+     "k": "C:1 + Over 2.5",
+     "label": "1 + Over 2.5",
+     "p": 0.3667,
+     "quota": 1.83,
+     "p_impl": 0.5464,
+     "ev": -0.3289,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.3206,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:1 + No Goal + Over 1.5",
-     "label": "1 + No Goal + Over 1.5",
-     "p": 0.3103,
-     "quota": 3.01,
-     "p_impl": 0.3322,
-     "ev": -0.066,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.3132,
-     "cat": "alto rischio"
+     "p_mercato": 0.5154,
+     "cat": "senza valore"
     },
     {
      "k": "C:1 + No Goal + Under 3.5",
      "label": "1 + No Goal + Under 3.5",
-     "p": 0.2965,
+     "p": 0.3267,
      "quota": 3.04,
      "p_impl": 0.3289,
-     "ev": -0.0986,
+     "ev": -0.0068,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.3109,
      "cat": "alto rischio"
     },
     {
-     "k": "C:1 + Goal + Over 3.5",
-     "label": "1 + Goal + Over 3.5",
-     "p": 0.2337,
-     "quota": 4.12,
-     "p_impl": 0.2427,
-     "ev": -0.0372,
+     "k": "C:1 + No Goal + Over 1.5",
+     "label": "1 + No Goal + Over 1.5",
+     "p": 0.2526,
+     "quota": 3.01,
+     "p_impl": 0.3322,
+     "ev": -0.2397,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.2294,
+     "p_mercato": 0.3132,
      "cat": "alto rischio"
     },
     {
      "k": "C:1 + Under 2.5",
      "label": "1 + Under 2.5",
-     "p": 0.203,
+     "p": 0.2509,
      "quota": 4.4,
      "p_impl": 0.2273,
-     "ev": -0.1068,
+     "ev": 0.104,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2147,
      "cat": "alto rischio"
     },
     {
-     "k": "C:1 + No Goal + Over 2.5",
-     "label": "1 + No Goal + Over 2.5",
-     "p": 0.1953,
-     "quota": 4.85,
-     "p_impl": 0.2062,
-     "ev": -0.0528,
+     "k": "C:1 + Goal",
+     "label": "1 + Goal",
+     "p": 0.2381,
+     "quota": 2.95,
+     "p_impl": 0.339,
+     "ev": -0.2976,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.1948,
+     "p_mercato": 0.3206,
      "cat": "alto rischio"
     },
     {
      "k": "C:1 + Goal + Under 4.5",
      "label": "1 + Goal + Under 4.5",
-     "p": 0.1697,
+     "p": 0.1545,
      "quota": 5.61,
      "p_impl": 0.1783,
-     "ev": -0.048,
+     "ev": -0.1333,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.1684,
@@ -886,45 +838,45 @@
     }
    ],
    "pronostico": {
-    "k": "1",
-    "label": "1 (casa)",
-    "p": 0.7256,
-    "quota": 1.3,
-    "p_impl": 0.7692,
-    "ev": -0.0567,
+    "k": "U3.5",
+    "label": "Under 3.5",
+    "p": 0.7344,
+    "quota": 1.57,
+    "p_impl": 0.6369,
+    "ev": 0.1529,
     "ht": false,
-    "cat": "probabile"
+    "cat": "value"
    },
    "p": {
-    "1": 0.7256,
-    "X": 0.1752,
-    "2": 0.0992,
-    "GG": 0.5146,
-    "NG": 0.4854,
-    "O0.5": 0.9553,
-    "U0.5": 0.0447,
-    "O1.5": 0.8419,
-    "U1.5": 0.1581,
-    "O2.5": 0.6314,
-    "U2.5": 0.3686,
-    "O3.5": 0.4096,
-    "U3.5": 0.5904,
-    "H_O0.5": 0.9129,
-    "A_O0.5": 0.5569,
-    "H_O1.5": 0.7003,
-    "A_O1.5": 0.1963,
-    "1X": 0.9008,
-    "X2": 0.2744,
-    "12": 0.8248,
-    "DNB1": 0.8798,
-    "DNB2": 0.1202,
-    "1X_O1.5": 0.768,
-    "X2_U3.5": 0.2003,
-    "HT1": 0.5431,
-    "HTX": 0.334,
-    "HT2": 0.1229,
-    "HT_O0.5": 0.7688,
-    "HT_O1.5": 0.4303
+    "1": 0.6176,
+    "X": 0.2384,
+    "2": 0.144,
+    "GG": 0.4608,
+    "NG": 0.5392,
+    "O0.5": 0.9179,
+    "U0.5": 0.0821,
+    "O1.5": 0.7424,
+    "U1.5": 0.2576,
+    "O2.5": 0.4835,
+    "U2.5": 0.5165,
+    "O3.5": 0.2656,
+    "U3.5": 0.7344,
+    "H_O0.5": 0.8403,
+    "A_O0.5": 0.5384,
+    "H_O1.5": 0.5473,
+    "A_O1.5": 0.1816,
+    "1X": 0.856,
+    "X2": 0.3824,
+    "12": 0.7616,
+    "DNB1": 0.8109,
+    "DNB2": 0.1891,
+    "1X_O1.5": 0.6471,
+    "X2_U3.5": 0.3117,
+    "HT1": 0.4483,
+    "HTX": 0.4047,
+    "HT2": 0.147,
+    "HT_O0.5": 0.6907,
+    "HT_O1.5": 0.3277
    },
    "avvisi": [],
    "contesto": []
@@ -953,8 +905,8 @@
    },
    "risultato_modello": "1-0",
    "lam": [
-    2.24,
-    0.84
+    1.78,
+    0.73
    ],
    "margine_1x2": 0.0656,
    "p_mercato": {
@@ -968,62 +920,50 @@
    "quote_ts": "2026-11-17T10:47:16.242Z",
    "risultati": [
     [
-     "2-0",
-     0.1155
-    ],
-    [
-     "2-1",
-     0.0969
-    ],
-    [
      "1-0",
-     0.0963
+     0.1366
+    ],
+    [
+     "2-0",
+     0.1289
+    ],
+    [
+     "1-1",
+     0.1141
     ]
    ],
    "combo": [
     [
      "1 + Over 1.5",
-     0.5878
-    ],
-    [
-     "1 + Over 2.5",
-     0.4723
+     0.4798
     ],
     [
      "1 + Under 3.5",
-     0.3949
+     0.4357
     ],
     [
      "1 + No Goal",
-     0.3794
+     0.3926
     ],
     [
-     "1 + Goal",
-     0.3048
+     "1 + Over 2.5",
+     0.3509
     ],
     [
      "1 + No Goal + Under 3.5",
-     0.298
-    ],
-    [
-     "1 + No Goal + Over 1.5",
-     0.283
+     0.3418
     ],
     [
      "1 + Under 2.5",
-     0.2119
+     0.2654
     ],
     [
-     "1 + Goal + Over 3.5",
-     0.208
+     "1 + No Goal + Over 1.5",
+     0.256
     ],
     [
-     "1 + Goal + Under 4.5",
-     0.1691
-    ],
-    [
-     "1 + No Goal + Over 2.5",
-     0.1675
+     "1 + Goal",
+     0.2238
     ]
    ],
    "combo_mercato": {
@@ -1424,294 +1364,282 @@
     {
      "k": "1",
      "label": "1 (casa)",
-     "p": 0.6842,
+     "p": 0.6163,
      "quota": 1.37,
      "p_impl": 0.7299,
-     "ev": -0.0627,
+     "ev": -0.1556,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "X",
      "label": "X (pareggio)",
-     "p": 0.1967,
+     "p": 0.2437,
      "quota": 4.9,
      "p_impl": 0.2041,
-     "ev": -0.0362,
+     "ev": 0.1939,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "2",
      "label": "2 (ospite)",
-     "p": 0.1191,
+     "p": 0.14,
      "quota": 7.6,
      "p_impl": 0.1316,
-     "ev": -0.0947,
+     "ev": 0.0639,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "1X",
      "label": "Doppia chance 1X",
-     "p": 0.8809,
+     "p": 0.86,
      "quota": 1.05,
      "p_impl": 0.9524,
-     "ev": -0.0751,
+     "ev": -0.097,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "12",
      "label": "Doppia chance 12",
-     "p": 0.8033,
+     "p": 0.7563,
      "quota": 1.15,
      "p_impl": 0.8696,
-     "ev": -0.0762,
+     "ev": -0.1302,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "X2",
      "label": "Doppia chance X2",
-     "p": 0.3158,
+     "p": 0.3837,
      "quota": 2.85,
      "p_impl": 0.3509,
-     "ev": -0.0999,
+     "ev": 0.0934,
      "ht": false,
-     "cat": "alto rischio"
+     "cat": "senza valore"
     },
     {
      "k": "DNB1",
      "label": "Draw No Bet 1",
-     "p": 0.8517,
+     "p": 0.8149,
      "quota": 1.09,
      "p_impl": 0.9174,
-     "ev": -0.0716,
+     "ev": -0.1118,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "DNB2",
      "label": "Draw No Bet 2",
-     "p": 0.1483,
+     "p": 0.1851,
      "quota": 6.0,
      "p_impl": 0.1667,
-     "ev": -0.1103,
+     "ev": 0.1106,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "GG",
      "label": "Goal",
-     "p": 0.5139,
+     "p": 0.4384,
      "quota": 1.78,
      "p_impl": 0.5618,
-     "ev": -0.0853,
+     "ev": -0.2196,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "NG",
      "label": "No Goal",
-     "p": 0.4861,
+     "p": 0.5616,
      "quota": 1.9,
      "p_impl": 0.5263,
-     "ev": -0.0764,
+     "ev": 0.067,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U0.5",
      "label": "Under 0.5",
-     "p": 0.0531,
+     "p": 0.09,
      "quota": 14.0,
      "p_impl": 0.0714,
-     "ev": -0.2569,
+     "ev": 0.2602,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "O1.5",
      "label": "Over 1.5",
-     "p": 0.8188,
+     "p": 0.7225,
      "quota": 1.15,
      "p_impl": 0.8696,
-     "ev": -0.0584,
+     "ev": -0.1692,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "U1.5",
      "label": "Under 1.5",
-     "p": 0.1812,
+     "p": 0.2775,
      "quota": 4.6,
      "p_impl": 0.2174,
-     "ev": -0.1665,
+     "ev": 0.2767,
      "ht": false,
-     "cat": "alto rischio"
+     "cat": "value"
     },
     {
      "k": "O2.5",
      "label": "Over 2.5",
-     "p": 0.5936,
+     "p": 0.4578,
      "quota": 1.55,
      "p_impl": 0.6452,
-     "ev": -0.08,
+     "ev": -0.2904,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U2.5",
      "label": "Under 2.5",
-     "p": 0.4064,
+     "p": 0.5422,
      "quota": 2.25,
      "p_impl": 0.4444,
-     "ev": -0.0855,
+     "ev": 0.2199,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "value"
     },
     {
      "k": "O3.5",
      "label": "Over 3.5",
-     "p": 0.3697,
+     "p": 0.2438,
      "quota": 2.35,
      "p_impl": 0.4255,
-     "ev": -0.1311,
+     "ev": -0.4271,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "alto rischio"
     },
     {
      "k": "U3.5",
      "label": "Under 3.5",
-     "p": 0.6303,
+     "p": 0.7562,
      "quota": 1.47,
      "p_impl": 0.6803,
-     "ev": -0.0735,
+     "ev": 0.1116,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "value"
     },
     {
      "k": "H_O0.5",
      "label": "Gol casa Over 0.5",
-     "p": 0.8933,
+     "p": 0.831,
      "quota": 1.02,
      "p_impl": 0.9804,
-     "ev": -0.0889,
+     "ev": -0.1524,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "A_O0.5",
      "label": "Gol ospite Over 0.5",
-     "p": 0.5675,
+     "p": 0.5174,
      "quota": 1.6,
      "p_impl": 0.625,
-     "ev": -0.0919,
+     "ev": -0.1722,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "H_O1.5",
      "label": "Gol casa Over 1.5",
-     "p": 0.6545,
+     "p": 0.5305,
      "quota": 1.37,
      "p_impl": 0.7299,
-     "ev": -0.1034,
+     "ev": -0.2732,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "A_O1.5",
      "label": "Gol ospite Over 1.5",
-     "p": 0.205,
+     "p": 0.1658,
      "quota": 4.3,
      "p_impl": 0.2326,
-     "ev": -0.1184,
+     "ev": -0.2871,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "HT1",
      "label": "1 primo tempo",
-     "p": 0.5083,
+     "p": 0.4438,
      "quota": 1.82,
      "p_impl": 0.5495,
-     "ev": -0.0749,
+     "ev": -0.1923,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "HTX",
      "label": "X primo tempo",
-     "p": 0.3551,
+     "p": 0.4144,
      "quota": 2.5,
      "p_impl": 0.4,
-     "ev": -0.1122,
+     "ev": 0.0359,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "HT2",
      "label": "2 primo tempo",
-     "p": 0.1365,
+     "p": 0.1418,
      "quota": 6.4,
      "p_impl": 0.1562,
-     "ev": -0.1262,
+     "ev": -0.0922,
      "ht": true,
      "cat": "alto rischio"
     },
     {
      "k": "HT_O0.5",
      "label": "Over 0.5 primo tempo",
-     "p": 0.7495,
+     "p": 0.6763,
      "quota": 1.24,
      "p_impl": 0.8065,
-     "ev": -0.0707,
-     "ht": true,
-     "cat": "probabile"
-    },
-    {
-     "k": "HT_O1.5",
-     "label": "Over 1.5 primo tempo",
-     "p": 0.4027,
-     "quota": 2.25,
-     "p_impl": 0.4444,
-     "ev": -0.094,
+     "ev": -0.1614,
      "ht": true,
      "cat": "senza valore"
     },
     {
+     "k": "HT_O1.5",
+     "label": "Over 1.5 primo tempo",
+     "p": 0.3112,
+     "quota": 2.25,
+     "p_impl": 0.4444,
+     "ev": -0.2999,
+     "ht": true,
+     "cat": "alto rischio"
+    },
+    {
      "k": "C:1 + Over 1.5",
      "label": "1 + Over 1.5",
-     "p": 0.5878,
+     "p": 0.4798,
      "quota": 1.61,
      "p_impl": 0.6211,
-     "ev": -0.0536,
+     "ev": -0.2275,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.5836,
      "cat": "senza valore"
     },
     {
-     "k": "C:1 + Over 2.5",
-     "label": "1 + Over 2.5",
-     "p": 0.4723,
-     "quota": 2.02,
-     "p_impl": 0.495,
-     "ev": -0.046,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.4655,
-     "cat": "senza valore"
-    },
-    {
      "k": "C:1 + Under 3.5",
      "label": "1 + Under 3.5",
-     "p": 0.3949,
+     "p": 0.4357,
      "quota": 2.3,
      "p_impl": 0.4348,
-     "ev": -0.0917,
+     "ev": 0.0021,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.4077,
@@ -1720,140 +1648,116 @@
     {
      "k": "C:1 + No Goal",
      "label": "1 + No Goal",
-     "p": 0.3794,
+     "p": 0.3926,
      "quota": 2.43,
      "p_impl": 0.4115,
-     "ev": -0.0781,
+     "ev": -0.046,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.3867,
      "cat": "senza valore"
     },
     {
-     "k": "C:1 + Goal",
-     "label": "1 + Goal",
-     "p": 0.3048,
-     "quota": 3.08,
-     "p_impl": 0.3247,
-     "ev": -0.0612,
+     "k": "C:1 + Over 2.5",
+     "label": "1 + Over 2.5",
+     "p": 0.3509,
+     "quota": 2.02,
+     "p_impl": 0.495,
+     "ev": -0.2912,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.3043,
-     "cat": "alto rischio"
+     "p_mercato": 0.4655,
+     "cat": "senza valore"
     },
     {
      "k": "C:1 + No Goal + Under 3.5",
      "label": "1 + No Goal + Under 3.5",
-     "p": 0.298,
+     "p": 0.3418,
      "quota": 3.01,
      "p_impl": 0.3322,
-     "ev": -0.103,
+     "ev": 0.0288,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.3119,
      "cat": "alto rischio"
     },
     {
-     "k": "C:1 + No Goal + Over 1.5",
-     "label": "1 + No Goal + Over 1.5",
-     "p": 0.283,
-     "quota": 3.36,
-     "p_impl": 0.2976,
-     "ev": -0.0491,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2792,
-     "cat": "alto rischio"
-    },
-    {
      "k": "C:1 + Under 2.5",
      "label": "1 + Under 2.5",
-     "p": 0.2119,
+     "p": 0.2654,
      "quota": 4.16,
      "p_impl": 0.2404,
-     "ev": -0.1185,
+     "ev": 0.1041,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2255,
      "cat": "alto rischio"
     },
     {
-     "k": "C:1 + Goal + Over 3.5",
-     "label": "1 + Goal + Over 3.5",
-     "p": 0.208,
-     "quota": 4.5,
-     "p_impl": 0.2222,
-     "ev": -0.064,
+     "k": "C:1 + No Goal + Over 1.5",
+     "label": "1 + No Goal + Over 1.5",
+     "p": 0.256,
+     "quota": 3.36,
+     "p_impl": 0.2976,
+     "ev": -0.1398,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.2085,
+     "p_mercato": 0.2792,
      "cat": "alto rischio"
     },
     {
-     "k": "C:1 + Goal + Under 4.5",
-     "label": "1 + Goal + Under 4.5",
-     "p": 0.1691,
-     "quota": 5.57,
-     "p_impl": 0.1795,
-     "ev": -0.0581,
+     "k": "C:1 + Goal",
+     "label": "1 + Goal",
+     "p": 0.2238,
+     "quota": 3.08,
+     "p_impl": 0.3247,
+     "ev": -0.3107,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.1686,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:1 + No Goal + Over 2.5",
-     "label": "1 + No Goal + Over 2.5",
-     "p": 0.1675,
-     "quota": 5.82,
-     "p_impl": 0.1718,
-     "ev": -0.0251,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.1612,
+     "p_mercato": 0.3043,
      "cat": "alto rischio"
     }
    ],
    "pronostico": {
-    "k": "1",
-    "label": "1 (casa)",
-    "p": 0.6842,
-    "quota": 1.37,
-    "p_impl": 0.7299,
-    "ev": -0.0627,
+    "k": "U3.5",
+    "label": "Under 3.5",
+    "p": 0.7562,
+    "quota": 1.47,
+    "p_impl": 0.6803,
+    "ev": 0.1116,
     "ht": false,
-    "cat": "senza valore"
+    "cat": "value"
    },
    "p": {
-    "1": 0.6842,
-    "X": 0.1967,
-    "2": 0.1191,
-    "GG": 0.5139,
-    "NG": 0.4861,
-    "O0.5": 0.9469,
-    "U0.5": 0.0531,
-    "O1.5": 0.8188,
-    "U1.5": 0.1812,
-    "O2.5": 0.5936,
-    "U2.5": 0.4064,
-    "O3.5": 0.3697,
-    "U3.5": 0.6303,
-    "H_O0.5": 0.8933,
-    "A_O0.5": 0.5675,
-    "H_O1.5": 0.6545,
-    "A_O1.5": 0.205,
-    "1X": 0.8809,
-    "X2": 0.3158,
-    "12": 0.8033,
-    "DNB1": 0.8517,
-    "DNB2": 0.1483,
-    "1X_O1.5": 0.7315,
-    "X2_U3.5": 0.2354,
-    "HT1": 0.5083,
-    "HTX": 0.3551,
-    "HT2": 0.1365,
-    "HT_O0.5": 0.7495,
-    "HT_O1.5": 0.4027
+    "1": 0.6163,
+    "X": 0.2437,
+    "2": 0.14,
+    "GG": 0.4384,
+    "NG": 0.5616,
+    "O0.5": 0.91,
+    "U0.5": 0.09,
+    "O1.5": 0.7225,
+    "U1.5": 0.2775,
+    "O2.5": 0.4578,
+    "U2.5": 0.5422,
+    "O3.5": 0.2438,
+    "U3.5": 0.7562,
+    "H_O0.5": 0.831,
+    "A_O0.5": 0.5174,
+    "H_O1.5": 0.5305,
+    "A_O1.5": 0.1658,
+    "1X": 0.86,
+    "X2": 0.3837,
+    "12": 0.7563,
+    "DNB1": 0.8149,
+    "DNB2": 0.1851,
+    "1X_O1.5": 0.6334,
+    "X2_U3.5": 0.3205,
+    "HT1": 0.4438,
+    "HTX": 0.4144,
+    "HT2": 0.1418,
+    "HT_O0.5": 0.6763,
+    "HT_O1.5": 0.3112
    },
    "avvisi": [],
    "contesto": []
@@ -1882,8 +1786,8 @@
    },
    "risultato_modello": "0-1",
    "lam": [
-    0.78,
-    2.41
+    0.76,
+    1.78
    ],
    "margine_1x2": 0.0709,
    "p_mercato": {
@@ -1897,66 +1801,54 @@
    "quote_ts": "2026-11-16T09:19:04.609Z",
    "risultati": [
     [
+     "0-1",
+     0.1314
+    ],
+    [
      "0-2",
-     0.1197
+     0.1247
     ],
     [
-     "0-3",
-     0.0962
-    ],
-    [
-     "1-2",
-     0.0932
+     "1-1",
+     0.1152
     ]
    ],
    "combo": [
     [
      "2 + Over 1.5",
-     0.6353
-    ],
-    [
-     "2 + Over 2.5",
-     0.5156
-    ],
-    [
-     "2 + No Goal",
-     0.4116
+     0.4771
     ],
     [
      "2 + Under 3.5",
-     0.4023
+     0.4252
     ],
     [
-     "2 + No Goal + Under 4.5",
-     0.367
+     "2 + No Goal",
+     0.3796
     ],
     [
-     "2 + No Goal + Over 1.5",
-     0.3184
-    ],
-    [
-     "2 + Goal",
-     0.317
+     "2 + Over 2.5",
+     0.3524
     ],
     [
      "2 + No Goal + Under 3.5",
-     0.3091
-    ],
-    [
-     "2 + Goal + Over 3.5",
-     0.2237
+     0.3302
     ],
     [
      "2 + Under 2.5",
-     0.2129
+     0.2561
     ],
     [
-     "2 + No Goal + Over 2.5",
-     0.1987
+     "2 + No Goal + Over 1.5",
+     0.2482
+    ],
+    [
+     "2 + Goal",
+     0.2289
     ],
     [
      "2 + Goal + Under 4.5",
-     0.1681
+     0.1515
     ]
    ],
    "combo_mercato": {
@@ -2349,320 +2241,332 @@
     {
      "k": "1",
      "label": "1 (casa)",
-     "p": 0.0956,
+     "p": 0.1471,
      "quota": 9.0,
      "p_impl": 0.1111,
-     "ev": -0.1392,
+     "ev": 0.3237,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "X",
      "label": "X (pareggio)",
-     "p": 0.1758,
+     "p": 0.2444,
      "quota": 5.6,
      "p_impl": 0.1786,
-     "ev": -0.0154,
+     "ev": 0.3688,
      "ht": false,
-     "cat": "alto rischio"
+     "cat": "value"
     },
     {
      "k": "2",
      "label": "2 (ospite)",
-     "p": 0.7285,
+     "p": 0.6085,
      "quota": 1.28,
      "p_impl": 0.7812,
-     "ev": -0.0675,
+     "ev": -0.2211,
      "ht": false,
-     "cat": "probabile"
+     "cat": "senza valore"
     },
     {
      "k": "1X",
      "label": "Doppia chance 1X",
-     "p": 0.2715,
+     "p": 0.3915,
      "quota": 3.35,
      "p_impl": 0.2985,
-     "ev": -0.0906,
+     "ev": 0.3115,
      "ht": false,
-     "cat": "alto rischio"
+     "cat": "value"
     },
     {
      "k": "12",
      "label": "Doppia chance 12",
-     "p": 0.8242,
+     "p": 0.7556,
      "quota": 1.11,
      "p_impl": 0.9009,
-     "ev": -0.0852,
+     "ev": -0.1613,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "X2",
      "label": "Doppia chance X2",
-     "p": 0.9044,
+     "p": 0.8529,
      "quota": 1.03,
      "p_impl": 0.9709,
-     "ev": -0.0685,
+     "ev": -0.1215,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "DNB1",
      "label": "Draw No Bet 1",
-     "p": 0.1161,
+     "p": 0.1947,
      "quota": 7.2,
      "p_impl": 0.1389,
-     "ev": -0.1644,
+     "ev": 0.4015,
      "ht": false,
-     "cat": "alto rischio"
+     "cat": "value"
     },
     {
      "k": "DNB2",
      "label": "Draw No Bet 2",
-     "p": 0.8839,
+     "p": 0.8053,
      "quota": 1.06,
      "p_impl": 0.9434,
-     "ev": -0.063,
+     "ev": -0.1463,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "GG",
      "label": "Goal",
-     "p": 0.4986,
+     "p": 0.4522,
      "quota": 1.87,
      "p_impl": 0.5348,
-     "ev": -0.0676,
+     "ev": -0.1544,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "NG",
      "label": "No Goal",
-     "p": 0.5014,
+     "p": 0.5478,
      "quota": 1.8,
      "p_impl": 0.5556,
-     "ev": -0.0975,
+     "ev": -0.0139,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U0.5",
      "label": "Under 0.5",
-     "p": 0.0474,
+     "p": 0.087,
      "quota": 15.5,
      "p_impl": 0.0645,
-     "ev": -0.2649,
+     "ev": 0.3492,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "O1.5",
      "label": "Over 1.5",
-     "p": 0.8335,
+     "p": 0.7302,
      "quota": 1.13,
      "p_impl": 0.885,
-     "ev": -0.0582,
+     "ev": -0.1748,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "U1.5",
      "label": "Under 1.5",
-     "p": 0.1665,
+     "p": 0.2698,
      "quota": 5.0,
      "p_impl": 0.2,
-     "ev": -0.1674,
+     "ev": 0.3488,
      "ht": false,
-     "cat": "alto rischio"
+     "cat": "value"
     },
     {
      "k": "O2.5",
      "label": "Over 2.5",
-     "p": 0.6177,
+     "p": 0.4675,
      "quota": 1.5,
      "p_impl": 0.6667,
-     "ev": -0.0735,
+     "ev": -0.2987,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U2.5",
      "label": "Under 2.5",
-     "p": 0.3823,
+     "p": 0.5325,
      "quota": 2.4,
      "p_impl": 0.4167,
-     "ev": -0.0824,
+     "ev": 0.2779,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "value"
     },
     {
      "k": "O3.5",
      "label": "Over 3.5",
-     "p": 0.3949,
+     "p": 0.252,
      "quota": 2.25,
      "p_impl": 0.4444,
-     "ev": -0.1115,
+     "ev": -0.4331,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "alto rischio"
     },
     {
      "k": "U3.5",
      "label": "Under 3.5",
-     "p": 0.6051,
+     "p": 0.748,
      "quota": 1.52,
      "p_impl": 0.6579,
-     "ev": -0.0802,
+     "ev": 0.137,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "value"
     },
     {
      "k": "H_O0.5",
      "label": "Gol casa Over 0.5",
-     "p": 0.541,
+     "p": 0.5334,
      "quota": 1.72,
      "p_impl": 0.5814,
-     "ev": -0.0695,
+     "ev": -0.0826,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "H_O1.5",
      "label": "Gol casa Over 1.5",
-     "p": 0.1836,
+     "p": 0.1777,
      "quota": 4.9,
      "p_impl": 0.2041,
-     "ev": -0.1005,
+     "ev": -0.1293,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "A_O1.5",
      "label": "Gol ospite Over 1.5",
-     "p": 0.6937,
+     "p": 0.5319,
      "quota": 1.3,
      "p_impl": 0.7692,
-     "ev": -0.0982,
+     "ev": -0.3086,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "HT1",
      "label": "1 primo tempo",
-     "p": 0.119,
+     "p": 0.1479,
      "quota": 7.4,
      "p_impl": 0.1351,
-     "ev": -0.1197,
+     "ev": 0.0942,
      "ht": true,
      "cat": "alto rischio"
     },
     {
      "k": "HTX",
      "label": "X primo tempo",
-     "p": 0.3376,
+     "p": 0.412,
      "quota": 2.65,
      "p_impl": 0.3774,
-     "ev": -0.1053,
+     "ev": 0.0917,
      "ht": true,
-     "cat": "alto rischio"
+     "cat": "senza valore"
     },
     {
      "k": "HT2",
      "label": "2 primo tempo",
-     "p": 0.5434,
+     "p": 0.4402,
      "quota": 1.7,
      "p_impl": 0.5882,
-     "ev": -0.0762,
+     "ev": -0.2517,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "HT_O0.5",
      "label": "Over 0.5 primo tempo",
-     "p": 0.7618,
+     "p": 0.6818,
      "quota": 1.22,
      "p_impl": 0.8197,
-     "ev": -0.0706,
-     "ht": true,
-     "cat": "probabile"
-    },
-    {
-     "k": "HT_O1.5",
-     "label": "Over 1.5 primo tempo",
-     "p": 0.4201,
-     "quota": 2.2,
-     "p_impl": 0.4545,
-     "ev": -0.0757,
+     "ev": -0.1682,
      "ht": true,
      "cat": "senza valore"
     },
     {
+     "k": "HT_O1.5",
+     "label": "Over 1.5 primo tempo",
+     "p": 0.3174,
+     "quota": 2.2,
+     "p_impl": 0.4545,
+     "ev": -0.3017,
+     "ht": true,
+     "cat": "alto rischio"
+    },
+    {
      "k": "C:2 + Over 1.5",
      "label": "2 + Over 1.5",
-     "p": 0.6353,
+     "p": 0.4771,
      "quota": 1.46,
      "p_impl": 0.6849,
-     "ev": -0.0725,
+     "ev": -0.3034,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.6402,
      "cat": "senza valore"
     },
     {
-     "k": "C:2 + Over 2.5",
-     "label": "2 + Over 2.5",
-     "p": 0.5156,
-     "quota": 1.81,
-     "p_impl": 0.5525,
-     "ev": -0.0668,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.5145,
-     "cat": "senza valore"
-    },
-    {
-     "k": "C:2 + No Goal",
-     "label": "2 + No Goal",
-     "p": 0.4116,
-     "quota": 2.17,
-     "p_impl": 0.4608,
-     "ev": -0.1068,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.4313,
-     "cat": "senza valore"
-    },
-    {
      "k": "C:2 + Under 3.5",
      "label": "2 + Under 3.5",
-     "p": 0.4023,
+     "p": 0.4252,
      "quota": 2.21,
      "p_impl": 0.4525,
-     "ev": -0.1109,
+     "ev": -0.0603,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.4231,
      "cat": "senza valore"
     },
     {
-     "k": "C:2 + No Goal + Under 4.5",
-     "label": "2 + No Goal + Under 4.5",
-     "p": 0.367,
-     "quota": 2.4,
-     "p_impl": 0.4167,
-     "ev": -0.1192,
+     "k": "C:2 + No Goal",
+     "label": "2 + No Goal",
+     "p": 0.3796,
+     "quota": 2.17,
+     "p_impl": 0.4608,
+     "ev": -0.1763,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.3898,
+     "p_mercato": 0.4313,
      "cat": "senza valore"
+    },
+    {
+     "k": "C:2 + Over 2.5",
+     "label": "2 + Over 2.5",
+     "p": 0.3524,
+     "quota": 1.81,
+     "p_impl": 0.5525,
+     "ev": -0.3622,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.5145,
+     "cat": "senza valore"
+    },
+    {
+     "k": "C:2 + No Goal + Under 3.5",
+     "label": "2 + No Goal + Under 3.5",
+     "p": 0.3302,
+     "quota": 2.83,
+     "p_impl": 0.3534,
+     "ev": -0.0655,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.3303,
+     "cat": "alto rischio"
+    },
+    {
+     "k": "C:2 + Under 2.5",
+     "label": "2 + Under 2.5",
+     "p": 0.2561,
+     "quota": 4.07,
+     "p_impl": 0.2457,
+     "ev": 0.0423,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.2295,
+     "cat": "alto rischio"
     },
     {
      "k": "C:2 + No Goal + Over 1.5",
      "label": "2 + No Goal + Over 1.5",
-     "p": 0.3184,
+     "p": 0.2482,
      "quota": 2.85,
      "p_impl": 0.3509,
-     "ev": -0.0926,
+     "ev": -0.2926,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.3275,
@@ -2671,70 +2575,22 @@
     {
      "k": "C:2 + Goal",
      "label": "2 + Goal",
-     "p": 0.317,
+     "p": 0.2289,
      "quota": 2.99,
      "p_impl": 0.3344,
-     "ev": -0.0522,
+     "ev": -0.3156,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.3127,
      "cat": "alto rischio"
     },
     {
-     "k": "C:2 + No Goal + Under 3.5",
-     "label": "2 + No Goal + Under 3.5",
-     "p": 0.3091,
-     "quota": 2.83,
-     "p_impl": 0.3534,
-     "ev": -0.1252,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.3303,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:2 + Goal + Over 3.5",
-     "label": "2 + Goal + Over 3.5",
-     "p": 0.2237,
-     "quota": 4.25,
-     "p_impl": 0.2353,
-     "ev": -0.0493,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2199,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:2 + Under 2.5",
-     "label": "2 + Under 2.5",
-     "p": 0.2129,
-     "quota": 4.07,
-     "p_impl": 0.2457,
-     "ev": -0.1335,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2295,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:2 + No Goal + Over 2.5",
-     "label": "2 + No Goal + Over 2.5",
-     "p": 0.1987,
-     "quota": 4.63,
-     "p_impl": 0.216,
-     "ev": -0.08,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2018,
-     "cat": "alto rischio"
-    },
-    {
      "k": "C:2 + Goal + Under 4.5",
      "label": "2 + Goal + Under 4.5",
-     "p": 0.1681,
+     "p": 0.1515,
      "quota": 5.52,
      "p_impl": 0.1812,
-     "ev": -0.0721,
+     "ev": -0.1637,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.1692,
@@ -2742,45 +2598,45 @@
     }
    ],
    "pronostico": {
-    "k": "O2.5",
-    "label": "Over 2.5",
-    "p": 0.6177,
-    "quota": 1.5,
-    "p_impl": 0.6667,
-    "ev": -0.0735,
+    "k": "U3.5",
+    "label": "Under 3.5",
+    "p": 0.748,
+    "quota": 1.52,
+    "p_impl": 0.6579,
+    "ev": 0.137,
     "ht": false,
-    "cat": "senza valore"
+    "cat": "value"
    },
    "p": {
-    "1": 0.0956,
-    "X": 0.1758,
-    "2": 0.7285,
-    "GG": 0.4986,
-    "NG": 0.5014,
-    "O0.5": 0.9526,
-    "U0.5": 0.0474,
-    "O1.5": 0.8335,
-    "U1.5": 0.1665,
-    "O2.5": 0.6177,
-    "U2.5": 0.3823,
-    "O3.5": 0.3949,
-    "U3.5": 0.6051,
-    "H_O0.5": 0.541,
-    "A_O0.5": 0.9102,
-    "H_O1.5": 0.1836,
-    "A_O1.5": 0.6937,
-    "1X": 0.2715,
-    "X2": 0.9044,
-    "12": 0.8242,
-    "DNB1": 0.1161,
-    "DNB2": 0.8839,
-    "1X_O1.5": 0.1981,
-    "X2_U3.5": 0.5333,
-    "HT1": 0.119,
-    "HTX": 0.3376,
-    "HT2": 0.5434,
-    "HT_O0.5": 0.7618,
-    "HT_O1.5": 0.4201
+    "1": 0.1471,
+    "X": 0.2444,
+    "2": 0.6085,
+    "GG": 0.4522,
+    "NG": 0.5478,
+    "O0.5": 0.913,
+    "U0.5": 0.087,
+    "O1.5": 0.7302,
+    "U1.5": 0.2698,
+    "O2.5": 0.4675,
+    "U2.5": 0.5325,
+    "O3.5": 0.252,
+    "U3.5": 0.748,
+    "H_O0.5": 0.5334,
+    "A_O0.5": 0.8317,
+    "H_O1.5": 0.1777,
+    "A_O1.5": 0.5319,
+    "1X": 0.3915,
+    "X2": 0.8529,
+    "12": 0.7556,
+    "DNB1": 0.1947,
+    "DNB2": 0.8053,
+    "1X_O1.5": 0.2531,
+    "X2_U3.5": 0.6275,
+    "HT1": 0.1479,
+    "HTX": 0.412,
+    "HT2": 0.4402,
+    "HT_O0.5": 0.6818,
+    "HT_O1.5": 0.3174
    },
    "avvisi": [
     "modello e mercato divergono di 12 punti sull'1X2"
@@ -2811,8 +2667,8 @@
    },
    "risultato_modello": "1-0",
    "lam": [
-    2.07,
-    0.88
+    1.76,
+    0.83
    ],
    "margine_1x2": 0.0732,
    "p_mercato": {
@@ -2826,58 +2682,54 @@
    "quote_ts": "2026-11-16T04:44:37.559Z",
    "risultati": [
     [
-     "2-0",
-     0.1116
+     "1-0",
+     0.123
     ],
     [
      "1-1",
-     0.1029
+     0.1187
     ],
     [
-     "1-0",
-     0.1
+     "2-0",
+     0.1157
     ]
    ],
    "combo": [
     [
      "1 + Over 1.5",
-     0.5408
-    ],
-    [
-     "1 + Over 2.5",
-     0.4292
+     0.4607
     ],
     [
      "1 + Under 3.5",
-     0.3875
+     0.4029
     ],
     [
      "1 + No Goal",
-     0.3532
+     0.3506
+    ],
+    [
+     "1 + Over 2.5",
+     0.345
     ],
     [
      "1 + No Goal + Under 3.5",
-     0.2887
-    ],
-    [
-     "1 + Goal",
-     0.2876
-    ],
-    [
-     "1 + No Goal + Over 1.5",
-     0.2532
+     0.3064
     ],
     [
      "1 + Under 2.5",
-     0.2116
+     0.2387
     ],
     [
-     "1 + Goal + Over 3.5",
-     0.1888
+     "1 + Goal",
+     0.2331
+    ],
+    [
+     "1 + No Goal + Over 1.5",
+     0.2276
     ],
     [
      "1 + Goal + Under 4.5",
-     0.167
+     0.1529
     ]
    ],
    "combo_mercato": {
@@ -3278,294 +3130,282 @@
     {
      "k": "1",
      "label": "1 (casa)",
-     "p": 0.6408,
+     "p": 0.5837,
      "quota": 1.45,
      "p_impl": 0.6897,
-     "ev": -0.0708,
+     "ev": -0.1536,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "X",
      "label": "X (pareggio)",
-     "p": 0.2161,
+     "p": 0.2499,
      "quota": 4.5,
      "p_impl": 0.2222,
-     "ev": -0.0274,
+     "ev": 0.1247,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "2",
      "label": "2 (ospite)",
-     "p": 0.1431,
+     "p": 0.1663,
      "quota": 6.2,
      "p_impl": 0.1613,
-     "ev": -0.1129,
+     "ev": 0.0312,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "1X",
      "label": "Doppia chance 1X",
-     "p": 0.8569,
+     "p": 0.8337,
      "quota": 1.09,
      "p_impl": 0.9174,
-     "ev": -0.0659,
+     "ev": -0.0913,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "12",
      "label": "Doppia chance 12",
-     "p": 0.7839,
+     "p": 0.7501,
      "quota": 1.17,
      "p_impl": 0.8547,
-     "ev": -0.0829,
+     "ev": -0.1224,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "X2",
      "label": "Doppia chance X2",
-     "p": 0.3592,
+     "p": 0.4163,
      "quota": 2.5,
      "p_impl": 0.4,
-     "ev": -0.102,
+     "ev": 0.0406,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "DNB1",
      "label": "Draw No Bet 1",
-     "p": 0.8175,
+     "p": 0.7783,
      "quota": 1.15,
      "p_impl": 0.8696,
-     "ev": -0.0599,
+     "ev": -0.105,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "DNB2",
      "label": "Draw No Bet 2",
-     "p": 0.1825,
+     "p": 0.2217,
      "quota": 4.7,
      "p_impl": 0.2128,
-     "ev": -0.1422,
+     "ev": 0.0422,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "GG",
      "label": "Goal",
-     "p": 0.5209,
+     "p": 0.4766,
      "quota": 1.75,
      "p_impl": 0.5714,
-     "ev": -0.0884,
+     "ev": -0.166,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "NG",
      "label": "No Goal",
-     "p": 0.4791,
+     "p": 0.5234,
      "quota": 1.95,
      "p_impl": 0.5128,
-     "ev": -0.0658,
+     "ev": 0.0207,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U0.5",
      "label": "Under 0.5",
-     "p": 0.0596,
+     "p": 0.0839,
      "quota": 12.5,
      "p_impl": 0.08,
-     "ev": -0.2554,
+     "ev": 0.0486,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "O1.5",
      "label": "Over 1.5",
-     "p": 0.802,
+     "p": 0.7393,
      "quota": 1.18,
      "p_impl": 0.8475,
-     "ev": -0.0536,
+     "ev": -0.1277,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "U1.5",
      "label": "Under 1.5",
-     "p": 0.198,
+     "p": 0.2607,
      "quota": 4.1,
      "p_impl": 0.2439,
-     "ev": -0.1884,
+     "ev": 0.069,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "O2.5",
      "label": "Over 2.5",
-     "p": 0.5672,
+     "p": 0.4788,
      "quota": 1.62,
      "p_impl": 0.6173,
-     "ev": -0.0811,
+     "ev": -0.2243,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U2.5",
      "label": "Under 2.5",
-     "p": 0.4328,
+     "p": 0.5212,
      "quota": 2.1,
      "p_impl": 0.4762,
-     "ev": -0.0912,
+     "ev": 0.0945,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "value"
     },
     {
      "k": "O3.5",
      "label": "Over 3.5",
-     "p": 0.3433,
+     "p": 0.2616,
      "quota": 2.55,
      "p_impl": 0.3922,
-     "ev": -0.1247,
+     "ev": -0.3329,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "U3.5",
      "label": "Under 3.5",
-     "p": 0.6567,
+     "p": 0.7384,
      "quota": 1.4,
      "p_impl": 0.7143,
-     "ev": -0.0806,
+     "ev": 0.0338,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "probabile"
     },
     {
      "k": "H_O0.5",
      "label": "Gol casa Over 0.5",
-     "p": 0.8742,
+     "p": 0.8272,
      "quota": 1.04,
      "p_impl": 0.9615,
-     "ev": -0.0909,
+     "ev": -0.1398,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "A_O0.5",
      "label": "Gol ospite Over 0.5",
-     "p": 0.5872,
+     "p": 0.5655,
      "quota": 1.53,
      "p_impl": 0.6536,
-     "ev": -0.1016,
+     "ev": -0.1348,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "H_O1.5",
      "label": "Gol casa Over 1.5",
-     "p": 0.6133,
+     "p": 0.5238,
      "quota": 1.47,
      "p_impl": 0.6803,
-     "ev": -0.0984,
+     "ev": -0.2301,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "A_O1.5",
      "label": "Gol ospite Over 1.5",
-     "p": 0.2219,
+     "p": 0.2033,
      "quota": 3.85,
      "p_impl": 0.2597,
-     "ev": -0.1455,
+     "ev": -0.2172,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "HT1",
      "label": "1 primo tempo",
-     "p": 0.4751,
+     "p": 0.4259,
      "quota": 1.97,
      "p_impl": 0.5076,
-     "ev": -0.064,
+     "ev": -0.1609,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "HTX",
      "label": "X primo tempo",
-     "p": 0.3719,
+     "p": 0.4114,
      "quota": 2.4,
      "p_impl": 0.4167,
-     "ev": -0.1075,
+     "ev": -0.0126,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "HT2",
      "label": "2 primo tempo",
-     "p": 0.153,
+     "p": 0.1626,
      "quota": 5.6,
      "p_impl": 0.1786,
-     "ev": -0.1431,
+     "ev": -0.0892,
      "ht": true,
      "cat": "alto rischio"
     },
     {
      "k": "HT_O0.5",
      "label": "Over 0.5 primo tempo",
-     "p": 0.7358,
+     "p": 0.6881,
      "quota": 1.27,
      "p_impl": 0.7874,
-     "ev": -0.0656,
-     "ht": true,
-     "cat": "probabile"
-    },
-    {
-     "k": "HT_O1.5",
-     "label": "Over 1.5 primo tempo",
-     "p": 0.3841,
-     "quota": 2.4,
-     "p_impl": 0.4167,
-     "ev": -0.0782,
+     "ev": -0.1261,
      "ht": true,
      "cat": "senza valore"
     },
     {
+     "k": "HT_O1.5",
+     "label": "Over 1.5 primo tempo",
+     "p": 0.3247,
+     "quota": 2.4,
+     "p_impl": 0.4167,
+     "ev": -0.2207,
+     "ht": true,
+     "cat": "alto rischio"
+    },
+    {
      "k": "C:1 + Over 1.5",
      "label": "1 + Over 1.5",
-     "p": 0.5408,
+     "p": 0.4607,
      "quota": 1.75,
      "p_impl": 0.5714,
-     "ev": -0.0536,
+     "ev": -0.1938,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.5316,
      "cat": "senza valore"
     },
     {
-     "k": "C:1 + Over 2.5",
-     "label": "1 + Over 2.5",
-     "p": 0.4292,
-     "quota": 2.23,
-     "p_impl": 0.4484,
-     "ev": -0.0429,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.4177,
-     "cat": "senza valore"
-    },
-    {
      "k": "C:1 + Under 3.5",
      "label": "1 + Under 3.5",
-     "p": 0.3875,
+     "p": 0.4029,
      "quota": 2.3,
      "p_impl": 0.4348,
-     "ev": -0.1088,
+     "ev": -0.0733,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.4051,
@@ -3574,34 +3414,58 @@
     {
      "k": "C:1 + No Goal",
      "label": "1 + No Goal",
-     "p": 0.3532,
+     "p": 0.3506,
      "quota": 2.61,
      "p_impl": 0.3831,
-     "ev": -0.0781,
+     "ev": -0.0849,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.3565,
      "cat": "senza valore"
     },
     {
+     "k": "C:1 + Over 2.5",
+     "label": "1 + Over 2.5",
+     "p": 0.345,
+     "quota": 2.23,
+     "p_impl": 0.4484,
+     "ev": -0.2307,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.4177,
+     "cat": "alto rischio"
+    },
+    {
      "k": "C:1 + No Goal + Under 3.5",
      "label": "1 + No Goal + Under 3.5",
-     "p": 0.2887,
+     "p": 0.3064,
      "quota": 3.06,
      "p_impl": 0.3268,
-     "ev": -0.1166,
+     "ev": -0.0624,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.3041,
      "cat": "alto rischio"
     },
     {
+     "k": "C:1 + Under 2.5",
+     "label": "1 + Under 2.5",
+     "p": 0.2387,
+     "quota": 4.02,
+     "p_impl": 0.2488,
+     "ev": -0.0404,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.2316,
+     "cat": "alto rischio"
+    },
+    {
      "k": "C:1 + Goal",
      "label": "1 + Goal",
-     "p": 0.2876,
+     "p": 0.2331,
      "quota": 3.18,
      "p_impl": 0.3145,
-     "ev": -0.0854,
+     "ev": -0.2587,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2928,
@@ -3610,46 +3474,22 @@
     {
      "k": "C:1 + No Goal + Over 1.5",
      "label": "1 + No Goal + Over 1.5",
-     "p": 0.2532,
+     "p": 0.2276,
      "quota": 3.9,
      "p_impl": 0.2564,
-     "ev": -0.0125,
+     "ev": -0.1124,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2388,
      "cat": "alto rischio"
     },
     {
-     "k": "C:1 + Under 2.5",
-     "label": "1 + Under 2.5",
-     "p": 0.2116,
-     "quota": 4.02,
-     "p_impl": 0.2488,
-     "ev": -0.1494,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2316,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:1 + Goal + Over 3.5",
-     "label": "1 + Goal + Over 3.5",
-     "p": 0.1888,
-     "quota": 4.86,
-     "p_impl": 0.2058,
-     "ev": -0.0824,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.1918,
-     "cat": "alto rischio"
-    },
-    {
      "k": "C:1 + Goal + Under 4.5",
      "label": "1 + Goal + Under 4.5",
-     "p": 0.167,
+     "p": 0.1529,
      "quota": 5.49,
      "p_impl": 0.1821,
-     "ev": -0.0832,
+     "ev": -0.1606,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.1698,
@@ -3657,45 +3497,45 @@
     }
    ],
    "pronostico": {
-    "k": "1",
-    "label": "1 (casa)",
-    "p": 0.6408,
-    "quota": 1.45,
-    "p_impl": 0.6897,
-    "ev": -0.0708,
+    "k": "U3.5",
+    "label": "Under 3.5",
+    "p": 0.7384,
+    "quota": 1.4,
+    "p_impl": 0.7143,
+    "ev": 0.0338,
     "ht": false,
-    "cat": "senza valore"
+    "cat": "probabile"
    },
    "p": {
-    "1": 0.6408,
-    "X": 0.2161,
-    "2": 0.1431,
-    "GG": 0.5209,
-    "NG": 0.4791,
-    "O0.5": 0.9404,
-    "U0.5": 0.0596,
-    "O1.5": 0.802,
-    "U1.5": 0.198,
-    "O2.5": 0.5672,
-    "U2.5": 0.4328,
-    "O3.5": 0.3433,
-    "U3.5": 0.6567,
-    "H_O0.5": 0.8742,
-    "A_O0.5": 0.5872,
-    "H_O1.5": 0.6133,
-    "A_O1.5": 0.2219,
-    "1X": 0.8569,
-    "X2": 0.3592,
-    "12": 0.7839,
-    "DNB1": 0.8175,
-    "DNB2": 0.1825,
-    "1X_O1.5": 0.6973,
-    "X2_U3.5": 0.2693,
-    "HT1": 0.4751,
-    "HTX": 0.3719,
-    "HT2": 0.153,
-    "HT_O0.5": 0.7358,
-    "HT_O1.5": 0.3841
+    "1": 0.5837,
+    "X": 0.2499,
+    "2": 0.1663,
+    "GG": 0.4766,
+    "NG": 0.5234,
+    "O0.5": 0.9161,
+    "U0.5": 0.0839,
+    "O1.5": 0.7393,
+    "U1.5": 0.2607,
+    "O2.5": 0.4788,
+    "U2.5": 0.5212,
+    "O3.5": 0.2616,
+    "U3.5": 0.7384,
+    "H_O0.5": 0.8272,
+    "A_O0.5": 0.5655,
+    "H_O1.5": 0.5238,
+    "A_O1.5": 0.2033,
+    "1X": 0.8337,
+    "X2": 0.4163,
+    "12": 0.7501,
+    "DNB1": 0.7783,
+    "DNB2": 0.2217,
+    "1X_O1.5": 0.6267,
+    "X2_U3.5": 0.3355,
+    "HT1": 0.4259,
+    "HTX": 0.4114,
+    "HT2": 0.1626,
+    "HT_O0.5": 0.6881,
+    "HT_O1.5": 0.3247
    },
    "avvisi": [],
    "contesto": []
@@ -3724,8 +3564,8 @@
    },
    "risultato_modello": "2-0",
    "lam": [
-    2.24,
-    0.8
+    2.01,
+    0.74
    ],
    "margine_1x2": 0.0657,
    "p_mercato": {
@@ -3740,61 +3580,61 @@
    "risultati": [
     [
      "2-0",
-     0.1202
+     0.1296
     ],
     [
      "1-0",
-     0.1005
+     0.1211
     ],
     [
-     "2-1",
-     0.096
+     "1-1",
+     0.1023
     ]
    ],
    "combo": [
     [
      "1 + Over 1.5",
-     0.5937
-    ],
-    [
-     "1 + Over 2.5",
-     0.4735
+     0.5445
     ],
     [
      "1 + Under 3.5",
-     0.4064
+     0.4332
+    ],
+    [
+     "1 + Over 2.5",
+     0.4149
     ],
     [
      "1 + No Goal",
-     0.3953
+     0.4074
     ],
     [
      "1 + No Goal + Under 3.5",
-     0.3104
-    ],
-    [
-     "1 + Goal",
-     0.2989
+     0.3377
     ],
     [
      "1 + No Goal + Over 1.5",
-     0.2948
+     0.2863
+    ],
+    [
+     "1 + Goal",
+     0.2582
     ],
     [
      "1 + Under 2.5",
-     0.2207
+     0.2507
     ],
     [
      "1 + Goal + Over 3.5",
-     0.2029
-    ],
-    [
-     "1 + No Goal + Over 2.5",
-     0.1746
+     0.1628
     ],
     [
      "1 + Goal + Under 4.5",
-     0.1676
+     0.1595
+    ],
+    [
+     "1 + No Goal + Over 2.5",
+     0.1567
     ]
    ],
    "combo_mercato": {
@@ -4187,306 +4027,306 @@
     {
      "k": "1",
      "label": "1 (casa)",
-     "p": 0.6941,
+     "p": 0.6656,
      "quota": 1.35,
      "p_impl": 0.7407,
-     "ev": -0.0629,
+     "ev": -0.1014,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "X",
      "label": "X (pareggio)",
-     "p": 0.1941,
+     "p": 0.2153,
      "quota": 5.0,
      "p_impl": 0.2,
-     "ev": -0.0293,
+     "ev": 0.0766,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "2",
      "label": "2 (ospite)",
-     "p": 0.1117,
+     "p": 0.1191,
      "quota": 8.0,
      "p_impl": 0.125,
-     "ev": -0.1062,
+     "ev": -0.0475,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "1X",
      "label": "Doppia chance 1X",
-     "p": 0.8883,
+     "p": 0.8809,
      "quota": 1.05,
      "p_impl": 0.9524,
-     "ev": -0.0673,
+     "ev": -0.075,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "12",
      "label": "Doppia chance 12",
-     "p": 0.8059,
+     "p": 0.7847,
      "quota": 1.14,
      "p_impl": 0.8772,
-     "ev": -0.0813,
+     "ev": -0.1055,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "X2",
      "label": "Doppia chance X2",
-     "p": 0.3059,
+     "p": 0.3344,
      "quota": 2.95,
      "p_impl": 0.339,
-     "ev": -0.0977,
+     "ev": -0.0136,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "DNB1",
      "label": "Draw No Bet 1",
-     "p": 0.8614,
+     "p": 0.8483,
      "quota": 1.08,
      "p_impl": 0.9259,
-     "ev": -0.0697,
+     "ev": -0.0839,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "DNB2",
      "label": "Draw No Bet 2",
-     "p": 0.1386,
+     "p": 0.1517,
      "quota": 6.2,
      "p_impl": 0.1613,
-     "ev": -0.1404,
+     "ev": -0.0592,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "GG",
      "label": "Goal",
-     "p": 0.4983,
+     "p": 0.4592,
      "quota": 1.85,
      "p_impl": 0.5405,
-     "ev": -0.0782,
+     "ev": -0.1505,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "NG",
      "label": "No Goal",
-     "p": 0.5017,
+     "p": 0.5408,
      "quota": 1.83,
      "p_impl": 0.5464,
-     "ev": -0.0818,
+     "ev": -0.0103,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U0.5",
      "label": "Under 0.5",
-     "p": 0.0548,
+     "p": 0.0715,
      "quota": 13.5,
      "p_impl": 0.0741,
-     "ev": -0.2607,
+     "ev": -0.0351,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "O1.5",
      "label": "Over 1.5",
-     "p": 0.8134,
+     "p": 0.7679,
      "quota": 1.15,
      "p_impl": 0.8696,
-     "ev": -0.0646,
+     "ev": -0.1169,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "U1.5",
      "label": "Under 1.5",
-     "p": 0.1866,
+     "p": 0.2321,
      "quota": 4.5,
      "p_impl": 0.2222,
-     "ev": -0.1602,
+     "ev": 0.0442,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "O2.5",
      "label": "Over 2.5",
-     "p": 0.5854,
+     "p": 0.5187,
      "quota": 1.57,
      "p_impl": 0.6369,
-     "ev": -0.081,
+     "ev": -0.1857,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U2.5",
      "label": "Under 2.5",
-     "p": 0.4146,
+     "p": 0.4813,
      "quota": 2.2,
      "p_impl": 0.4545,
-     "ev": -0.0878,
+     "ev": 0.0589,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "O3.5",
      "label": "Over 3.5",
-     "p": 0.3614,
+     "p": 0.2971,
      "quota": 2.45,
      "p_impl": 0.4082,
-     "ev": -0.1146,
+     "ev": -0.2722,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "alto rischio"
     },
     {
      "k": "U3.5",
      "label": "Under 3.5",
-     "p": 0.6386,
+     "p": 0.7029,
      "quota": 1.45,
      "p_impl": 0.6897,
-     "ev": -0.074,
+     "ev": 0.0192,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "probabile"
     },
     {
      "k": "H_O0.5",
      "label": "Gol casa Over 0.5",
-     "p": 0.8935,
+     "p": 0.8666,
      "quota": 1.02,
      "p_impl": 0.9804,
-     "ev": -0.0886,
+     "ev": -0.1161,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "A_O0.5",
      "label": "Gol ospite Over 0.5",
-     "p": 0.55,
+     "p": 0.5211,
      "quota": 1.67,
      "p_impl": 0.5988,
-     "ev": -0.0816,
+     "ev": -0.1297,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "H_O1.5",
      "label": "Gol casa Over 1.5",
-     "p": 0.6551,
+     "p": 0.5978,
      "quota": 1.37,
      "p_impl": 0.7299,
-     "ev": -0.1025,
+     "ev": -0.181,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "A_O1.5",
      "label": "Gol ospite Over 1.5",
-     "p": 0.1906,
+     "p": 0.1685,
      "quota": 4.6,
      "p_impl": 0.2174,
-     "ev": -0.123,
+     "ev": -0.2247,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "HT1",
      "label": "1 primo tempo",
-     "p": 0.5142,
+     "p": 0.4852,
      "quota": 1.8,
      "p_impl": 0.5556,
-     "ev": -0.0745,
+     "ev": -0.1267,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "HTX",
      "label": "X primo tempo",
-     "p": 0.3558,
+     "p": 0.3839,
      "quota": 2.55,
      "p_impl": 0.3922,
-     "ev": -0.0928,
+     "ev": -0.021,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "HT2",
      "label": "2 primo tempo",
-     "p": 0.13,
+     "p": 0.1309,
      "quota": 6.8,
      "p_impl": 0.1471,
-     "ev": -0.1157,
+     "ev": -0.1097,
      "ht": true,
      "cat": "alto rischio"
     },
     {
      "k": "HT_O0.5",
      "label": "Over 0.5 primo tempo",
-     "p": 0.7452,
+     "p": 0.71,
      "quota": 1.25,
      "p_impl": 0.8,
-     "ev": -0.0685,
+     "ev": -0.1125,
      "ht": true,
      "cat": "probabile"
     },
     {
      "k": "HT_O1.5",
      "label": "Over 1.5 primo tempo",
-     "p": 0.3968,
+     "p": 0.351,
      "quota": 2.3,
      "p_impl": 0.4348,
-     "ev": -0.0873,
+     "ev": -0.1928,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "C:1 + Over 1.5",
      "label": "1 + Over 1.5",
-     "p": 0.5937,
+     "p": 0.5445,
      "quota": 1.58,
      "p_impl": 0.6329,
-     "ev": -0.062,
+     "ev": -0.1397,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.5944,
      "cat": "senza valore"
     },
     {
-     "k": "C:1 + Over 2.5",
-     "label": "1 + Over 2.5",
-     "p": 0.4735,
-     "quota": 2.0,
-     "p_impl": 0.5,
-     "ev": -0.053,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.4685,
-     "cat": "senza valore"
-    },
-    {
      "k": "C:1 + Under 3.5",
      "label": "1 + Under 3.5",
-     "p": 0.4064,
+     "p": 0.4332,
      "quota": 2.22,
      "p_impl": 0.4505,
-     "ev": -0.0978,
+     "ev": -0.0383,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.4222,
      "cat": "senza valore"
     },
     {
+     "k": "C:1 + Over 2.5",
+     "label": "1 + Over 2.5",
+     "p": 0.4149,
+     "quota": 2.0,
+     "p_impl": 0.5,
+     "ev": -0.1702,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.4685,
+     "cat": "senza valore"
+    },
+    {
      "k": "C:1 + No Goal",
      "label": "1 + No Goal",
-     "p": 0.3953,
+     "p": 0.4074,
      "quota": 2.3,
      "p_impl": 0.4348,
-     "ev": -0.0908,
+     "ev": -0.063,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.408,
@@ -4495,46 +4335,46 @@
     {
      "k": "C:1 + No Goal + Under 3.5",
      "label": "1 + No Goal + Under 3.5",
-     "p": 0.3104,
+     "p": 0.3377,
      "quota": 2.87,
      "p_impl": 0.3484,
-     "ev": -0.1092,
+     "ev": -0.0308,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.3267,
      "cat": "alto rischio"
     },
     {
-     "k": "C:1 + Goal",
-     "label": "1 + Goal",
-     "p": 0.2989,
-     "quota": 3.16,
-     "p_impl": 0.3165,
-     "ev": -0.0555,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2967,
-     "cat": "alto rischio"
-    },
-    {
      "k": "C:1 + No Goal + Over 1.5",
      "label": "1 + No Goal + Over 1.5",
-     "p": 0.2948,
+     "p": 0.2863,
      "quota": 3.15,
      "p_impl": 0.3175,
-     "ev": -0.0714,
+     "ev": -0.0982,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2977,
      "cat": "alto rischio"
     },
     {
+     "k": "C:1 + Goal",
+     "label": "1 + Goal",
+     "p": 0.2582,
+     "quota": 3.16,
+     "p_impl": 0.3165,
+     "ev": -0.1841,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.2967,
+     "cat": "alto rischio"
+    },
+    {
      "k": "C:1 + Under 2.5",
      "label": "1 + Under 2.5",
-     "p": 0.2207,
+     "p": 0.2507,
      "quota": 3.97,
      "p_impl": 0.2519,
-     "ev": -0.1238,
+     "ev": -0.0047,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2362,
@@ -4543,80 +4383,80 @@
     {
      "k": "C:1 + Goal + Over 3.5",
      "label": "1 + Goal + Over 3.5",
-     "p": 0.2029,
+     "p": 0.1628,
      "quota": 4.66,
      "p_impl": 0.2146,
-     "ev": -0.0545,
+     "ev": -0.2414,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2013,
      "cat": "alto rischio"
     },
     {
-     "k": "C:1 + No Goal + Over 2.5",
-     "label": "1 + No Goal + Over 2.5",
-     "p": 0.1746,
-     "quota": 5.46,
-     "p_impl": 0.1832,
-     "ev": -0.0467,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.1718,
-     "cat": "alto rischio"
-    },
-    {
      "k": "C:1 + Goal + Under 4.5",
      "label": "1 + Goal + Under 4.5",
-     "p": 0.1676,
+     "p": 0.1595,
      "quota": 5.59,
      "p_impl": 0.1789,
-     "ev": -0.0631,
+     "ev": -0.1084,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.1679,
      "cat": "alto rischio"
+    },
+    {
+     "k": "C:1 + No Goal + Over 2.5",
+     "label": "1 + No Goal + Over 2.5",
+     "p": 0.1567,
+     "quota": 5.46,
+     "p_impl": 0.1832,
+     "ev": -0.1444,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.1718,
+     "cat": "alto rischio"
     }
    ],
    "pronostico": {
-    "k": "1",
-    "label": "1 (casa)",
-    "p": 0.6941,
-    "quota": 1.35,
-    "p_impl": 0.7407,
-    "ev": -0.0629,
+    "k": "U3.5",
+    "label": "Under 3.5",
+    "p": 0.7029,
+    "quota": 1.45,
+    "p_impl": 0.6897,
+    "ev": 0.0192,
     "ht": false,
-    "cat": "senza valore"
+    "cat": "probabile"
    },
    "p": {
-    "1": 0.6941,
-    "X": 0.1941,
-    "2": 0.1117,
-    "GG": 0.4983,
-    "NG": 0.5017,
-    "O0.5": 0.9452,
-    "U0.5": 0.0548,
-    "O1.5": 0.8134,
-    "U1.5": 0.1866,
-    "O2.5": 0.5854,
-    "U2.5": 0.4146,
-    "O3.5": 0.3614,
-    "U3.5": 0.6386,
-    "H_O0.5": 0.8935,
-    "A_O0.5": 0.55,
-    "H_O1.5": 0.6551,
-    "A_O1.5": 0.1906,
-    "1X": 0.8883,
-    "X2": 0.3059,
-    "12": 0.8059,
-    "DNB1": 0.8614,
-    "DNB2": 0.1386,
-    "1X_O1.5": 0.733,
-    "X2_U3.5": 0.2322,
-    "HT1": 0.5142,
-    "HTX": 0.3558,
-    "HT2": 0.13,
-    "HT_O0.5": 0.7452,
-    "HT_O1.5": 0.3968
+    "1": 0.6656,
+    "X": 0.2153,
+    "2": 0.1191,
+    "GG": 0.4592,
+    "NG": 0.5408,
+    "O0.5": 0.9285,
+    "U0.5": 0.0715,
+    "O1.5": 0.7679,
+    "U1.5": 0.2321,
+    "O2.5": 0.5187,
+    "U2.5": 0.4813,
+    "O3.5": 0.2971,
+    "U3.5": 0.7029,
+    "H_O0.5": 0.8666,
+    "A_O0.5": 0.5211,
+    "H_O1.5": 0.5978,
+    "A_O1.5": 0.1685,
+    "1X": 0.8809,
+    "X2": 0.3344,
+    "12": 0.7847,
+    "DNB1": 0.8483,
+    "DNB2": 0.1517,
+    "1X_O1.5": 0.6883,
+    "X2_U3.5": 0.2698,
+    "HT1": 0.4852,
+    "HTX": 0.3839,
+    "HT2": 0.1309,
+    "HT_O0.5": 0.71,
+    "HT_O1.5": 0.351
    },
    "avvisi": [
     "quote ferme da 5 giorni: verificare sul sito"
@@ -4647,8 +4487,8 @@
    },
    "risultato_modello": "1-1",
    "lam": [
-    1.73,
-    0.97
+    1.66,
+    1.01
    ],
    "margine_1x2": 0.0691,
    "p_mercato": {
@@ -4663,53 +4503,49 @@
    "risultati": [
     [
      "1-1",
-     0.122
+     0.1255
     ],
     [
      "1-0",
-     0.1076
+     0.1056
     ],
     [
-     "2-0",
-     0.1007
+     "2-1",
+     0.0963
     ]
    ],
    "combo": [
     [
      "1 + Over 1.5",
-     0.4354
+     0.4102
     ],
     [
      "1 + Under 3.5",
-     0.3638
+     0.3499
     ],
     [
      "1 + Over 2.5",
-     0.3347
+     0.3149
     ],
     [
      "1 + No Goal",
-     0.3032
+     0.2852
     ],
     [
      "1 + No Goal + Under 3.5",
-     0.2663
+     0.2535
     ],
     [
      "1 + Goal",
-     0.2398
+     0.2306
     ],
     [
      "1 + Under 2.5",
-     0.2084
+     0.2009
     ],
     [
      "1 + No Goal + Over 1.5",
-     0.1956
-    ],
-    [
-     "1 + Goal + Under 4.5",
-     0.1536
+     0.1796
     ]
    ],
    "combo_mercato": {
@@ -5110,270 +4946,270 @@
     {
      "k": "1",
      "label": "1 (casa)",
-     "p": 0.543,
+     "p": 0.5158,
      "quota": 1.72,
      "p_impl": 0.5814,
-     "ev": -0.066,
+     "ev": -0.1128,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "X",
      "label": "X (pareggio)",
-     "p": 0.2555,
+     "p": 0.2629,
      "quota": 3.7,
      "p_impl": 0.2703,
-     "ev": -0.0546,
+     "ev": -0.0273,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "2",
      "label": "2 (ospite)",
-     "p": 0.2014,
+     "p": 0.2213,
      "quota": 4.6,
      "p_impl": 0.2174,
-     "ev": -0.0734,
+     "ev": 0.0181,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "1X",
      "label": "Doppia chance 1X",
-     "p": 0.7986,
+     "p": 0.7787,
      "quota": 1.16,
      "p_impl": 0.8621,
-     "ev": -0.0737,
+     "ev": -0.0967,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "12",
      "label": "Doppia chance 12",
-     "p": 0.7445,
+     "p": 0.7371,
      "quota": 1.23,
      "p_impl": 0.813,
-     "ev": -0.0843,
+     "ev": -0.0933,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "X2",
      "label": "Doppia chance X2",
-     "p": 0.457,
+     "p": 0.4842,
      "quota": 2.0,
      "p_impl": 0.5,
-     "ev": -0.0861,
+     "ev": -0.0316,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "DNB1",
      "label": "Draw No Bet 1",
-     "p": 0.7294,
+     "p": 0.6997,
      "quota": 1.27,
      "p_impl": 0.7874,
-     "ev": -0.0736,
+     "ev": -0.1113,
      "ht": false,
-     "cat": "probabile"
+     "cat": "senza valore"
     },
     {
      "k": "DNB2",
      "label": "Draw No Bet 2",
-     "p": 0.2706,
+     "p": 0.3003,
      "quota": 3.35,
      "p_impl": 0.2985,
-     "ev": -0.0936,
+     "ev": 0.0058,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "GG",
      "label": "Goal",
-     "p": 0.5188,
+     "p": 0.5243,
      "quota": 1.73,
      "p_impl": 0.578,
-     "ev": -0.1024,
+     "ev": -0.093,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "NG",
      "label": "No Goal",
-     "p": 0.4812,
+     "p": 0.4757,
      "quota": 1.95,
      "p_impl": 0.5128,
-     "ev": -0.0617,
+     "ev": -0.0724,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U0.5",
      "label": "Under 0.5",
-     "p": 0.0766,
+     "p": 0.0786,
      "quota": 9.8,
      "p_impl": 0.102,
-     "ev": -0.2491,
+     "ev": -0.2297,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "O1.5",
      "label": "Over 1.5",
-     "p": 0.7593,
+     "p": 0.755,
      "quota": 1.27,
      "p_impl": 0.7874,
-     "ev": -0.0356,
+     "ev": -0.0412,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "U1.5",
      "label": "Under 1.5",
-     "p": 0.2407,
+     "p": 0.245,
      "quota": 3.35,
      "p_impl": 0.2985,
-     "ev": -0.1938,
+     "ev": -0.1792,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "O2.5",
      "label": "Over 2.5",
-     "p": 0.505,
+     "p": 0.4988,
      "quota": 1.82,
      "p_impl": 0.5495,
-     "ev": -0.0809,
+     "ev": -0.0922,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U2.5",
      "label": "Under 2.5",
-     "p": 0.495,
+     "p": 0.5012,
      "quota": 1.85,
      "p_impl": 0.5405,
-     "ev": -0.0842,
+     "ev": -0.0728,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "O3.5",
      "label": "Over 3.5",
-     "p": 0.2847,
+     "p": 0.2791,
      "quota": 3.0,
      "p_impl": 0.3333,
-     "ev": -0.146,
+     "ev": -0.1626,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "U3.5",
      "label": "Under 3.5",
-     "p": 0.7153,
+     "p": 0.7209,
      "quota": 1.3,
      "p_impl": 0.7692,
-     "ev": -0.0701,
+     "ev": -0.0629,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "H_O0.5",
      "label": "Gol casa Over 0.5",
-     "p": 0.8221,
+     "p": 0.8095,
      "quota": 1.11,
      "p_impl": 0.9009,
-     "ev": -0.0875,
+     "ev": -0.1015,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "A_O0.5",
      "label": "Gol ospite Over 0.5",
-     "p": 0.6201,
+     "p": 0.6362,
      "quota": 1.45,
      "p_impl": 0.6897,
-     "ev": -0.1008,
+     "ev": -0.0775,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "H_O1.5",
      "label": "Gol casa Over 1.5",
-     "p": 0.5149,
+     "p": 0.4936,
      "quota": 1.75,
      "p_impl": 0.5714,
-     "ev": -0.0989,
+     "ev": -0.1362,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "A_O1.5",
      "label": "Gol ospite Over 1.5",
-     "p": 0.2525,
+     "p": 0.2683,
      "quota": 3.45,
      "p_impl": 0.2899,
-     "ev": -0.129,
+     "ev": -0.0742,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "HT1",
      "label": "1 primo tempo",
-     "p": 0.4037,
+     "p": 0.3859,
      "quota": 2.3,
      "p_impl": 0.4348,
-     "ev": -0.0714,
+     "ev": -0.1123,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "HTX",
      "label": "X primo tempo",
-     "p": 0.407,
+     "p": 0.412,
      "quota": 2.2,
      "p_impl": 0.4545,
-     "ev": -0.1047,
+     "ev": -0.0936,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "HT2",
      "label": "2 primo tempo",
-     "p": 0.1893,
+     "p": 0.2021,
      "quota": 4.9,
      "p_impl": 0.2041,
-     "ev": -0.0725,
+     "ev": -0.0099,
      "ht": true,
      "cat": "alto rischio"
     },
     {
      "k": "HT_O0.5",
      "label": "Over 0.5 primo tempo",
-     "p": 0.7025,
+     "p": 0.6992,
      "quota": 1.33,
      "p_impl": 0.7519,
-     "ev": -0.0656,
+     "ev": -0.0701,
      "ht": true,
-     "cat": "probabile"
+     "cat": "senza valore"
     },
     {
      "k": "HT_O1.5",
      "label": "Over 1.5 primo tempo",
-     "p": 0.3419,
+     "p": 0.3378,
      "quota": 2.65,
      "p_impl": 0.3774,
-     "ev": -0.094,
+     "ev": -0.1049,
      "ht": true,
      "cat": "alto rischio"
     },
     {
      "k": "C:1 + Over 1.5",
      "label": "1 + Over 1.5",
-     "p": 0.4354,
+     "p": 0.4102,
      "quota": 2.2,
      "p_impl": 0.4545,
-     "ev": -0.0421,
+     "ev": -0.0976,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.4248,
@@ -5382,22 +5218,22 @@
     {
      "k": "C:1 + Under 3.5",
      "label": "1 + Under 3.5",
-     "p": 0.3638,
+     "p": 0.3499,
      "quota": 2.48,
      "p_impl": 0.4032,
-     "ev": -0.0978,
+     "ev": -0.1322,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.3768,
-     "cat": "senza valore"
+     "cat": "alto rischio"
     },
     {
      "k": "C:1 + Over 2.5",
      "label": "1 + Over 2.5",
-     "p": 0.3347,
+     "p": 0.3149,
      "quota": 2.86,
      "p_impl": 0.3497,
-     "ev": -0.0428,
+     "ev": -0.0994,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.3271,
@@ -5406,10 +5242,10 @@
     {
      "k": "C:1 + No Goal",
      "label": "1 + No Goal",
-     "p": 0.3032,
+     "p": 0.2852,
      "quota": 3.07,
      "p_impl": 0.3257,
-     "ev": -0.0692,
+     "ev": -0.1244,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.3042,
@@ -5418,10 +5254,10 @@
     {
      "k": "C:1 + No Goal + Under 3.5",
      "label": "1 + No Goal + Under 3.5",
-     "p": 0.2663,
+     "p": 0.2535,
      "quota": 3.39,
      "p_impl": 0.295,
-     "ev": -0.0972,
+     "ev": -0.1406,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2762,
@@ -5430,10 +5266,10 @@
     {
      "k": "C:1 + Goal",
      "label": "1 + Goal",
-     "p": 0.2398,
+     "p": 0.2306,
      "quota": 3.73,
      "p_impl": 0.2681,
-     "ev": -0.1055,
+     "ev": -0.1399,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2507,
@@ -5442,10 +5278,10 @@
     {
      "k": "C:1 + Under 2.5",
      "label": "1 + Under 2.5",
-     "p": 0.2084,
+     "p": 0.2009,
      "quota": 4.11,
      "p_impl": 0.2433,
-     "ev": -0.1435,
+     "ev": -0.1743,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2278,
@@ -5454,68 +5290,56 @@
     {
      "k": "C:1 + No Goal + Over 1.5",
      "label": "1 + No Goal + Over 1.5",
-     "p": 0.1956,
+     "p": 0.1796,
      "quota": 5.37,
      "p_impl": 0.1862,
-     "ev": 0.0504,
+     "ev": -0.0355,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.1742,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:1 + Goal + Under 4.5",
-     "label": "1 + Goal + Under 4.5",
-     "p": 0.1536,
-     "quota": 5.94,
-     "p_impl": 0.1684,
-     "ev": -0.0876,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.1574,
      "cat": "alto rischio"
     }
    ],
    "pronostico": {
     "k": "U3.5",
     "label": "Under 3.5",
-    "p": 0.7153,
+    "p": 0.7209,
     "quota": 1.3,
     "p_impl": 0.7692,
-    "ev": -0.0701,
+    "ev": -0.0629,
     "ht": false,
     "cat": "probabile"
    },
    "p": {
-    "1": 0.543,
-    "X": 0.2555,
-    "2": 0.2014,
-    "GG": 0.5188,
-    "NG": 0.4812,
-    "O0.5": 0.9234,
-    "U0.5": 0.0766,
-    "O1.5": 0.7593,
-    "U1.5": 0.2407,
-    "O2.5": 0.505,
-    "U2.5": 0.495,
-    "O3.5": 0.2847,
-    "U3.5": 0.7153,
-    "H_O0.5": 0.8221,
-    "A_O0.5": 0.6201,
-    "H_O1.5": 0.5149,
-    "A_O1.5": 0.2525,
-    "1X": 0.7986,
-    "X2": 0.457,
-    "12": 0.7445,
-    "DNB1": 0.7294,
-    "DNB2": 0.2706,
-    "1X_O1.5": 0.6143,
-    "X2_U3.5": 0.3515,
-    "HT1": 0.4037,
-    "HTX": 0.407,
-    "HT2": 0.1893,
-    "HT_O0.5": 0.7025,
-    "HT_O1.5": 0.3419
+    "1": 0.5158,
+    "X": 0.2629,
+    "2": 0.2213,
+    "GG": 0.5243,
+    "NG": 0.4757,
+    "O0.5": 0.9214,
+    "U0.5": 0.0786,
+    "O1.5": 0.755,
+    "U1.5": 0.245,
+    "O2.5": 0.4988,
+    "U2.5": 0.5012,
+    "O3.5": 0.2791,
+    "U3.5": 0.7209,
+    "H_O0.5": 0.8095,
+    "A_O0.5": 0.6362,
+    "H_O1.5": 0.4936,
+    "A_O1.5": 0.2683,
+    "1X": 0.7787,
+    "X2": 0.4842,
+    "12": 0.7371,
+    "DNB1": 0.6997,
+    "DNB2": 0.3003,
+    "1X_O1.5": 0.5945,
+    "X2_U3.5": 0.371,
+    "HT1": 0.3859,
+    "HTX": 0.412,
+    "HT2": 0.2021,
+    "HT_O0.5": 0.6992,
+    "HT_O1.5": 0.3378
    },
    "avvisi": [
     "quote ferme da 5 giorni: verificare sul sito"
@@ -5546,8 +5370,8 @@
    },
    "risultato_modello": "1-1",
    "lam": [
-    1.28,
-    1.36
+    1.32,
+    1.29
    ],
    "margine_1x2": 0.0713,
    "p_mercato": {
@@ -5562,165 +5386,165 @@
    "risultati": [
     [
      "1-1",
-     0.1343
+     0.1351
+    ],
+    [
+     "1-0",
+     0.0867
     ],
     [
      "0-1",
-     0.087
-    ],
-    [
-     "1-2",
-     0.0842
+     0.0846
     ]
    ],
    "combo": [
     [
-     "X2 + Over 1.5",
-     0.4891
-    ],
-    [
-     "X2 + Under 3.5",
-     0.4823
-    ],
-    [
      "1X + Under 3.5",
-     0.4612
+     0.4797
     ],
     [
      "1X + Over 1.5",
-     0.4606
+     0.4782
     ],
     [
-     "X2 + Goal",
-     0.3803
+     "X2 + Under 3.5",
+     0.4714
     ],
     [
-     "X2 + Under 2.5",
-     0.3684
+     "X2 + Over 1.5",
+     0.4671
     ],
     [
      "1X + Goal",
-     0.3659
+     0.3737
     ],
     [
      "1X + Under 2.5",
-     0.3564
+     0.3689
     ],
     [
-     "X2 + Goal + Under 4.5",
-     0.3106
+     "X2 + Goal",
+     0.3682
+    ],
+    [
+     "X2 + Under 2.5",
+     0.3641
     ],
     [
      "1X + Goal + Under 4.5",
-     0.3021
+     0.3076
     ],
     [
-     "2 + Over 1.5",
-     0.2892
-    ],
-    [
-     "X2 + Over 2.5",
-     0.2892
-    ],
-    [
-     "X2 + No Goal",
-     0.2773
+     "X2 + Goal + Under 4.5",
+     0.3043
     ],
     [
      "1X + Over 2.5",
-     0.2675
-    ],
-    [
-     "2 + Under 3.5",
-     0.2665
+     0.2792
     ],
     [
      "1 + Over 1.5",
-     0.2606
+     0.2784
     ],
     [
      "1X + No Goal",
-     0.2579
+     0.2744
     ],
     [
-     "X2 + Goal + Over 2.5",
-     0.246
+     "X2 + Over 2.5",
+     0.2708
+    ],
+    [
+     "2 + Over 1.5",
+     0.2672
+    ],
+    [
+     "X2 + No Goal",
+     0.2667
     ],
     [
      "1 + Under 3.5",
-     0.2455
+     0.2614
     ],
     [
-     "X2 + No Goal + Under 2.5",
-     0.2341
+     "2 + Under 3.5",
+     0.2531
     ],
     [
      "1X + Goal + Over 2.5",
-     0.2316
-    ],
-    [
-     "2 + Over 2.5",
-     0.2235
+     0.2386
     ],
     [
      "1X + No Goal + Under 2.5",
-     0.2221
+     0.2338
     ],
     [
-     "X2 + Goal + Under 3.5",
-     0.2185
+     "X2 + Goal + Over 2.5",
+     0.2331
+    ],
+    [
+     "X2 + No Goal + Under 2.5",
+     0.229
     ],
     [
      "X + Under 3.5",
-     0.2157
+     0.2183
     ],
     [
      "X + Under 2.5",
-     0.2157
+     0.2183
     ],
     [
      "1X + Goal + Under 3.5",
-     0.214
+     0.2177
+    ],
+    [
+     "X2 + Goal + Under 3.5",
+     0.216
     ],
     [
      "1 + Over 2.5",
-     0.2018
+     0.2145
+    ],
+    [
+     "2 + Over 2.5",
+     0.206
     ],
     [
      "X + Over 1.5",
-     0.1999
+     0.1998
     ],
     [
      "X + Goal",
-     0.1999
-    ],
-    [
-     "2 + No Goal",
-     0.1958
-    ],
-    [
-     "2 + Goal",
-     0.1803
+     0.1998
     ],
     [
      "1 + No Goal",
-     0.1765
+     0.1912
+    ],
+    [
+     "2 + No Goal",
+     0.1835
     ],
     [
      "1 + Goal",
-     0.166
+     0.1739
     ],
     [
-     "X2 + Goal + Over 3.5",
-     0.1618
-    ],
-    [
-     "2 + Under 2.5",
-     0.1526
+     "2 + Goal",
+     0.1683
     ],
     [
      "1X + Goal + Over 3.5",
-     0.1519
+     0.156
+    ],
+    [
+     "X2 + Goal + Over 3.5",
+     0.1522
+    ],
+    [
+     "1 + Under 2.5",
+     0.1506
     ]
    ],
    "combo_mercato": {
@@ -6121,294 +5945,270 @@
     {
      "k": "1",
      "label": "1 (casa)",
-     "p": 0.3424,
+     "p": 0.3651,
      "quota": 2.75,
      "p_impl": 0.3636,
-     "ev": -0.0583,
+     "ev": 0.004,
      "ht": false,
-     "cat": "alto rischio"
+     "cat": "senza valore"
     },
     {
      "k": "X",
      "label": "X (pareggio)",
-     "p": 0.2814,
+     "p": 0.283,
      "quota": 3.25,
      "p_impl": 0.3077,
-     "ev": -0.0855,
+     "ev": -0.0802,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "2",
      "label": "2 (ospite)",
-     "p": 0.3762,
+     "p": 0.3519,
      "quota": 2.5,
      "p_impl": 0.4,
-     "ev": -0.0596,
+     "ev": -0.1203,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "1X",
      "label": "Doppia chance 1X",
-     "p": 0.6238,
+     "p": 0.6481,
      "quota": 1.47,
      "p_impl": 0.6803,
-     "ev": -0.083,
+     "ev": -0.0473,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "12",
      "label": "Doppia chance 12",
-     "p": 0.7186,
+     "p": 0.717,
      "quota": 1.3,
      "p_impl": 0.7692,
-     "ev": -0.0658,
+     "ev": -0.0679,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "X2",
      "label": "Doppia chance X2",
-     "p": 0.6576,
+     "p": 0.6349,
      "quota": 1.4,
      "p_impl": 0.7143,
-     "ev": -0.0794,
+     "ev": -0.1111,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "DNB1",
      "label": "Draw No Bet 1",
-     "p": 0.4765,
+     "p": 0.5092,
      "quota": 1.95,
      "p_impl": 0.5128,
-     "ev": -0.0708,
+     "ev": -0.007,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "DNB2",
      "label": "Draw No Bet 2",
-     "p": 0.5235,
+     "p": 0.4908,
      "quota": 1.77,
      "p_impl": 0.565,
-     "ev": -0.0735,
+     "ev": -0.1313,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "GG",
      "label": "Goal",
-     "p": 0.5462,
+     "p": 0.5421,
      "quota": 1.65,
      "p_impl": 0.6061,
-     "ev": -0.0987,
+     "ev": -0.1056,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "NG",
      "label": "No Goal",
-     "p": 0.4538,
+     "p": 0.4579,
      "quota": 2.05,
      "p_impl": 0.4878,
-     "ev": -0.0698,
+     "ev": -0.0612,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U0.5",
      "label": "Under 0.5",
-     "p": 0.0815,
+     "p": 0.0832,
      "quota": 10.0,
      "p_impl": 0.1,
-     "ev": -0.1853,
+     "ev": -0.168,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "O1.5",
      "label": "Over 1.5",
-     "p": 0.7498,
+     "p": 0.7454,
      "quota": 1.24,
      "p_impl": 0.8065,
-     "ev": -0.0703,
+     "ev": -0.0756,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "U1.5",
      "label": "Under 1.5",
-     "p": 0.2502,
+     "p": 0.2546,
      "quota": 3.5,
      "p_impl": 0.2857,
-     "ev": -0.1241,
+     "ev": -0.1091,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "O2.5",
      "label": "Over 2.5",
-     "p": 0.491,
+     "p": 0.4853,
      "quota": 1.87,
      "p_impl": 0.5348,
-     "ev": -0.0818,
+     "ev": -0.0926,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U2.5",
      "label": "Under 2.5",
-     "p": 0.509,
+     "p": 0.5147,
      "quota": 1.82,
      "p_impl": 0.5495,
-     "ev": -0.0736,
+     "ev": -0.0632,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "O3.5",
      "label": "Over 3.5",
-     "p": 0.2722,
+     "p": 0.2672,
      "quota": 3.15,
      "p_impl": 0.3175,
-     "ev": -0.1425,
+     "ev": -0.1583,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "U3.5",
      "label": "Under 3.5",
-     "p": 0.7278,
+     "p": 0.7328,
      "quota": 1.27,
      "p_impl": 0.7874,
-     "ev": -0.0757,
+     "ev": -0.0693,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "H_O0.5",
      "label": "Gol casa Over 0.5",
-     "p": 0.7227,
+     "p": 0.7333,
      "quota": 1.25,
      "p_impl": 0.8,
-     "ev": -0.0966,
+     "ev": -0.0834,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "A_O0.5",
      "label": "Gol ospite Over 0.5",
-     "p": 0.7421,
+     "p": 0.7256,
      "quota": 1.22,
      "p_impl": 0.8197,
-     "ev": -0.0947,
+     "ev": -0.1147,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "H_O1.5",
      "label": "Gol casa Over 1.5",
-     "p": 0.367,
+     "p": 0.3808,
      "quota": 2.4,
      "p_impl": 0.4167,
-     "ev": -0.1192,
+     "ev": -0.0862,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "A_O1.5",
      "label": "Gol ospite Over 1.5",
-     "p": 0.3926,
+     "p": 0.3708,
      "quota": 2.25,
      "p_impl": 0.4444,
-     "ev": -0.1167,
+     "ev": -0.1658,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "HT1",
      "label": "1 primo tempo",
-     "p": 0.2784,
+     "p": 0.2918,
      "quota": 3.3,
      "p_impl": 0.303,
-     "ev": -0.0812,
+     "ev": -0.0372,
      "ht": true,
      "cat": "alto rischio"
     },
     {
      "k": "HTX",
      "label": "X primo tempo",
-     "p": 0.4224,
+     "p": 0.4246,
      "quota": 2.1,
      "p_impl": 0.4762,
-     "ev": -0.113,
+     "ev": -0.1083,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "HT2",
      "label": "2 primo tempo",
-     "p": 0.2992,
+     "p": 0.2836,
      "quota": 3.1,
      "p_impl": 0.3226,
-     "ev": -0.0725,
+     "ev": -0.1207,
      "ht": true,
      "cat": "alto rischio"
     },
     {
      "k": "HT_O0.5",
      "label": "Over 0.5 primo tempo",
-     "p": 0.6949,
+     "p": 0.6917,
      "quota": 1.35,
      "p_impl": 0.7407,
-     "ev": -0.0619,
+     "ev": -0.0662,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "HT_O1.5",
      "label": "Over 1.5 primo tempo",
-     "p": 0.3327,
+     "p": 0.3289,
      "quota": 2.7,
      "p_impl": 0.3704,
-     "ev": -0.1018,
+     "ev": -0.112,
      "ht": true,
      "cat": "alto rischio"
     },
     {
-     "k": "C:X2 + Over 1.5",
-     "label": "X2 + Over 1.5",
-     "p": 0.4891,
-     "quota": 1.9,
-     "p_impl": 0.5263,
-     "ev": -0.0707,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.4913,
-     "cat": "senza valore"
-    },
-    {
-     "k": "C:X2 + Under 3.5",
-     "label": "X2 + Under 3.5",
-     "p": 0.4823,
-     "quota": 1.95,
-     "p_impl": 0.5128,
-     "ev": -0.0595,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.4794,
-     "cat": "senza valore"
-    },
-    {
      "k": "C:1X + Under 3.5",
      "label": "1X + Under 3.5",
-     "p": 0.4612,
+     "p": 0.4797,
      "quota": 2.04,
      "p_impl": 0.4902,
-     "ev": -0.0592,
+     "ev": -0.0214,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.4577,
@@ -6417,46 +6217,46 @@
     {
      "k": "C:1X + Over 1.5",
      "label": "1X + Over 1.5",
-     "p": 0.4606,
+     "p": 0.4782,
      "quota": 2.01,
      "p_impl": 0.4975,
-     "ev": -0.0742,
+     "ev": -0.0388,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.4642,
      "cat": "senza valore"
     },
     {
-     "k": "C:X2 + Goal",
-     "label": "X2 + Goal",
-     "p": 0.3803,
-     "quota": 2.4,
-     "p_impl": 0.4167,
-     "ev": -0.0873,
+     "k": "C:X2 + Under 3.5",
+     "label": "X2 + Under 3.5",
+     "p": 0.4714,
+     "quota": 1.95,
+     "p_impl": 0.5128,
+     "ev": -0.0808,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.3896,
+     "p_mercato": 0.4794,
      "cat": "senza valore"
     },
     {
-     "k": "C:X2 + Under 2.5",
-     "label": "X2 + Under 2.5",
-     "p": 0.3684,
-     "quota": 2.51,
-     "p_impl": 0.3984,
-     "ev": -0.0753,
+     "k": "C:X2 + Over 1.5",
+     "label": "X2 + Over 1.5",
+     "p": 0.4671,
+     "quota": 1.9,
+     "p_impl": 0.5263,
+     "ev": -0.1125,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.3714,
+     "p_mercato": 0.4913,
      "cat": "senza valore"
     },
     {
      "k": "C:1X + Goal",
      "label": "1X + Goal",
-     "p": 0.3659,
+     "p": 0.3737,
      "quota": 2.48,
      "p_impl": 0.4032,
-     "ev": -0.0926,
+     "ev": -0.0732,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.3766,
@@ -6465,106 +6265,82 @@
     {
      "k": "C:1X + Under 2.5",
      "label": "1X + Under 2.5",
-     "p": 0.3564,
+     "p": 0.3689,
      "quota": 2.6,
      "p_impl": 0.3846,
-     "ev": -0.0734,
+     "ev": -0.0409,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.3591,
      "cat": "senza valore"
     },
     {
-     "k": "C:X2 + Goal + Under 4.5",
-     "label": "X2 + Goal + Under 4.5",
-     "p": 0.3106,
-     "quota": 2.95,
-     "p_impl": 0.339,
-     "ev": -0.0837,
+     "k": "C:X2 + Goal",
+     "label": "X2 + Goal",
+     "p": 0.3682,
+     "quota": 2.4,
+     "p_impl": 0.4167,
+     "ev": -0.1163,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.3166,
-     "cat": "alto rischio"
+     "p_mercato": 0.3896,
+     "cat": "senza valore"
+    },
+    {
+     "k": "C:X2 + Under 2.5",
+     "label": "X2 + Under 2.5",
+     "p": 0.3641,
+     "quota": 2.51,
+     "p_impl": 0.3984,
+     "ev": -0.0861,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.3714,
+     "cat": "senza valore"
     },
     {
      "k": "C:1X + Goal + Under 4.5",
      "label": "1X + Goal + Under 4.5",
-     "p": 0.3021,
+     "p": 0.3076,
      "quota": 3.03,
      "p_impl": 0.33,
-     "ev": -0.0846,
+     "ev": -0.068,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.3076,
      "cat": "alto rischio"
     },
     {
-     "k": "C:2 + Over 1.5",
-     "label": "2 + Over 1.5",
-     "p": 0.2892,
-     "quota": 3.35,
-     "p_impl": 0.2985,
-     "ev": -0.0312,
+     "k": "C:X2 + Goal + Under 4.5",
+     "label": "X2 + Goal + Under 4.5",
+     "p": 0.3043,
+     "quota": 2.95,
+     "p_impl": 0.339,
+     "ev": -0.1023,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.2788,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:X2 + Over 2.5",
-     "label": "X2 + Over 2.5",
-     "p": 0.2892,
-     "quota": 3.23,
-     "p_impl": 0.3096,
-     "ev": -0.0659,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2889,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:X2 + No Goal",
-     "label": "X2 + No Goal",
-     "p": 0.2773,
-     "quota": 3.45,
-     "p_impl": 0.2899,
-     "ev": -0.0433,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2706,
+     "p_mercato": 0.3166,
      "cat": "alto rischio"
     },
     {
      "k": "C:1X + Over 2.5",
      "label": "1X + Over 2.5",
-     "p": 0.2675,
+     "p": 0.2792,
      "quota": 3.46,
      "p_impl": 0.289,
-     "ev": -0.0744,
+     "ev": -0.034,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2694,
      "cat": "alto rischio"
     },
     {
-     "k": "C:2 + Under 3.5",
-     "label": "2 + Under 3.5",
-     "p": 0.2665,
-     "quota": 3.55,
-     "p_impl": 0.2817,
-     "ev": -0.0539,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2629,
-     "cat": "alto rischio"
-    },
-    {
      "k": "C:1 + Over 1.5",
      "label": "1 + Over 1.5",
-     "p": 0.2606,
+     "p": 0.2784,
      "quota": 3.71,
      "p_impl": 0.2695,
-     "ev": -0.0332,
+     "ev": 0.0329,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2517,
@@ -6573,106 +6349,130 @@
     {
      "k": "C:1X + No Goal",
      "label": "1X + No Goal",
-     "p": 0.2579,
+     "p": 0.2744,
      "quota": 3.71,
      "p_impl": 0.2695,
-     "ev": -0.0432,
+     "ev": 0.018,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2519,
      "cat": "alto rischio"
     },
     {
-     "k": "C:X2 + Goal + Over 2.5",
-     "label": "X2 + Goal + Over 2.5",
-     "p": 0.246,
-     "quota": 3.74,
-     "p_impl": 0.2674,
-     "ev": -0.08,
+     "k": "C:X2 + Over 2.5",
+     "label": "X2 + Over 2.5",
+     "p": 0.2708,
+     "quota": 3.23,
+     "p_impl": 0.3096,
+     "ev": -0.1253,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.2494,
+     "p_mercato": 0.2889,
+     "cat": "alto rischio"
+    },
+    {
+     "k": "C:2 + Over 1.5",
+     "label": "2 + Over 1.5",
+     "p": 0.2672,
+     "quota": 3.35,
+     "p_impl": 0.2985,
+     "ev": -0.1049,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.2788,
+     "cat": "alto rischio"
+    },
+    {
+     "k": "C:X2 + No Goal",
+     "label": "X2 + No Goal",
+     "p": 0.2667,
+     "quota": 3.45,
+     "p_impl": 0.2899,
+     "ev": -0.0799,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.2706,
      "cat": "alto rischio"
     },
     {
      "k": "C:1 + Under 3.5",
      "label": "1 + Under 3.5",
-     "p": 0.2455,
+     "p": 0.2614,
      "quota": 3.87,
      "p_impl": 0.2584,
-     "ev": -0.0499,
+     "ev": 0.0116,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2412,
      "cat": "alto rischio"
     },
     {
-     "k": "C:X2 + No Goal + Under 2.5",
-     "label": "X2 + No Goal + Under 2.5",
-     "p": 0.2341,
-     "quota": 4.04,
-     "p_impl": 0.2475,
-     "ev": -0.0542,
+     "k": "C:2 + Under 3.5",
+     "label": "2 + Under 3.5",
+     "p": 0.2531,
+     "quota": 3.55,
+     "p_impl": 0.2817,
+     "ev": -0.1015,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.2312,
+     "p_mercato": 0.2629,
      "cat": "alto rischio"
     },
     {
      "k": "C:1X + Goal + Over 2.5",
      "label": "1X + Goal + Over 2.5",
-     "p": 0.2316,
+     "p": 0.2386,
      "quota": 3.95,
      "p_impl": 0.2532,
-     "ev": -0.0852,
+     "ev": -0.0575,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2364,
      "cat": "alto rischio"
     },
     {
-     "k": "C:2 + Over 2.5",
-     "label": "2 + Over 2.5",
-     "p": 0.2235,
-     "quota": 4.31,
-     "p_impl": 0.232,
-     "ev": -0.0367,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2166,
-     "cat": "alto rischio"
-    },
-    {
      "k": "C:1X + No Goal + Under 2.5",
      "label": "1X + No Goal + Under 2.5",
-     "p": 0.2221,
+     "p": 0.2338,
      "quota": 4.27,
      "p_impl": 0.2342,
-     "ev": -0.0516,
+     "ev": -0.0017,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2188,
      "cat": "alto rischio"
     },
     {
-     "k": "C:X2 + Goal + Under 3.5",
-     "label": "X2 + Goal + Under 3.5",
-     "p": 0.2185,
-     "quota": 4.21,
-     "p_impl": 0.2375,
-     "ev": -0.0801,
+     "k": "C:X2 + Goal + Over 2.5",
+     "label": "X2 + Goal + Over 2.5",
+     "p": 0.2331,
+     "quota": 3.74,
+     "p_impl": 0.2674,
+     "ev": -0.1282,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.222,
+     "p_mercato": 0.2494,
+     "cat": "alto rischio"
+    },
+    {
+     "k": "C:X2 + No Goal + Under 2.5",
+     "label": "X2 + No Goal + Under 2.5",
+     "p": 0.229,
+     "quota": 4.04,
+     "p_impl": 0.2475,
+     "ev": -0.0748,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.2312,
      "cat": "alto rischio"
     },
     {
      "k": "C:X + Under 3.5",
      "label": "X + Under 3.5",
-     "p": 0.2157,
+     "p": 0.2183,
      "quota": 4.31,
      "p_impl": 0.232,
-     "ev": -0.0703,
+     "ev": -0.0591,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2165,
@@ -6681,10 +6481,10 @@
     {
      "k": "C:X + Under 2.5",
      "label": "X + Under 2.5",
-     "p": 0.2157,
+     "p": 0.2183,
      "quota": 4.31,
      "p_impl": 0.232,
-     "ev": -0.0703,
+     "ev": -0.0591,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2165,
@@ -6693,34 +6493,58 @@
     {
      "k": "C:1X + Goal + Under 3.5",
      "label": "1X + Goal + Under 3.5",
-     "p": 0.214,
+     "p": 0.2177,
      "quota": 4.31,
      "p_impl": 0.232,
-     "ev": -0.0777,
+     "ev": -0.0617,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2165,
      "cat": "alto rischio"
     },
     {
+     "k": "C:X2 + Goal + Under 3.5",
+     "label": "X2 + Goal + Under 3.5",
+     "p": 0.216,
+     "quota": 4.21,
+     "p_impl": 0.2375,
+     "ev": -0.0906,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.222,
+     "cat": "alto rischio"
+    },
+    {
      "k": "C:1 + Over 2.5",
      "label": "1 + Over 2.5",
-     "p": 0.2018,
+     "p": 0.2145,
      "quota": 4.73,
      "p_impl": 0.2114,
-     "ev": -0.0455,
+     "ev": 0.0146,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.1972,
      "cat": "alto rischio"
     },
     {
+     "k": "C:2 + Over 2.5",
+     "label": "2 + Over 2.5",
+     "p": 0.206,
+     "quota": 4.31,
+     "p_impl": 0.232,
+     "ev": -0.1121,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.2166,
+     "cat": "alto rischio"
+    },
+    {
      "k": "C:X + Over 1.5",
      "label": "X + Over 1.5",
-     "p": 0.1999,
+     "p": 0.1998,
      "quota": 4.39,
      "p_impl": 0.2278,
-     "ev": -0.1224,
+     "ev": -0.1229,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2125,
@@ -6729,140 +6553,140 @@
     {
      "k": "C:X + Goal",
      "label": "X + Goal",
-     "p": 0.1999,
+     "p": 0.1998,
      "quota": 4.39,
      "p_impl": 0.2278,
-     "ev": -0.1224,
+     "ev": -0.1229,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2125,
      "cat": "alto rischio"
     },
     {
-     "k": "C:2 + No Goal",
-     "label": "2 + No Goal",
-     "p": 0.1958,
-     "quota": 4.8,
-     "p_impl": 0.2083,
-     "ev": -0.0602,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.1944,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:2 + Goal",
-     "label": "2 + Goal",
-     "p": 0.1803,
-     "quota": 5.27,
-     "p_impl": 0.1898,
-     "ev": -0.0498,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.1772,
-     "cat": "alto rischio"
-    },
-    {
      "k": "C:1 + No Goal",
      "label": "1 + No Goal",
-     "p": 0.1765,
+     "p": 0.1912,
      "quota": 5.32,
      "p_impl": 0.188,
-     "ev": -0.061,
+     "ev": 0.0172,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.1756,
      "cat": "alto rischio"
     },
     {
+     "k": "C:2 + No Goal",
+     "label": "2 + No Goal",
+     "p": 0.1835,
+     "quota": 4.8,
+     "p_impl": 0.2083,
+     "ev": -0.1192,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.1944,
+     "cat": "alto rischio"
+    },
+    {
      "k": "C:1 + Goal",
      "label": "1 + Goal",
-     "p": 0.166,
+     "p": 0.1739,
      "quota": 5.69,
      "p_impl": 0.1757,
-     "ev": -0.0555,
+     "ev": -0.0105,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.1641,
      "cat": "alto rischio"
     },
     {
+     "k": "C:2 + Goal",
+     "label": "2 + Goal",
+     "p": 0.1683,
+     "quota": 5.27,
+     "p_impl": 0.1898,
+     "ev": -0.1131,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.1772,
+     "cat": "alto rischio"
+    },
+    {
+     "k": "C:1X + Goal + Over 3.5",
+     "label": "1X + Goal + Over 3.5",
+     "p": 0.156,
+     "quota": 5.83,
+     "p_impl": 0.1715,
+     "ev": -0.0905,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.1601,
+     "cat": "alto rischio"
+    },
+    {
      "k": "C:X2 + Goal + Over 3.5",
      "label": "X2 + Goal + Over 3.5",
-     "p": 0.1618,
+     "p": 0.1522,
      "quota": 5.57,
      "p_impl": 0.1795,
-     "ev": -0.0988,
+     "ev": -0.1522,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.1677,
      "cat": "alto rischio"
     },
     {
-     "k": "C:2 + Under 2.5",
-     "label": "2 + Under 2.5",
-     "p": 0.1526,
-     "quota": 6.03,
-     "p_impl": 0.1658,
-     "ev": -0.0798,
+     "k": "C:1 + Under 2.5",
+     "label": "1 + Under 2.5",
+     "p": 0.1506,
+     "quota": 6.55,
+     "p_impl": 0.1527,
+     "ev": -0.0136,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.1549,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:1X + Goal + Over 3.5",
-     "label": "1X + Goal + Over 3.5",
-     "p": 0.1519,
-     "quota": 5.83,
-     "p_impl": 0.1715,
-     "ev": -0.1144,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.1601,
+     "p_mercato": 0.1425,
      "cat": "alto rischio"
     }
    ],
    "pronostico": {
-    "k": "12",
-    "label": "Doppia chance 12",
-    "p": 0.7186,
-    "quota": 1.3,
-    "p_impl": 0.7692,
-    "ev": -0.0658,
+    "k": "1X",
+    "label": "Doppia chance 1X",
+    "p": 0.6481,
+    "quota": 1.47,
+    "p_impl": 0.6803,
+    "ev": -0.0473,
     "ht": false,
-    "cat": "probabile"
+    "cat": "senza valore"
    },
    "p": {
-    "1": 0.3424,
-    "X": 0.2814,
-    "2": 0.3762,
-    "GG": 0.5462,
-    "NG": 0.4538,
-    "O0.5": 0.9185,
-    "U0.5": 0.0815,
-    "O1.5": 0.7498,
-    "U1.5": 0.2502,
-    "O2.5": 0.491,
-    "U2.5": 0.509,
-    "O3.5": 0.2722,
-    "U3.5": 0.7278,
-    "H_O0.5": 0.7227,
-    "A_O0.5": 0.7421,
-    "H_O1.5": 0.367,
-    "A_O1.5": 0.3926,
-    "1X": 0.6238,
-    "X2": 0.6576,
-    "12": 0.7186,
-    "DNB1": 0.4765,
-    "DNB2": 0.5235,
-    "1X_O1.5": 0.4606,
-    "X2_U3.5": 0.4823,
-    "HT1": 0.2784,
-    "HTX": 0.4224,
-    "HT2": 0.2992,
-    "HT_O0.5": 0.6949,
-    "HT_O1.5": 0.3327
+    "1": 0.3651,
+    "X": 0.283,
+    "2": 0.3519,
+    "GG": 0.5421,
+    "NG": 0.4579,
+    "O0.5": 0.9168,
+    "U0.5": 0.0832,
+    "O1.5": 0.7454,
+    "U1.5": 0.2546,
+    "O2.5": 0.4853,
+    "U2.5": 0.5147,
+    "O3.5": 0.2672,
+    "U3.5": 0.7328,
+    "H_O0.5": 0.7333,
+    "A_O0.5": 0.7256,
+    "H_O1.5": 0.3808,
+    "A_O1.5": 0.3708,
+    "1X": 0.6481,
+    "X2": 0.6349,
+    "12": 0.717,
+    "DNB1": 0.5092,
+    "DNB2": 0.4908,
+    "1X_O1.5": 0.4782,
+    "X2_U3.5": 0.4714,
+    "HT1": 0.2918,
+    "HTX": 0.4246,
+    "HT2": 0.2836,
+    "HT_O0.5": 0.6917,
+    "HT_O1.5": 0.3289
    },
    "avvisi": [],
    "contesto": []
@@ -6891,8 +6715,8 @@
    },
    "risultato_modello": "1-1",
    "lam": [
-    2.4,
-    1.26
+    2.03,
+    1.34
    ],
    "margine_1x2": 0.063,
    "p_mercato": {
@@ -6906,58 +6730,54 @@
    "quote_ts": "2026-11-17T09:21:05.185Z",
    "risultati": [
     [
-     "2-1",
-     0.0934
-    ],
-    [
      "1-1",
-     0.0841
+     0.1008
     ],
     [
-     "3-1",
-     0.0747
+     "2-1",
+     0.0949
+    ],
+    [
+     "2-0",
+     0.0708
     ]
    ],
    "combo": [
     [
      "1 + Over 1.5",
-     0.5637
+     0.4652
     ],
     [
      "1 + Over 2.5",
-     0.4896
+     0.3945
     ],
     [
      "1 + Goal",
-     0.3678
+     0.3075
     ],
     [
      "1 + Under 3.5",
-     0.2822
-    ],
-    [
-     "1 + Goal + Over 3.5",
-     0.2744
+     0.2758
     ],
     [
      "1 + No Goal",
-     0.2514
+     0.2198
     ],
     [
-     "1 + No Goal + Under 4.5",
-     0.2243
-    ],
-    [
-     "1 + No Goal + Over 1.5",
-     0.1959
+     "1 + Goal + Over 3.5",
+     0.2126
     ],
     [
      "1 + No Goal + Under 3.5",
-     0.1888
+     0.1809
     ],
     [
      "1 + Goal + Under 4.5",
-     0.168
+     0.1593
+    ],
+    [
+     "1 + No Goal + Over 1.5",
+     0.1577
     ]
    ],
    "combo_mercato": {
@@ -7358,260 +7178,260 @@
     {
      "k": "1",
      "label": "1 (casa)",
-     "p": 0.6192,
+     "p": 0.5274,
      "quota": 1.52,
      "p_impl": 0.6579,
-     "ev": -0.0588,
+     "ev": -0.1984,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "X",
      "label": "X (pareggio)",
-     "p": 0.199,
+     "p": 0.2291,
      "quota": 4.7,
      "p_impl": 0.2128,
-     "ev": -0.0646,
+     "ev": 0.0769,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "2",
      "label": "2 (ospite)",
-     "p": 0.1818,
+     "p": 0.2435,
      "quota": 5.2,
      "p_impl": 0.1923,
-     "ev": -0.0548,
+     "ev": 0.2663,
      "ht": false,
-     "cat": "alto rischio"
+     "cat": "value"
     },
     {
      "k": "1X",
      "label": "Doppia chance 1X",
-     "p": 0.8182,
+     "p": 0.7565,
      "quota": 1.13,
      "p_impl": 0.885,
-     "ev": -0.0754,
+     "ev": -0.1452,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "12",
      "label": "Doppia chance 12",
-     "p": 0.801,
+     "p": 0.7709,
      "quota": 1.15,
      "p_impl": 0.8696,
-     "ev": -0.0789,
+     "ev": -0.1135,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "X2",
      "label": "Doppia chance X2",
-     "p": 0.3808,
+     "p": 0.4726,
      "quota": 2.35,
      "p_impl": 0.4255,
-     "ev": -0.1052,
+     "ev": 0.1107,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "value"
     },
     {
      "k": "DNB1",
      "label": "Draw No Bet 1",
-     "p": 0.7731,
+     "p": 0.6841,
      "quota": 1.2,
      "p_impl": 0.8333,
-     "ev": -0.0723,
+     "ev": -0.1791,
      "ht": false,
-     "cat": "probabile"
+     "cat": "senza valore"
     },
     {
      "k": "DNB2",
      "label": "Draw No Bet 2",
-     "p": 0.2269,
+     "p": 0.3159,
      "quota": 4.0,
      "p_impl": 0.25,
-     "ev": -0.0923,
+     "ev": 0.2636,
      "ht": false,
-     "cat": "alto rischio"
+     "cat": "value"
     },
     {
      "k": "GG",
      "label": "Goal",
-     "p": 0.6577,
+     "p": 0.6493,
      "quota": 1.37,
      "p_impl": 0.7299,
-     "ev": -0.0989,
+     "ev": -0.1105,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "NG",
      "label": "No Goal",
-     "p": 0.3423,
+     "p": 0.3507,
      "quota": 2.8,
      "p_impl": 0.3571,
-     "ev": -0.0416,
+     "ev": -0.018,
      "ht": false,
-     "cat": "alto rischio"
+     "cat": "senza valore"
     },
     {
      "k": "U0.5",
      "label": "Under 0.5",
-     "p": 0.032,
+     "p": 0.0417,
      "quota": 20.0,
      "p_impl": 0.05,
-     "ev": -0.3602,
+     "ev": -0.1662,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "O1.5",
      "label": "Over 1.5",
-     "p": 0.8862,
+     "p": 0.8577,
      "quota": 1.06,
      "p_impl": 0.9434,
-     "ev": -0.0606,
+     "ev": -0.0908,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "U1.5",
      "label": "Under 1.5",
-     "p": 0.1138,
+     "p": 0.1423,
      "quota": 6.8,
      "p_impl": 0.1471,
-     "ev": -0.2263,
+     "ev": -0.0327,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "O2.5",
      "label": "Over 2.5",
-     "p": 0.7075,
+     "p": 0.6554,
      "quota": 1.3,
      "p_impl": 0.7692,
-     "ev": -0.0802,
+     "ev": -0.148,
      "ht": false,
-     "cat": "probabile"
+     "cat": "senza valore"
     },
     {
      "k": "U2.5",
      "label": "Under 2.5",
-     "p": 0.2925,
+     "p": 0.3446,
      "quota": 3.15,
      "p_impl": 0.3175,
-     "ev": -0.0788,
+     "ev": 0.0856,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "O3.5",
      "label": "Over 3.5",
-     "p": 0.4972,
+     "p": 0.4361,
      "quota": 1.75,
      "p_impl": 0.5714,
-     "ev": -0.1298,
+     "ev": -0.2368,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U3.5",
      "label": "Under 3.5",
-     "p": 0.5028,
+     "p": 0.5639,
      "quota": 1.88,
      "p_impl": 0.5319,
-     "ev": -0.0548,
+     "ev": 0.0601,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "A_O0.5",
      "label": "Gol ospite Over 0.5",
-     "p": 0.7166,
+     "p": 0.7385,
      "quota": 1.24,
      "p_impl": 0.8065,
-     "ev": -0.1114,
+     "ev": -0.0843,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "H_O1.5",
      "label": "Gol casa Over 1.5",
-     "p": 0.6911,
+     "p": 0.603,
      "quota": 1.3,
      "p_impl": 0.7692,
-     "ev": -0.1015,
+     "ev": -0.2161,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "A_O1.5",
      "label": "Gol ospite Over 1.5",
-     "p": 0.3593,
+     "p": 0.3877,
      "quota": 2.35,
      "p_impl": 0.4255,
-     "ev": -0.1557,
+     "ev": -0.0889,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "HT1",
      "label": "1 primo tempo",
-     "p": 0.4778,
+     "p": 0.4116,
      "quota": 1.95,
      "p_impl": 0.5128,
-     "ev": -0.0683,
+     "ev": -0.1974,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "HTX",
      "label": "X primo tempo",
-     "p": 0.3301,
+     "p": 0.3577,
      "quota": 2.7,
      "p_impl": 0.3704,
-     "ev": -0.1088,
+     "ev": -0.0341,
      "ht": true,
-     "cat": "alto rischio"
+     "cat": "senza valore"
     },
     {
      "k": "HT2",
      "label": "2 primo tempo",
-     "p": 0.1922,
+     "p": 0.2307,
      "quota": 4.7,
      "p_impl": 0.2128,
-     "ev": -0.0968,
+     "ev": 0.0842,
      "ht": true,
      "cat": "alto rischio"
     },
     {
      "k": "HT_O0.5",
      "label": "Over 0.5 primo tempo",
-     "p": 0.8073,
+     "p": 0.781,
      "quota": 1.15,
      "p_impl": 0.8696,
-     "ev": -0.0716,
+     "ev": -0.1019,
      "ht": true,
      "cat": "probabile"
     },
     {
      "k": "HT_O1.5",
      "label": "Over 1.5 primo tempo",
-     "p": 0.49,
+     "p": 0.4484,
      "quota": 1.85,
      "p_impl": 0.5405,
-     "ev": -0.0936,
+     "ev": -0.1704,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "C:1 + Over 1.5",
      "label": "1 + Over 1.5",
-     "p": 0.5637,
+     "p": 0.4652,
      "quota": 1.69,
      "p_impl": 0.5917,
-     "ev": -0.0473,
+     "ev": -0.2138,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.5553,
@@ -7620,10 +7440,10 @@
     {
      "k": "C:1 + Over 2.5",
      "label": "1 + Over 2.5",
-     "p": 0.4896,
+     "p": 0.3945,
      "quota": 1.94,
      "p_impl": 0.5155,
-     "ev": -0.0502,
+     "ev": -0.2347,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.4847,
@@ -7632,82 +7452,58 @@
     {
      "k": "C:1 + Goal",
      "label": "1 + Goal",
-     "p": 0.3678,
+     "p": 0.3075,
      "quota": 2.48,
      "p_impl": 0.4032,
-     "ev": -0.0879,
+     "ev": -0.2374,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.3792,
-     "cat": "senza valore"
+     "cat": "alto rischio"
     },
     {
      "k": "C:1 + Under 3.5",
      "label": "1 + Under 3.5",
-     "p": 0.2822,
+     "p": 0.2758,
      "quota": 3.38,
      "p_impl": 0.2959,
-     "ev": -0.0462,
+     "ev": -0.0678,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2787,
      "cat": "alto rischio"
     },
     {
-     "k": "C:1 + Goal + Over 3.5",
-     "label": "1 + Goal + Over 3.5",
-     "p": 0.2744,
-     "quota": 3.28,
-     "p_impl": 0.3049,
-     "ev": -0.1,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2865,
-     "cat": "alto rischio"
-    },
-    {
      "k": "C:1 + No Goal",
      "label": "1 + No Goal",
-     "p": 0.2514,
+     "p": 0.2198,
      "quota": 3.96,
      "p_impl": 0.2525,
-     "ev": -0.0045,
+     "ev": -0.1296,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2375,
      "cat": "alto rischio"
     },
     {
-     "k": "C:1 + No Goal + Under 4.5",
-     "label": "1 + No Goal + Under 4.5",
-     "p": 0.2243,
-     "quota": 4.36,
-     "p_impl": 0.2294,
-     "ev": -0.0221,
+     "k": "C:1 + Goal + Over 3.5",
+     "label": "1 + Goal + Over 3.5",
+     "p": 0.2126,
+     "quota": 3.28,
+     "p_impl": 0.3049,
+     "ev": -0.3027,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.2158,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:1 + No Goal + Over 1.5",
-     "label": "1 + No Goal + Over 1.5",
-     "p": 0.1959,
-     "quota": 5.34,
-     "p_impl": 0.1873,
-     "ev": 0.0461,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.1762,
+     "p_mercato": 0.2865,
      "cat": "alto rischio"
     },
     {
      "k": "C:1 + No Goal + Under 3.5",
      "label": "1 + No Goal + Under 3.5",
-     "p": 0.1888,
+     "p": 0.1809,
      "quota": 5.06,
      "p_impl": 0.1976,
-     "ev": -0.0447,
+     "ev": -0.0846,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.186,
@@ -7716,56 +7512,68 @@
     {
      "k": "C:1 + Goal + Under 4.5",
      "label": "1 + Goal + Under 4.5",
-     "p": 0.168,
+     "p": 0.1593,
      "quota": 5.63,
      "p_impl": 0.1776,
-     "ev": -0.0542,
+     "ev": -0.1031,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.167,
      "cat": "alto rischio"
+    },
+    {
+     "k": "C:1 + No Goal + Over 1.5",
+     "label": "1 + No Goal + Over 1.5",
+     "p": 0.1577,
+     "quota": 5.34,
+     "p_impl": 0.1873,
+     "ev": -0.1579,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.1762,
+     "cat": "alto rischio"
     }
    ],
    "pronostico": {
-    "k": "1",
-    "label": "1 (casa)",
-    "p": 0.6192,
-    "quota": 1.52,
-    "p_impl": 0.6579,
-    "ev": -0.0588,
+    "k": "U3.5",
+    "label": "Under 3.5",
+    "p": 0.5639,
+    "quota": 1.88,
+    "p_impl": 0.5319,
+    "ev": 0.0601,
     "ht": false,
     "cat": "senza valore"
    },
    "p": {
-    "1": 0.6192,
-    "X": 0.199,
-    "2": 0.1818,
-    "GG": 0.6577,
-    "NG": 0.3423,
-    "O0.5": 0.968,
-    "U0.5": 0.032,
-    "O1.5": 0.8862,
-    "U1.5": 0.1138,
-    "O2.5": 0.7075,
-    "U2.5": 0.2925,
-    "O3.5": 0.4972,
-    "U3.5": 0.5028,
-    "H_O0.5": 0.9091,
-    "A_O0.5": 0.7166,
-    "H_O1.5": 0.6911,
-    "A_O1.5": 0.3593,
-    "1X": 0.8182,
-    "X2": 0.3808,
-    "12": 0.801,
-    "DNB1": 0.7731,
-    "DNB2": 0.2269,
-    "1X_O1.5": 0.7307,
-    "X2_U3.5": 0.2206,
-    "HT1": 0.4778,
-    "HTX": 0.3301,
-    "HT2": 0.1922,
-    "HT_O0.5": 0.8073,
-    "HT_O1.5": 0.49
+    "1": 0.5274,
+    "X": 0.2291,
+    "2": 0.2435,
+    "GG": 0.6493,
+    "NG": 0.3507,
+    "O0.5": 0.9583,
+    "U0.5": 0.0417,
+    "O1.5": 0.8577,
+    "U1.5": 0.1423,
+    "O2.5": 0.6554,
+    "U2.5": 0.3446,
+    "O3.5": 0.4361,
+    "U3.5": 0.5639,
+    "H_O0.5": 0.8691,
+    "A_O0.5": 0.7385,
+    "H_O1.5": 0.603,
+    "A_O1.5": 0.3877,
+    "1X": 0.7565,
+    "X2": 0.4726,
+    "12": 0.7709,
+    "DNB1": 0.6841,
+    "DNB2": 0.3159,
+    "1X_O1.5": 0.6527,
+    "X2_U3.5": 0.2881,
+    "HT1": 0.4116,
+    "HTX": 0.3577,
+    "HT2": 0.2307,
+    "HT_O0.5": 0.781,
+    "HT_O1.5": 0.4484
    },
    "avvisi": [],
    "contesto": []
@@ -7794,8 +7602,8 @@
    },
    "risultato_modello": "1-1",
    "lam": [
-    1.28,
-    2.21
+    1.22,
+    1.87
    ],
    "margine_1x2": 0.0672,
    "p_mercato": {
@@ -7809,54 +7617,58 @@
    "quote_ts": "2026-11-17T09:21:02.731Z",
    "risultati": [
     [
-     "1-2",
-     0.0954
+     "1-1",
+     0.1119
     ],
     [
-     "1-1",
-     0.093
+     "1-2",
+     0.0971
     ],
     [
      "0-2",
-     0.0747
+     0.0796
     ]
    ],
    "combo": [
     [
      "2 + Over 1.5",
-     0.5189
+     0.4421
     ],
     [
      "2 + Over 2.5",
-     0.4442
-    ],
-    [
-     "2 + Goal",
-     0.338
+     0.3625
     ],
     [
      "2 + Under 3.5",
-     0.2858
+     0.3032
     ],
     [
-     "2 + Goal + Over 3.5",
-     0.2426
+     "2 + Goal",
+     0.277
     ],
     [
      "2 + No Goal",
-     0.2416
+     0.2418
     ],
     [
      "2 + No Goal + Under 3.5",
-     0.1904
+     0.2061
+    ],
+    [
+     "2 + Goal + Over 3.5",
+     0.1799
     ],
     [
      "2 + No Goal + Over 1.5",
-     0.181
+     0.1651
     ],
     [
      "2 + Goal + Under 4.5",
-     0.1658
+     0.1578
+    ],
+    [
+     "2 + Under 2.5",
+     0.1563
     ]
    ],
    "combo_mercato": {
@@ -8257,270 +8069,270 @@
     {
      "k": "1",
      "label": "1 (casa)",
-     "p": 0.2063,
+     "p": 0.2391,
      "quota": 4.6,
      "p_impl": 0.2174,
-     "ev": -0.0512,
+     "ev": 0.1,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "X",
      "label": "X (pareggio)",
-     "p": 0.2142,
+     "p": 0.2421,
      "quota": 4.3,
      "p_impl": 0.2326,
-     "ev": -0.0789,
+     "ev": 0.0409,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "2",
      "label": "2 (ospite)",
-     "p": 0.5795,
+     "p": 0.5188,
      "quota": 1.62,
      "p_impl": 0.6173,
-     "ev": -0.0612,
+     "ev": -0.1596,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "1X",
      "label": "Doppia chance 1X",
-     "p": 0.4205,
+     "p": 0.4812,
      "quota": 2.15,
      "p_impl": 0.4651,
-     "ev": -0.096,
+     "ev": 0.0346,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "12",
      "label": "Doppia chance 12",
-     "p": 0.7858,
+     "p": 0.7579,
      "quota": 1.18,
      "p_impl": 0.8475,
-     "ev": -0.0728,
+     "ev": -0.1057,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "X2",
      "label": "Doppia chance X2",
-     "p": 0.7937,
+     "p": 0.7609,
      "quota": 1.16,
      "p_impl": 0.8621,
-     "ev": -0.0793,
+     "ev": -0.1174,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "DNB1",
      "label": "Draw No Bet 1",
-     "p": 0.2625,
+     "p": 0.3155,
      "quota": 3.5,
      "p_impl": 0.2857,
-     "ev": -0.0813,
+     "ev": 0.1043,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "DNB2",
      "label": "Draw No Bet 2",
-     "p": 0.7375,
+     "p": 0.6845,
      "quota": 1.25,
      "p_impl": 0.8,
-     "ev": -0.0781,
+     "ev": -0.1444,
      "ht": false,
-     "cat": "probabile"
+     "cat": "senza valore"
     },
     {
      "k": "GG",
      "label": "Goal",
-     "p": 0.6492,
+     "p": 0.6048,
      "quota": 1.37,
      "p_impl": 0.7299,
-     "ev": -0.1106,
+     "ev": -0.1714,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "NG",
      "label": "No Goal",
-     "p": 0.3508,
+     "p": 0.3952,
      "quota": 2.75,
      "p_impl": 0.3636,
-     "ev": -0.0352,
+     "ev": 0.0868,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U0.5",
      "label": "Under 0.5",
-     "p": 0.0374,
+     "p": 0.0536,
      "quota": 18.0,
      "p_impl": 0.0556,
-     "ev": -0.3274,
+     "ev": -0.0351,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "O1.5",
      "label": "Over 1.5",
-     "p": 0.87,
+     "p": 0.8228,
      "quota": 1.08,
      "p_impl": 0.9259,
-     "ev": -0.0604,
+     "ev": -0.1114,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "U1.5",
      "label": "Under 1.5",
-     "p": 0.13,
+     "p": 0.1772,
      "quota": 6.0,
      "p_impl": 0.1667,
-     "ev": -0.2202,
+     "ev": 0.0635,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "O2.5",
      "label": "Over 2.5",
-     "p": 0.6774,
+     "p": 0.5976,
      "quota": 1.35,
      "p_impl": 0.7407,
-     "ev": -0.0854,
+     "ev": -0.1933,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U2.5",
      "label": "Under 2.5",
-     "p": 0.3226,
+     "p": 0.4024,
      "quota": 2.85,
      "p_impl": 0.3509,
-     "ev": -0.0807,
+     "ev": 0.147,
      "ht": false,
-     "cat": "alto rischio"
+     "cat": "value"
     },
     {
      "k": "O3.5",
      "label": "Over 3.5",
-     "p": 0.4614,
+     "p": 0.3738,
      "quota": 1.87,
      "p_impl": 0.5348,
-     "ev": -0.1372,
+     "ev": -0.3009,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U3.5",
      "label": "Under 3.5",
-     "p": 0.5386,
+     "p": 0.6262,
      "quota": 1.77,
      "p_impl": 0.565,
-     "ev": -0.0466,
+     "ev": 0.1083,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "value"
     },
     {
      "k": "H_O0.5",
      "label": "Gol casa Over 0.5",
-     "p": 0.7211,
+     "p": 0.7046,
      "quota": 1.23,
      "p_impl": 0.813,
-     "ev": -0.1131,
+     "ev": -0.1334,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "A_O0.5",
      "label": "Gol ospite Over 0.5",
-     "p": 0.8907,
+     "p": 0.8466,
      "quota": 1.01,
      "p_impl": 0.9901,
-     "ev": -0.1004,
+     "ev": -0.1449,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "H_O1.5",
      "label": "Gol casa Over 1.5",
-     "p": 0.3649,
+     "p": 0.3444,
      "quota": 2.3,
      "p_impl": 0.4348,
-     "ev": -0.1607,
+     "ev": -0.208,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "alto rischio"
     },
     {
      "k": "A_O1.5",
      "label": "Gol ospite Over 1.5",
-     "p": 0.6488,
+     "p": 0.559,
      "quota": 1.37,
      "p_impl": 0.7299,
-     "ev": -0.1111,
+     "ev": -0.2341,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "HT1",
      "label": "1 primo tempo",
-     "p": 0.2071,
+     "p": 0.2228,
      "quota": 4.4,
      "p_impl": 0.2273,
-     "ev": -0.0886,
+     "ev": -0.0197,
      "ht": true,
      "cat": "alto rischio"
     },
     {
      "k": "HTX",
      "label": "X primo tempo",
-     "p": 0.345,
+     "p": 0.3775,
      "quota": 2.55,
      "p_impl": 0.3922,
-     "ev": -0.1202,
+     "ev": -0.0373,
      "ht": true,
-     "cat": "alto rischio"
+     "cat": "senza valore"
     },
     {
      "k": "HT2",
      "label": "2 primo tempo",
-     "p": 0.4479,
+     "p": 0.3997,
      "quota": 2.05,
      "p_impl": 0.4878,
-     "ev": -0.0819,
+     "ev": -0.1807,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "HT_O0.5",
      "label": "Over 0.5 primo tempo",
-     "p": 0.7921,
+     "p": 0.7515,
      "quota": 1.17,
      "p_impl": 0.8547,
-     "ev": -0.0732,
+     "ev": -0.1207,
      "ht": true,
      "cat": "probabile"
     },
     {
      "k": "HT_O1.5",
      "label": "Over 1.5 primo tempo",
-     "p": 0.4656,
+     "p": 0.4055,
      "quota": 1.93,
      "p_impl": 0.5181,
-     "ev": -0.1014,
+     "ev": -0.2174,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "C:2 + Over 1.5",
      "label": "2 + Over 1.5",
-     "p": 0.5189,
+     "p": 0.4421,
      "quota": 1.83,
      "p_impl": 0.5464,
-     "ev": -0.0504,
+     "ev": -0.191,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.5122,
@@ -8529,58 +8341,46 @@
     {
      "k": "C:2 + Over 2.5",
      "label": "2 + Over 2.5",
-     "p": 0.4442,
+     "p": 0.3625,
      "quota": 2.12,
      "p_impl": 0.4717,
-     "ev": -0.0583,
+     "ev": -0.2315,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.4418,
      "cat": "senza valore"
     },
     {
-     "k": "C:2 + Goal",
-     "label": "2 + Goal",
-     "p": 0.338,
-     "quota": 2.63,
-     "p_impl": 0.3802,
-     "ev": -0.1111,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.3557,
-     "cat": "alto rischio"
-    },
-    {
      "k": "C:2 + Under 3.5",
      "label": "2 + Under 3.5",
-     "p": 0.2858,
+     "p": 0.3032,
      "quota": 3.33,
      "p_impl": 0.3003,
-     "ev": -0.0483,
+     "ev": 0.0097,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2812,
      "cat": "alto rischio"
     },
     {
-     "k": "C:2 + Goal + Over 3.5",
-     "label": "2 + Goal + Over 3.5",
-     "p": 0.2426,
-     "quota": 3.63,
-     "p_impl": 0.2755,
-     "ev": -0.1194,
+     "k": "C:2 + Goal",
+     "label": "2 + Goal",
+     "p": 0.277,
+     "quota": 2.63,
+     "p_impl": 0.3802,
+     "ev": -0.2715,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.2583,
+     "p_mercato": 0.3557,
      "cat": "alto rischio"
     },
     {
      "k": "C:2 + No Goal",
      "label": "2 + No Goal",
-     "p": 0.2416,
+     "p": 0.2418,
      "quota": 4.19,
      "p_impl": 0.2387,
-     "ev": 0.0123,
+     "ev": 0.0131,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2234,
@@ -8589,22 +8389,34 @@
     {
      "k": "C:2 + No Goal + Under 3.5",
      "label": "2 + No Goal + Under 3.5",
-     "p": 0.1904,
+     "p": 0.2061,
      "quota": 5.1,
      "p_impl": 0.1961,
-     "ev": -0.029,
+     "ev": 0.0511,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.1838,
      "cat": "alto rischio"
     },
     {
+     "k": "C:2 + Goal + Over 3.5",
+     "label": "2 + Goal + Over 3.5",
+     "p": 0.1799,
+     "quota": 3.63,
+     "p_impl": 0.2755,
+     "ev": -0.347,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.2583,
+     "cat": "alto rischio"
+    },
+    {
      "k": "C:2 + No Goal + Over 1.5",
      "label": "2 + No Goal + Over 1.5",
-     "p": 0.181,
+     "p": 0.1651,
      "quota": 5.99,
      "p_impl": 0.1669,
-     "ev": 0.0842,
+     "ev": -0.0111,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.1564,
@@ -8613,56 +8425,68 @@
     {
      "k": "C:2 + Goal + Under 4.5",
      "label": "2 + Goal + Under 4.5",
-     "p": 0.1658,
+     "p": 0.1578,
      "quota": 5.59,
      "p_impl": 0.1789,
-     "ev": -0.0732,
+     "ev": -0.1179,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.1677,
      "cat": "alto rischio"
+    },
+    {
+     "k": "C:2 + Under 2.5",
+     "label": "2 + Under 2.5",
+     "p": 0.1563,
+     "quota": 6.82,
+     "p_impl": 0.1466,
+     "ev": 0.066,
+     "ht": false,
+     "fonte": "stimata",
+     "p_mercato": 0.1373,
+     "cat": "alto rischio"
     }
    ],
    "pronostico": {
-    "k": "2",
-    "label": "2 (ospite)",
-    "p": 0.5795,
-    "quota": 1.62,
-    "p_impl": 0.6173,
-    "ev": -0.0612,
+    "k": "U3.5",
+    "label": "Under 3.5",
+    "p": 0.6262,
+    "quota": 1.77,
+    "p_impl": 0.565,
+    "ev": 0.1083,
     "ht": false,
-    "cat": "senza valore"
+    "cat": "value"
    },
    "p": {
-    "1": 0.2063,
-    "X": 0.2142,
-    "2": 0.5795,
-    "GG": 0.6492,
-    "NG": 0.3508,
-    "O0.5": 0.9626,
-    "U0.5": 0.0374,
-    "O1.5": 0.87,
-    "U1.5": 0.13,
-    "O2.5": 0.6774,
-    "U2.5": 0.3226,
-    "O3.5": 0.4614,
-    "U3.5": 0.5386,
-    "H_O0.5": 0.7211,
-    "A_O0.5": 0.8907,
-    "H_O1.5": 0.3649,
-    "A_O1.5": 0.6488,
-    "1X": 0.4205,
-    "X2": 0.7937,
-    "12": 0.7858,
-    "DNB1": 0.2625,
-    "DNB2": 0.7375,
-    "1X_O1.5": 0.3511,
-    "X2_U3.5": 0.4162,
-    "HT1": 0.2071,
-    "HTX": 0.345,
-    "HT2": 0.4479,
-    "HT_O0.5": 0.7921,
-    "HT_O1.5": 0.4656
+    "1": 0.2391,
+    "X": 0.2421,
+    "2": 0.5188,
+    "GG": 0.6048,
+    "NG": 0.3952,
+    "O0.5": 0.9464,
+    "U0.5": 0.0536,
+    "O1.5": 0.8228,
+    "U1.5": 0.1772,
+    "O2.5": 0.5976,
+    "U2.5": 0.4024,
+    "O3.5": 0.3738,
+    "U3.5": 0.6262,
+    "H_O0.5": 0.7046,
+    "A_O0.5": 0.8466,
+    "H_O1.5": 0.3444,
+    "A_O1.5": 0.559,
+    "1X": 0.4812,
+    "X2": 0.7609,
+    "12": 0.7579,
+    "DNB1": 0.3155,
+    "DNB2": 0.6845,
+    "1X_O1.5": 0.3806,
+    "X2_U3.5": 0.4687,
+    "HT1": 0.2228,
+    "HTX": 0.3775,
+    "HT2": 0.3997,
+    "HT_O0.5": 0.7515,
+    "HT_O1.5": 0.4055
    },
    "avvisi": [],
    "contesto": []
@@ -8691,8 +8515,8 @@
    },
    "risultato_modello": "1-1",
    "lam": [
-    1.27,
-    1.79
+    1.16,
+    1.73
    ],
    "margine_1x2": 0.0728,
    "p_mercato": {
@@ -8707,165 +8531,57 @@
    "risultati": [
     [
      "1-1",
-     0.115
+     0.1204
     ],
     [
      "1-2",
-     0.0953
+     0.0966
     ],
     [
      "0-1",
-     0.075
+     0.0875
     ]
    ],
    "combo": [
     [
-     "X2 + Over 1.5",
-     0.6052
-    ],
-    [
-     "X2 + Under 3.5",
-     0.4599
-    ],
-    [
-     "X2 + Goal",
-     0.4559
-    ],
-    [
-     "X2 + Over 2.5",
-     0.4154
-    ],
-    [
      "2 + Over 1.5",
-     0.4116
-    ],
-    [
-     "1X + Over 1.5",
-     0.4071
-    ],
-    [
-     "1X + Goal",
-     0.3463
-    ],
-    [
-     "1X + Under 3.5",
-     0.3431
-    ],
-    [
-     "X2 + Goal + Over 2.5",
-     0.3409
+     0.4125
     ],
     [
      "2 + Over 2.5",
-     0.3369
-    ],
-    [
-     "X2 + Goal + Under 4.5",
-     0.3279
-    ],
-    [
-     "X2 + Under 2.5",
-     0.32
+     0.329
     ],
     [
      "2 + Under 3.5",
-     0.2897
-    ],
-    [
-     "X2 + No Goal",
-     0.2795
-    ],
-    [
-     "1X + Goal + Under 4.5",
-     0.2725
-    ],
-    [
-     "2 + Goal",
-     0.2623
-    ],
-    [
-     "1X + Under 2.5",
-     0.2591
-    ],
-    [
-     "1X + Over 2.5",
-     0.2542
-    ],
-    [
-     "X2 + No Goal + Under 3.5",
-     0.2496
-    ],
-    [
-     "X2 + Goal + Over 3.5",
-     0.2456
+     0.3159
     ],
     [
      "2 + No Goal",
-     0.2243
+     0.2503
     ],
     [
-     "1 + Over 1.5",
-     0.2136
-    ],
-    [
-     "X2 + Goal + Under 3.5",
-     0.2103
-    ],
-    [
-     "X2 + No Goal + Under 2.5",
-     0.205
+     "2 + Goal",
+     0.2498
     ],
     [
      "2 + No Goal + Under 3.5",
-     0.1944
+     0.2194
     ],
     [
-     "X + Over 1.5",
-     0.1936
+     "2 + Under 2.5",
+     0.1711
     ],
     [
-     "X + Goal",
-     0.1936
-    ],
-    [
-     "1X + Goal + Under 3.5",
-     0.1829
-    ],
-    [
-     "1 + Over 2.5",
-     0.1756
-    ],
-    [
-     "1 + Under 3.5",
-     0.1729
-    ],
-    [
-     "X + Under 3.5",
-     0.1702
-    ],
-    [
-     "X + Under 2.5",
-     0.1702
+     "2 + No Goal + Over 1.5",
+     0.1628
     ],
     [
      "2 + Goal + Over 3.5",
-     0.167
-    ],
-    [
-     "1X + No Goal",
-     0.167
-    ],
-    [
-     "1X + Goal + Over 3.5",
-     0.1634
-    ],
-    [
-     "1 + Goal",
-     0.1528
+     0.1532
     ],
     [
      "2 + Goal + Under 4.5",
-     0.1522
+     0.1524
     ]
    ],
    "combo_mercato": {
@@ -9266,702 +8982,378 @@
     {
      "k": "1",
      "label": "1 (casa)",
-     "p": 0.2646,
+     "p": 0.2451,
      "quota": 3.55,
      "p_impl": 0.2817,
-     "ev": -0.0608,
+     "ev": -0.1298,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "X",
      "label": "X (pareggio)",
-     "p": 0.2488,
+     "p": 0.2548,
      "quota": 3.7,
      "p_impl": 0.2703,
-     "ev": -0.0796,
+     "ev": -0.0572,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "2",
      "label": "2 (ospite)",
-     "p": 0.4867,
+     "p": 0.5,
      "quota": 1.92,
      "p_impl": 0.5208,
-     "ev": -0.0656,
+     "ev": -0.0399,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "1X",
      "label": "Doppia chance 1X",
-     "p": 0.5133,
+     "p": 0.5,
      "quota": 1.78,
      "p_impl": 0.5618,
-     "ev": -0.0863,
+     "ev": -0.1101,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "12",
      "label": "Doppia chance 12",
-     "p": 0.7512,
+     "p": 0.7452,
      "quota": 1.23,
      "p_impl": 0.813,
-     "ev": -0.076,
+     "ev": -0.0834,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "X2",
      "label": "Doppia chance X2",
-     "p": 0.7354,
+     "p": 0.7549,
      "quota": 1.25,
      "p_impl": 0.8,
-     "ev": -0.0807,
+     "ev": -0.0564,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "DNB1",
      "label": "Draw No Bet 1",
-     "p": 0.3522,
+     "p": 0.329,
      "quota": 2.6,
      "p_impl": 0.3846,
-     "ev": -0.0844,
+     "ev": -0.1447,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "alto rischio"
     },
     {
      "k": "DNB2",
      "label": "Draw No Bet 2",
-     "p": 0.6478,
+     "p": 0.671,
      "quota": 1.42,
      "p_impl": 0.7042,
-     "ev": -0.0801,
+     "ev": -0.0471,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "GG",
      "label": "Goal",
-     "p": 0.6086,
+     "p": 0.573,
      "quota": 1.48,
      "p_impl": 0.6757,
-     "ev": -0.0992,
+     "ev": -0.1519,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "NG",
      "label": "No Goal",
-     "p": 0.3914,
+     "p": 0.427,
      "quota": 2.4,
      "p_impl": 0.4167,
-     "ev": -0.0608,
+     "ev": 0.0248,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U0.5",
      "label": "Under 0.5",
-     "p": 0.0552,
+     "p": 0.0645,
      "quota": 13.5,
      "p_impl": 0.0741,
-     "ev": -0.2547,
+     "ev": -0.1286,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "O1.5",
      "label": "Over 1.5",
-     "p": 0.8188,
+     "p": 0.7926,
      "quota": 1.15,
      "p_impl": 0.8696,
-     "ev": -0.0584,
+     "ev": -0.0886,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "U1.5",
      "label": "Under 1.5",
-     "p": 0.1812,
+     "p": 0.2074,
      "quota": 4.5,
      "p_impl": 0.2222,
-     "ev": -0.1844,
+     "ev": -0.0665,
      "ht": false,
      "cat": "alto rischio"
     },
     {
      "k": "O2.5",
      "label": "Over 2.5",
-     "p": 0.591,
+     "p": 0.5515,
      "quota": 1.55,
      "p_impl": 0.6452,
-     "ev": -0.0839,
+     "ev": -0.1452,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "U2.5",
      "label": "Under 2.5",
-     "p": 0.409,
+     "p": 0.4485,
      "quota": 2.25,
      "p_impl": 0.4444,
-     "ev": -0.0799,
+     "ev": 0.0092,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "O3.5",
      "label": "Over 3.5",
-     "p": 0.3672,
+     "p": 0.3279,
      "quota": 2.35,
      "p_impl": 0.4255,
-     "ev": -0.1372,
+     "ev": -0.2294,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "alto rischio"
     },
     {
      "k": "U3.5",
      "label": "Under 3.5",
-     "p": 0.6328,
+     "p": 0.6721,
      "quota": 1.48,
      "p_impl": 0.6757,
-     "ev": -0.0634,
+     "ev": -0.0053,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "H_O0.5",
      "label": "Gol casa Over 0.5",
-     "p": 0.7205,
+     "p": 0.6852,
      "quota": 1.25,
      "p_impl": 0.8,
-     "ev": -0.0994,
+     "ev": -0.1435,
      "ht": false,
-     "cat": "probabile"
+     "cat": "senza valore"
     },
     {
      "k": "A_O0.5",
      "label": "Gol ospite Over 0.5",
-     "p": 0.833,
+     "p": 0.8233,
      "quota": 1.09,
      "p_impl": 0.9174,
-     "ev": -0.0921,
+     "ev": -0.1026,
      "ht": false,
      "cat": "probabile"
     },
     {
      "k": "H_O1.5",
      "label": "Gol casa Over 1.5",
-     "p": 0.3642,
+     "p": 0.3213,
      "quota": 2.4,
      "p_impl": 0.4167,
-     "ev": -0.126,
+     "ev": -0.2289,
      "ht": false,
-     "cat": "senza valore"
+     "cat": "alto rischio"
     },
     {
      "k": "A_O1.5",
      "label": "Gol ospite Over 1.5",
-     "p": 0.5341,
+     "p": 0.517,
      "quota": 1.67,
      "p_impl": 0.5988,
-     "ev": -0.1081,
+     "ev": -0.1366,
      "ht": false,
      "cat": "senza valore"
     },
     {
      "k": "HT1",
      "label": "1 primo tempo",
-     "p": 0.239,
+     "p": 0.2227,
      "quota": 3.8,
      "p_impl": 0.2632,
-     "ev": -0.092,
+     "ev": -0.1539,
      "ht": true,
      "cat": "alto rischio"
     },
     {
      "k": "HTX",
      "label": "X primo tempo",
-     "p": 0.3823,
+     "p": 0.3948,
      "quota": 2.3,
      "p_impl": 0.4348,
-     "ev": -0.1206,
+     "ev": -0.092,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "HT2",
      "label": "2 primo tempo",
-     "p": 0.3787,
+     "p": 0.3826,
      "quota": 2.45,
      "p_impl": 0.4082,
-     "ev": -0.0722,
+     "ev": -0.0627,
      "ht": true,
      "cat": "senza valore"
     },
     {
      "k": "HT_O0.5",
      "label": "Over 0.5 primo tempo",
-     "p": 0.7481,
+     "p": 0.7275,
      "quota": 1.24,
      "p_impl": 0.8065,
-     "ev": -0.0723,
+     "ev": -0.0979,
      "ht": true,
      "cat": "probabile"
     },
     {
      "k": "HT_O1.5",
      "label": "Over 1.5 primo tempo",
-     "p": 0.4009,
+     "p": 0.3732,
      "quota": 2.25,
      "p_impl": 0.4444,
-     "ev": -0.0981,
+     "ev": -0.1603,
      "ht": true,
-     "cat": "senza valore"
-    },
-    {
-     "k": "C:X2 + Over 1.5",
-     "label": "X2 + Over 1.5",
-     "p": 0.6052,
-     "quota": 1.55,
-     "p_impl": 0.6452,
-     "ev": -0.0619,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.6033,
-     "cat": "senza valore"
-    },
-    {
-     "k": "C:X2 + Under 3.5",
-     "label": "X2 + Under 3.5",
-     "p": 0.4599,
-     "quota": 2.04,
-     "p_impl": 0.4902,
-     "ev": -0.0618,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.4573,
-     "cat": "senza valore"
-    },
-    {
-     "k": "C:X2 + Goal",
-     "label": "X2 + Goal",
-     "p": 0.4559,
-     "quota": 1.99,
-     "p_impl": 0.5025,
-     "ev": -0.0928,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.4695,
-     "cat": "senza valore"
-    },
-    {
-     "k": "C:X2 + Over 2.5",
-     "label": "X2 + Over 2.5",
-     "p": 0.4154,
-     "quota": 2.21,
-     "p_impl": 0.4525,
-     "ev": -0.082,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.4217,
      "cat": "senza valore"
     },
     {
      "k": "C:2 + Over 1.5",
      "label": "2 + Over 1.5",
-     "p": 0.4116,
+     "p": 0.4125,
      "quota": 2.31,
      "p_impl": 0.4329,
-     "ev": -0.0492,
+     "ev": -0.0471,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.4042,
      "cat": "senza valore"
     },
     {
-     "k": "C:1X + Over 1.5",
-     "label": "1X + Over 1.5",
-     "p": 0.4071,
-     "quota": 2.33,
-     "p_impl": 0.4292,
-     "ev": -0.0515,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.3993,
-     "cat": "senza valore"
-    },
-    {
-     "k": "C:1X + Goal",
-     "label": "1X + Goal",
-     "p": 0.3463,
-     "quota": 2.66,
-     "p_impl": 0.3759,
-     "ev": -0.0788,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.35,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:1X + Under 3.5",
-     "label": "1X + Under 3.5",
-     "p": 0.3431,
-     "quota": 2.83,
-     "p_impl": 0.3534,
-     "ev": -0.029,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.329,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:X2 + Goal + Over 2.5",
-     "label": "X2 + Goal + Over 2.5",
-     "p": 0.3409,
-     "quota": 2.61,
-     "p_impl": 0.3831,
-     "ev": -0.1103,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.3577,
-     "cat": "alto rischio"
-    },
-    {
      "k": "C:2 + Over 2.5",
      "label": "2 + Over 2.5",
-     "p": 0.3369,
+     "p": 0.329,
      "quota": 2.79,
      "p_impl": 0.3584,
-     "ev": -0.06,
+     "ev": -0.0821,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.3344,
      "cat": "alto rischio"
     },
     {
-     "k": "C:X2 + Goal + Under 4.5",
-     "label": "X2 + Goal + Under 4.5",
-     "p": 0.3279,
-     "quota": 2.82,
-     "p_impl": 0.3546,
-     "ev": -0.0753,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.3307,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:X2 + Under 2.5",
-     "label": "X2 + Under 2.5",
-     "p": 0.32,
-     "quota": 2.89,
-     "p_impl": 0.346,
-     "ev": -0.0752,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.3224,
-     "cat": "alto rischio"
-    },
-    {
      "k": "C:2 + Under 3.5",
      "label": "2 + Under 3.5",
-     "p": 0.2897,
+     "p": 0.3159,
      "quota": 3.22,
      "p_impl": 0.3106,
-     "ev": -0.0672,
+     "ev": 0.0172,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2898,
      "cat": "alto rischio"
     },
     {
-     "k": "C:X2 + No Goal",
-     "label": "X2 + No Goal",
-     "p": 0.2795,
-     "quota": 3.39,
-     "p_impl": 0.295,
-     "ev": -0.0525,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2746,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:1X + Goal + Under 4.5",
-     "label": "1X + Goal + Under 4.5",
-     "p": 0.2725,
-     "quota": 3.5,
-     "p_impl": 0.2857,
-     "ev": -0.0462,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2664,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:2 + Goal",
-     "label": "2 + Goal",
-     "p": 0.2623,
-     "quota": 3.45,
-     "p_impl": 0.2899,
-     "ev": -0.0951,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2704,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:1X + Under 2.5",
-     "label": "1X + Under 2.5",
-     "p": 0.2591,
-     "quota": 3.67,
-     "p_impl": 0.2725,
-     "ev": -0.0491,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2539,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:1X + Over 2.5",
-     "label": "1X + Over 2.5",
-     "p": 0.2542,
-     "quota": 3.63,
-     "p_impl": 0.2755,
-     "ev": -0.0773,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2568,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:X2 + No Goal + Under 3.5",
-     "label": "X2 + No Goal + Under 3.5",
-     "p": 0.2496,
-     "quota": 3.75,
-     "p_impl": 0.2667,
-     "ev": -0.064,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2487,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:X2 + Goal + Over 3.5",
-     "label": "X2 + Goal + Over 3.5",
-     "p": 0.2456,
-     "quota": 3.57,
-     "p_impl": 0.2801,
-     "ev": -0.1232,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.261,
-     "cat": "alto rischio"
-    },
-    {
      "k": "C:2 + No Goal",
      "label": "2 + No Goal",
-     "p": 0.2243,
+     "p": 0.2503,
      "quota": 4.26,
      "p_impl": 0.2347,
-     "ev": -0.0445,
+     "ev": 0.0663,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.2189,
      "cat": "alto rischio"
     },
     {
-     "k": "C:1 + Over 1.5",
-     "label": "1 + Over 1.5",
-     "p": 0.2136,
-     "quota": 4.65,
-     "p_impl": 0.2151,
-     "ev": -0.0068,
+     "k": "C:2 + Goal",
+     "label": "2 + Goal",
+     "p": 0.2498,
+     "quota": 3.45,
+     "p_impl": 0.2899,
+     "ev": -0.1382,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.2003,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:X2 + Goal + Under 3.5",
-     "label": "X2 + Goal + Under 3.5",
-     "p": 0.2103,
-     "quota": 4.47,
-     "p_impl": 0.2237,
-     "ev": -0.06,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2085,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:X2 + No Goal + Under 2.5",
-     "label": "X2 + No Goal + Under 2.5",
-     "p": 0.205,
-     "quota": 4.43,
-     "p_impl": 0.2257,
-     "ev": -0.0919,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.2106,
+     "p_mercato": 0.2704,
      "cat": "alto rischio"
     },
     {
      "k": "C:2 + No Goal + Under 3.5",
      "label": "2 + No Goal + Under 3.5",
-     "p": 0.1944,
+     "p": 0.2194,
      "quota": 4.83,
      "p_impl": 0.207,
-     "ev": -0.061,
+     "ev": 0.0597,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.1931,
      "cat": "alto rischio"
     },
     {
-     "k": "C:X + Over 1.5",
-     "label": "X + Over 1.5",
-     "p": 0.1936,
-     "quota": 4.68,
-     "p_impl": 0.2137,
-     "ev": -0.094,
+     "k": "C:2 + Under 2.5",
+     "label": "2 + Under 2.5",
+     "p": 0.1711,
+     "quota": 6.01,
+     "p_impl": 0.1664,
+     "ev": 0.0283,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.1991,
+     "p_mercato": 0.155,
      "cat": "alto rischio"
     },
     {
-     "k": "C:X + Goal",
-     "label": "X + Goal",
-     "p": 0.1936,
-     "quota": 4.68,
-     "p_impl": 0.2137,
-     "ev": -0.094,
+     "k": "C:2 + No Goal + Over 1.5",
+     "label": "2 + No Goal + Over 1.5",
+     "p": 0.1628,
+     "quota": 6.97,
+     "p_impl": 0.1435,
+     "ev": 0.1347,
      "ht": false,
      "fonte": "stimata",
-     "p_mercato": 0.1991,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:1X + Goal + Under 3.5",
-     "label": "1X + Goal + Under 3.5",
-     "p": 0.1829,
-     "quota": 5.32,
-     "p_impl": 0.188,
-     "ev": -0.027,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.1752,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:1 + Over 2.5",
-     "label": "1 + Over 2.5",
-     "p": 0.1756,
-     "quota": 5.5,
-     "p_impl": 0.1818,
-     "ev": -0.0342,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.1695,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:1 + Under 3.5",
-     "label": "1 + Under 3.5",
-     "p": 0.1729,
-     "quota": 5.77,
-     "p_impl": 0.1733,
-     "ev": -0.0024,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.1615,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:X + Under 3.5",
-     "label": "X + Under 3.5",
-     "p": 0.1702,
-     "quota": 5.57,
-     "p_impl": 0.1795,
-     "ev": -0.052,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.1674,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:X + Under 2.5",
-     "label": "X + Under 2.5",
-     "p": 0.1702,
-     "quota": 5.57,
-     "p_impl": 0.1795,
-     "ev": -0.052,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.1674,
+     "p_mercato": 0.1338,
      "cat": "alto rischio"
     },
     {
      "k": "C:2 + Goal + Over 3.5",
      "label": "2 + Goal + Over 3.5",
-     "p": 0.167,
+     "p": 0.1532,
      "quota": 5.37,
      "p_impl": 0.1862,
-     "ev": -0.1032,
+     "ev": -0.1773,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.1737,
      "cat": "alto rischio"
     },
     {
-     "k": "C:1X + No Goal",
-     "label": "1X + No Goal",
-     "p": 0.167,
-     "quota": 5.8,
-     "p_impl": 0.1724,
-     "ev": -0.0314,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.1606,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:1X + Goal + Over 3.5",
-     "label": "1X + Goal + Over 3.5",
-     "p": 0.1634,
-     "quota": 5.33,
-     "p_impl": 0.1876,
-     "ev": -0.1291,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.1748,
-     "cat": "alto rischio"
-    },
-    {
-     "k": "C:1 + Goal",
-     "label": "1 + Goal",
-     "p": 0.1528,
-     "quota": 6.18,
-     "p_impl": 0.1618,
-     "ev": -0.0557,
-     "ht": false,
-     "fonte": "stimata",
-     "p_mercato": 0.1509,
-     "cat": "alto rischio"
-    },
-    {
      "k": "C:2 + Goal + Under 4.5",
      "label": "2 + Goal + Under 4.5",
-     "p": 0.1522,
+     "p": 0.1524,
      "quota": 6.12,
      "p_impl": 0.1634,
-     "ev": -0.0685,
+     "ev": -0.0673,
      "ht": false,
      "fonte": "stimata",
      "p_mercato": 0.1524,
@@ -9971,43 +9363,43 @@
    "pronostico": {
     "k": "U3.5",
     "label": "Under 3.5",
-    "p": 0.6328,
+    "p": 0.6721,
     "quota": 1.48,
     "p_impl": 0.6757,
-    "ev": -0.0634,
+    "ev": -0.0053,
     "ht": false,
     "cat": "senza valore"
    },
    "p": {
-    "1": 0.2646,
-    "X": 0.2488,
-    "2": 0.4867,
-    "GG": 0.6086,
-    "NG": 0.3914,
-    "O0.5": 0.9448,
-    "U0.5": 0.0552,
-    "O1.5": 0.8188,
-    "U1.5": 0.1812,
-    "O2.5": 0.591,
-    "U2.5": 0.409,
-    "O3.5": 0.3672,
-    "U3.5": 0.6328,
-    "H_O0.5": 0.7205,
-    "A_O0.5": 0.833,
-    "H_O1.5": 0.3642,
-    "A_O1.5": 0.5341,
-    "1X": 0.5133,
-    "X2": 0.7354,
-    "12": 0.7512,
-    "DNB1": 0.3522,
-    "DNB2": 0.6478,
-    "1X_O1.5": 0.4071,
-    "X2_U3.5": 0.4599,
-    "HT1": 0.239,
-    "HTX": 0.3823,
-    "HT2": 0.3787,
-    "HT_O0.5": 0.7481,
-    "HT_O1.5": 0.4009
+    "1": 0.2451,
+    "X": 0.2548,
+    "2": 0.5,
+    "GG": 0.573,
+    "NG": 0.427,
+    "O0.5": 0.9355,
+    "U0.5": 0.0645,
+    "O1.5": 0.7926,
+    "U1.5": 0.2074,
+    "O2.5": 0.5515,
+    "U2.5": 0.4485,
+    "O3.5": 0.3279,
+    "U3.5": 0.6721,
+    "H_O0.5": 0.6852,
+    "A_O0.5": 0.8233,
+    "H_O1.5": 0.3213,
+    "A_O1.5": 0.517,
+    "1X": 0.5,
+    "X2": 0.7549,
+    "12": 0.7452,
+    "DNB1": 0.329,
+    "DNB2": 0.671,
+    "1X_O1.5": 0.38,
+    "X2_U3.5": 0.5008,
+    "HT1": 0.2227,
+    "HTX": 0.3948,
+    "HT2": 0.3826,
+    "HT_O0.5": 0.7275,
+    "HT_O1.5": 0.3732
    },
    "avvisi": [],
    "contesto": []
@@ -10018,152 +9410,152 @@
    "semplice": {
     "selezioni": [
      {
-      "k": "1",
-      "label": "1 (casa)",
-      "p": 0.6842,
-      "quota": 1.37,
-      "p_impl": 0.7299,
-      "ev": -0.0627,
+      "k": "12",
+      "label": "Doppia chance 12",
+      "p": 0.7616,
+      "quota": 1.12,
+      "p_impl": 0.8929,
+      "ev": -0.1471,
       "ht": false,
-      "cat": "senza valore",
+      "cat": "probabile",
+      "match": "Como-Cagliari",
+      "mid": 558525
+     },
+     {
+      "k": "U3.5",
+      "label": "Under 3.5",
+      "p": 0.7562,
+      "quota": 1.47,
+      "p_impl": 0.6803,
+      "ev": 0.1116,
+      "ht": false,
+      "cat": "value",
       "match": "Lazio-Lecce",
       "mid": 558528
      },
      {
-      "k": "O1.5",
-      "label": "Over 1.5",
-      "p": 0.8335,
-      "quota": 1.13,
-      "p_impl": 0.885,
-      "ev": -0.0582,
-      "ht": false,
-      "cat": "probabile",
-      "match": "Parma-Roma",
-      "mid": 558526
-     },
-     {
-      "k": "O1.5",
-      "label": "Over 1.5",
-      "p": 0.802,
-      "quota": 1.18,
-      "p_impl": 0.8475,
-      "ev": -0.0536,
+      "k": "DNB1",
+      "label": "Draw No Bet 1",
+      "p": 0.7783,
+      "quota": 1.15,
+      "p_impl": 0.8696,
+      "ev": -0.105,
       "ht": false,
       "cat": "probabile",
       "match": "Napoli-Torino",
       "mid": 558527
      }
     ],
-    "quota": 1.83,
-    "p": 0.4574,
-    "ev": -0.1645,
+    "quota": 1.89,
+    "p": 0.4482,
+    "ev": -0.1513,
     "giudizio": "EV negativo: solo test virtuale"
    },
    "media": {
     "selezioni": [
      {
-      "k": "1",
-      "label": "1 (casa)",
-      "p": 0.7256,
-      "quota": 1.3,
-      "p_impl": 0.7692,
-      "ev": -0.0567,
+      "k": "U3.5",
+      "label": "Under 3.5",
+      "p": 0.7344,
+      "quota": 1.57,
+      "p_impl": 0.6369,
+      "ev": 0.1529,
       "ht": false,
-      "cat": "probabile",
+      "cat": "value",
       "match": "Como-Cagliari",
       "mid": 558525
      },
      {
-      "k": "2",
-      "label": "2 (ospite)",
-      "p": 0.7285,
-      "quota": 1.28,
-      "p_impl": 0.7812,
-      "ev": -0.0675,
+      "k": "U2.5",
+      "label": "Under 2.5",
+      "p": 0.5422,
+      "quota": 2.25,
+      "p_impl": 0.4444,
+      "ev": 0.2199,
       "ht": false,
-      "cat": "probabile",
-      "match": "Parma-Roma",
-      "mid": 558526
+      "cat": "value",
+      "match": "Lazio-Lecce",
+      "mid": 558528
      },
      {
-      "k": "NG",
-      "label": "No Goal",
-      "p": 0.4791,
-      "quota": 1.95,
-      "p_impl": 0.5128,
-      "ev": -0.0658,
+      "k": "U3.5",
+      "label": "Under 3.5",
+      "p": 0.748,
+      "quota": 1.52,
+      "p_impl": 0.6579,
+      "ev": 0.137,
       "ht": false,
-      "cat": "senza valore",
-      "match": "Napoli-Torino",
-      "mid": 558527
+      "cat": "value",
+      "match": "Parma-Roma",
+      "mid": 558526
      }
     ],
-    "quota": 3.24,
-    "p": 0.2533,
-    "ev": -0.1782,
-    "giudizio": "EV negativo: solo test virtuale"
+    "quota": 5.37,
+    "p": 0.2978,
+    "ev": 0.5993,
+    "giudizio": "Valore positivo"
    },
    "aggressiva": {
     "selezioni": [
      {
-      "k": "C:1 + Over 2.5",
-      "label": "1 + Over 2.5",
-      "p": 0.5226,
-      "quota": 1.83,
-      "p_impl": 0.5464,
-      "ev": -0.0436,
+      "k": "C:1 + Under 3.5",
+      "label": "1 + Under 3.5",
+      "p": 0.4226,
+      "quota": 2.35,
+      "p_impl": 0.4255,
+      "ev": -0.0069,
       "ht": false,
       "fonte": "stimata",
-      "p_mercato": 0.5154,
+      "p_mercato": 0.4021,
       "cat": "senza valore",
       "match": "Como-Cagliari",
       "mid": 558525
      },
      {
-      "k": "C:1 + Over 2.5",
-      "label": "1 + Over 2.5",
-      "p": 0.4723,
-      "quota": 2.02,
-      "p_impl": 0.495,
-      "ev": -0.046,
+      "k": "C:1 + Under 3.5",
+      "label": "1 + Under 3.5",
+      "p": 0.4357,
+      "quota": 2.3,
+      "p_impl": 0.4348,
+      "ev": 0.0021,
       "ht": false,
       "fonte": "stimata",
-      "p_mercato": 0.4655,
+      "p_mercato": 0.4077,
       "cat": "senza valore",
       "match": "Lazio-Lecce",
       "mid": 558528
      },
      {
-      "k": "C:1 + No Goal + Over 1.5",
-      "label": "1 + No Goal + Over 1.5",
-      "p": 0.2532,
-      "quota": 3.9,
-      "p_impl": 0.2564,
-      "ev": -0.0125,
+      "k": "C:2 + Under 3.5",
+      "label": "2 + Under 3.5",
+      "p": 0.4252,
+      "quota": 2.21,
+      "p_impl": 0.4525,
+      "ev": -0.0603,
       "ht": false,
       "fonte": "stimata",
-      "p_mercato": 0.2388,
-      "cat": "alto rischio",
-      "match": "Napoli-Torino",
-      "mid": 558527
+      "p_mercato": 0.4231,
+      "cat": "senza valore",
+      "match": "Parma-Roma",
+      "mid": 558526
      }
     ],
-    "quota": 14.42,
-    "p": 0.0625,
-    "ev": -0.099,
-    "giudizio": "EV negativo: solo test virtuale"
+    "quota": 11.95,
+    "p": 0.0783,
+    "ev": -0.0648,
+    "giudizio": "Neutra: nessun vantaggio significativo"
    }
   },
   "domenica": {
    "semplice": {
     "selezioni": [
      {
-      "k": "O1.5",
-      "label": "Over 1.5",
-      "p": 0.8134,
-      "quota": 1.15,
-      "p_impl": 0.8696,
-      "ev": -0.0646,
+      "k": "U3.5",
+      "label": "Under 3.5",
+      "p": 0.7029,
+      "quota": 1.45,
+      "p_impl": 0.6897,
+      "ev": 0.0192,
       "ht": false,
       "cat": "probabile",
       "match": "Juventus-Venezia",
@@ -10172,130 +9564,191 @@
      {
       "k": "O1.5",
       "label": "Over 1.5",
-      "p": 0.7593,
+      "p": 0.755,
       "quota": 1.27,
       "p_impl": 0.7874,
-      "ev": -0.0356,
+      "ev": -0.0412,
       "ht": false,
       "cat": "probabile",
       "match": "Bologna-Udinese",
       "mid": 558522
      },
      {
-      "k": "12",
-      "label": "Doppia chance 12",
-      "p": 0.7186,
-      "quota": 1.3,
-      "p_impl": 0.7692,
-      "ev": -0.0658,
+      "k": "U3.5",
+      "label": "Under 3.5",
+      "p": 0.7328,
+      "quota": 1.27,
+      "p_impl": 0.7874,
+      "ev": -0.0693,
       "ht": false,
       "cat": "probabile",
       "match": "Sassuolo-Genoa",
       "mid": 558524
      }
     ],
-    "quota": 1.9,
-    "p": 0.4438,
-    "ev": -0.1573,
+    "quota": 2.34,
+    "p": 0.3889,
+    "ev": -0.0905,
     "giudizio": "EV negativo: solo test virtuale"
    },
    "media": {
     "selezioni": [
      {
-      "k": "1",
-      "label": "1 (casa)",
-      "p": 0.6941,
-      "quota": 1.35,
-      "p_impl": 0.7407,
-      "ev": -0.0629,
-      "ht": false,
-      "cat": "senza valore",
-      "match": "Juventus-Venezia",
-      "mid": 558521
-     },
-     {
       "k": "U3.5",
       "label": "Under 3.5",
-      "p": 0.5028,
-      "quota": 1.88,
-      "p_impl": 0.5319,
-      "ev": -0.0548,
+      "p": 0.7209,
+      "quota": 1.3,
+      "p_impl": 0.7692,
+      "ev": -0.0629,
       "ht": false,
-      "cat": "senza valore",
+      "cat": "probabile",
+      "match": "Bologna-Udinese",
+      "mid": 558522
+     },
+     {
+      "k": "X2",
+      "label": "Doppia chance X2",
+      "p": 0.4726,
+      "quota": 2.35,
+      "p_impl": 0.4255,
+      "ev": 0.1107,
+      "ht": false,
+      "cat": "value",
       "match": "Milan-Frosinone",
       "mid": 558523
      },
      {
       "k": "U3.5",
       "label": "Under 3.5",
-      "p": 0.5386,
+      "p": 0.6262,
       "quota": 1.77,
       "p_impl": 0.565,
-      "ev": -0.0466,
+      "ev": 0.1083,
       "ht": false,
-      "cat": "senza valore",
+      "cat": "value",
       "match": "Atalanta-Inter",
       "mid": 558520
      }
     ],
-    "quota": 4.49,
-    "p": 0.188,
-    "ev": -0.1556,
-    "giudizio": "EV negativo: solo test virtuale"
+    "quota": 5.41,
+    "p": 0.2133,
+    "ev": 0.1536,
+    "giudizio": "Neutra: nessun vantaggio significativo"
    },
    "aggressiva": {
     "selezioni": [
      {
-      "k": "C:1 + Over 2.5",
-      "label": "1 + Over 2.5",
-      "p": 0.4735,
-      "quota": 2.0,
-      "p_impl": 0.5,
-      "ev": -0.053,
+      "k": "C:1 + Under 3.5",
+      "label": "1 + Under 3.5",
+      "p": 0.4332,
+      "quota": 2.22,
+      "p_impl": 0.4505,
+      "ev": -0.0383,
       "ht": false,
       "fonte": "stimata",
-      "p_mercato": 0.4685,
+      "p_mercato": 0.4222,
       "cat": "senza valore",
       "match": "Juventus-Venezia",
       "mid": 558521
      },
      {
-      "k": "C:1 + No Goal",
-      "label": "1 + No Goal",
-      "p": 0.2514,
-      "quota": 3.96,
-      "p_impl": 0.2525,
-      "ev": -0.0045,
+      "k": "C:1X + Over 1.5",
+      "label": "1X + Over 1.5",
+      "p": 0.4782,
+      "quota": 2.01,
+      "p_impl": 0.4975,
+      "ev": -0.0388,
       "ht": false,
       "fonte": "stimata",
-      "p_mercato": 0.2375,
-      "cat": "alto rischio",
-      "match": "Milan-Frosinone",
-      "mid": 558523
+      "p_mercato": 0.4642,
+      "cat": "senza valore",
+      "match": "Sassuolo-Genoa",
+      "mid": 558524
      },
      {
-      "k": "C:2 + Over 1.5",
-      "label": "2 + Over 1.5",
-      "p": 0.5189,
-      "quota": 1.83,
-      "p_impl": 0.5464,
-      "ev": -0.0504,
+      "k": "C:2 + Under 3.5",
+      "label": "2 + Under 3.5",
+      "p": 0.3032,
+      "quota": 3.33,
+      "p_impl": 0.3003,
+      "ev": 0.0097,
       "ht": false,
       "fonte": "stimata",
-      "p_mercato": 0.5122,
-      "cat": "senza valore",
+      "p_mercato": 0.2812,
+      "cat": "alto rischio",
       "match": "Atalanta-Inter",
       "mid": 558520
      }
     ],
-    "quota": 14.49,
-    "p": 0.0618,
-    "ev": -0.1047,
-    "giudizio": "EV negativo: solo test virtuale"
+    "quota": 14.86,
+    "p": 0.0628,
+    "ev": -0.0667,
+    "giudizio": "Neutra: nessun vantaggio significativo"
    }
   }
  },
- "singole": [],
+ "singole": [
+  {
+   "k": "1X",
+   "label": "Doppia chance 1X",
+   "p": 0.3915,
+   "quota": 3.35,
+   "p_impl": 0.2985,
+   "ev": 0.3115,
+   "ht": false,
+   "cat": "value",
+   "match": "Parma-Roma",
+   "giorno": "2026-11-21"
+  },
+  {
+   "k": "U2.5",
+   "label": "Under 2.5",
+   "p": 0.5165,
+   "quota": 2.5,
+   "p_impl": 0.4,
+   "ev": 0.2913,
+   "ht": false,
+   "cat": "value",
+   "match": "Como-Cagliari",
+   "giorno": "2026-11-21"
+  },
+  {
+   "k": "DNB2",
+   "label": "Draw No Bet 2",
+   "p": 0.3159,
+   "quota": 4.0,
+   "p_impl": 0.25,
+   "ev": 0.2636,
+   "ht": false,
+   "cat": "value",
+   "match": "Milan-Frosinone",
+   "giorno": "2026-11-22"
+  },
+  {
+   "k": "U2.5",
+   "label": "Under 2.5",
+   "p": 0.5422,
+   "quota": 2.25,
+   "p_impl": 0.4444,
+   "ev": 0.2199,
+   "ht": false,
+   "cat": "value",
+   "match": "Lazio-Lecce",
+   "giorno": "2026-11-21"
+  },
+  {
+   "k": "U2.5",
+   "label": "Under 2.5",
+   "p": 0.4024,
+   "quota": 2.85,
+   "p_impl": 0.3509,
+   "ev": 0.147,
+   "ht": false,
+   "cat": "value",
+   "match": "Atalanta-Inter",
+   "giorno": "2026-11-22"
+  }
+ ],
  "evitare": [
   {
    "match": "Parma-Roma",
@@ -10320,22 +9773,6 @@
   "stato": "ok",
   "lista": [
    {
-    "nome": "Donyell Malen",
-    "squadra": "Roma",
-    "avversario": "Parma",
-    "match": "Parma-Roma",
-    "mid": 558526,
-    "xg": 9.23,
-    "minuti": 689,
-    "partite": 10,
-    "xg90": 0.965,
-    "min_attesi": 63,
-    "titolare": null,
-    "p": 0.462,
-    "quota": 1.75,
-    "ev": -0.1914
-   },
-   {
     "nome": "Gonçalo Ramos",
     "squadra": "Milan",
     "avversario": "Frosinone",
@@ -10347,25 +9784,25 @@
     "xg90": 0.434,
     "min_attesi": 89,
     "titolare": null,
-    "p": 0.4609,
+    "p": 0.407,
     "quota": 1.95,
-    "ev": -0.1013
+    "ev": -0.2064
    },
    {
-    "nome": "Tasos Douvikas",
-    "squadra": "Como",
-    "avversario": "Cagliari",
-    "match": "Como-Cagliari",
-    "mid": 558525,
-    "xg": 5.34,
-    "minuti": 857,
-    "partite": 11,
-    "xg90": 0.51,
-    "min_attesi": 78,
+    "nome": "Donyell Malen",
+    "squadra": "Roma",
+    "avversario": "Parma",
+    "match": "Parma-Roma",
+    "mid": 558526,
+    "xg": 9.23,
+    "minuti": 689,
+    "partite": 10,
+    "xg90": 0.965,
+    "min_attesi": 63,
     "titolare": null,
-    "p": 0.4166,
-    "quota": 1.92,
-    "ev": -0.2001
+    "p": 0.3674,
+    "quota": 1.75,
+    "ev": -0.3571
    },
    {
     "nome": "Randal Kolo Muani",
@@ -10379,43 +9816,43 @@
     "xg90": 0.366,
     "min_attesi": 85,
     "titolare": null,
-    "p": 0.3728,
+    "p": 0.342,
     "quota": 2.5,
-    "ev": -0.0679
-   }
-  ],
-  "altri": [
-   {
-    "nome": "Davide Frattesi",
-    "squadra": "Lazio",
-    "avversario": "Lecce",
-    "match": "Lazio-Lecce",
-    "mid": 558528,
-    "xg": 3.24,
-    "minuti": 849,
-    "partite": 11,
-    "xg90": 0.294,
-    "min_attesi": 77,
-    "titolare": null,
-    "p": 0.3024,
-    "quota": 3.9,
-    "ev": 0.1795
+    "ev": -0.1449
    },
    {
-    "nome": "Nico Paz",
+    "nome": "Tasos Douvikas",
     "squadra": "Como",
     "avversario": "Cagliari",
     "match": "Como-Cagliari",
     "mid": 558525,
-    "xg": 3.7,
-    "minuti": 824,
-    "partite": 10,
-    "xg90": 0.339,
-    "min_attesi": 75,
+    "xg": 5.34,
+    "minuti": 857,
+    "partite": 11,
+    "xg90": 0.51,
+    "min_attesi": 78,
     "titolare": null,
-    "p": 0.2912,
-    "quota": 2.7,
-    "ev": -0.2138
+    "p": 0.3325,
+    "quota": 1.92,
+    "ev": -0.3616
+   }
+  ],
+  "altri": [
+   {
+    "nome": "Nikola Krstovic",
+    "squadra": "Atalanta",
+    "avversario": "Inter",
+    "match": "Atalanta-Inter",
+    "mid": 558520,
+    "xg": 5.25,
+    "minuti": 711,
+    "partite": 11,
+    "xg90": 0.578,
+    "min_attesi": 65,
+    "titolare": null,
+    "p": 0.2757,
+    "quota": 3.65,
+    "ev": 0.0063
    },
    {
     "nome": "Marcus Thuram",
@@ -10429,41 +9866,9 @@
     "xg90": 0.643,
     "min_attesi": 66,
     "titolare": null,
-    "p": 0.2911,
+    "p": 0.2526,
     "quota": 2.1,
-    "ev": -0.3887
-   },
-   {
-    "nome": "Nikola Krstovic",
-    "squadra": "Atalanta",
-    "avversario": "Inter",
-    "match": "Atalanta-Inter",
-    "mid": 558520,
-    "xg": 5.25,
-    "minuti": 711,
-    "partite": 11,
-    "xg90": 0.578,
-    "min_attesi": 65,
-    "titolare": null,
-    "p": 0.2871,
-    "quota": 3.65,
-    "ev": 0.0479
-   },
-   {
-    "nome": "Tijjani Noslin",
-    "squadra": "Lazio",
-    "avversario": "Lecce",
-    "match": "Lazio-Lecce",
-    "mid": 558528,
-    "xg": 2.42,
-    "minuti": 668,
-    "partite": 10,
-    "xg90": 0.333,
-    "min_attesi": 61,
-    "titolare": null,
-    "p": 0.2742,
-    "quota": 2.4,
-    "ev": -0.3418
+    "ev": -0.4696
    },
    {
     "nome": "Milutin Osmajic",
@@ -10477,9 +9882,25 @@
     "xg90": 0.282,
     "min_attesi": 75,
     "titolare": null,
-    "p": 0.2624,
+    "p": 0.2507,
     "quota": 3.5,
-    "ev": -0.0818
+    "ev": -0.1225
+   },
+   {
+    "nome": "Davide Frattesi",
+    "squadra": "Lazio",
+    "avversario": "Lecce",
+    "match": "Lazio-Lecce",
+    "mid": 558528,
+    "xg": 3.24,
+    "minuti": 849,
+    "partite": 11,
+    "xg90": 0.294,
+    "min_attesi": 77,
+    "titolare": null,
+    "p": 0.2489,
+    "quota": 3.9,
+    "ev": -0.0293
    },
    {
     "nome": "Gustavo Varela",
@@ -10493,9 +9914,9 @@
     "xg90": 0.46,
     "min_attesi": 77,
     "titolare": null,
-    "p": 0.2624,
+    "p": 0.2427,
     "quota": 2.95,
-    "ev": -0.2261
+    "ev": -0.2842
    },
    {
     "nome": "Franco Mastantuono",
@@ -10509,25 +9930,25 @@
     "xg90": 0.33,
     "min_attesi": 80,
     "titolare": null,
-    "p": 0.2484,
+    "p": 0.2412,
     "quota": 3.9,
-    "ev": -0.0311
+    "ev": -0.0593
    },
    {
-    "nome": "Nick Woltemade",
-    "squadra": "Juventus",
-    "avversario": "Venezia",
-    "match": "Juventus-Venezia",
-    "mid": 558521,
-    "xg": 2.78,
-    "minuti": 405,
-    "partite": 9,
-    "xg90": 0.511,
-    "min_attesi": 37,
+    "nome": "Nico Paz",
+    "squadra": "Como",
+    "avversario": "Cagliari",
+    "match": "Como-Cagliari",
+    "mid": 558525,
+    "xg": 3.7,
+    "minuti": 824,
+    "partite": 10,
+    "xg90": 0.339,
+    "min_attesi": 75,
     "titolare": null,
-    "p": 0.2457,
-    "quota": 2.6,
-    "ev": -0.3613
+    "p": 0.2275,
+    "quota": 2.7,
+    "ev": -0.3857
    },
    {
     "nome": "Federico Bernardeschi",
@@ -10541,57 +9962,41 @@
     "xg90": 0.371,
     "min_attesi": 71,
     "titolare": null,
-    "p": 0.2355,
+    "p": 0.2272,
     "quota": 3.2,
-    "ev": -0.2464
+    "ev": -0.2731
    },
    {
-    "nome": "Kevin De Bruyne",
-    "squadra": "Napoli",
-    "avversario": "Torino",
-    "match": "Napoli-Torino",
-    "mid": 558527,
-    "xg": 3.22,
-    "minuti": 623,
-    "partite": 11,
-    "xg90": 0.43,
-    "min_attesi": 57,
-    "titolare": null,
-    "p": 0.2295,
-    "quota": 4.0,
-    "ev": -0.0819
-   },
-   {
-    "nome": "Gustav Isaksen",
+    "nome": "Tijjani Noslin",
     "squadra": "Lazio",
     "avversario": "Lecce",
     "match": "Lazio-Lecce",
     "mid": 558528,
-    "xg": 1.78,
-    "minuti": 649,
-    "partite": 11,
-    "xg90": 0.277,
-    "min_attesi": 59,
+    "xg": 2.42,
+    "minuti": 668,
+    "partite": 10,
+    "xg90": 0.333,
+    "min_attesi": 61,
     "titolare": null,
-    "p": 0.2283,
-    "quota": 2.95,
-    "ev": -0.3264
+    "p": 0.2249,
+    "quota": 2.4,
+    "ev": -0.4604
    },
    {
-    "nome": "Lautaro Martínez",
-    "squadra": "Inter",
-    "avversario": "Atalanta",
-    "match": "Atalanta-Inter",
-    "mid": 558520,
-    "xg": 5.67,
-    "minuti": 353,
-    "partite": 5,
-    "xg90": 0.971,
-    "min_attesi": 32,
+    "nome": "Nick Woltemade",
+    "squadra": "Juventus",
+    "avversario": "Venezia",
+    "match": "Juventus-Venezia",
+    "mid": 558521,
+    "xg": 2.78,
+    "minuti": 405,
+    "partite": 9,
+    "xg90": 0.511,
+    "min_attesi": 37,
     "titolare": null,
-    "p": 0.2238,
-    "quota": 2.1,
-    "ev": -0.5301
+    "p": 0.2235,
+    "quota": 2.6,
+    "ev": -0.4189
    },
    {
     "nome": "Mateo Pellegrino",
@@ -10605,53 +10010,102 @@
     "xg90": 0.307,
     "min_attesi": 73,
     "titolare": null,
-    "p": 0.2151,
+    "p": 0.2087,
     "quota": 2.8,
-    "ev": -0.3976
+    "ev": -0.4156
    },
    {
-    "nome": "Christian Pulisic",
-    "squadra": "Milan",
-    "avversario": "Frosinone",
-    "match": "Milan-Frosinone",
-    "mid": 558523,
-    "xg": 1.56,
+    "nome": "Kieron Bowie",
+    "squadra": "Sassuolo",
+    "avversario": "Genoa",
+    "match": "Sassuolo-Genoa",
+    "mid": 558524,
+    "xg": 2.75,
     "minuti": 550,
-    "partite": 8,
-    "xg90": 0.286,
+    "partite": 11,
+    "xg90": 0.417,
     "min_attesi": 50,
     "titolare": null,
-    "p": 0.2044,
-    "quota": 2.2,
-    "ev": -0.5502
+    "p": 0.2054,
+    "quota": 3.8,
+    "ev": -0.2193
    },
    {
-    "nome": "Matìas Soulè",
-    "squadra": "Roma",
-    "avversario": "Parma",
-    "match": "Parma-Roma",
-    "mid": 558526,
-    "xg": 2.62,
-    "minuti": 763,
+    "nome": "Kevin De Bruyne",
+    "squadra": "Napoli",
+    "avversario": "Torino",
+    "match": "Napoli-Torino",
+    "mid": 558527,
+    "xg": 3.22,
+    "minuti": 623,
     "partite": 11,
-    "xg90": 0.32,
-    "min_attesi": 69,
+    "xg90": 0.43,
+    "min_attesi": 57,
     "titolare": null,
-    "p": 0.2035,
-    "quota": 2.7,
-    "ev": -0.4505
+    "p": 0.1988,
+    "quota": 4.0,
+    "ev": -0.2047
+   },
+   {
+    "nome": "Armand Laurienté",
+    "squadra": "Sassuolo",
+    "avversario": "Genoa",
+    "match": "Sassuolo-Genoa",
+    "mid": 558524,
+    "xg": 2.07,
+    "minuti": 901,
+    "partite": 11,
+    "xg90": 0.24,
+    "min_attesi": 82,
+    "titolare": null,
+    "p": 0.1947,
+    "quota": 4.2,
+    "ev": -0.1821
+   },
+   {
+    "nome": "Lautaro Martínez",
+    "squadra": "Inter",
+    "avversario": "Atalanta",
+    "match": "Atalanta-Inter",
+    "mid": 558520,
+    "xg": 5.67,
+    "minuti": 353,
+    "partite": 5,
+    "xg90": 0.971,
+    "min_attesi": 32,
+    "titolare": null,
+    "p": 0.1929,
+    "quota": 2.1,
+    "ev": -0.5949
+   },
+   {
+    "nome": "Junior Messias",
+    "squadra": "Genoa",
+    "avversario": "Sassuolo",
+    "match": "Sassuolo-Genoa",
+    "mid": 558524,
+    "xg": 1.73,
+    "minuti": 581,
+    "partite": 11,
+    "xg90": 0.294,
+    "min_attesi": 53,
+    "titolare": null,
+    "p": 0.191,
+    "quota": 5.2,
+    "ev": -0.0067
    }
   ],
   "combinazione": {
    "quota": 16.38,
-   "p": 0.0331,
-   "ev": -0.4583,
+   "p": 0.017,
+   "ev": -0.7215,
    "stessa_partita": false
   }
  },
  "metodo": {
-  "W_1X2": 0.0,
-  "W_GOL": 0.0,
+  "modalita": "AI",
+  "W_1X2": 1.0,
+  "W_GOL": 1.0,
   "par_1x2": {
    "xi": 0.002,
    "k": 4.0,
@@ -10673,7 +10127,7 @@
    "logloss_ou_mix25": 0.7041
   },
   "taratura": {
-   "generato": "2026-11-17T18:02:39+00:00",
+   "generato": "2026-11-17T18:09:53+00:00",
    "stagioni": [
     "2122",
     "2223",

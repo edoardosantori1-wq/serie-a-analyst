@@ -5,7 +5,24 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 17 Nov 2026 15:56:27 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 17 Nov 2026 16:57:59 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Napoli, De Bryune torna ad allenarsi da domani: sar&agrave; a disposizione di Allegri&nbsp;]]></title>
+            <description><![CDATA[Cambio di programma: il belga, dopo la pausa con le nazionali, rientrer&agrave; alla base con 24 ore di ritardo&nbsp;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/17-152656194/napoli_de_bryune_torna_ad_allenarsi_da_domani_sar_a_disposizione_di_allegri/</link>
+            <guid isPermaLink="false">sn:cds:152656194</guid>
+            <category><![CDATA[De Bruyne]]></category>
+            <category><![CDATA[napoli]]></category>
+            <pubDate>Tue, 17 Nov 2026 16:49:20 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/17/164600040-e7864245-1ccb-4a7a-b275-7a12fff84d1a.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/164600040-e7864245-1ccb-4a7a-b275-7a12fff84d1a.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>FOTO GIANLUCA MOSCA</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/164600040-e7864245-1ccb-4a7a-b275-7a12fff84d1a.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Cambio di programma: il belga, dopo la pausa con le nazionali, rientrer&agrave; alla base con 24 ore di ritardo&nbsp;]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Lautaro Martinez &egrave; tornato in gruppo: primo allenamento con l&#39;Inter dopo l&#39;infortunio. C&#39;&egrave; anche Thuram]]></title>
             <description><![CDATA[I due centravanti nerazzurri sono tornati a lavorare con i compagni in vista della sfida contro l&#39;Atalanta]]></description>
@@ -538,25 +555,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Hakan vuole restare e ha aperto anche alla riduzione dell&rsquo;ingaggio: tutte le modalit&agrave; per arrivare alla firma]]></dcterms:alternative>
             <dc:creator><![CDATA[Daniele Vitiello]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Napoli, l&rsquo;anomalia di Allegri: ha dovuto schierare 15 squadre diverse]]></title>
-            <description><![CDATA[Mai gli stessi undici per il tecnico azzurro, costretto ogni volta a cambiare a causa degli infortuni e delle ricadute: i dettagli]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/15-152600867/napoli_lanomalia_di_allegri_ha_dovuto_schierare_15_squadre_diverse/</link>
-            <guid isPermaLink="false">sn:cds:152600867</guid>
-            <category><![CDATA[napoli]]></category>
-            <category><![CDATA[Allegri]]></category>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[oggi]]></category>
-            <pubDate>Sun, 15 Nov 2026 07:23:09 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/15/070843006-18d8ac24-e3b0-4e72-8d12-90d2eb147014.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/070843006-18d8ac24-e3b0-4e72-8d12-90d2eb147014.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/070843006-18d8ac24-e3b0-4e72-8d12-90d2eb147014.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Mai gli stessi undici per il tecnico azzurro, costretto ogni volta a cambiare a causa degli infortuni e delle ricadute: i dettagli]]></dcterms:alternative>
-            <dc:creator><![CDATA[Fabio Tarantino]]></dc:creator>
         </item>
     </channel>
 </rss>

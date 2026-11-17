@@ -8,7 +8,7 @@
 - Sempre: rigenera il sito.
 Budget mensile stimato: OddsPapi ~1-2 richieste per giornata (limite 250), StrikerAPI ~70 crediti per giornata (limite 500).
 Le chiavi si leggono dalle variabili d'ambiente (GitHub Secrets) o dal file .env."""
-import json, os, subprocess, sys
+import json, os, subprocess, sys, glob
 from datetime import datetime, timezone, timedelta
 from zoneinfo import ZoneInfo
 BASE = os.path.dirname(os.path.abspath(__file__)); D = os.path.join(BASE, "dati"); os.makedirs(D, exist_ok=True)
@@ -46,6 +46,18 @@ FD = [f"X-Auth-Token: {ENV.get('FOOTBALLDATA_KEY','')}"]
 SH = [f"Authorization: Bearer {ENV.get('STRIKER_KEY','')}"]; SB = "https://mcp.strikerapi.com/v1"
 OK = ENV.get("ODDSPAPI_KEY", ""); OP = "https://api.oddspapi.io/v4"
 s = NOW.year if NOW.month >= 7 else NOW.year - 1; L = {"league": "seriea", "season": s}
+# StrikerAPI: piano gratuito 500 crediti al mese. Si tiene il conto dei crediti spesi nel mese e ci si ferma
+# prima del limite (margine di sicurezza), cosi' il sistema non resta mai senza crediti a meta' giornata.
+COSTO = {"get_lineups": 5, "get_game": 5, "get_team_stats": 5, "get_leaders": 5, "get_ratings": 2, "get_schedule": 2, "list_games": 2, "list_teams": 1}
+LIMITE_STRIKER = 470
+def sget(fname, tool, body):
+    mese = NOW.strftime("%Y-%m"); c = STATO.get("striker_crediti") or {}
+    if c.get("mese") != mese: c = {"mese": mese, "usati": 0}
+    costo = COSTO.get(tool, 5)
+    if c["usati"] + costo > LIMITE_STRIKER:
+        print(f"{fname:40s} SALTATO: crediti StrikerAPI del mese quasi finiti ({c['usati']}/500)"); return False
+    c["usati"] += costo; STATO["striker_crediti"] = c
+    return get(fname, f"{SB}/{tool}", SH, "POST", body)
 
 # 1) calendario (ogni ora)
 get("fdorg_prossime.json", "https://api.football-data.org/v4/competitions/SA/matches?status=SCHEDULED,TIMED,POSTPONED", FD)
@@ -97,17 +109,17 @@ if fare_uscita:
     if not os.path.exists(os.path.join(D, "oddspapi_mercati.json")):
         get("oddspapi_mercati.json", f"{OP}/markets?sportId=10&apiKey={OK}")
     get("oddspapi_quote.json", f"{OP}/odds-by-tournaments?tournamentIds=23&bookmakers=eurobet.it,pinnacle&verbosity=3&apiKey={OK}")
-    if not os.path.exists(os.path.join(D, "striker_teams.json")): get("striker_teams.json", f"{SB}/list_teams", SH, "POST", L)
-    get("striker_team_stats.json", f"{SB}/get_team_stats", SH, "POST", L)
-    get("striker_elo.json", f"{SB}/get_ratings", SH, "POST", L)
-    get("striker_xg_giocatori.json", f"{SB}/get_leaders", SH, "POST", dict(L, stat="xg", limit=100, min_games=2))
+    if not os.path.exists(os.path.join(D, "striker_teams.json")): sget("striker_teams.json", "list_teams", L)
+    sget("striker_team_stats.json", "get_team_stats", L)
+    sget("striker_elo.json", "get_ratings", L)
+    sget("striker_xg_giocatori.json", "get_leaders", dict(L, stat="xg", limit=100, min_games=2))
     # Fantacalcio: statistiche di (quasi) tutti i giocatori. StrikerAPI da' al massimo 100 righe per richiesta:
     # si chiedono piu' pagine (offset) e si uniscono; ci si ferma quando non arrivano giocatori nuovi.
     def leaders_tutti(fname, stat, pagine):
         tutti, visti = [], set()
         for n in range(pagine):
             tmpn = f"_tmp_{stat}.json"
-            if not get(tmpn, f"{SB}/get_leaders", SH, "POST", dict(L, stat=stat, limit=100, min_games=1, offset=n*100)): break
+            if not sget(tmpn, "get_leaders", dict(L, stat=stat, limit=100, min_games=1, offset=n*100)): break
             righe = ((J(tmpn) or {}).get("data") or {}).get("leaders", [])
             nuovi = [p for p in righe if p.get("player_id") not in visti]
             visti |= {p.get("player_id") for p in nuovi}; tutti += nuovi
@@ -117,25 +129,23 @@ if fare_uscita:
         if tutti:
             json.dump({"data": {"stat": stat, "leaders": tutti}}, open(os.path.join(D, fname), "w"), ensure_ascii=False)
             print(f"{fname:40s} {len(tutti)} giocatori")
-    leaders_tutti("striker_xg_tutti.json", "xg", 7)
-    leaders_tutti("striker_gol_tutti.json", "goals", 3)
-    leaders_tutti("striker_assist.json", "assists", 3)
-    leaders_tutti("striker_gialli.json", "yellow_cards", 3)
-    leaders_tutti("striker_rossi.json", "red_cards", 1)
-    leaders_tutti("striker_parate.json", "saves", 1)
-    leaders_tutti("striker_cleansheet.json", "clean_sheets", 1)
-    get("striker_schedule.json", f"{SB}/get_schedule", SH, "POST", dict(L, days=10))
+    # con l'export di Fantacalcio caricato (presenze, gol, assist, cartellini) queste chiamate non servono:
+    # si risparmiano circa 100 crediti a giornata
+    if not glob.glob(os.path.join(D, "[Ss]tatistiche_[Ff]antacalcio*.xlsx")):
+        leaders_tutti("striker_xg_tutti.json", "xg", 5)
+        leaders_tutti("striker_assist.json", "assists", 2)
+    sget("striker_schedule.json", "get_schedule", dict(L, days=10))
     # primo avvio: ultime formazioni schierate (una partita per squadra), poi bastano le ufficiali di ogni giornata
     import glob
     if len(glob.glob(os.path.join(D, "lineups", "*.json"))) < 10:
         frm = (NOW - timedelta(days=12)).strftime("%Y-%m-%d"); to = NOW.strftime("%Y-%m-%d")
-        if get("striker_giocate_recenti.json", f"{SB}/list_games", SH, "POST", dict(L, stage="league", limit=20, **{"from": frm, "to": to})):
+        if sget("striker_giocate_recenti.json", "list_games", dict(L, stage="league", limit=20, **{"from": frm, "to": to})):
             viste = set()
             for g in (J("striker_giocate_recenti.json") or {}).get("data", {}).get("games", []):
                 hm, aw = g.get("home", {}).get("abbrev"), g.get("away", {}).get("abbrev")
                 if g.get("status") != "final" or (hm in viste and aw in viste): continue
                 viste |= {hm, aw}
-                get(os.path.join("lineups", f"{g['game_id']}.json"), f"{SB}/get_lineups", SH, "POST", {"game_id": str(g["game_id"]), "league": "seriea"})
+                sget(os.path.join("lineups", f"{g['game_id']}.json"), "get_lineups", {"game_id": str(g["game_id"]), "league": "seriea"})
     # assenze (infortuni e squalifiche) da API-Football, piano gratuito: 1 richiesta
     get("apif_infortuni.json", f"https://v3.football.api-sports.io/injuries?league=135&season={s}", [f"x-apisports-key: {ENV.get('APIFOOTBALL_KEY','')}"])
     # taratura automatica del modello AI (test walk-forward contro il mercato) prima dei pronostici
@@ -175,8 +185,12 @@ for g in (J("striker_schedule.json") or {}).get("data", {}).get("games", []):
     f = os.path.join("lineups", f"ufficiale_{g['game_id']}.json")
     if timedelta(minutes=-45) <= t - NOW <= timedelta(minutes=75):
         prev = J(f)
-        if not prev or not (prev.get("data") or {}).get("lineups"):
-            get(f, f"{SB}/get_lineups", SH, "POST", {"game_id": str(g["game_id"]), "league": "seriea"})
+        tent = STATO.setdefault("tentativi_formazioni", {})
+        if (not prev or not (prev.get("data") or {}).get("lineups")) and tent.get(str(g["game_id"]), 0) < 2:   # max 2 tentativi
+            tent[str(g["game_id"])] = tent.get(str(g["game_id"]), 0) + 1
+            sget(f, "get_lineups", {"game_id": str(g["game_id"]), "league": "seriea"})
+if STATO.get("tentativi_formazioni"):
+    STATO["tentativi_formazioni"] = dict(list(STATO["tentativi_formazioni"].items())[-60:])
 
 # 5) risultati e verifica dei pronostici (ogni ora; gratis)
 if not fare_uscita:
@@ -192,7 +206,7 @@ try:
         if mid not in finite or os.path.exists(os.path.join(D, "partite", f"{mid}.json")): continue
         h, a = partita.split("-", 1)
         g = next((g for g in sched if canon(g["home"]["name"]) == h and canon(g["away"]["name"]) == a), None)
-        if g: get(os.path.join("partite", f"{mid}.json"), f"{SB}/get_game", SH, "POST", {"game_id": str(g["game_id"]), "league": "seriea"})
+        if g: sget(os.path.join("partite", f"{mid}.json"), "get_game", {"game_id": str(g["game_id"]), "league": "seriea"})
 except Exception as e:
     print("verifica marcatori:", e)
 subprocess.run([sys.executable, os.path.join(BASE, "verifica.py")], check=False)

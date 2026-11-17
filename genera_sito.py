@@ -741,7 +741,7 @@ details.info p{font-size:14px;color:var(--ink);margin:8px 0}
 .pick{display:flex;flex-direction:column;gap:6px;margin:0 0 16px}.pick label,.fmod label{font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.06em}
 .pick select,.fmod select,.fadd input{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font:600 15px Inter;width:100%}
 .fbox{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin:0 0 16px}.fbox .daytitle{margin-top:0}
-.fadd{display:flex;gap:8px}.fadd button{background:var(--acc);color:#04130c;border:0;border-radius:12px;padding:0 16px;font:700 14px Inter;cursor:pointer}
+.fadd{display:flex;gap:8px}.fsec{background:none;border:1px solid var(--acc);color:var(--acc);border-radius:99px;padding:3px 10px;font:600 12px Inter;cursor:pointer}.fadd button{background:var(--acc);color:#04130c;border:0;border-radius:12px;padding:0 16px;font:700 14px Inter;cursor:pointer}
 .fg{margin:10px 0}.fgt{font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
 .fp{display:inline-flex;align-items:center;gap:6px;background:#0f151d;border:1px solid var(--line);border-radius:99px;padding:4px 6px 4px 4px;margin:0 6px 6px 0;font-size:14px}
 .fp small{color:var(--mut)}.fr{background:#1b2531;color:var(--acc);border:0;border-radius:99px;font:700 12px Inter;padding:3px 4px}
@@ -756,12 +756,15 @@ details.info p{font-size:14px;color:var(--ink);margin:8px 0}
 footer{margin-top:50px;color:var(--mut);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
 """
 JS = """
-const views=['news','live','giornata','analisi','triple','marcatori','fanta','bilancio','classifica'];
-const STUDIO=['giornata','triple','marcatori'];
-function show(){const h=location.hash.slice(1);const v=views.includes(h)?h:'news';const st=STUDIO.includes(v);
+const views=['news','live','formazioni','giornata','analisi','triple','marcatori','fanta','bilancio','classifica'];
+const GRUPPI={studio:['giornata','triple','marcatori'],live:['live','formazioni']};
+// link con la rosa del fantacalcio (per spostarla su un altro dispositivo): #fanta=...
+function importaRosa(){if(!location.hash.startsWith('#fanta='))return false;try{const r=JSON.parse(decodeURIComponent(location.hash.slice(7)));if(Array.isArray(r)){localStorage.setItem('sa_fanta',JSON.stringify(r))}}catch(e){}history.replaceState(null,'','#fanta');return true}
+importaRosa();addEventListener('hashchange',()=>{if(importaRosa())location.reload()});
+function show(){const h=location.hash.slice(1);const v=views.includes(h)?h:'news';
 document.querySelectorAll('.view').forEach(e=>e.classList.toggle('on',e.id===v));
-document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.dataset.g==='studio'?st:a.getAttribute('href')==='#'+v));
-const sn=document.getElementById('subnav');if(sn){sn.classList.toggle('on',st);sn.querySelectorAll('a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+v));}}
+document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.dataset.g?GRUPPI[a.dataset.g].includes(v):a.getAttribute('href')==='#'+v));
+document.querySelectorAll('.subnav').forEach(sn=>{sn.classList.toggle('on',GRUPPI[sn.dataset.g].includes(v));sn.querySelectorAll('a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+v));});}
 addEventListener('hashchange',()=>{show();scrollTo(0,0)});show();
 let S={};try{S=JSON.parse(localStorage.getItem('sa_combo')||'{}')}catch(e){}
 function calc(inp){const tr=inp.closest('tr'),p=+tr.dataset.p,q=parseFloat(inp.value.replace(',','.')),c=tr.querySelector('.evc');
@@ -798,7 +801,9 @@ if(p==='tanti'){msg('Più giocatori con questo nome: scegli dalla lista.');retur
 if(!p){msg('Giocatore non trovato tra le rose di Serie A.');return}
 if(rosa.some(x=>x.k===key(p))){msg(p.n+' è già nella rosa.');return}
 rosa.push({k:key(p),n:p.n,t:p.t,r:p.r});i.value='';msg('');save();draw()}
-document.getElementById('fbtn').onclick=aggiungi;document.getElementById('fin').addEventListener('keydown',e=>{if(e.key==='Enter')aggiungi()});
+document.getElementById('fbtn').onclick=aggiungi;
+document.getElementById('flink').onclick=async()=>{const u=location.origin+location.pathname+'#fanta='+encodeURIComponent(JSON.stringify(rosa));
+try{await navigator.clipboard.writeText(u);msg('Link copiato: aprilo sull\u2019altro dispositivo e la rosa si carica da sola.')}catch(e){prompt('Copia questo link:',u)}};document.getElementById('fin').addEventListener('keydown',e=>{if(e.key==='Enter')aggiungi()});
 ms.onchange=()=>{mod=ms.value;save();draw()};
 function info(x){const p=BY[x.k];return p?Object.assign({},p,{r:x.r}):{n:x.n,t:x.t,r:x.r,s:0,fv:0,pg:0,o:'',c:true,a:'non convocabile o senza partita',f:''}}
 const corto=n=>{const w=n.split(' ');return w.length>1&&n.length>11?w[0][0]+'. '+w.slice(1).join(' '):n};
@@ -835,11 +840,13 @@ PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="SA Analyst"><link rel="apple-touch-icon" href="icona-180.png"><link rel="icon" type="image/png" href="icona-192.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>{CSS}</style></head>
-<body><div class="wrap"><header class="hero"><div class="brand">Serie A <span>Analyst</span><small>Aggiornato {fts(gen)}</small></div></header>
-<nav><a href="#news">News</a><a href="#live">Live</a><a href="#giornata" data-g="studio">Studio</a><a href="#analisi">Analisi</a><a href="#fanta">Fantacalcio</a><a href="#bilancio">Bilancio</a><a href="#classifica">Classifica</a></nav>
-<div class="subnav" id="subnav"><a href="#giornata">Pronostici</a><a href="#triple">Triple</a><a href="#marcatori">Marcatori</a></div>
+<body><div class="wrap"><header class="hero"><div class="brand">Serie A <span>Analyst</span></div></header>
+<nav><a href="#news">News</a><a href="#live" data-g="live">Live</a><a href="#giornata" data-g="studio">Studio</a><a href="#analisi">Analisi</a><a href="#fanta">Fantacalcio</a><a href="#bilancio">Bilancio</a><a href="#classifica">Classifica</a></nav>
+<div class="subnav" data-g="studio"><a href="#giornata">Pronostici</a><a href="#triple">Triple</a><a href="#marcatori">Marcatori</a></div>
+<div class="subnav" data-g="live"><a href="#live">Risultati</a><a href="#formazioni">Formazioni</a></div>
 <section class="view" id="news">{news_html}</section>
-<section class="view" id="live">{gtitle}<h2 class="daytitle">Risultati live</h2>{live_html}<h2 class="daytitle">Formazioni</h2>{form_html}</section>
+<section class="view" id="live">{gtitle}<h2 class="daytitle">Risultati live</h2>{live_html}</section>
+<section class="view" id="formazioni">{gtitle}<h2 class="daytitle">Formazioni</h2>{form_html}</section>
 <section class="view" id="giornata">{gtitle}<h2 class="daytitle">Schedina della giornata</h2><div class="legend"><span class="star">★</span> <b>Errore di quota a tuo favore</b>: secondo l'analisi dell'AI questo esito è più probabile di quanto lo paga Eurobet. Sono le giocate più interessanti; le altre sono pagate il giusto o meno.</div><div class="scroll"><table class="tbl slip"><thead><tr><th class=l>Partita</th><th class=l>Pronostico</th><th>Probabilità</th><th>Quota</th></tr></thead><tbody>{slip_rows}</tbody></table></div></section>
 <section class="view" id="analisi">{gtitle}<div class="pick"><label for="selp">Scegli la partita</label><select id="selp">{sel_opts}</select></div>{''.join(cards)}</section>
 <section class="view" id="triple">{gtitle}<div class="legend"><span class="star">★</span> <b>Errore di quota a tuo favore</b>: secondo l'analisi dell'AI questo esito è più probabile di quanto lo paga Eurobet. Sono le giocate più interessanti; le altre sono pagate il giusto o meno.</div><h2 class="daytitle">Sabato</h2><div class="tgrid">{triple_html('sabato')}</div><h2 class="daytitle">Domenica</h2><div class="tgrid">{triple_html('domenica')}</div>
@@ -848,7 +855,8 @@ PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name
 <section class="view" id="fanta">{gtitle}
 <div class="fbox"><h2 class="daytitle">La tua rosa</h2>
 <div class="fadd"><input id="fin" list="fdl" placeholder="Scrivi il nome di un giocatore…" autocomplete="off"><button id="fbtn">Aggiungi</button></div>
-<datalist id="fdl"></datalist><div id="fmsg" class="hint"></div><div id="frosa" class="frosa"></div></div>
+<datalist id="fdl"></datalist><div id="fmsg" class="hint"></div><div id="frosa" class="frosa"></div>
+<p class="hint">La rosa resta salvata su questo dispositivo. Per usarla anche su un altro (o se cancelli i dati del browser): <button id="flink" class="fsec">Copia link della rosa</button> e aprilo sull'altro dispositivo.</p></div>
 <div class="fbox"><div class="fmod"><label for="fmodulo">Modulo</label><select id="fmodulo"><option>3-4-3</option><option>3-5-2</option><option>4-3-3</option><option selected>4-4-2</option><option>4-5-1</option><option>5-3-2</option><option>5-4-1</option></select></div>
 <div id="fout"></div></div>
 <details class="info"><summary>Come sceglie</summary><p>Per ogni giocatore della tua rosa stima il <b>fantavoto atteso</b> (regole Classic) partendo dalla sua <b>media voto</b> e dai <b>bonus medi</b> (fantamedia − media voto) delle statistiche Fantacalcio, corretti per la partita: forza dell'avversario, casa o trasferta, gol attesi della squadra e, per i portieri, gol che rischia di subire e probabilità di porta inviolata. Stima anche la <b>probabilità che giochi titolare</b>. Contano: i minuti che gioca di solito, se era titolare nell'ultima partita (o la formazione ufficiale, quando esce), gli infortuni e le squalifiche segnalate, i suoi xG e assist, quanti gol dovrebbe segnare la sua squadra contro quell'avversario e quanti rischia di subirne. Il punteggio per scegliere è fantavoto atteso × probabilità di giocare. Il voto in pagella non si può prevedere con precisione: è una stima, e si aggiorna ogni ora (formazioni ufficiali comprese).</p></details>

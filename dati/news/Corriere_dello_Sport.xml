@@ -5,7 +5,24 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 17 Nov 2026 11:50:27 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 17 Nov 2026 13:07:17 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[La Juve mostra i progressi di Yildiz con il pallone: &quot;Un passo alla volta, Kenan&quot;&nbsp;]]></title>
+            <description><![CDATA[Cresce l&#39;attesa per il ritorno in campo del turco. Il club bianconero ha pubblicato un video su social: i dettagli&nbsp;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/17-152652248/la_juve_mostra_i_progressi_di_yildiz_con_il_pallone_un_passo_alla_volta_kenan/</link>
+            <guid isPermaLink="false">sn:cds:152652248</guid>
+            <category><![CDATA[juve]]></category>
+            <category><![CDATA[Yildiz]]></category>
+            <pubDate>Tue, 17 Nov 2026 12:44:47 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/17/124326510-86e91d18-8a40-476d-8d47-e0de5aff47f2.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/124326510-86e91d18-8a40-476d-8d47-e0de5aff47f2.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/124326510-86e91d18-8a40-476d-8d47-e0de5aff47f2.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Cresce l&#39;attesa per il ritorno in campo del turco. Il club bianconero ha pubblicato un video su social: i dettagli&nbsp;]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[L&#39;intervista a Marcandalli: &quot;Italia, ti aspetto. Sul Genoa e De Rossi...&quot;]]></title>
             <description><![CDATA[Il difensore rossobl&ugrave;, allenato da Nesta, DDR e Gilardino, sogna la maglia azzurra: &quot;Mi hanno preconvocato e Bonucci era a Genova&quot;]]></description>
@@ -543,24 +560,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/14/164721225-14aa5ab5-13db-43bc-b87e-5e3404487173.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Le voci su un possibile passaggio del belga al Psv, rendono d&#39;attualit&agrave; una frase di Michele Lacroix, che gi&agrave; a settembre caldeggiava la soluzione Eindhoven]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Il toccante racconto di Gila: &quot;Ho chiesto aiuto a uno psicologo, avevo toccato il fondo&quot;]]></title>
-            <description><![CDATA[Le parole del difensore del Milan, protagonista del secondo episodio di &#39;The Chamber&#39;, sul tema del benessere mentale: i dettagli]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/milan/2026/11/14-152590802/il_toccante_racconto_di_gila_ho_chiesto_aiuto_a_uno_psicologo_avevo_toccato_il_fondo/</link>
-            <guid isPermaLink="false">sn:cds:152590802</guid>
-            <category><![CDATA[gila]]></category>
-            <category><![CDATA[Milan]]></category>
-            <category><![CDATA[Psicologo]]></category>
-            <pubDate>Sat, 14 Nov 2026 16:29:50 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/14/161153131-f30d9d27-2e25-4dc2-81f5-3fec3afaf794.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/14/161153131-f30d9d27-2e25-4dc2-81f5-3fec3afaf794.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>AC Milan via Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/14/161153131-f30d9d27-2e25-4dc2-81f5-3fec3afaf794.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Le parole del difensore del Milan, protagonista del secondo episodio di &#39;The Chamber&#39;, sul tema del benessere mentale: i dettagli]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

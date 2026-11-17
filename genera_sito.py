@@ -167,14 +167,24 @@ def ai_html(r):
         return f"<td><b>{pc(a)}</b></td><td>{pc(m) if m is not None else '—'}</td>{dc or '<td>—</td>'}"
     rows = "".join(f"<tr><td class=l>{lab}</td>{cella(k)}</tr>" for lab, k in righe)
     lm = r.get("lam_modello") or ["?", "?"]
+    ass = r.get("assenze") or {}; eff = r.get("effetto_assenze") or [1, 1]
+    blocchi = []
+    for i, team in enumerate((r["casa"], r["ospite"])):
+        lst = ass.get(team) or []
+        if not lst: continue
+        nomi = ", ".join(f'{E(x["nome"])} <span class="muted">({"in dubbio" if x.get("dubbio") else E(x.get("motivo") or "assente")})</span>' for x in lst)
+        e = (1 - eff[i]) * 100
+        blocchi.append(f'<div class="ass"><b>{E(team)}</b>: {nomi}{f" · <b class=koc>attacco −{e:.0f}%</b>" if e >= 1 else ""}</div>')
+    stato = P.get("assenze_stato")
+    ass_html = "".join(blocchi) or (f'<div class="ass muted">{E(stato)}</div>' if stato else '<div class="ass muted">Nessun assente segnalato</div>')
     return f'''<div class="aibox"><div class="aih"><b>Previsione AI</b> <span class="muted">· solo dati: forza delle squadre, xG e forma recente</span></div>
     <div class="aik"><span><small>Risultato più probabile</small><b>{E(r.get("risultato_modello") or "—")}</b></span><span><small>Gol attesi AI</small><b>{lm[0]} – {lm[1]}</b></span></div>
-    <div class="scroll"><table class="tbl ait"><thead><tr><th class=l>Esito</th><th>AI</th><th>Mercato</th><th>Diff.</th></tr></thead><tbody>{rows}</tbody></table></div></div>'''
+    <div class="scroll"><table class="tbl ait"><thead><tr><th class=l>Esito</th><th>AI</th><th>Mercato</th><th>Diff.</th></tr></thead><tbody>{rows}</tbody></table></div><div class="assh">Assenti</div>{ass_html}</div>'''
 cards = []; day = None
 for r in PARTITE:
     dt = rome(r["data"]); h, a = r["casa"], r["ospite"]; th, ta = T(h), T(a)
     if fday(dt) != day:
-        day = fday(dt); cards.append(f'<h2 class="day"><span>{day}</span></h2>')
+        day = fday(dt)
     p = r.get("p") or {}; pm = r.get("p_mercato") or {}
     if p:
         bar = f'''<div class="pbar"><i style="width:{p['1']*100:.1f}%;background:{th['col']}"><b>1 · {pc(p['1'])}</b></i><i class="x" style="width:{p['X']*100:.1f}%"><b>X · {pc(p['X'])}</b></i><i style="width:{p['2']*100:.1f}%;background:{ta['col']}"><b>2 · {pc(p['2'])}</b></i></div>
@@ -202,7 +212,7 @@ for r in PARTITE:
     fa = "".join(f'<i class="f {x["res"]}" title="{E(x["t"])}">{x["res"]}</i>' for x in forma(a))
     notes = "".join(f'<li class="ctx">{E(c)}</li>' for c in r.get("contesto", [])) + "".join(f'<li>{E(c)}</li>' for c in r.get("avvisi", []))
     eurl = ""
-    cards.append(f'''<article class="match" style="--hc:{th['col']};--ac:{ta['col']}">
+    cards.append(f'''<article class="match" data-i="{r['id']}" style="--hc:{th['col']};--ac:{ta['col']}">
     <div class="mhead"><div class="team">{badge(h,'lg')}<div><div class="tn">{E(h)}</div><div class="form">{fh}</div></div></div>
     <div class="when"><b>{dt.hour:02d}:{dt.minute:02d}</b><small>{dt.day:02d}/{dt.month:02d}</small></div>
     <div class="team r"><div><div class="tn">{E(a)}</div><div class="form">{fa}</div></div>{badge(a,'lg')}</div></div>
@@ -276,7 +286,7 @@ def _tar_html():
     return f'''<h2 class="daytitle">Affidabilità dell'AI</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Mercato</th><th>Test su {V["partite"]} partite già giocate</th><th>Precisione AI vs mercato</th></tr></thead>
     <tbody>{riga("Chi vince (1X2)", V["logloss_1x2"], met.get("W_1X2"))}{riga("Gol (Over/Under)", V["logloss_gol"], met.get("W_GOL"))}</tbody></table></div>
     <p class="hint">Ogni settimana l'AI viene rimessa alla prova sulle partite già giocate, usando solo i dati disponibili prima di ciascuna partita, e confrontata con le quote di chiusura. I pronostici sono sempre quelli dell'AI: questo test dice quanto fidarsi, mercato per mercato (sopra zero = AI più precisa).</p>{roi_txt}'''
-TAR_HTML = _tar_html()
+TAR_HTML = ""   # confronto AI/mercato: solo interno (dati/confronto_interno.json), non sul sito
 FONTI = [("Calendario e risultati", "football-data.org", "fdorg_prossime.json"), ("Risultati, tiri, xG partita, quote di chiusura", "football-data.co.uk", "fdcouk_corrente.csv"),
          ("Quote Eurobet", "OddsPapi (eurobet.it)", "oddspapi_quote.json"), ("Statistiche, xG ed Elo di squadra", "StrikerAPI", "striker_team_stats.json"),
          ("xG dei giocatori", "StrikerAPI", "striker_xg_giocatori.json"), ("Formazioni", "StrikerAPI", "striker_giocate_recenti.json"),
@@ -333,8 +343,12 @@ for r in PARTITE:
     stato = '<span class="cat c-val">ufficiali</span>' if (uff_pitch or uf_l) else ('<span class="cat c-pro">probabili</span>' if pr_l else '<span class="cat c-nov">in attesa</span>')
     links = "".join(nitem(n) for n in (uf_l or pr_l))
     form_html += f'''<div class="fm"><div class="fmh">{badge(h,"sm")}{badge(a,"sm")} <b>{E(h)} – {E(a)}</b> {stato}<span class="muted">{rome(r["data"]).strftime("%d/%m %H:%M")}</span></div>{('<ul class="nl">'+links+'</ul>') if links else ''}</div>'''
-news_html = f'''<div class="ngrid"><div><h2 class="daytitle">Ultime notizie</h2><ul class="nl big">{"".join(nitem(n) for n in news[:25]) or "<li>Nessuna notizia scaricata.</li>"}</ul></div>
-<div><h2 class="daytitle">Formazioni</h2>{form_html}</div></div>'''
+# notizie: solo ultimi 3 giorni; le prime 8 in vista, le altre in un menu che si apre
+_lim = datetime.now(timezone.utc) - __import__("datetime").timedelta(days=3)
+recenti = [n for n in news if n["dt"] and n["dt"] >= _lim] or news[:8]
+altre = recenti[8:30]
+news_html = f'''<h2 class="daytitle">Ultime notizie</h2><ul class="nl big">{"".join(nitem(n) for n in recenti[:8]) or "<li>Nessuna notizia scaricata.</li>"}</ul>
+{f'<details class="info more"><summary>Altre notizie ({len(altre)})</summary><ul class="nl big">{"".join(nitem(n) for n in altre)}</ul></details>' if altre else ''}'''
 
 # ------------------------------------------------------------------ bilancio dei pronostici
 BIL = J("bilancio.json") or {}
@@ -425,6 +439,204 @@ if sofa_ids:
 else:
     live_html = '<p class="warn">Widget non disponibile: identificativi delle partite non trovati.</p>'
 
+
+# ------------------------------------------------------------------ fantacalcio
+import unicodedata as _ud, math as _mf
+def _nn(s):
+    s = _ud.normalize("NFKD", s or "").encode("ascii", "ignore").decode().lower().replace("-", " ").replace(".", " ").replace("'", " ")
+    return [t for t in s.split() if t]
+def _same(a, b):
+    a, b = _nn(a), _nn(b)
+    if not a or not b: return False
+    if set(a) <= set(b) or set(b) <= set(a): return True
+    return a[-1] == b[-1] and a[0][0] == b[0][0]
+def motivo_it(a):
+    """Motivo dell'assenza in italiano (API-Football lo da' in inglese)."""
+    if a.get("dubbio"): return "in dubbio" + (f" ({motivo_it(dict(a, dubbio=False))})" if a.get("motivo") else "")
+    m = (a.get("motivo") or "").lower()
+    for k, v in (("red card", "squalificato (rosso)"), ("yellow", "squalificato (ammonizioni)"), ("suspen", "squalificato"),
+                 ("knee", "infortunio al ginocchio"), ("ankle", "infortunio alla caviglia"), ("hamstring", "infortunio muscolare (flessore)"),
+                 ("thigh", "infortunio muscolare (coscia)"), ("calf", "infortunio al polpaccio"), ("groin", "infortunio all'inguine"),
+                 ("muscle", "infortunio muscolare"), ("back", "infortunio alla schiena"), ("foot", "infortunio al piede"),
+                 ("shoulder", "infortunio alla spalla"), ("head", "colpo alla testa"), ("illness", "malattia"), ("virus", "malattia"),
+                 ("national", "impegno con la nazionale"), ("injury", "infortunato"), ("knock", "acciaccato")):
+        if k in m: return v
+    return "indisponibile"
+def _leaders(f):
+    return (J(f) or {}).get("data", {}).get("leaders", [])
+FANTA = []
+def _fanta():
+    ruolo = {"Goalkeeper": "P", "Defence": "D", "Midfield": "C", "Offence": "A"}
+    AB = {t["abbrev"]: canon(t["display_name"]) for t in (J("striker_team_stats.json") or {}).get("data", {}).get("teams", [])}
+    XG = _leaders("striker_xg_tutti.json") or _leaders("striker_xg_giocatori.json")
+    AS = _leaders("striker_assist.json"); SV = _leaders("striker_parate.json")
+    GO = _leaders("striker_gol_tutti.json") or _leaders("striker_gol_giocatori.json")
+    YC = _leaders("striker_gialli.json"); RC = _leaders("striker_rossi.json"); CS = _leaders("striker_cleansheet.json")
+    def cerca(lista, team, nome):
+        return next((p for p in lista if AB.get(p.get("team")) == team and _same(nome, p.get("name"))), None)
+    match = {}
+    for r in PARTITE:
+        if not r.get("lam"): continue
+        for i, (t, o) in enumerate(((r["casa"], r["ospite"]), (r["ospite"], r["casa"]))):
+            match[t] = dict(opp=o, casa=(i == 0), lt=r["lam"][i], lo=r["lam"][1 - i], data=r["data"],
+                            ass=(r.get("assenze") or {}).get(t, []))
+    for tm in (J("fdorg_squadre.json") or {}).get("teams", []):
+        team = canon(tm.get("name"))
+        if team not in match: continue
+        mc = match[team]; ts = TS.get(team) or {}; gteam = ts.get("games") or 1; xgf = ts.get("xg_for") or 1.3
+        lu = LINEUPS.get(team) or {}
+        xi = [p["name"] for p in lu.get("xi", [])]
+        for pl in tm.get("squad", []):
+            r_ = ruolo.get(pl.get("position"))
+            if not r_: continue
+            nome = pl["name"]
+            sx = cerca(XG, team, nome) or (cerca(SV, team, nome) if r_ == "P" else None)
+            mins = (sx or {}).get("minutes") or 0
+            mexp = min(mins / gteam, 90)
+            # probabilita' di giocare titolare: minuti abituali + titolare nell'ultima formazione nota;
+            # con la formazione ufficiale si usa quella; gli assenti segnalati non giocano
+            nell_xi = any(_same(nome, n) for n in xi)
+            if lu.get("ufficiale") and lu.get("vs") == mc["opp"]:
+                pg = 0.95 if nell_xi else 0.10; fonte = "ufficiale"
+            elif sx is None and xi:                      # nessun dato minuti: conta solo l'ultima formazione
+                pg = 0.85 if nell_xi else 0.10; fonte = "stima"
+            elif False:
+                pg = 0.95 if nell_xi else 0.10; fonte = "ufficiale"
+            else:
+                pg = 0.6 * min(0.95, mexp / 80) + 0.4 * (0.90 if nell_xi else 0.05) if xi else min(0.95, mexp / 80); fonte = "stima"
+            a = next((x for x in mc["ass"] if _same(x["nome"], nome)), None)
+            if a: pg = pg * 0.5 if a.get("dubbio") else 0.0
+            # rendimento atteso se gioca (80 minuti), scalato sulla partita: gol attesi squadra / xG medio stagionale
+            fatt = mc["lt"] / xgf
+            prior_g = {"A": 0.35, "C": 0.14, "D": 0.06, "P": 0.0}[r_]; prior_a = {"A": 0.12, "C": 0.12, "D": 0.06, "P": 0.0}[r_]
+            xg = float((sx or {}).get("value") or 0)
+            ax = cerca(AS, team, nome); assi = float((ax or {}).get("value") or 0)
+            g90 = (xg + prior_g * 3) / (mins + 270) * 90; a90 = (assi + prior_a * 3) / (mins + 270) * 90
+            eg = g90 * 80 / 90 * fatt; ea = a90 * 80 / 90 * fatt
+            pcs = _mf.exp(-mc["lo"])                       # porta inviolata (Poisson)
+            voto = 6 + max(-0.5, min(0.5, 0.25 * (mc["lt"] - mc["lo"])))
+            fv = voto + 3 * eg + 1 * ea
+            if r_ == "P": fv += -mc["lo"] + 1 * pcs
+            if r_ == "D": fv += 0.5 * pcs
+            # statistiche reali della stagione (StrikerAPI): presenze, gol, assist, cartellini, porte inviolate
+            val = lambda lst: float((cerca(lst, team, nome) or {}).get("value") or 0)
+            pres = max([int((x or {}).get("games") or 0) for x in (sx, cerca(GO, team, nome), ax)] + [0])
+            gol, gi, ro, cs = val(GO), val(YC), val(RC), val(CS)
+            bonus = (3*gol + assi - 0.5*gi - 1*ro + (cs if r_ == "P" else 0)) / pres if pres else None
+            FANTA.append(dict(n=nome, t=team, r=r_, o=mc["opp"], c=mc["casa"], pg=round(pg, 2), fv=round(fv, 2),
+                              s=round(pg * fv, 2), pgol=round(1 - _mf.exp(-eg), 2), pcs=round(pcs, 2), f=fonte,
+                              a=motivo_it(a) if a else "", inf=bool(a and not a.get("dubbio")),
+                              st=dict(p=pres, m=int(mins), g=int(gol), as_=int(assi), y=int(gi), rc=int(ro), cs=int(cs),
+                                      mg=round(gol/pres, 2) if pres else None, ma=round(assi/pres, 2) if pres else None,
+                                      b=round(bonus, 2) if bonus is not None else None)))
+# --- statistiche ufficiali Fantacalcio (export dell'utente da fantacalcio.it, caricato in dati/) ---
+def leggi_xlsx(path, foglio=1):
+    """Lettore xlsx minimo (solo libreria standard): righe del foglio come liste di valori."""
+    import zipfile, xml.etree.ElementTree as ETx, re as _r
+    ns = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
+    z = zipfile.ZipFile(path); ss = []
+    if "xl/sharedStrings.xml" in z.namelist():
+        for si in ETx.fromstring(z.read("xl/sharedStrings.xml")).findall("m:si", ns):
+            ss.append("".join(t.text or "" for t in si.iter("{%s}t" % ns["m"])))
+    righe = []
+    for row in ETx.fromstring(z.read(f"xl/worksheets/sheet{foglio}.xml")).iter("{%s}row" % ns["m"]):
+        r = {}
+        for c in row.findall("m:c", ns):
+            col = _r.match(r"[A-Z]+", c.get("r")).group(0); n = 0
+            for ch in col: n = n * 26 + ord(ch) - 64
+            v = c.find("m:v", ns); t = c.get("t")
+            if t == "inlineStr":
+                val = "".join(x.text or "" for x in c.iter("{%s}t" % ns["m"]))
+            elif v is None: val = None
+            elif t == "s": val = ss[int(v.text)]
+            else:
+                try: val = float(v.text); val = int(val) if val.is_integer() else val
+                except ValueError: val = v.text
+            r[n - 1] = val
+        if r: righe.append([r.get(i) for i in range(max(r) + 1)])
+    return righe
+def _fm(a, b):
+    """Stesso giocatore? Gestisce 'Paz N.', 'Martinez L.', 'D. Malen', 'Nico Paz', accenti."""
+    def sp(s):
+        t = _nn(s); return [x for x in t if len(x) > 1], [x for x in t if len(x) == 1]
+    wa, ia = sp(a); wb, ib = sp(b)
+    if not wa or not wb: return False
+    if not (set(wa) <= set(wb) or set(wb) <= set(wa)): return False
+    if ia and not any(w[0] == ia[0] for w in wb if w not in wa): return not [w for w in wb if w not in wa]
+    if ib and not any(w[0] == ib[0] for w in wa if w not in wb): return not [w for w in wa if w not in wb]
+    return True
+FC_FILE = sorted(glob.glob(os.path.join(D, "[Ss]tatistiche_[Ff]antacalcio*.xlsx")))
+FC_INFO = ""
+def _fanta_fc(path):
+    global FC_INFO
+    righe = leggi_xlsx(path)
+    hdr = next(i for i, r in enumerate(righe) if r and r[0] == "Id")
+    H = righe[hdr]; rows = [dict(zip(H, r)) for r in righe[hdr + 1:] if r and r[0] is not None]
+    FC_INFO = f"Statistiche Fantacalcio dopo {max(int(r.get('Pv') or 0) for r in rows)} giornate (export caricato)"
+    AB = {t["abbrev"]: canon(t["display_name"]) for t in (J("striker_team_stats.json") or {}).get("data", {}).get("teams", [])}
+    XG = _leaders("striker_xg_tutti.json") or _leaders("striker_xg_giocatori.json")
+    AS = _leaders("striker_assist.json")
+    def cerca(lista, team, nome):
+        return next((p for p in lista if AB.get(p.get("team")) == team and _fm(nome, p.get("name"))), None)
+    match = {}
+    for r in PARTITE:
+        if not r.get("lam"): continue
+        for i, (t, o) in enumerate(((r["casa"], r["ospite"]), (r["ospite"], r["casa"]))):
+            match[t] = dict(opp=o, casa=(i == 0), lt=r["lam"][i], lo=r["lam"][1 - i], ass=(r.get("assenze") or {}).get(t, []))
+    gsq = {}
+    for x in rows:
+        t = canon(x.get("Squadra")); gsq[t] = max(gsq.get(t, 0), int(x.get("Pv") or 0))
+    for x in rows:
+        team = canon(x.get("Squadra")); r_ = x.get("R")
+        if team not in match or r_ not in ("P", "D", "C", "A"): continue
+        mc = match[team]; ts = TS.get(team) or {}; gteam = ts.get("games") or gsq.get(team) or 1; xgf = ts.get("xg_for") or 1.3
+        nome = str(x["Nome"]); pv = int(x.get("Pv") or 0); mv = float(x.get("Mv") or 0); fm = float(x.get("Fm") or 0)
+        lu = LINEUPS.get(team) or {}; xi = [p["name"] for p in lu.get("xi", [])]; nell_xi = any(_fm(nome, n) for n in xi)
+        sx = cerca(XG, team, nome); mins = (sx or {}).get("minutes") or 0
+        reg = min(1.0, pv / gteam) if gteam else 0
+        if lu.get("ufficiale") and lu.get("vs") == mc["opp"]:
+            pg = 0.95 if nell_xi else 0.10; fonte = "ufficiale"
+        else:
+            base = min(0.95, (mins / gteam) / 80) if sx else min(0.95, reg * 0.9)
+            pg = 0.6 * base + 0.4 * (0.90 if nell_xi else 0.05) if xi else base; fonte = "stima"
+        a = next((y for y in mc["ass"] if _fm(y["nome"], nome)), None)
+        if a: pg = pg * 0.5 if a.get("dubbio") else 0.0
+        # fantavoto atteso = media voto (stabilizzata) + bonus attesi in QUESTA partita
+        mvs = (mv * pv + 6 * 3) / (pv + 3) if pv else 6.0
+        adj = max(-0.25, min(0.25, 0.12 * (mc["lt"] - mc["lo"])))
+        fatt = mc["lt"] / xgf; pcs = _mf.exp(-mc["lo"])
+        prior_b = {"A": 0.9, "C": 0.4, "D": 0.2, "P": -1.0}[r_]
+        bh = (fm - mv) if pv else prior_b
+        bhs = (bh * pv + prior_b * 3) / (pv + 3)
+        if r_ == "P":
+            bonus = 0.5 * bhs + 0.5 * (-mc["lo"] + pcs); eg = 0.0
+        else:
+            prior_g = {"A": 0.35, "C": 0.14, "D": 0.06}[r_]; prior_a = {"A": 0.12, "C": 0.12, "D": 0.06}[r_]
+            ax = cerca(AS, team, nome); assi = float((ax or {}).get("value") or x.get("Ass") or 0)
+            if sx:
+                g90 = (float(sx.get("value") or 0) + prior_g * 3) / (mins + 270) * 90; a90 = (assi + prior_a * 3) / (mins + 270) * 90
+                eg = g90 * 80 / 90 * fatt; bm = 3 * eg + a90 * 80 / 90 * fatt
+                bonus = 0.5 * bhs * fatt + 0.5 * bm
+            else:
+                eg = max(0.0, (float(x.get("Gf") or 0) + prior_g * 3) / (pv + 3)) * fatt
+                bonus = bhs * fatt
+        fv = mvs + adj + bonus
+        FANTA.append(dict(n=nome, t=team, r=r_, o=mc["opp"], c=mc["casa"], pg=round(pg, 2), fv=round(fv, 2), s=round(pg * fv, 2),
+                          pgol=round(1 - _mf.exp(-eg), 2), pcs=round(pcs, 2), f=fonte, a=motivo_it(a) if a else "",
+                          inf=bool(a and not a.get("dubbio")),
+                          st=dict(fc=1, p=pv, mv=mv, fm=fm, g=int(x.get("Gf") or 0), gs=int(x.get("Gs") or 0), as_=int(x.get("Ass") or 0),
+                                  y=int(x.get("Amm") or 0), rc=int(x.get("Esp") or 0), rp=int(x.get("Rp") or 0),
+                                  mg=round(int(x.get("Gf") or 0) / pv, 2) if pv else None, ma=round(int(x.get("Ass") or 0) / pv, 2) if pv else None)))
+
+if FC_FILE:
+    try: _fanta_fc(FC_FILE[-1])
+    except Exception as e: print("Statistiche Fantacalcio non lette:", e); FANTA.clear(); _fanta()
+else:
+    _fanta()
+
+FANTA_JSON = json.dumps(FANTA, ensure_ascii=False).replace("</", "<\\/")
+GG = ["Lun", "Mar", "Mer", "Gio", "Ven", "Sab", "Dom"]
+sel_opts = "".join(f'<option value="{r["id"]}">{GG[rome(r["data"]).weekday()]} {rome(r["data"]).strftime("%d/%m %H:%M")} · {E(r["casa"])} – {E(r["ospite"])}</option>' for r in PARTITE)
 gtitle = f'<div class="gday"><span class="md">GIORNATA {md or "—"}</span><span>{periodo}</span></div>'
 
 CSS = """
@@ -457,7 +669,7 @@ h2.day{font:700 15px Inter;text-transform:uppercase;letter-spacing:2px;color:var
 .pbar i.x{background:#3a4556}.pbar b{font:700 13px Inter;white-space:nowrap}.pfine{font-size:12px;color:var(--mut)}
 .aibox{border:1px solid #243041;border-radius:12px;padding:10px 12px;margin:10px 0;background:#0f151d}.aih{font-size:13px;margin-bottom:6px}
 .aik{display:flex;gap:18px;margin-bottom:6px}.aik span{display:flex;flex-direction:column}.aik small{font-size:11px;color:var(--mut)}.aik b{font:700 20px 'Barlow Condensed'}
-.ait td,.ait th{padding:4px 8px}
+.ait td,.ait th{padding:4px 8px}.assh{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.06em;margin:8px 0 4px}.ass{font-size:13px;margin:2px 0}
 .kpis{display:grid;grid-template-columns:repeat(3,auto) 1fr;gap:10px;margin:14px 0}.kpis div{background:var(--card2);border-radius:12px;padding:8px 12px}.kpis small{display:block;color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.8px}
 .kpis b{font:700 18px 'Barlow Condensed','Arial Narrow',sans-serif-condensed,sans-serif}.kpis em{font-style:normal;color:var(--mut);font-size:13px}
 .pick{background:linear-gradient(90deg,rgba(0,227,140,.10),transparent);border-left:3px solid var(--acc);padding:9px 12px;border-radius:8px;font-size:14px}.pick .lbl{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.8px;margin-right:6px}
@@ -523,12 +735,32 @@ table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}.odd
 details.info{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:0 0 14px}details.info summary{cursor:pointer;color:var(--acc);font-weight:600;font-size:14px}
 details.info p{font-size:14px;color:var(--ink);margin:8px 0}
 .tipn{flex-wrap:wrap}
+.subnav{display:none;gap:6px;margin:-8px 0 16px;overflow-x:auto}.subnav.on{display:flex}
+.subnav a{color:var(--mut);text-decoration:none;font-weight:600;font-size:13px;padding:6px 12px;border-radius:99px;border:1px solid var(--line);white-space:nowrap}.subnav a.on{color:var(--acc);border-color:var(--acc)}
+.pick{display:flex;flex-direction:column;gap:6px;margin:0 0 16px}.pick label,.fmod label{font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.06em}
+.pick select,.fmod select,.fadd input{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font:600 15px Inter;width:100%}
+.fbox{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin:0 0 16px}.fbox .daytitle{margin-top:0}
+.fadd{display:flex;gap:8px}.fadd button{background:var(--acc);color:#04130c;border:0;border-radius:12px;padding:0 16px;font:700 14px Inter;cursor:pointer}
+.fg{margin:10px 0}.fgt{font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+.fp{display:inline-flex;align-items:center;gap:6px;background:#0f151d;border:1px solid var(--line);border-radius:99px;padding:4px 6px 4px 4px;margin:0 6px 6px 0;font-size:14px}
+.fp small{color:var(--mut)}.fr{background:#1b2531;color:var(--acc);border:0;border-radius:99px;font:700 12px Inter;padding:3px 4px}
+.fx{background:none;border:0;color:var(--mut);font-size:18px;cursor:pointer;line-height:1}
+.fmod{display:flex;flex-direction:column;gap:6px;margin-bottom:6px}
+.fpitch{background:linear-gradient(#0f3d26,#0b2e1d);border:1px solid #1d5a3a;border-radius:16px;padding:12px 6px;display:flex;flex-direction:column;gap:12px}
+.frow{display:flex;justify-content:center;gap:5px;flex-wrap:nowrap}
+.fc{background:rgba(10,13,18,.82);border-radius:12px;padding:6px 5px;flex:1 1 0;min-width:0;max-width:120px;overflow:hidden;text-align:center;display:flex;flex-direction:column;gap:2px}
+.fc b{font-size:12px;line-height:1.15}.fc small{font-size:11px;color:var(--mut)}.fk{display:flex;flex-wrap:wrap;gap:2px 6px;justify-content:center;font-size:10.5px}.fk i{font-style:normal;color:var(--acc);font-weight:700}
+.fw{font-style:normal;font-size:10px;color:#ff6b6b}.finf{font-style:normal;font-size:11px;font-weight:700;color:#ff6b6b;background:rgba(255,107,107,.12);border-radius:99px;padding:2px 7px}.finf.dub{color:#ffd23f;background:rgba(255,210,63,.12)}
+.fst td,.fst th{padding:6px 8px;white-space:nowrap}
 footer{margin-top:50px;color:var(--mut);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
 """
 JS = """
-const views=['news','live','giornata','analisi','triple','marcatori','bilancio','classifica'];
-function show(){const h=location.hash.slice(1);const v=views.includes(h)?h:'news';
-document.querySelectorAll('.view').forEach(e=>e.classList.toggle('on',e.id===v));document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+v));}
+const views=['news','live','giornata','analisi','triple','marcatori','fanta','bilancio','classifica'];
+const STUDIO=['giornata','triple','marcatori'];
+function show(){const h=location.hash.slice(1);const v=views.includes(h)?h:'news';const st=STUDIO.includes(v);
+document.querySelectorAll('.view').forEach(e=>e.classList.toggle('on',e.id===v));
+document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.dataset.g==='studio'?st:a.getAttribute('href')==='#'+v));
+const sn=document.getElementById('subnav');if(sn){sn.classList.toggle('on',st);sn.querySelectorAll('a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+v));}}
 addEventListener('hashchange',()=>{show();scrollTo(0,0)});show();
 let S={};try{S=JSON.parse(localStorage.getItem('sa_combo')||'{}')}catch(e){}
 function calc(inp){const tr=inp.closest('tr'),p=+tr.dataset.p,q=parseFloat(inp.value.replace(',','.')),c=tr.querySelector('.evc');
@@ -543,6 +775,58 @@ const m=document.getElementById('copiamsg');if(L.length<2){m.textContent='Nessun
 try{await navigator.clipboard.writeText(L.join(String.fromCharCode(10)));m.textContent=`Copiate ${L.length-1} quote: incollale nella chat.`}catch(e){m.textContent='Copia non riuscita: seleziona e copia a mano.';}};
 document.querySelectorAll('.match').forEach(m=>m.querySelectorAll('.tabs2 button').forEach(b=>b.onclick=()=>{
 m.querySelectorAll('.tabs2 button').forEach(x=>x.classList.toggle('on',x===b));m.querySelectorAll('.pane').forEach(p=>p.classList.toggle('on',p.dataset.p===b.dataset.t));}));
+
+const sp=document.getElementById('selp');
+if(sp){const f=()=>{document.querySelectorAll('#analisi .match').forEach(a=>a.style.display=a.dataset.i===sp.value?'':'none')};
+try{const v=localStorage.getItem('sa_selp');if(v&&[...sp.options].some(o=>o.value===v))sp.value=v}catch(e){}
+sp.onchange=()=>{f();try{localStorage.setItem('sa_selp',sp.value)}catch(e){}};f();}
+(function(){
+const dl=document.getElementById('fdl');if(!dl||typeof FANTA==='undefined')return;
+const ORD=['P','D','C','A'],RN={P:'Portieri',D:'Difensori',C:'Centrocampisti',A:'Attaccanti'};
+const key=p=>p.n+'|'+p.t,BY={};FANTA.forEach(p=>BY[key(p)]=p);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let rosa=[],mod='4-4-2';try{rosa=JSON.parse(localStorage.getItem('sa_fanta')||'[]');mod=localStorage.getItem('sa_fanta_mod')||mod}catch(e){}
+const ms=document.getElementById('fmodulo');ms.value=mod;
+dl.innerHTML=FANTA.map(p=>`<option value="${esc(p.n)} (${esc(p.t)})">`).join('');
+const save=()=>{try{localStorage.setItem('sa_fanta',JSON.stringify(rosa));localStorage.setItem('sa_fanta_mod',mod)}catch(e){}};
+const msg=t=>{document.getElementById('fmsg').textContent=t};
+function trova(v){v=v.trim().toLowerCase();if(!v)return null;let p=FANTA.find(p=>(p.n+' ('+p.t+')').toLowerCase()===v);if(p)return p;
+const c=FANTA.filter(p=>p.n.toLowerCase().includes(v));return c.length===1?c[0]:(c.length>1?'tanti':null)}
+function aggiungi(){const i=document.getElementById('fin');const p=trova(i.value);
+if(p==='tanti'){msg('Più giocatori con questo nome: scegli dalla lista.');return}
+if(!p){msg('Giocatore non trovato tra le rose di Serie A.');return}
+if(rosa.some(x=>x.k===key(p))){msg(p.n+' è già nella rosa.');return}
+rosa.push({k:key(p),n:p.n,t:p.t,r:p.r});i.value='';msg('');save();draw()}
+document.getElementById('fbtn').onclick=aggiungi;document.getElementById('fin').addEventListener('keydown',e=>{if(e.key==='Enter')aggiungi()});
+ms.onchange=()=>{mod=ms.value;save();draw()};
+function info(x){const p=BY[x.k];return p?Object.assign({},p,{r:x.r}):{n:x.n,t:x.t,r:x.r,s:0,fv:0,pg:0,o:'',c:true,a:'non convocabile o senza partita',f:''}}
+const corto=n=>{const w=n.split(' ');return w.length>1&&n.length>11?w[0][0]+'. '+w.slice(1).join(' '):n};
+function chip(p){const w=p.a?`<em class="fw">${p.inf?'🚑 ':''}${esc(p.a)}</em>`:(p.pg<0.5?'<em class="fw">rischia la panchina</em>':'');
+return `<div class="fc"><b>${esc(corto(p.n))}</b><small>${esc(p.t)}${p.o?' · '+(p.c?'vs ':'@ ')+esc(p.o):''}</small>
+<span class="fk"><i>FV ${p.fv?p.fv.toFixed(1):'—'}</i><i>tit. ${Math.round((p.pg||0)*100)}%${p.f==='ufficiale'?' ✓':''}</i></span>${w}</div>`}
+function draw(){
+const R=document.getElementById('frosa');
+R.innerHTML=rosa.length?ORD.map(r=>{const L=rosa.filter(x=>x.r===r);return L.length?`<div class="fg"><div class="fgt">${RN[r]} (${L.length})</div>${L.map(x=>`<span class="fp">
+<select data-k="${esc(x.k)}" class="fr">${ORD.map(o=>`<option${o===x.r?' selected':''}>${o}</option>`).join('')}</select>${esc(x.n)} <small>${esc(x.t)}</small>${(BY[x.k]||{}).a?`<em class="finf${(BY[x.k]||{}).inf?'':' dub'}">${(BY[x.k]||{}).inf?'infortunato':'in dubbio'}</em>`:''}<button data-k="${esc(x.k)}" class="fx" aria-label="Togli">×</button></span>`).join('')}</div>`:''}).join(''):'<p class="hint">Aggiungi i giocatori della tua rosa: restano salvati su questo dispositivo. Il ruolo (P, D, C, A) si può cambiare se nella tua lega è diverso.</p>';
+R.querySelectorAll('.fx').forEach(b=>b.onclick=()=>{rosa=rosa.filter(x=>x.k!==b.dataset.k);save();draw()});
+R.querySelectorAll('.fr').forEach(s=>s.onchange=()=>{const x=rosa.find(x=>x.k===s.dataset.k);if(x){x.r=s.value;save();draw()}});
+const O=document.getElementById('fout');if(!rosa.length){O.innerHTML='';return}
+const n=mod.split('-').map(Number),need={P:1,D:n[0],C:n[1],A:n[2]};
+const pl=rosa.map(info),tit=[],man=[];
+ORD.forEach(r=>{const L=pl.filter(p=>p.r===r).sort((a,b)=>b.s-a.s);tit.push(...L.slice(0,need[r]));if(L.length<need[r])man.push(`${need[r]-L.length} ${RN[r].toLowerCase()}`)});
+const panca=pl.filter(p=>!tit.includes(p)).sort((a,b)=>ORD.indexOf(a.r)-ORD.indexOf(b.r)||b.s-a.s);
+const riga=r=>`<div class="frow">${tit.filter(p=>p.r===r).map(chip).join('')}</div>`;
+const tot=tit.reduce((s,p)=>s+(p.s||0),0);
+O.innerHTML=`<h2 class="daytitle">Formazione consigliata · ${mod}</h2>${man.length?`<p class="hint koc">Mancano in rosa: ${man.join(', ')}.</p>`:''}
+<div class="fpitch">${['A','C','D','P'].map(riga).join('')}</div><p class="hint">Punteggio atteso dell'undici: <b>${tot.toFixed(1)}</b></p>
+<h2 class="daytitle">Statistiche della rosa</h2><div class="scroll"><table class="tbl fst"><thead><tr><th class=l>Giocatore</th><th>R</th><th>Pres</th><th>Media voto</th><th>Fantamedia</th><th>Gol</th><th>Media gol</th><th>Ass</th><th>Media ass</th><th>Amm/Esp</th><th class=l>Stato</th></tr></thead><tbody>
+${pl.slice().sort((a,b)=>ORD.indexOf(a.r)-ORD.indexOf(b.r)||b.s-a.s).map(p=>{const s=p.st||{};const f=v=>v==null?'—':v.toFixed(2);
+const c=v=>s.p?(v??0):'—';
+return `<tr><td class=l>${esc(p.n)} <small class="muted">${esc(p.t)}</small></td><td>${p.r}</td><td>${s.p||'—'}</td><td>${s.mv?s.mv.toFixed(2):'—'}</td><td><b>${s.fm?s.fm.toFixed(2):'—'}</b></td><td>${p.r==='P'&&s.fc?(s.p?'−'+(s.gs||0)+' <small class=muted>subiti</small>':'—'):c(s.g)}</td><td>${p.r==='P'&&s.fc?(s.p?(-(s.gs||0)/s.p).toFixed(2):'—'):f(s.mg)}</td><td>${c(s.as_)}</td><td>${f(s.ma)}</td><td>${s.p?(s.y||0)+'/'+(s.rc||0):'—'}</td><td class=l>${p.a?`<span class="${p.inf?'koc':'warn'}">${p.inf?'🚑 ':''}${esc(p.a)}</span>`:'<span class="okc">disponibile</span>'}</td></tr>`}).join('')}</tbody></table></div>
+<p class="hint">${FCI||'Media voto e fantamedia compaiono quando carichi l’export delle statistiche di Fantacalcio nella cartella dati.'}</p>
+<h2 class="daytitle">Panchina (in ordine)</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Giocatore</th><th>Ruolo</th><th>FV atteso</th><th>Titolare</th></tr></thead><tbody>
+${panca.map(p=>`<tr><td class=l>${esc(p.n)} <small class="muted">${esc(p.t)}${p.o?' vs '+esc(p.o):''}${p.a?' · '+esc(p.a):''}</small></td><td>${p.r}</td><td>${p.fv?p.fv.toFixed(1):'—'}</td><td>${Math.round((p.pg||0)*100)}%</td></tr>`).join('')}</tbody></table></div>`}
+draw();})();
 """
 gen = datetime.now(timezone.utc).isoformat()
 PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -551,17 +835,26 @@ PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name
 <meta name="apple-mobile-web-app-title" content="SA Analyst"><link rel="apple-touch-icon" href="icona-180.png"><link rel="icon" type="image/png" href="icona-192.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>{CSS}</style></head>
 <body><div class="wrap"><header class="hero"><div class="brand">Serie A <span>Analyst</span><small>Aggiornato {fts(gen)}</small></div></header>
-<nav><a href="#news">News</a><a href="#live">Live</a><a href="#giornata">Pronostici</a><a href="#analisi">Analisi</a><a href="#triple">Triple</a><a href="#marcatori">Marcatori</a><a href="#bilancio">Bilancio</a><a href="#classifica">Classifica</a></nav>
+<nav><a href="#news">News</a><a href="#live">Live</a><a href="#giornata" data-g="studio">Studio</a><a href="#analisi">Analisi</a><a href="#fanta">Fantacalcio</a><a href="#bilancio">Bilancio</a><a href="#classifica">Classifica</a></nav>
+<div class="subnav" id="subnav"><a href="#giornata">Pronostici</a><a href="#triple">Triple</a><a href="#marcatori">Marcatori</a></div>
 <section class="view" id="news">{news_html}</section>
-<section class="view" id="live">{gtitle}<h2 class="daytitle">Risultati live</h2>{live_html}</section>
-<section class="view" id="giornata">{gtitle}<h2 class="daytitle">Schedina della giornata</h2><div class="legend"><span class="star">★</span> <b>Errore di quota a tuo favore</b>: Eurobet paga più del giusto sia secondo il nostro modello sia rispetto a Pinnacle, il bookmaker con le quote più precise. Sono le giocate più interessanti; le altre sono pagate il giusto o meno.</div><div class="scroll"><table class="tbl slip"><thead><tr><th class=l>Partita</th><th class=l>Pronostico</th><th>Probabilità</th><th>Quota</th></tr></thead><tbody>{slip_rows}</tbody></table></div></section>
-<section class="view" id="analisi">{gtitle}{''.join(cards)}</section>
-<section class="view" id="triple">{gtitle}<div class="legend"><span class="star">★</span> <b>Errore di quota a tuo favore</b>: Eurobet paga più del giusto sia secondo il nostro modello sia rispetto a Pinnacle, il bookmaker con le quote più precise. Sono le giocate più interessanti; le altre sono pagate il giusto o meno.</div><h2 class="daytitle">Sabato</h2><div class="tgrid">{triple_html('sabato')}</div><h2 class="daytitle">Domenica</h2><div class="tgrid">{triple_html('domenica')}</div>
+<section class="view" id="live">{gtitle}<h2 class="daytitle">Risultati live</h2>{live_html}<h2 class="daytitle">Formazioni</h2>{form_html}</section>
+<section class="view" id="giornata">{gtitle}<h2 class="daytitle">Schedina della giornata</h2><div class="legend"><span class="star">★</span> <b>Errore di quota a tuo favore</b>: secondo l'analisi dell'AI questo esito è più probabile di quanto lo paga Eurobet. Sono le giocate più interessanti; le altre sono pagate il giusto o meno.</div><div class="scroll"><table class="tbl slip"><thead><tr><th class=l>Partita</th><th class=l>Pronostico</th><th>Probabilità</th><th>Quota</th></tr></thead><tbody>{slip_rows}</tbody></table></div></section>
+<section class="view" id="analisi">{gtitle}<div class="pick"><label for="selp">Scegli la partita</label><select id="selp">{sel_opts}</select></div>{''.join(cards)}</section>
+<section class="view" id="triple">{gtitle}<div class="legend"><span class="star">★</span> <b>Errore di quota a tuo favore</b>: secondo l'analisi dell'AI questo esito è più probabile di quanto lo paga Eurobet. Sono le giocate più interessanti; le altre sono pagate il giusto o meno.</div><h2 class="daytitle">Sabato</h2><div class="tgrid">{triple_html('sabato')}</div><h2 class="daytitle">Domenica</h2><div class="tgrid">{triple_html('domenica')}</div>
 </section>
 <section class="view" id="marcatori">{gtitle}{marc_html}</section>
+<section class="view" id="fanta">{gtitle}
+<div class="fbox"><h2 class="daytitle">La tua rosa</h2>
+<div class="fadd"><input id="fin" list="fdl" placeholder="Scrivi il nome di un giocatore…" autocomplete="off"><button id="fbtn">Aggiungi</button></div>
+<datalist id="fdl"></datalist><div id="fmsg" class="hint"></div><div id="frosa" class="frosa"></div></div>
+<div class="fbox"><div class="fmod"><label for="fmodulo">Modulo</label><select id="fmodulo"><option>3-4-3</option><option>3-5-2</option><option>4-3-3</option><option selected>4-4-2</option><option>4-5-1</option><option>5-3-2</option><option>5-4-1</option></select></div>
+<div id="fout"></div></div>
+<details class="info"><summary>Come sceglie</summary><p>Per ogni giocatore della tua rosa stima il <b>fantavoto atteso</b> (regole Classic) partendo dalla sua <b>media voto</b> e dai <b>bonus medi</b> (fantamedia − media voto) delle statistiche Fantacalcio, corretti per la partita: forza dell'avversario, casa o trasferta, gol attesi della squadra e, per i portieri, gol che rischia di subire e probabilità di porta inviolata. Stima anche la <b>probabilità che giochi titolare</b>. Contano: i minuti che gioca di solito, se era titolare nell'ultima partita (o la formazione ufficiale, quando esce), gli infortuni e le squalifiche segnalate, i suoi xG e assist, quanti gol dovrebbe segnare la sua squadra contro quell'avversario e quanti rischia di subirne. Il punteggio per scegliere è fantavoto atteso × probabilità di giocare. Il voto in pagella non si può prevedere con precisione: è una stima, e si aggiorna ogni ora (formazioni ufficiali comprese).</p></details>
+</section>
 <section class="view" id="bilancio">{bil_html}</section>
 <section class="view" id="classifica"><div class="scroll"><table class="tbl"><thead><tr><th>#</th><th class=l>Squadra</th><th>Pt</th><th>G</th><th>V</th><th>N</th><th>P</th><th>GF</th><th>GS</th><th>DR</th><th>xG/p</th><th>xGA/p</th><th>Elo</th></tr></thead><tbody>{cl_rows}</tbody></table></div>
 </section>
-<footer>Strumento personale di analisi. Le quote cambiano: verifica sempre sul sito del bookmaker. Il gioco è vietato ai minori e può causare dipendenza.</footer></div><script>{JS}</script></body></html>"""
+<footer>Strumento personale di analisi. Le quote cambiano: verifica sempre sul sito del bookmaker. Il gioco è vietato ai minori e può causare dipendenza.</footer></div><script>const FANTA={FANTA_JSON};const FCI={json.dumps(FC_INFO)};</script><script>{JS}</script></body></html>"""
 open(os.path.join(OUTD, "index.html"), "w").write(PAGE)
 print(f"Sito generato: sito/index.html — giornata {md}, {len(PARTITE)} partite, {tot_v}/6 triple, {len(LINEUPS)} formazioni")

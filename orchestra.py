@@ -101,6 +101,29 @@ if fare_uscita:
     get("striker_team_stats.json", f"{SB}/get_team_stats", SH, "POST", L)
     get("striker_elo.json", f"{SB}/get_ratings", SH, "POST", L)
     get("striker_xg_giocatori.json", f"{SB}/get_leaders", SH, "POST", dict(L, stat="xg", limit=100, min_games=2))
+    # Fantacalcio: statistiche di (quasi) tutti i giocatori. StrikerAPI da' al massimo 100 righe per richiesta:
+    # si chiedono piu' pagine (offset) e si uniscono; ci si ferma quando non arrivano giocatori nuovi.
+    def leaders_tutti(fname, stat, pagine):
+        tutti, visti = [], set()
+        for n in range(pagine):
+            tmpn = f"_tmp_{stat}.json"
+            if not get(tmpn, f"{SB}/get_leaders", SH, "POST", dict(L, stat=stat, limit=100, min_games=1, offset=n*100)): break
+            righe = ((J(tmpn) or {}).get("data") or {}).get("leaders", [])
+            nuovi = [p for p in righe if p.get("player_id") not in visti]
+            visti |= {p.get("player_id") for p in nuovi}; tutti += nuovi
+            if len(righe) < 100 or not nuovi: break
+        try: os.remove(os.path.join(D, f"_tmp_{stat}.json"))
+        except OSError: pass
+        if tutti:
+            json.dump({"data": {"stat": stat, "leaders": tutti}}, open(os.path.join(D, fname), "w"), ensure_ascii=False)
+            print(f"{fname:40s} {len(tutti)} giocatori")
+    leaders_tutti("striker_xg_tutti.json", "xg", 7)
+    leaders_tutti("striker_gol_tutti.json", "goals", 3)
+    leaders_tutti("striker_assist.json", "assists", 3)
+    leaders_tutti("striker_gialli.json", "yellow_cards", 3)
+    leaders_tutti("striker_rossi.json", "red_cards", 1)
+    leaders_tutti("striker_parate.json", "saves", 1)
+    leaders_tutti("striker_cleansheet.json", "clean_sheets", 1)
     get("striker_schedule.json", f"{SB}/get_schedule", SH, "POST", dict(L, days=10))
     # primo avvio: ultime formazioni schierate (una partita per squadra), poi bastano le ufficiali di ogni giornata
     import glob
@@ -113,6 +136,8 @@ if fare_uscita:
                 if g.get("status") != "final" or (hm in viste and aw in viste): continue
                 viste |= {hm, aw}
                 get(os.path.join("lineups", f"{g['game_id']}.json"), f"{SB}/get_lineups", SH, "POST", {"game_id": str(g["game_id"]), "league": "seriea"})
+    # assenze (infortuni e squalifiche) da API-Football, piano gratuito: 1 richiesta
+    get("apif_infortuni.json", f"https://v3.football.api-sports.io/injuries?league=135&season={s}", [f"x-apisports-key: {ENV.get('APIFOOTBALL_KEY','')}"])
     # taratura automatica del modello AI (test walk-forward contro il mercato) prima dei pronostici
     subprocess.run([sys.executable, os.path.join(BASE, "taratura.py")], check=False)
     # solo l'uscita ufficiale (programmata) registra le previsioni nello storico e congela la giornata
@@ -171,6 +196,7 @@ try:
 except Exception as e:
     print("verifica marcatori:", e)
 subprocess.run([sys.executable, os.path.join(BASE, "verifica.py")], check=False)
+subprocess.run([sys.executable, os.path.join(BASE, "confronto.py")], check=False)
 
 json.dump(META, open(META_P, "w"), indent=1); json.dump(STATO, open(STATO_P, "w"), indent=1)
 subprocess.run([sys.executable, os.path.join(BASE, "genera_sito.py")], check=False)

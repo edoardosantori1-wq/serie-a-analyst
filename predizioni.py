@@ -269,6 +269,50 @@ def scrivi_modello_combo(out, manuali, triple=None):
             if k not in usate and k[0] in ordine:
                 w.writerow([k[0], k[1], "", "", str(q).replace(".", ","), ts])
 
+# --------------------------------------------------- assenze (API-Football /injuries)
+def _assenze_tutte():
+    """Giocatori che potrebbero non giocare (infortuni, squalifiche), da API-Football. Mai inventati:
+    se la fonte non risponde o il piano gratuito non copre la stagione, l'AI non applica correzioni."""
+    d = J("apif_infortuni.json")
+    if not d: return {}, "assenze non scaricate"
+    if d.get("errors"): return {}, "assenze non disponibili: " + json.dumps(d["errors"], ensure_ascii=False)[:160]
+    out = {}
+    for x in d.get("response", []):
+        team = canon((x.get("team") or {}).get("name")); pl = x.get("player") or {}; fx = x.get("fixture") or {}
+        if team and pl.get("name") and fx.get("date"):
+            out.setdefault(team, []).append(dict(nome=pl["name"], tipo=pl.get("type") or "", motivo=pl.get("reason") or "", data=fx["date"]))
+    return out, None
+ASSENZE, ASSENZE_STATO = _assenze_tutte()
+
+def assenti(team, inizio):
+    t0 = datetime.fromisoformat(inizio.replace("Z", "+00:00")); viste = set(); out = []
+    for x in ASSENZE.get(team, []):
+        try: t = datetime.fromisoformat(x["data"].replace("Z", "+00:00"))
+        except ValueError: continue
+        if abs((t - t0).total_seconds()) <= 36*3600 and x["nome"] not in viste:
+            viste.add(x["nome"]); out.append(dict(x, dubbio=("questionable" in x["tipo"].lower())))
+    return out
+
+def _stesso_giocatore(nome_api, nome_xg):
+    a, b = _norm(nome_api), _norm(nome_xg)
+    if not a or not b or a[-1] not in b: return False          # stesso cognome
+    return len(a) == 1 or len(a[0]) > 1 or a[0][0] == b[0][0]   # e stessa iniziale del nome, se indicata
+
+def effetto_assenze(team, lista):
+    """Quanto pesa ogni assente nell'attacco: quota dei suoi xG su quelli della squadra. Chi lo sostituisce
+    recupera circa meta' della produzione (assunzione dichiarata); un dubbio pesa meta'. Riduzione massima 25%.
+    I difensori assenti non sono misurabili con gli xG: non correggono il calcolo."""
+    L = (J("striker_xg_giocatori.json") or {}).get("data", {}).get("leaders", [])
+    TSx = {canon(t["display_name"]): t for t in (J("striker_team_stats.json") or {}).get("data", {}).get("teams", [])}
+    AB = {t["abbrev"]: canon(t["display_name"]) for t in (J("striker_team_stats.json") or {}).get("data", {}).get("teams", [])}
+    ts = TSx.get(team); tot = (ts or {}).get("xg_for", 0) * (ts or {}).get("games", 0)
+    persa = 0.0
+    for x in lista:
+        p = next((p for p in L if AB.get(p["team"]) == team and _stesso_giocatore(x["nome"], p["name"])), None)
+        x["quota_xg"] = round(float(p["value"]) / tot, 3) if p and tot else 0.0
+        persa += x["quota_xg"] * 0.5 * (0.5 if x["dubbio"] else 1.0)
+    return max(0.75, 1 - persa)
+
 def main():
     now = datetime.now(timezone.utc)
     pro = [m for m in (J("fdorg_prossime.json") or {}).get("matches", []) if m.get("status") in ("SCHEDULED", "TIMED")]
@@ -294,10 +338,14 @@ def main():
         l1h, l1a = MD.lambdas(par1, h, a); lgh, lga = MD.lambdas(parg, h, a)
         sup_m, tot_m = l1h - l1a, lgh + lga
         lhm, lam = max((tot_m + sup_m)/2, 0.05), max((tot_m - sup_m)/2, 0.05)
+        # assenze: l'attacco della squadra perde la quota di xG dei giocatori indisponibili
+        ass_h, ass_a = assenti(h, m["utcDate"]), assenti(a, m["utcDate"])
+        fh, fa = effetto_assenze(h, ass_h), effetto_assenze(a, ass_a)
+        lhm, lam = lhm * fh, lam * fa
         mk_mod, ris_mod = MD.mercati(MD.matrice(lhm, lam, RHO))
         rec = dict(id=m["id"], data=m["utcDate"], giorno=dt.strftime("%Y-%m-%d"), wd=dt.weekday(), casa=h, ospite=a,
                    lam_modello=[round(lhm, 2), round(lam, 2)], p_modello={k: round(mk_mod[k], 4) for k in ("1","X","2","O2.5","U2.5","GG","NG","O1.5","U3.5")},
-                   risultato_modello=ris_mod[0][1])
+                   risultato_modello=ris_mod[0][1], assenze={h: ass_h, a: ass_a}, effetto_assenze=[round(fh, 3), round(fa, 3)])
         if all(k in q for k in ("1", "X", "2")):
             pk = MD.no_vig([q["1"], q["X"], q["2"]]); marg = sum(1/q[k] for k in ("1","X","2")) - 1
             po = MD.no_vig([q["O2.5"], q["U2.5"]])[0] if "O2.5" in q and "U2.5" in q else None
@@ -333,6 +381,7 @@ def main():
                     sel.append(dict(k="C:" + n, label=n, p=round(pp, 4), quota=o, p_impl=round(1/o, 4), ev=round(pp*o-1, 4),
                                     ht=False, fonte="stimata", p_mercato=round(CE[n][0], 4)))
             ppin = prob_pinnacle(PIN.get((h, a), {}).get("q", {}))
+            rec["p_pin"] = {k: round(ppin[k], 4) for k in ("1", "X", "2", "O2.5", "GG") if k in ppin}
             for s in sel:
                 if s["k"] in ppin: s["p_pin"] = round(ppin[s["k"]], 4)
                 s["cat"] = categoria(s)
@@ -373,7 +422,7 @@ def main():
         usate = set(); triple[nome_g] = {}
         for tipo, pmin, evmin0, qlo, qhi in TIPI:
           best = None
-          for evmin in (evmin0, evmin0 - 0.10):      # se non si trova nulla, si allarga un po' il filtro EV
+          for evmin in (evmin0, evmin0 - 0.10, -1.0):  # se non si trova nulla, si allarga il filtro EV (la tripla esce sempre)
             if best: break
             cs = [c for c in cand(wd, pmin, evmin) if (c["mid"], c["k"]) not in usate]
             if tipo == "aggressiva":     # solo combo (2 o 3 condizioni), quota 1.80-4.00 ciascuna
@@ -407,7 +456,7 @@ def main():
     marcatori = stima_marcatori(out, Q)
     evitare = [dict(match=f'{r["casa"]}-{r["ospite"]}', motivi=r["avvisi"]) for r in out if r.get("avvisi")]
     res = dict(generato=now.isoformat(timespec="seconds"), giornata=md, partite=out, triple=triple, singole=sing, evitare=evitare, marcatori=marcatori,
-               metodo=dict(modalita=MODALITA, W_1X2=W_1X2, W_GOL=W_GOL, par_1x2=PAR_1X2, par_gol=PAR_GOL, rho=RHO, backtest=BACKTEST,
+               assenze_stato=ASSENZE_STATO, metodo=dict(modalita=MODALITA, W_1X2=W_1X2, W_GOL=W_GOL, par_1x2=PAR_1X2, par_gol=PAR_GOL, rho=RHO, backtest=BACKTEST,
                            taratura={k: TAR.get(k) for k in ("generato", "stagioni", "taratura", "verifica_stagione_corrente", "roi_verifica", "nota")} if TAR else None))
     # confronto stime vs quote reali inserite (per ricalibrare FATTORE_MARGINE_COMBO)
     conf = []
@@ -505,6 +554,9 @@ def stima_marcatori(out, Q):
                 if lu and lu.get("ufficiale"):
                     tit = any(set(_norm(p["name"])) & set(_norm(n)) for n in lu.get("titolari", []))
                     mexp = 80 if tit else 15
+                ass = next((x for x in (r.get("assenze") or {}).get(team, []) if _stesso_giocatore(x["nome"], p["name"])), None)
+                if ass and not ass["dubbio"] and not tit: continue          # indisponibile: non puo' segnare
+                if ass and ass["dubbio"] and tit is None: mexp *= 0.5
                 lp = xg90 * mexp / 90 * fatt; pr = 1 - math.exp(-lp)
                 quota = None
                 pt = _norm(p["name"]); cand_q = []
@@ -558,6 +610,14 @@ def registra(res, now):
     for x in res.get("marcatori", {}).get("lista", []):
         if x.get("quota"):
             ins(x["mid"], x["match"], start[x["mid"]].replace("Z", "+00:00"), dict(k="SCORER:"+x["nome"], quota=x["quota"], p=x["p"], ev=x["ev"]), "marcatore", "")
+    # confronto interno AI vs Pinnacle (non pubblicato): probabilita' all'uscita, verificate a fine partita
+    db.execute("""CREATE TABLE IF NOT EXISTS confronto(match_id INT, partita TEXT, inizio TEXT, mercato TEXT, p_ai REAL, p_pin REAL,
+                  PRIMARY KEY(match_id, mercato))""")
+    for r in res["partite"]:
+        if r["data"].replace("Z", "+00:00") <= now.isoformat(): continue
+        for k, v in (r.get("p_pin") or {}).items():
+            if k in (r.get("p_modello") or {}):
+                db.execute("INSERT OR IGNORE INTO confronto VALUES(?,?,?,?,?,?)", (r["id"], f'{r["casa"]}-{r["ospite"]}', r["data"], k, r["p_modello"][k], v))
     db.commit(); db.close()
 
 BACKTEST = dict(partite=365, periodo="2025/26 (dalla 10a giornata) + 2026/27 (giornate 1-11)", riferimento="quote medie di chiusura (football-data.co.uk)",

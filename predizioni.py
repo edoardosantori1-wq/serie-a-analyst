@@ -15,9 +15,17 @@ import modello as MD
 
 BASE = os.path.dirname(os.path.abspath(__file__)); D = os.path.join(BASE, "dati")
 ROME = ZoneInfo("Europe/Rome")
-W_1X2 = 0.0      # peso del modello sull'1X2 (backtest: ottimo a 0)
-W_GOL = 0.25     # peso del modello sul totale gol (backtest: ottimo 0.2-0.3)
-XI, K, ALPHA, RHO = 0.002, 8.0, 0.0, -0.08
+# Modello "AI" (solo dati) e pesi rispetto al mercato: scelti in automatico da taratura.py (dati/taratura.json).
+# Valori di riserva se la taratura non c'e' ancora (stessi risultati del test locale 2025/26 + 2026/27).
+RHO = -0.08
+TAR = {}
+try: TAR = json.load(open(os.path.join(D, "taratura.json")))
+except Exception: pass
+PAR_1X2 = TAR.get("par_1x2") or dict(xi=0.002, k=4.0, alpha=0.5)   # chi vince: forza di lungo periodo
+PAR_GOL = TAR.get("par_gol") or dict(xi=0.02, k=8.0, alpha=0.8)    # gol: forma recente, soprattutto xG
+W_1X2 = TAR.get("w_1x2", 0.0)    # peso del modello sull'1X2 (il resto e' mercato)
+W_GOL = TAR.get("w_gol", 0.5)    # peso del modello sul numero di gol
+XI, K, ALPHA = PAR_GOL["xi"], PAR_GOL["k"], PAR_GOL["alpha"]
 PROMOSSE = ("Frosinone", "Monza", "Venezia")
 # Quota combo stimata = 1 / (prob. di mercato dal risultato esatto x (1 + margine 1X2 Eurobet x FATTORE)).
 # 1.0 = stesso margine dell'1X2. Va ricalibrato confrontando le stime con le quote combo reali.
@@ -42,6 +50,25 @@ def predicato(k):
     if m: t = float(m.group(2)); return (lambda i, j: i > t) if m.group(1) == "H" else (lambda i, j: j > t)
     if k.startswith("C:"): return MD.EVENTI_COMBO.get(k[2:])
     return None
+
+def esito_ok(n, p1, p2):
+    """Combo da 'opinione' (vale per pronostici e triple): mai 12 nelle combo; se una squadra e' favorita
+    (>=50%) solo il suo segno secco; doppia chance (1X/X2) o X solo nelle partite equilibrate."""
+    es = n.split(" + ")[0]
+    if es == "12": return False
+    if p1 >= 0.50: return es == "1"
+    if p2 >= 0.50: return es == "2"
+    return True
+
+def ridondante(n, pp, tutte):
+    """Combo a 3 condizioni in cui una condizione non aggiunge quasi nulla (es. 1 + No Goal + Under 4.5):
+    abbassa solo la quota. Si scarta se togliendo una condizione la probabilita' cambia meno del 10%."""
+    parti = n.split(" + ")
+    if len(parti) < 3: return False
+    for x in parti[1:]:
+        ridotta = " + ".join(y for y in parti if y != x)
+        if ridotta in tutte and pp > 0.90 * tutte[ridotta]: return True
+    return False
 
 def compatibili(chiavi):
     """True se esiste almeno un risultato finale che fa vincere tutte le selezioni della stessa partita."""
@@ -212,17 +239,30 @@ def quote_combo_manuali():
         out[((r.get("partita") or "").strip(), (r.get("combo") or "").strip())] = (q, (r.get("rilevata") or "").strip() or mt)
     return out
 
-def scrivi_modello_combo(out, manuali):
-    """Riscrive il modulo da compilare con le combo della giornata, conservando le quote gia' inserite."""
+def scrivi_modello_combo(out, manuali, triple=None):
+    """Modulo da compilare: SOLO le combo che il sistema usa davvero (pronostico della partita + triple
+    del sabato e della domenica), cosi' le quote che contano sono verificate. Le quote gia' inserite restano."""
     import csv
+    usate = {}
+    for r in out:
+        p = r.get("pronostico")
+        if p and p["k"].startswith("C:"): usate[(f'{r["casa"]}-{r["ospite"]}', p["k"][2:])] = p["p"]
+    for g in (triple or {}).values():
+        for t in g.values():
+            for c in (t or {}).get("selezioni", []):
+                if c["k"].startswith("C:"): usate[(c["match"], c["k"][2:])] = c["p"]
+    ordine = {f'{r["casa"]}-{r["ospite"]}': n for n, r in enumerate(out)}
     path = os.path.join(D, "quote_combo.csv")
     with open(path, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f, delimiter=";")
         w.writerow(["partita", "combo", "prob_stimata", "quota_minima", "quota_eurobet", "rilevata"])
-        for r in out:
-            for n, pp in [c for c in (r.get("combo") or []) if c[0].count("+") == 1][:12]:
-                k = (f'{r["casa"]}-{r["ospite"]}', n); q, ts = manuali.get(k, ("", ""))
-                w.writerow([k[0], n, f"{pp*100:.1f}%", f"{1/pp:.2f}".replace(".", ","), str(q).replace(".", ",") if q else "", ts])
+        for k, pp in sorted(usate.items(), key=lambda x: (ordine.get(x[0][0], 99), x[0][1])):
+            q, ts = manuali.get(k, ("", ""))
+            w.writerow([k[0], k[1], f"{pp*100:.1f}%", f"{1/pp:.2f}".replace(".", ","), str(q).replace(".", ",") if q else "", ts])
+        # quote gia' inserite per combo non piu' usate: si tengono (servono comunque alla calibrazione)
+        for k, (q, ts) in manuali.items():
+            if k not in usate and k[0] in ordine:
+                w.writerow([k[0], k[1], "", "", str(q).replace(".", ","), ts])
 
 def main():
     now = datetime.now(timezone.utc)
@@ -237,16 +277,22 @@ def main():
     for m in storico: m["h"], m["a"] = canon(m["h"]), canon(m["a"])
     storico = [m for m in storico if m["h"] and m["a"]]
     storico.sort(key=lambda m: m["date"])
-    par = MD.fit(storico, now.date(), xi=XI, k=K, alpha=ALPHA, promoted=PROMOSSE)
+    par1 = MD.fit(storico, now.date(), xi=PAR_1X2["xi"], k=PAR_1X2["k"], alpha=PAR_1X2["alpha"], promoted=PROMOSSE)
+    parg = MD.fit(storico, now.date(), xi=PAR_GOL["xi"], k=PAR_GOL["k"], alpha=PAR_GOL["alpha"], promoted=PROMOSSE)
+    par = parg
     Q = quote_eurobet(); PIN = quote_bookmaker("pinnacle"); out = []; MAN = quote_combo_manuali()
     for m in partite:
         h, a = canon(m["homeTeam"]["name"]), canon(m["awayTeam"]["name"])
         dt = datetime.fromisoformat(m["utcDate"].replace("Z", "+00:00")).astimezone(ROME)
         qq = Q.get((h, a), {}); q = qq.get("q", {})
-        lhm, lam = MD.lambdas(par, h, a)
-        mk_mod, _ = MD.mercati(MD.matrice(lhm, lam, RHO))
+        # previsione AI: chi e' piu' forte (supremazia) dal modello 1X2, quanti gol dal modello sulla forma recente
+        l1h, l1a = MD.lambdas(par1, h, a); lgh, lga = MD.lambdas(parg, h, a)
+        sup_m, tot_m = l1h - l1a, lgh + lga
+        lhm, lam = max((tot_m + sup_m)/2, 0.05), max((tot_m - sup_m)/2, 0.05)
+        mk_mod, ris_mod = MD.mercati(MD.matrice(lhm, lam, RHO))
         rec = dict(id=m["id"], data=m["utcDate"], giorno=dt.strftime("%Y-%m-%d"), wd=dt.weekday(), casa=h, ospite=a,
-                   lam_modello=[round(lhm, 2), round(lam, 2)], p_modello={k: round(mk_mod[k], 4) for k in ("1","X","2","O2.5","GG")})
+                   lam_modello=[round(lhm, 2), round(lam, 2)], p_modello={k: round(mk_mod[k], 4) for k in ("1","X","2","O2.5","U2.5","GG","NG","O1.5","U3.5")},
+                   risultato_modello=ris_mod[0][1])
         if all(k in q for k in ("1", "X", "2")):
             pk = MD.no_vig([q["1"], q["X"], q["2"]]); marg = sum(1/q[k] for k in ("1","X","2")) - 1
             po = MD.no_vig([q["O2.5"], q["U2.5"]])[0] if "O2.5" in q and "U2.5" in q else None
@@ -256,7 +302,8 @@ def main():
             sup = (1-W_1X2)*(lh-la) + W_1X2*(lhm-lam)
             lhf, laf = max((tot+sup)/2, 0.05), max((tot-sup)/2, 0.05)
             M = MD.matrice(lhf, laf, RHO); mk, ris = MD.mercati(M); mk.update(MD.primo_tempo(lhf, laf))
-            rec.update(lam=[round(lhf, 2), round(laf, 2)], margine_1x2=round(marg, 4), p_mercato=dict(zip("1X2", [round(x, 4) for x in pk])),
+            rec.update(lam=[round(lhf, 2), round(laf, 2)], margine_1x2=round(marg, 4), p_mercato=dict(zip("1X2", [round(x, 4) for x in pk]), **({"O2.5": round(po, 4)} if po else {}),
+                                     **({"GG": round(MD.no_vig([q["GG"], q["NG"]])[0], 4)} if "GG" in q and "NG" in q else {})),
                        fit_err=round(fit_err, 6), quote_ts=max([t for t in qq["ts"].values() if t] or [None]))
             rec["risultati"] = [(s, round(p, 4)) for p, s in ris[:3]]
             rec["combo"] = [(n, round(pp, 4)) for n, pp in sorted(MD.combo(M), key=lambda x: -x[1]) if 0.15 <= pp <= 0.90]
@@ -269,6 +316,7 @@ def main():
             CE = combo_da_esatti(qq.get("cs", {}), marg * FATTORE_MARGINE_COMBO)
             tutte = dict(MD.combo(M))
             rec["combo_mercato"] = {n: [round(v[0], 4), v[1]] for n, v in CE.items()}
+            rec["combo"] = [(n, pp) for n, pp in rec["combo"] if esito_ok(n, mk["1"], mk["2"]) and not ridondante(n, pp, tutte)]
             for n, pp in rec["combo"]:
                 k = (f"{h}-{a}", n)
                 if k in MAN:
@@ -352,7 +400,8 @@ def main():
     marcatori = stima_marcatori(out, Q)
     evitare = [dict(match=f'{r["casa"]}-{r["ospite"]}', motivi=r["avvisi"]) for r in out if r.get("avvisi")]
     res = dict(generato=now.isoformat(timespec="seconds"), giornata=md, partite=out, triple=triple, singole=sing, evitare=evitare, marcatori=marcatori,
-               metodo=dict(W_1X2=W_1X2, W_GOL=W_GOL, xi=XI, k=K, rho=RHO, backtest=BACKTEST))
+               metodo=dict(W_1X2=W_1X2, W_GOL=W_GOL, par_1x2=PAR_1X2, par_gol=PAR_GOL, rho=RHO, backtest=BACKTEST,
+                           taratura={k: TAR.get(k) for k in ("generato", "stagioni", "taratura", "verifica_stagione_corrente", "roi_verifica", "nota")} if TAR else None))
     # confronto stime vs quote reali inserite (per ricalibrare FATTORE_MARGINE_COMBO)
     conf = []
     for r in out:
@@ -377,9 +426,9 @@ def main():
         json.dump(dict(n=len(storico_cal), fattore=round(max(0.5, min(fatt, 4.0)), 3), confronti=storico_cal),
                   open(os.path.join(D, "calibrazione.json"), "w"), ensure_ascii=False, indent=1)
     if os.environ.get("SOLO_MODULO") == "1":
-        scrivi_modello_combo(out, MAN); print("Modulo quote combo preparato per la giornata", md); return
+        scrivi_modello_combo(out, MAN, triple); print("Modulo quote combo preparato per la giornata", md); return
     json.dump(res, open(os.path.join(D, "pronostici.json"), "w"), ensure_ascii=False, indent=1)
-    scrivi_modello_combo(out, MAN)
+    scrivi_modello_combo(out, MAN, triple)
     if os.environ.get("REGISTRA", "1") == "0":
         print("Avvio di prova: previsioni non registrate nello storico."); return
     try:

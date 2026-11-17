@@ -12,6 +12,13 @@ from datetime import date
 
 MAXG = 10
 
+# xG stimato dai tiri quando l'xG vero manca (stagioni passate). Coefficienti stimati sulle partite
+# 2026/27 che hanno l'xG ufficiale: xG ~ 0.208 x tiri in porta + 0.053 x tiri fuori (R2 = 0.59, 220 squadre-partita)
+XG_TP, XG_TF = 0.208, 0.053
+def xg_tiri(s, st):
+    if s is None or st is None: return None
+    return XG_TP * st + XG_TF * max(s - st, 0)
+
 def leggi_csv(path):
     out = []
     for r in csv.DictReader(open(path, encoding="utf-8-sig")):
@@ -22,7 +29,9 @@ def leggi_csv(path):
         f = lambda k: float(r[k]) if r.get(k) not in (None, "") else None
         out.append(dict(date=date(y, int(m), int(d)), h=r["HomeTeam"], a=r["AwayTeam"],
                         hg=int(r["FTHG"]), ag=int(r["FTAG"]), hxg=f("HxG"), axg=f("AxG"),
-                        oH=f("AvgCH"), oD=f("AvgCD"), oA=f("AvgCA"), oO=f("AvgC>2.5"), oU=f("AvgC<2.5")))
+                        oH=f("AvgCH"), oD=f("AvgCD"), oA=f("AvgCA"), oO=f("AvgC>2.5"), oU=f("AvgC<2.5"),
+                        bH=f("B365H"), bD=f("B365D"), bA=f("B365A"), bO=f("B365>2.5"), bU=f("B365<2.5"),
+                        hxp=xg_tiri(f("HS"), f("HST")), axp=xg_tiri(f("AS"), f("AST"))))
     out.sort(key=lambda r: r["date"])
     return out
 
@@ -34,8 +43,10 @@ def fit(matches, ref_date, xi=0.004, k=4.0, alpha=0.6, promoted=(), prom_prior=(
     W = []
     for m in matches:
         w = math.exp(-xi * (ref_date - m["date"]).days)
-        sh = m["hg"] if m["hxg"] is None else alpha * m["hxg"] + (1 - alpha) * m["hg"]
-        sa = m["ag"] if m["axg"] is None else alpha * m["axg"] + (1 - alpha) * m["ag"]
+        xh = m["hxg"] if m["hxg"] is not None else m.get("hxp")
+        xa = m["axg"] if m["axg"] is not None else m.get("axp")
+        sh = m["hg"] if xh is None else alpha * xh + (1 - alpha) * m["hg"]
+        sa = m["ag"] if xa is None else alpha * xa + (1 - alpha) * m["ag"]
         W.append((w, m["h"], m["a"], sh, sa))
     sw = sum(w for w, *_ in W) or 1
     mu = sum(w * (sh + sa) for w, _, _, sh, sa in W) / (2 * sw)

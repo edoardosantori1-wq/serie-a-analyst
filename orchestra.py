@@ -113,6 +113,8 @@ if fare_uscita:
                 if g.get("status") != "final" or (hm in viste and aw in viste): continue
                 viste |= {hm, aw}
                 get(os.path.join("lineups", f"{g['game_id']}.json"), f"{SB}/get_lineups", SH, "POST", {"game_id": str(g["game_id"]), "league": "seriea"})
+    # taratura automatica del modello AI (test walk-forward contro il mercato) prima dei pronostici
+    subprocess.run([sys.executable, os.path.join(BASE, "taratura.py")], check=False)
     # solo l'uscita ufficiale (programmata) registra le previsioni nello storico e congela la giornata
     env = dict(os.environ, REGISTRA="0" if FORZA else "1")
     subprocess.run([sys.executable, os.path.join(BASE, "predizioni.py")], check=False, env=env)

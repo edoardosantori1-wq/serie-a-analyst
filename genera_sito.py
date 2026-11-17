@@ -155,6 +155,21 @@ def combo_html(r):
     if not r.get("combo"): return ''
     return f'''<div class="scroll"><table class="odds combo-t"><thead><tr><th>Combo</th><th>Prob. stimata</th><th>Quota minima</th><th>Quota stimata</th><th>EV stimato</th><th>Quota reale</th><th>EV reale</th></tr></thead>
     <tbody>{combo_rows(r)}</tbody></table></div>'''
+def ai_html(r):
+    """Previsione AI (solo dati) a confronto con il mercato Eurobet senza margine."""
+    ai = r.get("p_modello") or {}; mk = r.get("p_mercato") or {}
+    righe = [("1", "1"), ("X", "X"), ("2", "2"), ("Over 2.5", "O2.5"), ("Goal", "GG")]
+    def cella(k):
+        a, m = ai.get(k), mk.get(k)
+        if a is None: return "<td>—</td><td>—</td><td>—</td>"
+        d = "" if m is None else (a - m) * 100
+        dc = "" if m is None else ('<td class="%s">%+.0f</td>' % ("okc" if d >= 5 else ("koc" if d <= -5 else "muted"), d))
+        return f"<td><b>{pc(a)}</b></td><td>{pc(m) if m is not None else '—'}</td>{dc or '<td>—</td>'}"
+    rows = "".join(f"<tr><td class=l>{lab}</td>{cella(k)}</tr>" for lab, k in righe)
+    lm = r.get("lam_modello") or ["?", "?"]
+    return f'''<div class="aibox"><div class="aih"><b>Previsione AI</b> <span class="muted">· solo dati: forza delle squadre, xG e forma recente</span></div>
+    <div class="aik"><span><small>Risultato più probabile</small><b>{E(r.get("risultato_modello") or "—")}</b></span><span><small>Gol attesi AI</small><b>{lm[0]} – {lm[1]}</b></span></div>
+    <div class="scroll"><table class="tbl ait"><thead><tr><th class=l>Esito</th><th>AI</th><th>Mercato</th><th>Diff.</th></tr></thead><tbody>{rows}</tbody></table></div></div>'''
 cards = []; day = None
 for r in PARTITE:
     dt = rome(r["data"]); h, a = r["casa"], r["ospite"]; th, ta = T(h), T(a)
@@ -163,8 +178,8 @@ for r in PARTITE:
     p = r.get("p") or {}; pm = r.get("p_mercato") or {}
     if p:
         bar = f'''<div class="pbar"><i style="width:{p['1']*100:.1f}%;background:{th['col']}"><b>1 · {pc(p['1'])}</b></i><i class="x" style="width:{p['X']*100:.1f}%"><b>X · {pc(p['X'])}</b></i><i style="width:{p['2']*100:.1f}%;background:{ta['col']}"><b>2 · {pc(p['2'])}</b></i></div>
-        <div class="pfine">Mercato Eurobet senza margine: 1 {pc(pm.get('1'))} · X {pc(pm.get('X'))} · 2 {pc(pm.get('2'))} &nbsp;|&nbsp; Modello proprio: 1 {pc(r['p_modello']['1'])} · X {pc(r['p_modello']['X'])} · 2 {pc(r['p_modello']['2'])}</div>'''
-        kpis = f'''<div class="kpis"><div><small>Gol attesi</small><b>{r['lam'][0]:.2f} – {r['lam'][1]:.2f}</b></div>
+        {ai_html(r)}'''
+        kpis = f'''<div class="kpis"><div><small>Gol attesi (finale)</small><b>{r['lam'][0]:.2f} – {r['lam'][1]:.2f}</b></div>
         <div><small>Over 2.5</small><b>{pc(p.get('O2.5'))}</b></div><div><small>Goal</small><b>{pc(p.get('GG'))}</b></div>
         <div><small>Risultati più probabili</small><b>{' · '.join(f"{s} <em>{pc(q)}</em>" for s, q in r.get('risultati', []))}</b></div></div>'''
         pr = r.get("pronostico")
@@ -244,6 +259,23 @@ cl = sorted(tab.items(), key=lambda kv: (-kv[1]["pt"], -(kv[1]["gf"]-kv[1]["gs"]
 cl_rows = "".join(f'''<tr><td>{i}</td><td class=l>{badge(t,'sm')} {E(t or '?')}</td><td><b>{s['pt']}</b></td><td>{s['g']}</td><td>{s['v']}</td><td>{s['n']}</td><td>{s['p']}</td><td>{s['gf']}</td><td>{s['gs']}</td><td>{s['gf']-s['gs']:+d}</td>
 <td>{f2(TS.get(t,{}).get('xg_for'))}</td><td>{f2(TS.get(t,{}).get('xg_against'))}</td><td>{f"{ELO[t]:.0f}" if t in ELO else '—'}</td></tr>''' for i, (t, s) in enumerate(cl, 1))
 BT = (P.get("metodo") or {}).get("backtest", {})
+def _tar_html():
+    TR = (P.get("metodo") or {}).get("taratura") or {}
+    V = TR.get("verifica_stagione_corrente") or TR.get("taratura")
+    if not V: return ""
+    met = P.get("metodo") or {}
+    def riga(nome, x, w):
+        meglio = x["modello"] < x["mercato"]
+        esito = '<b class="okc">l\'AI è più precisa del mercato</b>' if meglio else '<b class="koc">il mercato è più preciso dell\'AI</b>'
+        return f"<tr><td class=l>{nome}</td><td>{esito}</td><td><b>{round((w or 0)*100)}%</b> AI · {100-round((w or 0)*100)}% mercato</td></tr>"
+    R = TR.get("roi_verifica") or {}
+    gol = R.get("gol") or {}
+    roi_txt = (f'<p class="hint">Giocate virtuali sui gol nella stagione in corso, quando la previsione supera la quota: {gol["giocate"]}, ROI {gol["roi"]*100:+.1f}%. Campione ancora piccolo: va confermato giornata dopo giornata.</p>'
+               if gol.get("giocate") else "")
+    return f'''<h2 class="daytitle">Affidabilità dell'AI</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Mercato</th><th>Test su {V["partite"]} partite già giocate</th><th>Peso nel pronostico</th></tr></thead>
+    <tbody>{riga("Chi vince (1X2)", V["logloss_1x2"], met.get("W_1X2"))}{riga("Gol (Over/Under)", V["logloss_gol"], met.get("W_GOL"))}</tbody></table></div>
+    <p class="hint">Ogni settimana l'AI viene rimessa alla prova sulle partite già giocate, usando solo i dati disponibili prima di ciascuna partita, e confrontata con le quote di chiusura. Dove è più precisa pesa di più nel pronostico, dove il mercato è più preciso pesa di più il mercato.</p>{roi_txt}'''
+TAR_HTML = _tar_html()
 FONTI = [("Calendario e risultati", "football-data.org", "fdorg_prossime.json"), ("Risultati, tiri, xG partita, quote di chiusura", "football-data.co.uk", "fdcouk_corrente.csv"),
          ("Quote Eurobet", "OddsPapi (eurobet.it)", "oddspapi_quote.json"), ("Statistiche, xG ed Elo di squadra", "StrikerAPI", "striker_team_stats.json"),
          ("xG dei giocatori", "StrikerAPI", "striker_xg_giocatori.json"), ("Formazioni", "StrikerAPI", "striker_giocate_recenti.json"),
@@ -337,15 +369,16 @@ if BIL.get("giocate"):
         return ('<tr><td class=l>%s · <b>%s</b> <span class=muted>%s%s</span></td><td>%.2f</td><td>%s</td><td>%s</td></tr>'
                 % (E(x["desc"].replace("-", " – ")), E(nome_merc(x["mercato"])), tipo, ris, x["quota"], esito_html(x["esito"]), prof))
     C = BIL.get("clv")
+    tar_html = TAR_HTML
     clv_html = (f'''<h2 class="daytitle">Quote battute</h2><div class="bk bk3"><div><small>Quote migliori della chiusura</small><b class="{'okc' if C['battute'] >= C['peggiori'] else 'koc'}">{C["battute"]} su {C["n"]}</b></div>
     <div><small>Uguali</small><b>{C["pari"]}</b></div><div><small>Differenza media</small><b class="{'okc' if C['medio'] >= 0 else 'koc'}">{C["medio"]*100:+.1f}%</b></div></div>
     <p class="hint">Confronto tra la quota Eurobet all'uscita del report e quella poco prima del fischio d'inizio. Se la quota scende dopo il nostro pronostico, il mercato si è mosso nella nostra direzione: è il segnale più rapido per capire se il sistema vede giusto.</p>''') if C else ""
-    bil_html = f'''{clv_html}<h2 class="daytitle">Bilancio complessivo</h2>{kpi(BIL.get("totale"))}
+    bil_html = f'''{tar_html}{clv_html}<h2 class="daytitle">Bilancio complessivo</h2>{kpi(BIL.get("totale"))}
     <h2 class="daytitle">Per tipo di giocata</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Tipo</th><th>Giocate</th><th>Vinte</th><th>Perse</th><th>% presa</th><th>Unità</th><th>ROI</th><th>In attesa</th></tr></thead><tbody>{cat_rows}</tbody></table></div>
     <h2 class="daytitle">Per giornata</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Giornata</th><th>Prese</th><th>% presa</th><th>Unità</th><th>In attesa</th></tr></thead><tbody>{gio_rows}</tbody></table></div>
     <h2 class="daytitle">Ultime giocate</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Giocata</th><th>Quota</th><th>Esito</th><th>Unità</th></tr></thead><tbody>{"".join(riga(x) for x in BIL["giocate"][:60])}</tbody></table></div>'''
 else:
-    bil_html = '<div class="nobet"><div class="nb">IN ATTESA</div>Il bilancio parte con la prima giornata giocata dopo l\'uscita del report.</div>'
+    bil_html = TAR_HTML + '<div class="nobet"><div class="nb">IN ATTESA</div>Il bilancio parte con la prima giornata giocata dopo l\'uscita del report.</div>'
 
 # ------------------------------------------------------------------ web app (icona + manifest)
 import zlib, struct, math as _m
@@ -421,6 +454,9 @@ h2.day{font:700 15px Inter;text-transform:uppercase;letter-spacing:2px;color:var
 .f.V{background:var(--acc);color:#04140c}.f.N{background:#4a5568}.f.P{background:var(--neg)}
 .pbar{display:flex;height:34px;border-radius:10px;overflow:hidden;margin:18px 0 6px;background:var(--card2)}.pbar i{display:flex;align-items:center;justify-content:center;min-width:44px;font-style:normal;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.6)}
 .pbar i.x{background:#3a4556}.pbar b{font:700 13px Inter;white-space:nowrap}.pfine{font-size:12px;color:var(--mut)}
+.aibox{border:1px solid #243041;border-radius:12px;padding:10px 12px;margin:10px 0;background:#0f151d}.aih{font-size:13px;margin-bottom:6px}
+.aik{display:flex;gap:18px;margin-bottom:6px}.aik span{display:flex;flex-direction:column}.aik small{font-size:11px;color:var(--mut)}.aik b{font:700 20px 'Barlow Condensed'}
+.ait td,.ait th{padding:4px 8px}
 .kpis{display:grid;grid-template-columns:repeat(3,auto) 1fr;gap:10px;margin:14px 0}.kpis div{background:var(--card2);border-radius:12px;padding:8px 12px}.kpis small{display:block;color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.8px}
 .kpis b{font:700 18px 'Barlow Condensed','Arial Narrow',sans-serif-condensed,sans-serif}.kpis em{font-style:normal;color:var(--mut);font-size:13px}
 .pick{background:linear-gradient(90deg,rgba(0,227,140,.10),transparent);border-left:3px solid var(--acc);padding:9px 12px;border-radius:8px;font-size:14px}.pick .lbl{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.8px;margin-right:6px}

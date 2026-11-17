@@ -22,8 +22,13 @@ PROMOSSE = ("Frosinone", "Monza", "Venezia")
 # Quota combo stimata = 1 / (prob. di mercato dal risultato esatto x (1 + margine 1X2 Eurobet x FATTORE)).
 # 1.0 = stesso margine dell'1X2. Va ricalibrato confrontando le stime con le quote combo reali.
 FATTORE_MARGINE_COMBO = 1.0
+_CAL = {}
+try: _CAL = json.load(open(os.path.join(D, "calibrazione.json")))
+except Exception: pass
+if _CAL.get("n", 0) >= 5:
+    FATTORE_MARGINE_COMBO = _CAL["fattore"]
 SING_EV, SING_EDGE = 0.05, 0.04
-CALIBRATA = False   # diventa True dopo la calibrazione delle quote combo (FATTORE_MARGINE_COMBO misurato)      # criteri delle migliori singole
+CALIBRATA = _CAL.get("n", 0) >= 5   # True quando ci sono almeno 5 quote combo reali per misurare il margine      # criteri delle migliori singole
 
 def pronostico(sel):
     """Un pronostico per partita: se c'e' una value bet la si sceglie; altrimenti, tra le giocate con probabilita'
@@ -307,6 +312,24 @@ def main():
             k = (f'{r["casa"]}-{r["ospite"]}', n)
             if k in MAN: conf.append(dict(partita=k[0], combo=n, stimata=qs, reale=MAN[k][0], scarto=round(MAN[k][0]/qs-1, 4)))
     res["calibrazione_combo"] = dict(confronti=conf, scarto_medio=round(sum(c["scarto"] for c in conf)/len(conf), 4) if conf else None)
+    # margine reale delle combo: per ogni quota inserita, margine effettivo = 1/(p_mercato x quota_reale) - 1,
+    # rapportato al margine 1X2 della stessa partita; il fattore e' la mediana di tutti i confronti raccolti
+    storico_cal = _CAL.get("confronti", [])
+    chiavi = {(c["partita"], c["combo"]) for c in storico_cal}
+    for r in out:
+        for n, (pm, qs) in (r.get("combo_mercato") or {}).items():
+            k = (f'{r["casa"]}-{r["ospite"]}', n)
+            if k in MAN and k not in chiavi and r.get("margine_1x2"):
+                m_eff = 1 / (pm * MAN[k][0]) - 1
+                storico_cal.append(dict(partita=k[0], combo=n, quota_reale=MAN[k][0], p_mercato=round(pm, 4),
+                                        margine_combo=round(m_eff, 4), margine_1x2=r["margine_1x2"], rapporto=round(m_eff / r["margine_1x2"], 3)))
+    if storico_cal:
+        rr = sorted(c["rapporto"] for c in storico_cal)
+        fatt = rr[len(rr)//2] if len(rr) % 2 else (rr[len(rr)//2 - 1] + rr[len(rr)//2]) / 2
+        json.dump(dict(n=len(storico_cal), fattore=round(max(0.5, min(fatt, 4.0)), 3), confronti=storico_cal),
+                  open(os.path.join(D, "calibrazione.json"), "w"), ensure_ascii=False, indent=1)
+    if os.environ.get("SOLO_MODULO") == "1":
+        scrivi_modello_combo(out, MAN); print("Modulo quote combo preparato per la giornata", md); return
     json.dump(res, open(os.path.join(D, "pronostici.json"), "w"), ensure_ascii=False, indent=1)
     scrivi_modello_combo(out, MAN)
     if os.environ.get("REGISTRA", "1") == "0":

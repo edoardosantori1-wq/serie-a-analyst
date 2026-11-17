@@ -118,6 +118,15 @@ if fare_uscita:
     if not FORZA:
         STATO["uscita_giornata"] = md; STATO["uscita_ora"] = NOW.isoformat(timespec="seconds")
 
+# 3b) martedi' (o 3 giorni prima della giornata): prepara il modulo delle quote combo per la calibrazione
+if t_first and STATO.get("modulo_giornata") != md and STATO.get("uscita_giornata") != md and NOW.astimezone(ROME) >= (t_first - timedelta(days=4)).replace(hour=9, minute=0):
+    print(">>> MODULO CALIBRAZIONE giornata", md)
+    if not os.path.exists(os.path.join(D, "oddspapi_mercati.json")):
+        get("oddspapi_mercati.json", f"{OP}/markets?sportId=10&apiKey={OK}")
+    get("oddspapi_quote.json", f"{OP}/odds-by-tournaments?tournamentIds=23&bookmakers=eurobet.it&verbosity=3&apiKey={OK}")
+    subprocess.run([sys.executable, os.path.join(BASE, "predizioni.py")], check=False, env=dict(os.environ, REGISTRA="0", SOLO_MODULO="1"))
+    STATO["modulo_giornata"] = md
+
 # 4) formazioni ufficiali (finestra di 75 minuti prima del calcio d'inizio)
 for g in (J("striker_schedule.json") or {}).get("data", {}).get("games", []):
     t = datetime.fromisoformat(g["starts_at"].replace("Z", "+00:00"))

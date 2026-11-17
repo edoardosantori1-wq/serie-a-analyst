@@ -296,6 +296,36 @@ for r in PARTITE:
 news_html = f'''<div class="ngrid"><div><h2 class="daytitle">Ultime notizie</h2><ul class="nl big">{"".join(nitem(n) for n in news[:25]) or "<li>Nessuna notizia scaricata.</li>"}</ul></div>
 <div><h2 class="daytitle">Formazioni</h2>{form_html}</div></div>'''
 
+# ------------------------------------------------------------------ web app (icona + manifest)
+import zlib, struct, math as _m
+def _png(path, n):
+    bg, ac, wh = (10, 13, 18), (0, 227, 140), (238, 242, 247)
+    rows = []
+    c = n / 2; R = n * 0.34; r_in = n * 0.27
+    for y in range(n):
+        row = bytearray([0])
+        for x in range(n):
+            d = _m.hypot(x - c + 0.5, y - c + 0.5)
+            col = bg
+            if d <= R: col = ac
+            if d <= r_in: col = bg
+            # barra centrale (campo da calcio stilizzato)
+            if abs(x - c) < n * 0.025 and d <= r_in: col = wh
+            if abs(d - n * 0.09) < n * 0.022: col = wh
+            row += bytes(col)
+        rows.append(bytes(row))
+    raw = b"".join(rows)
+    def chunk(t, d): return struct.pack(">I", len(d)) + t + d + struct.pack(">I", zlib.crc32(t + d) & 0xffffffff)
+    png = b"\x89PNG\r\n\x1a\n" + chunk(b"IHDR", struct.pack(">IIBBBBB", n, n, 8, 2, 0, 0, 0)) + chunk(b"IDAT", zlib.compress(raw, 9)) + chunk(b"IEND", b"")
+    open(path, "wb").write(png)
+for n in (180, 192, 512):
+    p = os.path.join(OUTD, f"icona-{n}.png")
+    if not os.path.exists(p): _png(p, n)
+json.dump({"name": "Serie A Analyst", "short_name": "SA Analyst", "start_url": "./", "scope": "./", "display": "standalone",
+           "background_color": "#0a0d12", "theme_color": "#0a0d12", "lang": "it",
+           "icons": [{"src": "icona-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "icona-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}]},
+          open(os.path.join(OUTD, "manifest.json"), "w"), ensure_ascii=False)
+
 # ------------------------------------------------------------------ live (widget ufficiale SofaScore, gratuito)
 SOFA = {}
 for fx in (J("oddspapi_quote.json") or []):
@@ -313,7 +343,7 @@ else:
 CSS = """
 :root{--bg:#0a0d12;--bg2:#11161e;--card:#151b25;--card2:#1b2330;--line:#243042;--ink:#eef2f7;--mut:#8b97a8;--acc:#00e38c;--acc2:#ffd23f;--neg:#ff5468;--neu:#9aa6b8}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(1200px 600px at 80% -10%,#10324a 0,transparent 60%),radial-gradient(900px 500px at -10% 10%,#0d3b2c 0,transparent 55%),var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,-apple-system,sans-serif}
-.wrap{max-width:1120px;margin:0 auto;padding:0 16px 80px}
+.wrap{max-width:1120px;margin:0 auto;padding:env(safe-area-inset-top) max(16px,env(safe-area-inset-right)) 80px max(16px,env(safe-area-inset-left))}
 .hero{padding:34px 0 18px;display:flex;flex-wrap:wrap;gap:20px;align-items:flex-end;justify-content:space-between}
 .brand{font:800 44px/0.95 'Barlow Condensed','Arial Narrow',sans-serif,sans-serif;letter-spacing:.5px;text-transform:uppercase}.brand span{color:var(--acc)}
 .brand small{display:block;font:600 15px Inter;letter-spacing:0;text-transform:none;color:var(--mut);margin-top:10px}
@@ -414,8 +444,10 @@ document.querySelectorAll('.match').forEach(m=>m.querySelectorAll('.tabs2 button
 m.querySelectorAll('.tabs2 button').forEach(x=>x.classList.toggle('on',x===b));m.querySelectorAll('.pane').forEach(p=>p.classList.toggle('on',p.dataset.p===b.dataset.t));}));
 """
 gen = datetime.now(timezone.utc).isoformat()
-PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Serie A Analyst</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Serie A Analyst</title><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0a0d12">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="SA Analyst"><link rel="apple-touch-icon" href="icona-180.png"><link rel="icon" type="image/png" href="icona-192.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>{CSS}</style></head>
 <body><div class="wrap"><header class="hero"><div class="brand">Serie A <span>Analyst</span><small><span class="md">GIORNATA {md or '—'}</span>{periodo} · aggiornato {fts(gen)}</small></div>{hero_stats}</header>
 <nav><a href="#news">News</a><a href="#live">Live</a><a href="#giornata">Pronostici</a><a href="#triple">Triple</a><a href="#marcatori">Marcatori</a><a href="#classifica">Classifica</a></nav>

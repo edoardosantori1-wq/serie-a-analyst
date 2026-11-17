@@ -1,0 +1,60 @@
+{
+ "generato": "2026-11-17T18:02:39+00:00",
+ "stagioni": [
+  "2122",
+  "2223",
+  "2324",
+  "2425",
+  "2526",
+  "corrente"
+ ],
+ "par_1x2": {
+  "xi": 0.002,
+  "k": 4.0,
+  "alpha": 0.0
+ },
+ "par_gol": {
+  "xi": 0.002,
+  "k": 8.0,
+  "alpha": 0.5
+ },
+ "w_1x2": 0.0,
+ "w_gol": 0.0,
+ "taratura": {
+  "partite": 1639,
+  "logloss_1x2": {
+   "modello": 0.9902,
+   "mercato": 0.9719,
+   "finale": 0.9719
+  },
+  "logloss_gol": {
+   "modello": 0.6866,
+   "mercato": 0.6821,
+   "finale": 0.6821
+  }
+ },
+ "verifica_stagione_corrente": {
+  "partite": 69,
+  "logloss_1x2": {
+   "modello": 0.9277,
+   "mercato": 0.9169,
+   "finale": 0.9169
+  },
+  "logloss_gol": {
+   "modello": 0.7082,
+   "mercato": 0.6934,
+   "finale": 0.6934
+  }
+ },
+ "roi_verifica": {
+  "1x2": {
+   "giocate": 0,
+   "roi": null
+  },
+  "gol": {
+   "giocate": 0,
+   "roi": null
+  }
+ },
+ "nota": "Parametri scelti sulle stagioni passate; la stagione in corso e' usata solo come verifica."
+}

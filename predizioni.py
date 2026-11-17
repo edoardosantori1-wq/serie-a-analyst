@@ -8,7 +8,7 @@ Solo libreria standard. Metodo (validato con backtest, vedi BACKTEST in fondo):
  3. Dalla matrice dei risultati si derivano tutti i mercati, i risultati esatti, l'EV contro le quote Eurobet,
     le triple, le singole e le partite da evitare. Nessun ritocco manuale delle probabilita'.
 """
-import json, os, math, sqlite3, itertools
+import json, os, math, sqlite3, itertools, re
 from datetime import datetime, timezone, date
 from zoneinfo import ZoneInfo
 import modello as MD
@@ -30,6 +30,25 @@ if _CAL.get("n", 0) >= 5:
 SING_EV, SING_EDGE = 0.05, 0.04
 CALIBRATA = _CAL.get("n", 0) >= 5   # True quando ci sono almeno 5 quote combo reali per misurare il margine      # criteri delle migliori singole
 
+def predicato(k):
+    """Condizione sul risultato finale (i gol casa, j gol ospite) che rende vincente la selezione k."""
+    base = {"1": lambda i, j: i > j, "X": lambda i, j: i == j, "2": lambda i, j: i < j, "1X": lambda i, j: i >= j,
+            "X2": lambda i, j: i <= j, "12": lambda i, j: i != j, "DNB1": lambda i, j: i >= j, "DNB2": lambda i, j: i <= j,
+            "GG": lambda i, j: i > 0 and j > 0, "NG": lambda i, j: i == 0 or j == 0}
+    if k in base: return base[k]
+    m = re.fullmatch(r"([OU])(\d\.5)", k)
+    if m: t = float(m.group(2)); return (lambda i, j: i + j > t) if m.group(1) == "O" else (lambda i, j: i + j < t)
+    m = re.fullmatch(r"([HA])_O(\d\.5)", k)
+    if m: t = float(m.group(2)); return (lambda i, j: i > t) if m.group(1) == "H" else (lambda i, j: j > t)
+    if k.startswith("C:"): return MD.EVENTI_COMBO.get(k[2:])
+    return None
+
+def compatibili(chiavi):
+    """True se esiste almeno un risultato finale che fa vincere tutte le selezioni della stessa partita."""
+    f = [predicato(k) for k in chiavi]
+    if any(x is None for x in f): return False
+    return any(all(x(i, j) for x in f) for i in range(8) for j in range(8))
+
 def pronostico(sel):
     """Un pronostico per partita: se c'e' una value bet la si sceglie; altrimenti, tra le giocate con probabilita'
     >= 55% e quota >= 1.30, quella con l'EV migliore (preferendo le quote reali a parita' di EV)."""
@@ -44,7 +63,10 @@ def pronostico(sel):
 
 def categoria(s):
     """Classificazione richiesta dalla specifica: evento molto probabile / value bet / alto rischio / senza valore."""
-    if s.get("fonte") != "stimata" and s["ev"] >= SING_EV and s["p"] - s["p_impl"] >= SING_EDGE: return "value"
+    # value (stella): quota Eurobet reale, EV >= +5% sul modello, 4 punti oltre la prob. implicita
+    # E Eurobet paga almeno il 2% piu' della quota equa di Pinnacle (senza Pinnacle niente stella)
+    if (s.get("fonte") != "stimata" and s["ev"] >= SING_EV and s["p"] - s["p_impl"] >= SING_EDGE
+            and s.get("p_pin") and s["quota"] * s["p_pin"] - 1 >= 0.02): return "value"
     if s["p"] >= 0.70: return "probabile"
     if s["p"] < 0.35: return "alto rischio"
     return "senza valore"
@@ -55,7 +77,8 @@ def J(n):
 
 CANON = ["Inter","Lazio","Milan","Roma","Juventus","Napoli","Atalanta","Fiorentina","Bologna","Torino","Como","Cagliari",
          "Lecce","Parma","Venezia","Udinese","Sassuolo","Genoa","Frosinone","Monza","Empoli","Verona","Pisa","Cremonese",
-         "Salernitana","Sampdoria","Spezia","Palermo","Bari","Pescara","Modena","Catanzaro","Cesena","Reggiana","Brescia"]
+         "Salernitana","Sampdoria","Spezia","Palermo","Bari","Pescara","Modena","Catanzaro","Cesena","Reggiana","Brescia",
+         "Benevento","Crotone","Spal","Chievo"]
 def canon(name):
     n = (name or "").lower()
     if "inter" in n: return "Inter"
@@ -86,9 +109,12 @@ LABEL = {s[0]: s[5] for s in SEL}
 FAMIGLIA = {"1":"1X2","X":"1X2","2":"1X2","1X":"DC","12":"DC","X2":"DC","DNB1":"DNB","DNB2":"DNB","GG":"GGNG","NG":"GGNG"}
 
 def quote_eurobet():
+    return quote_bookmaker("eurobet.it")
+
+def quote_bookmaker(slug):
     out = {}
     for fx in (J("oddspapi_quote.json") or []):
-        eb = (fx.get("bookmakerOdds") or {}).get("eurobet.it")
+        eb = (fx.get("bookmakerOdds") or {}).get(slug)
         if not eb or eb.get("suspended"): continue
         key = (canon(fx.get("participant1Name")), canon(fx.get("participant2Name")))
         mk = eb.get("markets", {}); q = {}; ts = {}
@@ -111,6 +137,21 @@ def quote_eurobet():
         out[key] = dict(q=q, ts=ts, fixtureId=fx.get("fixtureId"), cs=cs)
     return out
 
+def prob_pinnacle(q):
+    """Probabilita' senza margine dalle quote Pinnacle (il riferimento piu' preciso del mercato).
+    Doppia chance e Draw No Bet si ricavano dall'1X2 Pinnacle."""
+    out = {}
+    def nv(keys):
+        if all(k in q for k in keys):
+            inv = [1/q[k] for k in keys]; s = sum(inv)
+            for k, v in zip(keys, inv): out[k] = v / s
+    nv(["1", "X", "2"]); nv(["GG", "NG"])
+    for t in (0.5, 1.5, 2.5, 3.5): nv([f"O{t}", f"U{t}"])
+    if all(k in out for k in ("1", "X", "2")):
+        out["1X"] = out["1"] + out["X"]; out["X2"] = out["X"] + out["2"]; out["12"] = out["1"] + out["2"]
+        out["DNB1"] = out["1"] / (out["1"] + out["2"]); out["DNB2"] = 1 - out["DNB1"]
+    return out
+
 def combo_da_esatti(cs, margine):
     """Probabilita' di mercato delle combo ricavate dal risultato esatto Eurobet (senza margine) e quota stimata
     = quota equa ridotta del margine Eurobet. Ritorna {nome: (p_mercato, quota_stimata)}."""
@@ -124,10 +165,9 @@ def combo_da_esatti(cs, margine):
         else: hi = k
     P = {key: (1/v)**k for key, v in cs.items()}; s = sum(P.values()); P = {key: v/s for key, v in P.items()}
     out = {}
-    for e, fe in MD.ESITI.items():
-        for g, fg in MD.GOL.items():
-            pm = sum(v for (i, j), v in P.items() if fe(i, j) and fg(i, j))
-            if pm > 0.02: out[f"{e} + {g}"] = (pm, round(1/(pm*(1+margine)), 2))
+    for n, f in MD.EVENTI_COMBO.items():
+        pm = sum(v for (i, j), v in P.items() if f(i, j))
+        if pm > 0.02: out[n] = (pm, round(1/(pm*(1+margine)), 2))
     return out
 
 # ------------------------------------------- lambda che riproducono il mercato
@@ -180,7 +220,7 @@ def scrivi_modello_combo(out, manuali):
         w = csv.writer(f, delimiter=";")
         w.writerow(["partita", "combo", "prob_stimata", "quota_minima", "quota_eurobet", "rilevata"])
         for r in out:
-            for n, pp in (r.get("combo") or [])[:12]:
+            for n, pp in [c for c in (r.get("combo") or []) if c[0].count("+") == 1][:12]:
                 k = (f'{r["casa"]}-{r["ospite"]}', n); q, ts = manuali.get(k, ("", ""))
                 w.writerow([k[0], n, f"{pp*100:.1f}%", f"{1/pp:.2f}".replace(".", ","), str(q).replace(".", ",") if q else "", ts])
 
@@ -195,9 +235,10 @@ def main():
         if f.startswith("storico_") and f.endswith(".csv"): storico += MD.leggi_csv(os.path.join(D, f))
     storico += MD.leggi_csv(os.path.join(D, "fdcouk_corrente.csv"))
     for m in storico: m["h"], m["a"] = canon(m["h"]), canon(m["a"])
+    storico = [m for m in storico if m["h"] and m["a"]]
     storico.sort(key=lambda m: m["date"])
     par = MD.fit(storico, now.date(), xi=XI, k=K, alpha=ALPHA, promoted=PROMOSSE)
-    Q = quote_eurobet(); out = []; MAN = quote_combo_manuali()
+    Q = quote_eurobet(); PIN = quote_bookmaker("pinnacle"); out = []; MAN = quote_combo_manuali()
     for m in partite:
         h, a = canon(m["homeTeam"]["name"]), canon(m["awayTeam"]["name"])
         dt = datetime.fromisoformat(m["utcDate"].replace("Z", "+00:00")).astimezone(ROME)
@@ -218,7 +259,7 @@ def main():
             rec.update(lam=[round(lhf, 2), round(laf, 2)], margine_1x2=round(marg, 4), p_mercato=dict(zip("1X2", [round(x, 4) for x in pk])),
                        fit_err=round(fit_err, 6), quote_ts=max([t for t in qq["ts"].values() if t] or [None]))
             rec["risultati"] = [(s, round(p, 4)) for p, s in ris[:3]]
-            rec["combo"] = [(n, round(pp, 4)) for n, pp in sorted(MD.combo(M), key=lambda x: -x[1]) if 0.25 <= pp <= 0.90]
+            rec["combo"] = [(n, round(pp, 4)) for n, pp in sorted(MD.combo(M), key=lambda x: -x[1]) if 0.15 <= pp <= 0.90]
             sel = []
             for k, lab in LABEL.items():
                 if k in mk and k in q:
@@ -238,7 +279,10 @@ def main():
                     o = CE[n][1]
                     sel.append(dict(k="C:" + n, label=n, p=round(pp, 4), quota=o, p_impl=round(1/o, 4), ev=round(pp*o-1, 4),
                                     ht=False, fonte="stimata", p_mercato=round(CE[n][0], 4)))
-            for s in sel: s["cat"] = categoria(s)
+            ppin = prob_pinnacle(PIN.get((h, a), {}).get("q", {}))
+            for s in sel:
+                if s["k"] in ppin: s["p_pin"] = round(ppin[s["k"]], 4)
+                s["cat"] = categoria(s)
             rec["selezioni"] = sel
             rec["pronostico"] = pronostico(sel)
             rec["p"] = {k: round(v, 4) for k, v in mk.items() if not k.endswith("_O1.5") or True}
@@ -265,7 +309,7 @@ def main():
                 if s["ht"] or s["p"] < pmin or s["ev"] < evmin or s["quota"] < 1.12: continue
                 c.append(dict(s, match=f'{r["casa"]}-{r["ospite"]}', mid=r["id"]))
         return c
-    TIPI = [("semplice", 0.66, -0.07, 1.80, 2.80), ("media", 0.42, -0.08, 3.00, 5.50), ("aggressiva", 0.22, -0.10, 6.00, 15.0)]
+    TIPI = [("semplice", 0.66, -0.07, 1.80, 2.80), ("media", 0.42, -0.08, 3.00, 5.50), ("aggressiva", 0.25, -0.12, 6.00, 15.0)]
     def giudizio(ev, combo):
         reali = all(c.get("fonte") != "stimata" for c in combo)
         if ev >= 0.10 and reali and all(c.get("cat") == "value" for c in combo): return "Valore positivo"
@@ -277,12 +321,16 @@ def main():
         for tipo, pmin, evmin, qlo, qhi in TIPI:
             best = None
             cs = [c for c in cand(wd, pmin, evmin) if (c["mid"], c["k"]) not in usate]
+            if tipo == "aggressiva":     # solo combo (2 o 3 condizioni), quota 1.80-4.00 ciascuna
+                cs = [c for c in cs if c["k"].startswith("C:") and 1.80 <= c["quota"] <= 4.00]
             for combo in itertools.combinations(cs, 3):
                 if len({c["mid"] for c in combo}) < 3: continue
+                # compatibilita' con le altre triple dello stesso giorno: giocandole tutte, devono poter vincere tutte
+                if any(not compatibili([k for (m2, k) in usate if m2 == c["mid"]] + [c["k"]]) for c in combo): continue
                 qt = math.prod(c["quota"] for c in combo)
                 if not (qlo <= qt <= qhi): continue
                 pj = math.prod(c["p"] for c in combo); ev = pj*qt - 1
-                if tipo == "aggressiva" and qt > 12 and ev <= 0: continue
+                if tipo == "aggressiva" and qt > 15: continue
                 pen = 0.0 if CALIBRATA else 0.04 * sum(1 for c in combo if c.get("fonte") == "stimata")
                 score = (pj - pen/4, ev - pen) if tipo == "semplice" else (ev - pen, pj)
                 if best is None or score > best[0]: best = (score, combo, qt, pj, ev)
@@ -418,19 +466,23 @@ def stima_marcatori(out, Q):
     top = []
     for x in righe:
         if x["min_attesi"] < 55: continue          # titolarita' troppo incerta
+        if not x["quota"]: continue                # senza quota Eurobet "segna sempre": probabile assente (infortunio, squalifica)
         top.append(x)
         if len(top) == 4: break
     comb = None
     if len(top) == 4 and all(x["quota"] for x in top):
         q = math.prod(x["quota"] for x in top); pj = math.prod(x["p"] for x in top)
         comb = dict(quota=round(q, 2), p=round(pj, 4), ev=round(pj*q-1, 4), stessa_partita=len({x["mid"] for x in top}) < 4)
-    return dict(stato="ok", lista=top, altri=righe[4:20], combinazione=comb)
+    altri = [x for x in righe if x not in top and x["quota"]][:16]
+    return dict(stato="ok", lista=top, altri=altri, combinazione=comb)
 
 def registra(res, now):
     """Storico permanente: si inserisce solo prima del calcio d'inizio, mai si modifica."""
     db = sqlite3.connect(os.path.join(D, "storico.sqlite"))
     db.execute("""CREATE TABLE IF NOT EXISTS previsioni(id INTEGER PRIMARY KEY, creato TEXT, giornata INT, match_id INT, partita TEXT,
                   inizio TEXT, mercato TEXT, quota REAL, p_modello REAL, ev REAL, tipo TEXT, gruppo TEXT, esito INT, profitto REAL)""")
+    if "quota_chiusura" not in [c[1] for c in db.execute("PRAGMA table_info(previsioni)")]:
+        db.execute("ALTER TABLE previsioni ADD COLUMN quota_chiusura REAL")
     def ins(r_mid, partita, inizio, s, tipo, gruppo):
         if inizio <= now.isoformat(): return
         if db.execute("SELECT 1 FROM previsioni WHERE match_id=? AND mercato=? AND tipo=? AND gruppo=?", (r_mid, s["k"], tipo, gruppo)).fetchone(): return

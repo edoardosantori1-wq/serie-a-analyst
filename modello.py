@@ -94,14 +94,25 @@ ESITI = {"1": lambda i, j: i > j, "X": lambda i, j: i == j, "2": lambda i, j: i 
          "1X": lambda i, j: i >= j, "X2": lambda i, j: i <= j, "12": lambda i, j: i != j}
 GOL = {"Over 1.5": lambda i, j: i + j >= 2, "Under 3.5": lambda i, j: i + j <= 3, "Over 2.5": lambda i, j: i + j >= 3,
        "Under 2.5": lambda i, j: i + j <= 2, "Goal": lambda i, j: i > 0 and j > 0, "No Goal": lambda i, j: i == 0 or j == 0}
-def combo(M):
-    """Probabilita' congiunte esito + gol calcolate sulla matrice: la correlazione e' inclusa."""
-    R = range(MAXG + 1); out = []
+GG2 = {"Goal": lambda i, j: i > 0 and j > 0, "No Goal": lambda i, j: i == 0 or j == 0}
+OU2 = {"Over 1.5": lambda i, j: i + j >= 2, "Over 2.5": lambda i, j: i + j >= 3, "Over 3.5": lambda i, j: i + j >= 4,
+       "Under 2.5": lambda i, j: i + j <= 2, "Under 3.5": lambda i, j: i + j <= 3, "Under 4.5": lambda i, j: i + j <= 4}
+def eventi_combo():
+    """Tutte le combo: esito + gol (2 condizioni) ed esito + Goal/No Goal + Over/Under (3 condizioni)."""
+    ev = {}
     for e, fe in ESITI.items():
         for g, fg in GOL.items():
-            p = sum(M[i][j] for i in R for j in R if fe(i, j) and fg(i, j))
-            out.append((f"{e} + {g}", p))
-    return out
+            ev[f"{e} + {g}"] = (lambda fe, fg: lambda i, j: fe(i, j) and fg(i, j))(fe, fg)
+        for b, fb in GG2.items():
+            for o, fo in OU2.items():
+                ev[f"{e} + {b} + {o}"] = (lambda fe, fb, fo: lambda i, j: fe(i, j) and fb(i, j) and fo(i, j))(fe, fb, fo)
+    return ev
+EVENTI_COMBO = eventi_combo()
+
+def combo(M):
+    """Probabilita' congiunte esito + gol calcolate sulla matrice: la correlazione e' inclusa."""
+    R = range(MAXG + 1)
+    return [(n, sum(M[i][j] for i in R for j in R if f(i, j))) for n, f in EVENTI_COMBO.items()]
 
 def primo_tempo(lh, la, quota=0.45):
     """Gol del primo tempo ~ 45% dei gol totali in Serie A (assunzione dichiarata)."""

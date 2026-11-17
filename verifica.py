@@ -27,8 +27,16 @@ def esito(mercato, i, j):
     m = re.fullmatch(r"([HA])_O(\d\.5)", mercato)
     if m: t = float(m.group(2)); return int((i if m.group(1) == "H" else j) > t)
     if mercato.startswith("C:"):
-        e, g = mercato[2:].split(" + ", 1)
-        if e in ESITI and g in GOL: return int(ESITI[e](i, j) and GOL[g](i, j))
+        parti = mercato[2:].split(" + ")
+        GG2 = {"Goal": i > 0 and j > 0, "No Goal": i == 0 or j == 0}
+        def cond(c):
+            if c in ESITI: return ESITI[c](i, j)
+            if c in GG2: return GG2[c]
+            mm = re.fullmatch(r"(Over|Under) (\d\.5)", c)
+            if mm: return (i + j > float(mm.group(2))) if mm.group(1) == "Over" else (i + j < float(mm.group(2)))
+            return None
+        vals = [cond(c) for c in parti]
+        if None not in vals: return int(all(vals))
     return None
 
 def _norm(s):
@@ -76,8 +84,10 @@ def main():
         if e is None: continue
         db.execute("UPDATE previsioni SET esito=?, profitto=? WHERE id=?", (e, round(quota - 1, 3) if e else -1.0, rid))
     db.commit()
-    rows = [dict(zip(("creato", "giornata", "match_id", "partita", "inizio", "mercato", "quota", "p", "ev", "tipo", "gruppo", "esito", "profitto"), r))
-            for r in db.execute("SELECT creato, giornata, match_id, partita, inizio, mercato, quota, p_modello, ev, tipo, gruppo, esito, profitto FROM previsioni ORDER BY inizio")]
+    if "quota_chiusura" not in [c[1] for c in db.execute("PRAGMA table_info(previsioni)")]:
+        db.execute("ALTER TABLE previsioni ADD COLUMN quota_chiusura REAL")
+    rows = [dict(zip(("creato", "giornata", "match_id", "partita", "inizio", "mercato", "quota", "p", "ev", "tipo", "gruppo", "esito", "profitto", "chiusura"), r))
+            for r in db.execute("SELECT creato, giornata, match_id, partita, inizio, mercato, quota, p_modello, ev, tipo, gruppo, esito, profitto, quota_chiusura FROM previsioni ORDER BY inizio")]
     db.close()
     # le triple si valutano come schedina unica: vinta solo se vincono tutte e tre (rimborso = quota 1)
     giocate = []
@@ -102,6 +112,15 @@ def main():
                             quota=round(q_tot, 2), p=None, esito=e, profitto=prof, inizio=max(s["inizio"] for s in sel),
                             dettaglio=[dict(partita=s["partita"], mercato=s["mercato"], esito=s["esito"], risultato=s["risultato"]) for s in sel]))
     giocate.sort(key=lambda x: x["inizio"], reverse=True)
+    # quote battute: per ogni selezione distinta (partita + mercato) con quota reale di chiusura
+    sel = {}
+    for r in rows:
+        if r["chiusura"]: sel[(r["match_id"], r["mercato"])] = (r["quota"], r["chiusura"], r["giornata"])
+    def clv(items):
+        if not items: return None
+        battute = sum(1 for q, c, _ in items if q > c + 1e-9); pari = sum(1 for q, c, _ in items if abs(q - c) < 1e-9)
+        return dict(n=len(items), battute=battute, pari=pari, peggiori=len(items) - battute - pari,
+                    medio=round(sum(q / c - 1 for q, c, _ in items) / len(items), 4))
     def riepilogo(lst):
         chiuse = [x for x in lst if x["esito"] in (0, 1)]
         v = sum(1 for x in chiuse if x["esito"] == 1); prof = sum(x["profitto"] or 0 for x in lst if x["esito"] in (0, 1, 2))
@@ -113,7 +132,8 @@ def main():
     out = dict(aggiornato=datetime.now(timezone.utc).isoformat(timespec="seconds"),
                totale=riepilogo(giocate), categorie=[dict(cat=c, nome=n, **riepilogo([x for x in giocate if x["cat"] == c])) for c, n in CAT],
                giornate=[dict(giornata=g, **riepilogo([x for x in giocate if x["giornata"] == g])) for g in sorted({x["giornata"] for x in giocate}, reverse=True)],
-               giocate=giocate[:120])
+               giocate=giocate[:120], clv=clv(list(sel.values())),
+               clv_giornate={g: clv([x for x in sel.values() if x[2] == g]) for g in sorted({x[2] for x in sel.values()})})
     json.dump(out, open(os.path.join(D, "bilancio.json"), "w"), ensure_ascii=False, indent=1)
     print(f"Bilancio: {out['totale']}")
 

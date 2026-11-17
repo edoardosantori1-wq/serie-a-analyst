@@ -79,9 +79,10 @@ if fare_uscita:
     print(">>> USCITA REPORT giornata", md)
     get("fdorg_giocate.json", "https://api.football-data.org/v4/competitions/SA/matches?status=FINISHED", FD)
     get("fdcouk_corrente.csv", f"https://www.football-data.co.uk/mmz4281/{s%100:02d}{(s+1)%100:02d}/I1.csv")
-    prev = f"storico_{(s-1)%100:02d}{s%100:02d}.csv"
-    if not os.path.exists(os.path.join(D, prev)):
-        get(prev, f"https://www.football-data.co.uk/mmz4281/{(s-1)%100:02d}{s%100:02d}/I1.csv")
+    for y in range(s - 5, s):    # 5 stagioni passate per il modello (scaricate una volta sola)
+        prev = f"storico_{y%100:02d}{(y+1)%100:02d}.csv"
+        if not os.path.exists(os.path.join(D, prev)):
+            get(prev, f"https://www.football-data.co.uk/mmz4281/{y%100:02d}{(y+1)%100:02d}/I1.csv")
     if get("fdorg_squadre.json", "https://api.football-data.org/v4/competitions/SA/teams", FD):
         sys.path.insert(0, BASE); from predizioni import canon
         old = J("allenatori.json") or {}; cambi = J("allenatori_cambi.json") or []
@@ -95,7 +96,7 @@ if fare_uscita:
     get("fdorg_coppe.json", f"https://api.football-data.org/v4/matches?competitions=CL&dateFrom={d1}&dateTo={d2}", FD)
     if not os.path.exists(os.path.join(D, "oddspapi_mercati.json")):
         get("oddspapi_mercati.json", f"{OP}/markets?sportId=10&apiKey={OK}")
-    get("oddspapi_quote.json", f"{OP}/odds-by-tournaments?tournamentIds=23&bookmakers=eurobet.it&verbosity=3&apiKey={OK}")
+    get("oddspapi_quote.json", f"{OP}/odds-by-tournaments?tournamentIds=23&bookmakers=eurobet.it,pinnacle&verbosity=3&apiKey={OK}")
     if not os.path.exists(os.path.join(D, "striker_teams.json")): get("striker_teams.json", f"{SB}/list_teams", SH, "POST", L)
     get("striker_team_stats.json", f"{SB}/get_team_stats", SH, "POST", L)
     get("striker_elo.json", f"{SB}/get_ratings", SH, "POST", L)
@@ -117,15 +118,29 @@ if fare_uscita:
     subprocess.run([sys.executable, os.path.join(BASE, "predizioni.py")], check=False, env=env)
     if not FORZA:
         STATO["uscita_giornata"] = md; STATO["uscita_ora"] = NOW.isoformat(timespec="seconds")
+        # promemoria: il workflow apre una segnalazione su GitHub, che arriva per email
+        open(os.path.join(D, "notifica.txt"), "w").write(
+            f"Report giornata {md} pubblicato: pronostici, triple e marcatori.\n\nhttps://edoardosantori1-wq.github.io/serie-a-analyst/")
 
 # 3b) martedi' (o 3 giorni prima della giornata): prepara il modulo delle quote combo per la calibrazione
 if t_first and STATO.get("modulo_giornata") != md and STATO.get("uscita_giornata") != md and NOW.astimezone(ROME) >= (t_first - timedelta(days=4)).replace(hour=9, minute=0):
     print(">>> MODULO CALIBRAZIONE giornata", md)
     if not os.path.exists(os.path.join(D, "oddspapi_mercati.json")):
         get("oddspapi_mercati.json", f"{OP}/markets?sportId=10&apiKey={OK}")
-    get("oddspapi_quote.json", f"{OP}/odds-by-tournaments?tournamentIds=23&bookmakers=eurobet.it&verbosity=3&apiKey={OK}")
+    get("oddspapi_quote.json", f"{OP}/odds-by-tournaments?tournamentIds=23&bookmakers=eurobet.it,pinnacle&verbosity=3&apiKey={OK}")
     subprocess.run([sys.executable, os.path.join(BASE, "predizioni.py")], check=False, env=dict(os.environ, REGISTRA="0", SOLO_MODULO="1"))
     STATO["modulo_giornata"] = md
+
+# 3c) quota di chiusura: una richiesta OddsPapi per ogni orario di inizio, tra 15 e 75 minuti prima
+fatte = set(STATO.get("chiusure", []))
+orari = sorted({m["utcDate"] for m in giornata})
+for o_ in orari:
+    t = datetime.fromisoformat(o_.replace("Z", "+00:00"))
+    if o_ not in fatte and timedelta(minutes=10) <= t - NOW <= timedelta(minutes=80) and STATO.get("uscita_giornata") == md:
+        get("oddspapi_quote.json", f"{OP}/odds-by-tournaments?tournamentIds=23&bookmakers=eurobet.it,pinnacle&verbosity=3&apiKey={OK}")
+        subprocess.run([sys.executable, os.path.join(BASE, "chiusura.py")], check=False)
+        fatte.add(o_); STATO["chiusure"] = sorted(fatte)[-40:]
+        break
 
 # 4) formazioni ufficiali (finestra di 75 minuti prima del calcio d'inizio)
 for g in (J("striker_schedule.json") or {}).get("data", {}).get("games", []):

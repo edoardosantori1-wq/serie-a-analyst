@@ -336,7 +336,11 @@ if BIL.get("giocate"):
         ris = (" · " + x["risultato"]) if x.get("risultato") else ""
         return ('<tr><td class=l>%s · <b>%s</b> <span class=muted>%s%s</span></td><td>%.2f</td><td>%s</td><td>%s</td></tr>'
                 % (E(x["desc"].replace("-", " – ")), E(nome_merc(x["mercato"])), tipo, ris, x["quota"], esito_html(x["esito"]), prof))
-    bil_html = f'''<h2 class="daytitle">Bilancio complessivo</h2>{kpi(BIL.get("totale"))}
+    C = BIL.get("clv")
+    clv_html = (f'''<h2 class="daytitle">Quote battute</h2><div class="bk bk3"><div><small>Quote migliori della chiusura</small><b class="{'okc' if C['battute'] >= C['peggiori'] else 'koc'}">{C["battute"]} su {C["n"]}</b></div>
+    <div><small>Uguali</small><b>{C["pari"]}</b></div><div><small>Differenza media</small><b class="{'okc' if C['medio'] >= 0 else 'koc'}">{C["medio"]*100:+.1f}%</b></div></div>
+    <p class="hint">Confronto tra la quota Eurobet all'uscita del report e quella poco prima del fischio d'inizio. Se la quota scende dopo il nostro pronostico, il mercato si è mosso nella nostra direzione: è il segnale più rapido per capire se il sistema vede giusto.</p>''') if C else ""
+    bil_html = f'''{clv_html}<h2 class="daytitle">Bilancio complessivo</h2>{kpi(BIL.get("totale"))}
     <h2 class="daytitle">Per tipo di giocata</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Tipo</th><th>Giocate</th><th>Vinte</th><th>Perse</th><th>% presa</th><th>Unità</th><th>ROI</th><th>In attesa</th></tr></thead><tbody>{cat_rows}</tbody></table></div>
     <h2 class="daytitle">Per giornata</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Giornata</th><th>Prese</th><th>% presa</th><th>Unità</th><th>In attesa</th></tr></thead><tbody>{gio_rows}</tbody></table></div>
     <h2 class="daytitle">Ultime giocate</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Giocata</th><th>Quota</th><th>Esito</th><th>Unità</th></tr></thead><tbody>{"".join(riga(x) for x in BIL["giocate"][:60])}</tbody></table></div>'''
@@ -387,6 +391,8 @@ if sofa_ids:
 else:
     live_html = '<p class="warn">Widget non disponibile: identificativi delle partite non trovati.</p>'
 
+gtitle = f'<div class="gday"><span class="md">GIORNATA {md or "—"}</span><span>{periodo}</span></div>'
+
 CSS = """
 :root{--bg:#0a0d12;--bg2:#11161e;--card:#151b25;--card2:#1b2330;--line:#243042;--ink:#eef2f7;--mut:#8b97a8;--acc:#00e38c;--acc2:#ffd23f;--neg:#ff5468;--neu:#9aa6b8}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(1200px 600px at 80% -10%,#10324a 0,transparent 60%),radial-gradient(900px 500px at -10% 10%,#0d3b2c 0,transparent 55%),var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,-apple-system,sans-serif}
@@ -394,6 +400,8 @@ CSS = """
 .hero{padding:34px 0 18px;display:flex;flex-wrap:wrap;gap:20px;align-items:flex-end;justify-content:space-between}
 .brand{font:800 44px/0.95 'Barlow Condensed','Arial Narrow',sans-serif,sans-serif;letter-spacing:.5px;text-transform:uppercase}.brand span{color:var(--acc)}
 .brand small{display:block;font:600 15px Inter;letter-spacing:0;text-transform:none;color:var(--mut);margin-top:10px}
+.gday{display:flex;align-items:center;gap:10px;margin:4px 0 14px;color:var(--mut);font-size:14px}
+.gday .md{display:inline-block;background:var(--acc);color:#04140c;font:800 13px Inter;padding:4px 10px;border-radius:99px;letter-spacing:.5px}
 .brand .md{display:inline-block;background:var(--acc);color:#04140c;font:800 13px Inter;padding:4px 10px;border-radius:99px;margin-right:8px;letter-spacing:.5px}
 .hs{display:flex;gap:10px}.hs div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 16px;text-align:center;min-width:84px}
 .hs b{display:block;font:800 26px 'Barlow Condensed','Arial Narrow',sans-serif-condensed,sans-serif}.hs small{color:var(--mut);font-size:12px}
@@ -472,7 +480,7 @@ table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}.odd
 .bk{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}@media(max-width:760px){.bk{grid-template-columns:repeat(3,1fr)}}
 .bk div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}.bk small{display:block;color:var(--mut);font-size:12px}.bk b{font:800 28px 'Barlow Condensed','Arial Narrow',sans-serif}
 .okc{color:var(--acc)}.koc{color:var(--neg)}.ok{color:var(--acc);font-weight:800}.ko{color:var(--neg);font-weight:800}.pu{color:var(--acc2);font-weight:800}.pe{color:var(--mut)}
-.sub{font-size:13px;color:var(--mut);margin-top:3px}
+.sub{font-size:13px;color:var(--mut);margin-top:3px}.bk3{grid-template-columns:repeat(3,1fr)}.hint{font-size:13px;color:var(--mut);margin:8px 0 0}
 .legend{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:0 0 14px;font-size:14px}
 .star{color:#ffd23f;font-size:1.05em;margin-left:4px}
 details.info{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:0 0 14px}details.info summary{cursor:pointer;color:var(--acc);font-weight:600;font-size:14px}
@@ -481,7 +489,7 @@ details.info p{font-size:14px;color:var(--ink);margin:8px 0}
 footer{margin-top:50px;color:var(--mut);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
 """
 JS = """
-const views=['news','live','giornata','triple','marcatori','bilancio','classifica'];
+const views=['news','live','giornata','analisi','triple','marcatori','bilancio','classifica'];
 function show(){const h=location.hash.slice(1);const v=views.includes(h)?h:'news';
 document.querySelectorAll('.view').forEach(e=>e.classList.toggle('on',e.id===v));document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+v));}
 addEventListener('hashchange',()=>{show();scrollTo(0,0)});show();
@@ -505,14 +513,15 @@ PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="SA Analyst"><link rel="apple-touch-icon" href="icona-180.png"><link rel="icon" type="image/png" href="icona-192.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>{CSS}</style></head>
-<body><div class="wrap"><header class="hero"><div class="brand">Serie A <span>Analyst</span><small><span class="md">GIORNATA {md or '—'}</span>{periodo} · aggiornato {fts(gen)}</small></div>{hero_stats}</header>
-<nav><a href="#news">News</a><a href="#live">Live</a><a href="#giornata">Pronostici</a><a href="#triple">Triple</a><a href="#marcatori">Marcatori</a><a href="#bilancio">Bilancio</a><a href="#classifica">Classifica</a></nav>
+<body><div class="wrap"><header class="hero"><div class="brand">Serie A <span>Analyst</span><small>Aggiornato {fts(gen)}</small></div></header>
+<nav><a href="#news">News</a><a href="#live">Live</a><a href="#giornata">Pronostici</a><a href="#analisi">Analisi</a><a href="#triple">Triple</a><a href="#marcatori">Marcatori</a><a href="#bilancio">Bilancio</a><a href="#classifica">Classifica</a></nav>
 <section class="view" id="news">{news_html}</section>
-<section class="view" id="live"><h2 class="daytitle">Risultati live</h2>{live_html}</section>
-<section class="view" id="giornata"><h2 class="daytitle">Schedina della giornata</h2><div class="legend"><span class="star">★</span> <b>Errore di quota a tuo favore</b>: Eurobet paga più di quanto dovrebbe rispetto alla probabilità calcolata. Sono le giocate più interessanti; le altre sono pagate il giusto o meno.</div><div class="scroll"><table class="tbl slip"><thead><tr><th class=l>Partita</th><th class=l>Pronostico</th><th>Probabilità</th><th>Quota</th></tr></thead><tbody>{slip_rows}</tbody></table></div>{''.join(cards)}</section>
-<section class="view" id="triple"><div class="legend"><span class="star">★</span> <b>Errore di quota a tuo favore</b>: Eurobet paga più di quanto dovrebbe rispetto alla probabilità calcolata. Sono le giocate più interessanti; le altre sono pagate il giusto o meno.</div><h2 class="daytitle">Sabato</h2><div class="tgrid">{triple_html('sabato')}</div><h2 class="daytitle">Domenica</h2><div class="tgrid">{triple_html('domenica')}</div>
+<section class="view" id="live">{gtitle}<h2 class="daytitle">Risultati live</h2>{live_html}</section>
+<section class="view" id="giornata">{gtitle}<h2 class="daytitle">Schedina della giornata</h2><div class="legend"><span class="star">★</span> <b>Errore di quota a tuo favore</b>: Eurobet paga più del giusto sia secondo il nostro modello sia rispetto a Pinnacle, il bookmaker con le quote più precise. Sono le giocate più interessanti; le altre sono pagate il giusto o meno.</div><div class="scroll"><table class="tbl slip"><thead><tr><th class=l>Partita</th><th class=l>Pronostico</th><th>Probabilità</th><th>Quota</th></tr></thead><tbody>{slip_rows}</tbody></table></div></section>
+<section class="view" id="analisi">{gtitle}{''.join(cards)}</section>
+<section class="view" id="triple">{gtitle}<div class="legend"><span class="star">★</span> <b>Errore di quota a tuo favore</b>: Eurobet paga più del giusto sia secondo il nostro modello sia rispetto a Pinnacle, il bookmaker con le quote più precise. Sono le giocate più interessanti; le altre sono pagate il giusto o meno.</div><h2 class="daytitle">Sabato</h2><div class="tgrid">{triple_html('sabato')}</div><h2 class="daytitle">Domenica</h2><div class="tgrid">{triple_html('domenica')}</div>
 </section>
-<section class="view" id="marcatori">{marc_html}</section>
+<section class="view" id="marcatori">{gtitle}{marc_html}</section>
 <section class="view" id="bilancio">{bil_html}</section>
 <section class="view" id="classifica"><div class="scroll"><table class="tbl"><thead><tr><th>#</th><th class=l>Squadra</th><th>Pt</th><th>G</th><th>V</th><th>N</th><th>P</th><th>GF</th><th>GS</th><th>DR</th><th>xG/p</th><th>xGA/p</th><th>Elo</th></tr></thead><tbody>{cl_rows}</tbody></table></div>
 </section>

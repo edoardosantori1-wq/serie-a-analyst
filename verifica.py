@@ -62,6 +62,82 @@ def marcatori_partita(match_id):
     walk(j)
     return nomi
 
+# ------------------------------------------------------------ confronto con Pengwin (giocate inserite a mano)
+def giocata_key(t):
+    """Testo della giocata (come la scrive il tipster) -> chiave dei nostri mercati. None se non riconosciuta."""
+    t = re.sub(r"\s+", " ", (t or "").strip().upper().replace(",", "."))
+    if not t: return None
+    if "+" in t:
+        parti = []
+        for p in [x.strip() for x in t.split("+")]:
+            k = giocata_key(p)
+            if k in ESITI: parti.append(k)
+            elif k == "GG": parti.append("Goal")
+            elif k == "NG": parti.append("No Goal")
+            elif k and re.fullmatch(r"[OU]\d\.5", k): parti.append(("Over " if k[0] == "O" else "Under ") + k[1:])
+            else: return None
+        return "C:" + " + ".join(parti)
+    alias = {"2X": "X2", "X1": "1X", "21": "12", "GOAL": "GG", "GOL": "GG", "GG": "GG", "SI GOAL": "GG", "NO GOAL": "NG",
+             "NOGOAL": "NG", "NO GOL": "NG", "NG": "NG", "1": "1", "X": "X", "2": "2", "1X": "1X", "X2": "X2", "12": "12"}
+    if t in alias: return alias[t]
+    m = re.fullmatch(r"(OVER|UNDER|OV|UN|O|U) ?(\d)(?:\.5)?", t)
+    if m: return ("O" if m.group(1).startswith("O") else "U") + m.group(2) + ".5"
+    return None
+
+def pengwin(fin_matches):
+    """dati/pengwin.csv: schedina;data;partita;giocata;quota;esito  (separatore ;)
+    Righe con lo stesso numero di schedina = una multipla. esito (V/P/R) serve solo per mercati che il
+    sistema non sa valutare (es. angoli); altrimenti l'esito si calcola dal risultato finale."""
+    import csv
+    path = os.path.join(D, "pengwin.csv")
+    if not os.path.exists(path): return []
+    try:
+        from predizioni import canon
+    except Exception:
+        canon = lambda x: x
+    righe = list(csv.DictReader(open(path, encoding="utf-8-sig"), delimiter=";"))
+    sched = {}
+    for n, r in enumerate(righe):
+        sid = (r.get("schedina") or "").strip() or f"_{n}"
+        sched.setdefault(sid, []).append(r)
+    out = []
+    for sid, sel in sched.items():
+        esiti, quota, inizio, dett = [], 1.0, "", []
+        for r in sel:
+            try: q = float((r.get("quota") or "").replace(",", "."))
+            except ValueError: q = 1.0
+            quota *= q
+            d = (r.get("data") or "").strip()
+            try: dd = datetime.strptime(d, "%d/%m/%Y") if "/" in d else datetime.strptime(d[:10], "%Y-%m-%d")
+            except ValueError: dd = None
+            inizio = max(inizio, dd.strftime("%Y-%m-%d") if dd else "")
+            man = (r.get("esito") or "").strip().upper()[:1]
+            e = {"V": 1, "P": 0, "R": 2}.get(man)
+            ris = None
+            if e is None:
+                pp = re.split(r"\s*[-–]\s*", r.get("partita") or "", maxsplit=1)
+                h = canon(pp[0].strip()); a = canon(pp[1].strip()) if len(pp) > 1 else None
+                k = giocata_key(r.get("giocata"))
+                m = next((m for m in fin_matches if canon(m["homeTeam"]["name"]) == h and canon(m["awayTeam"]["name"]) == a
+                          and (dd is None or abs((datetime.fromisoformat(m["utcDate"][:10]) - dd).days) <= 3)), None)
+                if m and k:
+                    i, j = m["score"]["fullTime"]["home"], m["score"]["fullTime"]["away"]; ris = f"{i}-{j}"
+                    e = esito(k, i, j)
+            esiti.append(e)
+            dett.append(dict(partita=r.get("partita"), mercato=r.get("giocata"), esito=e, risultato=ris))
+        if any(x == 0 for x in esiti): e, prof = 0, -1.0
+        elif all(x in (1, 2) for x in esiti):
+            q = 1.0
+            for r, x in zip(sel, esiti):
+                if x == 1: q *= float((r.get("quota") or "1").replace(",", "."))
+            e, prof = (2, 0.0) if all(x == 2 for x in esiti) else (1, round(q - 1, 3))
+        else: e, prof = None, None
+        out.append(dict(cat="pengwin", desc=" · ".join(f'{d["partita"]}: {d["mercato"]}' for d in dett), quota=round(quota, 2),
+                        esito=e, profitto=prof, inizio=inizio, dettaglio=dett if len(dett) > 1 else None,
+                        risultato=dett[0]["risultato"] if len(dett) == 1 else None, mercato=dett[0]["mercato"] if len(dett) == 1 else "multipla"))
+    out.sort(key=lambda x: x["inizio"], reverse=True)
+    return out
+
 def main():
     dbp = os.path.join(D, "storico.sqlite")
     if not os.path.exists(dbp):
@@ -134,6 +210,14 @@ def main():
                giornate=[dict(giornata=g, **riepilogo([x for x in giocate if x["giornata"] == g])) for g in sorted({x["giornata"] for x in giocate}, reverse=True)],
                giocate=giocate[:120], clv=clv(list(sel.values())),
                clv_giornate={g: clv([x for x in sel.values() if x[2] == g]) for g in sorted({x[2] for x in sel.values()})})
+    PG = pengwin((J("fdorg_giocate.json") or {}).get("matches", []))
+    if PG:
+        dal = min(x["inizio"] for x in PG if x["inizio"]) if any(x["inizio"] for x in PG) else ""
+        noi = [x for x in giocate if (x["inizio"] or "")[:10] >= dal]
+        # test interno: NON va nel bilancio del sito, ma in un file a parte
+        json.dump(dict(aggiornato=datetime.now(timezone.utc).isoformat(timespec="seconds"), dal=dal, pengwin=riepilogo(PG),
+                       noi_pronostici=riepilogo([x for x in noi if x["cat"] == "pronostico"]), noi_tutto=riepilogo(noi), giocate_pengwin=PG),
+                  open(os.path.join(D, "confronto_pengwin.json"), "w"), ensure_ascii=False, indent=1)
     json.dump(out, open(os.path.join(D, "bilancio.json"), "w"), ensure_ascii=False, indent=1)
     print(f"Bilancio: {out['totale']}")
 

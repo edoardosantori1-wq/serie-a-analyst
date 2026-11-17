@@ -385,6 +385,7 @@ if BIL.get("giocate"):
                 % (E(x["desc"].replace("-", " – ")), E(nome_merc(x["mercato"])), tipo, ris, x["quota"], esito_html(x["esito"]), prof))
     C = BIL.get("clv")
     tar_html = TAR_HTML
+    # confronto con Pengwin: test interno, non pubblicato (dati/confronto_pengwin.json)
     clv_html = (f'''<h2 class="daytitle">Quote battute</h2><div class="bk bk3"><div><small>Quote migliori della chiusura</small><b class="{'okc' if C['battute'] >= C['peggiori'] else 'koc'}">{C["battute"]} su {C["n"]}</b></div>
     <div><small>Uguali</small><b>{C["pari"]}</b></div><div><small>Differenza media</small><b class="{'okc' if C['medio'] >= 0 else 'koc'}">{C["medio"]*100:+.1f}%</b></div></div>
     <p class="hint">Confronto tra la quota Eurobet all'uscita del report e quella poco prima del fischio d'inizio. Se la quota scende dopo il nostro pronostico, il mercato si è mosso nella nostra direzione: è il segnale più rapido per capire se il sistema vede giusto.</p>''') if C else ""
@@ -393,7 +394,7 @@ if BIL.get("giocate"):
     <h2 class="daytitle">Per giornata</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Giornata</th><th>Prese</th><th>% presa</th><th>Unità</th><th>In attesa</th></tr></thead><tbody>{gio_rows}</tbody></table></div>
     <h2 class="daytitle">Ultime giocate</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Giocata</th><th>Quota</th><th>Esito</th><th>Unità</th></tr></thead><tbody>{"".join(riga(x) for x in BIL["giocate"][:60])}</tbody></table></div>'''
 else:
-    bil_html = TAR_HTML + '<div class="nobet"><div class="nb">IN ATTESA</div>Il bilancio parte con la prima giornata giocata dopo l\'uscita del report.</div>'
+    bil_html = '<div class="nobet"><div class="nb">IN ATTESA</div>Il bilancio parte con la prima giornata giocata dopo l\'uscita del report.</div>'
 
 # ------------------------------------------------------------------ web app (icona + manifest)
 import zlib, struct, math as _m

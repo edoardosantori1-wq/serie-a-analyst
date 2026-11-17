@@ -28,6 +28,13 @@ def evtxt(ev):
 CATC = {"value": "c-val", "probabile": "c-pro", "alto rischio": "c-ris", "senza valore": "c-nov"}
 def cat(s): return ""
 
+def star(s):
+    """Stella solo per gli errori di quota a favore: quota reale Eurobet, EV >= +5% e almeno 4 punti oltre la probabilita' implicita."""
+    if not s or not s.get("quota") or not s.get("p"): return False
+    if s.get("cat"): return s["cat"] == "value"
+    return s.get("fonte") != "stimata" and s["p"] * s["quota"] - 1 >= 0.05 and s["p"] - 1 / s["quota"] >= 0.04
+def stella(s): return ' <span class="star" title="Errore di quota a favore">★</span>' if star(s) else ""
+
 # ------------------------------------------------------------------ squadre
 TEAMS = {}
 for t in (J("striker_teams.json") or {}).get("data", {}).get("teams", []):
@@ -161,12 +168,12 @@ for r in PARTITE:
         <div><small>Over 2.5</small><b>{pc(p.get('O2.5'))}</b></div><div><small>Goal</small><b>{pc(p.get('GG'))}</b></div>
         <div><small>Risultati più probabili</small><b>{' · '.join(f"{s} <em>{pc(q)}</em>" for s, q in r.get('risultati', []))}</b></div></div>'''
         pr = r.get("pronostico")
-        bmh = (f'''<div class="tip"><div class="tipl">Pronostico</div><div class="tipm"><b>{E(pr["label"])}</b>{cat(pr)}</div>
-        <div class="tipn"><span><small>Quota</small>{pr["quota"]:.2f}</span><span><small>Prob.</small>{pc(pr["p"])}</span><span><small>EV</small>{evtxt(pr["ev"])}</span></div></div>''') if pr else '<div class="tip none"><div class="tipl">Pronostico</div><div class="tipm"><b>Nessun pronostico</b> · nessuna giocata con probabilità ≥ 55% e quota ≥ 1.30</div></div>'
+        bmh = (f'''<div class="tip"><div class="tipl">Pronostico</div><div class="tipm"><b>{E(pr["label"])}</b>{stella(pr)}</div>
+        <div class="tipn"><span><small>Probabilità</small>{pc(pr["p"])}</span><span><small>Quota</small>{pr["quota"]:.2f}</span></div></div>''') if pr else '<div class="tip none"><div class="tipl">Pronostico</div><div class="tipm"><b>Nessun pronostico</b> · nessuna giocata con probabilità ≥ 55% e quota ≥ 1.30</div></div>'
         sel = sorted(r.get("selezioni", []), key=lambda x: (x["ht"], -x["ev"]))
-        odds = "".join(f'<tr class="{"ht" if s["ht"] else ""}"><td>{E(s["label"])}{cat(s)}</td><td><b>{s["quota"]:.2f}</b></td><td>{pc(s["p_impl"])}</td><td>{pc(s["p"])}</td><td>{evtxt(s["ev"])}</td></tr>' for s in sel)
+        odds = "".join(f'<tr class="{"ht" if s["ht"] else ""}"><td>{E(s["label"])}{stella(s)}</td><td>{pc(s["p"])}</td><td><b>{s["quota"]:.2f}</b></td></tr>' for s in sel)
         oddsh = f'''<details class="odds"><summary>Tutte le quote Eurobet ({len(sel)}) · ultima variazione {fts(r.get('quote_ts'))}</summary>
-        <table><thead><tr><th>Mercato</th><th>Quota</th><th>Prob. implicita</th><th>Prob. stimata</th><th>EV</th></tr></thead><tbody>{odds}</tbody></table>
+        <table><thead><tr><th>Mercato</th><th>Probabilità</th><th>Quota</th></tr></thead><tbody>{odds}</tbody></table>
         </details>'''
     else:
         bar = kpis = bmh = ""; oddsh = '<p class="warn">Quote Eurobet NON VERIFICATE: nessuna probabilità calcolata.</p>'
@@ -201,28 +208,28 @@ def triple_html(nome):
         if not t:
             out.append(f'<div class="tcard empty"><h3>Tripla {tipo}</h3><p>Non costruita: non ci sono tre selezioni abbastanza solide in questa fascia di quota. Meglio NO BET che una tripla forzata.</p></div>'); continue
         sel = "".join(f'''<li><div class="tsel"><span class="tm">{badge(s['match'].split('-')[0],'sm')}{badge(s['match'].split('-')[1],'sm')} {E(s['match'].replace('-',' – '))}</span>
-        <b>{E(s['label'])}{cat(s)}</b></div><div class="tnum"><span>@ <b>{s['quota']:.2f}</b></span><span>prob. {pc(s['p'])}</span><span>impl. {pc(s['p_impl'])}</span><span>EV {evtxt(s['ev'])}</span></div></li>''' for s in t["selezioni"])
+        <b>{E(s['label'])}{stella(s)}</b></div><div class="tnum"><span>probabilità <b>{pc(s['p'])}</b></span><span>quota <b>{s['quota']:.2f}</b></span></div></li>''' for s in t["selezioni"])
         out.append(f'''<div class="tcard {tipo}"><div class="th"><h3>Tripla {tipo}</h3><span class="risk">{RISCHIO[tipo]}</span></div><ol>{sel}</ol>
         <div class="ttot"><div><small>Quota totale</small><b>{t['quota']:.2f}</b></div><div><small>Prob. congiunta</small><b>{pc(t['p'])}</b></div>
-        <div><small>Valore atteso</small><b>{evtxt(t['ev'])}</b></div></div>
+        </div>
         </div>''')
     return "".join(out)
 
 # ------------------------------------------------------------------ marcatori
 MC = P.get("marcatori") or {}
 if MC.get("stato") == "ok":
-    sc = "".join(f'''<div class="scard" style="--c:{T(x['squadra'])['col']}">{avatar(x['nome'], x['squadra'])}<div class="sn"><b>{E(x['nome'])}</b>
+    sc = "".join(f'''<div class="scard" style="--c:{T(x['squadra'])['col']}">{avatar(x['nome'], x['squadra'])}<div class="sn"><b>{E(x['nome'])}{stella(x)}</b>
     <span>{badge(x['squadra'],'sm')} {E(x['squadra'])} vs {E(x['avversario'])}</span></div>
     <div class="sp">{pc(x['p'])}<small>prob. di segnare</small></div>
-    <div class="sg"><div><small>Quota Eurobet</small><b>{f"{x['quota']:.2f}" if x['quota'] else 'NON VERIFICATA'}</b></div><div><small>EV</small><b>{evtxt(x['ev'])}</b></div>
+    <div class="sg"><div><small>Quota Eurobet</small><b>{f"{x['quota']:.2f}" if x['quota'] else 'NON VERIFICATA'}</b></div>
     <div><small>xG/90</small><b>{x['xg90']:.2f}</b></div><div><small>Minuti attesi</small><b>{x['min_attesi']}</b></div></div>
     </div>''' for x in MC.get("lista", []))
     cb = MC.get("combinazione")
     cbh = (f'''<div class="combo"><h3>Combinazione dei 4 marcatori</h3><div class="ttot"><div><small>Quota</small><b>{cb['quota']:.2f}</b></div>
-    <div><small>Prob. congiunta</small><b>{cb['p']*100:.1f}%</b></div><div><small>EV</small><b>{evtxt(cb['ev'])}</b></div></div>
+    <div><small>Prob. congiunta</small><b>{cb['p']*100:.1f}%</b></div></div>
     <p class="small">Rischio molto alto: basta un'esclusione o un cambio a sorpresa. {'Alcuni giocatori sono nella stessa partita: eventi correlati.' if cb['stessa_partita'] else 'Quattro partite diverse.'}</p></div>''') if cb else '<p class="muted">Combinazione non calcolabile: manca almeno una quota Eurobet.</p>'
-    altri = "".join(f"<tr><td class=l>{badge(x['squadra'],'sm')} {E(x['nome'])}</td><td class=l>{E(x['avversario'])}</td><td>{x['xg90']:.2f}</td><td>{x['min_attesi']}</td><td>{pc(x['p'])}</td><td>{f2(x['quota'])}</td><td>{evtxt(x['ev'])}</td></tr>" for x in MC.get("altri", []))
-    marc_html = f'''<div class="scards">{sc}</div>{cbh}<h3 class="sec">Altri candidati</h3><div class="scroll"><table class="tbl"><thead><tr><th class=l>Giocatore</th><th class=l>Avversario</th><th>xG/90</th><th>Min.</th><th>Prob.</th><th>Quota</th><th>EV</th></tr></thead><tbody>{altri}</tbody></table></div>
+    altri = "".join(f"<tr><td class=l>{badge(x['squadra'],'sm')} {E(x['nome'])}</td><td class=l>{E(x['avversario'])}</td><td>{x['xg90']:.2f}</td><td>{x['min_attesi']}</td><td>{pc(x['p'])}</td><td>{f2(x['quota'])}{stella(x)}</td></tr>" for x in MC.get("altri", []))
+    marc_html = f'''<div class="scards">{sc}</div>{cbh}<h3 class="sec">Altri candidati</h3><div class="scroll"><table class="tbl"><thead><tr><th class=l>Giocatore</th><th class=l>Avversario</th><th>xG/90</th><th>Min.</th><th>Prob.</th><th>Quota</th></tr></thead><tbody>{altri}</tbody></table></div>
     '''
 else:
     marc_html = f'<p class="warn">{E(MC.get("stato","dati non disponibili"))}</p>'
@@ -249,8 +256,8 @@ hero_stats = f'''<div class="hs"><div><b>{len(PARTITE)}</b><small>partite</small
 <div><b>{len(MC.get('lista', []))}</b><small>marcatori</small></div></div>'''
 
 slip_rows = "".join(f'''<tr><td class=l>{badge(r["casa"],"sm")}{badge(r["ospite"],"sm")} {E(r["casa"])} – {E(r["ospite"])} <small class="muted">{rome(r["data"]).strftime("%d/%m %H:%M")}</small></td>
-<td class=l><b>{E(r["pronostico"]["label"])}</b>{cat(r["pronostico"])}</td><td><b>{r["pronostico"]["quota"]:.2f}</b></td><td>{pc(r["pronostico"]["p"])}</td><td>{evtxt(r["pronostico"]["ev"])}</td></tr>'''
- if r.get("pronostico") else f'<tr><td class=l>{badge(r["casa"],"sm")}{badge(r["ospite"],"sm")} {E(r["casa"])} – {E(r["ospite"])}</td><td class=l colspan=4><span class=muted>Nessun pronostico</span></td></tr>' for r in PARTITE)
+<td class=l><b>{E(r["pronostico"]["label"])}</b>{stella(r["pronostico"])}</td><td>{pc(r["pronostico"]["p"])}</td><td><b>{r["pronostico"]["quota"]:.2f}</b></td></tr>'''
+ if r.get("pronostico") else f'<tr><td class=l>{badge(r["casa"],"sm")}{badge(r["ospite"],"sm")} {E(r["casa"])} – {E(r["ospite"])}</td><td class=l colspan=3><span class=muted>Nessun pronostico</span></td></tr>' for r in PARTITE)
 
 # ------------------------------------------------------------------ news (feed RSS: titolo, fonte, link)
 import xml.etree.ElementTree as ET, email.utils, re as _re
@@ -431,7 +438,7 @@ table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}.odd
 .tcard.empty{opacity:.75;border-style:dashed}.th{display:flex;justify-content:space-between;align-items:center}.tcard h3{margin:0;font:800 22px 'Barlow Condensed','Arial Narrow',sans-serif-condensed,sans-serif;text-transform:uppercase}.risk{font-size:12px;color:var(--mut)}
 .tcard ol{list-style:none;padding:0;margin:12px 0;flex:1}.tcard li{padding:10px 0;border-bottom:1px solid var(--line)}.tsel{display:flex;flex-direction:column;gap:3px}.tm{font-size:13px;color:var(--mut);display:flex;align-items:center;gap:4px}
 .tnum{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:13px;color:var(--mut);margin-top:4px}.tnum b{color:var(--ink)}
-.ttot{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.ttot div{background:var(--card2);border-radius:10px;padding:8px}.ttot small{display:block;color:var(--mut);font-size:11px}.ttot b{font:800 22px 'Barlow Condensed','Arial Narrow',sans-serif-condensed,sans-serif}
+.ttot{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.ttot div{background:var(--card2);border-radius:10px;padding:8px}.ttot small{display:block;color:var(--mut);font-size:11px}.ttot b{font:800 22px 'Barlow Condensed','Arial Narrow',sans-serif-condensed,sans-serif}
 .verdict{margin-top:10px;text-align:center;font-weight:700;font-size:13px;padding:7px;border-radius:10px}.verdict.pos{background:rgba(0,227,140,.15);color:var(--acc)}.verdict.neu{background:rgba(255,210,63,.12);color:var(--acc2)}.verdict.neg{background:rgba(255,84,104,.12);color:var(--neg)}
 .scards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}@media(max-width:900px){.scards{grid-template-columns:1fr 1fr}}@media(max-width:520px){.scards{grid-template-columns:1fr}}
 .scard{background:linear-gradient(180deg,color-mix(in srgb,var(--c) 30%,var(--card)) 0,var(--card) 45%);border:1px solid var(--line);border-radius:18px;padding:16px}
@@ -466,6 +473,11 @@ table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}.odd
 .bk div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}.bk small{display:block;color:var(--mut);font-size:12px}.bk b{font:800 28px 'Barlow Condensed','Arial Narrow',sans-serif}
 .okc{color:var(--acc)}.koc{color:var(--neg)}.ok{color:var(--acc);font-weight:800}.ko{color:var(--neg);font-weight:800}.pu{color:var(--acc2);font-weight:800}.pe{color:var(--mut)}
 .sub{font-size:13px;color:var(--mut);margin-top:3px}
+.legend{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:0 0 14px;font-size:14px}
+.star{color:#ffd23f;font-size:1.05em;margin-left:4px}
+details.info{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:0 0 14px}details.info summary{cursor:pointer;color:var(--acc);font-weight:600;font-size:14px}
+details.info p{font-size:14px;color:var(--ink);margin:8px 0}
+.tipn{flex-wrap:wrap}
 footer{margin-top:50px;color:var(--mut);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
 """
 JS = """
@@ -497,8 +509,8 @@ PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name
 <nav><a href="#news">News</a><a href="#live">Live</a><a href="#giornata">Pronostici</a><a href="#triple">Triple</a><a href="#marcatori">Marcatori</a><a href="#bilancio">Bilancio</a><a href="#classifica">Classifica</a></nav>
 <section class="view" id="news">{news_html}</section>
 <section class="view" id="live"><h2 class="daytitle">Risultati live</h2>{live_html}</section>
-<section class="view" id="giornata"><h2 class="daytitle">Schedina della giornata</h2><div class="scroll"><table class="tbl slip"><thead><tr><th class=l>Partita</th><th class=l>Pronostico</th><th>Quota</th><th>Prob.</th><th>EV</th></tr></thead><tbody>{slip_rows}</tbody></table></div>{''.join(cards)}</section>
-<section class="view" id="triple"><h2 class="daytitle">Sabato</h2><div class="tgrid">{triple_html('sabato')}</div><h2 class="daytitle">Domenica</h2><div class="tgrid">{triple_html('domenica')}</div>
+<section class="view" id="giornata"><h2 class="daytitle">Schedina della giornata</h2><div class="legend"><span class="star">★</span> <b>Errore di quota a tuo favore</b>: Eurobet paga più di quanto dovrebbe rispetto alla probabilità calcolata. Sono le giocate più interessanti; le altre sono pagate il giusto o meno.</div><div class="scroll"><table class="tbl slip"><thead><tr><th class=l>Partita</th><th class=l>Pronostico</th><th>Probabilità</th><th>Quota</th></tr></thead><tbody>{slip_rows}</tbody></table></div>{''.join(cards)}</section>
+<section class="view" id="triple"><div class="legend"><span class="star">★</span> <b>Errore di quota a tuo favore</b>: Eurobet paga più di quanto dovrebbe rispetto alla probabilità calcolata. Sono le giocate più interessanti; le altre sono pagate il giusto o meno.</div><h2 class="daytitle">Sabato</h2><div class="tgrid">{triple_html('sabato')}</div><h2 class="daytitle">Domenica</h2><div class="tgrid">{triple_html('domenica')}</div>
 </section>
 <section class="view" id="marcatori">{marc_html}</section>
 <section class="view" id="bilancio">{bil_html}</section>

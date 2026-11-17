@@ -296,6 +296,20 @@ for r in PARTITE:
 news_html = f'''<div class="ngrid"><div><h2 class="daytitle">Ultime notizie</h2><ul class="nl big">{"".join(nitem(n) for n in news[:25]) or "<li>Nessuna notizia scaricata.</li>"}</ul></div>
 <div><h2 class="daytitle">Formazioni</h2>{form_html}</div></div>'''
 
+# ------------------------------------------------------------------ live (widget ufficiale SofaScore, gratuito)
+SOFA = {}
+for fx in (J("oddspapi_quote.json") or []):
+    sid = (fx.get("externalProviders") or {}).get("sofascoreId")
+    if sid: SOFA[(canon(fx.get("participant1Name")), canon(fx.get("participant2Name")))] = str(sid)
+sofa_ids = [SOFA[(r["casa"], r["ospite"])] for r in PARTITE if (r["casa"], r["ospite"]) in SOFA]
+if sofa_ids:
+    ids = ",".join(sofa_ids)
+    live_html = f'''<div class="livewrap"><iframe id="sofa-fixtures-embed-{ids}" src="https://widgets.sofascore.com/it/embed/fixtures?eventIds={ids}&showCompetitionLogo=true&widgetTitle=Serie+A&widgetTheme=dark"
+    frameborder="0" scrolling="no" style="width:100%;height:{110 + 115*len(sofa_ids)}px;max-width:480px;border:0" title="Risultati live Serie A"></iframe>
+    <div class="sofa">Risultati forniti da <a target="_blank" rel="noopener" href="https://sofascore.com/">Sofascore</a></div></div>'''
+else:
+    live_html = '<p class="warn">Widget non disponibile: identificativi delle partite non trovati.</p>'
+
 CSS = """
 :root{--bg:#0a0d12;--bg2:#11161e;--card:#151b25;--card2:#1b2330;--line:#243042;--ink:#eef2f7;--mut:#8b97a8;--acc:#00e38c;--acc2:#ffd23f;--neg:#ff5468;--neu:#9aa6b8}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(1200px 600px at 80% -10%,#10324a 0,transparent 60%),radial-gradient(900px 500px at -10% 10%,#0d3b2c 0,transparent 55%),var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,-apple-system,sans-serif}
@@ -377,10 +391,11 @@ table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}.odd
 .nl span{display:flex;align-items:center;gap:4px;color:var(--mut);font-size:12px;margin-top:3px}.nl.big li{font-size:15px}
 .fm{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:8px}.fmh{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.fmh .muted{margin-left:auto;font-size:12px}
 .fm .nl li{padding:6px 0;font-size:13px}
+.livewrap{display:flex;flex-direction:column;align-items:center}.sofa{font-size:12px;color:var(--mut);margin-top:6px}.sofa a{color:var(--mut)}
 footer{margin-top:50px;color:var(--mut);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
 """
 JS = """
-const views=['news','giornata','triple','marcatori','classifica'];
+const views=['news','live','giornata','triple','marcatori','classifica'];
 function show(){const h=location.hash.slice(1);const v=views.includes(h)?h:'news';
 document.querySelectorAll('.view').forEach(e=>e.classList.toggle('on',e.id===v));document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+v));}
 addEventListener('hashchange',()=>{show();scrollTo(0,0)});show();
@@ -403,8 +418,9 @@ PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name
 <title>Serie A Analyst</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>{CSS}</style></head>
 <body><div class="wrap"><header class="hero"><div class="brand">Serie A <span>Analyst</span><small><span class="md">GIORNATA {md or '—'}</span>{periodo} · aggiornato {fts(gen)}</small></div>{hero_stats}</header>
-<nav><a href="#news">News</a><a href="#giornata">Pronostici</a><a href="#triple">Triple</a><a href="#marcatori">Marcatori</a><a href="#classifica">Classifica</a></nav>
+<nav><a href="#news">News</a><a href="#live">Live</a><a href="#giornata">Pronostici</a><a href="#triple">Triple</a><a href="#marcatori">Marcatori</a><a href="#classifica">Classifica</a></nav>
 <section class="view" id="news">{news_html}</section>
+<section class="view" id="live"><h2 class="daytitle">Risultati live</h2>{live_html}</section>
 <section class="view" id="giornata"><h2 class="daytitle">Schedina della giornata</h2><div class="scroll"><table class="tbl slip"><thead><tr><th class=l>Partita</th><th class=l>Pronostico</th><th>Quota</th><th>Prob.</th><th>EV</th></tr></thead><tbody>{slip_rows}</tbody></table></div>{''.join(cards)}</section>
 <section class="view" id="triple"><h2 class="daytitle">Sabato</h2><div class="tgrid">{triple_html('sabato')}</div><h2 class="daytitle">Domenica</h2><div class="tgrid">{triple_html('domenica')}</div>
 </section>

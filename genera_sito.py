@@ -296,6 +296,46 @@ for r in PARTITE:
 news_html = f'''<div class="ngrid"><div><h2 class="daytitle">Ultime notizie</h2><ul class="nl big">{"".join(nitem(n) for n in news[:25]) or "<li>Nessuna notizia scaricata.</li>"}</ul></div>
 <div><h2 class="daytitle">Formazioni</h2>{form_html}</div></div>'''
 
+# ------------------------------------------------------------------ bilancio dei pronostici
+BIL = J("bilancio.json") or {}
+NOMI_MERC = {"1": "1", "X": "X", "2": "2", "1X": "1X", "12": "12", "X2": "X2", "DNB1": "Draw No Bet 1", "DNB2": "Draw No Bet 2", "GG": "Goal", "NG": "No Goal"}
+def nome_merc(m):
+    if m.startswith("C:"): return m[2:]
+    if m.startswith("SCORER:"): return "Segna: " + m[7:]
+    mm = __import__("re").fullmatch(r"([OU])(\d\.5)", m)
+    if mm: return ("Over " if mm.group(1) == "O" else "Under ") + mm.group(2)
+    return NOMI_MERC.get(m, m)
+def esito_html(e):
+    return {1: '<span class="ok">✓</span>', 0: '<span class="ko">✗</span>', 2: '<span class="pu">=</span>'}.get(e, '<span class="pe">…</span>')
+def kpi(t):
+    if not t: return ""
+    return f'''<div class="bk"><div><small>Vinte</small><b class="okc">{t["vinte"]}</b></div><div><small>Perse</small><b class="koc">{t["perse"]}</b></div>
+    <div><small>% presa</small><b>{pc(t["hit"])}</b></div><div><small>Unità (puntata 1)</small><b class="{'okc' if (t['unita'] or 0) >= 0 else 'koc'}">{t["unita"]:+.2f}</b></div>
+    <div><small>ROI</small><b>{"—" if t["roi"] is None else f"{t['roi']*100:+.1f}%"}</b></div><div><small>In attesa</small><b>{t["aperte"]}</b></div></div>'''
+if BIL.get("giocate"):
+    cat_rows = "".join(f'''<tr><td class=l>{E(c["nome"])}</td><td>{c["giocate"]}</td><td>{c["vinte"]}</td><td>{c["perse"]}</td><td>{pc(c["hit"])}</td>
+    <td class="{'okc' if (c['unita'] or 0) >= 0 else 'koc'}">{c["unita"]:+.2f}</td><td>{"—" if c["roi"] is None else f"{c['roi']*100:+.1f}%"}</td><td>{c["aperte"]}</td></tr>''' for c in BIL["categorie"] if c["giocate"] or c["aperte"])
+    gio_rows = "".join(f'''<tr><td class=l>Giornata {x["giornata"]}</td><td>{x["vinte"]}/{x["vinte"]+x["perse"]}</td><td>{pc(x["hit"])}</td>
+    <td class="{'okc' if (x['unita'] or 0) >= 0 else 'koc'}">{x["unita"]:+.2f}</td><td>{x["aperte"]}</td></tr>''' for x in BIL["giornate"])
+    def riga(x):
+        prof = "" if x["profitto"] is None else "%+.2f" % x["profitto"]
+        if x.get("dettaglio"):
+            sub = ""
+            for d in x["dettaglio"]:
+                ris = ' <span class=muted>(%s)</span>' % d["risultato"] if d.get("risultato") else ""
+                sub += '<div class="sub">%s %s · %s%s</div>' % (esito_html(d["esito"]), E(d["partita"].replace("-", " – ")), E(nome_merc(d["mercato"])), ris)
+            return '<tr><td class=l><b>%s</b>%s</td><td>%.2f</td><td>%s</td><td>%s</td></tr>' % (E(x["desc"].capitalize()), sub, x["quota"], esito_html(x["esito"]), prof)
+        tipo = {"pronostico": "pronostico", "marcatore": "marcatore", "singola": "singola"}.get(x["cat"], "")
+        ris = (" · " + x["risultato"]) if x.get("risultato") else ""
+        return ('<tr><td class=l>%s · <b>%s</b> <span class=muted>%s%s</span></td><td>%.2f</td><td>%s</td><td>%s</td></tr>'
+                % (E(x["desc"].replace("-", " – ")), E(nome_merc(x["mercato"])), tipo, ris, x["quota"], esito_html(x["esito"]), prof))
+    bil_html = f'''<h2 class="daytitle">Bilancio complessivo</h2>{kpi(BIL.get("totale"))}
+    <h2 class="daytitle">Per tipo di giocata</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Tipo</th><th>Giocate</th><th>Vinte</th><th>Perse</th><th>% presa</th><th>Unità</th><th>ROI</th><th>In attesa</th></tr></thead><tbody>{cat_rows}</tbody></table></div>
+    <h2 class="daytitle">Per giornata</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Giornata</th><th>Prese</th><th>% presa</th><th>Unità</th><th>In attesa</th></tr></thead><tbody>{gio_rows}</tbody></table></div>
+    <h2 class="daytitle">Ultime giocate</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Giocata</th><th>Quota</th><th>Esito</th><th>Unità</th></tr></thead><tbody>{"".join(riga(x) for x in BIL["giocate"][:60])}</tbody></table></div>'''
+else:
+    bil_html = '<div class="nobet"><div class="nb">IN ATTESA</div>Il bilancio parte con la prima giornata giocata dopo l\'uscita del report.</div>'
+
 # ------------------------------------------------------------------ web app (icona + manifest)
 import zlib, struct, math as _m
 def _png(path, n):
@@ -422,10 +462,14 @@ table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}.odd
 .fm{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:8px}.fmh{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.fmh .muted{margin-left:auto;font-size:12px}
 .fm .nl li{padding:6px 0;font-size:13px}
 .livewrap{display:flex;flex-direction:column;align-items:center}.sofa{font-size:12px;color:var(--mut);margin-top:6px}.sofa a{color:var(--mut)}
+.bk{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}@media(max-width:760px){.bk{grid-template-columns:repeat(3,1fr)}}
+.bk div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}.bk small{display:block;color:var(--mut);font-size:12px}.bk b{font:800 28px 'Barlow Condensed','Arial Narrow',sans-serif}
+.okc{color:var(--acc)}.koc{color:var(--neg)}.ok{color:var(--acc);font-weight:800}.ko{color:var(--neg);font-weight:800}.pu{color:var(--acc2);font-weight:800}.pe{color:var(--mut)}
+.sub{font-size:13px;color:var(--mut);margin-top:3px}
 footer{margin-top:50px;color:var(--mut);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
 """
 JS = """
-const views=['news','live','giornata','triple','marcatori','classifica'];
+const views=['news','live','giornata','triple','marcatori','bilancio','classifica'];
 function show(){const h=location.hash.slice(1);const v=views.includes(h)?h:'news';
 document.querySelectorAll('.view').forEach(e=>e.classList.toggle('on',e.id===v));document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+v));}
 addEventListener('hashchange',()=>{show();scrollTo(0,0)});show();
@@ -450,13 +494,14 @@ PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name
 <meta name="apple-mobile-web-app-title" content="SA Analyst"><link rel="apple-touch-icon" href="icona-180.png"><link rel="icon" type="image/png" href="icona-192.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>{CSS}</style></head>
 <body><div class="wrap"><header class="hero"><div class="brand">Serie A <span>Analyst</span><small><span class="md">GIORNATA {md or '—'}</span>{periodo} · aggiornato {fts(gen)}</small></div>{hero_stats}</header>
-<nav><a href="#news">News</a><a href="#live">Live</a><a href="#giornata">Pronostici</a><a href="#triple">Triple</a><a href="#marcatori">Marcatori</a><a href="#classifica">Classifica</a></nav>
+<nav><a href="#news">News</a><a href="#live">Live</a><a href="#giornata">Pronostici</a><a href="#triple">Triple</a><a href="#marcatori">Marcatori</a><a href="#bilancio">Bilancio</a><a href="#classifica">Classifica</a></nav>
 <section class="view" id="news">{news_html}</section>
 <section class="view" id="live"><h2 class="daytitle">Risultati live</h2>{live_html}</section>
 <section class="view" id="giornata"><h2 class="daytitle">Schedina della giornata</h2><div class="scroll"><table class="tbl slip"><thead><tr><th class=l>Partita</th><th class=l>Pronostico</th><th>Quota</th><th>Prob.</th><th>EV</th></tr></thead><tbody>{slip_rows}</tbody></table></div>{''.join(cards)}</section>
 <section class="view" id="triple"><h2 class="daytitle">Sabato</h2><div class="tgrid">{triple_html('sabato')}</div><h2 class="daytitle">Domenica</h2><div class="tgrid">{triple_html('domenica')}</div>
 </section>
 <section class="view" id="marcatori">{marc_html}</section>
+<section class="view" id="bilancio">{bil_html}</section>
 <section class="view" id="classifica"><div class="scroll"><table class="tbl"><thead><tr><th>#</th><th class=l>Squadra</th><th>Pt</th><th>G</th><th>V</th><th>N</th><th>P</th><th>GF</th><th>GS</th><th>DR</th><th>xG/p</th><th>xGA/p</th><th>Elo</th></tr></thead><tbody>{cl_rows}</tbody></table></div>
 </section>
 <footer>Strumento personale di analisi. Le quote cambiano: verifica sempre sul sito del bookmaker. Il gioco è vietato ai minori e può causare dipendenza.</footer></div><script>{JS}</script></body></html>"""

@@ -22,6 +22,11 @@ for n in (".env", "chiavi.env"):
 META_P = os.path.join(D, "meta.json"); META = json.load(open(META_P)) if os.path.exists(META_P) else {}
 STATO_P = os.path.join(D, "stato.json"); STATO = json.load(open(STATO_P)) if os.path.exists(STATO_P) else {}
 FORZA = "--uscita" in sys.argv
+if STATO.get("versione") != 2:
+    for f in ("storico.sqlite", "bilancio.json"):
+        if os.path.exists(os.path.join(D, f)): os.remove(os.path.join(D, f))
+    STATO = {"versione": 2}
+    print("Storico di prova azzerato: il bilancio parte dalla prima uscita ufficiale.")
 
 def J(n):
     try: return json.load(open(os.path.join(D, n)))
@@ -107,8 +112,11 @@ if fare_uscita:
                 if g.get("status") != "final" or (hm in viste and aw in viste): continue
                 viste |= {hm, aw}
                 get(os.path.join("lineups", f"{g['game_id']}.json"), f"{SB}/get_lineups", SH, "POST", {"game_id": str(g["game_id"]), "league": "seriea"})
-    subprocess.run([sys.executable, os.path.join(BASE, "predizioni.py")], check=False)
-    STATO["uscita_giornata"] = md; STATO["uscita_ora"] = NOW.isoformat(timespec="seconds")
+    # solo l'uscita ufficiale (programmata) registra le previsioni nello storico e congela la giornata
+    env = dict(os.environ, REGISTRA="0" if FORZA else "1")
+    subprocess.run([sys.executable, os.path.join(BASE, "predizioni.py")], check=False, env=env)
+    if not FORZA:
+        STATO["uscita_giornata"] = md; STATO["uscita_ora"] = NOW.isoformat(timespec="seconds")
 
 # 4) formazioni ufficiali (finestra di 75 minuti prima del calcio d'inizio)
 for g in (J("striker_schedule.json") or {}).get("data", {}).get("games", []):
@@ -118,6 +126,25 @@ for g in (J("striker_schedule.json") or {}).get("data", {}).get("games", []):
         prev = J(f)
         if not prev or not (prev.get("data") or {}).get("lineups"):
             get(f, f"{SB}/get_lineups", SH, "POST", {"game_id": str(g["game_id"]), "league": "seriea"})
+
+# 5) risultati e verifica dei pronostici (ogni ora; gratis)
+if not fare_uscita:
+    get("fdorg_giocate.json", "https://api.football-data.org/v4/competitions/SA/matches?status=FINISHED", FD)
+try:
+    import sqlite3
+    sys.path.insert(0, BASE); from predizioni import canon
+    db = sqlite3.connect(os.path.join(D, "storico.sqlite"))
+    da_fare = db.execute("SELECT DISTINCT match_id, partita FROM previsioni WHERE esito IS NULL AND mercato LIKE 'SCORER:%'").fetchall(); db.close()
+    finite = {m["id"] for m in (J("fdorg_giocate.json") or {}).get("matches", [])}
+    sched = (J("striker_schedule.json") or {}).get("data", {}).get("games", [])
+    for mid, partita in da_fare:
+        if mid not in finite or os.path.exists(os.path.join(D, "partite", f"{mid}.json")): continue
+        h, a = partita.split("-", 1)
+        g = next((g for g in sched if canon(g["home"]["name"]) == h and canon(g["away"]["name"]) == a), None)
+        if g: get(os.path.join("partite", f"{mid}.json"), f"{SB}/get_game", SH, "POST", {"game_id": str(g["game_id"]), "league": "seriea"})
+except Exception as e:
+    print("verifica marcatori:", e)
+subprocess.run([sys.executable, os.path.join(BASE, "verifica.py")], check=False)
 
 json.dump(META, open(META_P, "w"), indent=1); json.dump(STATO, open(STATO_P, "w"), indent=1)
 subprocess.run([sys.executable, os.path.join(BASE, "genera_sito.py")], check=False)

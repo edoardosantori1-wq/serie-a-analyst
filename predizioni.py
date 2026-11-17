@@ -309,6 +309,8 @@ def main():
     res["calibrazione_combo"] = dict(confronti=conf, scarto_medio=round(sum(c["scarto"] for c in conf)/len(conf), 4) if conf else None)
     json.dump(res, open(os.path.join(D, "pronostici.json"), "w"), ensure_ascii=False, indent=1)
     scrivi_modello_combo(out, MAN)
+    if os.environ.get("REGISTRA", "1") == "0":
+        print("Avvio di prova: previsioni non registrate nello storico."); return
     try:
         registra(res, now)
     except sqlite3.Error as e:
@@ -416,6 +418,9 @@ def registra(res, now):
         for tipo, t in tt.items():
             if t:
                 for s in t["selezioni"]: ins(s["mid"], s["match"], start[s["mid"]].replace("Z", "+00:00"), s, f"tripla_{tipo}", g)
+    for r in res["partite"]:
+        if r.get("pronostico"):
+            ins(r["id"], f'{r["casa"]}-{r["ospite"]}', r["data"].replace("Z", "+00:00"), r["pronostico"], "pronostico", "")
     for s in res["singole"]:
         mid = next(r["id"] for r in res["partite"] if f'{r["casa"]}-{r["ospite"]}' == s["match"])
         ins(mid, s["match"], start[mid].replace("Z", "+00:00"), s, "singola", "")

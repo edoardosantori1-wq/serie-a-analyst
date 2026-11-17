@@ -267,14 +267,15 @@ def _tar_html():
     def riga(nome, x, w):
         meglio = x["modello"] < x["mercato"]
         esito = '<b class="okc">l\'AI è più precisa del mercato</b>' if meglio else '<b class="koc">il mercato è più preciso dell\'AI</b>'
-        return f"<tr><td class=l>{nome}</td><td>{esito}</td><td><b>{round((w or 0)*100)}%</b> AI · {100-round((w or 0)*100)}% mercato</td></tr>"
+        diff = (x["mercato"] - x["modello"]) / x["mercato"] * 100
+        return f"<tr><td class=l>{nome}</td><td>{esito}</td><td><b>{diff:+.1f}%</b></td></tr>"
     R = TR.get("roi_verifica") or {}
     gol = R.get("gol") or {}
     roi_txt = (f'<p class="hint">Giocate virtuali sui gol nella stagione in corso, quando la previsione supera la quota: {gol["giocate"]}, ROI {gol["roi"]*100:+.1f}%. Campione ancora piccolo: va confermato giornata dopo giornata.</p>'
                if gol.get("giocate") else "")
-    return f'''<h2 class="daytitle">Affidabilità dell'AI</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Mercato</th><th>Test su {V["partite"]} partite già giocate</th><th>Peso nel pronostico</th></tr></thead>
+    return f'''<h2 class="daytitle">Affidabilità dell'AI</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Mercato</th><th>Test su {V["partite"]} partite già giocate</th><th>Precisione AI vs mercato</th></tr></thead>
     <tbody>{riga("Chi vince (1X2)", V["logloss_1x2"], met.get("W_1X2"))}{riga("Gol (Over/Under)", V["logloss_gol"], met.get("W_GOL"))}</tbody></table></div>
-    <p class="hint">Ogni settimana l'AI viene rimessa alla prova sulle partite già giocate, usando solo i dati disponibili prima di ciascuna partita, e confrontata con le quote di chiusura. Dove è più precisa pesa di più nel pronostico, dove il mercato è più preciso pesa di più il mercato.</p>{roi_txt}'''
+    <p class="hint">Ogni settimana l'AI viene rimessa alla prova sulle partite già giocate, usando solo i dati disponibili prima di ciascuna partita, e confrontata con le quote di chiusura. I pronostici sono sempre quelli dell'AI: questo test dice quanto fidarsi, mercato per mercato (sopra zero = AI più precisa).</p>{roi_txt}'''
 TAR_HTML = _tar_html()
 FONTI = [("Calendario e risultati", "football-data.org", "fdorg_prossime.json"), ("Risultati, tiri, xG partita, quote di chiusura", "football-data.co.uk", "fdcouk_corrente.csv"),
          ("Quote Eurobet", "OddsPapi (eurobet.it)", "oddspapi_quote.json"), ("Statistiche, xG ed Elo di squadra", "StrikerAPI", "striker_team_stats.json"),

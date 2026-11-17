@@ -23,8 +23,13 @@ try: TAR = json.load(open(os.path.join(D, "taratura.json")))
 except Exception: pass
 PAR_1X2 = TAR.get("par_1x2") or dict(xi=0.002, k=4.0, alpha=0.5)   # chi vince: forza di lungo periodo
 PAR_GOL = TAR.get("par_gol") or dict(xi=0.02, k=8.0, alpha=0.8)    # gol: forma recente, soprattutto xG
-W_1X2 = TAR.get("w_1x2", 0.0)    # peso del modello sull'1X2 (il resto e' mercato)
-W_GOL = TAR.get("w_gol", 0.5)    # peso del modello sul numero di gol
+# MODALITA "AI": il pronostico nasce SOLO dall'analisi delle squadre (scelta dell'utente); le quote servono
+# solo dopo, per dire se conviene giocarlo (stella) e per il valore delle triple. "MISTO": pesi del test.
+MODALITA = os.environ.get("MODALITA", "AI")
+if MODALITA == "AI":
+    W_1X2, W_GOL = 1.0, 1.0
+else:
+    W_1X2 = TAR.get("w_1x2", 0.0); W_GOL = TAR.get("w_gol", 0.5)
 XI, K, ALPHA = PAR_GOL["xi"], PAR_GOL["k"], PAR_GOL["alpha"]
 PROMOSSE = ("Frosinone", "Monza", "Venezia")
 # Quota combo stimata = 1 / (prob. di mercato dal risultato esatto x (1 + margine 1X2 Eurobet x FATTORE)).
@@ -77,12 +82,11 @@ def compatibili(chiavi):
     return any(all(x(i, j) for x in f) for i in range(8) for j in range(8))
 
 def pronostico(sel):
-    """Un pronostico per partita: se c'e' una value bet la si sceglie; altrimenti, tra le giocate con probabilita'
-    >= 55% e quota >= 1.30, quella con l'EV migliore (preferendo le quote reali a parita' di EV)."""
-    c = [s for s in sel if not s["ht"]]
+    """Un pronostico per partita, dall'analisi dell'AI: tra le giocate che l'AI ritiene probabili (>= 55%) con
+    quota >= 1.30, prima quelle con la stella (quota sbagliata a favore), poi quella con l'EV migliore."""
+    c = [s for s in sel if not s["ht"] and s["p"] >= 0.55 and s["quota"] >= 1.30]
     v = [s for s in c if s["cat"] == "value"]
     if v: return max(v, key=lambda s: s["ev"])
-    c = [s for s in c if s["p"] >= 0.55 and s["quota"] >= 1.30]
     if not c: return None
     # prudenza sulle quote stimate finche' la calibrazione non misura il margine reale delle combo
     pen = 0.0 if CALIBRATA else 0.04
@@ -92,8 +96,9 @@ def categoria(s):
     """Classificazione richiesta dalla specifica: evento molto probabile / value bet / alto rischio / senza valore."""
     # value (stella): quota Eurobet reale, EV >= +5% sul modello, 4 punti oltre la prob. implicita
     # E Eurobet paga almeno il 2% piu' della quota equa di Pinnacle (senza Pinnacle niente stella)
+    # In modalita' AI la stella nasce dall'analisi: basta che l'AI veda almeno +5% di EV e 4 punti di vantaggio.
     if (s.get("fonte") != "stimata" and s["ev"] >= SING_EV and s["p"] - s["p_impl"] >= SING_EDGE
-            and s.get("p_pin") and s["quota"] * s["p_pin"] - 1 >= 0.02): return "value"
+            and (MODALITA == "AI" or (s.get("p_pin") and s["quota"] * s["p_pin"] - 1 >= 0.02))): return "value"
     if s["p"] >= 0.70: return "probabile"
     if s["p"] < 0.35: return "alto rischio"
     return "senza valore"
@@ -366,8 +371,10 @@ def main():
     triple = {}
     for nome_g, wd in (("sabato", 5), ("domenica", 6)):
         usate = set(); triple[nome_g] = {}
-        for tipo, pmin, evmin, qlo, qhi in TIPI:
-            best = None
+        for tipo, pmin, evmin0, qlo, qhi in TIPI:
+          best = None
+          for evmin in (evmin0, evmin0 - 0.10):      # se non si trova nulla, si allarga un po' il filtro EV
+            if best: break
             cs = [c for c in cand(wd, pmin, evmin) if (c["mid"], c["k"]) not in usate]
             if tipo == "aggressiva":     # solo combo (2 o 3 condizioni), quota 1.80-4.00 ciascuna
                 cs = [c for c in cs if c["k"].startswith("C:") and 1.80 <= c["quota"] <= 4.00]
@@ -400,7 +407,7 @@ def main():
     marcatori = stima_marcatori(out, Q)
     evitare = [dict(match=f'{r["casa"]}-{r["ospite"]}', motivi=r["avvisi"]) for r in out if r.get("avvisi")]
     res = dict(generato=now.isoformat(timespec="seconds"), giornata=md, partite=out, triple=triple, singole=sing, evitare=evitare, marcatori=marcatori,
-               metodo=dict(W_1X2=W_1X2, W_GOL=W_GOL, par_1x2=PAR_1X2, par_gol=PAR_GOL, rho=RHO, backtest=BACKTEST,
+               metodo=dict(modalita=MODALITA, W_1X2=W_1X2, W_GOL=W_GOL, par_1x2=PAR_1X2, par_gol=PAR_GOL, rho=RHO, backtest=BACKTEST,
                            taratura={k: TAR.get(k) for k in ("generato", "stagioni", "taratura", "verifica_stagione_corrente", "roi_verifica", "nota")} if TAR else None))
     # confronto stime vs quote reali inserite (per ricalibrare FATTORE_MARGINE_COMBO)
     conf = []

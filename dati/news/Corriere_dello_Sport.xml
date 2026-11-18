@@ -5,7 +5,42 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 18 Nov 2026 11:51:02 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Nov 2026 13:05:27 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[De Laurentiis ha firmato l&#39;acquisto del nuovo centro sportivo del Napoli: &quot;Oggi &egrave; un nuovo inizio&quot;]]></title>
+            <description><![CDATA[Il presidente azzurro questa mattina si &egrave; recato insieme al sindaco di Qualiano nel centro notarile in via dei Mille, nel quartiere Chiaia,&nbsp;per sottoscrivere il preliminare d&rsquo;acquisto dei terreni dove sorger&agrave; la nuova casa della societ&agrave;: quando inizieranno i lavori]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/18-152668270/de_laurentiis_ha_firmato_l_acquisto_del_nuovo_centro_sportivo_del_napoli_oggi_un_nuovo_inizio/</link>
+            <guid isPermaLink="false">sn:cds:152668270</guid>
+            <category><![CDATA[napoli]]></category>
+            <category><![CDATA[Centro sportivo]]></category>
+            <category><![CDATA[De Laurentiis]]></category>
+            <pubDate>Wed, 18 Nov 2026 12:08:03 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/120413642-99898f1b-3df2-4771-a068-e1f4993e1a4b.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/120413642-99898f1b-3df2-4771-a068-e1f4993e1a4b.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/120413642-99898f1b-3df2-4771-a068-e1f4993e1a4b.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il presidente azzurro questa mattina si &egrave; recato insieme al sindaco di Qualiano nel centro notarile in via dei Mille, nel quartiere Chiaia,&nbsp;per sottoscrivere il preliminare d&rsquo;acquisto dei terreni dove sorger&agrave; la nuova casa della societ&agrave;: quando inizieranno i lavori]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Gli arbitri della dodicesima giornata di Serie A: a Sozza Parma-Roma, Marcenaro per la Lazio]]></title>
+            <description><![CDATA[Note le designazioni per i match di campionato: Maresca per Atalanta-Inter, torna Ferrieri Caputi]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/18-152668014/gli_arbitri_della_dodicesima_giornata_di_serie_a_a_sozza_parma-roma_marcenaro_per_la_lazio/</link>
+            <guid isPermaLink="false">sn:cds:152668014</guid>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[Arbitri]]></category>
+            <pubDate>Wed, 18 Nov 2026 12:01:45 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/120136964-75af17a6-cc90-4be5-a24b-3b300e21d85c.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/120136964-75af17a6-cc90-4be5-a24b-3b300e21d85c.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/120136964-75af17a6-cc90-4be5-a24b-3b300e21d85c.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Note le designazioni per i match di campionato: Maresca per Atalanta-Inter, torna Ferrieri Caputi]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Aperta la trasferta di Parma per i tifosi della Roma: la decisione, la modalit&agrave; di vendita dei biglietti e tutti i dettagli]]></title>
             <description><![CDATA[La decisione del Casms in vista della sfida di sabato 21 novembre]]></description>
@@ -517,42 +552,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Con l&rsquo;80,9% di parate &egrave; primo in campionato. Aveva rinnovato nel 2025, poi l&rsquo;addio scosso dal caso stipendi]]></dcterms:alternative>
             <dc:creator><![CDATA[Carlo Roscito]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Il Profeta della Lazio &egrave; Taylor, Hernanes stregato: &ldquo;Vede la giocata nel futuro&rdquo;]]></title>
-            <description><![CDATA[L&rsquo;ex trequartista della Lazio ha incoronato l&rsquo;olandese cedendogli il nome d&rsquo;arte. Passaggi in verticale e contrasti i suoi record]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/16-152628190/il_profeta_della_lazio_taylor_hernanes_stregato_vede_la_giocata_nel_futuro/</link>
-            <guid isPermaLink="false">sn:cds:152628190</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Taylor]]></category>
-            <category><![CDATA[Lazio]]></category>
-            <pubDate>Mon, 16 Nov 2026 07:19:38 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/16/062828299-37fd3902-4f4b-4cd2-9cf2-5db66184f757.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/16/062828299-37fd3902-4f4b-4cd2-9cf2-5db66184f757.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/16/062828299-37fd3902-4f4b-4cd2-9cf2-5db66184f757.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&rsquo;ex trequartista della Lazio ha incoronato l&rsquo;olandese cedendogli il nome d&rsquo;arte. Passaggi in verticale e contrasti i suoi record]]></dcterms:alternative>
-            <dc:creator><![CDATA[Daniele Rindone]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Soul&eacute; strega l&rsquo;Argentina: la Roma si gode il suo gioiello, Gasperini lo blinda]]></title>
-            <description><![CDATA[L&#39;attaccante giallorosso ha colpito il ct Scaloni e i tifosi argentini. Merito di Gasperini che lo ha reso pi&ugrave; concreto e incisivo sotto porta&nbsp;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/16-152628186/soul_strega_largentina_la_roma_si_gode_il_suo_gioiello_gasperini_lo_blinda/</link>
-            <guid isPermaLink="false">sn:cds:152628186</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Roma]]></category>
-            <category><![CDATA[Soulé]]></category>
-            <pubDate>Mon, 16 Nov 2026 07:04:27 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/16/060706472-755d1a8f-72bd-4911-ac63-b768d3431c1f.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/16/060706472-755d1a8f-72bd-4911-ac63-b768d3431c1f.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/16/060706472-755d1a8f-72bd-4911-ac63-b768d3431c1f.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&#39;attaccante giallorosso ha colpito il ct Scaloni e i tifosi argentini. Merito di Gasperini che lo ha reso pi&ugrave; concreto e incisivo sotto porta&nbsp;]]></dcterms:alternative>
-            <dc:creator><![CDATA[Jacopo Aliprandi]]></dc:creator>
         </item>
     </channel>
 </rss>

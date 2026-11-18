@@ -5,7 +5,99 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 18 Nov 2026 07:18:10 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Nov 2026 09:01:43 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Pedro Gon&ccedil;alves, l&#39;intervista esclusiva: &quot;La viola e io siamo perfetti&quot;]]></title>
+            <description><![CDATA[Le parole del portoghse: &quot;Vanoli ci trasmette la mentalit&agrave; vincente. Andremo lontano&quot;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/fiorentina/2026/11/18-152664835/pedro_gonalves_l_intervista_esclusiva_la_viola_e_io_siamo_perfetti/</link>
+            <guid isPermaLink="false">sn:cds:152664835</guid>
+            <category><![CDATA[Pedro Gonçalves]]></category>
+            <category><![CDATA[Fiorentina]]></category>
+            <category><![CDATA[oggi]]></category>
+            <pubDate>Wed, 18 Nov 2026 08:39:49 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/083531347-361bc75f-8f1f-4ef0-b88e-24b7c8b38d98.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/083531347-361bc75f-8f1f-4ef0-b88e-24b7c8b38d98.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/083531347-361bc75f-8f1f-4ef0-b88e-24b7c8b38d98.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Le parole del portoghse: &quot;Vanoli ci trasmette la mentalit&agrave; vincente. Andremo lontano&quot;]]></dcterms:alternative>
+            <dc:creator><![CDATA[Francesco Gensini]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[L&rsquo;appello di Gasperini e il ruolo di Dan Friedkin: la strategia per il calciomercato. E ci sono vari nomi in lista]]></title>
+            <description><![CDATA[Gennaio &egrave; l&rsquo;occasione per vedere&nbsp; la propriet&agrave; &laquo;pi&ugrave; coinvolta&raquo;. Piani Gittens e Odoi, idea Pascini. Sondato Scherhant, anche un terzino per completarsi &nbsp;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/18-152662230/lappello_di_gasperini_e_il_ruolo_di_dan_friedkin_la_strategia_per_il_calciomercato_e_ci_sono_vari_nomi_in_lista/</link>
+            <guid isPermaLink="false">sn:cds:152662230</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Roma]]></category>
+            <category><![CDATA[Friedkin]]></category>
+            <pubDate>Wed, 18 Nov 2026 08:24:10 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/062615201-c54e22b8-add7-4281-a9c2-e23339c7c122.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/062615201-c54e22b8-add7-4281-a9c2-e23339c7c122.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>AS Roma via Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/062615201-c54e22b8-add7-4281-a9c2-e23339c7c122.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Gennaio &egrave; l&rsquo;occasione per vedere&nbsp; la propriet&agrave; &laquo;pi&ugrave; coinvolta&raquo;. Piani Gittens e Odoi, idea Pascini. Sondato Scherhant, anche un terzino per completarsi &nbsp;]]></dcterms:alternative>
+            <dc:creator><![CDATA[Giorgio Marota]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[La Juve e la forza di trattenere Alajbegovic: il rilancio non pu&ograve; passare da Woltemade o Kolo Muani...]]></title>
+            <description><![CDATA[Il commento sul mercato dei bianconeri tra presente e futuro]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/18-152663906/la_juve_e_la_forza_di_trattenere_alajbegovic_il_rilancio_non_pu_passare_da_woltemade_o_kolo_muani_/</link>
+            <guid isPermaLink="false">sn:cds:152663906</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[juve]]></category>
+            <category><![CDATA[Alajbegovic]]></category>
+            <pubDate>Wed, 18 Nov 2026 08:21:01 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/082050195-e0d6b71d-75da-4359-9334-258edf62d6b0.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/082050195-e0d6b71d-75da-4359-9334-258edf62d6b0.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Juventus FC via Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/082050195-e0d6b71d-75da-4359-9334-258edf62d6b0.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il commento sul mercato dei bianconeri tra presente e futuro]]></dcterms:alternative>
+            <dc:creator><![CDATA[Vittorio Oreggia]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Gudmundsson ritorna, recupero importante per Gattuso: sar&agrave; convocato contro il Lecce]]></title>
+            <description><![CDATA[L&rsquo;infortunio alla spalla &egrave; solo un ricordo. Dopo l&rsquo;impiego in amichevole, adesso ha bisogno di ritrovare la forma ideale&nbsp;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/18-152662953/gudmundsson_ritorna_recupero_importante_per_gattuso_sar_convocato_contro_il_lecce/</link>
+            <guid isPermaLink="false">sn:cds:152662953</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Lazio]]></category>
+            <category><![CDATA[gudmundsson]]></category>
+            <pubDate>Wed, 18 Nov 2026 07:50:40 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/071010654-824677be-9454-4da2-9921-f8e0ea9f2a05.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/071010654-824677be-9454-4da2-9921-f8e0ea9f2a05.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/071010654-824677be-9454-4da2-9921-f8e0ea9f2a05.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[L&rsquo;infortunio alla spalla &egrave; solo un ricordo. Dopo l&rsquo;impiego in amichevole, adesso ha bisogno di ritrovare la forma ideale&nbsp;]]></dcterms:alternative>
+            <dc:creator><![CDATA[Marco Ercole]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Gasperini recupera quattro titolari per Parma: da Dybala a Kon&eacute;, tutto sulle loro condizioni]]></title>
+            <description><![CDATA[In infermeria resta solo Pellegrini: cos&igrave; il tecnico fa il pieno di leader]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/18-152662225/gasperini_recupera_quattro_titolari_per_parma_da_dybala_a_kon_tutto_sulle_loro_condizioni/</link>
+            <guid isPermaLink="false">sn:cds:152662225</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Roma]]></category>
+            <category><![CDATA[Gasperini]]></category>
+            <category><![CDATA[Dybala]]></category>
+            <category><![CDATA[Svilar]]></category>
+            <pubDate>Wed, 18 Nov 2026 07:31:13 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/060423297-08feccd4-7e5d-4bbf-a682-09c0837ae2f2.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/060423297-08feccd4-7e5d-4bbf-a682-09c0837ae2f2.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/060423297-08feccd4-7e5d-4bbf-a682-09c0837ae2f2.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[In infermeria resta solo Pellegrini: cos&igrave; il tecnico fa il pieno di leader]]></dcterms:alternative>
+            <dc:creator><![CDATA[Giorgio Marota]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Il futuro di Yildiz diventa un enigma: &egrave; tornato sul campo ma il completo recupero potrebbe slittare]]></title>
             <description><![CDATA[Tanti dubbi alla Continassa: adesso il rientro potrebbe arrivare nel 2027. Valutazioni continue in attesa di certezze &nbsp;]]></description>
@@ -461,99 +553,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[L&#39;Assemblea ha approvato all&#39;unanimit&agrave; il prolungamento della partnership con Trenitalia per la sponsorizzazione della Coppa Italia]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Milan, Amorim convince: in 5 mesi ha trovato la fiducia di tutti]]></title>
-            <description><![CDATA[Il club rossonero, sempre pi&ugrave; convinto della scelta estiva, &egrave; pronto ad aiutare il tecnico: a gennaio gi&agrave; programmati due o tre innesti per aumentare il livello della rosa]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/milan/2026/11/15-152603530/milan_amorim_convince_in_5_mesi_ha_trovato_la_fiducia_di_tutti/</link>
-            <guid isPermaLink="false">sn:cds:152603530</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Milan]]></category>
-            <category><![CDATA[Amorim]]></category>
-            <pubDate>Sun, 15 Nov 2026 09:35:32 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/15/093005504-e3237fff-399b-4868-a05d-845940cb57c1.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/093005504-e3237fff-399b-4868-a05d-845940cb57c1.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/093005504-e3237fff-399b-4868-a05d-845940cb57c1.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il club rossonero, sempre pi&ugrave; convinto della scelta estiva, &egrave; pronto ad aiutare il tecnico: a gennaio gi&agrave; programmati due o tre innesti per aumentare il livello della rosa]]></dcterms:alternative>
-            <dc:creator><![CDATA[Antonello Gioia]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Soul&eacute; stupisce anche l&rsquo;Argentina, Fernandez lo esalta: &quot;Straordinario&quot;]]></title>
-            <description><![CDATA[Ottima prova del talento dei giallorossi contro l&rsquo;Uruguay. E spunta un retroscena Balerdi: il no in estate al Bayer Leverkusen]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/15-152603342/soul_stupisce_anche_largentina_fernandez_lo_esalta_straordinario/</link>
-            <guid isPermaLink="false">sn:cds:152603342</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Soulé]]></category>
-            <category><![CDATA[argentina]]></category>
-            <category><![CDATA[Roma]]></category>
-            <pubDate>Sun, 15 Nov 2026 09:25:53 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/15/092435290-f8b1e455-a74b-4a95-8334-fe21455b0a17.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/092435290-f8b1e455-a74b-4a95-8334-fe21455b0a17.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/092435290-f8b1e455-a74b-4a95-8334-fe21455b0a17.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Ottima prova del talento dei giallorossi contro l&rsquo;Uruguay. E spunta un retroscena Balerdi: il no in estate al Bayer Leverkusen]]></dcterms:alternative>
-            <dc:creator><![CDATA[Jacopo Aliprandi]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[La Lazio in ansia per i suoi big: Frattesi spera, visite pure per Zaccagni e Tavares]]></title>
-            <description><![CDATA[Il punto sull&rsquo;infermeria in casa biancoceleste: il centrocampista, tornato dalla Nazionale, atteso dagli esami]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/15-152602063/la_lazio_in_ansia_per_i_suoi_big_frattesi_spera_visite_pure_per_zaccagni_e_tavares/</link>
-            <guid isPermaLink="false">sn:cds:152602063</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Lazio]]></category>
-            <category><![CDATA[Infortuni]]></category>
-            <category><![CDATA[frattesi]]></category>
-            <pubDate>Sun, 15 Nov 2026 08:30:02 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/15/074927053-491122e5-ae2d-4c64-914a-5c55bc3a4515.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/074927053-491122e5-ae2d-4c64-914a-5c55bc3a4515.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/074927053-491122e5-ae2d-4c64-914a-5c55bc3a4515.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il punto sull&rsquo;infermeria in casa biancoceleste: il centrocampista, tornato dalla Nazionale, atteso dagli esami]]></dcterms:alternative>
-            <dc:creator><![CDATA[Daniele Rindone]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[&quot;La Lazio ti prende&quot;: Gattuso sempre pi&ugrave; carico e coinvolto nel progetto biancoceleste]]></title>
-            <description><![CDATA[L&rsquo;allenatore ci crede e culla un sogno: festeggiare sotto la Curva Nord. &quot;Sapevo dove sarei arrivato, che ci avrei messo poco ad affezionarmi alle persone che sono qui&quot;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/15-152601797/la_lazio_ti_prende_gattuso_sempre_pi_carico_e_coinvolto_nel_progetto_biancoceleste/</link>
-            <guid isPermaLink="false">sn:cds:152601797</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Gattuso]]></category>
-            <category><![CDATA[Lazio]]></category>
-            <pubDate>Sun, 15 Nov 2026 07:50:25 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/15/074538435-0db0215a-d2b5-416c-9b58-fbd87bb884aa.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/074538435-0db0215a-d2b5-416c-9b58-fbd87bb884aa.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/074538435-0db0215a-d2b5-416c-9b58-fbd87bb884aa.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&rsquo;allenatore ci crede e culla un sogno: festeggiare sotto la Curva Nord. &quot;Sapevo dove sarei arrivato, che ci avrei messo poco ad affezionarmi alle persone che sono qui&quot;]]></dcterms:alternative>
-            <dc:creator><![CDATA[Daniele Rindone]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Dybala compie 33 anni, Gasperini lo carica: &quot;&Egrave; il tuo momento&quot;]]></title>
-            <description><![CDATA[Un giorno speciale per l&#39;argentino, pronto a tornare a disposizione del tecnico e a riprendersi il suo posto nella Roma: tutti i dettagli]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/15-152601690/dybala_compie_33_anni_gasperini_lo_carica_il_tuo_momento/</link>
-            <guid isPermaLink="false">sn:cds:152601690</guid>
-            <category><![CDATA[Roma]]></category>
-            <category><![CDATA[Dybala]]></category>
-            <category><![CDATA[Gasperini]]></category>
-            <category><![CDATA[oggi]]></category>
-            <pubDate>Sun, 15 Nov 2026 07:46:24 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/15/074505228-8d58fbb5-2163-4fd1-aafb-4c1a7dc59783.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/074505228-8d58fbb5-2163-4fd1-aafb-4c1a7dc59783.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>AS Roma via Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/074505228-8d58fbb5-2163-4fd1-aafb-4c1a7dc59783.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Un giorno speciale per l&#39;argentino, pronto a tornare a disposizione del tecnico e a riprendersi il suo posto nella Roma: tutti i dettagli]]></dcterms:alternative>
-            <dc:creator><![CDATA[Jacopo Aliprandi]]></dc:creator>
         </item>
     </channel>
 </rss>

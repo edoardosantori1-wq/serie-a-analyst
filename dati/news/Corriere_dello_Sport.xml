@@ -5,7 +5,22 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 18 Nov 2026 09:59:10 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Nov 2026 11:51:02 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Aperta la trasferta di Parma per i tifosi della Roma: la decisione, la modalit&agrave; di vendita dei biglietti e tutti i dettagli]]></title>
+            <description><![CDATA[La decisione del Casms in vista della sfida di sabato 21 novembre]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/18-152667070/aperta_la_trasferta_di_parma_per_i_tifosi_della_roma_la_decisione_la_modalit_di_vendita_dei_biglietti_e_tutti_i_dettagli/</link>
+            <guid isPermaLink="false">sn:cds:152667070</guid>
+            <pubDate>Wed, 18 Nov 2026 10:34:39 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/103409895-d8f5bbd5-a84b-486a-b5cc-0f60c65315ee.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/103409895-d8f5bbd5-a84b-486a-b5cc-0f60c65315ee.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>BARTOLETTI</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/103409895-d8f5bbd5-a84b-486a-b5cc-0f60c65315ee.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[La decisione del Casms in vista della sfida di sabato 21 novembre]]></dcterms:alternative>
+            <dc:creator><![CDATA[Chiara Zucchelli]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Moreira con il diavolo in corpo: decisivo sia con il Milan che col Belgio]]></title>
             <description><![CDATA[Il patron Cardinale lo ha acquistato per 51 milioni di euro per alzare il livello e la competitivit&agrave; della squadra: il colpo &egrave; riuscito]]></description>
@@ -538,21 +553,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[L&#39;attaccante giallorosso ha colpito il ct Scaloni e i tifosi argentini. Merito di Gasperini che lo ha reso pi&ugrave; concreto e incisivo sotto porta&nbsp;]]></dcterms:alternative>
             <dc:creator><![CDATA[Jacopo Aliprandi]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Sabatini e gli spintoni a Massara: Gasperini pronto a denunciare, la sua reazione]]></title>
-            <description><![CDATA[L&rsquo;ex ds della Roma si scusa sui social, ma Gasp vuole agire in sede civile e in caso di vittoria dar&agrave; tutto in beneficenza]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/15-152622824/sabatini_e_gli_spintoni_a_massara_gasperini_pronto_a_denunciare_la_sua_reazione/</link>
-            <guid isPermaLink="false">sn:cds:152622824</guid>
-            <pubDate>Sun, 15 Nov 2026 20:25:17 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/15/202508957-300f2cb8-14ca-4f27-bda7-5da83d628e5d.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/202508957-300f2cb8-14ca-4f27-bda7-5da83d628e5d.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/202508957-300f2cb8-14ca-4f27-bda7-5da83d628e5d.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&rsquo;ex ds della Roma si scusa sui social, ma Gasp vuole agire in sede civile e in caso di vittoria dar&agrave; tutto in beneficenza]]></dcterms:alternative>
-            <dc:creator><![CDATA[Chiara Zucchelli]]></dc:creator>
         </item>
     </channel>
 </rss>

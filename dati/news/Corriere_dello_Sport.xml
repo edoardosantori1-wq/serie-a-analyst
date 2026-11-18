@@ -5,7 +5,26 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 18 Nov 2026 20:49:05 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Nov 2026 21:54:22 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[McKennie rassicura la Juve sul futuro: &quot;Resto qui a lungo&quot;]]></title>
+            <description><![CDATA[Smentita l&#39;ipotesi di seguire a Manchester l&#39;ex ct degli Usa Pochettino]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/18-152678040/mckennie_rassicura_la_juve_sul_futuro_resto_qui_a_lungo/</link>
+            <guid isPermaLink="false">sn:cds:152678040</guid>
+            <category><![CDATA[Juventus]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[Pochettino]]></category>
+            <category><![CDATA[United]]></category>
+            <pubDate>Wed, 18 Nov 2026 21:08:50 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/210802151-9f03eb04-4fe3-4194-abfa-fe0d0d37eb7c.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/210802151-9f03eb04-4fe3-4194-abfa-fe0d0d37eb7c.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Juventus FC via Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/210802151-9f03eb04-4fe3-4194-abfa-fe0d0d37eb7c.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Smentita l&#39;ipotesi di seguire a Manchester l&#39;ex ct degli Usa Pochettino]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Spalletti e il Cobolli calciatore: &quot;Me lo ricordo a Trigoria con Bove e Calafiori&quot;]]></title>
             <description><![CDATA[Il tecnico della Juve intercettato a Torino prima della sfida tra Flavio e Tiafoe per le Nitto Atp Finals]]></description>
@@ -527,24 +546,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/16/194240271-a3b3ebc8-94c9-46dc-8c0c-79b1eb001d8b.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[A pochi giorni dalla ripresa del campionato, arriva il report medico ufficiale del club biancoceleste: aggiornamenti anche su Nuno Tavares]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Bologna, differenziato per Cambiaghi: possibile forfait contro l&#39;Udinese]]></title>
-            <description><![CDATA[L&#39;esterno &egrave; tornato a lavorare a Casteldebole dopo l&#39;infortunio in Nazionale. Differenziato anche per Miranda ed Enem]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/bologna/2026/11/16-152635231/bologna_differenziato_per_cambiaghi_possibile_forfait_contro_l_udinese/</link>
-            <guid isPermaLink="false">sn:cds:152635231</guid>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[Bologna]]></category>
-            <category><![CDATA[cambiaghi]]></category>
-            <pubDate>Mon, 16 Nov 2026 14:08:20 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/16/135749179-8d680990-305b-41a7-95f4-521c3647ac85.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/16/135749179-8d680990-305b-41a7-95f4-521c3647ac85.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/16/135749179-8d680990-305b-41a7-95f4-521c3647ac85.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&#39;esterno &egrave; tornato a lavorare a Casteldebole dopo l&#39;infortunio in Nazionale. Differenziato anche per Miranda ed Enem]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

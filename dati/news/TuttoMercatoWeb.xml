@@ -14,6 +14,15 @@
     </image>
     <atom:link href="https://www.tuttomercatoweb.com/rss/" rel="self" type="application/rss+xml"/>
     <item>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/altre-notizie/i-le-partite-oggi-i-programma-mercoledi-18-novembre-2294807</guid>
+      <pubDate>Wed, 18 Nov 2026 04:30:27 +0100</pubDate>
+      <title>Le partite di oggi: il programma di mercoledì 18 novembre</title>
+      <link>https://www.tuttomercatoweb.com/altre-notizie/i-le-partite-oggi-i-programma-mercoledi-18-novembre-2294807</link>
+      <description>La sosta per le nazionali è andata in archivio, ma ci sono partite comunque da poter seguire anche in data odierna, mercoledì 18 novembre 2026.</description>
+      <category>Altre Notizie</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/20/2043f1a1a34ba3dcd3534f6b8600031a-48976-oooz0000.jpeg" length="107026" type="image/jpeg"/>
+    </item>
+    <item>
       <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/i-calciomercato-i-stop-indiscrezioni-trattative-retroscena-17-novembre-2294888</guid>
       <pubDate>Wed, 18 Nov 2026 01:00:51 +0100</pubDate>
       <title>Calciomercato no stop - Indiscrezioni, trattative e retroscena del 17 novembre</title>
@@ -184,15 +193,6 @@ Dybala...</description>
       <description>Recentemente è andato virale lo scontro tra Mauro Icardi e Wanda Nara.</description>
       <category>Serie A</category>
       <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/4d/4d0a329ca2271eba990d6c368b74b881-55970-oooz0000.jpeg" length="59439" type="image/jpeg"/>
-    </item>
-    <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/calcio-estero/lucas-vazquez-stregato-yamal-mai-talento-genere-star-2294848</guid>
-      <pubDate>Tue, 17 Nov 2026 23:56:40 +0100</pubDate>
-      <title>Lucas Vazquez stregato da Yamal: “Mai visto un talento del genere, sarà a lungo una star”</title>
-      <link>https://www.tuttomercatoweb.com/calcio-estero/lucas-vazquez-stregato-yamal-mai-talento-genere-star-2294848</link>
-      <description>La rivalità tra Real Madrid e Barcellona passa in secondo piano di fronte al talento di Lamine Yamal.</description>
-      <category>Calcio estero</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/04/043d668eaeda4afa9514830cfada48d8-85763-oooz0000.jpeg" length="63176" type="image/jpeg"/>
     </item>
   </channel>
 </rss>

@@ -5,7 +5,63 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 18 Nov 2026 09:01:43 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Nov 2026 09:59:10 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Moreira con il diavolo in corpo: decisivo sia con il Milan che col Belgio]]></title>
+            <description><![CDATA[Il patron Cardinale lo ha acquistato per 51 milioni di euro per alzare il livello e la competitivit&agrave; della squadra: il colpo &egrave; riuscito]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/milan/2026/11/18-152665612/moreira_con_il_diavolo_in_corpo_decisivo_sia_con_il_milan_che_col_belgio/</link>
+            <guid isPermaLink="false">sn:cds:152665612</guid>
+            <category><![CDATA[Moreira]]></category>
+            <category><![CDATA[Milan]]></category>
+            <category><![CDATA[Belgio]]></category>
+            <category><![CDATA[oggi]]></category>
+            <pubDate>Wed, 18 Nov 2026 09:30:13 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/092426128-927a9618-6ad3-40bf-86ce-a6a6ff669882.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/092426128-927a9618-6ad3-40bf-86ce-a6a6ff669882.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>EPA</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/092426128-927a9618-6ad3-40bf-86ce-a6a6ff669882.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il patron Cardinale lo ha acquistato per 51 milioni di euro per alzare il livello e la competitivit&agrave; della squadra: il colpo &egrave; riuscito]]></dcterms:alternative>
+            <dc:creator><![CDATA[Antonello Gioia]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Francesco Guidolin, l&#39;intervista: &quot;Il Bologna ora corre&quot;]]></title>
+            <description><![CDATA[Sotto le Due Torri ha lasciato il cuore: &quot;Cambiaghi&amp;c., che forza&nbsp; gli esterni: sono temibili&quot;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/bologna/2026/11/18-152665488/francesco_guidolin_l_intervista_il_bologna_ora_corre/</link>
+            <guid isPermaLink="false">sn:cds:152665488</guid>
+            <category><![CDATA[Bologna]]></category>
+            <category><![CDATA[Guidolin]]></category>
+            <category><![CDATA[oggi]]></category>
+            <pubDate>Wed, 18 Nov 2026 09:14:15 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/091047345-b0bd0d37-b9c4-4e0c-be2b-d967ff833c5c.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/091047345-b0bd0d37-b9c4-4e0c-be2b-d967ff833c5c.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>REUTERS</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/091047345-b0bd0d37-b9c4-4e0c-be2b-d967ff833c5c.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Sotto le Due Torri ha lasciato il cuore: &quot;Cambiaghi&amp;c., che forza&nbsp; gli esterni: sono temibili&quot;]]></dcterms:alternative>
+            <dc:creator><![CDATA[Dario Cervellati]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Fabio Liverani, l&#39;intervista: &quot;Lazio-Lecce la mia sfida del cuore&quot;]]></title>
+            <description><![CDATA[Ha giocato a Roma, ha allenato i salentini Partita speciale per lui: &quot;Ho ricordi straordinari&quot;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/18-152664841/fabio_liverani_l_intervista_lazio-lecce_la_mia_sfida_del_cuore/</link>
+            <guid isPermaLink="false">sn:cds:152664841</guid>
+            <category><![CDATA[liverani]]></category>
+            <category><![CDATA[Lazio]]></category>
+            <category><![CDATA[Lecce]]></category>
+            <category><![CDATA[oggi]]></category>
+            <pubDate>Wed, 18 Nov 2026 09:05:51 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/084105261-5ee3f00f-4b51-4061-b44f-fb1eb9cfea19.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/084105261-5ee3f00f-4b51-4061-b44f-fb1eb9cfea19.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>ANSA</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/084105261-5ee3f00f-4b51-4061-b44f-fb1eb9cfea19.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Ha giocato a Roma, ha allenato i salentini Partita speciale per lui: &quot;Ho ricordi straordinari&quot;]]></dcterms:alternative>
+            <dc:creator><![CDATA[Dennis Magrì]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Pedro Gon&ccedil;alves, l&#39;intervista esclusiva: &quot;La viola e io siamo perfetti&quot;]]></title>
             <description><![CDATA[Le parole del portoghse: &quot;Vanoli ci trasmette la mentalit&agrave; vincente. Andremo lontano&quot;]]></description>
@@ -497,62 +553,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[L&rsquo;ex ds della Roma si scusa sui social, ma Gasp vuole agire in sede civile e in caso di vittoria dar&agrave; tutto in beneficenza]]></dcterms:alternative>
             <dc:creator><![CDATA[Chiara Zucchelli]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Sabatini e la clamorosa ricostruzione sulla lite Massara-Gasperini: &quot;L&#39;ha spinto davanti a tutta la squadra e...&quot;]]></title>
-            <description><![CDATA[L&rsquo;ex direttore sportivo giallorosso racconta un episodio della scorsa stagione tra l&rsquo;allenatore e l&#39;allora dirigente della Roma: ecco cosa ha detto]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/15-152605848/sabatini_e_la_clamorosa_ricostruzione_sulla_lite_massara-gasperini_l_ha_spinto_davanti_a_tutta_la_squadra_e_/</link>
-            <guid isPermaLink="false">sn:cds:152605848</guid>
-            <category><![CDATA[Roma]]></category>
-            <category><![CDATA[Gasperini]]></category>
-            <category><![CDATA[massara]]></category>
-            <category><![CDATA[Sabatini]]></category>
-            <pubDate>Sun, 15 Nov 2026 12:20:10 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/15/120726250-b97d8528-585e-466f-b0ca-2a7c4371cba4.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/120726250-b97d8528-585e-466f-b0ca-2a7c4371cba4.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/120726250-b97d8528-585e-466f-b0ca-2a7c4371cba4.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&rsquo;ex direttore sportivo giallorosso racconta un episodio della scorsa stagione tra l&rsquo;allenatore e l&#39;allora dirigente della Roma: ecco cosa ha detto]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Pancaro racconta la &ldquo;sua&rdquo; Lazio e svela: &ldquo;Oggi Gattuso ha cambiato la squadra. Lo sento spesso&hellip;&rdquo;]]></title>
-            <description><![CDATA[L&rsquo;ex difensore biancoceleste premiato a Nepi: &quot;Con Rino abbiamo un rito scaramantico dopo ogni partita. La squadra gioca bene ed &egrave; unita&quot;. E sul passato sceglie Nesta]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/15-152604825/pancaro_racconta_la_sua_lazio_e_svela_oggi_gattuso_ha_cambiato_la_squadra_lo_sento_spesso/</link>
-            <guid isPermaLink="false">sn:cds:152604825</guid>
-            <category><![CDATA[Lazio]]></category>
-            <category><![CDATA[Pancaro]]></category>
-            <category><![CDATA[Nesta]]></category>
-            <category><![CDATA[Gattuso]]></category>
-            <pubDate>Sun, 15 Nov 2026 11:45:58 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/15/110235486-ebd655c8-f8ca-4818-87f4-93b0a318f413.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/110235486-ebd655c8-f8ca-4818-87f4-93b0a318f413.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/110235486-ebd655c8-f8ca-4818-87f4-93b0a318f413.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&rsquo;ex difensore biancoceleste premiato a Nepi: &quot;Con Rino abbiamo un rito scaramantico dopo ogni partita. La squadra gioca bene ed &egrave; unita&quot;. E sul passato sceglie Nesta]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Lega Serie A, Frecciarossa rinnova per tre anni: i dettagli]]></title>
-            <description><![CDATA[L&#39;Assemblea ha approvato all&#39;unanimit&agrave; il prolungamento della partnership con Trenitalia per la sponsorizzazione della Coppa Italia]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/15-152604634/lega_serie_a_frecciarossa_rinnova_per_tre_anni_i_dettagli/</link>
-            <guid isPermaLink="false">sn:cds:152604634</guid>
-            <category><![CDATA[Lega Serie A]]></category>
-            <category><![CDATA[coppa italia]]></category>
-            <category><![CDATA[Frecciarossa]]></category>
-            <pubDate>Sun, 15 Nov 2026 11:01:45 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/15/105445071-e90e1f1a-96a0-48ed-a94d-1402596774ee.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/105445071-e90e1f1a-96a0-48ed-a94d-1402596774ee.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/15/105445071-e90e1f1a-96a0-48ed-a94d-1402596774ee.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&#39;Assemblea ha approvato all&#39;unanimit&agrave; il prolungamento della partnership con Trenitalia per la sponsorizzazione della Coppa Italia]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>
 </rss>

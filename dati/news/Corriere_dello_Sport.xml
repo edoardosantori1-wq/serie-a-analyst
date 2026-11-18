@@ -5,7 +5,30 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 18 Nov 2026 17:50:19 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Nov 2026 18:48:51 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Caprile, saracinesca&nbsp;Cagliari. Nessuno&nbsp;para pi&ugrave; di lui]]></title>
+            <description><![CDATA[L&#39;estremo difensore rossobl&ugrave; in testa alla classifica&nbsp;delle parate: sono 48 (Carnesecchi 47, Stankovic 46, Palmisani 44, Okoye 43) e secondo con Mandas nel numero di partite (4) senza subire gol (primo Vicario, 5). Nazionale? Intanto ha preso la cittadinanza albanese]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/18-152675109/caprile_saracinesca_cagliari_nessuno_para_pi_di_lui/</link>
+            <guid isPermaLink="false">sn:cds:152675109</guid>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[Cagliari]]></category>
+            <category><![CDATA[Caprile]]></category>
+            <category><![CDATA[Mandas]]></category>
+            <category><![CDATA[Lazio]]></category>
+            <category><![CDATA[Mancini]]></category>
+            <category><![CDATA[nazionale]]></category>
+            <category><![CDATA[Albania]]></category>
+            <pubDate>Wed, 18 Nov 2026 18:16:38 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/180244826-24e428a0-10f3-4cc6-915d-d889df620437.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/180244826-24e428a0-10f3-4cc6-915d-d889df620437.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>ANSA</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/180244826-24e428a0-10f3-4cc6-915d-d889df620437.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[L&#39;estremo difensore rossobl&ugrave; in testa alla classifica&nbsp;delle parate: sono 48 (Carnesecchi 47, Stankovic 46, Palmisani 44, Okoye 43) e secondo con Mandas nel numero di partite (4) senza subire gol (primo Vicario, 5). Nazionale? Intanto ha preso la cittadinanza albanese]]></dcterms:alternative>
+            <dc:creator><![CDATA[Xavier Jacobelli]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Dal video al parco alle provocazioni studiate a tavolino: Balotelli in estasi per il metodo Mourinho]]></title>
             <description><![CDATA[L&#39;ex attaccante nerazzurro ha svelato alcuni interessanti retroscena sullo Special One nel suo biennio interista: i dettagli]]></description>
@@ -527,24 +550,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[L&rsquo;ex rossobl&ugrave; analizza il potenziale offensivo a disposizione di Palladino e trova punti in comune con Federico: &laquo;Ho giocato da regista e mezzala, pu&ograve; farlo anche lui&raquo;]]></dcterms:alternative>
             <dc:creator><![CDATA[Dario Cervellati]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[L&rsquo;Inter ora si fa in quattro: in un mese 9 partite e Supercoppa, Chivu prepara il piano]]></title>
-            <description><![CDATA[Anche la Coppa Italia e la prima finale: nerazzurri pronti a un rush da brividi. Il tecnico sfrutter&agrave; l&rsquo;intera rosa con il turnover]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/16-152631047/linter_ora_si_fa_in_quattro_in_un_mese_9_partite_e_supercoppa_chivu_prepara_il_piano/</link>
-            <guid isPermaLink="false">sn:cds:152631047</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Inter]]></category>
-            <category><![CDATA[Chivu]]></category>
-            <pubDate>Mon, 16 Nov 2026 09:04:24 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/16/090414246-597770a3-aeb7-4b39-9dc3-e93ccc3ae8e1.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/16/090414246-597770a3-aeb7-4b39-9dc3-e93ccc3ae8e1.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Inter via Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/16/090414246-597770a3-aeb7-4b39-9dc3-e93ccc3ae8e1.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Anche la Coppa Italia e la prima finale: nerazzurri pronti a un rush da brividi. Il tecnico sfrutter&agrave; l&rsquo;intera rosa con il turnover]]></dcterms:alternative>
-            <dc:creator><![CDATA[Giorgio Coluccia]]></dc:creator>
         </item>
     </channel>
 </rss>

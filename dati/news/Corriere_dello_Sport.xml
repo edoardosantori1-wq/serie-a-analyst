@@ -5,7 +5,40 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 18 Nov 2026 18:48:51 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Nov 2026 19:59:38 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Spalletti e il Cobolli calciatore: &quot;Me lo ricordo a Trigoria con Bove e Calafiori&quot;]]></title>
+            <description><![CDATA[Il tecnico della Juve intercettato a Torino prima della sfida tra Flavio e Tiafoe per le Nitto Atp Finals]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/18-152676021/spalletti_e_il_cobolli_calciatore_me_lo_ricordo_a_trigoria_con_bove_e_calafiori/</link>
+            <guid isPermaLink="false">sn:cds:152676021</guid>
+            <pubDate>Wed, 18 Nov 2026 19:35:45 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/192604876-7d3eca5a-9400-45b6-aa36-d250ebd433e1.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/192604876-7d3eca5a-9400-45b6-aa36-d250ebd433e1.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/192604876-7d3eca5a-9400-45b6-aa36-d250ebd433e1.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il tecnico della Juve intercettato a Torino prima della sfida tra Flavio e Tiafoe per le Nitto Atp Finals]]></dcterms:alternative>
+            <dc:creator><![CDATA[Simone Zizzari]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[&quot;Finalmente si vede la luce&quot;, le parole di Chiellini caricano la Juve]]></title>
+            <description><![CDATA[Il dirigente bianconero: &quot;Ci sono momenti che possono essere pi&ugrave; difficili, ma il ritorno di Yildiz ci potr&agrave; aiutare molto&quot;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/18-152675641/finalmente_si_vede_la_luce_le_parole_di_chiellini_che_carica_la_juve/</link>
+            <guid isPermaLink="false">sn:cds:152675641</guid>
+            <category><![CDATA[chiellini]]></category>
+            <category><![CDATA[Juventus]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <pubDate>Wed, 18 Nov 2026 19:07:24 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/183240044-da3d318e-12f8-4a98-a478-d5ea00f8f41b.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/183240044-da3d318e-12f8-4a98-a478-d5ea00f8f41b.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>ANSA</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/183240044-da3d318e-12f8-4a98-a478-d5ea00f8f41b.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il dirigente bianconero: &quot;Ci sono momenti che possono essere pi&ugrave; difficili, ma il ritorno di Yildiz ci potr&agrave; aiutare molto&quot;]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Caprile, saracinesca&nbsp;Cagliari. Nessuno&nbsp;para pi&ugrave; di lui]]></title>
             <description><![CDATA[L&#39;estremo difensore rossobl&ugrave; in testa alla classifica&nbsp;delle parate: sono 48 (Carnesecchi 47, Stankovic 46, Palmisani 44, Okoye 43) e secondo con Mandas nel numero di partite (4) senza subire gol (primo Vicario, 5). Nazionale? Intanto ha preso la cittadinanza albanese]]></description>
@@ -513,43 +546,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[L&#39;esterno &egrave; tornato a lavorare a Casteldebole dopo l&#39;infortunio in Nazionale. Differenziato anche per Miranda ed Enem]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Chivu vince la Panchina d&#39;Oro 2026: battuti Fabregas e Gasperini. Premiato anche Alvini]]></title>
-            <description><![CDATA[L&#39;allenatore dell&#39;Inter, con 16 voti totali, ha la meglio sullo spagnolo del Como e il tecnico giallorosso: tutti i premiati]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/16-152633574/chivu_vince_la_panchina_d_oro_2026_battuti_fabregas_e_gasperini_premiato_anche_alvini/</link>
-            <guid isPermaLink="false">sn:cds:152633574</guid>
-            <category><![CDATA[Chivu]]></category>
-            <category><![CDATA[panchina d'oro]]></category>
-            <category><![CDATA[Inter]]></category>
-            <pubDate>Mon, 16 Nov 2026 12:34:48 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/16/122320637-e9dd91b8-ee29-4edc-92ac-3c0a718bd276.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/16/122320637-e9dd91b8-ee29-4edc-92ac-3c0a718bd276.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/16/122320637-e9dd91b8-ee29-4edc-92ac-3c0a718bd276.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&#39;allenatore dell&#39;Inter, con 16 voti totali, ha la meglio sullo spagnolo del Como e il tecnico giallorosso: tutti i premiati]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Franco Colomba, l&rsquo;intervista: &ldquo;Mi rivedo in Bernardeschi&rdquo;]]></title>
-            <description><![CDATA[L&rsquo;ex rossobl&ugrave; analizza il potenziale offensivo a disposizione di Palladino e trova punti in comune con Federico: &laquo;Ho giocato da regista e mezzala, pu&ograve; farlo anche lui&raquo;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/bologna/2026/11/16-152631522/franco_colomba_lintervista_mi_rivedo_in_bernardeschi/</link>
-            <guid isPermaLink="false">sn:cds:152631522</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Bologna]]></category>
-            <category><![CDATA[colomba]]></category>
-            <category><![CDATA[Bernardeschi]]></category>
-            <pubDate>Mon, 16 Nov 2026 09:20:03 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/16/091954964-5a4d9e00-dd43-4f67-8d76-d8cc227ba870.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/16/091954964-5a4d9e00-dd43-4f67-8d76-d8cc227ba870.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/16/091954964-5a4d9e00-dd43-4f67-8d76-d8cc227ba870.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&rsquo;ex rossobl&ugrave; analizza il potenziale offensivo a disposizione di Palladino e trova punti in comune con Federico: &laquo;Ho giocato da regista e mezzala, pu&ograve; farlo anche lui&raquo;]]></dcterms:alternative>
-            <dc:creator><![CDATA[Dario Cervellati]]></dc:creator>
         </item>
     </channel>
 </rss>

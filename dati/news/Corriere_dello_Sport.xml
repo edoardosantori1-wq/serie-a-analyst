@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 19 Nov 2026 17:07:30 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Nov 2026 18:50:29 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Il Napoli perde Meret: infortunio in allenamento, si &egrave; fratturato la quinta vertebra lombare]]></title>
+            <description><![CDATA[Comunicato ufficiale del club azzurro sul portiere, che si &egrave; fatto male durante la preparazione per le sfide con Torino e Manchester City]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/19-152690933/il_napoli_perde_meret_infortunio_in_allenamento_si_fratturato_la_quinta_vertebra_lombare/</link>
+            <guid isPermaLink="false">sn:cds:152690933</guid>
+            <category><![CDATA[meret]]></category>
+            <category><![CDATA[napoli]]></category>
+            <category><![CDATA[Infortunio Meret]]></category>
+            <pubDate>Thu, 19 Nov 2026 17:26:20 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/172616112-cadf5882-f33c-4a09-9046-ea8ae470e94e.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/172616112-cadf5882-f33c-4a09-9046-ea8ae470e94e.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/172616112-cadf5882-f33c-4a09-9046-ea8ae470e94e.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Comunicato ufficiale del club azzurro sul portiere, che si &egrave; fatto male durante la preparazione per le sfide con Torino e Manchester City]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Allegri non parler&agrave; prima di Napoli-Torino: la decisione del club sulla conferenza stampa]]></title>
             <description><![CDATA[La scelta del club azzurro in vista della sfida di Serie A contro i granata e di quella in Champions League contro il Manchester City]]></description>
@@ -529,26 +547,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[L&rsquo;infortunio alla spalla &egrave; solo un ricordo. Dopo l&rsquo;impiego in amichevole, adesso ha bisogno di ritrovare la forma ideale&nbsp;]]></dcterms:alternative>
             <dc:creator><![CDATA[Marco Ercole]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Gasperini recupera quattro titolari per Parma: da Dybala a Kon&eacute;, tutto sulle loro condizioni]]></title>
-            <description><![CDATA[In infermeria resta solo Pellegrini: cos&igrave; il tecnico fa il pieno di leader]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/18-152662225/gasperini_recupera_quattro_titolari_per_parma_da_dybala_a_kon_tutto_sulle_loro_condizioni/</link>
-            <guid isPermaLink="false">sn:cds:152662225</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Roma]]></category>
-            <category><![CDATA[Gasperini]]></category>
-            <category><![CDATA[Dybala]]></category>
-            <category><![CDATA[Svilar]]></category>
-            <pubDate>Wed, 18 Nov 2026 07:31:13 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/060423297-08feccd4-7e5d-4bbf-a682-09c0837ae2f2.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/060423297-08feccd4-7e5d-4bbf-a682-09c0837ae2f2.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/060423297-08feccd4-7e5d-4bbf-a682-09c0837ae2f2.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[In infermeria resta solo Pellegrini: cos&igrave; il tecnico fa il pieno di leader]]></dcterms:alternative>
-            <dc:creator><![CDATA[Giorgio Marota]]></dc:creator>
         </item>
     </channel>
 </rss>

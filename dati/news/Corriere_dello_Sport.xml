@@ -5,7 +5,43 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 19 Nov 2026 10:01:05 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Nov 2026 11:57:08 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Come sta Frattesi: i dubbi di Gattuso che pensa a un mese di fuoco]]></title>
+            <description><![CDATA[Il centrocampista, rientrato alla Nazionale affaticato, ha per ora risposto presente]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/19-152683291/come_sta_frattesi_i_dubbi_di_gattuso_che_pensa_a_un_mese_di_fuoco/</link>
+            <guid isPermaLink="false">sn:cds:152683291</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Lazio]]></category>
+            <category><![CDATA[frattesi]]></category>
+            <pubDate>Thu, 19 Nov 2026 10:59:29 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/073522869-df22d7a6-bbc6-4ba7-b9c7-94dafe61e12f.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/073522869-df22d7a6-bbc6-4ba7-b9c7-94dafe61e12f.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/073522869-df22d7a6-bbc6-4ba7-b9c7-94dafe61e12f.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il centrocampista, rientrato alla Nazionale affaticato, ha per ora risposto presente]]></dcterms:alternative>
+            <dc:creator><![CDATA[Daniele Rindone]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Dalla Spagna: &quot;Barcellona a caccia di un mancino, Bastoni costa quaranta milioni&quot;]]></title>
+            <description><![CDATA[Le alternative indicate da Flick sono&nbsp;Schlotterbeck e Lisandro Martinez]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/19-152686137/dalla_spagna_barcellona_a_caccia_di_un_mancino_bastoni_costa_quaranta_milioni/</link>
+            <guid isPermaLink="false">sn:cds:152686137</guid>
+            <category><![CDATA[bastoni]]></category>
+            <category><![CDATA[Inter]]></category>
+            <category><![CDATA[Barcellona]]></category>
+            <pubDate>Thu, 19 Nov 2026 10:30:03 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/095700246-760eb6e0-03dd-4e60-94d2-a90a09a45d67.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/095700246-760eb6e0-03dd-4e60-94d2-a90a09a45d67.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Inter via Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/095700246-760eb6e0-03dd-4e60-94d2-a90a09a45d67.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Le alternative indicate da Flick sono&nbsp;Schlotterbeck e Lisandro Martinez]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Mendy esclusivo: &quot;A Pisacane devo tutto&quot;]]></title>
             <description><![CDATA[Il centravanti racconta la sua storia dal Senegal al Cagliari passando per Roma: &quot;L&#39;esordio con doppietta? Non ho parole per descrivere la mia felicit&agrave;&quot;]]></description>
@@ -41,6 +77,26 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Il difensore fa i complimenti a Palladino e punta all&rsquo;Europa: &ldquo;Bisogna essere ambiziosi&rdquo;. La nostra esclusiva con uno dei pilastri di Palladino]]></dcterms:alternative>
             <dc:creator><![CDATA[Beneforti - Cervellati ]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Bove e la voglia di tornare a giocare in Italia: &quot;Sogna Firenze o Roma&quot;]]></title>
+            <description><![CDATA[Il centrocampista sta bene al Watford, ma il suo agente Tavano apre a nuovi scenari nel nostro campionato]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/fiorentina/2026/11/19-152683182/bove_e_la_voglia_di_tornare_a_giocare_in_italia_sogna_firenze_o_roma/</link>
+            <guid isPermaLink="false">sn:cds:152683182</guid>
+            <category><![CDATA[Bove]]></category>
+            <category><![CDATA[Fiorentina]]></category>
+            <category><![CDATA[Roma]]></category>
+            <category><![CDATA[Watford]]></category>
+            <category><![CDATA[oggi]]></category>
+            <pubDate>Thu, 19 Nov 2026 07:31:31 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/072908754-7598e520-ea44-4079-a92c-039fb17d7d3e.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/072908754-7598e520-ea44-4079-a92c-039fb17d7d3e.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/072908754-7598e520-ea44-4079-a92c-039fb17d7d3e.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il centrocampista sta bene al Watford, ma il suo agente Tavano apre a nuovi scenari nel nostro campionato]]></dcterms:alternative>
+            <dc:creator><![CDATA[Jacopo Aliprandi]]></dc:creator>
         </item>
         <item>
             <title><![CDATA[Inter avanti con Calhanoglu: il nodo bonus sullo stipendio, cosa manca per chiudere il rinnovo]]></title>
@@ -487,63 +543,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[I due centravanti nerazzurri sono tornati a lavorare con i compagni in vista della sfida contro l&#39;Atalanta]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Sollievo Milan: nessuna lesione per Maignan dopo lo stop con la Francia]]></title>
-            <description><![CDATA[Non &egrave; grave il problema accusato dal portiere nel match di Nations League vinto dai &#39;Bleus&#39; contro la Turchia: il bollettino medico del club rossonero]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/milan/2026/11/17-152654228/sollievo_milan_nessuna_lesione_per_maignan_dopo_lo_stop_con_la_francia/</link>
-            <guid isPermaLink="false">sn:cds:152654228</guid>
-            <category><![CDATA[Milan]]></category>
-            <category><![CDATA[Maignan]]></category>
-            <category><![CDATA[Amorim]]></category>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[Uefa Nations League]]></category>
-            <category><![CDATA[Infortuni]]></category>
-            <category><![CDATA[Francia]]></category>
-            <pubDate>Tue, 17 Nov 2026 14:58:43 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/17/145440180-c3a01233-d927-4415-90c9-4245ee819c3f.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/145440180-c3a01233-d927-4415-90c9-4245ee819c3f.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/145440180-c3a01233-d927-4415-90c9-4245ee819c3f.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Non &egrave; grave il problema accusato dal portiere nel match di Nations League vinto dai &#39;Bleus&#39; contro la Turchia: il bollettino medico del club rossonero]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[La Juve mostra i progressi di Yildiz con il pallone: &quot;Un passo alla volta, Kenan&quot;&nbsp;]]></title>
-            <description><![CDATA[Cresce l&#39;attesa per il ritorno in campo del turco. Il club bianconero ha pubblicato un video su social: i dettagli&nbsp;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/17-152652248/la_juve_mostra_i_progressi_di_yildiz_con_il_pallone_un_passo_alla_volta_kenan/</link>
-            <guid isPermaLink="false">sn:cds:152652248</guid>
-            <category><![CDATA[juve]]></category>
-            <category><![CDATA[Yildiz]]></category>
-            <pubDate>Tue, 17 Nov 2026 12:44:47 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/17/124326510-86e91d18-8a40-476d-8d47-e0de5aff47f2.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/124326510-86e91d18-8a40-476d-8d47-e0de5aff47f2.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/124326510-86e91d18-8a40-476d-8d47-e0de5aff47f2.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Cresce l&#39;attesa per il ritorno in campo del turco. Il club bianconero ha pubblicato un video su social: i dettagli&nbsp;]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[L&#39;intervista a Marcandalli: &quot;Italia, ti aspetto. Sul Genoa e De Rossi...&quot;]]></title>
-            <description><![CDATA[Il difensore rossobl&ugrave;, allenato da Nesta, DDR e Gilardino, sogna la maglia azzurra: &quot;Mi hanno preconvocato e Bonucci era a Genova&quot;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/genoa/2026/11/17-152649243/l_intervista_a_marcandalli_italia_ti_aspetto_sul_genoa_e_de_rossi_/</link>
-            <guid isPermaLink="false">sn:cds:152649243</guid>
-            <category><![CDATA[Marcandalli]]></category>
-            <category><![CDATA[Intervista]]></category>
-            <category><![CDATA[oggi]]></category>
-            <pubDate>Tue, 17 Nov 2026 08:51:03 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/17/080437775-5bcbbfb7-8c20-4b6b-a72f-82d49fd9e892.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/080437775-5bcbbfb7-8c20-4b6b-a72f-82d49fd9e892.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/080437775-5bcbbfb7-8c20-4b6b-a72f-82d49fd9e892.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il difensore rossobl&ugrave;, allenato da Nesta, DDR e Gilardino, sogna la maglia azzurra: &quot;Mi hanno preconvocato e Bonucci era a Genova&quot;]]></dcterms:alternative>
-            <dc:creator><![CDATA[Chiara Zucchelli]]></dc:creator>
         </item>
     </channel>
 </rss>

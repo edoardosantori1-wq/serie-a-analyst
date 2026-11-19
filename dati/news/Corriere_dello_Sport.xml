@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 19 Nov 2026 09:02:54 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Nov 2026 10:01:05 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Mendy esclusivo: &quot;A Pisacane devo tutto&quot;]]></title>
+            <description><![CDATA[Il centravanti racconta la sua storia dal Senegal al Cagliari passando per Roma: &quot;L&#39;esordio con doppietta? Non ho parole per descrivere la mia felicit&agrave;&quot;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/cagliari/2026/11/19-152683296/mendy_esclusivo_a_pisacane_devo_tutto/</link>
+            <guid isPermaLink="false">sn:cds:152683296</guid>
+            <category><![CDATA[Mendy]]></category>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Cagliari]]></category>
+            <pubDate>Thu, 19 Nov 2026 09:33:56 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/074447578-0b02a5e2-7de3-42b2-91c2-c4c3f8468a12.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/074447578-0b02a5e2-7de3-42b2-91c2-c4c3f8468a12.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/074447578-0b02a5e2-7de3-42b2-91c2-c4c3f8468a12.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il centravanti racconta la sua storia dal Senegal al Cagliari passando per Roma: &quot;L&#39;esordio con doppietta? Non ho parole per descrivere la mia felicit&agrave;&quot;]]></dcterms:alternative>
+            <dc:creator><![CDATA[Ivan Paone]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Matteo Darmian professore o vice sindaco di Bologna? &quot;Sono qui per aiutare, siamo un gruppo sano e forte&quot;]]></title>
             <description><![CDATA[Il difensore fa i complimenti a Palladino e punta all&rsquo;Europa: &ldquo;Bisogna essere ambiziosi&rdquo;. La nostra esclusiva con uno dei pilastri di Palladino]]></description>
@@ -526,24 +544,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Il difensore rossobl&ugrave;, allenato da Nesta, DDR e Gilardino, sogna la maglia azzurra: &quot;Mi hanno preconvocato e Bonucci era a Genova&quot;]]></dcterms:alternative>
             <dc:creator><![CDATA[Chiara Zucchelli]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Il Milan piange Sani, eroe di Wembley]]></title>
-            <description><![CDATA[Aveva 94 anni, campione del mondo con il brasile nel 1958: vinse la prima Coppa dei Campioni rossonera]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/milan/2026/11/17-152648966/il_milan_piange_sani_eroe_di_wembley/</link>
-            <guid isPermaLink="false">sn:cds:152648966</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Sani]]></category>
-            <category><![CDATA[Milan]]></category>
-            <pubDate>Tue, 17 Nov 2026 08:14:19 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/17/081201065-70b22027-8dbf-4376-ab3b-a68c669219fe.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/081201065-70b22027-8dbf-4376-ab3b-a68c669219fe.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/081201065-70b22027-8dbf-4376-ab3b-a68c669219fe.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Aveva 94 anni, campione del mondo con il brasile nel 1958: vinse la prima Coppa dei Campioni rossonera]]></dcterms:alternative>
-            <dc:creator><![CDATA[Franco Ordine]]></dc:creator>
         </item>
     </channel>
 </rss>

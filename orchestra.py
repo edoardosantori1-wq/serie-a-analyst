@@ -45,6 +45,13 @@ def get(fname, url, headers=(), method="GET", body=None):
 FD = [f"X-Auth-Token: {ENV.get('FOOTBALLDATA_KEY','')}"]
 SH = [f"Authorization: Bearer {ENV.get('STRIKER_KEY','')}"]; SB = "https://mcp.strikerapi.com/v1"
 OK = ENV.get("ODDSPAPI_KEY", ""); OP = "https://api.oddspapi.io/v4"
+# quote: Eurobet + Pinnacle (riferimento) + bookmaker italiani ADM per le value bet. Una sola richiesta per tutti.
+LIBRI = "eurobet.it,pinnacle,sisal.it,snai.it,goldbet.it,lottomatica.it,bet365.it,betflag.it,planetwin365.it,admiralbet.it,netbet.it,888sport.it,pokerstars.it,leovegas.it,quigioco.it"
+QURL = f"{OP}/odds-by-tournaments?tournamentIds=23&bookmakers={LIBRI}&verbosity=3&apiKey={OK}"
+QURL_BASE = f"{OP}/odds-by-tournaments?tournamentIds=23&bookmakers=eurobet.it,pinnacle&verbosity=3&apiKey={OK}"
+def quote_get():
+    """Quote con tutti i bookmaker; se la richiesta allargata non va, si torna a Eurobet + Pinnacle."""
+    return get("oddspapi_quote.json", QURL) or get("oddspapi_quote.json", QURL_BASE)
 s = NOW.year if NOW.month >= 7 else NOW.year - 1; L = {"league": "seriea", "season": s}
 # StrikerAPI: piano gratuito 500 crediti al mese. Si tiene il conto dei crediti spesi nel mese e ci si ferma
 # prima del limite (margine di sicurezza), cosi' il sistema non resta mai senza crediti a meta' giornata.
@@ -108,7 +115,7 @@ if fare_uscita:
     get("fdorg_coppe.json", f"https://api.football-data.org/v4/matches?competitions=CL&dateFrom={d1}&dateTo={d2}", FD)
     if not os.path.exists(os.path.join(D, "oddspapi_mercati.json")):
         get("oddspapi_mercati.json", f"{OP}/markets?sportId=10&apiKey={OK}")
-    get("oddspapi_quote.json", f"{OP}/odds-by-tournaments?tournamentIds=23&bookmakers=eurobet.it,pinnacle&verbosity=3&apiKey={OK}")
+    quote_get()
     if not os.path.exists(os.path.join(D, "striker_teams.json")): sget("striker_teams.json", "list_teams", L)
     sget("striker_team_stats.json", "get_team_stats", L)
     sget("striker_elo.json", "get_ratings", L)
@@ -131,9 +138,7 @@ if fare_uscita:
             print(f"{fname:40s} {len(tutti)} giocatori")
     # con l'export di Fantacalcio caricato (presenze, gol, assist, cartellini) queste chiamate non servono:
     # si risparmiano circa 100 crediti a giornata
-    if not glob.glob(os.path.join(D, "[Ss]tatistiche_[Ff]antacalcio*.xlsx")):
-        leaders_tutti("striker_xg_tutti.json", "xg", 5)
-        leaders_tutti("striker_assist.json", "assists", 2)
+    # (sezione Fantacalcio rimossa: niente statistiche di tutti i giocatori, si risparmiano crediti)
     sget("striker_schedule.json", "get_schedule", dict(L, days=10))
     # primo avvio: ultime formazioni schierate (una partita per squadra), poi bastano le ufficiali di ogni giornata
     import glob
@@ -153,6 +158,7 @@ if fare_uscita:
     # solo l'uscita ufficiale (programmata) registra le previsioni nello storico e congela la giornata
     env = dict(os.environ, REGISTRA="0" if FORZA else "1")
     subprocess.run([sys.executable, os.path.join(BASE, "predizioni.py")], check=False, env=env)
+    subprocess.run([sys.executable, os.path.join(BASE, "valore.py")], check=False, env=env)
     if not FORZA:
         STATO["uscita_giornata"] = md; STATO["uscita_ora"] = NOW.isoformat(timespec="seconds")
         # promemoria: il workflow apre una segnalazione su GitHub, che arriva per email
@@ -164,8 +170,9 @@ if t_first and STATO.get("modulo_giornata") != md and STATO.get("uscita_giornata
     print(">>> MODULO CALIBRAZIONE giornata", md)
     if not os.path.exists(os.path.join(D, "oddspapi_mercati.json")):
         get("oddspapi_mercati.json", f"{OP}/markets?sportId=10&apiKey={OK}")
-    get("oddspapi_quote.json", f"{OP}/odds-by-tournaments?tournamentIds=23&bookmakers=eurobet.it,pinnacle&verbosity=3&apiKey={OK}")
+    quote_get()
     subprocess.run([sys.executable, os.path.join(BASE, "predizioni.py")], check=False, env=dict(os.environ, REGISTRA="0", SOLO_MODULO="1"))
+    subprocess.run([sys.executable, os.path.join(BASE, "valore.py")], check=False, env=dict(os.environ, REGISTRA="0"))
     STATO["modulo_giornata"] = md
 
 # 3c) quota di chiusura: una richiesta OddsPapi per ogni orario di inizio, tra 15 e 75 minuti prima
@@ -174,10 +181,20 @@ orari = sorted({m["utcDate"] for m in giornata})
 for o_ in orari:
     t = datetime.fromisoformat(o_.replace("Z", "+00:00"))
     if o_ not in fatte and timedelta(minutes=10) <= t - NOW <= timedelta(minutes=80) and STATO.get("uscita_giornata") == md:
-        get("oddspapi_quote.json", f"{OP}/odds-by-tournaments?tournamentIds=23&bookmakers=eurobet.it,pinnacle&verbosity=3&apiKey={OK}")
+        quote_get()
         subprocess.run([sys.executable, os.path.join(BASE, "chiusura.py")], check=False)
+        subprocess.run([sys.executable, os.path.join(BASE, "valore.py")], check=False)   # value bet con quote fresche
         fatte.add(o_); STATO["chiusure"] = sorted(fatte)[-40:]
         break
+
+# 3d) value bet: nei giorni con partite, un controllo delle quote alle 10 del mattino (1 richiesta OddsPapi)
+oggi = NOW.astimezone(ROME).date().isoformat()
+giorni_partita = {datetime.fromisoformat(m["utcDate"].replace("Z", "+00:00")).astimezone(ROME).date().isoformat() for m in giornata}
+if (STATO.get("uscita_giornata") == md and oggi in giorni_partita and NOW.astimezone(ROME).hour >= 10
+        and oggi not in STATO.get("vb_giorni", [])):
+    quote_get()
+    subprocess.run([sys.executable, os.path.join(BASE, "valore.py")], check=False)
+    STATO["vb_giorni"] = (STATO.get("vb_giorni", []) + [oggi])[-20:]
 
 # 4) formazioni ufficiali (finestra di 75 minuti prima del calcio d'inizio)
 for g in (J("striker_schedule.json") or {}).get("data", {}).get("games", []):

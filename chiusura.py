@@ -26,8 +26,11 @@ def main():
         marc[key] = [(p["playerName"], p["price"]) for o in eb["markets"][amid]["outcomes"].values()
                      for p in o["players"].values() if p.get("playerName") and p.get("price")]
     n = 0
-    for rid, partita, inizio, mercato in db.execute(
-            "SELECT id, partita, inizio, mercato FROM previsioni WHERE quota_chiusura IS NULL").fetchall():
+    # value bet: la chiusura si prende dal bookmaker dove e' stata trovata (non da Eurobet)
+    import valore as V
+    slug_di = {nome: slug for slug, nome in V.BOOKS.items()}; QB = {}
+    for rid, partita, inizio, mercato, tipo, gruppo in db.execute(
+            "SELECT id, partita, inizio, mercato, tipo, gruppo FROM previsioni WHERE quota_chiusura IS NULL").fetchall():
         t = datetime.fromisoformat(inizio)
         if not (timedelta(minutes=-30) <= t - now <= timedelta(minutes=120)): continue
         h, a = partita.split("-", 1)
@@ -37,6 +40,9 @@ def main():
             for nome, pz in marc.get(partita, []):
                 nt = P._norm(nome)
                 if nt and pt and nt[0] in pt: q = pz; break
+        elif tipo == "value" and gruppo in slug_di:
+            if gruppo not in QB: QB[gruppo] = P.quote_bookmaker(slug_di[gruppo])
+            q = (QB[gruppo].get((h, a)) or {}).get("q", {}).get(mercato)
         elif not mercato.startswith("C:"):
             q = (Q.get((h, a)) or {}).get("q", {}).get(mercato)
         if q:

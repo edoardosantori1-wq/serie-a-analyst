@@ -204,7 +204,7 @@ def main():
         return dict(giocate=n, vinte=v, perse=len(chiuse) - v, aperte=len([x for x in lst if x["esito"] is None]),
                     hit=round(v / len(chiuse), 4) if chiuse else None, unita=round(prof, 2), roi=round(prof / n, 4) if n else None)
     CAT = [("pronostico", "Pronostici partita"), ("tripla_semplice", "Triple semplici"), ("tripla_media", "Triple medie"),
-           ("tripla_aggressiva", "Triple aggressive"), ("marcatore", "Marcatori"), ("singola", "Singole")]
+           ("tripla_aggressiva", "Triple aggressive"), ("marcatore", "Marcatori"), ("singola", "Singole"), ("value", "Value bet")]
     out = dict(aggiornato=datetime.now(timezone.utc).isoformat(timespec="seconds"),
                totale=riepilogo(giocate), categorie=[dict(cat=c, nome=n, **riepilogo([x for x in giocate if x["cat"] == c])) for c, n in CAT],
                giornate=[dict(giornata=g, **riepilogo([x for x in giocate if x["giornata"] == g])) for g in sorted({x["giornata"] for x in giocate}, reverse=True)],

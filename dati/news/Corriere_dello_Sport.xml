@@ -5,7 +5,29 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 19 Nov 2026 14:51:41 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Nov 2026 15:54:19 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[La Roma punta sul giovane De Marzi: ufficiale il rinnovo fino al 2031]]></title>
+            <description><![CDATA[Nato in California, il classe 2007 ha gi&agrave; esordito con le nazionali giovanili statunitensi: portato in prima squadra da De Rossi, ha incassato anche la fiducia di Gasperini]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/19-152688395/la_roma_punta_sul_giovane_de_marzi_ufficiale_il_rinnovo_fino_al_2031/</link>
+            <guid isPermaLink="false">sn:cds:152688395</guid>
+            <category><![CDATA[Roma]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[de marzi]]></category>
+            <category><![CDATA[Gasperini]]></category>
+            <category><![CDATA[De Rossi]]></category>
+            <category><![CDATA[Usa]]></category>
+            <category><![CDATA[Stati Uniti]]></category>
+            <pubDate>Thu, 19 Nov 2026 15:04:57 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/143958377-8394db6e-0874-496f-bcd2-62d1685209ef.jpeg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/143958377-8394db6e-0874-496f-bcd2-62d1685209ef.jpeg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/143958377-8394db6e-0874-496f-bcd2-62d1685209ef.jpeg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Nato in California, il classe 2007 ha gi&agrave; esordito con le nazionali giovanili statunitensi: portato in prima squadra da De Rossi, ha incassato anche la fiducia di Gasperini]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Centravanti o ala, ecco perch&eacute; Noslin &egrave; l&rsquo;oro della Lazio&nbsp;]]></title>
             <description><![CDATA[Segna e gioca con qualit&agrave;, Gattuso lo esalta. E sabato a Lecce sogna altri gol]]></description>
@@ -526,23 +548,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/182803581-99b8dded-74b3-45cb-b29f-d31d6a00397b.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[L&#39;attaccante della Nazionale &egrave; fermo da inizio ottobre: il comunicato ufficiale del club biancobl&ugrave; in merito alle sue condizioni]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Napoli, De Bryune torna ad allenarsi da domani: sar&agrave; a disposizione di Allegri&nbsp;]]></title>
-            <description><![CDATA[Cambio di programma: il belga, dopo la pausa con le nazionali, rientrer&agrave; alla base con 24 ore di ritardo&nbsp;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/17-152656194/napoli_de_bryune_torna_ad_allenarsi_da_domani_sar_a_disposizione_di_allegri/</link>
-            <guid isPermaLink="false">sn:cds:152656194</guid>
-            <category><![CDATA[De Bruyne]]></category>
-            <category><![CDATA[napoli]]></category>
-            <pubDate>Tue, 17 Nov 2026 16:49:20 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/17/164600040-e7864245-1ccb-4a7a-b275-7a12fff84d1a.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/164600040-e7864245-1ccb-4a7a-b275-7a12fff84d1a.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>FOTO GIANLUCA MOSCA</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/164600040-e7864245-1ccb-4a7a-b275-7a12fff84d1a.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Cambio di programma: il belga, dopo la pausa con le nazionali, rientrer&agrave; alla base con 24 ore di ritardo&nbsp;]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

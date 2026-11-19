@@ -5,7 +5,61 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 19 Nov 2026 15:54:19 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Nov 2026 17:07:30 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Allegri non parler&agrave; prima di Napoli-Torino: la decisione del club sulla conferenza stampa]]></title>
+            <description><![CDATA[La scelta del club azzurro in vista della sfida di Serie A contro i granata e di quella in Champions League contro il Manchester City]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/19-152690431/allegri_non_parler_prima_di_napoli-torino_la_decisione_del_club_sulla_conferenza_stampa/</link>
+            <guid isPermaLink="false">sn:cds:152690431</guid>
+            <category><![CDATA[napoli]]></category>
+            <category><![CDATA[Allegri]]></category>
+            <category><![CDATA[Conferenza stampa Allegri]]></category>
+            <pubDate>Thu, 19 Nov 2026 16:56:50 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/164856999-9f2afe60-8814-4c6d-9fe2-e0d0442f5ebb.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/164856999-9f2afe60-8814-4c6d-9fe2-e0d0442f5ebb.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>EPA</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/164856999-9f2afe60-8814-4c6d-9fe2-e0d0442f5ebb.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[La scelta del club azzurro in vista della sfida di Serie A contro i granata e di quella in Champions League contro il Manchester City]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Dele-Bashiru pazzo di Gattuso: &quot;Ho avuto diversi allenatori alla Lazio, ma Rino...&quot;]]></title>
+            <description><![CDATA[Il centrocampista dei biancocelesti non ha lesinato parole d&#39;elogio per il tecnico e ha raccontato il clima all&#39;interno allo spogliatoio dal momento del suo arrivo]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/19-152689994/dele-bashiru_pazzo_di_gattuso_ho_avuto_diversi_allenatori_alla_lazio_ma_rino_/</link>
+            <guid isPermaLink="false">sn:cds:152689994</guid>
+            <category><![CDATA[Dele-Bashiuru]]></category>
+            <category><![CDATA[Lazio]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <pubDate>Thu, 19 Nov 2026 16:33:58 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/162705070-50b7a4fb-f365-47ed-b3bf-49c125f6204b.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/162705070-50b7a4fb-f365-47ed-b3bf-49c125f6204b.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>YouTube @Officialsslazio</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/162705070-50b7a4fb-f365-47ed-b3bf-49c125f6204b.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il centrocampista dei biancocelesti non ha lesinato parole d&#39;elogio per il tecnico e ha raccontato il clima all&#39;interno allo spogliatoio dal momento del suo arrivo]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Palladino e il Bologna nel destino, l&#39;emozione con il ricordo di sua madre e il rapporto con Bove: &quot;Siamo diventati amici&quot;]]></title>
+            <description><![CDATA[Il tecnico dei rossobl&ugrave; ha parlato del suo legame con la citt&agrave; e il club che ha risollevato subentrando all&#39;esonerato Tedesco]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/bologna/2026/11/19-152689355/palladino_e_il_bologna_nel_destino_l_emozione_con_il_ricordo_di_sua_madre_e_il_rapporto_con_bove_siamo_diventati_amici/</link>
+            <guid isPermaLink="false">sn:cds:152689355</guid>
+            <category><![CDATA[palladino]]></category>
+            <category><![CDATA[Bologna]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <pubDate>Thu, 19 Nov 2026 16:05:27 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/153227731-2c7f0ed2-9eb2-4db3-9d07-21d5bb85b769.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/153227731-2c7f0ed2-9eb2-4db3-9d07-21d5bb85b769.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/153227731-2c7f0ed2-9eb2-4db3-9d07-21d5bb85b769.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il tecnico dei rossobl&ugrave; ha parlato del suo legame con la citt&agrave; e il club che ha risollevato subentrando all&#39;esonerato Tedesco]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[La Roma punta sul giovane De Marzi: ufficiale il rinnovo fino al 2031]]></title>
             <description><![CDATA[Nato in California, il classe 2007 ha gi&agrave; esordito con le nazionali giovanili statunitensi: portato in prima squadra da De Rossi, ha incassato anche la fiducia di Gasperini]]></description>
@@ -495,60 +549,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[In infermeria resta solo Pellegrini: cos&igrave; il tecnico fa il pieno di leader]]></dcterms:alternative>
             <dc:creator><![CDATA[Giorgio Marota]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Il futuro di Yildiz diventa un enigma: &egrave; tornato sul campo ma il completo recupero potrebbe slittare]]></title>
-            <description><![CDATA[Tanti dubbi alla Continassa: adesso il rientro potrebbe arrivare nel 2027. Valutazioni continue in attesa di certezze &nbsp;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/18-152662223/il_futuro_di_yildiz_diventa_un_enigma_tornato_sul_campo_ma_il_completo_recupero_potrebbe_slittare/</link>
-            <guid isPermaLink="false">sn:cds:152662223</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[juve]]></category>
-            <category><![CDATA[Yildiz]]></category>
-            <pubDate>Wed, 18 Nov 2026 06:59:31 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/055533481-db9d2128-1675-4b8a-99e5-6f5178533173.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/055533481-db9d2128-1675-4b8a-99e5-6f5178533173.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/055533481-db9d2128-1675-4b8a-99e5-6f5178533173.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Tanti dubbi alla Continassa: adesso il rientro potrebbe arrivare nel 2027. Valutazioni continue in attesa di certezze &nbsp;]]></dcterms:alternative>
-            <dc:creator><![CDATA[Andrea Losapio]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Alajbegovic felice e al centro del progetto: &egrave; sempre pi&ugrave; convinto di aver scelto la Juve]]></title>
-            <description><![CDATA[Spalletti ci punta dopo averne accompagnato l&rsquo;iniziale inserimento: il bosniaco pronto a decollare]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/18-152662221/alajbegovic_felice_e_al_centro_del_progetto_sempre_pi_convinto_di_aver_scelto_la_juve/</link>
-            <guid isPermaLink="false">sn:cds:152662221</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[juve]]></category>
-            <category><![CDATA[Alajbegovic]]></category>
-            <pubDate>Wed, 18 Nov 2026 06:48:16 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/054155837-356fec59-5419-4545-aa0e-c49ccd6ac135.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/054155837-356fec59-5419-4545-aa0e-c49ccd6ac135.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Juventus FC via Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/054155837-356fec59-5419-4545-aa0e-c49ccd6ac135.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Spalletti ci punta dopo averne accompagnato l&rsquo;iniziale inserimento: il bosniaco pronto a decollare]]></dcterms:alternative>
-            <dc:creator><![CDATA[Andrea Losapio]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Kean ancora alle prese con l&#39;infortunio alla tibia: il Como conferma nuovi esami medici]]></title>
-            <description><![CDATA[L&#39;attaccante della Nazionale &egrave; fermo da inizio ottobre: il comunicato ufficiale del club biancobl&ugrave; in merito alle sue condizioni]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/como/2026/11/17-152656816/kean_ancora_alle_prese_con_l_infortunio_alla_tibia_il_como_conferma_nuovi_esami_medici/</link>
-            <guid isPermaLink="false">sn:cds:152656816</guid>
-            <category><![CDATA[Kean]]></category>
-            <category><![CDATA[Como]]></category>
-            <category><![CDATA[Serie A]]></category>
-            <pubDate>Tue, 17 Nov 2026 18:42:51 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/17/182803581-99b8dded-74b3-45cb-b29f-d31d6a00397b.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/182803581-99b8dded-74b3-45cb-b29f-d31d6a00397b.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/182803581-99b8dded-74b3-45cb-b29f-d31d6a00397b.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&#39;attaccante della Nazionale &egrave; fermo da inizio ottobre: il comunicato ufficiale del club biancobl&ugrave; in merito alle sue condizioni]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>
 </rss>

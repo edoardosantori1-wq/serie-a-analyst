@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 19 Nov 2026 11:57:08 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Nov 2026 13:08:02 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Centravanti o ala, ecco perch&eacute; Noslin &egrave; l&rsquo;oro della Lazio&nbsp;]]></title>
+            <description><![CDATA[Segna e gioca con qualit&agrave;, Gattuso lo esalta. E sabato a Lecce sogna altri gol]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/19-152683093/centravanti_o_ala_ecco_perch_noslin_loro_della_lazio/</link>
+            <guid isPermaLink="false">sn:cds:152683093</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Lazio]]></category>
+            <category><![CDATA[Noslin]]></category>
+            <pubDate>Thu, 19 Nov 2026 12:00:08 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/071449985-01052e2f-906f-4660-8779-7e96e6ad65c6.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/071449985-01052e2f-906f-4660-8779-7e96e6ad65c6.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>BARTOLETTI</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/071449985-01052e2f-906f-4660-8779-7e96e6ad65c6.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Segna e gioca con qualit&agrave;, Gattuso lo esalta. E sabato a Lecce sogna altri gol]]></dcterms:alternative>
+            <dc:creator><![CDATA[Daniele Rindone]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Come sta Frattesi: i dubbi di Gattuso che pensa a un mese di fuoco]]></title>
             <description><![CDATA[Il centrocampista, rientrato alla Nazionale affaticato, ha per ora risposto presente]]></description>
@@ -525,23 +543,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/164600040-e7864245-1ccb-4a7a-b275-7a12fff84d1a.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Cambio di programma: il belga, dopo la pausa con le nazionali, rientrer&agrave; alla base con 24 ore di ritardo&nbsp;]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Lautaro Martinez &egrave; tornato in gruppo: primo allenamento con l&#39;Inter dopo l&#39;infortunio. C&#39;&egrave; anche Thuram]]></title>
-            <description><![CDATA[I due centravanti nerazzurri sono tornati a lavorare con i compagni in vista della sfida contro l&#39;Atalanta]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/17-152654693/inter_lautaro_martinez_tornato_in_gruppo_primo_allenamento_in_squadra_dopo_l_infortunio/</link>
-            <guid isPermaLink="false">sn:cds:152654693</guid>
-            <category><![CDATA[Inter]]></category>
-            <category><![CDATA[Lautaro Martinez]]></category>
-            <pubDate>Tue, 17 Nov 2026 15:31:55 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/17/153129730-f98c56c2-bca1-4255-9016-f86707c53bb1.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/153129730-f98c56c2-bca1-4255-9016-f86707c53bb1.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Inter via Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/17/153129730-f98c56c2-bca1-4255-9016-f86707c53bb1.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[I due centravanti nerazzurri sono tornati a lavorare con i compagni in vista della sfida contro l&#39;Atalanta]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

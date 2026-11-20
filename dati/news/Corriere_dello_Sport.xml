@@ -5,7 +5,60 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 20 Nov 2026 06:00:32 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Nov 2026 07:16:18 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Allegri, il Berlusconi del calcio: da anni &egrave; Max contro tutti, sia che vinca o che perda]]></title>
+            <description><![CDATA[&Egrave; detestato per il solo fatto di esistere. E di allenare. Come Silvio, ha fatto la fortuna professionale dei suoi detrattori]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/20-152694939/allegri_il_berlusconi_del_calcio_da_anni_max_contro_tutti_sia_che_vinca_o_che_perda/</link>
+            <guid isPermaLink="false">sn:cds:152694939</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Allegri]]></category>
+            <category><![CDATA[napoli]]></category>
+            <pubDate>Fri, 20 Nov 2026 06:45:36 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/053907347-dfd2b5ab-3502-4c7f-9e9f-bc5b8a63d3d3.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/053907347-dfd2b5ab-3502-4c7f-9e9f-bc5b8a63d3d3.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/053907347-dfd2b5ab-3502-4c7f-9e9f-bc5b8a63d3d3.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[&Egrave; detestato per il solo fatto di esistere. E di allenare. Come Silvio, ha fatto la fortuna professionale dei suoi detrattori]]></dcterms:alternative>
+            <dc:creator><![CDATA[Massimiliano Gallo]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Essere Allegri non &egrave; poi cos&igrave; semplice]]></title>
+            <description><![CDATA[Leggi il commento del direttore del Corriere dello Sport-Stadio]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/20-152694937/essere_allegri_non_poi_cos_semplice/</link>
+            <guid isPermaLink="false">sn:cds:152694937</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Allegri]]></category>
+            <category><![CDATA[napoli]]></category>
+            <pubDate>Fri, 20 Nov 2026 06:36:54 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/053350372-2fdbb4b5-2ebd-452c-bc90-4eda7037f3da.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/053350372-2fdbb4b5-2ebd-452c-bc90-4eda7037f3da.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>FOTO GIANLUCA MOSCA</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/053350372-2fdbb4b5-2ebd-452c-bc90-4eda7037f3da.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Leggi il commento del direttore del Corriere dello Sport-Stadio]]></dcterms:alternative>
+            <dc:creator><![CDATA[Ivan Zazzaroni]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Il Napoli perde Meret per due mesi, per Pedro Morisco occhio alla concorrenza]]></title>
+            <description><![CDATA[Quinta vertebra lombare fratturata per il portiere, Milinkovic-Savic al suo posto. Piace il brasiliano del Coritiba]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/20-152694942/il_napoli_perde_meret_per_due_mesi_per_pedro_morisco_occhio_alla_concorrenza/</link>
+            <guid isPermaLink="false">sn:cds:152694942</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[napoli]]></category>
+            <pubDate>Fri, 20 Nov 2026 05:44:48 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/054709212-0fbf75e2-b7f5-4780-b1d1-8ee306d86a9c.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/054709212-0fbf75e2-b7f5-4780-b1d1-8ee306d86a9c.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/054709212-0fbf75e2-b7f5-4780-b1d1-8ee306d86a9c.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Quinta vertebra lombare fratturata per il portiere, Milinkovic-Savic al suo posto. Piace il brasiliano del Coritiba]]></dcterms:alternative>
+            <dc:creator><![CDATA[Fabio Tarantino]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Il Napoli perde Meret: infortunio in allenamento, si &egrave; fratturato la quinta vertebra lombare]]></title>
             <description><![CDATA[Comunicato ufficiale del club azzurro sul portiere, che si &egrave; fatto male durante la preparazione per le sfide con Torino e Manchester City]]></description>
@@ -496,57 +549,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Gennaio &egrave; l&rsquo;occasione per vedere&nbsp; la propriet&agrave; &laquo;pi&ugrave; coinvolta&raquo;. Piani Gittens e Odoi, idea Pascini. Sondato Scherhant, anche un terzino per completarsi &nbsp;]]></dcterms:alternative>
             <dc:creator><![CDATA[Giorgio Marota]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[La Juve e la forza di trattenere Alajbegovic: il rilancio non pu&ograve; passare da Woltemade o Kolo Muani...]]></title>
-            <description><![CDATA[Il commento sul mercato dei bianconeri tra presente e futuro]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/18-152663906/la_juve_e_la_forza_di_trattenere_alajbegovic_il_rilancio_non_pu_passare_da_woltemade_o_kolo_muani_/</link>
-            <guid isPermaLink="false">sn:cds:152663906</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[juve]]></category>
-            <category><![CDATA[Alajbegovic]]></category>
-            <pubDate>Wed, 18 Nov 2026 08:21:01 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/082050195-e0d6b71d-75da-4359-9334-258edf62d6b0.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/082050195-e0d6b71d-75da-4359-9334-258edf62d6b0.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Juventus FC via Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/082050195-e0d6b71d-75da-4359-9334-258edf62d6b0.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il commento sul mercato dei bianconeri tra presente e futuro]]></dcterms:alternative>
-            <dc:creator><![CDATA[Vittorio Oreggia]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Nuova partnership per il Venezia]]></title>
-            <description><![CDATA[SUN68 sar&agrave; al fianco del Club Arancioneroverde in qualit&agrave; di Official Italian Casualwear Partner per le stagioni sportive 2026/2027 e 2027/2028]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/venezia/2026/11/18-152673563/nuova_partnership_per_il_venezia/</link>
-            <guid isPermaLink="false">sn:cds:152673563</guid>
-            <pubDate>Wed, 18 Nov 2026 08:04:00 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/160632371-f9fa1a8b-b017-4b0d-ae95-26c9bc3963c3.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/160632371-f9fa1a8b-b017-4b0d-ae95-26c9bc3963c3.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/160632371-f9fa1a8b-b017-4b0d-ae95-26c9bc3963c3.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[SUN68 sar&agrave; al fianco del Club Arancioneroverde in qualit&agrave; di Official Italian Casualwear Partner per le stagioni sportive 2026/2027 e 2027/2028]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Gudmundsson ritorna, recupero importante per Gattuso: sar&agrave; convocato contro il Lecce]]></title>
-            <description><![CDATA[L&rsquo;infortunio alla spalla &egrave; solo un ricordo. Dopo l&rsquo;impiego in amichevole, adesso ha bisogno di ritrovare la forma ideale&nbsp;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/18-152662953/gudmundsson_ritorna_recupero_importante_per_gattuso_sar_convocato_contro_il_lecce/</link>
-            <guid isPermaLink="false">sn:cds:152662953</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Lazio]]></category>
-            <category><![CDATA[gudmundsson]]></category>
-            <pubDate>Wed, 18 Nov 2026 07:50:40 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/071010654-824677be-9454-4da2-9921-f8e0ea9f2a05.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/071010654-824677be-9454-4da2-9921-f8e0ea9f2a05.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/071010654-824677be-9454-4da2-9921-f8e0ea9f2a05.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&rsquo;infortunio alla spalla &egrave; solo un ricordo. Dopo l&rsquo;impiego in amichevole, adesso ha bisogno di ritrovare la forma ideale&nbsp;]]></dcterms:alternative>
-            <dc:creator><![CDATA[Marco Ercole]]></dc:creator>
         </item>
     </channel>
 </rss>

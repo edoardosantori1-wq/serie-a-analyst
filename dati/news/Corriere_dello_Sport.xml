@@ -5,7 +5,22 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 20 Nov 2026 19:59:40 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Nov 2026 20:52:47 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[McTominay presto sar&agrave; pap&agrave;: l&#39;annuncio social con dedica piena d&#39;amore]]></title>
+            <description><![CDATA[Lo scozzese del Napoli e la compagna Cameron svelano la gravidanza pubblicando l&#39;ecografia su Instagram: tutti i dettagli]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/20-152707135/mctominay_presto_sar_pap_l_annuncio_social_con_dedica_piena_d_amore/</link>
+            <guid isPermaLink="false">sn:cds:152707135</guid>
+            <pubDate>Fri, 20 Nov 2026 20:14:19 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/195454877-176acf33-3dd9-4980-a932-8901138b1ef0.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/195454877-176acf33-3dd9-4980-a932-8901138b1ef0.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/195454877-176acf33-3dd9-4980-a932-8901138b1ef0.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Lo scozzese del Napoli e la compagna Cameron svelano la gravidanza pubblicando l&#39;ecografia su Instagram: tutti i dettagli]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[La Roma &egrave; atterrata a Bologna invece che a Parma: cosa &egrave; successo al volo dei giallorossi]]></title>
             <description><![CDATA[Imprevisto per Dybala e compagni alla vigilia della gara valida per la dodicesima giornata di Serie A, al Tardini, contro gli uomini di Gilardino]]></description>
@@ -539,28 +554,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/153227731-2c7f0ed2-9eb2-4db3-9d07-21d5bb85b769.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Il tecnico dei rossobl&ugrave; ha parlato del suo legame con la citt&agrave; e il club che ha risollevato subentrando all&#39;esonerato Tedesco]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[La Roma punta sul giovane De Marzi: ufficiale il rinnovo fino al 2031]]></title>
-            <description><![CDATA[Nato in California, il classe 2007 ha gi&agrave; esordito con le nazionali giovanili statunitensi: portato in prima squadra da De Rossi, ha incassato anche la fiducia di Gasperini]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/19-152688395/la_roma_punta_sul_giovane_de_marzi_ufficiale_il_rinnovo_fino_al_2031/</link>
-            <guid isPermaLink="false">sn:cds:152688395</guid>
-            <category><![CDATA[Roma]]></category>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[de marzi]]></category>
-            <category><![CDATA[Gasperini]]></category>
-            <category><![CDATA[De Rossi]]></category>
-            <category><![CDATA[Usa]]></category>
-            <category><![CDATA[Stati Uniti]]></category>
-            <pubDate>Thu, 19 Nov 2026 15:04:57 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/143958377-8394db6e-0874-496f-bcd2-62d1685209ef.jpeg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/143958377-8394db6e-0874-496f-bcd2-62d1685209ef.jpeg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/143958377-8394db6e-0874-496f-bcd2-62d1685209ef.jpeg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Nato in California, il classe 2007 ha gi&agrave; esordito con le nazionali giovanili statunitensi: portato in prima squadra da De Rossi, ha incassato anche la fiducia di Gasperini]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

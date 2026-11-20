@@ -14,6 +14,15 @@
     </image>
     <atom:link href="https://www.tuttomercatoweb.com/rss/" rel="self" type="application/rss+xml"/>
     <item>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/altre-notizie/i-le-partite-oggi-i-programma-venerdi-20-novembre-2295467</guid>
+      <pubDate>Fri, 20 Nov 2026 04:30:00 +0100</pubDate>
+      <title>Le partite di oggi: il programma di venerdì 20 novembre</title>
+      <link>https://www.tuttomercatoweb.com/altre-notizie/i-le-partite-oggi-i-programma-venerdi-20-novembre-2295467</link>
+      <description>Una serata ricca di appuntamenti per gli appassionati di calcio, con sfide in programma nei principali campionati europei e nei Mondiali Under 17.</description>
+      <category>Altre Notizie</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/e7/e7a6d52eeaca13c62f46982571435b28-98664-oooz0000.jpeg" length="188517" type="image/jpeg"/>
+    </item>
+    <item>
       <guid isPermaLink="false">https://www.tuttomercatoweb.com/editoriale/ennesimo-tormentone-calciomercato-varela-valere-40-10-partite-italia-piatek-iturbe-mercato-scambia-s-2295232</guid>
       <pubDate>Fri, 20 Nov 2026 01:15:00 +0100</pubDate>
       <title>L'ennesimo tormentone del calciomercato: Varela può già valere 40 milioni dopo 10 partite in Italia? Da Piatek a Iturbe, quando il mercato scambia una stagione per una carriera</title>
@@ -181,15 +190,6 @@
       <description>Il 20 novembre del 1988, allo stadio Comunale di Torino, si affrontano la Juventus e il Napoli.</description>
       <category>Accadde Oggi...</category>
       <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/63/6372ac0e0050eeef0ccdaa6b201f4b29-09864-oooz0000.jpeg" length="119566" type="image/jpeg"/>
-    </item>
-    <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/parma-nicolussi-caviglia-racconta-calvario-ho-pubalgia-fastidiosa-2295495</guid>
-      <pubDate>Thu, 19 Nov 2026 23:59:26 +0100</pubDate>
-      <title>Parma, Nicolussi Caviglia racconta il suo calvario: "Ho avuto una pubalgia molto fastidiosa"</title>
-      <link>https://www.tuttomercatoweb.com/serie-a/parma-nicolussi-caviglia-racconta-calvario-ho-pubalgia-fastidiosa-2295495</link>
-      <description>Hans Nicolussi Caviglia, centrocampista del Parma, ha parlato a Sky Sport dell’infortunio che gli è capitato a inizio stagione e del percorso necessario per superarlo: "Ho avuto una pubalgia molto fastidiosa, motivo per cui è stata necessaria un’operazione....</description>
-      <category>Serie A</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/a5/a58c7899215a2a684fad6309097045c4-99283-oooz0000.jpeg" length="113145" type="image/jpeg"/>
     </item>
   </channel>
 </rss>

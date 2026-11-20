@@ -5,7 +5,27 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 20 Nov 2026 20:52:47 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Nov 2026 21:42:16 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Lazio, comunicato ufficiale dei tifosi sulla scelta per la Supercoppa contro l&#39;Inter]]></title>
+            <description><![CDATA[Il supporters organizzati biancocelesti si mobilitano in vista del primo trofeo che si assegner&agrave; a San Siro il 22 dicembre]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/20-152707600/lazio_comunicato_ufficiale_dei_tifosi_sulla_scelta_per_la_supercoppa_contro_l_inter/</link>
+            <guid isPermaLink="false">sn:cds:152707600</guid>
+            <category><![CDATA[Lazio]]></category>
+            <category><![CDATA[Inter]]></category>
+            <category><![CDATA[Supercoppa]]></category>
+            <category><![CDATA[ultras]]></category>
+            <category><![CDATA[tifosi]]></category>
+            <pubDate>Fri, 20 Nov 2026 21:26:50 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/210724949-3376b76e-1e79-43b8-b889-acf25fd911a1.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/210724949-3376b76e-1e79-43b8-b889-acf25fd911a1.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>ANSA</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/210724949-3376b76e-1e79-43b8-b889-acf25fd911a1.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il supporters organizzati biancocelesti si mobilitano in vista del primo trofeo che si assegner&agrave; a San Siro il 22 dicembre]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[McTominay presto sar&agrave; pap&agrave;: l&#39;annuncio social con dedica piena d&#39;amore]]></title>
             <description><![CDATA[Lo scozzese del Napoli e la compagna Cameron svelano la gravidanza pubblicando l&#39;ecografia su Instagram: tutti i dettagli]]></description>
@@ -536,24 +556,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/162705070-50b7a4fb-f365-47ed-b3bf-49c125f6204b.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Il centrocampista dei biancocelesti non ha lesinato parole d&#39;elogio per il tecnico e ha raccontato il clima all&#39;interno allo spogliatoio dal momento del suo arrivo]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Palladino e il Bologna nel destino, l&#39;emozione con il ricordo di sua madre e il rapporto con Bove: &quot;Siamo diventati amici&quot;]]></title>
-            <description><![CDATA[Il tecnico dei rossobl&ugrave; ha parlato del suo legame con la citt&agrave; e il club che ha risollevato subentrando all&#39;esonerato Tedesco]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/bologna/2026/11/19-152689355/palladino_e_il_bologna_nel_destino_l_emozione_con_il_ricordo_di_sua_madre_e_il_rapporto_con_bove_siamo_diventati_amici/</link>
-            <guid isPermaLink="false">sn:cds:152689355</guid>
-            <category><![CDATA[palladino]]></category>
-            <category><![CDATA[Bologna]]></category>
-            <category><![CDATA[Serie A]]></category>
-            <pubDate>Thu, 19 Nov 2026 16:05:27 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/153227731-2c7f0ed2-9eb2-4db3-9d07-21d5bb85b769.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/153227731-2c7f0ed2-9eb2-4db3-9d07-21d5bb85b769.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/153227731-2c7f0ed2-9eb2-4db3-9d07-21d5bb85b769.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il tecnico dei rossobl&ugrave; ha parlato del suo legame con la citt&agrave; e il club che ha risollevato subentrando all&#39;esonerato Tedesco]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

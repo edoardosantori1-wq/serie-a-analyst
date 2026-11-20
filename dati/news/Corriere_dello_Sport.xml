@@ -5,7 +5,26 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 20 Nov 2026 14:50:27 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Nov 2026 15:49:07 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[<p>Fabregas sulle condizioni di Kean: &quot;Star&ograve; fuori qualche mese, &egrave; un problema osseo&quot;</p>
+]]></title>
+            <description><![CDATA[L&#39;allenatore ha fatto chiarezza sulle condizioni dell&#39;attaccante italiano]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/como/2026/11/20-152704027/fabregas_sulle_condizioni_di_kean_star_fuori_qualche_mese_un_problema_osseo/</link>
+            <guid isPermaLink="false">sn:cds:152704027</guid>
+            <category><![CDATA[Como]]></category>
+            <category><![CDATA[Kean]]></category>
+            <category><![CDATA[Fabregas]]></category>
+            <pubDate>Fri, 20 Nov 2026 15:25:03 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/152230798-42a36f49-2959-4eef-966f-6d8e6b9cc0b3.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/152230798-42a36f49-2959-4eef-966f-6d8e6b9cc0b3.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/152230798-42a36f49-2959-4eef-966f-6d8e6b9cc0b3.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[L&#39;allenatore ha fatto chiarezza sulle condizioni dell&#39;attaccante italiano]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[<p>Gattuso ironico sul cancello chiuso: &quot;Ho fatto il giro...&quot;. Poi parla di Frattesi e di una battuta prima del Napoli</p>
 ]]></title>
@@ -534,24 +553,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Il centravanti racconta la sua storia dal Senegal al Cagliari passando per Roma: &quot;L&#39;esordio con doppietta? Non ho parole per descrivere la mia felicit&agrave;&quot;]]></dcterms:alternative>
             <dc:creator><![CDATA[Ivan Paone]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Matteo Darmian professore o vice sindaco di Bologna? &quot;Sono qui per aiutare, siamo un gruppo sano e forte&quot;]]></title>
-            <description><![CDATA[Il difensore fa i complimenti a Palladino e punta all&rsquo;Europa: &ldquo;Bisogna essere ambiziosi&rdquo;. La nostra esclusiva con uno dei pilastri di Palladino]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/bologna/2026/11/19-152683304/matteo_darmian_professore_o_vice_sindaco_di_bologna_sono_qui_per_aiutare_siamo_un_gruppo_sano_e_forte/</link>
-            <guid isPermaLink="false">sn:cds:152683304</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Darmian]]></category>
-            <category><![CDATA[Bologna]]></category>
-            <pubDate>Thu, 19 Nov 2026 08:02:54 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/075925386-e8dd1873-8718-46ed-87b7-6fa14a4c4e98.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/075925386-e8dd1873-8718-46ed-87b7-6fa14a4c4e98.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>FOTO SCHICCHI</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/075925386-e8dd1873-8718-46ed-87b7-6fa14a4c4e98.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il difensore fa i complimenti a Palladino e punta all&rsquo;Europa: &ldquo;Bisogna essere ambiziosi&rdquo;. La nostra esclusiva con uno dei pilastri di Palladino]]></dcterms:alternative>
-            <dc:creator><![CDATA[Beneforti - Cervellati ]]></dc:creator>
         </item>
     </channel>
 </rss>

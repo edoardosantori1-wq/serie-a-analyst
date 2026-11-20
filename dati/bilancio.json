@@ -1,0 +1,521 @@
+{
+ "aggiornato": "2026-11-20T09:06:45+00:00",
+ "totale": {
+  "giocate": 0,
+  "vinte": 0,
+  "perse": 0,
+  "aperte": 25,
+  "hit": null,
+  "unita": 0,
+  "roi": null
+ },
+ "categorie": [
+  {
+   "cat": "pronostico",
+   "nome": "Pronostici partita",
+   "giocate": 0,
+   "vinte": 0,
+   "perse": 0,
+   "aperte": 10,
+   "hit": null,
+   "unita": 0,
+   "roi": null
+  },
+  {
+   "cat": "tripla_semplice",
+   "nome": "Triple semplici",
+   "giocate": 0,
+   "vinte": 0,
+   "perse": 0,
+   "aperte": 2,
+   "hit": null,
+   "unita": 0,
+   "roi": null
+  },
+  {
+   "cat": "tripla_media",
+   "nome": "Triple medie",
+   "giocate": 0,
+   "vinte": 0,
+   "perse": 0,
+   "aperte": 2,
+   "hit": null,
+   "unita": 0,
+   "roi": null
+  },
+  {
+   "cat": "tripla_aggressiva",
+   "nome": "Triple aggressive",
+   "giocate": 0,
+   "vinte": 0,
+   "perse": 0,
+   "aperte": 2,
+   "hit": null,
+   "unita": 0,
+   "roi": null
+  },
+  {
+   "cat": "marcatore",
+   "nome": "Marcatori",
+   "giocate": 0,
+   "vinte": 0,
+   "perse": 0,
+   "aperte": 4,
+   "hit": null,
+   "unita": 0,
+   "roi": null
+  },
+  {
+   "cat": "singola",
+   "nome": "Singole",
+   "giocate": 0,
+   "vinte": 0,
+   "perse": 0,
+   "aperte": 5,
+   "hit": null,
+   "unita": 0,
+   "roi": null
+  },
+  {
+   "cat": "value",
+   "nome": "Value bet",
+   "giocate": 0,
+   "vinte": 0,
+   "perse": 0,
+   "aperte": 0,
+   "hit": null,
+   "unita": 0,
+   "roi": null
+  }
+ ],
+ "giornate": [
+  {
+   "giornata": 12,
+   "giocate": 0,
+   "vinte": 0,
+   "perse": 0,
+   "aperte": 25,
+   "hit": null,
+   "unita": 0,
+   "roi": null
+  }
+ ],
+ "giocate": [
+  {
+   "cat": "pronostico",
+   "giornata": 12,
+   "desc": "Monza-Fiorentina",
+   "mercato": "U3.5",
+   "quota": 1.48,
+   "p": 0.6722,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-23T19:45:00+00:00",
+   "risultato": null
+  },
+  {
+   "cat": "pronostico",
+   "giornata": 12,
+   "desc": "Atalanta-Inter",
+   "mercato": "U3.5",
+   "quota": 1.77,
+   "p": 0.6262,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-22T19:45:00+00:00",
+   "risultato": null
+  },
+  {
+   "cat": "singola",
+   "giornata": 12,
+   "desc": "Atalanta-Inter",
+   "mercato": "U2.5",
+   "quota": 2.85,
+   "p": 0.4025,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-22T19:45:00+00:00",
+   "risultato": null
+  },
+  {
+   "cat": "tripla_aggressiva",
+   "giornata": 12,
+   "desc": "Tripla aggressiva domenica",
+   "mercato": "Juventus-Venezia: C:1 + Under 3.5 · Sassuolo-Genoa: C:1X + Under 3.5 · Atalanta-Inter: C:2 + Under 3.5",
+   "quota": 13.06,
+   "p": null,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-22T19:45:00+00:00",
+   "dettaglio": [
+    {
+     "partita": "Juventus-Venezia",
+     "mercato": "C:1 + Under 3.5",
+     "esito": null,
+     "risultato": null
+    },
+    {
+     "partita": "Sassuolo-Genoa",
+     "mercato": "C:1X + Under 3.5",
+     "esito": null,
+     "risultato": null
+    },
+    {
+     "partita": "Atalanta-Inter",
+     "mercato": "C:2 + Under 3.5",
+     "esito": null,
+     "risultato": null
+    }
+   ]
+  },
+  {
+   "cat": "tripla_media",
+   "giornata": 12,
+   "desc": "Tripla media domenica",
+   "mercato": "Bologna-Udinese: U3.5 · Milan-Frosinone: X2 · Atalanta-Inter: U3.5",
+   "quota": 5.41,
+   "p": null,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-22T19:45:00+00:00",
+   "dettaglio": [
+    {
+     "partita": "Bologna-Udinese",
+     "mercato": "U3.5",
+     "esito": null,
+     "risultato": null
+    },
+    {
+     "partita": "Milan-Frosinone",
+     "mercato": "X2",
+     "esito": null,
+     "risultato": null
+    },
+    {
+     "partita": "Atalanta-Inter",
+     "mercato": "U3.5",
+     "esito": null,
+     "risultato": null
+    }
+   ]
+  },
+  {
+   "cat": "pronostico",
+   "giornata": 12,
+   "desc": "Milan-Frosinone",
+   "mercato": "U3.5",
+   "quota": 1.88,
+   "p": 0.5641,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-22T17:00:00+00:00",
+   "risultato": null
+  },
+  {
+   "cat": "singola",
+   "giornata": 12,
+   "desc": "Milan-Frosinone",
+   "mercato": "DNB2",
+   "quota": 4.0,
+   "p": 0.3158,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-22T17:00:00+00:00",
+   "risultato": null
+  },
+  {
+   "cat": "marcatore",
+   "giornata": 12,
+   "desc": "Milan-Frosinone",
+   "mercato": "SCORER:Gonçalo Ramos",
+   "quota": 1.95,
+   "p": 0.407,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-22T17:00:00+00:00",
+   "risultato": null
+  },
+  {
+   "cat": "pronostico",
+   "giornata": 12,
+   "desc": "Bologna-Udinese",
+   "mercato": "U3.5",
+   "quota": 1.3,
+   "p": 0.7209,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-22T14:00:00+00:00",
+   "risultato": null
+  },
+  {
+   "cat": "pronostico",
+   "giornata": 12,
+   "desc": "Sassuolo-Genoa",
+   "mercato": "1X",
+   "quota": 1.47,
+   "p": 0.6481,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-22T14:00:00+00:00",
+   "risultato": null
+  },
+  {
+   "cat": "tripla_semplice",
+   "giornata": 12,
+   "desc": "Tripla semplice domenica",
+   "mercato": "Juventus-Venezia: U3.5 · Bologna-Udinese: O1.5 · Sassuolo-Genoa: U3.5",
+   "quota": 2.34,
+   "p": null,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-22T14:00:00+00:00",
+   "dettaglio": [
+    {
+     "partita": "Juventus-Venezia",
+     "mercato": "U3.5",
+     "esito": null,
+     "risultato": null
+    },
+    {
+     "partita": "Bologna-Udinese",
+     "mercato": "O1.5",
+     "esito": null,
+     "risultato": null
+    },
+    {
+     "partita": "Sassuolo-Genoa",
+     "mercato": "U3.5",
+     "esito": null,
+     "risultato": null
+    }
+   ]
+  },
+  {
+   "cat": "pronostico",
+   "giornata": 12,
+   "desc": "Juventus-Venezia",
+   "mercato": "U3.5",
+   "quota": 1.45,
+   "p": 0.7029,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-22T11:30:00+00:00",
+   "risultato": null
+  },
+  {
+   "cat": "marcatore",
+   "giornata": 12,
+   "desc": "Juventus-Venezia",
+   "mercato": "SCORER:Randal Kolo Muani",
+   "quota": 2.5,
+   "p": 0.342,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-22T11:30:00+00:00",
+   "risultato": null
+  },
+  {
+   "cat": "pronostico",
+   "giornata": 12,
+   "desc": "Napoli-Torino",
+   "mercato": "U3.5",
+   "quota": 1.4,
+   "p": 0.7384,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-21T19:45:00+00:00",
+   "risultato": null
+  },
+  {
+   "cat": "tripla_semplice",
+   "giornata": 12,
+   "desc": "Tripla semplice sabato",
+   "mercato": "Como-Cagliari: 12 · Lazio-Lecce: U3.5 · Napoli-Torino: DNB1",
+   "quota": 1.89,
+   "p": null,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-21T19:45:00+00:00",
+   "dettaglio": [
+    {
+     "partita": "Como-Cagliari",
+     "mercato": "12",
+     "esito": null,
+     "risultato": null
+    },
+    {
+     "partita": "Lazio-Lecce",
+     "mercato": "U3.5",
+     "esito": null,
+     "risultato": null
+    },
+    {
+     "partita": "Napoli-Torino",
+     "mercato": "DNB1",
+     "esito": null,
+     "risultato": null
+    }
+   ]
+  },
+  {
+   "cat": "tripla_aggressiva",
+   "giornata": 12,
+   "desc": "Tripla aggressiva sabato",
+   "mercato": "Como-Cagliari: C:1 + No Goal + Under 3.5 · Lazio-Lecce: C:1 + Under 3.5 · Napoli-Torino: C:1 + Under 3.5",
+   "quota": 14.57,
+   "p": null,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-21T19:45:00+00:00",
+   "dettaglio": [
+    {
+     "partita": "Como-Cagliari",
+     "mercato": "C:1 + No Goal + Under 3.5",
+     "esito": null,
+     "risultato": null
+    },
+    {
+     "partita": "Lazio-Lecce",
+     "mercato": "C:1 + Under 3.5",
+     "esito": null,
+     "risultato": null
+    },
+    {
+     "partita": "Napoli-Torino",
+     "mercato": "C:1 + Under 3.5",
+     "esito": null,
+     "risultato": null
+    }
+   ]
+  },
+  {
+   "cat": "pronostico",
+   "giornata": 12,
+   "desc": "Parma-Roma",
+   "mercato": "U3.5",
+   "quota": 1.52,
+   "p": 0.748,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-21T17:00:00+00:00",
+   "risultato": null
+  },
+  {
+   "cat": "singola",
+   "giornata": 12,
+   "desc": "Parma-Roma",
+   "mercato": "1X",
+   "quota": 3.35,
+   "p": 0.3916,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-21T17:00:00+00:00",
+   "risultato": null
+  },
+  {
+   "cat": "marcatore",
+   "giornata": 12,
+   "desc": "Parma-Roma",
+   "mercato": "SCORER:Donyell Malen",
+   "quota": 1.75,
+   "p": 0.3674,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-21T17:00:00+00:00",
+   "risultato": null
+  },
+  {
+   "cat": "tripla_media",
+   "giornata": 12,
+   "desc": "Tripla media sabato",
+   "mercato": "Como-Cagliari: U3.5 · Lazio-Lecce: U2.5 · Parma-Roma: U3.5",
+   "quota": 5.37,
+   "p": null,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-21T17:00:00+00:00",
+   "dettaglio": [
+    {
+     "partita": "Como-Cagliari",
+     "mercato": "U3.5",
+     "esito": null,
+     "risultato": null
+    },
+    {
+     "partita": "Lazio-Lecce",
+     "mercato": "U2.5",
+     "esito": null,
+     "risultato": null
+    },
+    {
+     "partita": "Parma-Roma",
+     "mercato": "U3.5",
+     "esito": null,
+     "risultato": null
+    }
+   ]
+  },
+  {
+   "cat": "pronostico",
+   "giornata": 12,
+   "desc": "Como-Cagliari",
+   "mercato": "U3.5",
+   "quota": 1.57,
+   "p": 0.7344,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-21T14:00:00+00:00",
+   "risultato": null
+  },
+  {
+   "cat": "pronostico",
+   "giornata": 12,
+   "desc": "Lazio-Lecce",
+   "mercato": "U3.5",
+   "quota": 1.47,
+   "p": 0.7562,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-21T14:00:00+00:00",
+   "risultato": null
+  },
+  {
+   "cat": "singola",
+   "giornata": 12,
+   "desc": "Como-Cagliari",
+   "mercato": "U2.5",
+   "quota": 2.5,
+   "p": 0.5165,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-21T14:00:00+00:00",
+   "risultato": null
+  },
+  {
+   "cat": "singola",
+   "giornata": 12,
+   "desc": "Lazio-Lecce",
+   "mercato": "U2.5",
+   "quota": 2.25,
+   "p": 0.5422,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-21T14:00:00+00:00",
+   "risultato": null
+  },
+  {
+   "cat": "marcatore",
+   "giornata": 12,
+   "desc": "Como-Cagliari",
+   "mercato": "SCORER:Tasos Douvikas",
+   "quota": 1.92,
+   "p": 0.3325,
+   "esito": null,
+   "profitto": null,
+   "inizio": "2026-11-21T14:00:00+00:00",
+   "risultato": null
+  }
+ ],
+ "clv": null,
+ "clv_giornate": {}
+}

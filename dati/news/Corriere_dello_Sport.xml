@@ -5,7 +5,44 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 20 Nov 2026 13:06:02 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Nov 2026 14:50:27 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[<p>Gattuso ironico sul cancello chiuso: &quot;Ho fatto il giro...&quot;. Poi parla di Frattesi e di una battuta prima del Napoli</p>
+]]></title>
+            <description><![CDATA[La conferenza dell&#39;allenatore dei biancocelesti alla vigilia del match contro il Lecce]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/20-152700337/gattuso_ironico_sul_cancello_chiuso_ho_fatto_il_giro_poi_parla_di_frattesi_e_di_una_battuta_prima_del_napoli/</link>
+            <guid isPermaLink="false">sn:cds:152700337</guid>
+            <category><![CDATA[Lazio]]></category>
+            <category><![CDATA[Gattuso]]></category>
+            <category><![CDATA[Lecce]]></category>
+            <pubDate>Fri, 20 Nov 2026 13:22:52 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/132214361-64e557bb-51f7-481b-a1c0-5b878afd501e.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/132214361-64e557bb-51f7-481b-a1c0-5b878afd501e.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/132214361-64e557bb-51f7-481b-a1c0-5b878afd501e.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[La conferenza dell&#39;allenatore dei biancocelesti alla vigilia del match contro il Lecce]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[De Rossi spinge il Genoa: &quot;Tre punti sarebbero una manna dal cielo, ma il Sassuolo non &egrave; morto&quot;]]></title>
+            <description><![CDATA[Il tecnico a due giorni dalla sfida del Mapei dove sono attesi oltre 4mila tifosi rossobl&ugrave;: &quot;Sar&agrave; un po&#39; come giocare in casa&quot;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/genoa/2026/11/20-152700807/de_rossi_spinge_il_genoa_tre_punti_sarebbero_una_manna_dal_cielo_ma_il_sassuolo_non_morto/</link>
+            <guid isPermaLink="false">sn:cds:152700807</guid>
+            <category><![CDATA[DeRossi]]></category>
+            <category><![CDATA[Genoa]]></category>
+            <category><![CDATA[Sassuolo]]></category>
+            <pubDate>Fri, 20 Nov 2026 13:17:59 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/131637878-b3fa4736-ecc3-46c6-a642-4a17af48c6ab.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/131637878-b3fa4736-ecc3-46c6-a642-4a17af48c6ab.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/131637878-b3fa4736-ecc3-46c6-a642-4a17af48c6ab.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il tecnico a due giorni dalla sfida del Mapei dove sono attesi oltre 4mila tifosi rossobl&ugrave;: &quot;Sar&agrave; un po&#39; come giocare in casa&quot;]]></dcterms:alternative>
+            <dc:creator><![CDATA[Chiara Zucchelli]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Gasperini netto sul mercato di gennaio: &quot;Ne parler&agrave; Galantic, ma non abbiamo programmato&quot;]]></title>
             <description><![CDATA[Il tecnico alla vigilia della partita di Parma: &quot;Svilar, Mancini e Dybala stanno bene. Fatichiamo dopo la sosta? Brutta roba...&quot;]]></description>
@@ -515,41 +552,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Il difensore fa i complimenti a Palladino e punta all&rsquo;Europa: &ldquo;Bisogna essere ambiziosi&rdquo;. La nostra esclusiva con uno dei pilastri di Palladino]]></dcterms:alternative>
             <dc:creator><![CDATA[Beneforti - Cervellati ]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Bove e la voglia di tornare a giocare in Italia: &quot;Sogna Firenze o Roma&quot;]]></title>
-            <description><![CDATA[Il centrocampista sta bene al Watford, ma il suo agente Tavano apre a nuovi scenari nel nostro campionato]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/fiorentina/2026/11/19-152683182/bove_e_la_voglia_di_tornare_a_giocare_in_italia_sogna_firenze_o_roma/</link>
-            <guid isPermaLink="false">sn:cds:152683182</guid>
-            <category><![CDATA[Bove]]></category>
-            <category><![CDATA[Fiorentina]]></category>
-            <category><![CDATA[Roma]]></category>
-            <category><![CDATA[Watford]]></category>
-            <category><![CDATA[oggi]]></category>
-            <pubDate>Thu, 19 Nov 2026 07:31:31 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/072908754-7598e520-ea44-4079-a92c-039fb17d7d3e.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/072908754-7598e520-ea44-4079-a92c-039fb17d7d3e.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/072908754-7598e520-ea44-4079-a92c-039fb17d7d3e.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il centrocampista sta bene al Watford, ma il suo agente Tavano apre a nuovi scenari nel nostro campionato]]></dcterms:alternative>
-            <dc:creator><![CDATA[Jacopo Aliprandi]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Inter avanti con Calhanoglu: il nodo bonus sullo stipendio, cosa manca per chiudere il rinnovo]]></title>
-            <description><![CDATA[Zielinski non pu&ograve; essere il futuro, Stankovic non ancora pronto: ecco le strategie per il centrocampo&nbsp;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/19-152682914/inter_avanti_con_calhanoglu_il_nodo_bonus_sullo_stipendio_cosa_manca_per_chiudere_il_rinnovo/</link>
-            <guid isPermaLink="false">sn:cds:152682914</guid>
-            <pubDate>Thu, 19 Nov 2026 07:14:48 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/071054532-324a0a1f-e14a-407c-859e-d0517580b5a9.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/071054532-324a0a1f-e14a-407c-859e-d0517580b5a9.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Inter via Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/071054532-324a0a1f-e14a-407c-859e-d0517580b5a9.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Zielinski non pu&ograve; essere il futuro, Stankovic non ancora pronto: ecco le strategie per il centrocampo&nbsp;]]></dcterms:alternative>
-            <dc:creator><![CDATA[Pietro Guadagno]]></dc:creator>
         </item>
     </channel>
 </rss>

@@ -5,7 +5,50 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 20 Nov 2026 15:49:07 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Nov 2026 16:59:15 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Gasperini ritrova Svilar, Mancini e Dybala: i convocati per Parma-Roma]]></title>
+            <description><![CDATA[Buone notizie per il tecnico giallorosso in vista della sfida del Tardini: tornano a disposizione il portiere, il difensore e la Joya]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/20-152704714/gasperini_ritrova_svilar_mancini_e_dybala_i_convocati_per_parma-roma/</link>
+            <guid isPermaLink="false">sn:cds:152704714</guid>
+            <category><![CDATA[Roma]]></category>
+            <category><![CDATA[Gasperini]]></category>
+            <category><![CDATA[convocati]]></category>
+            <category><![CDATA[parma]]></category>
+            <category><![CDATA[Parma-Roma]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[Dybala]]></category>
+            <pubDate>Fri, 20 Nov 2026 16:28:42 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/161821485-856af14b-7b8a-402d-8a3e-9e13ac4c85bf.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/161821485-856af14b-7b8a-402d-8a3e-9e13ac4c85bf.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>AS Roma via Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/161821485-856af14b-7b8a-402d-8a3e-9e13ac4c85bf.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Buone notizie per il tecnico giallorosso in vista della sfida del Tardini: tornano a disposizione il portiere, il difensore e la Joya]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Nico Paz si esalta con l&#39;Argentina, ma Fabregas frena sulla numero 10: &quot;La maglie di Messi...&quot;]]></title>
+            <description><![CDATA[Il tecnico del Como smorza l&#39;ipotesi di destinare a Nico la maglia che &egrave; stata di Maradona]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/como/2026/11/20-152704518/nico_paz_si_esalta_con_l_argentina_ma_fabregas_frena_sulla_numero_10_la_maglie_di_messi_/</link>
+            <guid isPermaLink="false">sn:cds:152704518</guid>
+            <category><![CDATA[Fabregas]]></category>
+            <category><![CDATA[Como]]></category>
+            <category><![CDATA[argentina]]></category>
+            <category><![CDATA[Messi]]></category>
+            <category><![CDATA[Maradona]]></category>
+            <category><![CDATA[nicopaz]]></category>
+            <pubDate>Fri, 20 Nov 2026 16:18:34 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/154854394-d43ee1ce-cf52-4e91-88b9-c675ec296e8f.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/154854394-d43ee1ce-cf52-4e91-88b9-c675ec296e8f.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>APS</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/154854394-d43ee1ce-cf52-4e91-88b9-c675ec296e8f.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il tecnico del Como smorza l&#39;ipotesi di destinare a Nico la maglia che &egrave; stata di Maradona]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[<p>Fabregas sulle condizioni di Kean: &quot;Star&ograve; fuori qualche mese, &egrave; un problema osseo&quot;</p>
 ]]></title>
@@ -517,42 +560,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Il centrocampista, rientrato alla Nazionale affaticato, ha per ora risposto presente]]></dcterms:alternative>
             <dc:creator><![CDATA[Daniele Rindone]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Dalla Spagna: &quot;Barcellona a caccia di un mancino, Bastoni costa quaranta milioni&quot;]]></title>
-            <description><![CDATA[Le alternative indicate da Flick sono&nbsp;Schlotterbeck e Lisandro Martinez]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/19-152686137/dalla_spagna_barcellona_a_caccia_di_un_mancino_bastoni_costa_quaranta_milioni/</link>
-            <guid isPermaLink="false">sn:cds:152686137</guid>
-            <category><![CDATA[bastoni]]></category>
-            <category><![CDATA[Inter]]></category>
-            <category><![CDATA[Barcellona]]></category>
-            <pubDate>Thu, 19 Nov 2026 10:30:03 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/095700246-760eb6e0-03dd-4e60-94d2-a90a09a45d67.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/095700246-760eb6e0-03dd-4e60-94d2-a90a09a45d67.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Inter via Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/095700246-760eb6e0-03dd-4e60-94d2-a90a09a45d67.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Le alternative indicate da Flick sono&nbsp;Schlotterbeck e Lisandro Martinez]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Mendy esclusivo: &quot;A Pisacane devo tutto&quot;]]></title>
-            <description><![CDATA[Il centravanti racconta la sua storia dal Senegal al Cagliari passando per Roma: &quot;L&#39;esordio con doppietta? Non ho parole per descrivere la mia felicit&agrave;&quot;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/cagliari/2026/11/19-152683296/mendy_esclusivo_a_pisacane_devo_tutto/</link>
-            <guid isPermaLink="false">sn:cds:152683296</guid>
-            <category><![CDATA[Mendy]]></category>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Cagliari]]></category>
-            <pubDate>Thu, 19 Nov 2026 09:33:56 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/074447578-0b02a5e2-7de3-42b2-91c2-c4c3f8468a12.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/074447578-0b02a5e2-7de3-42b2-91c2-c4c3f8468a12.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/074447578-0b02a5e2-7de3-42b2-91c2-c4c3f8468a12.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il centravanti racconta la sua storia dal Senegal al Cagliari passando per Roma: &quot;L&#39;esordio con doppietta? Non ho parole per descrivere la mia felicit&agrave;&quot;]]></dcterms:alternative>
-            <dc:creator><![CDATA[Ivan Paone]]></dc:creator>
         </item>
     </channel>
 </rss>

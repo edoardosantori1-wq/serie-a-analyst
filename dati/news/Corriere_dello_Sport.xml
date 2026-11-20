@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 20 Nov 2026 09:03:49 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Nov 2026 10:00:14 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Bologna, Heggem rimandato a gennaio]]></title>
+            <description><![CDATA[Le frasi dal ritiro della Norvegia non sono passate inosservate. Il club per ora non ha intenzione di cederlo, ma non vuole avere giocatori scontenti]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/bologna/2026/11/20-152697398/bologna_heggem_rimandato_a_gennaio/</link>
+            <guid isPermaLink="false">sn:cds:152697398</guid>
+            <category><![CDATA[Bologna]]></category>
+            <category><![CDATA[Heggem]]></category>
+            <category><![CDATA[palladino]]></category>
+            <pubDate>Fri, 20 Nov 2026 09:07:33 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/090729808-fe6ee873-9c7b-4fb5-8e4e-ba681e4c60b4.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/090729808-fe6ee873-9c7b-4fb5-8e4e-ba681e4c60b4.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/090729808-fe6ee873-9c7b-4fb5-8e4e-ba681e4c60b4.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Le frasi dal ritiro della Norvegia non sono passate inosservate. Il club per ora non ha intenzione di cederlo, ma non vuole avere giocatori scontenti]]></dcterms:alternative>
+            <dc:creator><![CDATA[Claudio Beneforti]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Fiorentina, Vanoli studia il ritorno di Arthur e del 4-3-2-1&nbsp;]]></title>
             <description><![CDATA[Dopo due mesi di stop, Atta sar&agrave; a disposizione per la trasferta di Monza: difficile vederlo dall&rsquo;inizio prima della sfida contro il Cagliari del 7 al Franchi]]></description>
@@ -25,7 +43,8 @@
             <dc:creator><![CDATA[Francesco Gensini]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[Retroscena Roma: quando a Parma Gasperini fuorioso fece volare sedie e persino un tavolo]]></title>
+            <title><![CDATA[<p>Retroscena Roma: quando a Parma Gasperini furioso fece volare sedie e persino un tavolo</p>
+]]></title>
             <description><![CDATA[Era la &ldquo;banda del 6&deg; posto&rdquo;. Dopo quel 2-3 il gruppo ha iniziato a parlare di scudetto. Miglior attacco, sei clean sheet&nbsp; e un piano per volare a marzo &nbsp;]]></description>
             <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/20-152694949/retroscena_roma_quando_a_parma_gasperini_fuorioso_fece_volare_sedie_e_persino_un_tavolo/</link>
             <guid isPermaLink="false">sn:cds:152694949</guid>
@@ -533,21 +552,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Smentita l&#39;ipotesi di seguire a Manchester l&#39;ex ct degli Usa Pochettino]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Spalletti e il Cobolli calciatore: &quot;Me lo ricordo a Trigoria con Bove e Calafiori&quot;]]></title>
-            <description><![CDATA[Il tecnico della Juve intercettato a Torino prima della sfida tra Flavio e Tiafoe per le Nitto Atp Finals]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/18-152676021/spalletti_e_il_cobolli_calciatore_me_lo_ricordo_a_trigoria_con_bove_e_calafiori/</link>
-            <guid isPermaLink="false">sn:cds:152676021</guid>
-            <pubDate>Wed, 18 Nov 2026 19:35:45 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/192604876-7d3eca5a-9400-45b6-aa36-d250ebd433e1.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/192604876-7d3eca5a-9400-45b6-aa36-d250ebd433e1.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/192604876-7d3eca5a-9400-45b6-aa36-d250ebd433e1.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il tecnico della Juve intercettato a Torino prima della sfida tra Flavio e Tiafoe per le Nitto Atp Finals]]></dcterms:alternative>
-            <dc:creator><![CDATA[Simone Zizzari]]></dc:creator>
         </item>
     </channel>
 </rss>

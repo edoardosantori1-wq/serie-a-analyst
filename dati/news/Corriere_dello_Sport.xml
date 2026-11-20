@@ -5,7 +5,45 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 20 Nov 2026 18:58:08 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Nov 2026 19:59:40 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[La Roma &egrave; atterrata a Bologna invece che a Parma: cosa &egrave; successo al volo dei giallorossi]]></title>
+            <description><![CDATA[Imprevisto per Dybala e compagni alla vigilia della gara valida per la dodicesima giornata di Serie A, al Tardini, contro gli uomini di Gilardino]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/20-152706396/la_roma_atterrata_a_bologna_invece_che_a_parma_cosa_successo_al_volo_dei_giallorossi/</link>
+            <guid isPermaLink="false">sn:cds:152706396</guid>
+            <category><![CDATA[Roma]]></category>
+            <category><![CDATA[parma]]></category>
+            <category><![CDATA[Bologna]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[Parma-Roma]]></category>
+            <pubDate>Fri, 20 Nov 2026 19:07:11 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/190657635-c7f43408-890f-4897-8cc1-e99ef3b5a5e7.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/190657635-c7f43408-890f-4897-8cc1-e99ef3b5a5e7.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>AS Roma via Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/190657635-c7f43408-890f-4897-8cc1-e99ef3b5a5e7.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Imprevisto per Dybala e compagni alla vigilia della gara valida per la dodicesima giornata di Serie A, al Tardini, contro gli uomini di Gilardino]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Palladino punisce Heggem, non sar&agrave; convocato contro l&#39;Udinese: &quot;Ha esagerato&quot;]]></title>
+            <description><![CDATA[L&#39;allenatore non fa sconti e lascia a casa il norvegese per la sfida contro i bianconeri: tutti i dettagli&nbsp;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/fiorentina/2026/11/20-152706308/palladino_punisce_heggem_non_sar_convocato_contro_l_udinese_ha_esagerato/</link>
+            <guid isPermaLink="false">sn:cds:152706308</guid>
+            <category><![CDATA[Bologna]]></category>
+            <category><![CDATA[palladino]]></category>
+            <category><![CDATA[Heggem]]></category>
+            <pubDate>Fri, 20 Nov 2026 19:03:31 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/185525702-184e1658-8b3b-4eea-853d-8e0c82925244.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/185525702-184e1658-8b3b-4eea-853d-8e0c82925244.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/185525702-184e1658-8b3b-4eea-853d-8e0c82925244.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[L&#39;allenatore non fa sconti e lascia a casa il norvegese per la sfida contro i bianconeri: tutti i dettagli&nbsp;]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Gasperini ritrova Svilar, Mancini e Dybala: i convocati per Parma-Roma]]></title>
             <description><![CDATA[Buone notizie per il tecnico giallorosso in vista della sfida del Tardini: tornano a disposizione il portiere, il difensore e la Joya]]></description>
@@ -524,42 +562,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Nato in California, il classe 2007 ha gi&agrave; esordito con le nazionali giovanili statunitensi: portato in prima squadra da De Rossi, ha incassato anche la fiducia di Gasperini]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Centravanti o ala, ecco perch&eacute; Noslin &egrave; l&rsquo;oro della Lazio&nbsp;]]></title>
-            <description><![CDATA[Segna e gioca con qualit&agrave;, Gattuso lo esalta. E sabato a Lecce sogna altri gol]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/19-152683093/centravanti_o_ala_ecco_perch_noslin_loro_della_lazio/</link>
-            <guid isPermaLink="false">sn:cds:152683093</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Lazio]]></category>
-            <category><![CDATA[Noslin]]></category>
-            <pubDate>Thu, 19 Nov 2026 12:00:08 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/071449985-01052e2f-906f-4660-8779-7e96e6ad65c6.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/071449985-01052e2f-906f-4660-8779-7e96e6ad65c6.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>BARTOLETTI</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/071449985-01052e2f-906f-4660-8779-7e96e6ad65c6.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Segna e gioca con qualit&agrave;, Gattuso lo esalta. E sabato a Lecce sogna altri gol]]></dcterms:alternative>
-            <dc:creator><![CDATA[Daniele Rindone]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Come sta Frattesi: i dubbi di Gattuso che pensa a un mese di fuoco]]></title>
-            <description><![CDATA[Il centrocampista, rientrato alla Nazionale affaticato, ha per ora risposto presente]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/19-152683291/come_sta_frattesi_i_dubbi_di_gattuso_che_pensa_a_un_mese_di_fuoco/</link>
-            <guid isPermaLink="false">sn:cds:152683291</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Lazio]]></category>
-            <category><![CDATA[frattesi]]></category>
-            <pubDate>Thu, 19 Nov 2026 10:59:29 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/073522869-df22d7a6-bbc6-4ba7-b9c7-94dafe61e12f.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/073522869-df22d7a6-bbc6-4ba7-b9c7-94dafe61e12f.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/073522869-df22d7a6-bbc6-4ba7-b9c7-94dafe61e12f.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il centrocampista, rientrato alla Nazionale affaticato, ha per ora risposto presente]]></dcterms:alternative>
-            <dc:creator><![CDATA[Daniele Rindone]]></dc:creator>
         </item>
     </channel>
 </rss>

@@ -5,7 +5,26 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 20 Nov 2026 10:00:14 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Nov 2026 11:07:46 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Pavlovic e la battuta su Conceicao che fa discutere: &quot;Mi piace ma aveva metodi alla Hitler&quot;&nbsp;]]></title>
+            <description><![CDATA[Il difensore del Milan racconta il suo ex allenatore e svela alcuni metodi molto duri. Poi incensa Allegri]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/milan/2026/11/20-152698251/pavlovic_e_la_battuta_su_conceicao_che_fa_discutere_mi_piace_ma_aveva_metodi_alla_hitler/</link>
+            <guid isPermaLink="false">sn:cds:152698251</guid>
+            <category><![CDATA[Milan]]></category>
+            <category><![CDATA[pavlovic]]></category>
+            <category><![CDATA[Conceicao]]></category>
+            <category><![CDATA[Allegri]]></category>
+            <pubDate>Fri, 20 Nov 2026 10:20:03 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/100103887-1e7e76d5-713b-4be2-8e6f-070cfaf1eb74.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/100103887-1e7e76d5-713b-4be2-8e6f-070cfaf1eb74.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/100103887-1e7e76d5-713b-4be2-8e6f-070cfaf1eb74.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il difensore del Milan racconta il suo ex allenatore e svela alcuni metodi molto duri. Poi incensa Allegri]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Bologna, Heggem rimandato a gennaio]]></title>
             <description><![CDATA[Le frasi dal ritiro della Norvegia non sono passate inosservate. Il club per ora non ha intenzione di cederlo, ma non vuole avere giocatori scontenti]]></description>
@@ -533,25 +552,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[La Serie A riparte dopo la sosta e non si fermer&agrave; per 5 mesi: con i dati Opta ecco l&rsquo;analisi approfondita]]></dcterms:alternative>
             <dc:creator><![CDATA[Alessandro Mita]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[McKennie rassicura la Juve sul futuro: &quot;Resto qui a lungo&quot;]]></title>
-            <description><![CDATA[Smentita l&#39;ipotesi di seguire a Manchester l&#39;ex ct degli Usa Pochettino]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/18-152678040/mckennie_rassicura_la_juve_sul_futuro_resto_qui_a_lungo/</link>
-            <guid isPermaLink="false">sn:cds:152678040</guid>
-            <category><![CDATA[Juventus]]></category>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[Pochettino]]></category>
-            <category><![CDATA[United]]></category>
-            <pubDate>Wed, 18 Nov 2026 21:08:50 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/210802151-9f03eb04-4fe3-4194-abfa-fe0d0d37eb7c.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/210802151-9f03eb04-4fe3-4194-abfa-fe0d0d37eb7c.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Juventus FC via Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/210802151-9f03eb04-4fe3-4194-abfa-fe0d0d37eb7c.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Smentita l&#39;ipotesi di seguire a Manchester l&#39;ex ct degli Usa Pochettino]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>
 </rss>

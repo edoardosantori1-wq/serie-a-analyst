@@ -5,7 +5,42 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 20 Nov 2026 11:07:46 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Nov 2026 13:06:02 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Gasperini netto sul mercato di gennaio: &quot;Ne parler&agrave; Galantic, ma non abbiamo programmato&quot;]]></title>
+            <description><![CDATA[Il tecnico alla vigilia della partita di Parma: &quot;Svilar, Mancini e Dybala stanno bene. Fatichiamo dopo la sosta? Brutta roba...&quot;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/20-152699319/gasperini_netto_sul_mercato_di_gennaio_ne_parler_galantic_ma_non_abbiamo_programmato/</link>
+            <guid isPermaLink="false">sn:cds:152699319</guid>
+            <category><![CDATA[Gasperini]]></category>
+            <category><![CDATA[Roma]]></category>
+            <pubDate>Fri, 20 Nov 2026 12:49:59 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/123515074-5352375e-5ef0-4c29-a849-b6567ae7dacd.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/123515074-5352375e-5ef0-4c29-a849-b6567ae7dacd.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/123515074-5352375e-5ef0-4c29-a849-b6567ae7dacd.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il tecnico alla vigilia della partita di Parma: &quot;Svilar, Mancini e Dybala stanno bene. Fatichiamo dopo la sosta? Brutta roba...&quot;]]></dcterms:alternative>
+            <dc:creator><![CDATA[Chiara Zucchelli]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Gilardino avverte il Parma: &quot;La Roma gioca il miglior calcio d&rsquo;Italia&quot;. Poi elogia Gasperini]]></title>
+            <description><![CDATA[Le parole dell&#39;allenatore dei crociati nella conferenza stampa alla vigilia della sfida al Tardini contro i giallorossi: ecco cosa ha detto]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/parma/2026/11/20-152698799/gilardino_avverte_il_parma_la_roma_gioca_il_miglior_calcio_ditalia_poi_elogia_gasperini/</link>
+            <guid isPermaLink="false">sn:cds:152698799</guid>
+            <category><![CDATA[Gilardino]]></category>
+            <category><![CDATA[parma]]></category>
+            <category><![CDATA[Roma]]></category>
+            <pubDate>Fri, 20 Nov 2026 11:36:15 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/112505595-2b7f0047-b89b-4afd-ad14-03a95297d637.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/112505595-2b7f0047-b89b-4afd-ad14-03a95297d637.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/112505595-2b7f0047-b89b-4afd-ad14-03a95297d637.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Le parole dell&#39;allenatore dei crociati nella conferenza stampa alla vigilia della sfida al Tardini contro i giallorossi: ecco cosa ha detto]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Pavlovic e la battuta su Conceicao che fa discutere: &quot;Mi piace ma aveva metodi alla Hitler&quot;&nbsp;]]></title>
             <description><![CDATA[Il difensore del Milan racconta il suo ex allenatore e svela alcuni metodi molto duri. Poi incensa Allegri]]></description>
@@ -515,43 +550,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Zielinski non pu&ograve; essere il futuro, Stankovic non ancora pronto: ecco le strategie per il centrocampo&nbsp;]]></dcterms:alternative>
             <dc:creator><![CDATA[Pietro Guadagno]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Soul&eacute; e Dybala, prove d&rsquo;intesa per Parma: manca ancora la scintilla]]></title>
-            <description><![CDATA[I connazionali, amici per la pelle, cercano l&rsquo;affiatamento in campo: ora &egrave; il loro momento]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/19-152681797/soul_e_dybala_prove_dintesa_per_parma_manca_ancora_la_scintilla/</link>
-            <guid isPermaLink="false">sn:cds:152681797</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Roma]]></category>
-            <category><![CDATA[Dybala]]></category>
-            <category><![CDATA[Soulé]]></category>
-            <pubDate>Thu, 19 Nov 2026 07:13:04 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/062820362-a8363dd2-672f-4746-9387-b27ff48f051f.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/062820362-a8363dd2-672f-4746-9387-b27ff48f051f.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>AS Roma via Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/062820362-a8363dd2-672f-4746-9387-b27ff48f051f.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[I connazionali, amici per la pelle, cercano l&rsquo;affiatamento in campo: ora &egrave; il loro momento]]></dcterms:alternative>
-            <dc:creator><![CDATA[Giorgio Marota]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Cosa hanno detto le prime 11 giornate? Tante le sorprese, soprattutto in attacco. E per lo scudetto Malen potrebbe essere la chiave]]></title>
-            <description><![CDATA[La Serie A riparte dopo la sosta e non si fermer&agrave; per 5 mesi: con i dati Opta ecco l&rsquo;analisi approfondita]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/19-152681792/cosa_hanno_detto_le_prime_11_giornate_tante_le_sorprese_soprattutto_in_attacco_e_per_lo_scudetto_malen_potrebbe_essere_la/</link>
-            <guid isPermaLink="false">sn:cds:152681792</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[campionato]]></category>
-            <pubDate>Thu, 19 Nov 2026 06:41:57 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/061534220-43f3e9ba-8267-41f4-8241-4fbf40cf09c3.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/061534220-43f3e9ba-8267-41f4-8241-4fbf40cf09c3.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/061534220-43f3e9ba-8267-41f4-8241-4fbf40cf09c3.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[La Serie A riparte dopo la sosta e non si fermer&agrave; per 5 mesi: con i dati Opta ecco l&rsquo;analisi approfondita]]></dcterms:alternative>
-            <dc:creator><![CDATA[Alessandro Mita]]></dc:creator>
         </item>
     </channel>
 </rss>

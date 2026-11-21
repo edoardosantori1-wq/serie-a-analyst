@@ -5,7 +5,26 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 21 Nov 2026 19:43:47 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Nov 2026 20:37:02 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Vergara inconsolabile, ennesimo infortunio in Napoli-Torino: lacrime e rabbia, Allegri prova a rincuorarlo]]></title>
+            <description><![CDATA[Cambio obbligato al 13&#39; per il tecnico degli azzurri: dentro De Bruyne, inconsolabile il trequartista mentre lascia il campo]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/21-152738567/vergara_inconsolabile_ennesimo_infortunio_in_napoli-torino_lacrime_e_rabbia_allegri_prova_a_rincuorarlo/</link>
+            <guid isPermaLink="false">sn:cds:152738567</guid>
+            <category><![CDATA[vergara]]></category>
+            <category><![CDATA[napoli]]></category>
+            <category><![CDATA[Infortunio Vergara]]></category>
+            <category><![CDATA[Napoli-Torino]]></category>
+            <pubDate>Sat, 21 Nov 2026 20:17:39 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/201100163-1abaf6f5-719b-4a4b-b481-38e58330d24f.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/201100163-1abaf6f5-719b-4a4b-b481-38e58330d24f.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/201100163-1abaf6f5-719b-4a4b-b481-38e58330d24f.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Cambio obbligato al 13&#39; per il tecnico degli azzurri: dentro De Bruyne, inconsolabile il trequartista mentre lascia il campo]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Gasperini entusiasta di questa Roma: &quot;Malen si sposa bene con noi&quot;. Poi la battuta sul balletto]]></title>
             <description><![CDATA[La soddisfazione dell&#39;allenatore dei giallorossi dopo la vittoria per 5-1 al Tardini contro il Parma con quattro gol dell&#39;attaccante olandese]]></description>
@@ -526,27 +545,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/161821485-856af14b-7b8a-402d-8a3e-9e13ac4c85bf.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Buone notizie per il tecnico giallorosso in vista della sfida del Tardini: tornano a disposizione il portiere, il difensore e la Joya]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Nico Paz si esalta con l&#39;Argentina, ma Fabregas frena sulla numero 10: &quot;La maglie di Messi...&quot;]]></title>
-            <description><![CDATA[Il tecnico del Como smorza l&#39;ipotesi di destinare a Nico la maglia che &egrave; stata di Maradona]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/como/2026/11/20-152704518/nico_paz_si_esalta_con_l_argentina_ma_fabregas_frena_sulla_numero_10_la_maglie_di_messi_/</link>
-            <guid isPermaLink="false">sn:cds:152704518</guid>
-            <category><![CDATA[Fabregas]]></category>
-            <category><![CDATA[Como]]></category>
-            <category><![CDATA[argentina]]></category>
-            <category><![CDATA[Messi]]></category>
-            <category><![CDATA[Maradona]]></category>
-            <category><![CDATA[nicopaz]]></category>
-            <pubDate>Fri, 20 Nov 2026 16:18:34 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/154854394-d43ee1ce-cf52-4e91-88b9-c675ec296e8f.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/154854394-d43ee1ce-cf52-4e91-88b9-c675ec296e8f.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>APS</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/154854394-d43ee1ce-cf52-4e91-88b9-c675ec296e8f.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il tecnico del Como smorza l&#39;ipotesi di destinare a Nico la maglia che &egrave; stata di Maradona]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

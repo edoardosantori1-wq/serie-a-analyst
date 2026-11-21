@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 21 Nov 2026 22:40:10 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Nov 2026 23:32:22 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Allegri fa sorridere il Napoli: &quot;Cos&igrave; facciamo gol&quot;. Poi il siparietto sul &#39;pugnetto&#39; con De Laurentiis]]></title>
+            <description><![CDATA[Il tecnico degli azzurri si gode il successo sul Torino e nel postpartita svela due retroscena relativi al prepartita e un messaggio rivolto alla squadra prima del gol di McTominay]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/21-152729682/allegri_fa_sorridere_il_napoli_cos_facciamo_gol_poi_il_siparietto_sul_pugnetto_con_de_laurentiis/</link>
+            <guid isPermaLink="false">sn:cds:152729682</guid>
+            <category><![CDATA[Allegri]]></category>
+            <category><![CDATA[Napoli-Torino]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <pubDate>Sat, 21 Nov 2026 22:43:47 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/222651840-7fc3421d-787f-4cfd-b64e-a1f08f3e1474.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/222651840-7fc3421d-787f-4cfd-b64e-a1f08f3e1474.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/222651840-7fc3421d-787f-4cfd-b64e-a1f08f3e1474.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il tecnico degli azzurri si gode il successo sul Torino e nel postpartita svela due retroscena relativi al prepartita e un messaggio rivolto alla squadra prima del gol di McTominay]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[<p>McTominay tiene vivo il Napoli: Allegri batte il Torino e aggancia la Juve</p>
 ]]></title>
@@ -524,24 +542,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/190657635-c7f43408-890f-4897-8cc1-e99ef3b5a5e7.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Imprevisto per Dybala e compagni alla vigilia della gara valida per la dodicesima giornata di Serie A, al Tardini, contro gli uomini di Gilardino]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Palladino punisce Heggem, non sar&agrave; convocato contro l&#39;Udinese: &quot;Ha esagerato&quot;]]></title>
-            <description><![CDATA[L&#39;allenatore non fa sconti e lascia a casa il norvegese per la sfida contro i bianconeri: tutti i dettagli&nbsp;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/fiorentina/2026/11/20-152706308/palladino_punisce_heggem_non_sar_convocato_contro_l_udinese_ha_esagerato/</link>
-            <guid isPermaLink="false">sn:cds:152706308</guid>
-            <category><![CDATA[Bologna]]></category>
-            <category><![CDATA[palladino]]></category>
-            <category><![CDATA[Heggem]]></category>
-            <pubDate>Fri, 20 Nov 2026 19:03:31 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/185525702-184e1658-8b3b-4eea-853d-8e0c82925244.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/185525702-184e1658-8b3b-4eea-853d-8e0c82925244.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/185525702-184e1658-8b3b-4eea-853d-8e0c82925244.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&#39;allenatore non fa sconti e lascia a casa il norvegese per la sfida contro i bianconeri: tutti i dettagli&nbsp;]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

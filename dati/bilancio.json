@@ -1,36 +1,36 @@
 {
- "aggiornato": "2026-11-21T21:42:16+00:00",
+ "aggiornato": "2026-11-21T22:43:19+00:00",
  "totale": {
-  "giocate": 9,
-  "vinte": 3,
+  "giocate": 12,
+  "vinte": 6,
   "perse": 6,
-  "aperte": 16,
-  "hit": 0.3333,
-  "unita": -3.46,
-  "roi": -0.3844
+  "aperte": 13,
+  "hit": 0.5,
+  "unita": 11.4,
+  "roi": 0.9502
  },
  "categorie": [
   {
    "cat": "pronostico",
    "nome": "Pronostici partita",
-   "giocate": 3,
-   "vinte": 2,
+   "giocate": 4,
+   "vinte": 3,
    "perse": 1,
-   "aperte": 7,
-   "hit": 0.6667,
-   "unita": 0.04,
-   "roi": 0.0133
+   "aperte": 6,
+   "hit": 0.75,
+   "unita": 0.44,
+   "roi": 0.11
   },
   {
    "cat": "tripla_semplice",
    "nome": "Triple semplici",
-   "giocate": 0,
-   "vinte": 0,
+   "giocate": 1,
+   "vinte": 1,
    "perse": 0,
-   "aperte": 2,
-   "hit": null,
-   "unita": 0,
-   "roi": null
+   "aperte": 1,
+   "hit": 1.0,
+   "unita": 0.89,
+   "roi": 0.893
   },
   {
    "cat": "tripla_media",
@@ -46,13 +46,13 @@
   {
    "cat": "tripla_aggressiva",
    "nome": "Triple aggressive",
-   "giocate": 0,
-   "vinte": 0,
+   "giocate": 1,
+   "vinte": 1,
    "perse": 0,
-   "aperte": 2,
-   "hit": null,
-   "unita": 0,
-   "roi": null
+   "aperte": 1,
+   "hit": 1.0,
+   "unita": 13.57,
+   "roi": 13.569
   },
   {
    "cat": "marcatore",
@@ -91,13 +91,13 @@
  "giornate": [
   {
    "giornata": 12,
-   "giocate": 9,
-   "vinte": 3,
+   "giocate": 12,
+   "vinte": 6,
    "perse": 6,
-   "aperte": 16,
-   "hit": 0.3333,
-   "unita": -3.46,
-   "roi": -0.3844
+   "aperte": 13,
+   "hit": 0.5,
+   "unita": 11.4,
+   "roi": 0.9502
   }
  ],
  "giocate": [
@@ -321,10 +321,10 @@
    "mercato": "U3.5",
    "quota": 1.4,
    "p": 0.7384,
-   "esito": null,
-   "profitto": null,
+   "esito": 1,
+   "profitto": 0.4,
    "inizio": "2026-11-21T19:45:00+00:00",
-   "risultato": null
+   "risultato": "1-0"
   },
   {
    "cat": "tripla_semplice",
@@ -333,8 +333,8 @@
    "mercato": "Como-Cagliari: 12 · Lazio-Lecce: U3.5 · Napoli-Torino: DNB1",
    "quota": 1.89,
    "p": null,
-   "esito": null,
-   "profitto": null,
+   "esito": 1,
+   "profitto": 0.893,
    "inizio": "2026-11-21T19:45:00+00:00",
    "dettaglio": [
     {
@@ -352,8 +352,8 @@
     {
      "partita": "Napoli-Torino",
      "mercato": "DNB1",
-     "esito": null,
-     "risultato": null
+     "esito": 1,
+     "risultato": "1-0"
     }
    ]
   },
@@ -364,8 +364,8 @@
    "mercato": "Como-Cagliari: C:1 + No Goal + Under 3.5 · Lazio-Lecce: C:1 + Under 3.5 · Napoli-Torino: C:1 + Under 3.5",
    "quota": 14.57,
    "p": null,
-   "esito": null,
-   "profitto": null,
+   "esito": 1,
+   "profitto": 13.569,
    "inizio": "2026-11-21T19:45:00+00:00",
    "dettaglio": [
     {
@@ -383,8 +383,8 @@
     {
      "partita": "Napoli-Torino",
      "mercato": "C:1 + Under 3.5",
-     "esito": null,
-     "risultato": null
+     "esito": 1,
+     "risultato": "1-0"
     }
    ]
   },

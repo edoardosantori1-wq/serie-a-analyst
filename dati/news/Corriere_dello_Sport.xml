@@ -5,7 +5,26 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 21 Nov 2026 21:39:01 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Nov 2026 22:40:10 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[<p>McTominay tiene vivo il Napoli: Allegri batte il Torino e aggancia la Juve</p>
+]]></title>
+            <description><![CDATA[Gli azzurri tornano a vincere al Maradona, risalgono momentaneamente all&#39;ottavo posto e possono vivere con meno ansia l&#39;attesa dell&#39;appuntamento in Champions con il City]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/21-152720101/mctominay_tiene_vivo_il_napoli_allegri_batte_il_torino_e_aggancia_la_juve/</link>
+            <guid isPermaLink="false">sn:cds:152720101</guid>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[napoli]]></category>
+            <category><![CDATA[Torino]]></category>
+            <pubDate>Sat, 21 Nov 2026 22:00:00 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/215417550-13611e8b-d450-42a9-a6ec-3cdf893ebe55.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/215417550-13611e8b-d450-42a9-a6ec-3cdf893ebe55.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/215417550-13611e8b-d450-42a9-a6ec-3cdf893ebe55.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Gli azzurri tornano a vincere al Maradona, risalgono momentaneamente all&#39;ottavo posto e possono vivere con meno ansia l&#39;attesa dell&#39;appuntamento in Champions con il City]]></dcterms:alternative>
+            <dc:creator><![CDATA[Daniele Liberati]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Vergara inconsolabile, ennesimo infortunio in Napoli-Torino: lacrime e rabbia, Allegri prova a rincuorarlo]]></title>
             <description><![CDATA[Cambio obbligato al 13&#39; per il tecnico degli azzurri: dentro De Bruyne, inconsolabile il trequartista mentre lascia il campo]]></description>
@@ -523,28 +542,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/185525702-184e1658-8b3b-4eea-853d-8e0c82925244.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[L&#39;allenatore non fa sconti e lascia a casa il norvegese per la sfida contro i bianconeri: tutti i dettagli&nbsp;]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Gasperini ritrova Svilar, Mancini e Dybala: i convocati per Parma-Roma]]></title>
-            <description><![CDATA[Buone notizie per il tecnico giallorosso in vista della sfida del Tardini: tornano a disposizione il portiere, il difensore e la Joya]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/20-152704714/gasperini_ritrova_svilar_mancini_e_dybala_i_convocati_per_parma-roma/</link>
-            <guid isPermaLink="false">sn:cds:152704714</guid>
-            <category><![CDATA[Roma]]></category>
-            <category><![CDATA[Gasperini]]></category>
-            <category><![CDATA[convocati]]></category>
-            <category><![CDATA[parma]]></category>
-            <category><![CDATA[Parma-Roma]]></category>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[Dybala]]></category>
-            <pubDate>Fri, 20 Nov 2026 16:28:42 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/161821485-856af14b-7b8a-402d-8a3e-9e13ac4c85bf.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/161821485-856af14b-7b8a-402d-8a3e-9e13ac4c85bf.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>AS Roma via Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/161821485-856af14b-7b8a-402d-8a3e-9e13ac4c85bf.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Buone notizie per il tecnico giallorosso in vista della sfida del Tardini: tornano a disposizione il portiere, il difensore e la Joya]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

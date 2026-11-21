@@ -5,7 +5,24 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 21 Nov 2026 12:48:10 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Nov 2026 13:54:11 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[No al ritiro, Gasp cambia idea: ecco il piano dei giallorossi tra Parma e Psg]]></title>
+            <description><![CDATA[Dopo la sfida con l&#39;Udinese, la squadra torna a Roma. Il programma in vista della Champions League]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/21-152715925/no_al_ritiro_gasp_cambia_idea_ecco_il_piano_dei_giallorossi_tra_parma_e_psg/</link>
+            <guid isPermaLink="false">sn:cds:152715925</guid>
+            <category><![CDATA[Gasperini]]></category>
+            <category><![CDATA[Roma]]></category>
+            <pubDate>Sat, 21 Nov 2026 13:32:39 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/133049442-2c9ad5b8-e404-4d91-83d6-cd80b699e3a0.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/133049442-2c9ad5b8-e404-4d91-83d6-cd80b699e3a0.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>AS Roma via Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/133049442-2c9ad5b8-e404-4d91-83d6-cd80b699e3a0.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Dopo la sfida con l&#39;Udinese, la squadra torna a Roma. Il programma in vista della Champions League]]></dcterms:alternative>
+            <dc:creator><![CDATA[Giorgio Marota]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Lazio-Lecce diretta Serie A: segui i biancocelesti di Gattuso all&#39;Olimpico, il risultato LIVE]]></title>
             <description><![CDATA[Riparte il campionato dopo la sosta nazionali, la capolista subito in campo contro i giallorossi di Di Francesco: aggiornamenti e cronaca in tempo reale]]></description>
@@ -18,11 +35,11 @@
             <category><![CDATA[Lecce]]></category>
             <category><![CDATA[olimpico]]></category>
             <pubDate>Sat, 21 Nov 2026 12:39:18 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/115656514-274524f5-1761-4350-9caa-f64b016604a4.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/115656514-274524f5-1761-4350-9caa-f64b016604a4.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/133338968-2334f8dd-9616-4c47-af36-b6b92165d522.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/133338968-2334f8dd-9616-4c47-af36-b6b92165d522.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
                 <media:credit>LAPRESSE</media:credit>
             </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/115656514-274524f5-1761-4350-9caa-f64b016604a4.jpg">
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/133338968-2334f8dd-9616-4c47-af36-b6b92165d522.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Riparte il campionato dopo la sosta nazionali, la capolista subito in campo contro i giallorossi di Di Francesco: aggiornamenti e cronaca in tempo reale]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
@@ -137,7 +154,7 @@
         </item>
         <item>
             <title><![CDATA[Dove vedere Lazio-Lecce in tv? Dazn o Sky, orario]]></title>
-            <description><![CDATA[Riflettori puntati sulla prima della classe in Serie A, al termine della sosta dedicata alle nazionali: le probabili scelte di Gattuso e Di Francesco]]></description>
+            <description><![CDATA[Riflettori puntati sulla prima della classe in Serie A, al termine della sosta dedicata alle nazionali: le scelte di Gattuso e Di Francesco]]></description>
             <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/21-152711548/dove_vedere_lazio-lecce_in_tv_dazn_o_sky_orario/</link>
             <guid isPermaLink="false">sn:cds:152711548</guid>
             <category><![CDATA[Serie A]]></category>
@@ -150,25 +167,25 @@
             </media:content>
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/063247185-f0126836-c7d0-4235-a9fb-d8172673d032.jpg">
             </media:thumbnail>
-            <dcterms:alternative><![CDATA[Riflettori puntati sulla prima della classe in Serie A, al termine della sosta dedicata alle nazionali: le probabili scelte di Gattuso e Di Francesco]]></dcterms:alternative>
+            <dcterms:alternative><![CDATA[Riflettori puntati sulla prima della classe in Serie A, al termine della sosta dedicata alle nazionali: le scelte di Gattuso e Di Francesco]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
         <item>
             <title><![CDATA[Dove vedere Como-Cagliari in tv? Dazn o Sky, orario]]></title>
-            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida del Sinigaglia valida per la dodicesima giornata di Serie A: le probabili formazioni di Fabregas e Pisacane]]></description>
+            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida del Sinigaglia valida per la dodicesima giornata di Serie A: le formazioni di Fabregas e Pisacane]]></description>
             <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/21-152711853/dove_vedere_como-cagliari_in_tv_dazn_o_sky_orario/</link>
             <guid isPermaLink="false">sn:cds:152711853</guid>
             <category><![CDATA[Serie A]]></category>
             <category><![CDATA[Como]]></category>
             <category><![CDATA[Cagliari]]></category>
             <pubDate>Sat, 21 Nov 2026 08:25:55 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/082449035-6e0ccafc-40a9-4c8c-934d-e10303e09950.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/082449035-6e0ccafc-40a9-4c8c-934d-e10303e09950.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/131014902-7558069a-42ac-4d99-ac3a-c1490896adea.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/131014902-7558069a-42ac-4d99-ac3a-c1490896adea.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
                 <media:credit>Getty Images</media:credit>
             </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/082449035-6e0ccafc-40a9-4c8c-934d-e10303e09950.jpg">
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/131014902-7558069a-42ac-4d99-ac3a-c1490896adea.jpg">
             </media:thumbnail>
-            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida del Sinigaglia valida per la dodicesima giornata di Serie A: le probabili formazioni di Fabregas e Pisacane]]></dcterms:alternative>
+            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida del Sinigaglia valida per la dodicesima giornata di Serie A: le formazioni di Fabregas e Pisacane]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
         <item>
@@ -533,24 +550,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Le frasi dal ritiro della Norvegia non sono passate inosservate. Il club per ora non ha intenzione di cederlo, ma non vuole avere giocatori scontenti]]></dcterms:alternative>
             <dc:creator><![CDATA[Claudio Beneforti]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Fiorentina, Vanoli studia il ritorno di Arthur e del 4-3-2-1&nbsp;]]></title>
-            <description><![CDATA[Dopo due mesi di stop, Atta sar&agrave; a disposizione per la trasferta di Monza: difficile vederlo dall&rsquo;inizio prima della sfida contro il Cagliari del 7 al Franchi]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/fiorentina/2026/11/20-152697123/fiorentina_vanoli_studia_il_ritorno_di_arthur_e_del_4-3-2-1/</link>
-            <guid isPermaLink="false">sn:cds:152697123</guid>
-            <category><![CDATA[Atta]]></category>
-            <category><![CDATA[Fiorentina]]></category>
-            <category><![CDATA[vanoli]]></category>
-            <pubDate>Fri, 20 Nov 2026 09:00:44 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/085506665-e41ec3b7-39b7-4171-bc0b-36f63b2c7580.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/085506665-e41ec3b7-39b7-4171-bc0b-36f63b2c7580.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/085506665-e41ec3b7-39b7-4171-bc0b-36f63b2c7580.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Dopo due mesi di stop, Atta sar&agrave; a disposizione per la trasferta di Monza: difficile vederlo dall&rsquo;inizio prima della sfida contro il Cagliari del 7 al Franchi]]></dcterms:alternative>
-            <dc:creator><![CDATA[Francesco Gensini]]></dc:creator>
         </item>
     </channel>
 </rss>

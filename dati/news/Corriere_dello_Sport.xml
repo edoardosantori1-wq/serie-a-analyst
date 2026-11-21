@@ -5,7 +5,43 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 21 Nov 2026 08:48:49 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Nov 2026 09:48:58 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Pellegrino si &egrave; preso la Fiorentina: arrivato come vice, ora &egrave; il titolare di Vanoli]]></title>
+            <description><![CDATA[Arrivato come alternativa, l&rsquo;argentino &egrave; ora la punta titolare della Viola: nessuno come lui di testa e luned&igrave; a Monza prover&agrave; a ripetersi]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/fiorentina/2026/11/21-152712335/pellegrino_si_preso_la_fiorentina_arrivato_come_vice_ora_il_titolare_di_vanoli/</link>
+            <guid isPermaLink="false">sn:cds:152712335</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Pellegrino]]></category>
+            <category><![CDATA[Fiorentina]]></category>
+            <pubDate>Sat, 21 Nov 2026 08:58:53 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/085022161-f51131d1-2b42-49ab-85b0-bcff0a4756e6.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/085022161-f51131d1-2b42-49ab-85b0-bcff0a4756e6.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/085022161-f51131d1-2b42-49ab-85b0-bcff0a4756e6.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Arrivato come alternativa, l&rsquo;argentino &egrave; ora la punta titolare della Viola: nessuno come lui di testa e luned&igrave; a Monza prover&agrave; a ripetersi]]></dcterms:alternative>
+            <dc:creator><![CDATA[Niccolò Santi]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Milan, occasione Bruno Fernandes: &egrave; in scadenza con lo United, i rossoneri ci pensano]]></title>
+            <description><![CDATA[La trattativa con il club di Manchester per il rinnovo &egrave; in stallo. Il centrocampista e Amorim hanno lo stesso procuratore]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/milan/2026/11/21-152712435/milan_occasione_bruno_fernandes_in_scadenza_con_lo_united_i_rossoneri_ci_pensano/</link>
+            <guid isPermaLink="false">sn:cds:152712435</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Milan]]></category>
+            <category><![CDATA[Bruno Fernandes]]></category>
+            <pubDate>Sat, 21 Nov 2026 08:53:42 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/084507412-67ecdfdc-510d-4c65-a42b-66ab86f4e4a0.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/084507412-67ecdfdc-510d-4c65-a42b-66ab86f4e4a0.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>EPA</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/084507412-67ecdfdc-510d-4c65-a42b-66ab86f4e4a0.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[La trattativa con il club di Manchester per il rinnovo &egrave; in stallo. Il centrocampista e Amorim hanno lo stesso procuratore]]></dcterms:alternative>
+            <dc:creator><![CDATA[Antonio Vitiello]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Dove vedere Parma-Roma in tv? Dazn o Sky, orario]]></title>
             <description><![CDATA[Torna in campo la squadra di Gian Piero Gasperini, ospite dell&#39;undici allenato da Alberto Gilardino: le probabili formazioni]]></description>
@@ -513,43 +549,6 @@
             <dcterms:alternative><![CDATA[<p>Il centrocampista vuole seguire le orme nerazzurre dei connazionali: fino a Natale le occasioni non mancheranno</p>
 ]]></dcterms:alternative>
             <dc:creator><![CDATA[Daniele Vitiello]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Inter, ritorna il turn over: Thuram-Esposito con l&#39;Atalanta, ma Lautaro &egrave; pronto]]></title>
-            <description><![CDATA[Con i soli Bonny e Stankovic ai box, l&rsquo;infermeria si svuota in tempo per il tour de force. Carlos Augusto e Zielinski sono tornati ieri alla Pinetina]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/20-152697005/inter_ritorna_il_turn_over_thuram-esposito_con_l_atalanta_ma_lautaro_pronto/</link>
-            <guid isPermaLink="false">sn:cds:152697005</guid>
-            <category><![CDATA[Inter]]></category>
-            <category><![CDATA[Thuram]]></category>
-            <category><![CDATA[esposito]]></category>
-            <category><![CDATA[Lautaro]]></category>
-            <pubDate>Fri, 20 Nov 2026 08:33:38 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/082308969-45f555d9-6c0d-42cf-a9a5-9b2a53508a8a.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/082308969-45f555d9-6c0d-42cf-a9a5-9b2a53508a8a.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/082308969-45f555d9-6c0d-42cf-a9a5-9b2a53508a8a.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Con i soli Bonny e Stankovic ai box, l&rsquo;infermeria si svuota in tempo per il tour de force. Carlos Augusto e Zielinski sono tornati ieri alla Pinetina]]></dcterms:alternative>
-            <dc:creator><![CDATA[Pietro Guadagno]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Britschgi: &quot;Roma, vogliamo vincere. Ma solo Messi &egrave; perfetto&quot;]]></title>
-            <description><![CDATA[Il difensore svizzero da Lucerna alla A: &quot;Qui sono felice. Malen &egrave; fortissimo, mi piacerebbe la sua maglia&quot;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/parma/2026/11/20-152696736/britschgi_roma_vogliamo_vincere_ma_solo_messi_perfetto/</link>
-            <guid isPermaLink="false">sn:cds:152696736</guid>
-            <category><![CDATA[Britschgi]]></category>
-            <category><![CDATA[parma]]></category>
-            <category><![CDATA[Roma]]></category>
-            <pubDate>Fri, 20 Nov 2026 08:21:16 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/082100491-38e5767e-3073-49bd-bc78-f681bca6c005.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/082100491-38e5767e-3073-49bd-bc78-f681bca6c005.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>APS</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/082100491-38e5767e-3073-49bd-bc78-f681bca6c005.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il difensore svizzero da Lucerna alla A: &quot;Qui sono felice. Malen &egrave; fortissimo, mi piacerebbe la sua maglia&quot;]]></dcterms:alternative>
-            <dc:creator><![CDATA[Guglielmo Trupo]]></dc:creator>
         </item>
     </channel>
 </rss>

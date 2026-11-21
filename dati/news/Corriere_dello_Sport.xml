@@ -5,7 +5,40 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 21 Nov 2026 14:46:57 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Nov 2026 15:40:02 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Parma-Roma diretta Serie A: segui il match tra la squadra di Gilardino e quella di Gasperini LIVE]]></title>
+            <description><![CDATA[Al Tardini i giallorossi sono ospiti dei ducali per la dodicesima di campionato: partita e risultato in tempo reale]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/21-152718213/parma-roma_diretta_serie_a_segui_il_match_tra_la_squadra_di_gilardino_e_quella_di_gasperini_live/</link>
+            <guid isPermaLink="false">sn:cds:152718213</guid>
+            <category><![CDATA[Roma]]></category>
+            <category><![CDATA[parma]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <pubDate>Sat, 21 Nov 2026 15:32:59 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/144007175-96326778-604c-4f79-b81b-ef4169c41ef8.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/144007175-96326778-604c-4f79-b81b-ef4169c41ef8.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/144007175-96326778-604c-4f79-b81b-ef4169c41ef8.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Al Tardini i giallorossi sono ospiti dei ducali per la dodicesima di campionato: partita e risultato in tempo reale]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Parma Calcio 1913 presenta il primo report di sostenibilit&agrave;]]></title>
+            <description><![CDATA[Il documento, redatto su base volontaria e senza alcun obbligo normativo, segue il Voluntary Standard europeo per la rendicontazione di sostenibilit&agrave; (Modulo Onnicomprensivo) e copre le stagioni sportive 2024/2025 e 2025/2026]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/parma/2026/11/21-152720843/parma_calcio_1913_presenta_il_primo_report_di_sostenibilit/</link>
+            <guid isPermaLink="false">sn:cds:152720843</guid>
+            <pubDate>Sat, 21 Nov 2026 15:29:32 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/152732117-3e52c853-508e-47ad-b3f6-863a3244c9b4.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/152732117-3e52c853-508e-47ad-b3f6-863a3244c9b4.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/152732117-3e52c853-508e-47ad-b3f6-863a3244c9b4.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il documento, redatto su base volontaria e senza alcun obbligo normativo, segue il Voluntary Standard europeo per la rendicontazione di sostenibilit&agrave; (Modulo Onnicomprensivo) e copre le stagioni sportive 2024/2025 e 2025/2026]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[No al ritiro, Gasp cambia idea: ecco il piano dei giallorossi tra Parma e Psg]]></title>
             <description><![CDATA[Dopo la sfida con l&#39;Udinese, la squadra torna a Roma. Il programma in vista della Champions League]]></description>
@@ -513,43 +546,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Le parole dell&#39;allenatore dei crociati nella conferenza stampa alla vigilia della sfida al Tardini contro i giallorossi: ecco cosa ha detto]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Pavlovic e la battuta su Conceicao che fa discutere: &quot;Mi piace ma aveva metodi alla Hitler&quot;&nbsp;]]></title>
-            <description><![CDATA[Il difensore del Milan racconta il suo ex allenatore e svela alcuni metodi molto duri. Poi incensa Allegri]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/milan/2026/11/20-152698251/pavlovic_e_la_battuta_su_conceicao_che_fa_discutere_mi_piace_ma_aveva_metodi_alla_hitler/</link>
-            <guid isPermaLink="false">sn:cds:152698251</guid>
-            <category><![CDATA[Milan]]></category>
-            <category><![CDATA[pavlovic]]></category>
-            <category><![CDATA[Conceicao]]></category>
-            <category><![CDATA[Allegri]]></category>
-            <pubDate>Fri, 20 Nov 2026 10:20:03 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/100103887-1e7e76d5-713b-4be2-8e6f-070cfaf1eb74.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/100103887-1e7e76d5-713b-4be2-8e6f-070cfaf1eb74.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/100103887-1e7e76d5-713b-4be2-8e6f-070cfaf1eb74.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il difensore del Milan racconta il suo ex allenatore e svela alcuni metodi molto duri. Poi incensa Allegri]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Bologna, Heggem rimandato a gennaio]]></title>
-            <description><![CDATA[Le frasi dal ritiro della Norvegia non sono passate inosservate. Il club per ora non ha intenzione di cederlo, ma non vuole avere giocatori scontenti]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/bologna/2026/11/20-152697398/bologna_heggem_rimandato_a_gennaio/</link>
-            <guid isPermaLink="false">sn:cds:152697398</guid>
-            <category><![CDATA[Bologna]]></category>
-            <category><![CDATA[Heggem]]></category>
-            <category><![CDATA[palladino]]></category>
-            <pubDate>Fri, 20 Nov 2026 09:07:33 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/090729808-fe6ee873-9c7b-4fb5-8e4e-ba681e4c60b4.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/090729808-fe6ee873-9c7b-4fb5-8e4e-ba681e4c60b4.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/090729808-fe6ee873-9c7b-4fb5-8e4e-ba681e4c60b4.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Le frasi dal ritiro della Norvegia non sono passate inosservate. Il club per ora non ha intenzione di cederlo, ma non vuole avere giocatori scontenti]]></dcterms:alternative>
-            <dc:creator><![CDATA[Claudio Beneforti]]></dc:creator>
         </item>
     </channel>
 </rss>

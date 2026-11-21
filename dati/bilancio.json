@@ -1,25 +1,25 @@
 {
- "aggiornato": "2026-11-21T15:48:05+00:00",
+ "aggiornato": "2026-11-21T16:47:18+00:00",
  "totale": {
-  "giocate": 0,
-  "vinte": 0,
-  "perse": 0,
-  "aperte": 25,
-  "hit": null,
-  "unita": 0,
-  "roi": null
+  "giocate": 6,
+  "vinte": 3,
+  "perse": 3,
+  "aperte": 19,
+  "hit": 0.5,
+  "unita": -0.46,
+  "roi": -0.0767
  },
  "categorie": [
   {
    "cat": "pronostico",
    "nome": "Pronostici partita",
-   "giocate": 0,
-   "vinte": 0,
+   "giocate": 2,
+   "vinte": 2,
    "perse": 0,
-   "aperte": 10,
-   "hit": null,
-   "unita": 0,
-   "roi": null
+   "aperte": 8,
+   "hit": 1.0,
+   "unita": 1.04,
+   "roi": 0.52
   },
   {
    "cat": "tripla_semplice",
@@ -35,13 +35,13 @@
   {
    "cat": "tripla_media",
    "nome": "Triple medie",
-   "giocate": 0,
+   "giocate": 1,
    "vinte": 0,
-   "perse": 0,
-   "aperte": 2,
-   "hit": null,
-   "unita": 0,
-   "roi": null
+   "perse": 1,
+   "aperte": 1,
+   "hit": 0.0,
+   "unita": -1.0,
+   "roi": -1.0
   },
   {
    "cat": "tripla_aggressiva",
@@ -57,24 +57,24 @@
   {
    "cat": "marcatore",
    "nome": "Marcatori",
-   "giocate": 0,
+   "giocate": 1,
    "vinte": 0,
-   "perse": 0,
-   "aperte": 4,
-   "hit": null,
-   "unita": 0,
-   "roi": null
+   "perse": 1,
+   "aperte": 3,
+   "hit": 0.0,
+   "unita": -1.0,
+   "roi": -1.0
   },
   {
    "cat": "singola",
    "nome": "Singole",
-   "giocate": 0,
-   "vinte": 0,
-   "perse": 0,
-   "aperte": 5,
-   "hit": null,
-   "unita": 0,
-   "roi": null
+   "giocate": 2,
+   "vinte": 1,
+   "perse": 1,
+   "aperte": 3,
+   "hit": 0.5,
+   "unita": 0.5,
+   "roi": 0.25
   },
   {
    "cat": "value",
@@ -91,13 +91,13 @@
  "giornate": [
   {
    "giornata": 12,
-   "giocate": 0,
-   "vinte": 0,
-   "perse": 0,
-   "aperte": 25,
-   "hit": null,
-   "unita": 0,
-   "roi": null
+   "giocate": 6,
+   "vinte": 3,
+   "perse": 3,
+   "aperte": 19,
+   "hit": 0.5,
+   "unita": -0.46,
+   "roi": -0.0767
   }
  ],
  "giocate": [
@@ -340,14 +340,14 @@
     {
      "partita": "Como-Cagliari",
      "mercato": "12",
-     "esito": null,
-     "risultato": null
+     "esito": 1,
+     "risultato": "2-0"
     },
     {
      "partita": "Lazio-Lecce",
      "mercato": "U3.5",
-     "esito": null,
-     "risultato": null
+     "esito": 1,
+     "risultato": "3-0"
     },
     {
      "partita": "Napoli-Torino",
@@ -371,14 +371,14 @@
     {
      "partita": "Como-Cagliari",
      "mercato": "C:1 + No Goal + Under 3.5",
-     "esito": null,
-     "risultato": null
+     "esito": 1,
+     "risultato": "2-0"
     },
     {
      "partita": "Lazio-Lecce",
      "mercato": "C:1 + Under 3.5",
-     "esito": null,
-     "risultato": null
+     "esito": 1,
+     "risultato": "3-0"
     },
     {
      "partita": "Napoli-Torino",
@@ -431,21 +431,21 @@
    "mercato": "Como-Cagliari: U3.5 · Lazio-Lecce: U2.5 · Parma-Roma: U3.5",
    "quota": 5.37,
    "p": null,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-21T17:00:00+00:00",
    "dettaglio": [
     {
      "partita": "Como-Cagliari",
      "mercato": "U3.5",
-     "esito": null,
-     "risultato": null
+     "esito": 1,
+     "risultato": "2-0"
     },
     {
      "partita": "Lazio-Lecce",
      "mercato": "U2.5",
-     "esito": null,
-     "risultato": null
+     "esito": 0,
+     "risultato": "3-0"
     },
     {
      "partita": "Parma-Roma",
@@ -462,10 +462,10 @@
    "mercato": "U3.5",
    "quota": 1.57,
    "p": 0.7344,
-   "esito": null,
-   "profitto": null,
+   "esito": 1,
+   "profitto": 0.57,
    "inizio": "2026-11-21T14:00:00+00:00",
-   "risultato": null
+   "risultato": "2-0"
   },
   {
    "cat": "pronostico",
@@ -474,10 +474,10 @@
    "mercato": "U3.5",
    "quota": 1.47,
    "p": 0.7562,
-   "esito": null,
-   "profitto": null,
+   "esito": 1,
+   "profitto": 0.47,
    "inizio": "2026-11-21T14:00:00+00:00",
-   "risultato": null
+   "risultato": "3-0"
   },
   {
    "cat": "singola",
@@ -486,10 +486,10 @@
    "mercato": "U2.5",
    "quota": 2.5,
    "p": 0.5165,
-   "esito": null,
-   "profitto": null,
+   "esito": 1,
+   "profitto": 1.5,
    "inizio": "2026-11-21T14:00:00+00:00",
-   "risultato": null
+   "risultato": "2-0"
   },
   {
    "cat": "singola",
@@ -498,10 +498,10 @@
    "mercato": "U2.5",
    "quota": 2.25,
    "p": 0.5422,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-21T14:00:00+00:00",
-   "risultato": null
+   "risultato": "3-0"
   },
   {
    "cat": "marcatore",
@@ -510,10 +510,10 @@
    "mercato": "SCORER:Tasos Douvikas",
    "quota": 1.92,
    "p": 0.3325,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-21T14:00:00+00:00",
-   "risultato": null
+   "risultato": "2-0"
   }
  ],
  "clv": {

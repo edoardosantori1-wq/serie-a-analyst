@@ -5,7 +5,44 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 21 Nov 2026 15:40:02 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Nov 2026 16:42:04 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Il Como torna a vincere: Cagliari ko, Ramon e Da Cunha decisivi]]></title>
+            <description><![CDATA[I lariani piegano la squadra di Pisacane e si riscattano dopo la brutta sconfitta contro l&#39;Inter: un gol per tempo e tre punti preziosi]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/21-152719622/il_como_torna_a_vincere_cagliari_ko_ramon_e_da_cunha_decisivi/</link>
+            <guid isPermaLink="false">sn:cds:152719622</guid>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[Como]]></category>
+            <category><![CDATA[Cagliari]]></category>
+            <pubDate>Sat, 21 Nov 2026 15:57:06 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/154348142-2b7af4ee-fecd-42f2-ba2f-eee6ab6b468b.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/154348142-2b7af4ee-fecd-42f2-ba2f-eee6ab6b468b.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/154348142-2b7af4ee-fecd-42f2-ba2f-eee6ab6b468b.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[I lariani piegano la squadra di Pisacane e si riscattano dopo la brutta sconfitta contro l&#39;Inter: un gol per tempo e tre punti preziosi]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[⁠Spalletti risponde a Conte: &quot;Quando si &egrave; senza squadra...&quot;. Poi sgonfia il caso McKennie]]></title>
+            <description><![CDATA[Le parole dell&#39;allenatore dei bianconeri nella conferenza stampa alla vigilia della sfida di campionato: ecco cosa ha detto]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/21-152719616/_spalletti_risponde_a_conte_quando_si_senza_squadra_poi_sgonfia_il_caso_mckennie/</link>
+            <guid isPermaLink="false">sn:cds:152719616</guid>
+            <category><![CDATA[juve]]></category>
+            <category><![CDATA[Venezia]]></category>
+            <category><![CDATA[Spalletti]]></category>
+            <category><![CDATA[Conte]]></category>
+            <pubDate>Sat, 21 Nov 2026 15:53:56 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/145750180-37a5da68-39cf-4f2f-b9c4-165359e88f14.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/145750180-37a5da68-39cf-4f2f-b9c4-165359e88f14.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Juventus FC via Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/145750180-37a5da68-39cf-4f2f-b9c4-165359e88f14.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Le parole dell&#39;allenatore dei bianconeri nella conferenza stampa alla vigilia della sfida di campionato: ecco cosa ha detto]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Parma-Roma diretta Serie A: segui il match tra la squadra di Gilardino e quella di Gasperini LIVE]]></title>
             <description><![CDATA[Al Tardini i giallorossi sono ospiti dei ducali per la dodicesima di campionato: partita e risultato in tempo reale]]></description>
@@ -57,8 +94,8 @@
             <dc:creator><![CDATA[Giorgio Marota]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[Lazio-Lecce diretta Serie A: segui i biancocelesti di Gattuso all&#39;Olimpico, il risultato LIVE]]></title>
-            <description><![CDATA[Riparte il campionato dopo la sosta nazionali, la capolista subito in campo contro i giallorossi di Di Francesco: aggiornamenti e cronaca in tempo reale]]></description>
+            <title><![CDATA[La Lazio continua a volare: Noslin doppietta e Frattesi, battuto il Lecce di Di Francesco. Gattuso a +4 sull&#39;Inter]]></title>
+            <description><![CDATA[Riparte il campionato dopo la sosta nazionali, la capolista vince all&#39;Olimpico e allunga in testa alla classifica: aggiornamenti e cronaca in tempo reale]]></description>
             <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/21-152714820/lazio-lecce_diretta_serie_a_segui_i_biancocelesti_di_gattuso_all_olimpico_il_risultato_live/</link>
             <guid isPermaLink="false">sn:cds:152714820</guid>
             <category><![CDATA[Lazio]]></category>
@@ -74,7 +111,7 @@
             </media:content>
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/133338968-2334f8dd-9616-4c47-af36-b6b92165d522.jpg">
             </media:thumbnail>
-            <dcterms:alternative><![CDATA[Riparte il campionato dopo la sosta nazionali, la capolista subito in campo contro i giallorossi di Di Francesco: aggiornamenti e cronaca in tempo reale]]></dcterms:alternative>
+            <dcterms:alternative><![CDATA[Riparte il campionato dopo la sosta nazionali, la capolista vince all&#39;Olimpico e allunga in testa alla classifica: aggiornamenti e cronaca in tempo reale]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
         <item>
@@ -151,7 +188,7 @@
         </item>
         <item>
             <title><![CDATA[Dove vedere Parma-Roma in tv? Dazn o Sky, orario]]></title>
-            <description><![CDATA[Torna in campo la squadra di Gian Piero Gasperini, ospite dell&#39;undici allenato da Alberto Gilardino: le probabili formazioni]]></description>
+            <description><![CDATA[Torna in campo la squadra di Gian Piero Gasperini, ospite dell&#39;undici allenato da Alberto Gilardino: le formazioni ufficiali]]></description>
             <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/21-152712041/dove_vedere_parma-roma_in_tv_dazn_o_sky_orario/</link>
             <guid isPermaLink="false">sn:cds:152712041</guid>
             <category><![CDATA[Serie A]]></category>
@@ -164,7 +201,7 @@
             </media:content>
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/082900736-85144469-d39e-45d2-b63a-3be51b47af64.jpg">
             </media:thumbnail>
-            <dcterms:alternative><![CDATA[Torna in campo la squadra di Gian Piero Gasperini, ospite dell&#39;undici allenato da Alberto Gilardino: le probabili formazioni]]></dcterms:alternative>
+            <dcterms:alternative><![CDATA[Torna in campo la squadra di Gian Piero Gasperini, ospite dell&#39;undici allenato da Alberto Gilardino: le formazioni ufficiali]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
         <item>
@@ -511,41 +548,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Il tecnico a due giorni dalla sfida del Mapei dove sono attesi oltre 4mila tifosi rossobl&ugrave;: &quot;Sar&agrave; un po&#39; come giocare in casa&quot;]]></dcterms:alternative>
             <dc:creator><![CDATA[Chiara Zucchelli]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Gasperini netto sul mercato di gennaio: &quot;Ne parler&agrave; Galantic, ma non abbiamo programmato&quot;]]></title>
-            <description><![CDATA[Il tecnico alla vigilia della partita di Parma: &quot;Svilar, Mancini e Dybala stanno bene. Fatichiamo dopo la sosta? Brutta roba...&quot;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/20-152699319/gasperini_netto_sul_mercato_di_gennaio_ne_parler_galantic_ma_non_abbiamo_programmato/</link>
-            <guid isPermaLink="false">sn:cds:152699319</guid>
-            <category><![CDATA[Gasperini]]></category>
-            <category><![CDATA[Roma]]></category>
-            <pubDate>Fri, 20 Nov 2026 12:49:59 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/123515074-5352375e-5ef0-4c29-a849-b6567ae7dacd.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/123515074-5352375e-5ef0-4c29-a849-b6567ae7dacd.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/123515074-5352375e-5ef0-4c29-a849-b6567ae7dacd.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il tecnico alla vigilia della partita di Parma: &quot;Svilar, Mancini e Dybala stanno bene. Fatichiamo dopo la sosta? Brutta roba...&quot;]]></dcterms:alternative>
-            <dc:creator><![CDATA[Chiara Zucchelli]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Gilardino avverte il Parma: &quot;La Roma gioca il miglior calcio d&rsquo;Italia&quot;. Poi elogia Gasperini]]></title>
-            <description><![CDATA[Le parole dell&#39;allenatore dei crociati nella conferenza stampa alla vigilia della sfida al Tardini contro i giallorossi: ecco cosa ha detto]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/parma/2026/11/20-152698799/gilardino_avverte_il_parma_la_roma_gioca_il_miglior_calcio_ditalia_poi_elogia_gasperini/</link>
-            <guid isPermaLink="false">sn:cds:152698799</guid>
-            <category><![CDATA[Gilardino]]></category>
-            <category><![CDATA[parma]]></category>
-            <category><![CDATA[Roma]]></category>
-            <pubDate>Fri, 20 Nov 2026 11:36:15 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/112505595-2b7f0047-b89b-4afd-ad14-03a95297d637.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/112505595-2b7f0047-b89b-4afd-ad14-03a95297d637.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/112505595-2b7f0047-b89b-4afd-ad14-03a95297d637.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Le parole dell&#39;allenatore dei crociati nella conferenza stampa alla vigilia della sfida al Tardini contro i giallorossi: ecco cosa ha detto]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>
 </rss>

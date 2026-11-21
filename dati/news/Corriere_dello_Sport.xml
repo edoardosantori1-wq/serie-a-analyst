@@ -5,7 +5,22 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 21 Nov 2026 10:48:23 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Nov 2026 11:44:25 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Cobolli lascia Torino con la felpa giallorossa e va a Parma a tifare Roma]]></title>
+            <description><![CDATA[Alle 18, al Tardini, Flavio e suo padre seguiranno la squadra di Gasperini. Un modo per staccare prima della Davis]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/21-152714234/cobolli_lascia_torino_con_la_felpa_giallorossa_e_va_a_parma_a_tifare_roma/</link>
+            <guid isPermaLink="false">sn:cds:152714234</guid>
+            <pubDate>Sat, 21 Nov 2026 11:22:43 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/112230188-a2385796-2f3c-427a-8be7-3cf73aa804a0.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/112230188-a2385796-2f3c-427a-8be7-3cf73aa804a0.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>ANSA</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/112230188-a2385796-2f3c-427a-8be7-3cf73aa804a0.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Alle 18, al Tardini, Flavio e suo padre seguiranno la squadra di Gasperini. Un modo per staccare prima della Davis]]></dcterms:alternative>
+            <dc:creator><![CDATA[Valerio Minutiello]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Pellegrino si &egrave; preso la Fiorentina: arrivato come vice, ora &egrave; il titolare di Vanoli]]></title>
             <description><![CDATA[Arrivato come alternativa, l&rsquo;argentino &egrave; ora la punta titolare della Viola: nessuno come lui di testa e luned&igrave; a Monza prover&agrave; a ripetersi]]></description>
@@ -530,25 +545,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Questo finale d&rsquo;anno, eccetto Como e Roma, strizza l&rsquo;occhio alla Juve: Lucio si gioca tutto]]></dcterms:alternative>
             <dc:creator><![CDATA[Andrea Losapio]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Sucic vola con la Croazia, mentre all&#39;Inter ancora non brilla: deve rilanciarsi]]></title>
-            <description><![CDATA[<p>Il centrocampista vuole seguire le orme nerazzurre dei connazionali: fino a Natale le occasioni non mancheranno</p>
-]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/20-152697017/sucic_vola_con_la_croazia_mentre_all_inter_ancora_non_brilla_deve_rilanciarsi/</link>
-            <guid isPermaLink="false">sn:cds:152697017</guid>
-            <category><![CDATA[sucic]]></category>
-            <category><![CDATA[Inter]]></category>
-            <pubDate>Fri, 20 Nov 2026 08:40:22 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/083524749-d3f6c9ca-54ae-404d-822f-2c511e71105d.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/083524749-d3f6c9ca-54ae-404d-822f-2c511e71105d.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>APS</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/083524749-d3f6c9ca-54ae-404d-822f-2c511e71105d.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[<p>Il centrocampista vuole seguire le orme nerazzurre dei connazionali: fino a Natale le occasioni non mancheranno</p>
-]]></dcterms:alternative>
-            <dc:creator><![CDATA[Daniele Vitiello]]></dc:creator>
         </item>
     </channel>
 </rss>

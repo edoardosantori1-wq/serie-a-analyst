@@ -5,7 +5,22 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 21 Nov 2026 05:49:30 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Nov 2026 07:03:37 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Spalletti, la Juve e la ricerca dell&#39;identit&agrave;]]></title>
+            <description><![CDATA[Leggi il commento del direttore del Corriere dello Sport - Stadio]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/21-152709507/spalletti_la_juve_e_la_ricerca_dell_identit/</link>
+            <guid isPermaLink="false">sn:cds:152709507</guid>
+            <pubDate>Sat, 21 Nov 2026 06:46:16 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/064411648-805fb0dc-42b3-441d-ae07-0daea6c5cec8.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/064411648-805fb0dc-42b3-441d-ae07-0daea6c5cec8.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/064411648-805fb0dc-42b3-441d-ae07-0daea6c5cec8.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Leggi il commento del direttore del Corriere dello Sport - Stadio]]></dcterms:alternative>
+            <dc:creator><![CDATA[Ivan Zazzaroni]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Lazio, comunicato ufficiale dei tifosi sulla scelta per la Supercoppa contro l&#39;Inter]]></title>
             <description><![CDATA[Il supporters organizzati biancocelesti si mobilitano in vista del primo trofeo che si assegner&agrave; a San Siro il 22 dicembre]]></description>
@@ -538,24 +553,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/164856999-9f2afe60-8814-4c6d-9fe2-e0d0442f5ebb.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[La scelta del club azzurro in vista della sfida di Serie A contro i granata e di quella in Champions League contro il Manchester City]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Dele-Bashiru pazzo di Gattuso: &quot;Ho avuto diversi allenatori alla Lazio, ma Rino...&quot;]]></title>
-            <description><![CDATA[Il centrocampista dei biancocelesti non ha lesinato parole d&#39;elogio per il tecnico e ha raccontato il clima all&#39;interno allo spogliatoio dal momento del suo arrivo]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/19-152689994/dele-bashiru_pazzo_di_gattuso_ho_avuto_diversi_allenatori_alla_lazio_ma_rino_/</link>
-            <guid isPermaLink="false">sn:cds:152689994</guid>
-            <category><![CDATA[Dele-Bashiuru]]></category>
-            <category><![CDATA[Lazio]]></category>
-            <category><![CDATA[Serie A]]></category>
-            <pubDate>Thu, 19 Nov 2026 16:33:58 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/19/162705070-50b7a4fb-f365-47ed-b3bf-49c125f6204b.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/162705070-50b7a4fb-f365-47ed-b3bf-49c125f6204b.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>YouTube @Officialsslazio</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/19/162705070-50b7a4fb-f365-47ed-b3bf-49c125f6204b.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il centrocampista dei biancocelesti non ha lesinato parole d&#39;elogio per il tecnico e ha raccontato il clima all&#39;interno allo spogliatoio dal momento del suo arrivo]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

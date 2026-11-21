@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 21 Nov 2026 16:42:04 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Nov 2026 17:41:25 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Gattuso esalta la Lazio: &quot;Stiamo facendo qualcosa di incredibile&quot;]]></title>
+            <description><![CDATA[<meta charset="UTF-8" />Dopo la sfida con il Lecce, l&#39;allenatore elogia la mentalit&agrave; dei suoi giocatori e apre a nuove soluzioni tattiche: &quot;Possiamo anche giocare con il 4-2-3-1&quot;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/21-152715926/gattuso_esalta_la_lazio_stiamo_facendo_qualcosa_di_incredibile/</link>
+            <guid isPermaLink="false">sn:cds:152715926</guid>
+            <category><![CDATA[Lazio]]></category>
+            <category><![CDATA[Gattuso]]></category>
+            <category><![CDATA[Lecce]]></category>
+            <pubDate>Sat, 21 Nov 2026 16:48:33 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/133338968-2334f8dd-9616-4c47-af36-b6b92165d522.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/133338968-2334f8dd-9616-4c47-af36-b6b92165d522.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/133338968-2334f8dd-9616-4c47-af36-b6b92165d522.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[<meta charset="UTF-8" />Dopo la sfida con il Lecce, l&#39;allenatore elogia la mentalit&agrave; dei suoi giocatori e apre a nuove soluzioni tattiche: &quot;Possiamo anche giocare con il 4-2-3-1&quot;]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Il Como torna a vincere: Cagliari ko, Ramon e Da Cunha decisivi]]></title>
             <description><![CDATA[I lariani piegano la squadra di Pisacane e si riscattano dopo la brutta sconfitta contro l&#39;Inter: un gol per tempo e tre punti preziosi]]></description>
@@ -52,11 +70,11 @@
             <category><![CDATA[parma]]></category>
             <category><![CDATA[Serie A]]></category>
             <pubDate>Sat, 21 Nov 2026 15:32:59 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/144007175-96326778-604c-4f79-b81b-ef4169c41ef8.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/144007175-96326778-604c-4f79-b81b-ef4169c41ef8.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/170027467-d3a55a92-2584-4c0a-8f8d-fa7891b9164c.jpeg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/170027467-d3a55a92-2584-4c0a-8f8d-fa7891b9164c.jpeg" type="image/jpg" expression="full" width="600" height="400" medium="image">
                 <media:credit></media:credit>
             </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/144007175-96326778-604c-4f79-b81b-ef4169c41ef8.jpg">
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/170027467-d3a55a92-2584-4c0a-8f8d-fa7891b9164c.jpeg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Al Tardini i giallorossi sono ospiti dei ducali per la dodicesima di campionato: partita e risultato in tempo reale]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
@@ -530,24 +548,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[La conferenza dell&#39;allenatore dei biancocelesti alla vigilia del match contro il Lecce]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[De Rossi spinge il Genoa: &quot;Tre punti sarebbero una manna dal cielo, ma il Sassuolo non &egrave; morto&quot;]]></title>
-            <description><![CDATA[Il tecnico a due giorni dalla sfida del Mapei dove sono attesi oltre 4mila tifosi rossobl&ugrave;: &quot;Sar&agrave; un po&#39; come giocare in casa&quot;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/genoa/2026/11/20-152700807/de_rossi_spinge_il_genoa_tre_punti_sarebbero_una_manna_dal_cielo_ma_il_sassuolo_non_morto/</link>
-            <guid isPermaLink="false">sn:cds:152700807</guid>
-            <category><![CDATA[DeRossi]]></category>
-            <category><![CDATA[Genoa]]></category>
-            <category><![CDATA[Sassuolo]]></category>
-            <pubDate>Fri, 20 Nov 2026 13:17:59 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/131637878-b3fa4736-ecc3-46c6-a642-4a17af48c6ab.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/131637878-b3fa4736-ecc3-46c6-a642-4a17af48c6ab.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/131637878-b3fa4736-ecc3-46c6-a642-4a17af48c6ab.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il tecnico a due giorni dalla sfida del Mapei dove sono attesi oltre 4mila tifosi rossobl&ugrave;: &quot;Sar&agrave; un po&#39; come giocare in casa&quot;]]></dcterms:alternative>
-            <dc:creator><![CDATA[Chiara Zucchelli]]></dc:creator>
         </item>
     </channel>
 </rss>

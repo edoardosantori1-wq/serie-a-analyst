@@ -5,7 +5,49 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 21 Nov 2026 11:44:25 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Nov 2026 12:48:10 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Lazio-Lecce diretta Serie A: segui i biancocelesti di Gattuso all&#39;Olimpico, il risultato LIVE]]></title>
+            <description><![CDATA[Riparte il campionato dopo la sosta nazionali, la capolista subito in campo contro i giallorossi di Di Francesco: aggiornamenti e cronaca in tempo reale]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/21-152714820/lazio-lecce_diretta_serie_a_segui_i_biancocelesti_di_gattuso_all_olimpico_il_risultato_live/</link>
+            <guid isPermaLink="false">sn:cds:152714820</guid>
+            <category><![CDATA[Lazio]]></category>
+            <category><![CDATA[Gattuso]]></category>
+            <category><![CDATA[liveblog]]></category>
+            <category><![CDATA[Di Francesco]]></category>
+            <category><![CDATA[Lecce]]></category>
+            <category><![CDATA[olimpico]]></category>
+            <pubDate>Sat, 21 Nov 2026 12:39:18 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/115656514-274524f5-1761-4350-9caa-f64b016604a4.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/115656514-274524f5-1761-4350-9caa-f64b016604a4.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/115656514-274524f5-1761-4350-9caa-f64b016604a4.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Riparte il campionato dopo la sosta nazionali, la capolista subito in campo contro i giallorossi di Di Francesco: aggiornamenti e cronaca in tempo reale]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[<p>Sarri punge Scamacca: &quot;Mi sembra bloccato, ci deve mettere di pi&ugrave;&quot;</p>
+]]></title>
+            <description><![CDATA[<p>L&#39;allenatore dell&#39;Atalanta in conferenza stampa prima della sfida contro l&#39;Inter: &quot;Sfidiamo una delle squadre pi&ugrave; forti&quot;</p>
+]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/atalanta/2026/11/21-152714821/sarri_punge_scamacca_mi_sembra_bloccato_ci_deve_mettere_di_pi/</link>
+            <guid isPermaLink="false">sn:cds:152714821</guid>
+            <category><![CDATA[atalanta]]></category>
+            <category><![CDATA[Sarri]]></category>
+            <category><![CDATA[scamacca]]></category>
+            <pubDate>Sat, 21 Nov 2026 11:58:48 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/08/173655470-1c7e500f-fcc5-4db5-817a-4b45cb5e1c30.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/08/173655470-1c7e500f-fcc5-4db5-817a-4b45cb5e1c30.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/08/173655470-1c7e500f-fcc5-4db5-817a-4b45cb5e1c30.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[<p>L&#39;allenatore dell&#39;Atalanta in conferenza stampa prima della sfida contro l&#39;Inter: &quot;Sfidiamo una delle squadre pi&ugrave; forti&quot;</p>
+]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Cobolli lascia Torino con la felpa giallorossa e va a Parma a tifare Roma]]></title>
             <description><![CDATA[Alle 18, al Tardini, Flavio e suo padre seguiranno la squadra di Gasperini. Un modo per staccare prima della Davis]]></description>
@@ -509,42 +551,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Dopo due mesi di stop, Atta sar&agrave; a disposizione per la trasferta di Monza: difficile vederlo dall&rsquo;inizio prima della sfida contro il Cagliari del 7 al Franchi]]></dcterms:alternative>
             <dc:creator><![CDATA[Francesco Gensini]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[<p>Retroscena Roma: quando a Parma Gasperini furioso fece volare sedie e persino un tavolo</p>
-]]></title>
-            <description><![CDATA[Era la &ldquo;banda del 6&deg; posto&rdquo;. Dopo quel 2-3 il gruppo ha iniziato a parlare di scudetto. Miglior attacco, sei clean sheet&nbsp; e un piano per volare a marzo &nbsp;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/20-152694949/retroscena_roma_quando_a_parma_gasperini_fuorioso_fece_volare_sedie_e_persino_un_tavolo/</link>
-            <guid isPermaLink="false">sn:cds:152694949</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Roma]]></category>
-            <category><![CDATA[Gasperini]]></category>
-            <pubDate>Fri, 20 Nov 2026 08:54:39 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/085422708-32ccc4e6-c712-4cfd-935f-f13abbc52434.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/085422708-32ccc4e6-c712-4cfd-935f-f13abbc52434.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>ANSA</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/085422708-32ccc4e6-c712-4cfd-935f-f13abbc52434.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Era la &ldquo;banda del 6&deg; posto&rdquo;. Dopo quel 2-3 il gruppo ha iniziato a parlare di scudetto. Miglior attacco, sei clean sheet&nbsp; e un piano per volare a marzo &nbsp;]]></dcterms:alternative>
-            <dc:creator><![CDATA[Giorgio Marota]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Juve, che occasione per il cambio di marcia]]></title>
-            <description><![CDATA[Questo finale d&rsquo;anno, eccetto Como e Roma, strizza l&rsquo;occhio alla Juve: Lucio si gioca tutto]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/20-152697023/juve_che_occasione_per_il_cambio_di_marcia/</link>
-            <guid isPermaLink="false">sn:cds:152697023</guid>
-            <category><![CDATA[juve]]></category>
-            <category><![CDATA[Spalletti]]></category>
-            <pubDate>Fri, 20 Nov 2026 08:52:26 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/084813650-19dd2d63-ce2f-433f-b363-145c727da0a3.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/084813650-19dd2d63-ce2f-433f-b363-145c727da0a3.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/084813650-19dd2d63-ce2f-433f-b363-145c727da0a3.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Questo finale d&rsquo;anno, eccetto Como e Roma, strizza l&rsquo;occhio alla Juve: Lucio si gioca tutto]]></dcterms:alternative>
-            <dc:creator><![CDATA[Andrea Losapio]]></dc:creator>
         </item>
     </channel>
 </rss>

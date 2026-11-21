@@ -5,7 +5,26 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 21 Nov 2026 17:41:25 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Nov 2026 18:40:22 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[<p>Cobolli allo stadio per Parma-Roma: &egrave; nel settore ospiti dopo l&#39;eliminazione dalle Atp Finals</p>
+]]></title>
+            <description><![CDATA[Inquadrato dalle telecamere nel primo tempo della partita: il tennista &egrave; allo stadio dopo aver lasciato Torino]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/21-152728673/cobolli_allo_stadio_per_parma-roma_nel_settore_ospiti_dopo_l_eliminazione_dalle_atp_finals/</link>
+            <guid isPermaLink="false">sn:cds:152728673</guid>
+            <category><![CDATA[Roma]]></category>
+            <category><![CDATA[Cobolli]]></category>
+            <category><![CDATA[parma]]></category>
+            <pubDate>Sat, 21 Nov 2026 17:39:12 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/172352531-bd6bf0e6-3864-4381-89a8-70f40c981341.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/172352531-bd6bf0e6-3864-4381-89a8-70f40c981341.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/172352531-bd6bf0e6-3864-4381-89a8-70f40c981341.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Inquadrato dalle telecamere nel primo tempo della partita: il tennista &egrave; allo stadio dopo aver lasciato Torino]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Gattuso esalta la Lazio: &quot;Stiamo facendo qualcosa di incredibile&quot;]]></title>
             <description><![CDATA[<meta charset="UTF-8" />Dopo la sfida con il Lecce, l&#39;allenatore elogia la mentalit&agrave; dei suoi giocatori e apre a nuove soluzioni tattiche: &quot;Possiamo anche giocare con il 4-2-3-1&quot;]]></description>
@@ -70,11 +89,11 @@
             <category><![CDATA[parma]]></category>
             <category><![CDATA[Serie A]]></category>
             <pubDate>Sat, 21 Nov 2026 15:32:59 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/170027467-d3a55a92-2584-4c0a-8f8d-fa7891b9164c.jpeg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/170027467-d3a55a92-2584-4c0a-8f8d-fa7891b9164c.jpeg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/180817783-364cc5eb-685d-413b-a0d0-bc4a971b9d03.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/180817783-364cc5eb-685d-413b-a0d0-bc4a971b9d03.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>AS Roma via Getty Images</media:credit>
             </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/170027467-d3a55a92-2584-4c0a-8f8d-fa7891b9164c.jpeg">
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/180817783-364cc5eb-685d-413b-a0d0-bc4a971b9d03.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Al Tardini i giallorossi sono ospiti dei ducali per la dodicesima di campionato: partita e risultato in tempo reale]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
@@ -528,25 +547,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/152230798-42a36f49-2959-4eef-966f-6d8e6b9cc0b3.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[L&#39;allenatore ha fatto chiarezza sulle condizioni dell&#39;attaccante italiano]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[<p>Gattuso ironico sul cancello chiuso: &quot;Ho fatto il giro...&quot;. Poi parla di Frattesi e di una battuta prima del Napoli</p>
-]]></title>
-            <description><![CDATA[La conferenza dell&#39;allenatore dei biancocelesti alla vigilia del match contro il Lecce]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/20-152700337/gattuso_ironico_sul_cancello_chiuso_ho_fatto_il_giro_poi_parla_di_frattesi_e_di_una_battuta_prima_del_napoli/</link>
-            <guid isPermaLink="false">sn:cds:152700337</guid>
-            <category><![CDATA[Lazio]]></category>
-            <category><![CDATA[Gattuso]]></category>
-            <category><![CDATA[Lecce]]></category>
-            <pubDate>Fri, 20 Nov 2026 13:22:52 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/132214361-64e557bb-51f7-481b-a1c0-5b878afd501e.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/132214361-64e557bb-51f7-481b-a1c0-5b878afd501e.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/132214361-64e557bb-51f7-481b-a1c0-5b878afd501e.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[La conferenza dell&#39;allenatore dei biancocelesti alla vigilia del match contro il Lecce]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

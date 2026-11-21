@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 21 Nov 2026 18:40:22 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Nov 2026 19:43:47 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Gasperini entusiasta di questa Roma: &quot;Malen si sposa bene con noi&quot;. Poi la battuta sul balletto]]></title>
+            <description><![CDATA[La soddisfazione dell&#39;allenatore dei giallorossi dopo la vittoria per 5-1 al Tardini contro il Parma con quattro gol dell&#39;attaccante olandese]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/21-152729136/gasperini_entusiasta_di_questa_roma_malen_si_sposa_bene_con_noi_poi_la_battuta_sul_balletto/</link>
+            <guid isPermaLink="false">sn:cds:152729136</guid>
+            <category><![CDATA[Gasperini]]></category>
+            <category><![CDATA[Parma-Roma]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <pubDate>Sat, 21 Nov 2026 19:28:59 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/192851319-517122df-1329-40a1-815a-1fcd5efd924b.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/192851319-517122df-1329-40a1-815a-1fcd5efd924b.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/192851319-517122df-1329-40a1-815a-1fcd5efd924b.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[La soddisfazione dell&#39;allenatore dei giallorossi dopo la vittoria per 5-1 al Tardini contro il Parma con quattro gol dell&#39;attaccante olandese]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[<p>Cobolli allo stadio per Parma-Roma: &egrave; nel settore ospiti dopo l&#39;eliminazione dalle Atp Finals</p>
 ]]></title>
@@ -81,21 +99,22 @@
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[Parma-Roma diretta Serie A: segui il match tra la squadra di Gilardino e quella di Gasperini LIVE]]></title>
-            <description><![CDATA[Al Tardini i giallorossi sono ospiti dei ducali per la dodicesima di campionato: partita e risultato in tempo reale]]></description>
+            <title><![CDATA[Uragano Malen, un poker da sogno travolge il Parma: la Roma segna cinque gol al Tardini e Gasperini torna a -2 dalla Lazio]]></title>
+            <description><![CDATA[Al Tardini i giallorossi vincono contro i ducali per la dodicesima di campionato e Gilardino colleziona l&#39;ottava sconfitta in stagione, che ora rischia di finire in zona retrocessione]]></description>
             <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/21-152718213/parma-roma_diretta_serie_a_segui_il_match_tra_la_squadra_di_gilardino_e_quella_di_gasperini_live/</link>
             <guid isPermaLink="false">sn:cds:152718213</guid>
             <category><![CDATA[Roma]]></category>
             <category><![CDATA[parma]]></category>
             <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[liveblog]]></category>
             <pubDate>Sat, 21 Nov 2026 15:32:59 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/180817783-364cc5eb-685d-413b-a0d0-bc4a971b9d03.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/180817783-364cc5eb-685d-413b-a0d0-bc4a971b9d03.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>AS Roma via Getty Images</media:credit>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/184442146-ee8eb39f-ac71-4153-9473-2e54456c6b4b.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/184442146-ee8eb39f-ac71-4153-9473-2e54456c6b4b.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
             </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/180817783-364cc5eb-685d-413b-a0d0-bc4a971b9d03.jpg">
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/184442146-ee8eb39f-ac71-4153-9473-2e54456c6b4b.jpg">
             </media:thumbnail>
-            <dcterms:alternative><![CDATA[Al Tardini i giallorossi sono ospiti dei ducali per la dodicesima di campionato: partita e risultato in tempo reale]]></dcterms:alternative>
+            <dcterms:alternative><![CDATA[Al Tardini i giallorossi vincono contro i ducali per la dodicesima di campionato e Gilardino colleziona l&#39;ottava sconfitta in stagione, che ora rischia di finire in zona retrocessione]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
         <item>
@@ -243,7 +262,7 @@
         </item>
         <item>
             <title><![CDATA[Dove vedere Napoli-Torino in tv? Dazn o Sky, orario]]></title>
-            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la dodicesima giornata di Serie A: le probabili formazioni di Allegri e Abate]]></description>
+            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la dodicesima giornata di Serie A: le formazioni ufficiali di Allegri e Abate]]></description>
             <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/21-152712231/dove_vedere_napoli-torino_in_tv_dazn_o_sky_orario/</link>
             <guid isPermaLink="false">sn:cds:152712231</guid>
             <category><![CDATA[Serie A]]></category>
@@ -256,7 +275,7 @@
             </media:content>
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/084038167-1f7e7271-91aa-45e0-a093-0935a919199f.jpg">
             </media:thumbnail>
-            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la dodicesima giornata di Serie A: le probabili formazioni di Allegri e Abate]]></dcterms:alternative>
+            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la dodicesima giornata di Serie A: le formazioni ufficiali di Allegri e Abate]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
         <item>
@@ -528,25 +547,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/154854394-d43ee1ce-cf52-4e91-88b9-c675ec296e8f.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Il tecnico del Como smorza l&#39;ipotesi di destinare a Nico la maglia che &egrave; stata di Maradona]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[<p>Fabregas sulle condizioni di Kean: &quot;Star&ograve; fuori qualche mese, &egrave; un problema osseo&quot;</p>
-]]></title>
-            <description><![CDATA[L&#39;allenatore ha fatto chiarezza sulle condizioni dell&#39;attaccante italiano]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/como/2026/11/20-152704027/fabregas_sulle_condizioni_di_kean_star_fuori_qualche_mese_un_problema_osseo/</link>
-            <guid isPermaLink="false">sn:cds:152704027</guid>
-            <category><![CDATA[Como]]></category>
-            <category><![CDATA[Kean]]></category>
-            <category><![CDATA[Fabregas]]></category>
-            <pubDate>Fri, 20 Nov 2026 15:25:03 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/152230798-42a36f49-2959-4eef-966f-6d8e6b9cc0b3.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/152230798-42a36f49-2959-4eef-966f-6d8e6b9cc0b3.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/152230798-42a36f49-2959-4eef-966f-6d8e6b9cc0b3.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&#39;allenatore ha fatto chiarezza sulle condizioni dell&#39;attaccante italiano]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

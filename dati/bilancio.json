@@ -1,25 +1,25 @@
 {
- "aggiornato": "2026-11-21T18:48:37+00:00",
+ "aggiornato": "2026-11-21T19:49:18+00:00",
  "totale": {
-  "giocate": 6,
+  "giocate": 9,
   "vinte": 3,
-  "perse": 3,
-  "aperte": 19,
-  "hit": 0.5,
-  "unita": -0.46,
-  "roi": -0.0767
+  "perse": 6,
+  "aperte": 16,
+  "hit": 0.3333,
+  "unita": -3.46,
+  "roi": -0.3844
  },
  "categorie": [
   {
    "cat": "pronostico",
    "nome": "Pronostici partita",
-   "giocate": 2,
+   "giocate": 3,
    "vinte": 2,
-   "perse": 0,
-   "aperte": 8,
-   "hit": 1.0,
-   "unita": 1.04,
-   "roi": 0.52
+   "perse": 1,
+   "aperte": 7,
+   "hit": 0.6667,
+   "unita": 0.04,
+   "roi": 0.0133
   },
   {
    "cat": "tripla_semplice",
@@ -57,24 +57,24 @@
   {
    "cat": "marcatore",
    "nome": "Marcatori",
-   "giocate": 1,
+   "giocate": 2,
    "vinte": 0,
-   "perse": 1,
-   "aperte": 3,
+   "perse": 2,
+   "aperte": 2,
    "hit": 0.0,
-   "unita": -1.0,
+   "unita": -2.0,
    "roi": -1.0
   },
   {
    "cat": "singola",
    "nome": "Singole",
-   "giocate": 2,
+   "giocate": 3,
    "vinte": 1,
-   "perse": 1,
-   "aperte": 3,
-   "hit": 0.5,
-   "unita": 0.5,
-   "roi": 0.25
+   "perse": 2,
+   "aperte": 2,
+   "hit": 0.3333,
+   "unita": -0.5,
+   "roi": -0.1667
   },
   {
    "cat": "value",
@@ -91,13 +91,13 @@
  "giornate": [
   {
    "giornata": 12,
-   "giocate": 6,
+   "giocate": 9,
    "vinte": 3,
-   "perse": 3,
-   "aperte": 19,
-   "hit": 0.5,
-   "unita": -0.46,
-   "roi": -0.0767
+   "perse": 6,
+   "aperte": 16,
+   "hit": 0.3333,
+   "unita": -3.46,
+   "roi": -0.3844
   }
  ],
  "giocate": [
@@ -395,10 +395,10 @@
    "mercato": "U3.5",
    "quota": 1.52,
    "p": 0.748,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-21T17:00:00+00:00",
-   "risultato": null
+   "risultato": "1-5"
   },
   {
    "cat": "singola",
@@ -407,10 +407,10 @@
    "mercato": "1X",
    "quota": 3.35,
    "p": 0.3916,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-21T17:00:00+00:00",
-   "risultato": null
+   "risultato": "1-5"
   },
   {
    "cat": "marcatore",
@@ -419,10 +419,10 @@
    "mercato": "SCORER:Donyell Malen",
    "quota": 1.75,
    "p": 0.3674,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-21T17:00:00+00:00",
-   "risultato": null
+   "risultato": "1-5"
   },
   {
    "cat": "tripla_media",
@@ -450,8 +450,8 @@
     {
      "partita": "Parma-Roma",
      "mercato": "U3.5",
-     "esito": null,
-     "risultato": null
+     "esito": 0,
+     "risultato": "1-5"
     }
    ]
   },

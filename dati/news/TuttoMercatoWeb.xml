@@ -14,6 +14,15 @@
     </image>
     <atom:link href="https://www.tuttomercatoweb.com/rss/" rel="self" type="application/rss+xml"/>
     <item>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/altre-notizie/i-le-partite-oggi-i-programma-sabato-21-novembre-2295656</guid>
+      <pubDate>Sat, 21 Nov 2026 04:30:29 +0100</pubDate>
+      <title>Le partite di oggi: il programma di sabato 21 novembre</title>
+      <link>https://www.tuttomercatoweb.com/altre-notizie/i-le-partite-oggi-i-programma-sabato-21-novembre-2295656</link>
+      <description>Sarà un sabato all'insegna del calcio internazionale, con i principali campionati europei pronti a tornare protagonisti.</description>
+      <category>Altre Notizie</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/ad/ade8d32f1e15eaa5dca6d3c3627c7b0e-45881-oooz0000.jpeg" length="63099" type="image/jpeg"/>
+    </item>
+    <item>
       <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/cagliari-kofler-prima-accettare-trasferimento-dubbio-sbagliavo-2295823</guid>
       <pubDate>Sat, 21 Nov 2026 01:11:01 +0100</pubDate>
       <title>Cagliari, Kofler: "Prima di accettare il trasferimento avevo qualche dubbio. Mi sbagliavo"</title>
@@ -212,15 +221,6 @@ Alla ripresa del campionato il Como ritrova Chalobah, per Diao e Addai servirà 
       <link>https://www.tuttomercatoweb.com/i-fatti-del-giorno/primavera-gol-derby-rinnovo-2030-scalata-lorenzo-mezzotero-2295770</link>
       <description>La Sampdoria blinda uno dei talenti più interessanti del proprio settore giovanile.</description>
       <category>I fatti del giorno</category>
-    </item>
-    <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/a-tu-per-tu/giocondo-martorelli-sosta-utile-infortunati-fiorentina-svolta-samp-mercato-aiutera-2295830</guid>
-      <pubDate>Sat, 21 Nov 2026 00:33:25 +0100</pubDate>
-      <title>Giocondo Martorelli: "Sosta utile per gli infortunati. Fiorentina, è il momento della svolta. Samp, il mercato aiuterà"</title>
-      <link>https://www.tuttomercatoweb.com/a-tu-per-tu/giocondo-martorelli-sosta-utile-infortunati-fiorentina-svolta-samp-mercato-aiutera-2295830</link>
-      <description>"Questa sosta ha giovato per tutti i calciatori infortunati che erano nelle varie squadre.</description>
-      <category>A tu per tu</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/03/033d6cd6273799a601bb3961e3e98d11-79282-oooz0000.jpeg" length="106790" type="image/jpeg"/>
     </item>
   </channel>
 </rss>

@@ -5,7 +5,43 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 22 Nov 2026 18:47:07 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 19:49:21 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Amorim esalta il Milan e spiega il cambio di Gon&ccedil;alo Ramos: &quot;Ecco perch&egrave; l&#39;ho sostituito...&quot;]]></title>
+            <description><![CDATA[Il tecnico dei rossoneri al termine della sfida con il Frosinone: &quot;Sapevamo che ci avrebbero aggredito e ne abbiamo approfittato&quot;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/milan/2026/11/22-152769140/amorim_esalta_il_milan_e_spiega_il_cambio_di_gonalo_ramos_ecco_perch_l_ho_sostituito_/</link>
+            <guid isPermaLink="false">sn:cds:152769140</guid>
+            <category><![CDATA[Milan]]></category>
+            <category><![CDATA[Amorim]]></category>
+            <pubDate>Sun, 22 Nov 2026 19:41:35 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/173146985-4c5c1b34-3efd-441e-87fd-a85a40248067.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/173146985-4c5c1b34-3efd-441e-87fd-a85a40248067.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/173146985-4c5c1b34-3efd-441e-87fd-a85a40248067.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il tecnico dei rossoneri al termine della sfida con il Frosinone: &quot;Sapevamo che ci avrebbero aggredito e ne abbiamo approfittato&quot;]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[<p>&Egrave; un Milan travolgente: il Frosinone crolla a San Siro. Per Amorim &egrave; il festival del gol</p>
+]]></title>
+            <description><![CDATA[Manita dei rossoneri contro la squadra di Alvini: torna a segnare Ramos e Cisse timbra ancora il cartellino]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/22-152770022/un_milan_travolgente_il_frosinone_crolla_a_san_siro_per_amorim_il_festival_del_gol/</link>
+            <guid isPermaLink="false">sn:cds:152770022</guid>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[Milan]]></category>
+            <category><![CDATA[Frosinone]]></category>
+            <pubDate>Sun, 22 Nov 2026 18:58:02 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/185622538-8849e9d5-ed1a-4cf3-829d-ae0fa2f6a2e1.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/185622538-8849e9d5-ed1a-4cf3-829d-ae0fa2f6a2e1.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/185622538-8849e9d5-ed1a-4cf3-829d-ae0fa2f6a2e1.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Manita dei rossoneri contro la squadra di Alvini: torna a segnare Ramos e Cisse timbra ancora il cartellino]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[<p>De Rossi: &quot;Avevo paura del loro contropiede. Osmaijc? Come quei cani grossi...&quot;</p>
 ]]></title>
@@ -254,7 +290,7 @@
         </item>
         <item>
             <title><![CDATA[Dove vedere Atalanta-Inter in tv? Dazn o Sky, orario]]></title>
-            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la dodicesima giornata di Serie A: le probabili formazioni di Sarri e Chivu]]></description>
+            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la dodicesima giornata di Serie A: le formazioni ufficili di Sarri e Chivu]]></description>
             <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/22-152750813/dove_vedere_atalanta-inter_in_tv_dazn_o_sky_orario/</link>
             <guid isPermaLink="false">sn:cds:152750813</guid>
             <category><![CDATA[Serie A]]></category>
@@ -267,7 +303,7 @@
             </media:content>
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/085020464-ee728761-ce07-45fb-8255-ce4149738423.jpg">
             </media:thumbnail>
-            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la dodicesima giornata di Serie A: le probabili formazioni di Sarri e Chivu]]></dcterms:alternative>
+            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la dodicesima giornata di Serie A: le formazioni ufficili di Sarri e Chivu]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
         <item>
@@ -503,44 +539,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/152732117-3e52c853-508e-47ad-b3f6-863a3244c9b4.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Il documento, redatto su base volontaria e senza alcun obbligo normativo, segue il Voluntary Standard europeo per la rendicontazione di sostenibilit&agrave; (Modulo Onnicomprensivo) e copre le stagioni sportive 2024/2025 e 2025/2026]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[No al ritiro, Gasp cambia idea: ecco il piano dei giallorossi tra Parma e Psg]]></title>
-            <description><![CDATA[Dopo la sfida con l&#39;Udinese, la squadra torna a Roma. Il programma in vista della Champions League]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/21-152715925/no_al_ritiro_gasp_cambia_idea_ecco_il_piano_dei_giallorossi_tra_parma_e_psg/</link>
-            <guid isPermaLink="false">sn:cds:152715925</guid>
-            <category><![CDATA[Gasperini]]></category>
-            <category><![CDATA[Roma]]></category>
-            <pubDate>Sat, 21 Nov 2026 13:32:39 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/133049442-2c9ad5b8-e404-4d91-83d6-cd80b699e3a0.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/133049442-2c9ad5b8-e404-4d91-83d6-cd80b699e3a0.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>AS Roma via Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/133049442-2c9ad5b8-e404-4d91-83d6-cd80b699e3a0.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Dopo la sfida con l&#39;Udinese, la squadra torna a Roma. Il programma in vista della Champions League]]></dcterms:alternative>
-            <dc:creator><![CDATA[Giorgio Marota]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[La Lazio continua a volare: Noslin doppietta e Frattesi, battuto il Lecce di Di Francesco. Gattuso a +4 sull&#39;Inter]]></title>
-            <description><![CDATA[Riparte il campionato dopo la sosta nazionali, la capolista vince all&#39;Olimpico e allunga in testa alla classifica: aggiornamenti e cronaca in tempo reale]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/21-152714820/lazio-lecce_diretta_serie_a_segui_i_biancocelesti_di_gattuso_all_olimpico_il_risultato_live/</link>
-            <guid isPermaLink="false">sn:cds:152714820</guid>
-            <category><![CDATA[Lazio]]></category>
-            <category><![CDATA[Gattuso]]></category>
-            <category><![CDATA[liveblog]]></category>
-            <category><![CDATA[Di Francesco]]></category>
-            <category><![CDATA[Lecce]]></category>
-            <category><![CDATA[olimpico]]></category>
-            <pubDate>Sat, 21 Nov 2026 12:39:18 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/133338968-2334f8dd-9616-4c47-af36-b6b92165d522.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/133338968-2334f8dd-9616-4c47-af36-b6b92165d522.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/133338968-2334f8dd-9616-4c47-af36-b6b92165d522.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Riparte il campionato dopo la sosta nazionali, la capolista vince all&#39;Olimpico e allunga in testa alla classifica: aggiornamenti e cronaca in tempo reale]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

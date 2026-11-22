@@ -14,6 +14,15 @@
     </image>
     <atom:link href="https://www.tuttomercatoweb.com/rss/" rel="self" type="application/rss+xml"/>
     <item>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/altre-notizie/i-le-partite-oggi-i-programma-domenica-22-novembre-2295657</guid>
+      <pubDate>Sun, 22 Nov 2026 04:30:59 +0100</pubDate>
+      <title>Le partite di oggi: il programma di domenica 22 novembre</title>
+      <link>https://www.tuttomercatoweb.com/altre-notizie/i-le-partite-oggi-i-programma-domenica-22-novembre-2295657</link>
+      <description>Una domenica di grandi appuntamenti per il calcio europeo.</description>
+      <category>Altre Notizie</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/6d/6d48f31cb23a5123cf8b6ce46cf575b9-91023-oooz0000.jpeg" length="60048" type="image/jpeg"/>
+    </item>
+    <item>
       <guid isPermaLink="false">https://www.tuttomercatoweb.com/probabili-formazioni/monza-fiorentina-probabili-formazioni-varela-intoccabile-vanoli-conferma-4-2-3-1-2295639</guid>
       <pubDate>Sun, 22 Nov 2026 01:10:07 +0100</pubDate>
       <title>Monza-Fiorentina, le probabili formazioni: Varela intoccabile. Vanoli conferma il 4-2-3-1</title>
@@ -200,15 +209,6 @@ La Juventus, dopo la sosta per le nazionali, è pronta a tornare in campo in cam
       <description>Il Paris Saint-Germain torna dalla trasferta di Nizza con tre punti preziosi, ma anche con grande preoccupazione per le condizioni di Désiré Doué.</description>
       <category>Calcio estero</category>
       <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/92/9220db82f8d48497826d59203e5f2187-70448-oooz0000.jpeg" length="91441" type="image/jpeg"/>
-    </item>
-    <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/milan-amorim-coccola-pulisic-sara-futuro-insostituibile-2295949</guid>
-      <pubDate>Sun, 22 Nov 2026 00:23:15 +0100</pubDate>
-      <title>Milan, Amorim coccola Pulisic: "Sarà il nostro futuro. Forse per noi è insostituibile"</title>
-      <link>https://www.tuttomercatoweb.com/serie-a/milan-amorim-coccola-pulisic-sara-futuro-insostituibile-2295949</link>
-      <description>C'è un giocatore che negli ultimi anni ha sempre aiutato il Milan anche nelle difficoltà e quello è Christian Pulisic.</description>
-      <category>Serie A</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/f3/f3b175522b0113fe3523a5f0e2c7e925-08655-oooz0000.jpeg" length="64694" type="image/jpeg"/>
     </item>
   </channel>
 </rss>

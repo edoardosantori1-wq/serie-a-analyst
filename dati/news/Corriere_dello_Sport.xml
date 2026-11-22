@@ -5,7 +5,60 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 22 Nov 2026 07:05:40 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 08:47:13 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Dove vedere Milan-Frosinone in tv? Dazn o Sky, orario]]></title>
+            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida a San Siro, valida per la dodicesima giornata di Serie A: le probabili formazioni di Amorim e Alvini]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/22-152750610/dove_vedere_milan-frosinone_in_tv_dazn_o_sky_orario/</link>
+            <guid isPermaLink="false">sn:cds:152750610</guid>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[Milan]]></category>
+            <category><![CDATA[Frosinone]]></category>
+            <pubDate>Sun, 22 Nov 2026 08:40:14 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/083644744-27d8a014-674c-48b7-8494-9eb05aa116f9.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/083644744-27d8a014-674c-48b7-8494-9eb05aa116f9.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/083644744-27d8a014-674c-48b7-8494-9eb05aa116f9.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida a San Siro, valida per la dodicesima giornata di Serie A: le probabili formazioni di Amorim e Alvini]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Dove vedere Juve-Venezia in tv? Dazn o Sky, orario]]></title>
+            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida all&#39;Allianz Stadium, valida per la dodicesima giornata di Serie A: le probabili formazioni di Spalletti e Nicola]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/22-152750497/dove_vedere_juve-venezia_in_tv_dazn_o_sky_orario/</link>
+            <guid isPermaLink="false">sn:cds:152750497</guid>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[juve]]></category>
+            <category><![CDATA[Venezia]]></category>
+            <pubDate>Sun, 22 Nov 2026 08:21:09 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/082046725-f103fa25-b3d9-403e-a9c8-26491f73da4b.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/082046725-f103fa25-b3d9-403e-a9c8-26491f73da4b.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/082046725-f103fa25-b3d9-403e-a9c8-26491f73da4b.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida all&#39;Allianz Stadium, valida per la dodicesima giornata di Serie A: le probabili formazioni di Spalletti e Nicola]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Il segnale di Lang e l&rsquo;abbraccio di pap&agrave; McTominay: cos&igrave; &egrave; ripartito il Napoli]]></title>
+            <description><![CDATA[Leggi il commento sulla squadra di Allegri dopo la vittoria sul Torino]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/22-152749669/il_segnale_di_lang_e_labbraccio_di_pap_mctominay_cos_ripartito_il_napoli/</link>
+            <guid isPermaLink="false">sn:cds:152749669</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[napoli]]></category>
+            <pubDate>Sun, 22 Nov 2026 07:17:59 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/071343816-abcd2586-6fa2-44bf-a865-1b8b0760c657.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/071343816-abcd2586-6fa2-44bf-a865-1b8b0760c657.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>FOTO GIANLUCA MOSCA</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/071343816-abcd2586-6fa2-44bf-a865-1b8b0760c657.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Leggi il commento sulla squadra di Allegri dopo la vittoria sul Torino]]></dcterms:alternative>
+            <dc:creator><![CDATA[Pasquale Salvione]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Allegri fa sorridere il Napoli: &quot;Cos&igrave; facciamo gol&quot;. Poi il siparietto sul &#39;pugnetto&#39; con De Laurentiis]]></title>
             <description><![CDATA[Il tecnico degli azzurri si gode il successo sul Torino e nel postpartita svela due retroscena relativi al prepartita e un messaggio rivolto alla squadra prima del gol di McTominay]]></description>
@@ -488,61 +541,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Leggi il commento del direttore del Corriere dello Sport - Stadio]]></dcterms:alternative>
             <dc:creator><![CDATA[Ivan Zazzaroni]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Lazio, comunicato ufficiale dei tifosi sulla scelta per la Supercoppa contro l&#39;Inter]]></title>
-            <description><![CDATA[Il supporters organizzati biancocelesti si mobilitano in vista del primo trofeo che si assegner&agrave; a San Siro il 22 dicembre]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/20-152707600/lazio_comunicato_ufficiale_dei_tifosi_sulla_scelta_per_la_supercoppa_contro_l_inter/</link>
-            <guid isPermaLink="false">sn:cds:152707600</guid>
-            <category><![CDATA[Lazio]]></category>
-            <category><![CDATA[Inter]]></category>
-            <category><![CDATA[Supercoppa]]></category>
-            <category><![CDATA[ultras]]></category>
-            <category><![CDATA[tifosi]]></category>
-            <pubDate>Fri, 20 Nov 2026 21:26:50 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/210724949-3376b76e-1e79-43b8-b889-acf25fd911a1.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/210724949-3376b76e-1e79-43b8-b889-acf25fd911a1.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>ANSA</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/210724949-3376b76e-1e79-43b8-b889-acf25fd911a1.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il supporters organizzati biancocelesti si mobilitano in vista del primo trofeo che si assegner&agrave; a San Siro il 22 dicembre]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[McTominay presto sar&agrave; pap&agrave;: l&#39;annuncio social con dedica piena d&#39;amore]]></title>
-            <description><![CDATA[Lo scozzese del Napoli e la compagna Cameron svelano la gravidanza pubblicando l&#39;ecografia su Instagram: tutti i dettagli]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/20-152707135/mctominay_presto_sar_pap_l_annuncio_social_con_dedica_piena_d_amore/</link>
-            <guid isPermaLink="false">sn:cds:152707135</guid>
-            <pubDate>Fri, 20 Nov 2026 20:14:19 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/195454877-176acf33-3dd9-4980-a932-8901138b1ef0.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/195454877-176acf33-3dd9-4980-a932-8901138b1ef0.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/195454877-176acf33-3dd9-4980-a932-8901138b1ef0.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Lo scozzese del Napoli e la compagna Cameron svelano la gravidanza pubblicando l&#39;ecografia su Instagram: tutti i dettagli]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[La Roma &egrave; atterrata a Bologna invece che a Parma: cosa &egrave; successo al volo dei giallorossi]]></title>
-            <description><![CDATA[Imprevisto per Dybala e compagni alla vigilia della gara valida per la dodicesima giornata di Serie A, al Tardini, contro gli uomini di Gilardino]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/20-152706396/la_roma_atterrata_a_bologna_invece_che_a_parma_cosa_successo_al_volo_dei_giallorossi/</link>
-            <guid isPermaLink="false">sn:cds:152706396</guid>
-            <category><![CDATA[Roma]]></category>
-            <category><![CDATA[parma]]></category>
-            <category><![CDATA[Bologna]]></category>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[Parma-Roma]]></category>
-            <pubDate>Fri, 20 Nov 2026 19:07:11 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/190657635-c7f43408-890f-4897-8cc1-e99ef3b5a5e7.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/190657635-c7f43408-890f-4897-8cc1-e99ef3b5a5e7.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>AS Roma via Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/190657635-c7f43408-890f-4897-8cc1-e99ef3b5a5e7.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Imprevisto per Dybala e compagni alla vigilia della gara valida per la dodicesima giornata di Serie A, al Tardini, contro gli uomini di Gilardino]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>
 </rss>

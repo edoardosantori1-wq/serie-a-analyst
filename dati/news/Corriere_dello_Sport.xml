@@ -5,7 +5,26 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 22 Nov 2026 10:41:14 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 11:39:17 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Spalletti e il siparietto prima di Juve-Venezia: &quot;600 panchine? L&#39;aspirazione &egrave; arrivare almeno...&quot;]]></title>
+            <description><![CDATA[L&#39;autoironia del tecnico dei bianconeri nell&#39;imminenza del fischio d&#39;inizio del match all&#39;Allianz Stadium contro l&#39;undici allenato da Nicola]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/22-152755275/spalletti_e_il_siparietto_prima_di_juve-venezia_600_panchine_l_aspirazione_arrivare_almeno_/</link>
+            <guid isPermaLink="false">sn:cds:152755275</guid>
+            <category><![CDATA[Spalletti]]></category>
+            <category><![CDATA[juve]]></category>
+            <category><![CDATA[Venezia]]></category>
+            <category><![CDATA[Conte]]></category>
+            <pubDate>Sun, 22 Nov 2026 11:37:20 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/112458303-514404bc-20d6-48b3-8b8f-1b009f55dfea.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/112458303-514404bc-20d6-48b3-8b8f-1b009f55dfea.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/112458303-514404bc-20d6-48b3-8b8f-1b009f55dfea.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[L&#39;autoironia del tecnico dei bianconeri nell&#39;imminenza del fischio d&#39;inizio del match all&#39;Allianz Stadium contro l&#39;undici allenato da Nicola]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Gennaio porti un altro Donny]]></title>
             <description><![CDATA[Leggi il commento sulla vittoria della Roma a Parma, con quattro gol di un Malen formato record, in vista del mercato di gennaio]]></description>
@@ -154,11 +173,11 @@
             <category><![CDATA[juve]]></category>
             <category><![CDATA[Venezia]]></category>
             <pubDate>Sun, 22 Nov 2026 08:21:09 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/082050195-e0d6b71d-75da-4359-9334-258edf62d6b0.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/082050195-e0d6b71d-75da-4359-9334-258edf62d6b0.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/112125116-0452e509-092b-4cd7-bec4-6ea0ec05fc91.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/112125116-0452e509-092b-4cd7-bec4-6ea0ec05fc91.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
                 <media:credit>Juventus FC via Getty Images</media:credit>
             </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/082050195-e0d6b71d-75da-4359-9334-258edf62d6b0.jpg">
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/112125116-0452e509-092b-4cd7-bec4-6ea0ec05fc91.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida all&#39;Allianz Stadium, valida per la dodicesima giornata di Serie A: le formazioni ufficiali di Spalletti e Nicola]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
@@ -524,24 +543,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/063247185-f0126836-c7d0-4235-a9fb-d8172673d032.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Riflettori puntati sulla prima della classe in Serie A, al termine della sosta dedicata alle nazionali: le scelte di Gattuso e Di Francesco]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Dove vedere Como-Cagliari in tv? Dazn o Sky, orario]]></title>
-            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida del Sinigaglia valida per la dodicesima giornata di Serie A: le formazioni di Fabregas e Pisacane]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/21-152711853/dove_vedere_como-cagliari_in_tv_dazn_o_sky_orario/</link>
-            <guid isPermaLink="false">sn:cds:152711853</guid>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[Como]]></category>
-            <category><![CDATA[Cagliari]]></category>
-            <pubDate>Sat, 21 Nov 2026 08:25:55 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/131014902-7558069a-42ac-4d99-ac3a-c1490896adea.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/131014902-7558069a-42ac-4d99-ac3a-c1490896adea.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/131014902-7558069a-42ac-4d99-ac3a-c1490896adea.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida del Sinigaglia valida per la dodicesima giornata di Serie A: le formazioni di Fabregas e Pisacane]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

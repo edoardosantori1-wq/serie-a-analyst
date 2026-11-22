@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-22T19:52:10+00:00",
+ "aggiornato": "2026-11-22T20:46:51+00:00",
  "totale": {
   "giocate": 22,
   "vinte": 7,
@@ -79,6 +79,61 @@
   {
    "cat": "value",
    "nome": "Value bet",
+   "giocate": 0,
+   "vinte": 0,
+   "perse": 0,
+   "aperte": 0,
+   "hit": null,
+   "unita": 0,
+   "roi": null
+  },
+  {
+   "cat": "cl_pronostico",
+   "nome": "Champions · pronostici",
+   "giocate": 0,
+   "vinte": 0,
+   "perse": 0,
+   "aperte": 0,
+   "hit": null,
+   "unita": 0,
+   "roi": null
+  },
+  {
+   "cat": "cl_tripla_semplice",
+   "nome": "Champions · triple semplici",
+   "giocate": 0,
+   "vinte": 0,
+   "perse": 0,
+   "aperte": 0,
+   "hit": null,
+   "unita": 0,
+   "roi": null
+  },
+  {
+   "cat": "cl_tripla_media",
+   "nome": "Champions · triple medie",
+   "giocate": 0,
+   "vinte": 0,
+   "perse": 0,
+   "aperte": 0,
+   "hit": null,
+   "unita": 0,
+   "roi": null
+  },
+  {
+   "cat": "cl_tripla_aggressiva",
+   "nome": "Champions · triple aggressive",
+   "giocate": 0,
+   "vinte": 0,
+   "perse": 0,
+   "aperte": 0,
+   "hit": null,
+   "unita": 0,
+   "roi": null
+  },
+  {
+   "cat": "cl_marcatore",
+   "nome": "Champions · marcatori",
    "giocate": 0,
    "vinte": 0,
    "perse": 0,

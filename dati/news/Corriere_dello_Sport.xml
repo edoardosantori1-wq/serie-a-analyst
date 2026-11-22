@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 22 Nov 2026 20:39:08 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 21:42:43 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Calhanoglu chiede il cambio, Chivu si dispera: nuovo infortunio per il turco dell&#39;Inter]]></title>
+            <description><![CDATA[Le condizioni e i tempi di recupero del centrocampista turco saranno valutati nelle prossime ore: problema muscolare]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/22-152772533/calhanoglu_chiede_il_cambio_chivu_si_dispera_nuovo_infortunio_per_il_turco_dell_inter/</link>
+            <guid isPermaLink="false">sn:cds:152772533</guid>
+            <category><![CDATA[Calhanoglu]]></category>
+            <category><![CDATA[Atalanta-Inter]]></category>
+            <category><![CDATA[Chivu]]></category>
+            <pubDate>Sun, 22 Nov 2026 20:42:05 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/210617210-d7238b7b-1330-443c-841e-8be9583f9b8d.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/210617210-d7238b7b-1330-443c-841e-8be9583f9b8d.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/210617210-d7238b7b-1330-443c-841e-8be9583f9b8d.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Le condizioni e i tempi di recupero del centrocampista turco saranno valutati nelle prossime ore: problema muscolare]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Amorim esalta il Milan e spiega il cambio di Gon&ccedil;alo Ramos: &quot;Ecco perch&egrave; l&#39;ho sostituito...&quot;]]></title>
             <description><![CDATA[Il tecnico dei rossoneri al termine della sfida con il Frosinone: &quot;Sapevamo che ci avrebbero aggredito e ne abbiamo approfittato&quot;]]></description>
@@ -524,21 +542,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/184442146-ee8eb39f-ac71-4153-9473-2e54456c6b4b.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Al Tardini i giallorossi vincono contro i ducali per la dodicesima di campionato e Gilardino colleziona l&#39;ottava sconfitta in stagione, che ora rischia di finire in zona retrocessione]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Parma Calcio 1913 presenta il primo report di sostenibilit&agrave;]]></title>
-            <description><![CDATA[Il documento, redatto su base volontaria e senza alcun obbligo normativo, segue il Voluntary Standard europeo per la rendicontazione di sostenibilit&agrave; (Modulo Onnicomprensivo) e copre le stagioni sportive 2024/2025 e 2025/2026]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/parma/2026/11/21-152720843/parma_calcio_1913_presenta_il_primo_report_di_sostenibilit/</link>
-            <guid isPermaLink="false">sn:cds:152720843</guid>
-            <pubDate>Sat, 21 Nov 2026 15:29:32 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/152732117-3e52c853-508e-47ad-b3f6-863a3244c9b4.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/152732117-3e52c853-508e-47ad-b3f6-863a3244c9b4.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/152732117-3e52c853-508e-47ad-b3f6-863a3244c9b4.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il documento, redatto su base volontaria e senza alcun obbligo normativo, segue il Voluntary Standard europeo per la rendicontazione di sostenibilit&agrave; (Modulo Onnicomprensivo) e copre le stagioni sportive 2024/2025 e 2025/2026]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

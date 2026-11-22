@@ -5,7 +5,26 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 22 Nov 2026 12:49:35 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 13:52:17 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Bordata di fischi all&#39;intervallo, poi la goleada: cos&igrave; la Juve ha demolito il Venezia]]></title>
+            <description><![CDATA[Spalletti cambia la partita dalla panchina con Woltemade: nella ripresa i bianconeri trovano quattro reti in diciotto minuti con il tedesco, Koopmeiners, Cabal e Kolo Muani su rigore]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/22-152759734/bordata_di_fischi_all_intervallo_poi_la_goleada_cos_la_juve_ha_demolito_il_venezia/</link>
+            <guid isPermaLink="false">sn:cds:152759734</guid>
+            <category><![CDATA[Juventus]]></category>
+            <category><![CDATA[Venezia]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[Spalletti]]></category>
+            <pubDate>Sun, 22 Nov 2026 13:21:46 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/132300232-8d38aadc-97c5-4cde-99a8-b86fa66b3768.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/132300232-8d38aadc-97c5-4cde-99a8-b86fa66b3768.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/132300232-8d38aadc-97c5-4cde-99a8-b86fa66b3768.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Spalletti cambia la partita dalla panchina con Woltemade: nella ripresa i bianconeri trovano quattro reti in diciotto minuti con il tedesco, Koopmeiners, Cabal e Kolo Muani su rigore]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Spalletti e il siparietto prima di Juve-Venezia: &quot;600 panchine? L&#39;aspirazione &egrave; arrivare almeno...&quot;]]></title>
             <description><![CDATA[L&#39;autoironia del tecnico dei bianconeri nell&#39;imminenza del fischio d&#39;inizio del match all&#39;Allianz Stadium contro l&#39;undici allenato da Nicola]]></description>
@@ -97,7 +116,7 @@
         </item>
         <item>
             <title><![CDATA[Dove vedere Bologna-Udinese in tv? Dazn o Sky, orario]]></title>
-            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la dodicesima giornata di Serie A: le probabili formazioni di Palladino e Zanetti]]></description>
+            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la dodicesima giornata di Serie A: le formazioni ufficiali di Palladino e Zanetti]]></description>
             <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/22-152750915/dove_vedere_bologna-udinese_in_tv_dazn_o_sky_orario/</link>
             <guid isPermaLink="false">sn:cds:152750915</guid>
             <category><![CDATA[Serie A]]></category>
@@ -110,7 +129,7 @@
             </media:content>
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/091227143-f8f98ddb-9a8f-46f0-87d6-3478ecad7320.jpg">
             </media:thumbnail>
-            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la dodicesima giornata di Serie A: le probabili formazioni di Palladino e Zanetti]]></dcterms:alternative>
+            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la dodicesima giornata di Serie A: le formazioni ufficiali di Palladino e Zanetti]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
         <item>
@@ -525,24 +544,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/084038167-1f7e7271-91aa-45e0-a093-0935a919199f.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la dodicesima giornata di Serie A: le formazioni ufficiali di Allegri e Abate]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Dove vedere Lazio-Lecce in tv? Dazn o Sky, orario]]></title>
-            <description><![CDATA[Riflettori puntati sulla prima della classe in Serie A, al termine della sosta dedicata alle nazionali: le scelte di Gattuso e Di Francesco]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/21-152711548/dove_vedere_lazio-lecce_in_tv_dazn_o_sky_orario/</link>
-            <guid isPermaLink="false">sn:cds:152711548</guid>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[Lazio]]></category>
-            <category><![CDATA[Lecce]]></category>
-            <pubDate>Sat, 21 Nov 2026 08:27:46 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/20/063247185-f0126836-c7d0-4235-a9fb-d8172673d032.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/063247185-f0126836-c7d0-4235-a9fb-d8172673d032.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>BARTOLETTI</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/20/063247185-f0126836-c7d0-4235-a9fb-d8172673d032.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Riflettori puntati sulla prima della classe in Serie A, al termine della sosta dedicata alle nazionali: le scelte di Gattuso e Di Francesco]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

@@ -1,25 +1,25 @@
 {
- "aggiornato": "2026-11-22T21:44:28+00:00",
+ "aggiornato": "2026-11-22T22:45:43+00:00",
  "totale": {
-  "giocate": 22,
+  "giocate": 24,
   "vinte": 7,
-  "perse": 15,
-  "aperte": 3,
-  "hit": 0.3182,
-  "unita": 2.7,
-  "roi": 0.1228
+  "perse": 17,
+  "aperte": 1,
+  "hit": 0.2917,
+  "unita": 0.7,
+  "roi": 0.0293
  },
  "categorie": [
   {
    "cat": "pronostico",
    "nome": "Pronostici partita",
-   "giocate": 8,
+   "giocate": 9,
    "vinte": 4,
-   "perse": 4,
-   "aperte": 2,
-   "hit": 0.5,
-   "unita": -2.26,
-   "roi": -0.2825
+   "perse": 5,
+   "aperte": 1,
+   "hit": 0.4444,
+   "unita": -3.26,
+   "roi": -0.3622
   },
   {
    "cat": "tripla_semplice",
@@ -68,13 +68,13 @@
   {
    "cat": "singola",
    "nome": "Singole",
-   "giocate": 4,
+   "giocate": 5,
    "vinte": 1,
-   "perse": 3,
-   "aperte": 1,
-   "hit": 0.25,
-   "unita": -1.5,
-   "roi": -0.375
+   "perse": 4,
+   "aperte": 0,
+   "hit": 0.2,
+   "unita": -2.5,
+   "roi": -0.5
   },
   {
    "cat": "value",
@@ -146,13 +146,13 @@
  "giornate": [
   {
    "giornata": 12,
-   "giocate": 22,
+   "giocate": 24,
    "vinte": 7,
-   "perse": 15,
-   "aperte": 3,
-   "hit": 0.3182,
-   "unita": 2.7,
-   "roi": 0.1228
+   "perse": 17,
+   "aperte": 1,
+   "hit": 0.2917,
+   "unita": 0.7,
+   "roi": 0.0293
   }
  ],
  "giocate": [
@@ -175,10 +175,10 @@
    "mercato": "U3.5",
    "quota": 1.77,
    "p": 0.6262,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-22T19:45:00+00:00",
-   "risultato": null
+   "risultato": "4-4"
   },
   {
    "cat": "singola",
@@ -187,10 +187,10 @@
    "mercato": "U2.5",
    "quota": 2.85,
    "p": 0.4025,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-22T19:45:00+00:00",
-   "risultato": null
+   "risultato": "4-4"
   },
   {
    "cat": "tripla_aggressiva",
@@ -218,8 +218,8 @@
     {
      "partita": "Atalanta-Inter",
      "mercato": "C:2 + Under 3.5",
-     "esito": null,
-     "risultato": null
+     "esito": 0,
+     "risultato": "4-4"
     }
    ]
   },
@@ -249,8 +249,8 @@
     {
      "partita": "Atalanta-Inter",
      "mercato": "U3.5",
-     "esito": null,
-     "risultato": null
+     "esito": 0,
+     "risultato": "4-4"
     }
    ]
   },

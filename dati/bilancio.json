@@ -1,36 +1,36 @@
 {
- "aggiornato": "2026-11-22T14:51:24+00:00",
+ "aggiornato": "2026-11-22T15:46:30+00:00",
  "totale": {
-  "giocate": 12,
+  "giocate": 16,
   "vinte": 6,
-  "perse": 6,
-  "aperte": 13,
-  "hit": 0.5,
-  "unita": 11.4,
-  "roi": 0.9502
+  "perse": 10,
+  "aperte": 9,
+  "hit": 0.375,
+  "unita": 7.4,
+  "roi": 0.4626
  },
  "categorie": [
   {
    "cat": "pronostico",
    "nome": "Pronostici partita",
-   "giocate": 4,
+   "giocate": 5,
    "vinte": 3,
-   "perse": 1,
-   "aperte": 6,
-   "hit": 0.75,
-   "unita": 0.44,
-   "roi": 0.11
+   "perse": 2,
+   "aperte": 5,
+   "hit": 0.6,
+   "unita": -0.56,
+   "roi": -0.112
   },
   {
    "cat": "tripla_semplice",
    "nome": "Triple semplici",
-   "giocate": 1,
+   "giocate": 2,
    "vinte": 1,
-   "perse": 0,
-   "aperte": 1,
-   "hit": 1.0,
-   "unita": 0.89,
-   "roi": 0.893
+   "perse": 1,
+   "aperte": 0,
+   "hit": 0.5,
+   "unita": -0.11,
+   "roi": -0.0535
   },
   {
    "cat": "tripla_media",
@@ -46,23 +46,23 @@
   {
    "cat": "tripla_aggressiva",
    "nome": "Triple aggressive",
-   "giocate": 1,
+   "giocate": 2,
    "vinte": 1,
-   "perse": 0,
-   "aperte": 1,
-   "hit": 1.0,
-   "unita": 13.57,
-   "roi": 13.569
+   "perse": 1,
+   "aperte": 0,
+   "hit": 0.5,
+   "unita": 12.57,
+   "roi": 6.2845
   },
   {
    "cat": "marcatore",
    "nome": "Marcatori",
-   "giocate": 2,
+   "giocate": 3,
    "vinte": 0,
-   "perse": 2,
-   "aperte": 2,
+   "perse": 3,
+   "aperte": 1,
    "hit": 0.0,
-   "unita": -2.0,
+   "unita": -3.0,
    "roi": -1.0
   },
   {
@@ -91,13 +91,13 @@
  "giornate": [
   {
    "giornata": 12,
-   "giocate": 12,
+   "giocate": 16,
    "vinte": 6,
-   "perse": 6,
-   "aperte": 13,
-   "hit": 0.5,
-   "unita": 11.4,
-   "roi": 0.9502
+   "perse": 10,
+   "aperte": 9,
+   "hit": 0.375,
+   "unita": 7.4,
+   "roi": 0.4626
   }
  ],
  "giocate": [
@@ -144,15 +144,15 @@
    "mercato": "Juventus-Venezia: C:1 + Under 3.5 · Sassuolo-Genoa: C:1X + Under 3.5 · Atalanta-Inter: C:2 + Under 3.5",
    "quota": 13.06,
    "p": null,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-22T19:45:00+00:00",
    "dettaglio": [
     {
      "partita": "Juventus-Venezia",
      "mercato": "C:1 + Under 3.5",
-     "esito": null,
-     "risultato": null
+     "esito": 0,
+     "risultato": "4-0"
     },
     {
      "partita": "Sassuolo-Genoa",
@@ -266,15 +266,15 @@
    "mercato": "Juventus-Venezia: U3.5 · Bologna-Udinese: O1.5 · Sassuolo-Genoa: U3.5",
    "quota": 2.34,
    "p": null,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-22T14:00:00+00:00",
    "dettaglio": [
     {
      "partita": "Juventus-Venezia",
      "mercato": "U3.5",
-     "esito": null,
-     "risultato": null
+     "esito": 0,
+     "risultato": "4-0"
     },
     {
      "partita": "Bologna-Udinese",
@@ -297,10 +297,10 @@
    "mercato": "U3.5",
    "quota": 1.45,
    "p": 0.7029,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-22T11:30:00+00:00",
-   "risultato": null
+   "risultato": "4-0"
   },
   {
    "cat": "marcatore",
@@ -309,10 +309,10 @@
    "mercato": "SCORER:Randal Kolo Muani",
    "quota": 2.5,
    "p": 0.342,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-22T11:30:00+00:00",
-   "risultato": null
+   "risultato": "4-0"
   },
   {
    "cat": "pronostico",
@@ -517,17 +517,17 @@
   }
  ],
  "clv": {
-  "n": 17,
+  "n": 21,
   "battute": 0,
-  "pari": 17,
+  "pari": 21,
   "peggiori": 0,
   "medio": 0.0
  },
  "clv_giornate": {
   "12": {
-   "n": 17,
+   "n": 21,
    "battute": 0,
-   "pari": 17,
+   "pari": 21,
    "peggiori": 0,
    "medio": 0.0
   }

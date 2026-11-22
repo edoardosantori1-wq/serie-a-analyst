@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 22 Nov 2026 22:40:43 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 23:42:08 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Chivu amareggiato dopo il pari contro l&#39;Atalanta: &quot;Inter, buttati via due punti. Pensavamo di aver vinto, e invece...&quot;]]></title>
+            <description><![CDATA[Le dichiarazioni rilasciate dal tecnico nerazzurro a margine del pirotecnico pareggio maturato a Bergamo: due punti persi per i campioni d&#39;Italia in carica]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/22-152775678/chivu_e_l_analisi_dopo_il_pari_contro_l_atalanta_inter_devi_imparare_tanto_da_questa_partita/</link>
+            <guid isPermaLink="false">sn:cds:152775678</guid>
+            <category><![CDATA[Chivu]]></category>
+            <category><![CDATA[Inter]]></category>
+            <category><![CDATA[atalanta]]></category>
+            <pubDate>Sun, 22 Nov 2026 22:46:38 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/222553396-0f961266-4213-444c-a21d-c12658080233.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/222553396-0f961266-4213-444c-a21d-c12658080233.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/222553396-0f961266-4213-444c-a21d-c12658080233.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Le dichiarazioni rilasciate dal tecnico nerazzurro a margine del pirotecnico pareggio maturato a Bergamo: due punti persi per i campioni d&#39;Italia in carica]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Inter, non basta la tripletta di Pio Esposito: l&#39;Atalanta rimonta e pareggia con Kessie nel finale]]></title>
             <description><![CDATA[Lo spettacolare 4-4 di Bergamo cambia le gerarchie nella zona alta della classifica, rafforza la Lazio capolista e lancia la Roma al secondo posto]]></description>
@@ -522,25 +540,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/154348142-2b7af4ee-fecd-42f2-ba2f-eee6ab6b468b.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[I lariani piegano la squadra di Pisacane e si riscattano dopo la brutta sconfitta contro l&#39;Inter: un gol per tempo e tre punti preziosi]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[⁠Spalletti risponde a Conte: &quot;Quando si &egrave; senza squadra...&quot;. Poi sgonfia il caso McKennie]]></title>
-            <description><![CDATA[Le parole dell&#39;allenatore dei bianconeri nella conferenza stampa alla vigilia della sfida di campionato: ecco cosa ha detto]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/21-152719616/_spalletti_risponde_a_conte_quando_si_senza_squadra_poi_sgonfia_il_caso_mckennie/</link>
-            <guid isPermaLink="false">sn:cds:152719616</guid>
-            <category><![CDATA[juve]]></category>
-            <category><![CDATA[Venezia]]></category>
-            <category><![CDATA[Spalletti]]></category>
-            <category><![CDATA[Conte]]></category>
-            <pubDate>Sat, 21 Nov 2026 15:53:56 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/145750180-37a5da68-39cf-4f2f-b9c4-165359e88f14.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/145750180-37a5da68-39cf-4f2f-b9c4-165359e88f14.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Juventus FC via Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/145750180-37a5da68-39cf-4f2f-b9c4-165359e88f14.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Le parole dell&#39;allenatore dei bianconeri nella conferenza stampa alla vigilia della sfida di campionato: ecco cosa ha detto]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

@@ -3,7 +3,7 @@
 Legge dati/storico.sqlite (le previsioni non vengono mai modificate: si aggiungono solo esito e profitto)
 e i risultati finali di football-data.org; scrive dati/bilancio.json per il sito."""
 import json, os, sqlite3, re, unicodedata
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 BASE = os.path.dirname(os.path.abspath(__file__)); D = os.path.join(BASE, "dati")
 
 def J(n):
@@ -42,6 +42,26 @@ def esito(mercato, i, j):
 def _norm(s):
     s = unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode().lower()
     return [t for t in re.split(r"[^a-z]+", s) if t]
+
+def segnato_cl(nome, inizio):
+    """Champions: chi ha segnato si ricava confrontando la classifica marcatori (football-data.org) prima e dopo la giornata.
+    1 = ha segnato, 0 = non ha segnato, None = non verificabile con certezza (la giocata resta aperta)."""
+    prima = J("cl_marcatori_prima.json") or {}; dopo = (J("fdorg_cl_marcatori.json") or {}).get("scorers", [])
+    if not prima or not dopo: return None
+    agg = (J("meta.json") or {}).get("fdorg_cl_marcatori.json")
+    fine = datetime.fromisoformat(inizio.replace("Z", "+00:00")) + timedelta(hours=3)
+    if not agg or datetime.fromisoformat(agg) < fine: return None      # classifica marcatori non ancora aggiornata
+    pt = _norm(nome)
+    def gol(lista):
+        for x in lista:
+            if pt and pt[-1] in _norm(x["nome"]): return x["gol"]
+        return None
+    g0 = gol(prima.get("giocatori", {}).values())
+    g1 = gol([dict(nome=s["player"]["name"], gol=s.get("goals") or 0) for s in dopo])
+    if g1 is not None and (g0 or 0) < g1: return 1
+    if g1 is not None and g0 is not None and g1 == g0: return 0
+    if g1 is None and len(dopo) < 100: return 0       # lista completa e lui non c'e': non ha segnato
+    return None
 
 def marcatori_partita(match_id):
     """Nomi dei marcatori (esclusi autogol) dal dettaglio partita salvato in dati/partite/<id>.json, se presente."""
@@ -143,12 +163,17 @@ def main():
     if not os.path.exists(dbp):
         json.dump(dict(aggiornato=None, giocate=[]), open(os.path.join(D, "bilancio.json"), "w")); return
     db = sqlite3.connect(dbp)
+    tutte_m = (J("fdorg_giocate.json") or {}).get("matches", []) + (J("fdorg_cl.json") or {}).get("matches", [])
     fin = {m["id"]: (m["score"]["fullTime"]["home"], m["score"]["fullTime"]["away"])
-           for m in (J("fdorg_giocate.json") or {}).get("matches", []) if m.get("score", {}).get("fullTime", {}).get("home") is not None}
-    for rid, mid, mercato, quota in db.execute("SELECT id, match_id, mercato, quota FROM previsioni WHERE esito IS NULL").fetchall():
+           for m in tutte_m if m.get("status") == "FINISHED" and m.get("score", {}).get("fullTime", {}).get("home") is not None}
+    cl_ids = {m["id"] for m in (J("fdorg_cl.json") or {}).get("matches", [])}
+    for rid, mid, mercato, quota, inizio in db.execute("SELECT id, match_id, mercato, quota, inizio FROM previsioni WHERE esito IS NULL").fetchall():
         if mid not in fin: continue
         i, j = fin[mid]
-        if mercato.startswith("SCORER:"):
+        if mercato.startswith("SCORER:") and mid in cl_ids:
+            e = segnato_cl(mercato[7:], inizio)
+            if e is None: continue
+        elif mercato.startswith("SCORER:"):
             nomi = marcatori_partita(mid)
             if nomi is None: continue          # dettaglio non ancora scaricato
             pt = _norm(mercato[7:])
@@ -170,7 +195,7 @@ def main():
     triple = {}
     for r in rows:
         r["risultato"] = "{}-{}".format(*fin[r["match_id"]]) if r["match_id"] in fin else None
-        if r["tipo"].startswith("tripla_"):
+        if "tripla_" in r["tipo"]:
             triple.setdefault((r["giornata"], r["tipo"], r["gruppo"]), []).append(r)
         else:
             giocate.append(dict(cat=r["tipo"], giornata=r["giornata"], desc=r["partita"], mercato=r["mercato"], quota=r["quota"], p=r["p"],
@@ -184,7 +209,7 @@ def main():
         else: e, prof = None, None
         q_tot = 1.0
         for s in sel: q_tot *= s["quota"]
-        giocate.append(dict(cat=tipo, giornata=g, desc=f"{tipo.replace('tripla_', 'Tripla ')} {gr}", mercato=" · ".join(f'{s["partita"]}: {s["mercato"]}' for s in sel),
+        giocate.append(dict(cat=tipo, giornata=g, desc=("Champions · " if tipo.startswith("cl_") else "") + f"{tipo.replace('cl_', '').replace('tripla_', 'Tripla ')} {gr}", mercato=" · ".join(f'{s["partita"]}: {s["mercato"]}' for s in sel),
                             quota=round(q_tot, 2), p=None, esito=e, profitto=prof, inizio=max(s["inizio"] for s in sel),
                             dettaglio=[dict(partita=s["partita"], mercato=s["mercato"], esito=s["esito"], risultato=s["risultato"]) for s in sel]))
     giocate.sort(key=lambda x: x["inizio"], reverse=True)
@@ -204,11 +229,13 @@ def main():
         return dict(giocate=n, vinte=v, perse=len(chiuse) - v, aperte=len([x for x in lst if x["esito"] is None]),
                     hit=round(v / len(chiuse), 4) if chiuse else None, unita=round(prof, 2), roi=round(prof / n, 4) if n else None)
     CAT = [("pronostico", "Pronostici partita"), ("tripla_semplice", "Triple semplici"), ("tripla_media", "Triple medie"),
-           ("tripla_aggressiva", "Triple aggressive"), ("marcatore", "Marcatori"), ("singola", "Singole"), ("value", "Value bet")]
+           ("tripla_aggressiva", "Triple aggressive"), ("marcatore", "Marcatori"), ("singola", "Singole"), ("value", "Value bet"),
+           ("cl_pronostico", "Champions · pronostici"), ("cl_tripla_semplice", "Champions · triple semplici"), ("cl_tripla_media", "Champions · triple medie"),
+           ("cl_tripla_aggressiva", "Champions · triple aggressive"), ("cl_marcatore", "Champions · marcatori")]
     out = dict(aggiornato=datetime.now(timezone.utc).isoformat(timespec="seconds"),
                totale=riepilogo(giocate), categorie=[dict(cat=c, nome=n, **riepilogo([x for x in giocate if x["cat"] == c])) for c, n in CAT],
                giornate=[dict(giornata=g, **riepilogo([x for x in giocate if x["giornata"] == g])) for g in sorted({x["giornata"] for x in giocate}, reverse=True)],
-               giocate=giocate[:120], clv=clv(list(sel.values())),
+               giocate=giocate[:400], clv=clv(list(sel.values())),
                clv_giornate={g: clv([x for x in sel.values() if x[2] == g]) for g in sorted({x[2] for x in sel.values()})})
     PG = pengwin((J("fdorg_giocate.json") or {}).get("matches", []))
     if PG:

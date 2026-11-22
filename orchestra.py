@@ -209,6 +209,53 @@ for g in (J("striker_schedule.json") or {}).get("data", {}).get("games", []):
 if STATO.get("tentativi_formazioni"):
     STATO["tentativi_formazioni"] = dict(list(STATO["tentativi_formazioni"].items())[-60:])
 
+# 6) CHAMPIONS LEAGUE: sezione sospesa (campione di partite troppo piccolo). Per riattivarla: CHAMPIONS_ATTIVA = True
+CHAMPIONS_ATTIVA = False
+if CHAMPIONS_ATTIVA:
+    import time
+    def fd_get(fname, url):
+        time.sleep(6.5)              # football-data.org gratuito: massimo 10 richieste al minuto
+        return get(fname, url, FD)
+    FDB = "https://api.football-data.org/v4/competitions"
+    oraR = NOW.astimezone(ROME); oggi_r = oraR.date()
+    cl = (J("fdorg_cl.json") or {}).get("matches", [])
+    giorni_cl = {datetime.fromisoformat(m["utcDate"].replace("Z", "+00:00")).astimezone(ROME).date() for m in cl}
+    if (STATO.get("cl_cal") != oggi_r.isoformat() and oraR.hour >= 8) or oggi_r in giorni_cl or not cl:
+        if fd_get("fdorg_cl.json", f"{FDB}/CL/matches?season={s}"): STATO["cl_cal"] = oggi_r.isoformat()
+        cl = (J("fdorg_cl.json") or {}).get("matches", [])
+    # marcatori di Champions il mattino dopo ogni giorno di partite (servono a verificare i marcatori giocati)
+    if (oggi_r - timedelta(days=1)) in giorni_cl and oraR.hour >= 8 and STATO.get("cl_marc_agg") != oggi_r.isoformat():
+        if fd_get("fdorg_cl_marcatori.json", f"{FDB}/CL/scorers?limit=100"): STATO["cl_marc_agg"] = oggi_r.isoformat()
+    cl_pro = sorted([m for m in cl if m.get("status") in ("SCHEDULED", "TIMED") and m["homeTeam"].get("id")], key=lambda m: m["utcDate"])
+    if cl_pro:
+        t_cl = datetime.fromisoformat(cl_pro[0]["utcDate"].replace("Z", "+00:00"))
+        turno = cl_pro[0]["utcDate"][:10]
+        ora_uscita = (t_cl.astimezone(ROME) - timedelta(days=1)).replace(hour=9, minute=0, second=0, microsecond=0)
+        if (STATO.get("cl_uscita") != turno and NOW.astimezone(ROME) >= ora_uscita) or (FORZA and t_cl - NOW <= timedelta(days=8)):
+            print(">>> USCITA CHAMPIONS", turno)
+            if not os.path.exists(os.path.join(D, "fdorg_cl_teams.json")) or STATO.get("cl_teams") != s:
+                if fd_get("fdorg_cl_teams.json", f"{FDB}/CL/teams?season={s}"): STATO["cl_teams"] = s
+            get("clubelo.csv", f"http://api.clubelo.com/{NOW.date().isoformat()}")
+            for c in ["PL", "PD", "BL1", "SA", "FL1", "DED", "PPL"]:
+                fd_get(f"fdorg_tab_{c}.json", f"{FDB}/{c}/standings")
+                fd_get(f"fdorg_marc_{c}.json", f"{FDB}/{c}/scorers?limit=60")
+            fd_get("fdorg_cl_marcatori.json", f"{FDB}/CL/scorers?limit=100")
+            tid = STATO.get("cl_tid", 7)
+            url_cl = lambda t: f"{OP}/odds-by-tournaments?tournamentIds={t}&bookmakers={LIBRI}&verbosity=3&apiKey={OK}"
+            ok_q = get("oddspapi_cl.json", url_cl(tid))
+            if not ok_q or not (J("oddspapi_cl.json") or []):
+                # id del torneo da verificare: si cerca "Champions League" nell'elenco dei tornei di calcio (1 richiesta, una volta sola)
+                if get("oddspapi_tornei.json", f"{OP}/tournaments?sportId=10&apiKey={OK}"):
+                    tt = J("oddspapi_tornei.json") or []
+                    tt = tt if isinstance(tt, list) else tt.get("data", [])
+                    t2 = next((t.get("tournamentId") for t in tt if "champions league" in str(t.get("tournamentName", "")).lower()
+                               and "women" not in str(t.get("tournamentName", "")).lower() and "afc" not in str(t.get("tournamentName", "")).lower()), None)
+                    if t2 and t2 != tid:
+                        STATO["cl_tid"] = t2; get("oddspapi_cl.json", url_cl(t2))
+            get("apif_cl_infortuni.json", f"https://v3.football.api-sports.io/injuries?league=2&season={s}", [f"x-apisports-key: {ENV.get('APIFOOTBALL_KEY','')}"])
+            subprocess.run([sys.executable, os.path.join(BASE, "champions.py")], check=False, env=dict(os.environ, REGISTRA="0" if FORZA else "1"))
+            if not FORZA: STATO["cl_uscita"] = turno
+
 # 5) risultati e verifica dei pronostici (ogni ora; gratis)
 if not fare_uscita:
     get("fdorg_giocate.json", "https://api.football-data.org/v4/competitions/SA/matches?status=FINISHED", FD)

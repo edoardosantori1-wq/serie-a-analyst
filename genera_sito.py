@@ -361,13 +361,11 @@ def _vb_html():
         f'''<div class="vb" data-k="{x["kelly"]}"><div class="vbh">{badge(x["casa"])}{badge(x["ospite"])}<b>{E(x["casa"])} – {E(x["ospite"])}</b><span class="muted">{fts(x["inizio"])}</span></div>
         <div class="vbr"><div><small>Giocata</small><b>{E(x["label"])}</b></div><div><small>Dove</small><b>{E(x["book"])}</b></div>
         <div><small>Quota</small><b>{x["quota"]:.2f}</b></div><div><small>Quota giusta</small><b>{x["quota_giusta"]:.2f}</b></div>
-        <div><small>Vantaggio</small><b class="okc">+{x["ev"]*100:.1f}%</b></div><div><small>Punta</small><b class="vbs">—</b></div></div>
+        <div><small>Vantaggio</small><b class="okc">+{x["ev"]*100:.1f}%</b></div></div>
         <div class="vba muted">Altre quote: {" · ".join(f"{E(b)} {q:.2f}" for b, q in x["altre"].items() if b != x["book"]) or "—"}</div></div>''' for x in gs)
     vuoto = '<div class="nobet"><div class="nb">NESSUN ERRORE DI QUOTA</div><p>In questo momento nessun bookmaker italiano paga un esito più del giusto. Il controllo si ripete nei giorni delle partite.</p></div>'
     libri = ", ".join(VB.get("bookmaker") or []) or "—"
     return f'''<h2 class="daytitle">Errori di quota tra bookmaker</h2>
-    <div class="fbox"><div class="fmod"><label for="vbudget">Budget da giocare (€)</label><input id="vbudget" type="number" min="2" step="1" inputmode="numeric" class="vbin"></div>
-    <p class="hint">Il sito divide il budget tra le giocate qui sotto: di più dove l'errore di quota è più grande (un quarto del criterio di Kelly), minimo 2 € a giocata.</p></div>
     {righe or vuoto}
     <p class="hint">Quota giusta = quota Pinnacle senza margine, il riferimento più preciso del mercato. Controllate alle {agg} su: {E(libri)}. Gli errori di quota durano poco: verifica la quota sul sito del bookmaker prima di giocare, e gioca solo con importi che puoi permetterti di perdere. 18+</p>'''
 VB_HTML = _vb_html()
@@ -385,35 +383,53 @@ def kpi(t):
     return f'''<div class="bk"><div><small>Vinte</small><b class="okc">{t["vinte"]}</b></div><div><small>Perse</small><b class="koc">{t["perse"]}</b></div>
     <div><small>% presa</small><b>{pc(t["hit"])}</b></div><div><small>Unità (puntata 1)</small><b class="{'okc' if (t['unita'] or 0) >= 0 else 'koc'}">{t["unita"]:+.2f}</b></div>
     <div><small>ROI</small><b>{"—" if t["roi"] is None else f"{t['roi']*100:+.1f}%"}</b></div><div><small>In attesa</small><b>{t["aperte"]}</b></div></div>'''
+import hashlib as _hl
+def _gid(x): return _hl.md5(f'{x["cat"]}|{x.get("giornata")}|{x["desc"]}|{x["mercato"]}|{x.get("inizio")}'.encode()).hexdigest()[:10]
+GRUPPI_BIL = [("pron", "Pronostici", ("pronostico",)), ("tri", "Triple", ("tripla_semplice", "tripla_media", "tripla_aggressiva")),
+              ("marc", "Marcatori", ("marcatore",)), ("vb", "Value bet", ("value",))]
+def nome_giocata(x):
+    d = (x.get("inizio") or "")[:10]
+    dd = f'{int(d[8:10])}/{int(d[5:7])}' if len(d) == 10 else ""
+    if "tripla_" in x["cat"]:
+        tipo = x["cat"].split("tripla_")[1]
+        return f"Tripla {tipo}", (x["desc"].split()[-1].capitalize() + " " + dd).strip()
+    if x["cat"] == "marcatore":
+        return x["mercato"][7:], x["desc"].replace("-", " – ")
+    return x["desc"].replace("-", " – "), f'{nome_merc(x["mercato"])} · {dd}'
+STATO_TXT = {1: ("Vinta", "vin"), 0: ("Persa", "per"), 2: ("Rimborsata", "rim"), None: ("In attesa", "att")}
+def riepilogo_html(lst):
+    chiuse = [x for x in lst if x["esito"] in (0, 1)]; v = sum(1 for x in chiuse if x["esito"] == 1)
+    u = sum(x["profitto"] or 0 for x in lst if x["esito"] in (0, 1, 2))
+    return f'''<div class="bk bk3"><div><small>Vinte</small><b class="okc">{v}</b></div><div><small>Perse</small><b class="koc">{len(chiuse)-v}</b></div>
+    <div><small>Unità</small><b class="{"okc" if u >= 0 else "koc"}">{u:+.2f}</b></div></div>'''
 if BIL.get("giocate"):
-    cat_rows = "".join(f'''<tr><td class=l>{E(c["nome"])}</td><td>{c["giocate"]}</td><td>{c["vinte"]}</td><td>{c["perse"]}</td><td>{pc(c["hit"])}</td>
-    <td class="{'okc' if (c['unita'] or 0) >= 0 else 'koc'}">{c["unita"]:+.2f}</td><td>{"—" if c["roi"] is None else f"{c['roi']*100:+.1f}%"}</td><td>{c["aperte"]}</td></tr>''' for c in BIL["categorie"] if c["giocate"] or c["aperte"])
-    gio_rows = "".join(f'''<tr><td class=l>Giornata {x["giornata"]}</td><td>{x["vinte"]}/{x["vinte"]+x["perse"]}</td><td>{pc(x["hit"])}</td>
-    <td class="{'okc' if (x['unita'] or 0) >= 0 else 'koc'}">{x["unita"]:+.2f}</td><td>{x["aperte"]}</td></tr>''' for x in BIL["giornate"])
-    def riga(x):
-        prof = "" if x["profitto"] is None else "%+.2f" % x["profitto"]
-        if x.get("dettaglio"):
-            sub = ""
-            for d in x["dettaglio"]:
-                ris = ' <span class=muted>(%s)</span>' % d["risultato"] if d.get("risultato") else ""
-                sub += '<div class="sub">%s %s · %s%s</div>' % (esito_html(d["esito"]), E(d["partita"].replace("-", " – ")), E(nome_merc(d["mercato"])), ris)
-            return '<tr><td class=l><b>%s</b>%s</td><td>%.2f</td><td>%s</td><td>%s</td></tr>' % (E(x["desc"].capitalize()), sub, x["quota"], esito_html(x["esito"]), prof)
-        tipo = {"pronostico": "pronostico", "marcatore": "marcatore", "singola": "singola"}.get(x["cat"], "")
-        ris = (" · " + x["risultato"]) if x.get("risultato") else ""
-        return ('<tr><td class=l>%s · <b>%s</b> <span class=muted>%s%s</span></td><td>%.2f</td><td>%s</td><td>%s</td></tr>'
-                % (E(x["desc"].replace("-", " – ")), E(nome_merc(x["mercato"])), tipo, ris, x["quota"], esito_html(x["esito"]), prof))
-    C = BIL.get("clv")
-    tar_html = TAR_HTML
-    # confronto con Pengwin: test interno, non pubblicato (dati/confronto_pengwin.json)
-    clv_html = (f'''<h2 class="daytitle">Quote battute</h2><div class="bk bk3"><div><small>Quote migliori della chiusura</small><b class="{'okc' if C['battute'] >= C['peggiori'] else 'koc'}">{C["battute"]} su {C["n"]}</b></div>
-    <div><small>Uguali</small><b>{C["pari"]}</b></div><div><small>Differenza media</small><b class="{'okc' if C['medio'] >= 0 else 'koc'}">{C["medio"]*100:+.1f}%</b></div></div>
-    <p class="hint">Confronto tra la quota Eurobet all'uscita del report e quella poco prima del fischio d'inizio. Se la quota scende dopo il nostro pronostico, il mercato si è mosso nella nostra direzione: è il segnale più rapido per capire se il sistema vede giusto.</p>''') if C else ""
-    bil_html = f'''{tar_html}{clv_html}<h2 class="daytitle">Bilancio complessivo</h2>{kpi(BIL.get("totale"))}
-    <h2 class="daytitle">Per tipo di giocata</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Tipo</th><th>Giocate</th><th>Vinte</th><th>Perse</th><th>% presa</th><th>Unità</th><th>ROI</th><th>In attesa</th></tr></thead><tbody>{cat_rows}</tbody></table></div>
-    <h2 class="daytitle">Per giornata</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Giornata</th><th>Prese</th><th>% presa</th><th>Unità</th><th>In attesa</th></tr></thead><tbody>{gio_rows}</tbody></table></div>
-    <h2 class="daytitle">Ultime giocate</h2><div class="scroll"><table class="tbl"><thead><tr><th class=l>Giocata</th><th>Quota</th><th>Esito</th><th>Unità</th></tr></thead><tbody>{"".join(riga(x) for x in BIL["giocate"][:60])}</tbody></table></div>'''
+    G = BIL["giocate"]
+    def riga_b(x):
+        t, sub = nome_giocata(x); st, cls = STATO_TXT.get(x["esito"], STATO_TXT[None])
+        u = "—" if x["profitto"] is None or x["esito"] is None else f'{x["profitto"]:+.2f}'
+        uc = "okc" if (x["profitto"] or 0) > 0 else ("koc" if (x["profitto"] or 0) < 0 else "muted")
+        return f'''<div class="bg"><div class="bgn"><b>{E(t)}</b><small>{E(sub)}</small></div><div class="bgq">{x["quota"]:.2f}</div>
+        <div class="st {cls}">{st}</div><div class="bgu {uc}">{u}</div></div>'''
+    tabs = "".join(f'<button class="btab{" on" if k == "pron" else ""}" data-b="{k}">{n}</button>' for k, n, _ in GRUPPI_BIL)
+    pann = ""
+    for k, n, cats in GRUPPI_BIL:
+        lst = [x for x in G if x["cat"] in cats]
+        righe_b = "".join(riga_b(x) for x in lst[:40]) or '<p class="muted">Nessuna giocata ancora.</p>'
+        pann += f'''<div class="bpan{" on" if k == "pron" else ""}" data-b="{k}">{riepilogo_html(lst)}{righe_b}</div>'''
+    T_ = BIL.get("totale") or {}
+    uc_t = "okc" if (T_.get("unita") or 0) >= 0 else "koc"
+    bil_html = f'''<h2 class="daytitle">Bilancio</h2>
+    <div class="bk"><div><small>Vinte</small><b class="okc">{T_.get("vinte", 0)}</b></div><div><small>Perse</small><b class="koc">{T_.get("perse", 0)}</b></div>
+    <div><small>Unità (1 a giocata)</small><b class="{uc_t}">{(T_.get("unita") or 0):+.2f}</b></div>
+    <div><small>In attesa</small><b>{T_.get("aperte", 0)}</b></div></div>
+    <div class="btabs">{tabs}</div>{pann}
+    <p class="hint">Unità: si punta idealmente 1 su ogni giocata (una tripla conta come una giocata). Vinta = quota − 1, persa = −1.</p>'''
 else:
     bil_html = '<div class="nobet"><div class="nb">IN ATTESA</div>Il bilancio parte con la prima giornata giocata dopo l\'uscita del report.</div>'
+# ------------------------------------------------------------------ le mie giocate (salvate sul dispositivo dell'utente)
+MIE = [dict(id=_gid(x), g=k, t=nome_giocata(x)[0], s=nome_giocata(x)[1], q=x["quota"], e=x["esito"], d=(x.get("inizio") or "")[:10])
+       for x in BIL.get("giocate", []) for k, n, cats in GRUPPI_BIL if x["cat"] in cats]
+MIE_JSON = json.dumps(MIE, ensure_ascii=False).replace("</", "<\\/")
 
 # ------------------------------------------------------------------ web app (icona + manifest)
 import zlib, struct, math as _m
@@ -650,6 +666,82 @@ def _fanta_fc(path):
 
 # sezione Fantacalcio rimossa dal sito (il codice resta, non viene eseguito)
 
+
+# ------------------------------------------------------------------ CHAMPIONS LEAGUE
+GG = ["Lun", "Mar", "Mer", "Gio", "Ven", "Sab", "Dom"]
+CLD = J("champions.json") or {}
+CLP = CLD.get("partite", [])
+def clb(r, i, size="sm"):
+    c = (r.get("crest") or [None, None])[i]; t = (r.get("tla") or ["?", "?"])[i]
+    return f'<img class="crest {size}" src="{E(c)}" alt="{E(t)}" loading="lazy">' if c else f'<span class="badge {size}">{E(t)}</span>'
+def _cl_html():
+    if not CLP:
+        msg = '<div class="nobet"><div class="nb">CHAMPIONS</div><p>Nessuna partita di Champions in programma al momento. Il report esce in automatico il giorno prima di ogni turno, alle 9:00.</p></div>'
+        return msg, msg, msg, msg, ""
+    gg = sorted({r["giorno"] for r in CLP})
+    def gtxt(d):
+        x = datetime.fromisoformat(d); return f"{GIORNI[x.weekday()]} {x.day} {MESI[x.month-1]}"
+    fase = CLD.get("fase") or ""
+    titolo = f'<div class="gday"><span class="md">CHAMPIONS · GIORNATA {CLD.get("giornata") or "—"}</span><span>{" · ".join(gtxt(d) for d in gg)}</span></div>'
+    # pronostici
+    righe = ""
+    for d in gg:
+        righe += f'<tr class="dayrow"><td colspan=4>{gtxt(d)}</td></tr>'
+        for r in [x for x in CLP if x["giorno"] == d]:
+            p = r.get("pronostico"); ora = rome(r["data"]).strftime("%H:%M")
+            nome = f'{clb(r,0)}{clb(r,1)} {E(r["casa"])} – {E(r["ospite"])} <small class="muted">{ora}</small>'
+            righe += (f'<tr><td class=l>{nome}</td><td class=l><b>{E(p["label"])}</b>{stella(p)}</td><td>{pc(p["p"])}</td><td><b>{p["quota"]:.2f}</b></td></tr>' if p
+                      else f'<tr><td class=l>{nome}</td><td class=l colspan=3><span class=muted>Nessun pronostico</span></td></tr>')
+    pron = f'{titolo}<h2 class="daytitle">Schedina Champions</h2><div class="scroll"><table class="tbl slip"><thead><tr><th class=l>Partita</th><th class=l>Pronostico</th><th>Probabilità</th><th>Quota</th></tr></thead><tbody>{righe}</tbody></table></div>'
+    # triple
+    tr = ""
+    for d in gg:
+        tt = (CLD.get("triple") or {}).get(d)
+        if not tt: continue
+        tr += f'<h2 class="daytitle">{gtxt(d)}</h2>'
+        for tipo in ("semplice", "media", "aggressiva"):
+            t = tt.get(tipo)
+            if not t:
+                tr += f'<div class="tcard empty"><h3>Tripla {tipo}</h3><p>Non costruita: mancano tre selezioni abbastanza solide in questa fascia di quota.</p></div>'; continue
+            rr = {r["id"]: r for r in CLP}
+            sel = "".join(f'''<li><div class="tsel"><span class="tm">{clb(rr[s["mid"]],0)}{clb(rr[s["mid"]],1)} {E(s["match"].replace("-", " – "))}</span>
+            <b>{E(s["label"])}{stella(s)}</b></div><div class="tnum"><span>probabilità <b>{pc(s["p"])}</b></span><span>quota <b>{s["quota"]:.2f}</b></span></div></li>''' for s in t["selezioni"])
+            tr += f'''<div class="tcard {tipo}"><div class="th"><h3>Tripla {tipo}</h3><span class="risk">{RISCHIO[tipo]}</span></div><ol>{sel}</ol>
+            <div class="ttot"><div><small>Quota totale</small><b>{t["quota"]:.2f}</b></div><div><small>Prob. congiunta</small><b>{pc(t["p"])}</b></div></div></div>'''
+    tri = titolo + (tr or '<div class="nobet"><div class="nb">NO BET</div><p>Triple non costruite per questo turno.</p></div>')
+    # marcatori
+    MCL = (CLD.get("marcatori") or {}).get("lista", [])
+    sc = "".join(f'''<div class="scard"><div class="sn"><b>{E(x["nome"])}{stella(x)}</b><span>{E(x["squadra"])} vs {E(x["avversario"])}</span></div>
+    <div class="sp">{pc(x["p"])}<small>prob. di segnare</small></div>
+    <div class="sg"><div><small>Quota Eurobet</small><b>{x["quota"]:.2f}</b></div><div><small>Gol stagione</small><b>{x["gol"]}</b></div><div><small>Partite</small><b>{x["partite"]}</b></div></div></div>''' for x in MCL)
+    marc = titolo + (f'<div class="scards">{sc}</div><p class="hint">Gol e partite della stagione: campionato più Champions. Contano anche la forza dell\'avversario e i gol attesi della squadra in questa partita.</p>' if sc
+                     else '<div class="nobet"><div class="nb">MARCATORI</div><p>Nessun marcatore con quota Eurobet disponibile.</p></div>')
+    # analisi
+    opts = "".join(f'<option value="cl{r["id"]}">{GG[rome(r["data"]).weekday()]} {rome(r["data"]).strftime("%d/%m %H:%M")} · {E(r["casa"])} – {E(r["ospite"])}</option>' for r in CLP)
+    cards = ""
+    for r in CLP:
+        pr = r.get("p") or {}; mk = r.get("p_mercato") or {}
+        if not pr:
+            body = f'<p class="warn">{E("; ".join(r.get("avvisi") or ["dati non disponibili"]))}</p>'
+        else:
+            def riga(lab, k):
+                a, m = pr.get(k), mk.get(k)
+                d = "" if m is None or a is None else (a - m) * 100
+                dc = "—" if d == "" else f'<span class="{"okc" if d >= 5 else ("koc" if d <= -5 else "muted")}">{d:+.0f}</span>'
+                return f"<tr><td class=l>{lab}</td><td><b>{pc(a)}</b></td><td>{pc(m)}</td><td>{dc}</td></tr>"
+            ass = "".join(f'<div class="ass"><b>{E(t)}</b>: ' + ", ".join(f'{E(x["nome"])} <span class="muted">({"in dubbio" if x.get("dubbio") else E(x.get("motivo") or "assente")})</span>' for x in l) + "</div>"
+                          for t, l in (r.get("assenze") or {}).items() if l) or '<div class="ass muted">Nessun assente segnalato</div>'
+            p = r.get("pronostico")
+            body = f'''<div class="aibox"><div class="aik"><span><small>Risultato più probabile</small><b>{E(r.get("risultato_modello") or "—")}</b></span>
+            <span><small>Gol attesi</small><b>{r["lam"][0]} – {r["lam"][1]}</b></span><span><small>Elo</small><b>{r["elo"][0]} – {r["elo"][1]}</b></span></div>
+            <div class="scroll"><table class="tbl ait"><thead><tr><th class=l>Esito</th><th>AI</th><th>Mercato</th><th>Diff.</th></tr></thead><tbody>
+            {riga("1", "1")}{riga("X", "X")}{riga("2", "2")}{riga("Over 2.5", "O2.5")}{riga("Goal", "GG")}</tbody></table></div>
+            <div class="assh">Assenti</div>{ass}</div>
+            {f'<div class="tip"><small>Pronostico</small><b>{E(p["label"])}{stella(p)}</b> <span class="muted">· {pc(p["p"])} · quota {p["quota"]:.2f}</span></div>' if p else ""}'''
+        cards += f'''<article class="match clm" data-i="cl{r["id"]}"><div class="clh"><div>{clb(r,0,"")}<b>{E(r["casa"])}</b></div><div class="muted">{rome(r["data"]).strftime("%d/%m %H:%M")}</div><div>{clb(r,1,"")}<b>{E(r["ospite"])}</b></div></div>{body}</article>'''
+    ana = f'{titolo}<div class="pick"><label for="selcl">Scegli la partita</label><select id="selcl">{opts}</select></div>{cards}'
+    return pron, tri, marc, ana, titolo
+CL_PRON, CL_TRI, CL_MARC, CL_ANA, CL_TIT = _cl_html()
 FANTA_JSON = json.dumps(FANTA, ensure_ascii=False).replace("</", "<\\/")
 GG = ["Lun", "Mar", "Mer", "Gio", "Ven", "Sab", "Dom"]
 sel_opts = "".join(f'<option value="{r["id"]}">{GG[rome(r["data"]).weekday()]} {rome(r["data"]).strftime("%d/%m %H:%M")} · {E(r["casa"])} – {E(r["ospite"])}</option>' for r in PARTITE)
@@ -757,6 +849,20 @@ details.info p{font-size:14px;color:var(--ink);margin:8px 0}
 .pick select,.fmod select,.fadd input{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font:600 15px Inter;width:100%}
 .fbox{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin:0 0 16px}.fbox .daytitle{margin-top:0}
 .fadd{display:flex;gap:8px}
+.btabs{display:flex;gap:6px;overflow-x:auto;margin:16px 0 10px}.btab{background:none;border:1px solid var(--line);color:var(--mut);border-radius:99px;padding:7px 14px;font:600 13px Inter;cursor:pointer;white-space:nowrap}
+.btab.on{color:var(--acc);border-color:var(--acc)}.bpan{display:none}.bpan.on{display:block}
+.bg{display:grid;grid-template-columns:1fr auto auto auto;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:0 0 8px}
+.bgn{display:flex;flex-direction:column;min-width:0}.bgn b{font-size:14px}.bgn small{font-size:12px;color:var(--mut)}.bgq{font:700 15px Inter;color:var(--mut)}
+.st{font:700 12px Inter;padding:4px 9px;border-radius:99px;white-space:nowrap}.st.vin{background:rgba(0,214,143,.15);color:#00d68f}.st.per{background:rgba(255,107,107,.15);color:#ff6b6b}
+.st.rim{background:rgba(255,255,255,.08);color:var(--mut)}.st.att{background:rgba(255,210,63,.12);color:#ffd23f}.bgu{font:700 14px Inter;min-width:48px;text-align:right}
+.mrow{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mrow .vbin{width:100%}.mbtn{margin-top:10px;background:var(--acc);color:#04130c;border:0;border-radius:12px;padding:11px 18px;font:700 14px Inter;cursor:pointer}
+#mtot b{font-size:20px}
+#mgioc{background:#0f151d;color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:11px 12px;font:600 14px Inter;width:100%}
+
+img.crest{width:30px;height:30px;object-fit:contain;vertical-align:middle;margin-right:2px}img.crest.sm{width:20px;height:20px}
+.dayrow td{color:var(--acc);font:700 13px Inter;text-transform:uppercase;letter-spacing:.06em;padding-top:14px}
+.clh{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;text-align:center;margin-bottom:10px}.clh>div{display:flex;flex-direction:column;align-items:center;gap:4px}.clh img.crest{width:44px;height:44px}
+.tip{margin-top:8px;font-size:14px}.tip small{display:block;font-size:11px;color:var(--mut)}
 .vb{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:14px;padding:12px;margin:0 0 12px}
 .vbh{display:flex;align-items:center;gap:8px;margin-bottom:8px}.vbh .muted{margin-left:auto;font-size:12px}
 .vbr{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.vbr div{display:flex;flex-direction:column}.vbr small{font-size:11px;color:var(--mut)}.vbr b{font:700 17px 'Barlow Condensed'}
@@ -776,8 +882,8 @@ details.info p{font-size:14px;color:var(--ink);margin:8px 0}
 footer{margin-top:50px;color:var(--mut);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
 """
 JS = """
-const views=['news','live','formazioni','giornata','analisi','triple','marcatori','value','bilancio','classifica'];
-const GRUPPI={studio:['giornata','triple','marcatori','value'],live:['live','formazioni']};
+const views=['news','live','giornata','analisi','triple','marcatori','value','mie','bilancio','classifica'];
+const GRUPPI={studio:['giornata','triple','marcatori','value']};
 // link con la rosa del fantacalcio (per spostarla su un altro dispositivo): #fanta=...
 function importaRosa(){if(!location.hash.startsWith('#fanta='))return false;try{const r=JSON.parse(decodeURIComponent(location.hash.slice(7)));if(Array.isArray(r)){localStorage.setItem('sa_fanta',JSON.stringify(r))}}catch(e){}history.replaceState(null,'','#fanta');return true}
 importaRosa();addEventListener('hashchange',()=>{if(importaRosa())location.reload()});
@@ -800,6 +906,8 @@ try{await navigator.clipboard.writeText(L.join(String.fromCharCode(10)));m.textC
 document.querySelectorAll('.match').forEach(m=>m.querySelectorAll('.tabs2 button').forEach(b=>b.onclick=()=>{
 m.querySelectorAll('.tabs2 button').forEach(x=>x.classList.toggle('on',x===b));m.querySelectorAll('.pane').forEach(p=>p.classList.toggle('on',p.dataset.p===b.dataset.t));}));
 
+const scl=document.getElementById('selcl');
+if(scl){const f=()=>{document.querySelectorAll('#cla .match').forEach(a=>a.style.display=a.dataset.i===scl.value?'':'none')};scl.onchange=f;f();}
 const sp=document.getElementById('selp');
 if(sp){const f=()=>{document.querySelectorAll('#analisi .match').forEach(a=>a.style.display=a.dataset.i===sp.value?'':'none')};
 try{const v=localStorage.getItem('sa_selp');if(v&&[...sp.options].some(o=>o.value===v))sp.value=v}catch(e){}
@@ -865,6 +973,29 @@ att.forEach(x=>x.s=Math.min(B*0.4,B*x.k/K));const pochi=att.filter(x=>x.s<2);if(
 pochi.sort((a,b)=>a.k-b.k);att=att.filter(x=>x!==pochi[0]);}
 att.forEach(x=>{const s=Math.floor(x.s*2)/2;x.el.querySelector('.vbs').textContent=s>=2?s.toFixed(2).replace('.',',')+' €':'—'});}
 inp.addEventListener('input',calc);calc();})();
+document.querySelectorAll('.btab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.btab').forEach(x=>x.classList.toggle('on',x===b));
+document.querySelectorAll('.bpan').forEach(p=>p.classList.toggle('on',p.dataset.b===b.dataset.b));});
+(function(){const sel=document.getElementById('mgioc');if(!sel||typeof MIE==='undefined')return;
+const GN={pron:'Pronostici',tri:'Triple',marc:'Marcatori',vb:'Value bet'};const BY={};MIE.forEach(x=>BY[x.id]=x);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const eur=v=>(v<0?'−':'')+Math.abs(v).toFixed(2).replace('.',',')+' €';
+let mie=[];try{mie=JSON.parse(localStorage.getItem('sa_mie')||'[]')}catch(e){}
+const save=()=>{try{localStorage.setItem('sa_mie',JSON.stringify(mie))}catch(e){}};
+sel.innerHTML='<option value="">Scegli…</option>'+Object.keys(GN).map(g=>{const L=MIE.filter(x=>x.g===g);return L.length?`<optgroup label="${GN[g]}">${L.map(x=>`<option value="${x.id}">${esc(x.t)} · ${esc(x.s)}${x.e===null?'':' (chiusa)'}</option>`).join('')}</optgroup>`:''}).join('');
+sel.onchange=()=>{const x=BY[sel.value];if(x)document.getElementById('mquo').value=x.q};
+document.getElementById('madd').onclick=()=>{const x=BY[sel.value];const imp=parseFloat(document.getElementById('mimp').value);const q=parseFloat(document.getElementById('mquo').value)||(x&&x.q);
+const m=document.getElementById('mmsg');if(!x){m.textContent='Scegli una giocata.';return}if(!(imp>0)){m.textContent='Inserisci l’importo.';return}
+mie.push({id:x.id,t:x.t,s:x.s,imp,q,quando:new Date().toISOString().slice(0,10)});save();m.textContent='Aggiunta.';document.getElementById('mimp').value='';draw()};
+function draw(){let gioc=0,saldo=0,att=0;
+let cambi=false;const rows=mie.map((g,i)=>{const x=BY[g.id];if(x&&x.e!==null&&g.e!==x.e){g.e=x.e;cambi=true}const e=(x&&x.e!==null)?x.e:(g.e??null);let r,cls,st;
+if(e===1){r=g.imp*(g.q-1);cls='vin';st='Vinta'}else if(e===0){r=-g.imp;cls='per';st='Persa'}else if(e===2){r=0;cls='rim';st='Rimborsata'}else{r=null;cls='att';st='In attesa';att+=g.imp}
+gioc+=g.imp;if(r!==null)saldo+=r;
+return `<div class="bg"><div class="bgn"><b>${esc(g.t)}</b><small>${esc(g.s)} · ${eur(g.imp)} a ${g.q.toFixed(2)}</small></div><div class="st ${cls}">${st}</div>
+<div class="bgu ${r>0?'okc':(r<0?'koc':'muted')}">${r===null?'—':(r>0?'+':'')+eur(r)}</div><button class="fx" data-i="${i}" aria-label="Togli">×</button></div>`}).join('');
+if(cambi)save();document.getElementById('mtot').innerHTML=mie.length?`<div class="bk bk3"><div><small>Giocato</small><b>${eur(gioc)}</b></div><div><small>Saldo</small><b class="${saldo>=0?'okc':'koc'}">${saldo>=0?'+':''}${eur(saldo)}</b></div><div><small>In attesa</small><b>${eur(att)}</b></div></div>`:'';
+document.getElementById('mlist').innerHTML=rows||'<p class="muted">Non hai ancora aggiunto giocate.</p>';
+document.querySelectorAll('#mlist .fx').forEach(b=>b.onclick=()=>{mie.splice(+b.dataset.i,1);save();draw()});}
+draw();})();
 """
 gen = datetime.now(timezone.utc).isoformat()
 PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -873,12 +1004,12 @@ PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name
 <meta name="apple-mobile-web-app-title" content="SA Analyst"><link rel="apple-touch-icon" href="icona-180.png"><link rel="icon" type="image/png" href="icona-192.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>{CSS}</style></head>
 <body><div class="wrap"><header class="hero"><div class="brand">Serie A <span>Analyst</span></div></header>
-<nav><a href="#news">News</a><a href="#live" data-g="live">Live</a><a href="#giornata" data-g="studio">Studio</a><a href="#analisi">Analisi</a><a href="#bilancio">Bilancio</a><a href="#classifica">Classifica</a></nav>
+<nav><a href="#news">News</a><a href="#live">Live</a><a href="#giornata" data-g="studio">Studio</a><a href="#analisi">Analisi</a><a href="#mie">Le mie giocate</a><a href="#bilancio">Bilancio</a><a href="#classifica">Classifica</a></nav>
 <div class="subnav" data-g="studio"><a href="#giornata">Pronostici</a><a href="#triple">Triple</a><a href="#marcatori">Marcatori</a><a href="#value">Value bet</a></div>
-<div class="subnav" data-g="live"><a href="#live">Risultati</a><a href="#formazioni">Formazioni</a></div>
+
 <section class="view" id="news">{news_html}</section>
 <section class="view" id="live">{gtitle}<h2 class="daytitle">Risultati live</h2>{live_html}</section>
-<section class="view" id="formazioni">{gtitle}<h2 class="daytitle">Formazioni</h2>{form_html}</section>
+
 <section class="view" id="giornata">{gtitle}<h2 class="daytitle">Schedina della giornata</h2><div class="legend"><span class="star">★</span> <b>Errore di quota a tuo favore</b>: secondo l'analisi dell'AI questo esito è più probabile di quanto lo paga Eurobet. Sono le giocate più interessanti; le altre sono pagate il giusto o meno.</div><div class="scroll"><table class="tbl slip"><thead><tr><th class=l>Partita</th><th class=l>Pronostico</th><th>Probabilità</th><th>Quota</th></tr></thead><tbody>{slip_rows}</tbody></table></div></section>
 <section class="view" id="analisi">{gtitle}<div class="pick"><label for="selp">Scegli la partita</label><select id="selp">{sel_opts}</select></div>{''.join(cards)}</section>
 <section class="view" id="triple">{gtitle}<div class="legend"><span class="star">★</span> <b>Errore di quota a tuo favore</b>: secondo l'analisi dell'AI questo esito è più probabile di quanto lo paga Eurobet. Sono le giocate più interessanti; le altre sono pagate il giusto o meno.</div><h2 class="daytitle">Sabato</h2><div class="tgrid">{triple_html('sabato')}</div><h2 class="daytitle">Domenica</h2><div class="tgrid">{triple_html('domenica')}</div>
@@ -886,9 +1017,17 @@ PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name
 <section class="view" id="marcatori">{gtitle}{marc_html}</section>
 <section class="view" id="value">{gtitle}{VB_HTML}</section>
 
+
+<section class="view" id="mie"><h2 class="daytitle">Le mie giocate</h2>
+<div class="fbox"><div class="fmod"><label for="mgioc">Giocata fatta</label><select id="mgioc"></select></div>
+<div class="mrow"><div class="fmod"><label for="mimp">Importo (€)</label><input id="mimp" type="number" min="0" step="0.5" inputmode="decimal" class="vbin"></div>
+<div class="fmod"><label for="mquo">Quota giocata</label><input id="mquo" type="number" min="1" step="0.01" inputmode="decimal" class="vbin"></div></div>
+<button id="madd" class="mbtn">Aggiungi</button><div id="mmsg" class="hint"></div></div>
+<div id="mtot"></div><div id="mlist"></div>
+<p class="hint">Le tue giocate restano salvate su questo dispositivo. Il risultato si aggiorna da solo quando le partite finiscono.</p></section>
 <section class="view" id="bilancio">{bil_html}</section>
 <section class="view" id="classifica"><div class="scroll"><table class="tbl"><thead><tr><th>#</th><th class=l>Squadra</th><th>Pt</th><th>G</th><th>V</th><th>N</th><th>P</th><th>GF</th><th>GS</th><th>DR</th><th>xG/p</th><th>xGA/p</th><th>Elo</th></tr></thead><tbody>{cl_rows}</tbody></table></div>
 </section>
-<footer>Strumento personale di analisi. Le quote cambiano: verifica sempre sul sito del bookmaker. Il gioco è vietato ai minori e può causare dipendenza.</footer></div><script>const FANTA={FANTA_JSON};const FCI={json.dumps(FC_INFO)};</script><script>{JS}</script></body></html>"""
+<footer>Strumento personale di analisi. Le quote cambiano: verifica sempre sul sito del bookmaker. Il gioco è vietato ai minori e può causare dipendenza.</footer></div><script>const MIE={MIE_JSON};const FANTA={FANTA_JSON};const FCI={json.dumps(FC_INFO)};</script><script>{JS}</script></body></html>"""
 open(os.path.join(OUTD, "index.html"), "w").write(PAGE)
 print(f"Sito generato: sito/index.html — giornata {md}, {len(PARTITE)} partite, {tot_v}/6 triple, {len(LINEUPS)} formazioni")

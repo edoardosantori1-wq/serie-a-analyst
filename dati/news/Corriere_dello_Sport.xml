@@ -5,7 +5,60 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 22 Nov 2026 15:41:49 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 16:48:15 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Zaniolo rallenta la corsa del Bologna: 1-1 con l&#39;Udinese, a Palladino non basta Zortea]]></title>
+            <description><![CDATA[Finisce in parit&agrave; il match del Dall&#39;Ara: l&#39;ex Cagliari porta avanti i rossobl&ugrave; nel primo tempo, l&#39;ex Roma ristabilisce l&#39;equilibrio nella ripresa. Primo punto sulla panchina bianconera per Zanetti]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/22-152757466/zaniolo_rallenta_la_corsa_del_bologna_1-1_con_l_udinese_a_palladino_non_basta_zortea/</link>
+            <guid isPermaLink="false">sn:cds:152757466</guid>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[Bologna]]></category>
+            <category><![CDATA[Udinese]]></category>
+            <pubDate>Sun, 22 Nov 2026 16:01:43 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/154542292-39b8d44f-1a4a-4424-bad8-e6c61e384f9a.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/154542292-39b8d44f-1a4a-4424-bad8-e6c61e384f9a.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/154542292-39b8d44f-1a4a-4424-bad8-e6c61e384f9a.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Finisce in parit&agrave; il match del Dall&#39;Ara: l&#39;ex Cagliari porta avanti i rossobl&ugrave; nel primo tempo, l&#39;ex Roma ristabilisce l&#39;equilibrio nella ripresa. Primo punto sulla panchina bianconera per Zanetti]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Osmajic show, il Genoa vince ed &egrave; decimo. Sassuolo, il problema non era Aquilani]]></title>
+            <description><![CDATA[Esordio amaro per D&#39;Aversa: sconfitta alla prima sulla nuova panchina. Quarta vittoria nelle ultime cinque di campionato per la squadra di De Rossi]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/22-152762126/osmajic_show_il_genoa_vince_ed_decimo_sassuolo_il_problema_non_era_aquilani/</link>
+            <guid isPermaLink="false">sn:cds:152762126</guid>
+            <category><![CDATA[Genoa]]></category>
+            <category><![CDATA[Sassuolo]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <pubDate>Sun, 22 Nov 2026 15:57:19 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/154138357-994c6269-53b2-4d5e-a7ef-ffe8a49028ca.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/154138357-994c6269-53b2-4d5e-a7ef-ffe8a49028ca.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>ANSA</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/154138357-994c6269-53b2-4d5e-a7ef-ffe8a49028ca.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Esordio amaro per D&#39;Aversa: sconfitta alla prima sulla nuova panchina. Quarta vittoria nelle ultime cinque di campionato per la squadra di De Rossi]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Scontri tra tifosi della Roma e del Torino in autostrada: nuova chiusura delle trasferte?]]></title>
+            <description><![CDATA[Attimi di tensione sulla A1: il contatto tra gli ultras &egrave; avvenuto nella zona di servizio Arno Est, vicino Firenze&nbsp;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/22-152764650/scontri_tra_tifosi_della_roma_e_del_torino_in_autostrada_nuova_chiusura_delle_trasferte_/</link>
+            <guid isPermaLink="false">sn:cds:152764650</guid>
+            <category><![CDATA[Roma]]></category>
+            <category><![CDATA[Torino]]></category>
+            <pubDate>Sun, 22 Nov 2026 15:50:25 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/154107083-502ffb7e-ef5d-4e43-a3bd-27d3181ff00a.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/154107083-502ffb7e-ef5d-4e43-a3bd-27d3181ff00a.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>BARTOLETTI</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/154107083-502ffb7e-ef5d-4e43-a3bd-27d3181ff00a.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Attimi di tensione sulla A1: il contatto tra gli ultras &egrave; avvenuto nella zona di servizio Arno Est, vicino Firenze&nbsp;]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[La Lazio vola, ma Gudmundsson ha da ridire: il messaggio social fa sorridere tutti]]></title>
             <description><![CDATA[L&#39;attaccante islandese ironizza sui social dopo la rete cancellata per fuorigioco nel finale della partita dell&#39;Olimpico]]></description>
@@ -492,57 +545,6 @@
             <dcterms:alternative><![CDATA[<p>L&#39;allenatore dell&#39;Atalanta in conferenza stampa prima della sfida contro l&#39;Inter: &quot;Sfidiamo una delle squadre pi&ugrave; forti&quot;</p>
 ]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Cobolli lascia Torino con la felpa giallorossa e va a Parma a tifare Roma]]></title>
-            <description><![CDATA[Alle 18, al Tardini, Flavio e suo padre seguiranno la squadra di Gasperini. Un modo per staccare prima della Davis]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/21-152714234/cobolli_lascia_torino_con_la_felpa_giallorossa_e_va_a_parma_a_tifare_roma/</link>
-            <guid isPermaLink="false">sn:cds:152714234</guid>
-            <pubDate>Sat, 21 Nov 2026 11:22:43 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/112230188-a2385796-2f3c-427a-8be7-3cf73aa804a0.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/112230188-a2385796-2f3c-427a-8be7-3cf73aa804a0.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>ANSA</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/112230188-a2385796-2f3c-427a-8be7-3cf73aa804a0.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Alle 18, al Tardini, Flavio e suo padre seguiranno la squadra di Gasperini. Un modo per staccare prima della Davis]]></dcterms:alternative>
-            <dc:creator><![CDATA[Valerio Minutiello]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Pellegrino si &egrave; preso la Fiorentina: arrivato come vice, ora &egrave; il titolare di Vanoli]]></title>
-            <description><![CDATA[Arrivato come alternativa, l&rsquo;argentino &egrave; ora la punta titolare della Viola: nessuno come lui di testa e luned&igrave; a Monza prover&agrave; a ripetersi]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/fiorentina/2026/11/21-152712335/pellegrino_si_preso_la_fiorentina_arrivato_come_vice_ora_il_titolare_di_vanoli/</link>
-            <guid isPermaLink="false">sn:cds:152712335</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Pellegrino]]></category>
-            <category><![CDATA[Fiorentina]]></category>
-            <pubDate>Sat, 21 Nov 2026 08:58:53 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/085022161-f51131d1-2b42-49ab-85b0-bcff0a4756e6.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/085022161-f51131d1-2b42-49ab-85b0-bcff0a4756e6.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/085022161-f51131d1-2b42-49ab-85b0-bcff0a4756e6.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Arrivato come alternativa, l&rsquo;argentino &egrave; ora la punta titolare della Viola: nessuno come lui di testa e luned&igrave; a Monza prover&agrave; a ripetersi]]></dcterms:alternative>
-            <dc:creator><![CDATA[Niccolò Santi]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Milan, occasione Bruno Fernandes: &egrave; in scadenza con lo United, i rossoneri ci pensano]]></title>
-            <description><![CDATA[La trattativa con il club di Manchester per il rinnovo &egrave; in stallo. Il centrocampista e Amorim hanno lo stesso procuratore]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/milan/2026/11/21-152712435/milan_occasione_bruno_fernandes_in_scadenza_con_lo_united_i_rossoneri_ci_pensano/</link>
-            <guid isPermaLink="false">sn:cds:152712435</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Milan]]></category>
-            <category><![CDATA[Bruno Fernandes]]></category>
-            <pubDate>Sat, 21 Nov 2026 08:53:42 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/084507412-67ecdfdc-510d-4c65-a42b-66ab86f4e4a0.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/084507412-67ecdfdc-510d-4c65-a42b-66ab86f4e4a0.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>EPA</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/084507412-67ecdfdc-510d-4c65-a42b-66ab86f4e4a0.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[La trattativa con il club di Manchester per il rinnovo &egrave; in stallo. Il centrocampista e Amorim hanno lo stesso procuratore]]></dcterms:alternative>
-            <dc:creator><![CDATA[Antonio Vitiello]]></dc:creator>
         </item>
     </channel>
 </rss>

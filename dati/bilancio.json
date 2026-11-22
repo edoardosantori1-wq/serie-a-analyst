@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-22T15:46:30+00:00",
+ "aggiornato": "2026-11-22T16:48:18+00:00",
  "totale": {
   "giocate": 16,
   "vinte": 6,
@@ -152,7 +152,7 @@
      "partita": "Juventus-Venezia",
      "mercato": "C:1 + Under 3.5",
      "esito": 0,
-     "risultato": "4-0"
+     "risultato": null
     },
     {
      "partita": "Sassuolo-Genoa",
@@ -274,7 +274,7 @@
      "partita": "Juventus-Venezia",
      "mercato": "U3.5",
      "esito": 0,
-     "risultato": "4-0"
+     "risultato": null
     },
     {
      "partita": "Bologna-Udinese",
@@ -300,7 +300,7 @@
    "esito": 0,
    "profitto": -1.0,
    "inizio": "2026-11-22T11:30:00+00:00",
-   "risultato": "4-0"
+   "risultato": null
   },
   {
    "cat": "marcatore",
@@ -312,7 +312,7 @@
    "esito": 0,
    "profitto": -1.0,
    "inizio": "2026-11-22T11:30:00+00:00",
-   "risultato": "4-0"
+   "risultato": null
   },
   {
    "cat": "pronostico",

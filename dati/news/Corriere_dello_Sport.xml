@@ -5,7 +5,62 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 22 Nov 2026 09:49:27 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 10:41:14 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Gennaio porti un altro Donny]]></title>
+            <description><![CDATA[Leggi il commento sulla vittoria della Roma a Parma, con quattro gol di un Malen formato record, in vista del mercato di gennaio]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/22-152753336/gennaio_porti_un_altro_donny/</link>
+            <guid isPermaLink="false">sn:cds:152753336</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Roma]]></category>
+            <category><![CDATA[malen]]></category>
+            <category><![CDATA[Gasperini]]></category>
+            <pubDate>Sun, 22 Nov 2026 10:26:32 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/102216486-e5e01947-7d7f-48ae-8479-329b7db477bd.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/102216486-e5e01947-7d7f-48ae-8479-329b7db477bd.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/102216486-e5e01947-7d7f-48ae-8479-329b7db477bd.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Leggi il commento sulla vittoria della Roma a Parma, con quattro gol di un Malen formato record, in vista del mercato di gennaio]]></dcterms:alternative>
+            <dc:creator><![CDATA[Mimmo Ferretti]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[I tratti di una big]]></title>
+            <description><![CDATA[Il Como &egrave; una grande squadra: si diverte a spostare i propri limiti sempre pi&ugrave; in l&agrave;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/como/2026/11/22-152753337/i_tratti_di_una_big/</link>
+            <guid isPermaLink="false">sn:cds:152753337</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Como]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <pubDate>Sun, 22 Nov 2026 10:18:09 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/101249960-6817c505-caf7-47d7-8fa1-d61bb43f78ab.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/101249960-6817c505-caf7-47d7-8fa1-d61bb43f78ab.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/101249960-6817c505-caf7-47d7-8fa1-d61bb43f78ab.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il Como &egrave; una grande squadra: si diverte a spostare i propri limiti sempre pi&ugrave; in l&agrave;]]></dcterms:alternative>
+            <dc:creator><![CDATA[Xavier Jacobelli]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Una storia straordinaria]]></title>
+            <description><![CDATA[Leggi il commento sulla Lazio di Gattuso capolista della Serie A: la squadra pi&ugrave; letteraria del nostro calcio]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/22-152752959/una_storia_straordinaria/</link>
+            <guid isPermaLink="false">sn:cds:152752959</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Lazio]]></category>
+            <category><![CDATA[Gattuso]]></category>
+            <pubDate>Sun, 22 Nov 2026 10:14:06 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/101339477-bcda7aae-4433-452e-ab24-b3765e6beabd.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/101339477-bcda7aae-4433-452e-ab24-b3765e6beabd.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>BARTOLETTI</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/101339477-bcda7aae-4433-452e-ab24-b3765e6beabd.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Leggi il commento sulla Lazio di Gattuso capolista della Serie A: la squadra pi&ugrave; letteraria del nostro calcio]]></dcterms:alternative>
+            <dc:creator><![CDATA[Massimiliano Gallo]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Dove vedere Sassuolo-Genoa in tv? Dazn o Sky, orario]]></title>
             <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la dodicesima giornata di Serie A: le probabili formazioni di D&#39;Aversa e De Rossi]]></description>
@@ -92,20 +147,20 @@
         </item>
         <item>
             <title><![CDATA[Dove vedere Juve-Venezia in tv? Dazn o Sky, orario]]></title>
-            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida all&#39;Allianz Stadium, valida per la dodicesima giornata di Serie A: le probabili formazioni di Spalletti e Nicola]]></description>
+            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida all&#39;Allianz Stadium, valida per la dodicesima giornata di Serie A: le formazioni ufficiali di Spalletti e Nicola]]></description>
             <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/22-152750497/dove_vedere_juve-venezia_in_tv_dazn_o_sky_orario/</link>
             <guid isPermaLink="false">sn:cds:152750497</guid>
             <category><![CDATA[Serie A]]></category>
             <category><![CDATA[juve]]></category>
             <category><![CDATA[Venezia]]></category>
             <pubDate>Sun, 22 Nov 2026 08:21:09 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/082046725-f103fa25-b3d9-403e-a9c8-26491f73da4b.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/082046725-f103fa25-b3d9-403e-a9c8-26491f73da4b.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/18/082050195-e0d6b71d-75da-4359-9334-258edf62d6b0.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/082050195-e0d6b71d-75da-4359-9334-258edf62d6b0.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Juventus FC via Getty Images</media:credit>
             </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/082046725-f103fa25-b3d9-403e-a9c8-26491f73da4b.jpg">
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/18/082050195-e0d6b71d-75da-4359-9334-258edf62d6b0.jpg">
             </media:thumbnail>
-            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida all&#39;Allianz Stadium, valida per la dodicesima giornata di Serie A: le probabili formazioni di Spalletti e Nicola]]></dcterms:alternative>
+            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida all&#39;Allianz Stadium, valida per la dodicesima giornata di Serie A: le formazioni ufficiali di Spalletti e Nicola]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
         <item>
@@ -488,54 +543,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida del Sinigaglia valida per la dodicesima giornata di Serie A: le formazioni di Fabregas e Pisacane]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Retroscena Roma, il Ceo Galantic rassicura tutti: &quot;Faremo una grande squadra, impegno massimo dei Friedkin&quot;]]></title>
-            <description><![CDATA[Il manager incontra i dipendenti a Trigoria dove si &egrave; vista anche Bebe Vio: il racconto]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/21-152711742/retroscena_roma_il_ceo_galantic_rassicura_tutti_faremo_una_grande_squadra_impegno_massimo_dei_friedkin/</link>
-            <guid isPermaLink="false">sn:cds:152711742</guid>
-            <pubDate>Sat, 21 Nov 2026 08:10:32 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/081238852-1a9f6972-86a4-4172-aad4-ff1d2db3d20e.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/081238852-1a9f6972-86a4-4172-aad4-ff1d2db3d20e.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>AS Roma via Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/081238852-1a9f6972-86a4-4172-aad4-ff1d2db3d20e.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il manager incontra i dipendenti a Trigoria dove si &egrave; vista anche Bebe Vio: il racconto]]></dcterms:alternative>
-            <dc:creator><![CDATA[Jacopo Aliprandi]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Uffici, mini stadio e dieci campi: oggi ci sono fave e piselli, ma il Napoli &egrave; pronto a costruire un centro d&#39;avanguardia]]></title>
-            <description><![CDATA[Nostro reportage a Qualiano: un polo d&rsquo; eccellenza. Il sindaco De Leonardis: &quot;L&rsquo;opera porter&agrave; sviluppo&quot;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/21-152711074/uffici_mini_stadio_e_dieci_campi_oggi_ci_sono_fave_e_piselli_ma_il_napoli_pronto_a_costruire_un_centro_d_avanguardia/</link>
-            <guid isPermaLink="false">sn:cds:152711074</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[napoli]]></category>
-            <category><![CDATA[qualiano]]></category>
-            <pubDate>Sat, 21 Nov 2026 08:08:07 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/075832446-4efd6fa8-9f40-4e5e-9972-1d8d9042c462.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/075832446-4efd6fa8-9f40-4e5e-9972-1d8d9042c462.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/075832446-4efd6fa8-9f40-4e5e-9972-1d8d9042c462.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Nostro reportage a Qualiano: un polo d&rsquo; eccellenza. Il sindaco De Leonardis: &quot;L&rsquo;opera porter&agrave; sviluppo&quot;]]></dcterms:alternative>
-            <dc:creator><![CDATA[Fabio Mandarini]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Napoli, un tour de force fino a Natale: Allegri inizia con la sfida all&rsquo;allievo Abate]]></title>
-            <description><![CDATA[Dal Toro alla Viola: al via le sliding doors&nbsp; per restare in corsa. La partita del Maradona pu&ograve; valere il +4 o il -2 &nbsp;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/21-152710874/napoli_un_tour_de_force_fino_a_natale_allegri_inizia_con_la_sfida_allallievo_abate/</link>
-            <guid isPermaLink="false">sn:cds:152710874</guid>
-            <pubDate>Sat, 21 Nov 2026 08:06:48 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/21/074922581-0624595d-b5ce-411a-8004-cf6e414720c2.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/074922581-0624595d-b5ce-411a-8004-cf6e414720c2.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>FOTO GIANLUCA MOSCA</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/21/074922581-0624595d-b5ce-411a-8004-cf6e414720c2.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Dal Toro alla Viola: al via le sliding doors&nbsp; per restare in corsa. La partita del Maradona pu&ograve; valere il +4 o il -2 &nbsp;]]></dcterms:alternative>
-            <dc:creator><![CDATA[Fabio Mandarini]]></dc:creator>
         </item>
     </channel>
 </rss>

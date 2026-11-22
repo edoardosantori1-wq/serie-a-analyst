@@ -1,10 +1,10 @@
 {
- "fdorg_prossime.json": "2026-11-22T17:43:44+00:00",
- "news/ANSA.xml": "2026-11-22T17:43:44+00:00",
- "news/Gazzetta.xml": "2026-11-22T17:43:44+00:00",
- "news/Corriere_dello_Sport.xml": "2026-11-22T17:43:44+00:00",
- "news/TuttoMercatoWeb.xml": "2026-11-22T17:43:44+00:00",
- "fdorg_giocate.json": "2026-11-22T17:43:44+00:00",
+ "fdorg_prossime.json": "2026-11-22T18:49:44+00:00",
+ "news/ANSA.xml": "2026-11-22T18:49:44+00:00",
+ "news/Gazzetta.xml": "2026-11-22T18:49:44+00:00",
+ "news/Corriere_dello_Sport.xml": "2026-11-22T18:49:44+00:00",
+ "news/TuttoMercatoWeb.xml": "2026-11-22T18:49:44+00:00",
+ "fdorg_giocate.json": "2026-11-22T18:49:44+00:00",
  "fdcouk_corrente.csv": "2026-11-20T09:04:01+00:00",
  "storico_2526.csv": "2026-11-17T10:09:46+00:00",
  "fdorg_squadre.json": "2026-11-20T09:04:01+00:00",
@@ -48,5 +48,6 @@
  "lineups/ufficiale_401874960.json": "2026-11-22T12:54:36+00:00",
  "lineups/ufficiale_401875047.json": "2026-11-22T12:54:36+00:00",
  "lineups/ufficiale_401874989.json": "2026-11-22T15:46:20+00:00",
- "partite/558521.json": "2026-11-22T15:46:20+00:00"
+ "partite/558521.json": "2026-11-22T15:46:20+00:00",
+ "lineups/ufficiale_401875001.json": "2026-11-22T18:49:44+00:00"
 }

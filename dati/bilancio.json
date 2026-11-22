@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-22T17:43:50+00:00",
+ "aggiornato": "2026-11-22T18:49:53+00:00",
  "totale": {
   "giocate": 16,
   "vinte": 6,
@@ -517,17 +517,17 @@
   }
  ],
  "clv": {
-  "n": 21,
+  "n": 23,
   "battute": 0,
-  "pari": 21,
+  "pari": 23,
   "peggiori": 0,
   "medio": 0.0
  },
  "clv_giornate": {
   "12": {
-   "n": 21,
+   "n": 23,
    "battute": 0,
-   "pari": 21,
+   "pari": 23,
    "peggiori": 0,
    "medio": 0.0
   }

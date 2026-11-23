@@ -1,13 +1,13 @@
 {
- "aggiornato": "2026-11-23T15:05:45+00:00",
+ "aggiornato": "2026-11-23T16:13:09+00:00",
  "totale": {
-  "giocate": 20,
-  "vinte": 7,
+  "giocate": 21,
+  "vinte": 8,
   "perse": 13,
-  "aperte": 5,
-  "hit": 0.35,
-  "unita": 4.7,
-  "roi": 0.2351
+  "aperte": 4,
+  "hit": 0.381,
+  "unita": 5.45,
+  "roi": 0.2596
  },
  "categorie": [
   {
@@ -57,13 +57,13 @@
   {
    "cat": "marcatore",
    "nome": "Marcatori",
-   "giocate": 0,
-   "vinte": 0,
+   "giocate": 1,
+   "vinte": 1,
    "perse": 0,
-   "aperte": 4,
-   "hit": null,
-   "unita": 0,
-   "roi": null
+   "aperte": 3,
+   "hit": 1.0,
+   "unita": 0.75,
+   "roi": 0.75
   },
   {
    "cat": "singola",
@@ -146,13 +146,13 @@
  "giornate": [
   {
    "giornata": 12,
-   "giocate": 20,
-   "vinte": 7,
+   "giocate": 21,
+   "vinte": 8,
    "perse": 13,
-   "aperte": 5,
-   "hit": 0.35,
-   "unita": 4.7,
-   "roi": 0.2351
+   "aperte": 4,
+   "hit": 0.381,
+   "unita": 5.45,
+   "roi": 0.2596
   }
  ],
  "giocate": [
@@ -474,8 +474,8 @@
    "mercato": "SCORER:Donyell Malen",
    "quota": 1.75,
    "p": 0.3674,
-   "esito": null,
-   "profitto": null,
+   "esito": 1,
+   "profitto": 0.75,
    "inizio": "2026-11-21T17:00:00+00:00",
    "risultato": "1-5"
   },

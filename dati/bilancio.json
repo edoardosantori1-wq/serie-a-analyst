@@ -1,25 +1,25 @@
 {
- "aggiornato": "2026-11-23T20:56:59+00:00",
+ "aggiornato": "2026-11-23T21:55:21+00:00",
  "totale": {
-  "giocate": 21,
-  "vinte": 8,
+  "giocate": 22,
+  "vinte": 9,
   "perse": 13,
-  "aperte": 4,
-  "hit": 0.381,
-  "unita": 5.45,
-  "roi": 0.2596
+  "aperte": 3,
+  "hit": 0.4091,
+  "unita": 5.93,
+  "roi": 0.2696
  },
  "categorie": [
   {
    "cat": "pronostico",
    "nome": "Pronostici partita",
-   "giocate": 9,
-   "vinte": 4,
+   "giocate": 10,
+   "vinte": 5,
    "perse": 5,
-   "aperte": 1,
-   "hit": 0.4444,
-   "unita": -3.26,
-   "roi": -0.3622
+   "aperte": 0,
+   "hit": 0.5,
+   "unita": -2.78,
+   "roi": -0.278
   },
   {
    "cat": "tripla_semplice",
@@ -146,13 +146,13 @@
  "giornate": [
   {
    "giornata": 12,
-   "giocate": 21,
-   "vinte": 8,
+   "giocate": 22,
+   "vinte": 9,
    "perse": 13,
-   "aperte": 4,
-   "hit": 0.381,
-   "unita": 5.45,
-   "roi": 0.2596
+   "aperte": 3,
+   "hit": 0.4091,
+   "unita": 5.93,
+   "roi": 0.2696
   }
  ],
  "giocate": [
@@ -163,10 +163,10 @@
    "mercato": "U3.5",
    "quota": 1.48,
    "p": 0.6722,
-   "esito": null,
-   "profitto": null,
+   "esito": 1,
+   "profitto": 0.48,
    "inizio": "2026-11-23T19:45:00+00:00",
-   "risultato": null
+   "risultato": "3-0"
   },
   {
    "cat": "pronostico",

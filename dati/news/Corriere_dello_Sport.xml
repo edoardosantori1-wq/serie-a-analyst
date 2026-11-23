@@ -5,7 +5,7 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 23 Nov 2026 18:52:54 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Nov 2026 20:04:16 GMT</lastBuildDate>
         <item>
             <title><![CDATA[Monza-Fiorentina diretta Serie A: Juric e Vanoli a caccia di punti salvezza. Segui la partita LIVE]]></title>
             <description><![CDATA[Grande duello in attacco: Varela e Mastantuono si sfidano a colpi di gol. Gara e risultato in tempo reale]]></description>
@@ -16,11 +16,11 @@
             <category><![CDATA[Fiorentina]]></category>
             <category><![CDATA[liveblog]]></category>
             <pubDate>Mon, 23 Nov 2026 18:29:29 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/161922958-8cf4deaa-6194-4fe8-a505-c35ddf74e7c2.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/161922958-8cf4deaa-6194-4fe8-a505-c35ddf74e7c2.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/192931129-3c9547d9-253f-4d66-a1a5-d18cd713afdc.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/192931129-3c9547d9-253f-4d66-a1a5-d18cd713afdc.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
             </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/161922958-8cf4deaa-6194-4fe8-a505-c35ddf74e7c2.jpg">
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/192931129-3c9547d9-253f-4d66-a1a5-d18cd713afdc.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Grande duello in attacco: Varela e Mastantuono si sfidano a colpi di gol. Gara e risultato in tempo reale]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
@@ -114,7 +114,7 @@
         </item>
         <item>
             <title><![CDATA[Dove vedere Monza-Fiorentina in tv? Dazn o Sky, orario]]></title>
-            <description><![CDATA[La sfida del Brianteo chiude la dodicesima giornata del campionato di Serie A: le probabili scelte di Juric e Vanoli]]></description>
+            <description><![CDATA[La sfida del Brianteo chiude la dodicesima giornata del campionato di Serie A: le scelte ufficiali di Juric e Vanoli]]></description>
             <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/23-152779855/dove_vedere_monza-fiorentina_in_tv_dazn_o_sky_orario/</link>
             <guid isPermaLink="false">sn:cds:152779855</guid>
             <category><![CDATA[Serie A]]></category>
@@ -127,7 +127,7 @@
             </media:content>
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/080231197-dcdd2e0f-a9d5-42a3-873b-4e444b6bc0f3.jpg">
             </media:thumbnail>
-            <dcterms:alternative><![CDATA[La sfida del Brianteo chiude la dodicesima giornata del campionato di Serie A: le probabili scelte di Juric e Vanoli]]></dcterms:alternative>
+            <dcterms:alternative><![CDATA[La sfida del Brianteo chiude la dodicesima giornata del campionato di Serie A: le scelte ufficiali di Juric e Vanoli]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
         <item>

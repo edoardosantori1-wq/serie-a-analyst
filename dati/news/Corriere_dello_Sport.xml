@@ -5,7 +5,43 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 23 Nov 2026 08:32:11 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Nov 2026 10:04:57 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[&ldquo;Mister, leva Molina&rdquo;, Gasperini non la prende bene: si gira verso il tifoso e&hellip;]]></title>
+            <description><![CDATA[L&#39;allenatore della Roma protagonista di un diverbio verso uno spettatore in tribuna al &quot;Tardini&quot;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/23-152781272/mister_leva_molina_gasperini_non_la_prende_bene_si_gira_verso_il_tifoso_e/</link>
+            <guid isPermaLink="false">sn:cds:152781272</guid>
+            <category><![CDATA[Roma]]></category>
+            <category><![CDATA[Gasperini]]></category>
+            <category><![CDATA[molina]]></category>
+            <pubDate>Mon, 23 Nov 2026 09:46:48 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/093757019-0c11ee8d-78c6-44df-b402-b2f36be57999.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/093757019-0c11ee8d-78c6-44df-b402-b2f36be57999.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/093757019-0c11ee8d-78c6-44df-b402-b2f36be57999.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[L&#39;allenatore della Roma protagonista di un diverbio verso uno spettatore in tribuna al &quot;Tardini&quot;]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Atalanta e Inter, su e gi&ugrave; senza equilibrio]]></title>
+            <description><![CDATA[Leggi il commento sull&#39;incredibile match della &#39;New Balance Arena&#39;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/23-152780046/atalanta_e_inter_su_e_gi_senza_equilibrio/</link>
+            <guid isPermaLink="false">sn:cds:152780046</guid>
+            <category><![CDATA[atalanta]]></category>
+            <category><![CDATA[Inter]]></category>
+            <category><![CDATA[oggi]]></category>
+            <pubDate>Mon, 23 Nov 2026 08:57:23 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/080211079-7e402c59-ee98-44b2-a161-b8ac08773c04.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/080211079-7e402c59-ee98-44b2-a161-b8ac08773c04.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/080211079-7e402c59-ee98-44b2-a161-b8ac08773c04.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Leggi il commento sull&#39;incredibile match della &#39;New Balance Arena&#39;]]></dcterms:alternative>
+            <dc:creator><![CDATA[Alberto Polverosi]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Dove vedere Monza-Fiorentina in tv? Dazn o Sky, orario]]></title>
             <description><![CDATA[La sfida del Brianteo chiude la dodicesima giornata del campionato di Serie A: le probabili scelte di Juric e Vanoli]]></description>
@@ -506,42 +542,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/085020464-ee728761-ce07-45fb-8255-ce4149738423.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la dodicesima giornata di Serie A: le formazioni ufficili di Sarri e Chivu]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Dove vedere Milan-Frosinone in tv? Dazn o Sky, orario]]></title>
-            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida a San Siro, valida per la dodicesima giornata di Serie A: le probabili formazioni di Amorim e Alvini]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/22-152750610/dove_vedere_milan-frosinone_in_tv_dazn_o_sky_orario/</link>
-            <guid isPermaLink="false">sn:cds:152750610</guid>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[Milan]]></category>
-            <category><![CDATA[Frosinone]]></category>
-            <pubDate>Sun, 22 Nov 2026 08:40:14 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/083644744-27d8a014-674c-48b7-8494-9eb05aa116f9.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/083644744-27d8a014-674c-48b7-8494-9eb05aa116f9.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/083644744-27d8a014-674c-48b7-8494-9eb05aa116f9.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida a San Siro, valida per la dodicesima giornata di Serie A: le probabili formazioni di Amorim e Alvini]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Dove vedere Juve-Venezia in tv? Dazn o Sky, orario]]></title>
-            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida all&#39;Allianz Stadium, valida per la dodicesima giornata di Serie A: le formazioni ufficiali di Spalletti e Nicola]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/22-152750497/dove_vedere_juve-venezia_in_tv_dazn_o_sky_orario/</link>
-            <guid isPermaLink="false">sn:cds:152750497</guid>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[juve]]></category>
-            <category><![CDATA[Venezia]]></category>
-            <pubDate>Sun, 22 Nov 2026 08:21:09 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/112125116-0452e509-092b-4cd7-bec4-6ea0ec05fc91.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/112125116-0452e509-092b-4cd7-bec4-6ea0ec05fc91.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Juventus FC via Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/112125116-0452e509-092b-4cd7-bec4-6ea0ec05fc91.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida all&#39;Allianz Stadium, valida per la dodicesima giornata di Serie A: le formazioni ufficiali di Spalletti e Nicola]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

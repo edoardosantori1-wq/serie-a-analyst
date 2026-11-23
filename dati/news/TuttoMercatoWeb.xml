@@ -14,6 +14,15 @@
     </image>
     <atom:link href="https://www.tuttomercatoweb.com/rss/" rel="self" type="application/rss+xml"/>
     <item>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/altre-notizie/i-le-partite-oggi-i-programma-lunedi-23-novembre-2295659</guid>
+      <pubDate>Mon, 23 Nov 2026 04:30:54 +0100</pubDate>
+      <title>Le partite di oggi: il programma di lunedì 23 novembre</title>
+      <link>https://www.tuttomercatoweb.com/altre-notizie/i-le-partite-oggi-i-programma-lunedi-23-novembre-2295659</link>
+      <description>Serata di calcio con appuntamenti in programma in Inghilterra, Italia e Spagna.</description>
+      <category>Altre Notizie</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/e5/e5aecef13056abf6488e366ead2ad128-74605-oooz0000.jpeg" length="41707" type="image/jpeg"/>
+    </item>
+    <item>
       <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/calciomercato-stop-indiscrezioni-trattative-retroscena-22-novembre-2296559</guid>
       <pubDate>Mon, 23 Nov 2026 02:00:00 +0100</pubDate>
       <title>Calciomercato no stop - Indiscrezioni, trattative e retroscena del 22 novembre</title>
@@ -182,15 +191,6 @@
       <description>Intervistato da DAZN ha parlato così Charles De Ketelaere dopo la doppietta che ha regalato il pareggio all'Atalanta contro l'Inter: "E' un punto importante per il morale, ci sono tante cose da migliorare però un pareggio così contro l'Inter è bello....</description>
       <category>Serie A</category>
       <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/c1/c1b4c3db7f521993785799620374a358-01008-oooz0000.jpeg" length="70379" type="image/jpeg"/>
-    </item>
-    <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-b/padova-pareggia-arezzo-artistico-tanto-rammarico-volevamo-portare-casa-punti-2296547</guid>
-      <pubDate>Mon, 23 Nov 2026 00:04:22 +0100</pubDate>
-      <title>Il Padova pareggia ad Arezzo. Artistico: "Tanto rammarico, volevamo portare a casa i tre punti"</title>
-      <link>https://www.tuttomercatoweb.com/serie-b/padova-pareggia-arezzo-artistico-tanto-rammarico-volevamo-portare-casa-punti-2296547</link>
-      <description>"Sono rammaricato per il risultato perché volevamo fare bottino pieno": queste, le prime parole di Gabriele Artistico, che ha commentato la prestazione odierna del suo Padova, reduce dall'1-1 sul campo dell'Arezzo.</description>
-      <category>Serie B</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/ea/eae4a5063a015e57718f8b0abbcda2a2-92864-oooz0000.jpeg" length="81190" type="image/jpeg"/>
     </item>
   </channel>
 </rss>

@@ -5,7 +5,7 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 23 Nov 2026 20:04:16 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Nov 2026 20:51:06 GMT</lastBuildDate>
         <item>
             <title><![CDATA[Monza-Fiorentina diretta Serie A: Juric e Vanoli a caccia di punti salvezza. Segui la partita LIVE]]></title>
             <description><![CDATA[Grande duello in attacco: Varela e Mastantuono si sfidano a colpi di gol. Gara e risultato in tempo reale]]></description>
@@ -16,11 +16,11 @@
             <category><![CDATA[Fiorentina]]></category>
             <category><![CDATA[liveblog]]></category>
             <pubDate>Mon, 23 Nov 2026 18:29:29 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/192931129-3c9547d9-253f-4d66-a1a5-d18cd713afdc.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/192931129-3c9547d9-253f-4d66-a1a5-d18cd713afdc.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/202348466-21ec1579-2d27-411e-887f-2b901e43a6df.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/202348466-21ec1579-2d27-411e-887f-2b901e43a6df.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
             </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/192931129-3c9547d9-253f-4d66-a1a5-d18cd713afdc.jpg">
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/202348466-21ec1579-2d27-411e-887f-2b901e43a6df.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Grande duello in attacco: Varela e Mastantuono si sfidano a colpi di gol. Gara e risultato in tempo reale]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>

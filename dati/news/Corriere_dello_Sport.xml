@@ -5,7 +5,24 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 23 Nov 2026 13:13:15 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Nov 2026 15:01:11 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Carnesecchi si opera, che problema per Sarri: lesione del menisco per il portiere dell&#39;Atalanta&nbsp;]]></title>
+            <description><![CDATA[Stop per il portiere della Dea che dovr&agrave; finire sotto i ferri: tutti i dettagli&nbsp;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/atalanta/2026/11/23-152783878/carnesecchi_si_opera_che_problema_per_sarri_lesione_del_menisco_per_il_portiere_dell_atalanta/</link>
+            <guid isPermaLink="false">sn:cds:152783878</guid>
+            <category><![CDATA[atalanta]]></category>
+            <category><![CDATA[carnesecchi]]></category>
+            <pubDate>Mon, 23 Nov 2026 13:19:52 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/131154558-dc2fdc1c-c052-4674-9037-d1130559cc56.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/131154558-dc2fdc1c-c052-4674-9037-d1130559cc56.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/131154558-dc2fdc1c-c052-4674-9037-d1130559cc56.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Stop per il portiere della Dea che dovr&agrave; finire sotto i ferri: tutti i dettagli&nbsp;]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Il Genoa e De Rossi perdono Colombo: lesione del crociato]]></title>
             <description><![CDATA[L&#39;attaccante rossobl&ugrave; si &egrave; infortunato durante gli ultimi minuti della partita contro il Sassuolo: ecco il bollettino medico del club]]></description>
@@ -525,24 +542,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/094216944-36a2fda0-d526-4ba5-9e18-a1a39dece264.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la dodicesima giornata di Serie A: le probabili formazioni di D&#39;Aversa e De Rossi]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Dove vedere Bologna-Udinese in tv? Dazn o Sky, orario]]></title>
-            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la dodicesima giornata di Serie A: le formazioni ufficiali di Palladino e Zanetti]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/22-152750915/dove_vedere_bologna-udinese_in_tv_dazn_o_sky_orario/</link>
-            <guid isPermaLink="false">sn:cds:152750915</guid>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[Bologna]]></category>
-            <category><![CDATA[Udinese]]></category>
-            <pubDate>Sun, 22 Nov 2026 09:13:03 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/091227143-f8f98ddb-9a8f-46f0-87d6-3478ecad7320.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/091227143-f8f98ddb-9a8f-46f0-87d6-3478ecad7320.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/091227143-f8f98ddb-9a8f-46f0-87d6-3478ecad7320.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la dodicesima giornata di Serie A: le formazioni ufficiali di Palladino e Zanetti]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

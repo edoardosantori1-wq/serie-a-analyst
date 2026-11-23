@@ -857,6 +857,11 @@ details.info p{font-size:14px;color:var(--ink);margin:8px 0}
 .st.rim{background:rgba(255,255,255,.08);color:var(--mut)}.st.att{background:rgba(255,210,63,.12);color:#ffd23f}.bgu{font:700 14px Inter;min-width:48px;text-align:right}
 .mrow{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mrow .vbin{width:100%}.mbtn{margin-top:10px;background:var(--acc);color:#04130c;border:0;border-radius:12px;padding:11px 18px;font:700 14px Inter;cursor:pointer}
 #mtot b{font-size:20px}
+button.st{border:0;cursor:pointer}.ml{display:block}.mmode{display:flex;gap:6px;margin:12px 0}
+.mpick{max-height:340px;overflow-y:auto;border:1px solid var(--line);border-radius:12px;padding:6px 10px;background:#0f151d}.mg{margin:6px 0}
+.mi{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line);cursor:pointer}.mi:last-child{border-bottom:0}
+.mi span{display:flex;flex-direction:column}.mi b{font-size:14px}.mi small{font-size:12px;color:var(--mut)}.mi i{font-style:normal;font-weight:700;color:var(--mut)}
+.mi input{width:18px;height:18px;accent-color:var(--acc)}
 #mgioc{background:#0f151d;color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:11px 12px;font:600 14px Inter;width:100%}
 
 img.crest{width:30px;height:30px;object-fit:contain;vertical-align:middle;margin-right:2px}img.crest.sm{width:20px;height:20px}
@@ -975,26 +980,47 @@ att.forEach(x=>{const s=Math.floor(x.s*2)/2;x.el.querySelector('.vbs').textConte
 inp.addEventListener('input',calc);calc();})();
 document.querySelectorAll('.btab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.btab').forEach(x=>x.classList.toggle('on',x===b));
 document.querySelectorAll('.bpan').forEach(p=>p.classList.toggle('on',p.dataset.b===b.dataset.b));});
-(function(){const sel=document.getElementById('mgioc');if(!sel||typeof MIE==='undefined')return;
+(function(){const box=document.getElementById('mpick');if(!box||typeof MIE==='undefined')return;
 const GN={pron:'Pronostici',tri:'Triple',marc:'Marcatori',vb:'Value bet'};const BY={};MIE.forEach(x=>BY[x.id]=x);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const eur=v=>(v<0?'−':'')+Math.abs(v).toFixed(2).replace('.',',')+' €';
-let mie=[];try{mie=JSON.parse(localStorage.getItem('sa_mie')||'[]')}catch(e){}
+let mie=[],modo='sing';try{mie=JSON.parse(localStorage.getItem('sa_mie')||'[]')}catch(e){}
 const save=()=>{try{localStorage.setItem('sa_mie',JSON.stringify(mie))}catch(e){}};
-sel.innerHTML='<option value="">Scegli…</option>'+Object.keys(GN).map(g=>{const L=MIE.filter(x=>x.g===g);return L.length?`<optgroup label="${GN[g]}">${L.map(x=>`<option value="${x.id}">${esc(x.t)} · ${esc(x.s)}${x.e===null?'':' (chiusa)'}</option>`).join('')}</optgroup>`:''}).join('');
-sel.onchange=()=>{const x=BY[sel.value];if(x)document.getElementById('mquo').value=x.q};
-document.getElementById('madd').onclick=()=>{const x=BY[sel.value];const imp=parseFloat(document.getElementById('mimp').value);const q=parseFloat(document.getElementById('mquo').value)||(x&&x.q);
-const m=document.getElementById('mmsg');if(!x){m.textContent='Scegli una giocata.';return}if(!(imp>0)){m.textContent='Inserisci l’importo.';return}
-mie.push({id:x.id,t:x.t,s:x.s,imp,q,quando:new Date().toISOString().slice(0,10)});save();m.textContent='Aggiunta.';document.getElementById('mimp').value='';draw()};
+const oggi=new Date(Date.now()-3*864e5).toISOString().slice(0,10);
+const scegli=MIE.filter(x=>x.e===null||x.d>=oggi);
+box.innerHTML=Object.keys(GN).map(g=>{const L=scegli.filter(x=>x.g===g);return L.length?`<div class="mg"><div class="fgt">${GN[g]}</div>${L.map(x=>`<label class="mi"><input type="checkbox" value="${x.id}"><span><b>${esc(x.t)}</b><small>${esc(x.s)}</small></span><i>${x.q.toFixed(2)}</i></label>`).join('')}</div>`:''}).join('')||'<p class="muted">Nessuna giocata disponibile in questo momento.</p>';
+const scelti=()=>[...box.querySelectorAll('input:checked')].map(c=>BY[c.value]);
+function aggQuota(){const L=scelti();document.getElementById('mquo').value=L.length?L.reduce((p,x)=>p*x.q,1).toFixed(2):''}
+box.addEventListener('change',aggQuota);
+document.querySelectorAll('.mmode .btab').forEach(b=>b.onclick=()=>{modo=b.dataset.m;document.querySelectorAll('.mmode .btab').forEach(x=>x.classList.toggle('on',x===b));
+document.getElementById('mquob').style.display=modo==='mult'?'':'none';document.getElementById('mimpl').textContent=modo==='mult'?'Importo della multipla (€)':'Importo per giocata (€)';aggQuota()});
+document.getElementById('mquob').style.display='none';
+document.getElementById('madd').onclick=()=>{const L=scelti();const imp=parseFloat(document.getElementById('mimp').value);const m=document.getElementById('mmsg');
+if(!L.length){m.textContent='Seleziona almeno una giocata.';return}if(!(imp>0)){m.textContent='Inserisci l’importo.';return}
+const quando=new Date().toISOString().slice(0,10);
+if(modo==='mult'&&L.length>1){const q=parseFloat(document.getElementById('mquo').value)||L.reduce((p,x)=>p*x.q,1);
+mie.push({multi:true,legs:L.map(x=>({id:x.id,t:x.t,s:x.s,q:x.q})),imp,q,quando});m.textContent='Multipla aggiunta.'}
+else{L.forEach(x=>mie.push({id:x.id,t:x.t,s:x.s,imp,q:x.q,quando}));m.textContent=L.length>1?L.length+' singole aggiunte.':'Aggiunta.'}
+save();box.querySelectorAll('input:checked').forEach(c=>c.checked=false);document.getElementById('mimp').value='';aggQuota();draw()};
+function esitoLeg(l){const x=BY[l.id];if(x&&x.e!==null&&l.e!==x.e){l.e=x.e}return (x&&x.e!==null)?x.e:(l.e??null)}
+function esito(g){if(g.man!==undefined&&g.man!==null)return {e:g.man,q:g.q};
+if(!g.multi)return {e:esitoLeg(g),q:g.q};
+const es=g.legs.map(esitoLeg);if(es.includes(0))return {e:0,q:g.q};if(es.includes(null))return {e:null,q:g.q};
+let q=g.q;g.legs.forEach((l,i)=>{if(es[i]===2)q=q/l.q});return {e:es.every(v=>v===2)?2:1,q}}
 function draw(){let gioc=0,saldo=0,att=0;
-let cambi=false;const rows=mie.map((g,i)=>{const x=BY[g.id];if(x&&x.e!==null&&g.e!==x.e){g.e=x.e;cambi=true}const e=(x&&x.e!==null)?x.e:(g.e??null);let r,cls,st;
-if(e===1){r=g.imp*(g.q-1);cls='vin';st='Vinta'}else if(e===0){r=-g.imp;cls='per';st='Persa'}else if(e===2){r=0;cls='rim';st='Rimborsata'}else{r=null;cls='att';st='In attesa';att+=g.imp}
+const rows=mie.map((g,i)=>{const {e,q}=esito(g);let r,cls,st;
+if(e===1){r=g.imp*(q-1);cls='vin';st='Vinta'}else if(e===0){r=-g.imp;cls='per';st='Persa'}else if(e===2){r=0;cls='rim';st='Rimborsata'}else{r=null;cls='att';st='In attesa';att+=g.imp}
 gioc+=g.imp;if(r!==null)saldo+=r;
-return `<div class="bg"><div class="bgn"><b>${esc(g.t)}</b><small>${esc(g.s)} · ${eur(g.imp)} a ${g.q.toFixed(2)}</small></div><div class="st ${cls}">${st}</div>
-<div class="bgu ${r>0?'okc':(r<0?'koc':'muted')}">${r===null?'—':(r>0?'+':'')+eur(r)}</div><button class="fx" data-i="${i}" aria-label="Togli">×</button></div>`}).join('');
-if(cambi)save();document.getElementById('mtot').innerHTML=mie.length?`<div class="bk bk3"><div><small>Giocato</small><b>${eur(gioc)}</b></div><div><small>Saldo</small><b class="${saldo>=0?'okc':'koc'}">${saldo>=0?'+':''}${eur(saldo)}</b></div><div><small>In attesa</small><b>${eur(att)}</b></div></div>`:'';
+const tit=g.multi?`Multipla (${g.legs.length})`:esc(g.t);
+const sub=g.multi?g.legs.map(l=>{const el=esitoLeg(l);return `<span class="ml ${el===1?'okc':(el===0?'koc':'')}">${esc(l.t)} · ${esc(l.s)}</span>`}).join(''):esc(g.s);
+return `<div class="bg"><div class="bgn"><b>${tit}</b><small>${sub}</small><small>${eur(g.imp)} a ${q.toFixed(2)}</small></div><button class="st ${cls}" data-i="${i}" title="Tocca per correggere">${st}${g.man!=null?' ✎':''}</button>
+<div class="bgu ${r>0?'okc':(r<0?'koc':'muted')}">${r===null?'—':(r>0?'+':'')+eur(r)}</div><button class="fx" data-x="${i}" aria-label="Togli">×</button></div>`}).join('');
+save();
+document.getElementById('mtot').innerHTML=mie.length?`<div class="bk bk3"><div><small>Giocato</small><b>${eur(gioc)}</b></div><div><small>Saldo</small><b class="${saldo>=0?'okc':'koc'}">${saldo>=0?'+':''}${eur(saldo)}</b></div><div><small>In attesa</small><b>${eur(att)}</b></div></div>`:'';
 document.getElementById('mlist').innerHTML=rows||'<p class="muted">Non hai ancora aggiunto giocate.</p>';
-document.querySelectorAll('#mlist .fx').forEach(b=>b.onclick=()=>{mie.splice(+b.dataset.i,1);save();draw()});}
+document.querySelectorAll('#mlist .fx').forEach(b=>b.onclick=()=>{mie.splice(+b.dataset.x,1);save();draw()});
+document.querySelectorAll('#mlist button.st').forEach(b=>b.onclick=()=>{const g=mie[+b.dataset.i];const ciclo=[undefined,1,0,2];
+const k=ciclo.indexOf(g.man===null?undefined:g.man);g.man=ciclo[(k+1)%ciclo.length];if(g.man===undefined)delete g.man;save();draw()});}
 draw();})();
 """
 gen = datetime.now(timezone.utc).isoformat()
@@ -1019,12 +1045,13 @@ PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name
 
 
 <section class="view" id="mie"><h2 class="daytitle">Le mie giocate</h2>
-<div class="fbox"><div class="fmod"><label for="mgioc">Giocata fatta</label><select id="mgioc"></select></div>
-<div class="mrow"><div class="fmod"><label for="mimp">Importo (€)</label><input id="mimp" type="number" min="0" step="0.5" inputmode="decimal" class="vbin"></div>
-<div class="fmod"><label for="mquo">Quota giocata</label><input id="mquo" type="number" min="1" step="0.01" inputmode="decimal" class="vbin"></div></div>
+<div class="fbox"><div class="fmod"><label>Scegli le giocate fatte (anche più di una)</label></div><div id="mpick" class="mpick"></div>
+<div class="mmode"><button class="btab on" data-m="sing">Singole</button><button class="btab" data-m="mult">Multipla</button></div>
+<div class="mrow"><div class="fmod"><label for="mimp" id="mimpl">Importo per giocata (€)</label><input id="mimp" type="number" min="0" step="0.5" inputmode="decimal" class="vbin"></div>
+<div class="fmod" id="mquob"><label for="mquo">Quota multipla</label><input id="mquo" type="number" min="1" step="0.01" inputmode="decimal" class="vbin"></div></div>
 <button id="madd" class="mbtn">Aggiungi</button><div id="mmsg" class="hint"></div></div>
 <div id="mtot"></div><div id="mlist"></div>
-<p class="hint">Le tue giocate restano salvate su questo dispositivo. Il risultato si aggiorna da solo quando le partite finiscono.</p></section>
+<p class="hint">Restano salvate su questo dispositivo e si aggiornano da sole a fine partita. Tocca l'esito per correggerlo a mano (es. Marcatore Plus vinto con il sostituto).</p></section>
 <section class="view" id="bilancio">{bil_html}</section>
 <section class="view" id="classifica"><div class="scroll"><table class="tbl"><thead><tr><th>#</th><th class=l>Squadra</th><th>Pt</th><th>G</th><th>V</th><th>N</th><th>P</th><th>GF</th><th>GS</th><th>DR</th><th>xG/p</th><th>xGA/p</th><th>Elo</th></tr></thead><tbody>{cl_rows}</tbody></table></div>
 </section>

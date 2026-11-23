@@ -268,6 +268,9 @@ try:
     sched = (J("striker_schedule.json") or {}).get("data", {}).get("games", [])
     for mid, partita in da_fare:
         if mid not in finite or os.path.exists(os.path.join(D, "partite", f"{mid}.json")): continue
+        tg = STATO.setdefault("tentativi_partite", {})
+        if tg.get(str(mid), 0) >= 4: continue                      # massimo 4 download per partita (crediti)
+        tg[str(mid)] = tg.get(str(mid), 0) + 1
         h, a = partita.split("-", 1)
         g = next((g for g in sched if canon(g["home"]["name"]) == h and canon(g["away"]["name"]) == a), None)
         if g: sget(os.path.join("partite", f"{mid}.json"), "get_game", {"game_id": str(g["game_id"]), "league": "seriea"})

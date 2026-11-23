@@ -63,10 +63,23 @@ def segnato_cl(nome, inizio):
     if g1 is None and len(dopo) < 100: return 0       # lista completa e lui non c'e': non ha segnato
     return None
 
-def marcatori_partita(match_id):
+def marcatori_partita(match_id, gol_totali=None):
     """Nomi dei marcatori (esclusi autogol) dal dettaglio partita salvato in dati/partite/<id>.json, se presente."""
     j = J(os.path.join("partite", f"{match_id}.json"))
     if not j: return None
+    data = j.get("data", j) if isinstance(j, dict) else {}
+    ev = data.get("key_events") if isinstance(data, dict) else None
+    if isinstance(ev, list):
+        # formato StrikerAPI get_game: key_events [{type: "goal", player, own_goal, ...}] + players [{name, goals}]
+        gol = [e for e in ev if str(e.get("type", "")).lower() == "goal" and not e.get("shootout")]
+        nomi = [e.get("player") for e in gol if not e.get("own_goal") and e.get("player")]
+        nomi += [p.get("name") for p in data.get("players", []) if (p.get("goals") or 0) > 0 and p.get("name")]
+        # dettaglio incompleto (scaricato troppo presto): i gol registrati non tornano col risultato finale
+        if gol_totali is not None and len(gol) < gol_totali:
+            try: os.remove(os.path.join(D, "partite", f"{match_id}.json"))     # verra' riscaricato
+            except OSError: pass
+            return None
+        return nomi
     nomi = []
     def walk(o):
         if isinstance(o, dict):
@@ -167,6 +180,14 @@ def main():
     fin = {m["id"]: (m["score"]["fullTime"]["home"], m["score"]["fullTime"]["away"])
            for m in tutte_m if m.get("status") == "FINISHED" and m.get("score", {}).get("fullTime", {}).get("home") is not None}
     cl_ids = {m["id"] for m in (J("fdorg_cl.json") or {}).get("matches", [])}
+    for rid, mid, mercato in db.execute("SELECT id, match_id, mercato FROM previsioni WHERE esito=0 AND mercato LIKE 'SCORER:%'").fetchall():
+        if mid in fin and mid not in cl_ids:
+            nomi = marcatori_partita(mid, sum(fin[mid]))
+            pt = _norm(mercato[7:])
+            if nomi is None:
+                db.execute("UPDATE previsioni SET esito=NULL, profitto=NULL WHERE id=?", (rid,))      # da riverificare
+            elif any(pt and pt[-1] in _norm(n) for n in nomi):
+                db.execute("UPDATE previsioni SET esito=NULL, profitto=NULL WHERE id=?", (rid,))      # aveva segnato: si ricalcola
     for rid, mid, mercato, quota, inizio in db.execute("SELECT id, match_id, mercato, quota, inizio FROM previsioni WHERE esito IS NULL").fetchall():
         if mid not in fin: continue
         i, j = fin[mid]
@@ -174,8 +195,8 @@ def main():
             e = segnato_cl(mercato[7:], inizio)
             if e is None: continue
         elif mercato.startswith("SCORER:"):
-            nomi = marcatori_partita(mid)
-            if nomi is None: continue          # dettaglio non ancora scaricato
+            nomi = marcatori_partita(mid, i + j)
+            if nomi is None: continue          # dettaglio non ancora scaricato o incompleto
             pt = _norm(mercato[7:])
             e = int(any(pt and pt[-1] in _norm(n) for n in nomi))
         else:

@@ -5,11 +5,30 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 24 Nov 2026 14:59:20 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Nov 2026 16:12:47 GMT</lastBuildDate>
         <item>
-            <title><![CDATA[Infortunio &Ccedil;alhanoglu, l&#39;esito degli esami: come sta il centrocampista dell&#39;Inter]]></title>
+            <title><![CDATA[Ibrahimovic torna a fare l&#39;attore: sar&agrave; tra i cattivi di MobLand con Tom Hardy]]></title>
+            <description><![CDATA[L&#39;ex attaccante svedese si prepara a una nuova avventura davanti alle telecamere a tre anni dal debutto cinematografico: i dettagli]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/milan/2026/11/24-152805333/ibrahimovic_torna_a_fare_l_attore_sar_tra_i_cattivi_di_mobland_con_tom_hardy/</link>
+            <guid isPermaLink="false">sn:cds:152805333</guid>
+            <category><![CDATA[Ibrahimovic]]></category>
+            <category><![CDATA[Milan]]></category>
+            <category><![CDATA[serie tv]]></category>
+            <category><![CDATA[mobland]]></category>
+            <pubDate>Tue, 24 Nov 2026 15:30:11 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/152702153-24f09479-5de6-485d-b2e3-b137da3cdf71.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/152702153-24f09479-5de6-485d-b2e3-b137da3cdf71.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/152702153-24f09479-5de6-485d-b2e3-b137da3cdf71.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[L&#39;ex attaccante svedese si prepara a una nuova avventura davanti alle telecamere a tre anni dal debutto cinematografico: i dettagli]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Infortunio Calhanoglu, l&#39;esito degli esami: come sta il centrocampista dell&#39;Inter]]></title>
             <description><![CDATA[Il centrocampista turco si &egrave; infortunato in occasione del match a Bergamo contro l&#39;Atalanta: i tempi di recupero]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/24-152804875/infortunio_alhanoglu_l_esito_degli_esami_come_sta_il_centrocampista_dell_inter/</link>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/24-152804875/infortunio_calhanoglu_l_esito_degli_esami_come_sta_il_centrocampista_dell_inter/</link>
             <guid isPermaLink="false">sn:cds:152804875</guid>
             <category><![CDATA[Calhanoglu]]></category>
             <category><![CDATA[Infortunio Calhanoglu]]></category>
@@ -537,25 +556,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[L&#39;olandese del Napoli &egrave; stato decisivo anche contro il Torino nonostante il malumore dei tifosi sugli spalti del Maradona]]></dcterms:alternative>
             <dc:creator><![CDATA[Fabio Mandarini]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[&Egrave; un Malen famelico: segna pi&ugrave; delle leggende e adesso vuole un primato clamoroso]]></title>
-            <description><![CDATA[L&#39;attaccante olandese sta trascinando i giallorossi nella corsa scudetto: numeri da record per lui e per la squadra di Gasperini]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/23-152778022/un_malen_famelico_segna_pi_delle_leggende_e_adesso_vuole_un_primato_clamoroso/</link>
-            <guid isPermaLink="false">sn:cds:152778022</guid>
-            <category><![CDATA[Roma]]></category>
-            <category><![CDATA[Gasperini]]></category>
-            <category><![CDATA[malen]]></category>
-            <category><![CDATA[oggi]]></category>
-            <pubDate>Mon, 23 Nov 2026 06:57:28 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/064023292-1cd4f4ba-4b22-426b-b408-a71e1f9192f3.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/064023292-1cd4f4ba-4b22-426b-b408-a71e1f9192f3.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/064023292-1cd4f4ba-4b22-426b-b408-a71e1f9192f3.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&#39;attaccante olandese sta trascinando i giallorossi nella corsa scudetto: numeri da record per lui e per la squadra di Gasperini]]></dcterms:alternative>
-            <dc:creator><![CDATA[Giorgio Marota]]></dc:creator>
         </item>
     </channel>
 </rss>

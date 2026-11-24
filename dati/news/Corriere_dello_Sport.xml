@@ -5,7 +5,23 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 24 Nov 2026 17:52:52 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Nov 2026 18:52:01 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[<p>Milan, infortunio per Modric: come sta e quante partite salter&agrave; tra Serie A ed Europa League</p>
+]]></title>
+            <description><![CDATA[Problema fisico accusato nel match contro il Frosinone per il centrocampista croato, le sue condizioni]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/milan/2026/11/24-152808573/milan_infortunio_per_modric_come_sta_e_quante_partite_salter_tra_serie_a_ed_europa_league/</link>
+            <guid isPermaLink="false">sn:cds:152808573</guid>
+            <pubDate>Tue, 24 Nov 2026 18:06:52 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/180009254-f6371cc1-6276-4df2-bcb8-c27986c2206a.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/180009254-f6371cc1-6276-4df2-bcb8-c27986c2206a.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>AC Milan via Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/180009254-f6371cc1-6276-4df2-bcb8-c27986c2206a.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Problema fisico accusato nel match contro il Frosinone per il centrocampista croato, le sue condizioni]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Ibrahimovic torna a fare l&#39;attore: sar&agrave; tra i cattivi di MobLand con Tom Hardy]]></title>
             <description><![CDATA[L&#39;ex attaccante svedese si prepara a una nuova avventura davanti alle telecamere a tre anni dal debutto cinematografico: i dettagli]]></description>
@@ -537,25 +553,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Leggi il commento sulla squadra rossonera, reduce dalla vittoria sonante sul Frosinone]]></dcterms:alternative>
             <dc:creator><![CDATA[Franco Ordine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Lang dribbla anche i fischi e la contestazione: Allegri ha il suo asso per Manchester]]></title>
-            <description><![CDATA[L&#39;olandese del Napoli &egrave; stato decisivo anche contro il Torino nonostante il malumore dei tifosi sugli spalti del Maradona]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/23-152778394/lang_dribbla_anche_i_fischi_e_la_contestazione_allegri_ha_il_suo_asso_per_manchester/</link>
-            <guid isPermaLink="false">sn:cds:152778394</guid>
-            <category><![CDATA[Lang]]></category>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[napoli]]></category>
-            <category><![CDATA[Allegri]]></category>
-            <pubDate>Mon, 23 Nov 2026 07:05:12 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/065358392-bccea09a-9b7c-4258-8b91-9dff4f2c3826.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/065358392-bccea09a-9b7c-4258-8b91-9dff4f2c3826.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>FOTO GIANLUCA MOSCA</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/065358392-bccea09a-9b7c-4258-8b91-9dff4f2c3826.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&#39;olandese del Napoli &egrave; stato decisivo anche contro il Torino nonostante il malumore dei tifosi sugli spalti del Maradona]]></dcterms:alternative>
-            <dc:creator><![CDATA[Fabio Mandarini]]></dc:creator>
         </item>
     </channel>
 </rss>

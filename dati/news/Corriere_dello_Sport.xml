@@ -5,7 +5,26 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 24 Nov 2026 19:55:15 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Nov 2026 20:56:21 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[<p>Bologna-Roma, possibile nuova chiusura del settore ospiti: l&#39;Osservatorio dispone verifiche</p>
+]]></title>
+            <description><![CDATA[Nessuna decisione sulla presenza dei tifosi giallorossi allo stadio Dall&#39;Ara: &quot;Giudizio sospeso in attesa di approfondire i rischi&quot;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/24-152810863/bologna-roma_possibile_nuova_chiusura_del_settore_ospiti_l_osservatorio_dispone_verifiche/</link>
+            <guid isPermaLink="false">sn:cds:152810863</guid>
+            <category><![CDATA[Bologna-Roma]]></category>
+            <category><![CDATA[tifosi]]></category>
+            <category><![CDATA[Roma]]></category>
+            <pubDate>Tue, 24 Nov 2026 20:00:31 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/195744875-ed9297ac-a5e2-49e4-a56b-fd3420cb626d.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/195744875-ed9297ac-a5e2-49e4-a56b-fd3420cb626d.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>BARTOLETTI</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/195744875-ed9297ac-a5e2-49e4-a56b-fd3420cb626d.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Nessuna decisione sulla presenza dei tifosi giallorossi allo stadio Dall&#39;Ara: &quot;Giudizio sospeso in attesa di approfondire i rischi&quot;]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[<p>Milan, infortunio per Modric: come sta e quante partite salter&agrave; tra Serie A ed Europa League</p>
 ]]></title>
@@ -535,24 +554,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Tantissime assenze per gli azzurri in vista della partita di marted&igrave; in Champions contro il Manchester City]]></dcterms:alternative>
             <dc:creator><![CDATA[Fabio Mandarini]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Milan, le mosse di Ruben Amorim]]></title>
-            <description><![CDATA[Leggi il commento sulla squadra rossonera, reduce dalla vittoria sonante sul Frosinone]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/milan/2026/11/23-152778886/milan_le_mosse_di_ruben_amorim/</link>
-            <guid isPermaLink="false">sn:cds:152778886</guid>
-            <category><![CDATA[Milan]]></category>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Amorim]]></category>
-            <pubDate>Mon, 23 Nov 2026 07:37:12 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/072402383-26fc1f01-6f82-4fe0-b715-97f500d48749.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/072402383-26fc1f01-6f82-4fe0-b715-97f500d48749.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/072402383-26fc1f01-6f82-4fe0-b715-97f500d48749.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Leggi il commento sulla squadra rossonera, reduce dalla vittoria sonante sul Frosinone]]></dcterms:alternative>
-            <dc:creator><![CDATA[Franco Ordine]]></dc:creator>
         </item>
     </channel>
 </rss>

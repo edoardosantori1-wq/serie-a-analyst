@@ -5,7 +5,43 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 24 Nov 2026 11:56:25 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Nov 2026 13:13:07 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Carnesecchi, intervento effettuato in artroscopia per la pulizia meniscale del ginocchio sinistro]]></title>
+            <description><![CDATA[Gi&agrave; nei prossimi giorni inizier&agrave; l&#39;iter riabilitativo. L&#39;Atalanta gioved&igrave; in campo contro il Borac per la Conference]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/atalanta/2026/11/24-152803314/carnesecchi_intervento_effettuato_in_artroscopia_per_la_pulizia_meniscale_del_ginocchio_sinistro/</link>
+            <guid isPermaLink="false">sn:cds:152803314</guid>
+            <category><![CDATA[atalanta]]></category>
+            <category><![CDATA[carnesecchi]]></category>
+            <category><![CDATA[Sarri]]></category>
+            <pubDate>Tue, 24 Nov 2026 13:04:33 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/130418175-30ca2c13-2309-4ff1-a7d0-f96f77c0ab0e.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/130418175-30ca2c13-2309-4ff1-a7d0-f96f77c0ab0e.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>ANSA</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/130418175-30ca2c13-2309-4ff1-a7d0-f96f77c0ab0e.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Gi&agrave; nei prossimi giorni inizier&agrave; l&#39;iter riabilitativo. L&#39;Atalanta gioved&igrave; in campo contro il Borac per la Conference]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Pozzo ancora in ospedale, la nota dell&#39;Udinese: &quot;Segue la squadra, condizioni in miglioramento&quot;]]></title>
+            <description><![CDATA[Il club bianconero ha diramato un comunicato per aggiornare i tifosi sullo stato di salute del presidente, ricoverato a inizio mese per una polmonite: i dettagli]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/udinese/2026/11/24-152802587/pozzo_ancora_in_ospedale_la_nota_dell_udinese_segue_la_squadra_condizioni_in_miglioramento/</link>
+            <guid isPermaLink="false">sn:cds:152802587</guid>
+            <category><![CDATA[Udinese]]></category>
+            <category><![CDATA[Pozzo]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <pubDate>Tue, 24 Nov 2026 12:00:07 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/115649030-6ee8cb72-225b-4c9f-9a0f-eddf6225ac97.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/115649030-6ee8cb72-225b-4c9f-9a0f-eddf6225ac97.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>ANSA</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/115649030-6ee8cb72-225b-4c9f-9a0f-eddf6225ac97.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il club bianconero ha diramato un comunicato per aggiornare i tifosi sullo stato di salute del presidente, ricoverato a inizio mese per una polmonite: i dettagli]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[L&#39;annuncio della Curva Nord della Lazio per il mese di dicembre. Ma la contestazione non si ferma...]]></title>
             <description><![CDATA[La scelta del tifo biancoceleste in vista della sfida con l&#39;Atalanta, del derby e delle prossime partite casalinghe]]></description>
@@ -520,42 +556,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Leggi il commento del direttore del Corriere dello Sport-Stadio]]></dcterms:alternative>
             <dc:creator><![CDATA[Ivan Zazzaroni]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Chivu amareggiato dopo il pari contro l&#39;Atalanta: &quot;Inter, buttati via due punti. Pensavamo di aver vinto, e invece...&quot;]]></title>
-            <description><![CDATA[Le dichiarazioni rilasciate dal tecnico nerazzurro a margine del pirotecnico pareggio maturato a Bergamo: due punti persi per i campioni d&#39;Italia in carica]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/22-152775678/chivu_e_l_analisi_dopo_il_pari_contro_l_atalanta_inter_devi_imparare_tanto_da_questa_partita/</link>
-            <guid isPermaLink="false">sn:cds:152775678</guid>
-            <category><![CDATA[Chivu]]></category>
-            <category><![CDATA[Inter]]></category>
-            <category><![CDATA[atalanta]]></category>
-            <pubDate>Sun, 22 Nov 2026 22:46:38 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/222553396-0f961266-4213-444c-a21d-c12658080233.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/222553396-0f961266-4213-444c-a21d-c12658080233.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/222553396-0f961266-4213-444c-a21d-c12658080233.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Le dichiarazioni rilasciate dal tecnico nerazzurro a margine del pirotecnico pareggio maturato a Bergamo: due punti persi per i campioni d&#39;Italia in carica]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Inter, non basta la tripletta di Pio Esposito: l&#39;Atalanta rimonta e pareggia con Kessie nel finale]]></title>
-            <description><![CDATA[Lo spettacolare 4-4 di Bergamo cambia le gerarchie nella zona alta della classifica, rafforza la Lazio capolista e lancia la Roma al secondo posto]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/22-152766563/inter_non_basta_la_tripletta_di_pio_esposito_l_atalanta_rimonta_e_pareggia_con_kessie_nel_finale/</link>
-            <guid isPermaLink="false">sn:cds:152766563</guid>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[atalanta]]></category>
-            <category><![CDATA[Inter]]></category>
-            <pubDate>Sun, 22 Nov 2026 22:07:00 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/220616880-dd884294-147c-4022-b5ac-15d82189b99d.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/220616880-dd884294-147c-4022-b5ac-15d82189b99d.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>ANSA</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/220616880-dd884294-147c-4022-b5ac-15d82189b99d.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Lo spettacolare 4-4 di Bergamo cambia le gerarchie nella zona alta della classifica, rafforza la Lazio capolista e lancia la Roma al secondo posto]]></dcterms:alternative>
-            <dc:creator><![CDATA[Daniele Liberati]]></dc:creator>
         </item>
     </channel>
 </rss>

@@ -68,8 +68,12 @@ def forma(team, n=5):
         out.append(dict(res="V" if gf > ga else "N" if gf == ga else "P", t=f"{ha} {o} {gf}-{ga}" + (f" · xG {xf}-{xa}" if xf else "")))
         if len(out) == n: break
     return list(reversed(out))
+# classifica: dai risultati di football-data.org (aggiornati ogni ora); se mancano, dal file CSV settimanale
+ris_fd = [dict(h=canon(m["homeTeam"]["name"]), a=canon(m["awayTeam"]["name"]), hg=m["score"]["fullTime"]["home"], ag=m["score"]["fullTime"]["away"])
+          for m in (J("fdorg_giocate.json") or {}).get("matches", [])
+          if m.get("status") == "FINISHED" and m.get("score", {}).get("fullTime", {}).get("home") is not None]
 tab = {}
-for r in rows:
+for r in (ris_fd or rows):
     for t, gf, ga in ((r["h"], r["hg"], r["ag"]), (r["a"], r["ag"], r["hg"])):
         s = tab.setdefault(t, dict(g=0, v=0, n=0, p=0, gf=0, gs=0)); s["g"] += 1; s["gf"] += gf; s["gs"] += ga
         s["v" if gf > ga else "n" if gf == ga else "p"] += 1

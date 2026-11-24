@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 24 Nov 2026 13:13:07 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Nov 2026 14:59:20 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Infortunio &Ccedil;alhanoglu, l&#39;esito degli esami: come sta il centrocampista dell&#39;Inter]]></title>
+            <description><![CDATA[Il centrocampista turco si &egrave; infortunato in occasione del match a Bergamo contro l&#39;Atalanta: i tempi di recupero]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/24-152804875/infortunio_alhanoglu_l_esito_degli_esami_come_sta_il_centrocampista_dell_inter/</link>
+            <guid isPermaLink="false">sn:cds:152804875</guid>
+            <category><![CDATA[Calhanoglu]]></category>
+            <category><![CDATA[Infortunio Calhanoglu]]></category>
+            <category><![CDATA[Inter]]></category>
+            <pubDate>Tue, 24 Nov 2026 14:33:26 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/143235658-70c79b2e-1a35-4c7a-82d6-fa7115b490ee.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/143235658-70c79b2e-1a35-4c7a-82d6-fa7115b490ee.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/143235658-70c79b2e-1a35-4c7a-82d6-fa7115b490ee.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il centrocampista turco si &egrave; infortunato in occasione del match a Bergamo contro l&#39;Atalanta: i tempi di recupero]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Carnesecchi, intervento effettuato in artroscopia per la pulizia meniscale del ginocchio sinistro]]></title>
             <description><![CDATA[Gi&agrave; nei prossimi giorni inizier&agrave; l&#39;iter riabilitativo. L&#39;Atalanta gioved&igrave; in campo contro il Borac per la Conference]]></description>
@@ -538,24 +556,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[L&#39;attaccante olandese sta trascinando i giallorossi nella corsa scudetto: numeri da record per lui e per la squadra di Gasperini]]></dcterms:alternative>
             <dc:creator><![CDATA[Giorgio Marota]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Il momento di Lazio e Roma, ci credano i presidenti]]></title>
-            <description><![CDATA[Leggi il commento del direttore del Corriere dello Sport-Stadio]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/23-152778017/il_momento_di_lazio_e_roma_ci_credano_i_presidenti/</link>
-            <guid isPermaLink="false">sn:cds:152778017</guid>
-            <category><![CDATA[Roma]]></category>
-            <category><![CDATA[Lazio]]></category>
-            <category><![CDATA[oggi]]></category>
-            <pubDate>Mon, 23 Nov 2026 06:40:52 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/061739191-838d22dd-3dc7-4be0-be43-e5ade5a27f0e.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/061739191-838d22dd-3dc7-4be0-be43-e5ade5a27f0e.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/061739191-838d22dd-3dc7-4be0-be43-e5ade5a27f0e.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Leggi il commento del direttore del Corriere dello Sport-Stadio]]></dcterms:alternative>
-            <dc:creator><![CDATA[Ivan Zazzaroni]]></dc:creator>
         </item>
     </channel>
 </rss>

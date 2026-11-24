@@ -5,7 +5,41 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 24 Nov 2026 10:08:04 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Nov 2026 11:56:25 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[L&#39;annuncio della Curva Nord della Lazio per il mese di dicembre. Ma la contestazione non si ferma...]]></title>
+            <description><![CDATA[La scelta del tifo biancoceleste in vista della sfida con l&#39;Atalanta, del derby e delle prossime partite casalinghe]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/24-152802022/l_annuncio_della_curva_nord_della_lazio_per_il_mese_di_dicembre_ma_la_contestazione_non_si_ferma_/</link>
+            <guid isPermaLink="false">sn:cds:152802022</guid>
+            <category><![CDATA[Lazio]]></category>
+            <pubDate>Tue, 24 Nov 2026 11:09:07 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/111857163-b5a72b4d-ba25-48b4-9330-7861b98cf5fc.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/111857163-b5a72b4d-ba25-48b4-9330-7861b98cf5fc.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/111857163-b5a72b4d-ba25-48b4-9330-7861b98cf5fc.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[La scelta del tifo biancoceleste in vista della sfida con l&#39;Atalanta, del derby e delle prossime partite casalinghe]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Stagione finita per Colombo, il messaggio sui social: &quot;Difficile trovare le parole&quot;]]></title>
+            <description><![CDATA[Dopo la lesione del legamento crociato anteriore del ginocchio destro, l&#39;attaccante de Genoa scrive sul suo profilo ufficiale parlando del futuro]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/genoa/2026/11/24-152801351/stagione_finita_per_colombo_il_messaggio_sui_social_difficile_trovare_le_parole_non_facile_da_accettare/</link>
+            <guid isPermaLink="false">sn:cds:152801351</guid>
+            <category><![CDATA[Genoa]]></category>
+            <category><![CDATA[colombo]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <pubDate>Tue, 24 Nov 2026 10:56:35 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/102456366-08723d63-be34-48bb-881c-060aaab3decd.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/102456366-08723d63-be34-48bb-881c-060aaab3decd.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/102456366-08723d63-be34-48bb-881c-060aaab3decd.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Dopo la lesione del legamento crociato anteriore del ginocchio destro, l&#39;attaccante de Genoa scrive sul suo profilo ufficiale parlando del futuro]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Stadio &#39;Olimpico Grande Torino&#39;, il Comune stabilisce il pubblico interesse: cosa cambia per il club granata]]></title>
             <description><![CDATA[L&#39;approvazione della delibera da parte della Giunta comunale &egrave; stata anticipata in un annuncio dal sindaco Lo Russo: tutti i dettagli]]></description>
@@ -522,41 +556,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Lo spettacolare 4-4 di Bergamo cambia le gerarchie nella zona alta della classifica, rafforza la Lazio capolista e lancia la Roma al secondo posto]]></dcterms:alternative>
             <dc:creator><![CDATA[Daniele Liberati]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Calhanoglu chiede il cambio, Chivu si dispera: nuovo infortunio per il turco dell&#39;Inter]]></title>
-            <description><![CDATA[Le condizioni e i tempi di recupero del centrocampista turco saranno valutati nelle prossime ore: problema muscolare]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/22-152772533/calhanoglu_chiede_il_cambio_chivu_si_dispera_nuovo_infortunio_per_il_turco_dell_inter/</link>
-            <guid isPermaLink="false">sn:cds:152772533</guid>
-            <category><![CDATA[Calhanoglu]]></category>
-            <category><![CDATA[Atalanta-Inter]]></category>
-            <category><![CDATA[Chivu]]></category>
-            <pubDate>Sun, 22 Nov 2026 20:42:05 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/210617210-d7238b7b-1330-443c-841e-8be9583f9b8d.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/210617210-d7238b7b-1330-443c-841e-8be9583f9b8d.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/210617210-d7238b7b-1330-443c-841e-8be9583f9b8d.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Le condizioni e i tempi di recupero del centrocampista turco saranno valutati nelle prossime ore: problema muscolare]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Amorim esalta il Milan e spiega il cambio di Gon&ccedil;alo Ramos: &quot;Ecco perch&eacute; l&#39;ho sostituito...&quot;]]></title>
-            <description><![CDATA[Il tecnico dei rossoneri al termine della sfida con il Frosinone: &quot;Sapevamo che ci avrebbero aggredito e ne abbiamo approfittato&quot;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/milan/2026/11/22-152769140/amorim_esalta_il_milan_e_spiega_il_cambio_di_gonalo_ramos_ecco_perch_l_ho_sostituito_/</link>
-            <guid isPermaLink="false">sn:cds:152769140</guid>
-            <category><![CDATA[Milan]]></category>
-            <category><![CDATA[Amorim]]></category>
-            <pubDate>Sun, 22 Nov 2026 19:41:35 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/173146985-4c5c1b34-3efd-441e-87fd-a85a40248067.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/173146985-4c5c1b34-3efd-441e-87fd-a85a40248067.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/173146985-4c5c1b34-3efd-441e-87fd-a85a40248067.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il tecnico dei rossoneri al termine della sfida con il Frosinone: &quot;Sapevamo che ci avrebbero aggredito e ne abbiamo approfittato&quot;]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>
 </rss>

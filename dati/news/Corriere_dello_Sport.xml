@@ -5,7 +5,47 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 24 Nov 2026 05:07:12 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Nov 2026 07:10:00 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Da Luis Enrique a Juric e Spalletti: per la Roma gli incontri con i suoi ex allenatori non finiscono mai]]></title>
+            <description><![CDATA[I giallorossi ritrovano da avversario il tecnico spagnolo del Psg dopo l&#39;esperienza a Trigoria nel 2011-12: accadr&agrave; ancora con altri]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/24-152794517/da_luis_enrique_a_juric_e_spalletti_per_la_roma_gli_incontri_con_i_suoi_ex_allenatori_non_finiscono_mai/</link>
+            <guid isPermaLink="false">sn:cds:152794517</guid>
+            <category><![CDATA[Roma]]></category>
+            <category><![CDATA[Luis Enrique]]></category>
+            <category><![CDATA[Juric]]></category>
+            <category><![CDATA[Spalletti]]></category>
+            <category><![CDATA[oggi]]></category>
+            <pubDate>Tue, 24 Nov 2026 06:38:06 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/062650239-46c37009-cbb0-4416-a411-9ab7f10c001e.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/062650239-46c37009-cbb0-4416-a411-9ab7f10c001e.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/062650239-46c37009-cbb0-4416-a411-9ab7f10c001e.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[I giallorossi ritrovano da avversario il tecnico spagnolo del Psg dopo l&#39;esperienza a Trigoria nel 2011-12: accadr&agrave; ancora con altri]]></dcterms:alternative>
+            <dc:creator><![CDATA[Giorgio Marota]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Il derby di Kon&eacute; tra Roma e Psg: non ha mai affrontato la squadra per cui tifa, ma con Gasperini&hellip;]]></title>
+            <description><![CDATA[Partita speciale di Champions League al Parco dei Principi per il centrocampista giallorosso: tutti i dettagli]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/24-152794510/il_derby_di_kon_tra_roma_e_psg_non_ha_mai_affrontato_la_squadra_per_cui_tifa_ma_con_gasperini/</link>
+            <guid isPermaLink="false">sn:cds:152794510</guid>
+            <category><![CDATA[Konè]]></category>
+            <category><![CDATA[Roma]]></category>
+            <category><![CDATA[psg]]></category>
+            <category><![CDATA[Champions]]></category>
+            <category><![CDATA[oggi]]></category>
+            <pubDate>Tue, 24 Nov 2026 06:23:51 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/062345414-52138e8a-0182-4573-8fc0-9db1f2c24006.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/062345414-52138e8a-0182-4573-8fc0-9db1f2c24006.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/062345414-52138e8a-0182-4573-8fc0-9db1f2c24006.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Partita speciale di Champions League al Parco dei Principi per il centrocampista giallorosso: tutti i dettagli]]></dcterms:alternative>
+            <dc:creator><![CDATA[Giorgio Marota]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Varela &egrave; un tornado: mette a segno una doppietta. La Fiorentina parte bene, ma poi crolla]]></title>
             <description><![CDATA[Il portoghese sale a undici gol nella classifica marcatori. Il Monza scavalca la Viola]]></description>
@@ -511,42 +551,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Leggi il commento sulla vittoria della Roma a Parma, con quattro gol di un Malen formato record, in vista del mercato di gennaio]]></dcterms:alternative>
             <dc:creator><![CDATA[Mimmo Ferretti]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[I tratti di una big]]></title>
-            <description><![CDATA[Il Como &egrave; una grande squadra: si diverte a spostare i propri limiti sempre pi&ugrave; in l&agrave;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/como/2026/11/22-152753337/i_tratti_di_una_big/</link>
-            <guid isPermaLink="false">sn:cds:152753337</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Como]]></category>
-            <category><![CDATA[Serie A]]></category>
-            <pubDate>Sun, 22 Nov 2026 10:18:09 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/101249960-6817c505-caf7-47d7-8fa1-d61bb43f78ab.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/101249960-6817c505-caf7-47d7-8fa1-d61bb43f78ab.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/101249960-6817c505-caf7-47d7-8fa1-d61bb43f78ab.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il Como &egrave; una grande squadra: si diverte a spostare i propri limiti sempre pi&ugrave; in l&agrave;]]></dcterms:alternative>
-            <dc:creator><![CDATA[Xavier Jacobelli]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Una storia straordinaria]]></title>
-            <description><![CDATA[Leggi il commento sulla Lazio di Gattuso capolista della Serie A: la squadra pi&ugrave; letteraria del nostro calcio]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/22-152752959/una_storia_straordinaria/</link>
-            <guid isPermaLink="false">sn:cds:152752959</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Lazio]]></category>
-            <category><![CDATA[Gattuso]]></category>
-            <pubDate>Sun, 22 Nov 2026 10:14:06 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/22/101339477-bcda7aae-4433-452e-ab24-b3765e6beabd.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/101339477-bcda7aae-4433-452e-ab24-b3765e6beabd.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>BARTOLETTI</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/22/101339477-bcda7aae-4433-452e-ab24-b3765e6beabd.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Leggi il commento sulla Lazio di Gattuso capolista della Serie A: la squadra pi&ugrave; letteraria del nostro calcio]]></dcterms:alternative>
-            <dc:creator><![CDATA[Massimiliano Gallo]]></dc:creator>
         </item>
     </channel>
 </rss>

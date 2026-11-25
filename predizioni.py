@@ -245,6 +245,8 @@ def quote_combo_manuali():
     return out
 
 def scrivi_modello_combo(out, manuali, triple=None):
+    if not any(r.get("selezioni") for r in out):
+        print("Modulo quote combo: quote Eurobet della giornata non ancora disponibili, file lasciato com'e'"); return
     """Modulo da compilare: SOLO le combo che il sistema usa davvero (pronostico della partita + triple
     del sabato e della domenica), cosi' le quote che contano sono verificate. Le quote gia' inserite restano."""
     import csv

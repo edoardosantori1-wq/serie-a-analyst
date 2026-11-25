@@ -166,7 +166,14 @@ if fare_uscita:
             f"Report giornata {md} pubblicato: pronostici, triple e marcatori.\n\nhttps://edoardosantori1-wq.github.io/serie-a-analyst/")
 
 # 3b) martedi' (o 3 giorni prima della giornata): prepara il modulo delle quote combo per la calibrazione
-if t_first and STATO.get("modulo_giornata") != md and STATO.get("uscita_giornata") != md and NOW.astimezone(ROME) >= (t_first - timedelta(days=4)).replace(hour=9, minute=0):
+def _modulo_vuoto():
+    try: return len([l for l in open(os.path.join(D, "quote_combo.csv"), encoding="utf-8-sig").read().splitlines() if l.strip()]) <= 1
+    except OSError: return True
+_ult = STATO.get("modulo_tentativo")
+_riprova = (STATO.get("modulo_giornata") == md and _modulo_vuoto()
+            and (not _ult or NOW - datetime.fromisoformat(_ult) >= timedelta(hours=6)))   # quote non ancora pubblicate: si riprova ogni 6 ore
+if t_first and (STATO.get("modulo_giornata") != md or _riprova) and STATO.get("uscita_giornata") != md and NOW.astimezone(ROME) >= (t_first - timedelta(days=4)).replace(hour=9, minute=0):
+    STATO["modulo_tentativo"] = NOW.isoformat()
     print(">>> MODULO CALIBRAZIONE giornata", md)
     if not os.path.exists(os.path.join(D, "oddspapi_mercati.json")):
         get("oddspapi_mercati.json", f"{OP}/markets?sportId=10&apiKey={OK}")

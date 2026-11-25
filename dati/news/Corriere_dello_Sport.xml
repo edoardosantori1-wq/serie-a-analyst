@@ -5,7 +5,27 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 25 Nov 2026 05:10:19 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Nov 2026 07:18:07 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Come Gattuso ha costruito l&rsquo;impresa Lazio: i colloqui con Zaccagni e Rovella e quel no al Torino]]></title>
+            <description><![CDATA[<p>Il diario segreto dell&rsquo;ex ct dell&rsquo;Italia: non accett&ograve; la proposta&nbsp;di Cairo a maggio. Lotito lo aveva gi&agrave; preso nel 2019: i segnali del destino</p>
+]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/25-152821337/come_gattuso_ha_costruito_limpresa_lazio_i_colloqui_con_zaccagni_e_rovella_e_quel_no_al_torino/</link>
+            <guid isPermaLink="false">sn:cds:152821337</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Lazio]]></category>
+            <category><![CDATA[Gattuso]]></category>
+            <pubDate>Wed, 25 Nov 2026 06:52:00 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/25/055129375-e6befaba-5316-4764-b605-eee679a9cd66.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/055129375-e6befaba-5316-4764-b605-eee679a9cd66.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/055129375-e6befaba-5316-4764-b605-eee679a9cd66.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[<p>Il diario segreto dell&rsquo;ex ct dell&rsquo;Italia: non accett&ograve; la proposta&nbsp;di Cairo a maggio. Lotito lo aveva gi&agrave; preso nel 2019: i segnali del destino</p>
+]]></dcterms:alternative>
+            <dc:creator><![CDATA[Fabrizio Patania]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[<p>Bologna-Roma, possibile nuova chiusura del settore ospiti: l&#39;Osservatorio dispone verifiche</p>
 ]]></title>
@@ -535,25 +555,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Leggi il commento sulla squadra di Spalletti, reduce dal rotondo successo sul Venezia]]></dcterms:alternative>
             <dc:creator><![CDATA[Vittorio Oreggia]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Allegri, l&rsquo;emergenza infortuni &egrave; totale: il Napoli in Champions senza una squadra intera!]]></title>
-            <description><![CDATA[Tantissime assenze per gli azzurri in vista della partita di marted&igrave; in Champions contro il Manchester City]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/23-152778673/allegri_lemergenza_infortuni_totale_il_napoli_in_champions_senza_una_squadra_intera_/</link>
-            <guid isPermaLink="false">sn:cds:152778673</guid>
-            <category><![CDATA[napoli]]></category>
-            <category><![CDATA[Allegri]]></category>
-            <category><![CDATA[Formazione]]></category>
-            <category><![CDATA[oggi]]></category>
-            <pubDate>Mon, 23 Nov 2026 07:37:55 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/070840450-68bd6166-01d1-40ed-9101-038a5fe19f9c.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/070840450-68bd6166-01d1-40ed-9101-038a5fe19f9c.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>FOTO GIANLUCA MOSCA</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/070840450-68bd6166-01d1-40ed-9101-038a5fe19f9c.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Tantissime assenze per gli azzurri in vista della partita di marted&igrave; in Champions contro il Manchester City]]></dcterms:alternative>
-            <dc:creator><![CDATA[Fabio Mandarini]]></dc:creator>
         </item>
     </channel>
 </rss>

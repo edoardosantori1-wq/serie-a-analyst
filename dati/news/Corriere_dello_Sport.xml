@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 25 Nov 2026 09:03:16 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Nov 2026 10:59:08 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Sneijder esalta Noslin: &quot;Gli dissi che avrebbe fatto strada, ora l&#39;Olanda deve convocarlo!&quot;]]></title>
+            <description><![CDATA[L&rsquo;ex trequartista dell&rsquo;Inter incensa l&rsquo;attaccante di Gattuso. E spiega perch&eacute; deve andare in nazionale]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/25-152826379/sneijder_esalta_noslin_gli_dissi_che_avrebbe_fatto_strada_ora_l_olanda_deve_convocarlo_/</link>
+            <guid isPermaLink="false">sn:cds:152826379</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Noslin]]></category>
+            <category><![CDATA[Sneijder]]></category>
+            <pubDate>Wed, 25 Nov 2026 10:51:44 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/25/104757968-a328f94d-2349-4a9c-87ce-9bb982801b16.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/104757968-a328f94d-2349-4a9c-87ce-9bb982801b16.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/104757968-a328f94d-2349-4a9c-87ce-9bb982801b16.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[L&rsquo;ex trequartista dell&rsquo;Inter incensa l&rsquo;attaccante di Gattuso. E spiega perch&eacute; deve andare in nazionale]]></dcterms:alternative>
+            <dc:creator><![CDATA[Carlo Roscito]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Senza limiti]]></title>
             <description><![CDATA[L&#39;Euro Como continua a stupire: anche l&#39;AEK si &egrave; arreso ai lariani, ora terzi in classifica in Champions League]]></description>
@@ -533,23 +551,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/124200492-16d17975-74d5-46f5-9285-06e53b163775.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[L&#39;attaccante rossobl&ugrave; si &egrave; infortunato durante gli ultimi minuti della partita contro il Sassuolo: ecco il bollettino medico del club]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Batosta Vergara: lesione di alto grado, torna nel 2027]]></title>
-            <description><![CDATA[Il calciatore del Napoli si &egrave; infortunato alla coscia sinistra nel match vinto contro il Torino: il comunicato ufficiale]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/23-152782777/batosta_vergara_lesione_di_alto_grado_torna_nel_2027/</link>
-            <guid isPermaLink="false">sn:cds:152782777</guid>
-            <category><![CDATA[vergara]]></category>
-            <category><![CDATA[napoli]]></category>
-            <pubDate>Mon, 23 Nov 2026 11:57:26 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/115046749-980143fb-cd23-4329-a354-5feaef5e160c.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/115046749-980143fb-cd23-4329-a354-5feaef5e160c.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>FOTO GIANLUCA MOSCA</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/115046749-980143fb-cd23-4329-a354-5feaef5e160c.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il calciatore del Napoli si &egrave; infortunato alla coscia sinistra nel match vinto contro il Torino: il comunicato ufficiale]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

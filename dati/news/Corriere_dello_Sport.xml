@@ -5,7 +5,94 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 25 Nov 2026 07:18:07 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Nov 2026 09:03:16 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Senza limiti]]></title>
+            <description><![CDATA[L&#39;Euro Como continua a stupire: anche l&#39;AEK si &egrave; arreso ai lariani, ora terzi in classifica in Champions League]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/como/2026/11/25-152824225/senza_limiti/</link>
+            <guid isPermaLink="false">sn:cds:152824225</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Como]]></category>
+            <category><![CDATA[Champions League]]></category>
+            <pubDate>Wed, 25 Nov 2026 08:32:16 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/25/083208035-d7d4e31b-89e0-4923-b18a-650488b035fd.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/083208035-d7d4e31b-89e0-4923-b18a-650488b035fd.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/083208035-d7d4e31b-89e0-4923-b18a-650488b035fd.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[L&#39;Euro Como continua a stupire: anche l&#39;AEK si &egrave; arreso ai lariani, ora terzi in classifica in Champions League]]></dcterms:alternative>
+            <dc:creator><![CDATA[Xavier Iacobelli]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[La Fiorentina &egrave; tutta da rifare, troppi attaccanti e zero carattere: ecco i motivi della crisi&nbsp;]]></title>
+            <description><![CDATA[Dall&rsquo;assenza di Commisso ai problemi tecnici e di carattere: tutto quello che non va in casa viola&nbsp;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/fiorentina/2026/11/25-152824013/la_fiorentina_tutta_da_rifare_troppi_attaccanti_e_zero_carattere_ecco_i_motivi_della_crisi/</link>
+            <guid isPermaLink="false">sn:cds:152824013</guid>
+            <category><![CDATA[Fiorentina]]></category>
+            <category><![CDATA[vanoli]]></category>
+            <category><![CDATA[oggi]]></category>
+            <pubDate>Wed, 25 Nov 2026 08:30:00 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/25/082119528-3424adc2-d3f2-4d53-a321-69e0f8acc542.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/082119528-3424adc2-d3f2-4d53-a321-69e0f8acc542.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/082119528-3424adc2-d3f2-4d53-a321-69e0f8acc542.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Dall&rsquo;assenza di Commisso ai problemi tecnici e di carattere: tutto quello che non va in casa viola&nbsp;]]></dcterms:alternative>
+            <dc:creator><![CDATA[Alberto Polverosi ]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Cataldi via dalla Lazio: per il Bologna di Palladino &egrave; il primo nome della lista]]></title>
+            <description><![CDATA[A gennaio Sartori e Di Vaio prenderanno un mediano: la scelta sembra ricadere sul biancoceleste]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/25-152821566/cataldi_via_dalla_lazio_per_il_bologna_di_palladino_il_primo_nome_della_lista/</link>
+            <guid isPermaLink="false">sn:cds:152821566</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Cataldi]]></category>
+            <category><![CDATA[Bologna]]></category>
+            <pubDate>Wed, 25 Nov 2026 07:32:03 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/25/063057807-b004b149-504b-45c2-ad09-2a1e64444b8c.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/063057807-b004b149-504b-45c2-ad09-2a1e64444b8c.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>BARTOLETTI</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/063057807-b004b149-504b-45c2-ad09-2a1e64444b8c.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[A gennaio Sartori e Di Vaio prenderanno un mediano: la scelta sembra ricadere sul biancoceleste]]></dcterms:alternative>
+            <dc:creator><![CDATA[Claudio Beneforti]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Rinasce Largo Maradona: la fiaccolata a Napoli ai Quartieri Spagnoli]]></title>
+            <description><![CDATA[Dopo sei mesi di lavori, il taglio del nastro:: riparte un luogo simbolico per tutti i tifosi azzurri e gli amanti del calcio]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/25-152821333/rinasce_largo_maradona_la_fiaccolata_a_napoli_ai_quartieri_spagnoli/</link>
+            <guid isPermaLink="false">sn:cds:152821333</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Maradona]]></category>
+            <category><![CDATA[napoli]]></category>
+            <pubDate>Wed, 25 Nov 2026 07:25:58 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/25/053818869-091f6641-8e33-430d-8c41-0fb7e765970d.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/053818869-091f6641-8e33-430d-8c41-0fb7e765970d.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>ANSA</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/053818869-091f6641-8e33-430d-8c41-0fb7e765970d.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Dopo sei mesi di lavori, il taglio del nastro:: riparte un luogo simbolico per tutti i tifosi azzurri e gli amanti del calcio]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Woltemade bello di notte: c&rsquo;&egrave; un dato che esalta Spalletti e tutta la Juve]]></title>
+            <description><![CDATA[Domani titolare contro l&rsquo;Omonia, in Europa League gi&agrave; 3 gol e 2 assist in quattro partite: cerca la svolta]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/25-152822814/woltemade_bello_di_notte_c_un_dato_che_esalta_spalletti_e_tutta_la_juve/</link>
+            <guid isPermaLink="false">sn:cds:152822814</guid>
+            <pubDate>Wed, 25 Nov 2026 07:25:03 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/25/071737362-2526e20b-2bb7-4b44-bf15-894541da3863.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/071737362-2526e20b-2bb7-4b44-bf15-894541da3863.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Juventus FC via Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/071737362-2526e20b-2bb7-4b44-bf15-894541da3863.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Domani titolare contro l&rsquo;Omonia, in Europa League gi&agrave; 3 gol e 2 assist in quattro partite: cerca la svolta]]></dcterms:alternative>
+            <dc:creator><![CDATA[Fabrizio Patania]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Come Gattuso ha costruito l&rsquo;impresa Lazio: i colloqui con Zaccagni e Rovella e quel no al Torino]]></title>
             <description><![CDATA[<p>Il diario segreto dell&rsquo;ex ct dell&rsquo;Italia: non accett&ograve; la proposta&nbsp;di Cairo a maggio. Lotito lo aveva gi&agrave; preso nel 2019: i segnali del destino</p>
@@ -464,97 +551,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Il calciatore del Napoli si &egrave; infortunato alla coscia sinistra nel match vinto contro il Torino: il comunicato ufficiale]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[&ldquo;Mister, leva Molina&rdquo;, Gasperini non la prende bene: si gira verso il tifoso e&hellip;]]></title>
-            <description><![CDATA[L&#39;allenatore della Roma protagonista di un diverbio verso uno spettatore in tribuna al &quot;Tardini&quot;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/23-152781272/mister_leva_molina_gasperini_non_la_prende_bene_si_gira_verso_il_tifoso_e/</link>
-            <guid isPermaLink="false">sn:cds:152781272</guid>
-            <category><![CDATA[Roma]]></category>
-            <category><![CDATA[Gasperini]]></category>
-            <category><![CDATA[molina]]></category>
-            <pubDate>Mon, 23 Nov 2026 09:46:48 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/093757019-0c11ee8d-78c6-44df-b402-b2f36be57999.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/093757019-0c11ee8d-78c6-44df-b402-b2f36be57999.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/093757019-0c11ee8d-78c6-44df-b402-b2f36be57999.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&#39;allenatore della Roma protagonista di un diverbio verso uno spettatore in tribuna al &quot;Tardini&quot;]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Atalanta e Inter, su e gi&ugrave; senza equilibrio]]></title>
-            <description><![CDATA[Leggi il commento sull&#39;incredibile match della &#39;New Balance Arena&#39;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/23-152780046/atalanta_e_inter_su_e_gi_senza_equilibrio/</link>
-            <guid isPermaLink="false">sn:cds:152780046</guid>
-            <category><![CDATA[atalanta]]></category>
-            <category><![CDATA[Inter]]></category>
-            <category><![CDATA[oggi]]></category>
-            <pubDate>Mon, 23 Nov 2026 08:57:23 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/080211079-7e402c59-ee98-44b2-a161-b8ac08773c04.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/080211079-7e402c59-ee98-44b2-a161-b8ac08773c04.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/080211079-7e402c59-ee98-44b2-a161-b8ac08773c04.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Leggi il commento sull&#39;incredibile match della &#39;New Balance Arena&#39;]]></dcterms:alternative>
-            <dc:creator><![CDATA[Alberto Polverosi]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Dove vedere Monza-Fiorentina in tv? Dazn o Sky, orario]]></title>
-            <description><![CDATA[La sfida del Brianteo chiude la dodicesima giornata del campionato di Serie A: le scelte ufficiali di Juric e Vanoli]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/23-152779855/dove_vedere_monza-fiorentina_in_tv_dazn_o_sky_orario/</link>
-            <guid isPermaLink="false">sn:cds:152779855</guid>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[Monza]]></category>
-            <category><![CDATA[Fiorentina]]></category>
-            <pubDate>Mon, 23 Nov 2026 08:15:38 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/080231197-dcdd2e0f-a9d5-42a3-873b-4e444b6bc0f3.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/080231197-dcdd2e0f-a9d5-42a3-873b-4e444b6bc0f3.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/080231197-dcdd2e0f-a9d5-42a3-873b-4e444b6bc0f3.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[La sfida del Brianteo chiude la dodicesima giornata del campionato di Serie A: le scelte ufficiali di Juric e Vanoli]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Il Bologna e la mancanza del centravanti]]></title>
-            <description><![CDATA[Leggi il commento sul momento della formazione di Palladino]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/bologna/2026/11/23-152779387/il_bologna_e_la_mancanza_del_centravanti/</link>
-            <guid isPermaLink="false">sn:cds:152779387</guid>
-            <category><![CDATA[Bologna]]></category>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[palladino]]></category>
-            <pubDate>Mon, 23 Nov 2026 08:06:10 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/075555530-cf633629-97e6-402c-92fb-f010411afee1.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/075555530-cf633629-97e6-402c-92fb-f010411afee1.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>FOTO SCHICCHI</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/075555530-cf633629-97e6-402c-92fb-f010411afee1.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Leggi il commento sul momento della formazione di Palladino]]></dcterms:alternative>
-            <dc:creator><![CDATA[Bruno Bartolozzi]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[La Juve e un cerchio da chiudere]]></title>
-            <description><![CDATA[Leggi il commento sulla squadra di Spalletti, reduce dal rotondo successo sul Venezia]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/23-152778910/la_juve_e_un_cerchio_da_chiudere/</link>
-            <guid isPermaLink="false">sn:cds:152778910</guid>
-            <category><![CDATA[Juventus]]></category>
-            <category><![CDATA[Spalletti]]></category>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[koopmeiners]]></category>
-            <pubDate>Mon, 23 Nov 2026 07:48:38 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/073910692-ffc6ceaa-cf4b-45cc-a3f6-53487d2e726e.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/073910692-ffc6ceaa-cf4b-45cc-a3f6-53487d2e726e.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Juventus FC via Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/073910692-ffc6ceaa-cf4b-45cc-a3f6-53487d2e726e.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Leggi il commento sulla squadra di Spalletti, reduce dal rotondo successo sul Venezia]]></dcterms:alternative>
-            <dc:creator><![CDATA[Vittorio Oreggia]]></dc:creator>
         </item>
     </channel>
 </rss>

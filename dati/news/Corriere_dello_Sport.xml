@@ -5,7 +5,24 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 25 Nov 2026 17:07:01 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Nov 2026 18:50:27 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Sei anni senza Maradona: l&#39;omaggio emozionante dell&#39;Argentina e del Napoli]]></title>
+            <description><![CDATA[La Federcalcio di Buenos Aires lo celebra come simbolo nazionale, il Boca Juniors scrive &quot;Ci manchi, Pelu&quot;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/25-152833951/sei_anni_senza_maradona_l_omaggio_emozionante_dell_argentina_e_del_napoli/</link>
+            <guid isPermaLink="false">sn:cds:152833951</guid>
+            <category><![CDATA[Maradona]]></category>
+            <category><![CDATA[napoli]]></category>
+            <pubDate>Wed, 25 Nov 2026 17:44:29 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/25/174414731-bb103a66-6824-4f19-87a3-abee65ff9e59.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/174414731-bb103a66-6824-4f19-87a3-abee65ff9e59.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/174414731-bb103a66-6824-4f19-87a3-abee65ff9e59.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[La Federcalcio di Buenos Aires lo celebra come simbolo nazionale, il Boca Juniors scrive &quot;Ci manchi, Pelu&quot;]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Il Calendario ufficiale S.S. Lazio 2027 in edicola solo con il Corriere dello Sport-Stadio]]></title>
             <description><![CDATA[Dodici mesi di emozioni, passione e orgoglio biancoceleste. Un appuntamento imperdibile per tutti i tifosi della Lazio]]></description>
@@ -532,23 +549,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/205816711-a638c2ec-c98a-4479-bd4d-911295b2c9b7.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Il portoghese sale a undici gol nella classifica marcatori. Il Monza scavalca la Viola]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Carnesecchi si opera, che problema per Sarri: lesione del menisco per il portiere dell&#39;Atalanta&nbsp;]]></title>
-            <description><![CDATA[Stop per il portiere della Dea che dovr&agrave; finire sotto i ferri: tutti i dettagli&nbsp;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/atalanta/2026/11/23-152783878/carnesecchi_si_opera_che_problema_per_sarri_lesione_del_menisco_per_il_portiere_dell_atalanta/</link>
-            <guid isPermaLink="false">sn:cds:152783878</guid>
-            <category><![CDATA[atalanta]]></category>
-            <category><![CDATA[carnesecchi]]></category>
-            <pubDate>Mon, 23 Nov 2026 13:19:52 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/131154558-dc2fdc1c-c052-4674-9037-d1130559cc56.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/131154558-dc2fdc1c-c052-4674-9037-d1130559cc56.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/131154558-dc2fdc1c-c052-4674-9037-d1130559cc56.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Stop per il portiere della Dea che dovr&agrave; finire sotto i ferri: tutti i dettagli&nbsp;]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

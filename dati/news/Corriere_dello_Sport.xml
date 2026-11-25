@@ -5,7 +5,22 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 25 Nov 2026 15:02:12 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Nov 2026 17:07:01 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Il Calendario ufficiale S.S. Lazio 2027 in edicola solo con il Corriere dello Sport-Stadio]]></title>
+            <description><![CDATA[Dodici mesi di emozioni, passione e orgoglio biancoceleste. Un appuntamento imperdibile per tutti i tifosi della Lazio]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/25-152832958/il_calendario_ufficiale_s_s_lazio_2027_in_edicola_solo_con_il_corriere_dello_sport-stadio/</link>
+            <guid isPermaLink="false">sn:cds:152832958</guid>
+            <pubDate>Wed, 25 Nov 2026 16:36:05 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/25/162730203-0b4320bc-6dfb-49e8-8642-555707f70027.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/162730203-0b4320bc-6dfb-49e8-8642-555707f70027.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/162730203-0b4320bc-6dfb-49e8-8642-555707f70027.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Dodici mesi di emozioni, passione e orgoglio biancoceleste. Un appuntamento imperdibile per tutti i tifosi della Lazio]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Sneijder esalta Noslin: &quot;Gli dissi che avrebbe fatto strada, ora l&#39;Olanda deve convocarlo!&quot;]]></title>
             <description><![CDATA[L&rsquo;ex trequartista dell&rsquo;Inter incensa l&rsquo;attaccante di Gattuso. E spiega perch&eacute; deve andare in nazionale]]></description>
@@ -534,23 +549,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/131154558-dc2fdc1c-c052-4674-9037-d1130559cc56.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Stop per il portiere della Dea che dovr&agrave; finire sotto i ferri: tutti i dettagli&nbsp;]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Il Genoa e De Rossi perdono Colombo: lesione del crociato]]></title>
-            <description><![CDATA[L&#39;attaccante rossobl&ugrave; si &egrave; infortunato durante gli ultimi minuti della partita contro il Sassuolo: ecco il bollettino medico del club]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/genoa/2026/11/23-152783573/il_genoa_e_de_rossi_perdono_colombo_lesione_del_crociato/</link>
-            <guid isPermaLink="false">sn:cds:152783573</guid>
-            <category><![CDATA[colombo]]></category>
-            <category><![CDATA[Genoa]]></category>
-            <pubDate>Mon, 23 Nov 2026 12:45:24 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/124200492-16d17975-74d5-46f5-9285-06e53b163775.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/124200492-16d17975-74d5-46f5-9285-06e53b163775.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/124200492-16d17975-74d5-46f5-9285-06e53b163775.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&#39;attaccante rossobl&ugrave; si &egrave; infortunato durante gli ultimi minuti della partita contro il Sassuolo: ecco il bollettino medico del club]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

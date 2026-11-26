@@ -5,7 +5,45 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 26 Nov 2026 13:17:22 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Nov 2026 15:02:02 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Verifiche su presunti insulti razzisti da parte del settore ospiti a Parigi: cosa rischiano i tifosi della Roma]]></title>
+            <description><![CDATA[I media francesi accusano i supporters giallorossi di aver fatto il verso della scimmia durante la partita di Champions contro il Psg]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/26-152851687/verifiche_su_presunti_insulti_razzisti_da_parte_del_settore_ospiti_a_parigi_cosa_rischiano_i_tifosi_della_roma/</link>
+            <guid isPermaLink="false">sn:cds:152851687</guid>
+            <category><![CDATA[psg]]></category>
+            <category><![CDATA[Roma]]></category>
+            <category><![CDATA[ultras]]></category>
+            <category><![CDATA[Razzismo]]></category>
+            <pubDate>Thu, 26 Nov 2026 14:44:20 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/26/143145754-3cb3c3c1-530d-4ad0-a485-478bbb9c4cf2.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/143145754-3cb3c3c1-530d-4ad0-a485-478bbb9c4cf2.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>ANSA</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/143145754-3cb3c3c1-530d-4ad0-a485-478bbb9c4cf2.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[I media francesi accusano i supporters giallorossi di aver fatto il verso della scimmia durante la partita di Champions contro il Psg]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Il nuovo Natale di Lotito]]></title>
+            <description><![CDATA[Comunicato ufficiale della Lazio a firma del presidente biancoceleste che chiama a raccolta i tifosi per scambiarsi gli auguri in vista delle Festivit&agrave;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/26-152851569/il_nuovo_natale_di_lotito/</link>
+            <guid isPermaLink="false">sn:cds:152851569</guid>
+            <category><![CDATA[Lazio]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[Natale]]></category>
+            <category><![CDATA[Lotito]]></category>
+            <pubDate>Thu, 26 Nov 2026 14:17:11 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/26/140409708-756e84e4-b0b7-4f00-9130-d145d00af4c0.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/140409708-756e84e4-b0b7-4f00-9130-d145d00af4c0.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/140409708-756e84e4-b0b7-4f00-9130-d145d00af4c0.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Comunicato ufficiale della Lazio a firma del presidente biancoceleste che chiama a raccolta i tifosi per scambiarsi gli auguri in vista delle Festivit&agrave;]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Sport e diabete: il secondo incontro firmato Fondazione Lazio]]></title>
             <description><![CDATA[Si terr&agrave; oggi alle 18 il secondo seminario del ciclo &lsquo;Diabete in Libert&agrave; &ndash; Sport e Diabete&rsquo;, fortemente voluto dalla Fondazione Lazio ETS]]></description>
@@ -504,44 +542,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Leggi il commento sul difficile momento della squadra di Vanoli, travolta a Monza nell&#39;ultimo posticipo di Serie A]]></dcterms:alternative>
             <dc:creator><![CDATA[Alessandro Mita]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Odgaard, Piccoli e Dovbyk: a Bologna la &ldquo;legge del gol&rdquo; &egrave; dura]]></title>
-            <description><![CDATA[Da possibilit&agrave; a esigenza: &nbsp;i rossobl&ugrave; devono cercare &nbsp;un bomber sul mercato. Jens sacrificato fuori ruolo, Roberto e Artem non si sbloccano]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/bologna/2026/11/24-152798313/odgaard_piccoli_e_dovbyk_a_bologna_la_legge_del_gol_dura/</link>
-            <guid isPermaLink="false">sn:cds:152798313</guid>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[Bologna]]></category>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[odgaard]]></category>
-            <pubDate>Tue, 24 Nov 2026 09:07:44 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/085915605-c51a2db5-582d-417f-a197-0e884e570103.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/085915605-c51a2db5-582d-417f-a197-0e884e570103.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/085915605-c51a2db5-582d-417f-a197-0e884e570103.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Da possibilit&agrave; a esigenza: &nbsp;i rossobl&ugrave; devono cercare &nbsp;un bomber sul mercato. Jens sacrificato fuori ruolo, Roberto e Artem non si sbloccano]]></dcterms:alternative>
-            <dc:creator><![CDATA[Claudio Beneforti]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Il valore di un patto]]></title>
-            <description><![CDATA[Gattuso ha investito per aiutare la Lazio, ora Lotito e Fabiani hanno il compito di ripagare la seriet&agrave; del tecnico]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/24-152797755/il_valore_di_un_patto/</link>
-            <guid isPermaLink="false">sn:cds:152797755</guid>
-            <category><![CDATA[Lazio]]></category>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Gattuso]]></category>
-            <category><![CDATA[Serie A]]></category>
-            <pubDate>Tue, 24 Nov 2026 08:57:10 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/06/12/201408313-9cf889d7-8d40-4da9-bbd7-6579a392d07d.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/06/12/201408313-9cf889d7-8d40-4da9-bbd7-6579a392d07d.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/06/12/201408313-9cf889d7-8d40-4da9-bbd7-6579a392d07d.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Gattuso ha investito per aiutare la Lazio, ora Lotito e Fabiani hanno il compito di ripagare la seriet&agrave; del tecnico]]></dcterms:alternative>
-            <dc:creator><![CDATA[Stefano Chioffi]]></dc:creator>
         </item>
     </channel>
 </rss>

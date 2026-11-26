@@ -71,11 +71,14 @@ def marcatori_partita(match_id, gol_totali=None):
     ev = data.get("key_events") if isinstance(data, dict) else None
     if isinstance(ev, list):
         # formato StrikerAPI get_game: key_events [{type: "goal", player, own_goal, ...}] + players [{name, goals}]
-        gol = [e for e in ev if str(e.get("type", "")).lower() == "goal" and not e.get("shootout")]
+        gol = [e for e in ev if "goal" in str(e.get("type", "")).lower() and not e.get("shootout")
+               and str(e.get("outcome") or "goal").lower() == "goal"]
         nomi = [e.get("player") for e in gol if not e.get("own_goal") and e.get("player")]
         nomi += [p.get("name") for p in data.get("players", []) if (p.get("goals") or 0) > 0 and p.get("name")]
-        # dettaglio incompleto (scaricato troppo presto): i gol registrati non tornano col risultato finale
-        if gol_totali is not None and len(gol) < gol_totali:
+        # dettaglio incompleto (scaricato troppo presto): i gol della partita non tornano col risultato finale
+        gol_stats = sum((t.get("goals") or 0) for t in data.get("team_stats", []))
+        stato_ok = str((data.get("game") or {}).get("status", "final")).lower() in ("final", "ft", "finished", "full time")
+        if gol_totali is not None and (not stato_ok or (gol_stats < gol_totali and len(gol) < gol_totali)):
             try: os.remove(os.path.join(D, "partite", f"{match_id}.json"))     # verra' riscaricato
             except OSError: pass
             return None

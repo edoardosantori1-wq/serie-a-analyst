@@ -13,6 +13,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  issues: write
 
 concurrency:
   group: aggiorna
@@ -36,15 +37,32 @@ jobs:
           FOOTBALLDATA_KEY: ${{ secrets.FOOTBALLDATA_KEY }}
         run: |
           if [ "${{ github.event.inputs.uscita }}" = "si" ]; then python orchestra.py --uscita; else python orchestra.py; fi
+      - name: Promemoria uscita report (arriva per email)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -f dati/notifica.txt ]; then
+            gh issue create --title "Report pronto: $(head -1 dati/notifica.txt | cut -d: -f1)" --body-file dati/notifica.txt --assignee "${{ github.repository_owner }}" || true
+            rm dati/notifica.txt
+          fi
       - name: Salva i dati aggiornati nel progetto
         run: |
           git config user.name "serie-a-analyst-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add dati sito
+          git add -A dati sito
           git diff --cached --quiet || git commit -m "Aggiornamento automatico $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: sito
-      - uses: actions/deploy-pages@v4
+      - name: Pubblica il sito
+        id: pubblica
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+      - name: Attendi e riprova la pubblicazione (se GitHub non ha risposto)
+        if: steps.pubblica.outcome == 'failure'
+        run: sleep 60
+      - name: Pubblica il sito (secondo tentativo)
+        if: steps.pubblica.outcome == 'failure'
+        uses: actions/deploy-pages@v4

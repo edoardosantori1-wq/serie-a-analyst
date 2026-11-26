@@ -275,7 +275,7 @@ try:
     sched = (J("striker_schedule.json") or {}).get("data", {}).get("games", [])
     for mid, partita in da_fare:
         if mid not in finite or os.path.exists(os.path.join(D, "partite", f"{mid}.json")): continue
-        tg = STATO.setdefault("tentativi_partite", {})
+        tg = STATO.setdefault("tentativi_partite2", {})
         if tg.get(str(mid), 0) >= 4: continue                      # massimo 4 download per partita (crediti)
         tg[str(mid)] = tg.get(str(mid), 0) + 1
         h, a = partita.split("-", 1)

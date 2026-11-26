@@ -5,7 +5,26 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 26 Nov 2026 05:07:25 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Nov 2026 07:12:15 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[La mano di Gasperini]]></title>
+            <description><![CDATA[Leggi il commento del direttore del Corriere dello Sport-Stadio]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/26-152843728/la_mano_di_gasperini/</link>
+            <guid isPermaLink="false">sn:cds:152843728</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Roma]]></category>
+            <category><![CDATA[Gasperini]]></category>
+            <category><![CDATA[psg]]></category>
+            <pubDate>Thu, 26 Nov 2026 06:40:28 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/26/053303818-cc061691-a9e0-4db4-85b1-3fb3e0343e94.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/053303818-cc061691-a9e0-4db4-85b1-3fb3e0343e94.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>AS Roma via Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/053303818-cc061691-a9e0-4db4-85b1-3fb3e0343e94.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Leggi il commento del direttore del Corriere dello Sport-Stadio]]></dcterms:alternative>
+            <dc:creator><![CDATA[Ivan Zazzaroni]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Sei anni senza Maradona: l&#39;omaggio emozionante dell&#39;Argentina e del Napoli]]></title>
             <description><![CDATA[La Federcalcio di Buenos Aires lo celebra come simbolo nazionale, il Boca Juniors scrive &quot;Ci manchi, Pelu&quot;]]></description>
@@ -531,25 +550,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Partita speciale di Champions League al Parco dei Principi per il centrocampista giallorosso: tutti i dettagli]]></dcterms:alternative>
             <dc:creator><![CDATA[Giorgio Marota]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Varela &egrave; un tornado: mette a segno una doppietta. La Fiorentina parte bene, ma poi crolla]]></title>
-            <description><![CDATA[Il portoghese sale a undici gol nella classifica marcatori. Il Monza scavalca la Viola]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/23-152786514/monza-fiorentina_diretta_serie_a_juric_e_vanoli_a_caccia_di_punti_salvezza_segui_la_partita_live/</link>
-            <guid isPermaLink="false">sn:cds:152786514</guid>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[Monza]]></category>
-            <category><![CDATA[Fiorentina]]></category>
-            <category><![CDATA[liveblog]]></category>
-            <pubDate>Mon, 23 Nov 2026 18:29:29 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/23/205816711-a638c2ec-c98a-4479-bd4d-911295b2c9b7.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/205816711-a638c2ec-c98a-4479-bd4d-911295b2c9b7.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/23/205816711-a638c2ec-c98a-4479-bd4d-911295b2c9b7.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il portoghese sale a undici gol nella classifica marcatori. Il Monza scavalca la Viola]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>
 </rss>

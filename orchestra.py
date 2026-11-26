@@ -323,4 +323,5 @@ subprocess.run([sys.executable, os.path.join(BASE, "verifica.py")], check=False)
 subprocess.run([sys.executable, os.path.join(BASE, "confronto.py")], check=False)
 
 json.dump(META, open(META_P, "w"), indent=1); json.dump(STATO, open(STATO_P, "w"), indent=1)
+subprocess.run([sys.executable, os.path.join(BASE, "statistiche.py")], check=False)   # corner, tiri in porta, cartellini
 subprocess.run([sys.executable, os.path.join(BASE, "genera_sito.py")], check=False)

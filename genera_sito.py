@@ -374,6 +374,45 @@ def _vb_html():
     {righe or vuoto}
     <p class="hint">Quota giusta = quota Pinnacle senza margine, il riferimento più preciso del mercato. Si segnala solo se anche il nostro modello, che analizza le squadre, conferma che la quota conviene. Controllate alle {agg} su: {E(libri)}. Gli errori di quota durano poco: verifica la quota sul sito del bookmaker prima di giocare, e gioca solo con importi che puoi permetterti di perdere. 18+</p>'''
 VB_HTML = _vb_html()
+ST = J("statistiche.json") or {}
+def _stat_html():
+    ps = ST.get("partite") or []
+    if not ps: return '<h2 class="daytitle">Corner, tiri e cartellini</h2><p class="muted">Statistiche non ancora calcolate.</p>'
+    test = ST.get("test") or {}
+    def blocco(r, n, d):
+        # 3 linee intorno al 50%: quota giusta = Pinnacle senza margine se c'e' (corner), altrimenti il nostro modello
+        ll = sorted(d["linee"], key=lambda x: abs(x["p_over"] - 0.5))[:3]; ll.sort(key=lambda x: x["linea"])
+        righe = ""
+        for x in ll:
+            for lato, pm in (("Over", x["p_over"]), ("Under", 1 - x["p_over"])):
+                pp = x.get("p_pin"); pg = (pp if lato == "Over" else 1 - pp) if pp is not None else pm
+                fonte = f'mod. {1/pm:.2f}<br>Pin. {1/pg:.2f}' if pp is not None else "modello"
+                righe += (f'<tr data-p="{pg:.4f}"><td class="l nw2">{lato} {x["linea"]}</td><td><b>{1/pg:.2f}</b><br><small class="muted nw">{fonte}</small></td>'
+                          f'<td><input class="qin" inputmode="decimal" placeholder="quota" data-k="st|{r["id"]}|{n}|{lato}{x["linea"]}" aria-label="Tua quota"></td><td class="evc">—</td></tr>')
+        return (f'<div class="stb"><div class="sth"><b>{E(d["etichetta"])}</b><span class="muted">attesi {d["casa"]:.1f} + {d["ospite"]:.1f} = <b>{d["totale"]:.1f}</b></span></div>'
+                f'<div class="scroll"><table class="odds"><thead><tr><th>Giocata</th><th>Giusta</th><th>Tua quota</th><th>Valore</th></tr></thead><tbody>{righe}</tbody></table></div></div>')
+    carte = ""
+    for r in ps:
+        st = r["stat"]
+        carte += (f'<details class="stc"><summary>{badge(r["casa"])}{badge(r["ospite"])}<b>{E(r["casa"])} – {E(r["ospite"])}</b>'
+                  f'<span class="muted">{fts(r["inizio"])} · corner {st["corner"]["totale"]:.1f} · tiri in porta {st["tiri_porta"]["totale"]:.1f} · cartellini {st["cartellini"]["totale"]:.1f}</span></summary>'
+                  + "".join(blocco(r, n, st[n]) for n in ("corner", "tiri_porta", "cartellini") if n in st) + '</details>')
+    NOMI = {"corner": "Corner", "tiri_porta": "Tiri in porta", "cartellini": "Cartellini"}
+    def tt(n):
+        t = test.get(n) or {}; v = t.get("verifica") or {}
+        if not t: return ""
+        mig = (1 - t["logloss_modello"] / t["logloss_ingenuo"]) * 100
+        txt = f'{NOMI[n]} {mig:+.1f}% su {t["partite"]} partite passate'
+        if v: txt += f', {(1 - v["logloss_modello"] / v["logloss_ingenuo"]) * 100:+.1f}% su questa stagione'
+        return txt
+    return (f'<h2 class="daytitle">Corner, tiri in porta e cartellini · giornata {E(str(ST.get("giornata") or ""))}</h2>'
+            '<p class="hint">Apri una partita e scrivi la quota del tuo bookmaker: se il Valore è verde, la quota paga più del giusto.</p>'
+            + carte +
+            '<p class="hint">Quota giusta: per i corner è la quota Pinnacle senza margine (il riferimento più preciso), con accanto quella del nostro modello; '
+            'per tiri in porta e cartellini c\'è solo il nostro modello. Il modello stima quanti corner, tiri e cartellini ogni squadra produce e concede, '
+            'con più peso alle partite recenti. Precisione rispetto alla sola media del campionato: ' + "; ".join(tt(n) for n in NOMI) +
+            '. I cartellini dipendono molto dall\'arbitro, che non è nei dati: sono i meno affidabili. 18+</p>')
+STAT_HTML = _stat_html()
 NOMI_MERC = {"1": "1", "X": "X", "2": "2", "1X": "1X", "12": "12", "X2": "X2", "DNB1": "Draw No Bet 1", "DNB2": "Draw No Bet 2", "GG": "Goal", "NG": "No Goal"}
 def nome_merc(m):
     if m.startswith("C:"): return m[2:]
@@ -764,6 +803,8 @@ sel_opts = "".join(f'<option value="{r["id"]}">{GG[rome(r["data"]).weekday()]} {
 gtitle = f'<div class="gday"><span class="md">GIORNATA {md or "—"}</span><span>{periodo}</span></div>'
 
 CSS = """
+.nw{font-size:11px;line-height:1.25}.nw2{white-space:nowrap}.stc{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:10px 0;padding:10px 12px}.stc summary{display:flex;align-items:center;gap:8px;flex-wrap:wrap;cursor:pointer;list-style:none}.stc summary::-webkit-details-marker{display:none}.stc summary .muted{font-size:12px;width:100%}.stb{margin-top:12px}.sth{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:4px;flex-wrap:wrap}
+
 .med{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.ed{width:68px;padding:4px 6px;border-radius:8px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:inherit;font:inherit;font-size:13px}
 
 :root{--bg:#0a0d12;--bg2:#11161e;--card:#151b25;--card2:#1b2330;--line:#243042;--ink:#eef2f7;--mut:#8b97a8;--acc:#00e38c;--acc2:#ffd23f;--neg:#ff5468;--neu:#9aa6b8}
@@ -905,8 +946,8 @@ img.crest{width:30px;height:30px;object-fit:contain;vertical-align:middle;margin
 footer{margin-top:50px;color:var(--mut);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
 """
 JS = """
-const views=['news','live','giornata','analisi','triple','marcatori','value','mie','bilancio','classifica'];
-const GRUPPI={studio:['giornata','triple','marcatori','value']};
+const views=['news','live','giornata','analisi','triple','marcatori','value','stat','mie','bilancio','classifica'];
+const GRUPPI={studio:['giornata','triple','marcatori','value','stat']};
 // link con la rosa del fantacalcio (per spostarla su un altro dispositivo): #fanta=...
 function importaRosa(){if(!location.hash.startsWith('#fanta='))return false;try{const r=JSON.parse(decodeURIComponent(location.hash.slice(7)));if(Array.isArray(r)){localStorage.setItem('sa_fanta',JSON.stringify(r))}}catch(e){}history.replaceState(null,'','#fanta');return true}
 importaRosa();addEventListener('hashchange',()=>{if(importaRosa())location.reload()});
@@ -1051,7 +1092,7 @@ PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>{CSS}</style></head>
 <body><div class="wrap"><header class="hero"><div class="brand">Serie A <span>Analyst</span></div></header>
 <nav><a href="#news">News</a><a href="#live">Live</a><a href="#giornata" data-g="studio">Studio</a><a href="#analisi">Analisi</a><a href="#mie">Le mie giocate</a><a href="#bilancio">Bilancio</a><a href="#classifica">Classifica</a></nav>
-<div class="subnav" data-g="studio"><a href="#giornata">Pronostici</a><a href="#triple">Triple</a><a href="#marcatori">Marcatori</a><a href="#value">Value bet</a></div>
+<div class="subnav" data-g="studio"><a href="#giornata">Pronostici</a><a href="#triple">Triple</a><a href="#marcatori">Marcatori</a><a href="#value">Value bet</a><a href="#stat">Corner e tiri</a></div>
 
 <section class="view" id="news">{news_html}</section>
 <section class="view" id="live">{gtitle}<h2 class="daytitle">Risultati live</h2>{live_html}</section>
@@ -1062,6 +1103,7 @@ PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name
 </section>
 <section class="view" id="marcatori">{gtitle}{marc_html}</section>
 <section class="view" id="value">{gtitle}{VB_HTML}</section>
+<section class="view" id="stat">{STAT_HTML}</section>
 
 
 <section class="view" id="mie"><h2 class="daytitle">Le mie giocate</h2>

@@ -1,0 +1,131 @@
+{
+ "generato": "2026-11-26T11:28:27+00:00",
+ "stat": {
+  "corner": {
+   "xi": 0.003,
+   "k": 6.0,
+   "r": 5,
+   "linea_test": 9.5,
+   "test": {
+    "partite": 1639,
+    "logloss_modello": 0.6811,
+    "logloss_ingenuo": 0.6897
+   },
+   "verifica_stagione_corrente": {
+    "partite": 69,
+    "logloss_modello": 0.6577,
+    "logloss_ingenuo": 0.6815
+   },
+   "calibrazione": [
+    {
+     "fascia": "0-40%",
+     "partite": 626,
+     "prevista": 0.339,
+     "reale": 0.388
+    },
+    {
+     "fascia": "40-50%",
+     "partite": 660,
+     "prevista": 0.447,
+     "reale": 0.456
+    },
+    {
+     "fascia": "50-60%",
+     "partite": 340,
+     "prevista": 0.54,
+     "reale": 0.518
+    },
+    {
+     "fascia": "60-100%",
+     "partite": 82,
+     "prevista": 0.639,
+     "reale": 0.646
+    }
+   ]
+  },
+  "tiri_porta": {
+   "xi": 0.008,
+   "k": 6.0,
+   "r": 5,
+   "linea_test": 8.5,
+   "test": {
+    "partite": 1639,
+    "logloss_modello": 0.6786,
+    "logloss_ingenuo": 0.6876
+   },
+   "verifica_stagione_corrente": {
+    "partite": 69,
+    "logloss_modello": 0.6548,
+    "logloss_ingenuo": 0.6599
+   },
+   "calibrazione": [
+    {
+     "fascia": "0-40%",
+     "partite": 687,
+     "prevista": 0.329,
+     "reale": 0.377
+    },
+    {
+     "fascia": "40-50%",
+     "partite": 627,
+     "prevista": 0.448,
+     "reale": 0.467
+    },
+    {
+     "fascia": "50-60%",
+     "partite": 306,
+     "prevista": 0.541,
+     "reale": 0.52
+    },
+    {
+     "fascia": "60-100%",
+     "partite": 88,
+     "prevista": 0.656,
+     "reale": 0.739
+    }
+   ]
+  },
+  "cartellini": {
+   "xi": 0.003,
+   "k": 6.0,
+   "r": 8,
+   "linea_test": 4.5,
+   "test": {
+    "partite": 1639,
+    "logloss_modello": 0.6547,
+    "logloss_ingenuo": 0.6787
+   },
+   "verifica_stagione_corrente": {
+    "partite": 69,
+    "logloss_modello": 0.6443,
+    "logloss_ingenuo": 0.6634
+   },
+   "calibrazione": [
+    {
+     "fascia": "0-40%",
+     "partite": 665,
+     "prevista": 0.301,
+     "reale": 0.289
+    },
+    {
+     "fascia": "40-50%",
+     "partite": 517,
+     "prevista": 0.45,
+     "reale": 0.516
+    },
+    {
+     "fascia": "50-60%",
+     "partite": 353,
+     "prevista": 0.543,
+     "reale": 0.53
+    },
+    {
+     "fascia": "60-100%",
+     "partite": 173,
+     "prevista": 0.652,
+     "reale": 0.601
+    }
+   ]
+  }
+ }
+}

@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 26 Nov 2026 17:52:53 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Nov 2026 18:54:15 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Carlos Augusto rinnova con l&#39;Inter: &quot;Ripagher&ograve; la fiducia&quot;, i dettagli dell&#39;accordo]]></title>
+            <description><![CDATA[Il cursore di fascia mancina brasiliano e il club nerazzurro avanti insieme: c&#39;&egrave; la firma sul nuovo contratto]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/26-152856120/carlos_augusto_rinnova_con_l_inter_ripagher_la_fiducia_i_dettagli_dell_accordo/</link>
+            <guid isPermaLink="false">sn:cds:152856120</guid>
+            <category><![CDATA[Carlos Augusto]]></category>
+            <category><![CDATA[Inter]]></category>
+            <category><![CDATA[Rinnovo Carlos Augusto]]></category>
+            <pubDate>Thu, 26 Nov 2026 17:58:09 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/26/181407676-9210e03e-bbc2-425c-80f6-989b150afe88.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/181407676-9210e03e-bbc2-425c-80f6-989b150afe88.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/181407676-9210e03e-bbc2-425c-80f6-989b150afe88.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il cursore di fascia mancina brasiliano e il club nerazzurro avanti insieme: c&#39;&egrave; la firma sul nuovo contratto]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Fiorentina, infortunio muscolare per Viery: i dettagli sulle sue condizioni]]></title>
             <description><![CDATA[Vanoli perde un titolare a causa di una lesione al bicipite femorale per il difensore brasiliano, lo ha reso noto la societ&agrave; con un comunicato sui propri canali&nbsp;]]></description>
@@ -521,24 +539,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/094207312-1f9c80c0-0fe0-4b87-883e-48f1f08ac57b.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[L&#39;approvazione della delibera da parte della Giunta comunale &egrave; stata anticipata in un annuncio dal sindaco Lo Russo: tutti i dettagli]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Frosinone in emergenza, dopo Raimondo in attacco si ferma anche Birligea: Alvini studia una soluzione, le ipotesi]]></title>
-            <description><![CDATA[Grande occasione di mettersi in mostra per lo slovacco Bobcek, per&ograve; resta l&#39;ipotesi di un tridente leggero]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/frosinone/2026/11/24-152799154/frosinone_in_emergenza_dopo_raimondo_in_attacco_si_ferma_anche_birligea_alvini_studia_una_soluzione_le_ipotesi/</link>
-            <guid isPermaLink="false">sn:cds:152799154</guid>
-            <category><![CDATA[Frosinone]]></category>
-            <category><![CDATA[Raimondo]]></category>
-            <category><![CDATA[Birligea]]></category>
-            <pubDate>Tue, 24 Nov 2026 09:38:23 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/093634915-e24d004e-9b59-4410-b74b-2ddac9d6bc1c.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/093634915-e24d004e-9b59-4410-b74b-2ddac9d6bc1c.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>BARTOLETTI</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/093634915-e24d004e-9b59-4410-b74b-2ddac9d6bc1c.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Grande occasione di mettersi in mostra per lo slovacco Bobcek, per&ograve; resta l&#39;ipotesi di un tridente leggero]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

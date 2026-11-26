@@ -8,7 +8,7 @@
 - Sempre: rigenera il sito.
 Budget mensile stimato: OddsPapi ~1-2 richieste per giornata (limite 250), StrikerAPI ~70 crediti per giornata (limite 500).
 Le chiavi si leggono dalle variabili d'ambiente (GitHub Secrets) o dal file .env."""
-import json, os, subprocess, sys, glob
+import json, os, re, subprocess, sys, glob, time
 from datetime import datetime, timezone, timedelta
 from zoneinfo import ZoneInfo
 BASE = os.path.dirname(os.path.abspath(__file__)); D = os.path.join(BASE, "dati"); os.makedirs(D, exist_ok=True)
@@ -27,6 +27,8 @@ if STATO.get("versione") != 2:
         if os.path.exists(os.path.join(D, f)): os.remove(os.path.join(D, f))
     STATO = {"versione": 2}
     print("Storico di prova azzerato: il bilancio parte dalla prima uscita ufficiale.")
+if "--quote" in sys.argv:                      # avvio manuale "quote": riprova subito quote e modulo combo
+    STATO.pop("modulo_tentativo", None)
 
 def J(n):
     try: return json.load(open(os.path.join(D, n)))
@@ -39,8 +41,13 @@ def get(fname, url, headers=(), method="GET", body=None):
     r = subprocess.run(cmd + [url], capture_output=True, text=True); code = r.stdout.strip()
     if code == "200":
         os.replace(tmp, out); META[fname] = NOW.isoformat(timespec="seconds"); print(f"{fname:40s} OK"); return True
-    if os.path.exists(tmp): os.remove(tmp)
-    print(f"{fname:40s} ERRORE {code or r.stderr.strip()[:80]}"); return False
+    msg = ""
+    if os.path.exists(tmp):
+        try: msg = open(tmp, errors="ignore").read(300).replace("\n", " ")
+        except OSError: pass
+        os.remove(tmp)
+    msg = re.sub(r"(apiKey=)[^&\s\"]+", r"\1***", msg)
+    print(f"{fname:40s} ERRORE {code or r.stderr.strip()[:80]} {msg}"); return False
 
 FD = [f"X-Auth-Token: {ENV.get('FOOTBALLDATA_KEY','')}"]
 SH = [f"Authorization: Bearer {ENV.get('STRIKER_KEY','')}"]; SB = "https://mcp.strikerapi.com/v1"
@@ -51,7 +58,11 @@ QURL = f"{OP}/odds-by-tournaments?tournamentIds=23&bookmakers={LIBRI}&verbosity=
 QURL_BASE = f"{OP}/odds-by-tournaments?tournamentIds=23&bookmakers=eurobet.it,pinnacle&verbosity=3&apiKey={OK}"
 def quote_get():
     """Quote con tutti i bookmaker; se la richiesta allargata non va, si torna a Eurobet + Pinnacle."""
-    return get("oddspapi_quote.json", QURL) or get("oddspapi_quote.json", QURL_BASE)
+    # OddsPapi impone 1 secondo di pausa tra due richieste allo stesso endpoint (altrimenti errore 429)
+    for i, u in enumerate((QURL, QURL_BASE)):
+        if i: time.sleep(2)
+        if get("oddspapi_quote.json", u): return True
+    return False
 s = NOW.year if NOW.month >= 7 else NOW.year - 1; L = {"league": "seriea", "season": s}
 # StrikerAPI: piano gratuito 500 crediti al mese. Si tiene il conto dei crediti spesi nel mese e ci si ferma
 # prima del limite (margine di sicurezza), cosi' il sistema non resta mai senza crediti a meta' giornata.

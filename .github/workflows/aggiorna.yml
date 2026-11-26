@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       uscita:
-        description: "Forza l'uscita del report adesso (si/no)"
+        description: "si = forza l'uscita del report; quote = riprova subito le quote"
         default: "no"
 
 permissions:
@@ -36,7 +36,7 @@ jobs:
           STRIKER_KEY: ${{ secrets.STRIKER_KEY }}
           FOOTBALLDATA_KEY: ${{ secrets.FOOTBALLDATA_KEY }}
         run: |
-          if [ "${{ github.event.inputs.uscita }}" = "si" ]; then python orchestra.py --uscita; else python orchestra.py; fi
+          if [ "${{ github.event.inputs.uscita }}" = "si" ]; then python orchestra.py --uscita; elif [ "${{ github.event.inputs.uscita }}" = "quote" ]; then python orchestra.py --quote; else python orchestra.py; fi
       - name: Promemoria uscita report (arriva per email)
         env:
           GH_TOKEN: ${{ github.token }}

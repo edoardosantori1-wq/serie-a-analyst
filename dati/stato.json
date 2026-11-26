@@ -3,7 +3,7 @@
  "modulo_giornata": 13,
  "striker_crediti": {
   "mese": "2026-11",
-  "usati": 149
+  "usati": 164
  },
  "uscita_giornata": 12,
  "uscita_ora": "2026-11-20T09:04:01+00:00",
@@ -40,5 +40,10 @@
   "558521": 4,
   "558525": 4
  },
- "modulo_tentativo": "2026-11-26T10:10:35.036972+00:00"
+ "modulo_tentativo": "2026-11-26T10:10:35.036972+00:00",
+ "tentativi_partite2": {
+  "558523": 1,
+  "558521": 1,
+  "558525": 1
+ }
 }

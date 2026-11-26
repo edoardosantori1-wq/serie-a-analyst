@@ -1,13 +1,13 @@
 {
- "aggiornato": "2026-11-26T10:10:41+00:00",
+ "aggiornato": "2026-11-26T10:24:04+00:00",
  "totale": {
-  "giocate": 22,
-  "vinte": 9,
-  "perse": 13,
-  "aperte": 3,
-  "hit": 0.4091,
-  "unita": 5.93,
-  "roi": 0.2696
+  "giocate": 25,
+  "vinte": 11,
+  "perse": 14,
+  "aperte": 0,
+  "hit": 0.44,
+  "unita": 7.38,
+  "roi": 0.2953
  },
  "categorie": [
   {
@@ -57,13 +57,13 @@
   {
    "cat": "marcatore",
    "nome": "Marcatori",
-   "giocate": 1,
-   "vinte": 1,
-   "perse": 0,
-   "aperte": 3,
-   "hit": 1.0,
-   "unita": 0.75,
-   "roi": 0.75
+   "giocate": 4,
+   "vinte": 3,
+   "perse": 1,
+   "aperte": 0,
+   "hit": 0.75,
+   "unita": 2.2,
+   "roi": 0.55
   },
   {
    "cat": "singola",
@@ -146,13 +146,13 @@
  "giornate": [
   {
    "giornata": 12,
-   "giocate": 22,
-   "vinte": 9,
-   "perse": 13,
-   "aperte": 3,
-   "hit": 0.4091,
-   "unita": 5.93,
-   "roi": 0.2696
+   "giocate": 25,
+   "vinte": 11,
+   "perse": 14,
+   "aperte": 0,
+   "hit": 0.44,
+   "unita": 7.38,
+   "roi": 0.2953
   }
  ],
  "giocate": [
@@ -285,8 +285,8 @@
    "mercato": "SCORER:Gonçalo Ramos",
    "quota": 1.95,
    "p": 0.407,
-   "esito": null,
-   "profitto": null,
+   "esito": 1,
+   "profitto": 0.95,
    "inizio": "2026-11-22T17:00:00+00:00",
    "risultato": "5-1"
   },
@@ -364,8 +364,8 @@
    "mercato": "SCORER:Randal Kolo Muani",
    "quota": 2.5,
    "p": 0.342,
-   "esito": null,
-   "profitto": null,
+   "esito": 1,
+   "profitto": 1.5,
    "inizio": "2026-11-22T11:30:00+00:00",
    "risultato": "4-0"
   },
@@ -565,8 +565,8 @@
    "mercato": "SCORER:Tasos Douvikas",
    "quota": 1.92,
    "p": 0.3325,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-21T14:00:00+00:00",
    "risultato": "2-0"
   }

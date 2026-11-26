@@ -174,6 +174,24 @@ def pengwin(fin_matches):
     out.sort(key=lambda x: x["inizio"], reverse=True)
     return out
 
+def sostituti(match_id, giocatore):
+    """Marcatore Tandem+: vale anche il gol di chi e' entrato al posto del giocatore (cambi da StrikerAPI)."""
+    data = (J(os.path.join("partite", f"{match_id}.json")) or {})
+    data = data.get("data", data) if isinstance(data, dict) else {}
+    pt, out, cerca = _norm(giocatore), [], [_norm(giocatore)]
+    for e in (data.get("key_events") or []):
+        if str(e.get("type", "")).lower() == "substitution" and e.get("player2") and e.get("player"):
+            if any(c and c[-1] in _norm(e["player2"]) for c in cerca):
+                out.append(e["player"]); cerca.append(_norm(e["player"]))     # anche il sostituto del sostituto
+    return out
+
+def segnato_tandem(match_id, mercato, nomi):
+    """Vinta se ha segnato il giocatore o un suo sostituto. Palo/traversa non sono nei dati: si segnano a mano."""
+    for g in [mercato[7:]] + sostituti(match_id, mercato[7:]):
+        pt = _norm(g)
+        if any(pt and pt[-1] in _norm(n) for n in nomi): return 1
+    return 0
+
 def main():
     dbp = os.path.join(D, "storico.sqlite")
     if not os.path.exists(dbp):
@@ -186,10 +204,9 @@ def main():
     for rid, mid, mercato in db.execute("SELECT id, match_id, mercato FROM previsioni WHERE esito=0 AND mercato LIKE 'SCORER:%'").fetchall():
         if mid in fin and mid not in cl_ids:
             nomi = marcatori_partita(mid, sum(fin[mid]))
-            pt = _norm(mercato[7:])
             if nomi is None:
                 db.execute("UPDATE previsioni SET esito=NULL, profitto=NULL WHERE id=?", (rid,))      # da riverificare
-            elif any(pt and pt[-1] in _norm(n) for n in nomi):
+            elif segnato_tandem(mid, mercato, nomi):
                 db.execute("UPDATE previsioni SET esito=NULL, profitto=NULL WHERE id=?", (rid,))      # aveva segnato: si ricalcola
     for rid, mid, mercato, quota, inizio in db.execute("SELECT id, match_id, mercato, quota, inizio FROM previsioni WHERE esito IS NULL").fetchall():
         if mid not in fin: continue
@@ -200,8 +217,7 @@ def main():
         elif mercato.startswith("SCORER:"):
             nomi = marcatori_partita(mid, i + j)
             if nomi is None: continue          # dettaglio non ancora scaricato o incompleto
-            pt = _norm(mercato[7:])
-            e = int(any(pt and pt[-1] in _norm(n) for n in nomi))
+            e = segnato_tandem(mid, mercato, nomi)
         else:
             e = esito(mercato, i, j)
         if e is None and mercato in ("DNB1", "DNB2"):

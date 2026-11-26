@@ -763,6 +763,8 @@ sel_opts = "".join(f'<option value="{r["id"]}">{GG[rome(r["data"]).weekday()]} {
 gtitle = f'<div class="gday"><span class="md">GIORNATA {md or "—"}</span><span>{periodo}</span></div>'
 
 CSS = """
+.med{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.ed{width:68px;padding:4px 6px;border-radius:8px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:inherit;font:inherit;font-size:13px}
+
 :root{--bg:#0a0d12;--bg2:#11161e;--card:#151b25;--card2:#1b2330;--line:#243042;--ink:#eef2f7;--mut:#8b97a8;--acc:#00e38c;--acc2:#ffd23f;--neg:#ff5468;--neu:#9aa6b8}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(1200px 600px at 80% -10%,#10324a 0,transparent 60%),radial-gradient(900px 500px at -10% 10%,#0d3b2c 0,transparent 55%),var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,-apple-system,sans-serif}
 .wrap{max-width:1120px;margin:0 auto;padding:env(safe-area-inset-top) max(16px,env(safe-area-inset-right)) 80px max(16px,env(safe-area-inset-left))}
@@ -1028,11 +1030,13 @@ if(e===1){r=g.imp*(q-1);cls='vin';st='Vinta'}else if(e===0){r=-g.imp;cls='per';s
 gioc+=g.imp;if(r!==null)saldo+=r;
 const tit=g.multi?`Multipla (${g.legs.length})`:esc(g.t);
 const sub=g.multi?g.legs.map(l=>{const el=esitoLeg(l);return `<span class="ml ${el===1?'okc':(el===0?'koc':'')}">${esc(l.t)} · ${esc(l.s)}</span>`}).join(''):esc(g.s);
-return `<div class="bg"><div class="bgn"><b>${tit}</b><small>${sub}</small><small>${eur(g.imp)} a ${q.toFixed(2)}</small></div><button class="st ${cls}" data-i="${i}" title="Tocca per correggere">${st}${g.man!=null?' ✎':''}</button>
+return `<div class="bg"><div class="bgn"><b>${tit}</b><small>${sub}</small><small class="med"><input class="ed" type="number" inputmode="decimal" step="0.5" min="0" data-k="imp" data-i="${i}" value="${g.imp}" aria-label="Importo"> € a quota <input class="ed" type="number" inputmode="decimal" step="0.01" min="1" data-k="q" data-i="${i}" value="${(+g.q).toFixed(2)}" aria-label="Quota"></small></div><button class="st ${cls}" data-i="${i}" title="Tocca per correggere">${st}${g.man!=null?' ✎':''}</button>
 <div class="bgu ${r>0?'okc':(r<0?'koc':'muted')}">${r===null?'—':(r>0?'+':'')+eur(r)}</div><button class="fx" data-x="${i}" aria-label="Togli">×</button></div>`}).join('');
 save();
 document.getElementById('mtot').innerHTML=mie.length?`<div class="bk bk3"><div><small>Giocato</small><b>${eur(gioc)}</b></div><div><small>Saldo</small><b class="${saldo>=0?'okc':'koc'}">${saldo>=0?'+':''}${eur(saldo)}</b></div><div><small>In attesa</small><b>${eur(att)}</b></div></div>`:'';
 document.getElementById('mlist').innerHTML=rows||'<p class="muted">Non hai ancora aggiunto giocate.</p>';
+document.querySelectorAll('#mlist input.ed').forEach(n=>n.onchange=()=>{const v=parseFloat(String(n.value).replace(',','.'));const g=mie[+n.dataset.i];
+if(n.dataset.k==='q'&&v>1)g.q=v;else if(n.dataset.k==='imp'&&v>0)g.imp=v;save();draw()});
 document.querySelectorAll('#mlist .fx').forEach(b=>b.onclick=()=>{mie.splice(+b.dataset.x,1);save();draw()});
 document.querySelectorAll('#mlist button.st').forEach(b=>b.onclick=()=>{const g=mie[+b.dataset.i];const ciclo=[undefined,1,0,2];
 const k=ciclo.indexOf(g.man===null?undefined:g.man);g.man=ciclo[(k+1)%ciclo.length];if(g.man===undefined)delete g.man;save();draw()});}
@@ -1066,7 +1070,7 @@ PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name
 <div class="fmod" id="mquob"><label for="mquo">Quota multipla</label><input id="mquo" type="number" min="1" step="0.01" inputmode="decimal" class="vbin"></div></div>
 <button id="madd" class="mbtn">Aggiungi</button><div id="mmsg" class="hint"></div></div>
 <div id="mtot"></div><div id="mlist"></div>
-<p class="hint">Restano salvate su questo dispositivo e si aggiornano da sole a fine partita. Tocca l'esito per correggerlo a mano (es. Marcatore Plus vinto con il sostituto).</p></section>
+<p class="hint">Restano salvate su questo dispositivo e si aggiornano da sole a fine partita. Puoi cambiare importo e quota se hai giocato a una quota diversa. I marcatori si verificano come Tandem+ (vale anche il gol del sostituto); palo o traversa non sono nei dati: tocca l'esito per segnarla vinta a mano.</p></section>
 <section class="view" id="bilancio">{bil_html}</section>
 <section class="view" id="classifica"><div class="scroll"><table class="tbl"><thead><tr><th>#</th><th class=l>Squadra</th><th>Pt</th><th>G</th><th>V</th><th>N</th><th>P</th><th>GF</th><th>GS</th><th>DR</th><th>xG/p</th><th>xGA/p</th><th>Elo</th></tr></thead><tbody>{cl_rows}</tbody></table></div>
 </section>

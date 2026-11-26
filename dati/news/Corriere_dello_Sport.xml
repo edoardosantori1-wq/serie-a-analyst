@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 26 Nov 2026 16:01:13 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Nov 2026 17:52:53 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Fiorentina, infortunio muscolare per Viery: i dettagli sulle sue condizioni]]></title>
+            <description><![CDATA[Vanoli perde un titolare a causa di una lesione al bicipite femorale per il difensore brasiliano, lo ha reso noto la societ&agrave; con un comunicato sui propri canali&nbsp;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/fiorentina/2026/11/26-152855344/fiorentina_infortunio_muscolare_per_viery_i_dettagli_sulle_sue_condizioni/</link>
+            <guid isPermaLink="false">sn:cds:152855344</guid>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[Fiorentina]]></category>
+            <category><![CDATA[Viery]]></category>
+            <pubDate>Thu, 26 Nov 2026 17:46:18 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/26/174625865-dcc34be0-5993-4de6-8372-5adb313e556f.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/174625865-dcc34be0-5993-4de6-8372-5adb313e556f.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/174625865-dcc34be0-5993-4de6-8372-5adb313e556f.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Vanoli perde un titolare a causa di una lesione al bicipite femorale per il difensore brasiliano, lo ha reso noto la societ&agrave; con un comunicato sui propri canali&nbsp;]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Verifiche su presunti insulti razzisti da parte del settore ospiti a Parigi: cosa rischiano i tifosi della Roma]]></title>
             <description><![CDATA[I media francesi accusano i supporters giallorossi di aver fatto il verso della scimmia durante la partita di Champions contro il Psg]]></description>
@@ -522,26 +540,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Grande occasione di mettersi in mostra per lo slovacco Bobcek, per&ograve; resta l&#39;ipotesi di un tridente leggero]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Fiorentina, bisogna cambiare]]></title>
-            <description><![CDATA[Leggi il commento sul difficile momento della squadra di Vanoli, travolta a Monza nell&#39;ultimo posticipo di Serie A]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/fiorentina/2026/11/24-152798504/fiorentina_bisogna_cambiare/</link>
-            <guid isPermaLink="false">sn:cds:152798504</guid>
-            <category><![CDATA[Fiorentina]]></category>
-            <category><![CDATA[vanoli]]></category>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[Monza]]></category>
-            <category><![CDATA[oggi]]></category>
-            <pubDate>Tue, 24 Nov 2026 09:22:54 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/092027948-9c4dc458-2a87-4f0a-bfbb-00f7fea8c0c7.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/092027948-9c4dc458-2a87-4f0a-bfbb-00f7fea8c0c7.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/092027948-9c4dc458-2a87-4f0a-bfbb-00f7fea8c0c7.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Leggi il commento sul difficile momento della squadra di Vanoli, travolta a Monza nell&#39;ultimo posticipo di Serie A]]></dcterms:alternative>
-            <dc:creator><![CDATA[Alessandro Mita]]></dc:creator>
         </item>
     </channel>
 </rss>

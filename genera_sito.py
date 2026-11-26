@@ -366,12 +366,13 @@ def _vb_html():
         <div class="vbr"><div><small>Giocata</small><b>{E(x["label"])}</b></div><div><small>Dove</small><b>{E(x["book"])}</b></div>
         <div><small>Quota</small><b>{x["quota"]:.2f}</b></div><div><small>Quota giusta</small><b>{x["quota_giusta"]:.2f}</b></div>
         <div><small>Vantaggio</small><b class="okc">+{x["ev"]*100:.1f}%</b></div></div>
+        {('<div class="vba">✓✓ Doppia conferma: per il nostro modello la quota giusta è <b>' + f'{x["quota_modello"]:.2f}' + '</b> (vantaggio ' + f'{x["ev_modello"]*100:+.1f}%' + ')</div>') if x.get("quota_modello") else ''}
         <div class="vba muted">Altre quote: {" · ".join(f"{E(b)} {q:.2f}" for b, q in x["altre"].items() if b != x["book"]) or "—"}</div></div>''' for x in gs)
     vuoto = '<div class="nobet"><div class="nb">NESSUN ERRORE DI QUOTA</div><p>In questo momento nessun bookmaker italiano paga un esito più del giusto. Il controllo si ripete nei giorni delle partite.</p></div>'
     libri = ", ".join(VB.get("bookmaker") or []) or "—"
     return f'''<h2 class="daytitle">Errori di quota tra bookmaker</h2>
     {righe or vuoto}
-    <p class="hint">Quota giusta = quota Pinnacle senza margine, il riferimento più preciso del mercato. Controllate alle {agg} su: {E(libri)}. Gli errori di quota durano poco: verifica la quota sul sito del bookmaker prima di giocare, e gioca solo con importi che puoi permetterti di perdere. 18+</p>'''
+    <p class="hint">Quota giusta = quota Pinnacle senza margine, il riferimento più preciso del mercato. Si segnala solo se anche il nostro modello, che analizza le squadre, conferma che la quota conviene. Controllate alle {agg} su: {E(libri)}. Gli errori di quota durano poco: verifica la quota sul sito del bookmaker prima di giocare, e gioca solo con importi che puoi permetterti di perdere. 18+</p>'''
 VB_HTML = _vb_html()
 NOMI_MERC = {"1": "1", "X": "X", "2": "2", "1X": "1X", "12": "12", "X2": "X2", "DNB1": "Draw No Bet 1", "DNB2": "Draw No Bet 2", "GG": "Goal", "NG": "No Goal"}
 def nome_merc(m):

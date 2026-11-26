@@ -35,8 +35,11 @@ def leggi_csv(path):
     out.sort(key=lambda r: r["date"])
     return out
 
-def fit(matches, ref_date, xi=0.004, k=4.0, alpha=0.6, promoted=(), prom_prior=(0.80, 1.20), iters=60):
-    """Restituisce (mu, home, att, dif). matches: lista con date < ref_date."""
+def fit(matches, ref_date, xi=0.004, k=4.0, alpha=0.6, promoted=(), prom_prior=(0.80, 1.20), iters=60, xi_liv=0.0):
+    """Restituisce (mu, home, att, dif). matches: lista con date < ref_date.
+    xi_liv > 0: il livello medio di gol del campionato si ricalcola con un peso molto piu' rapido sulle partite
+    recenti (le forze delle squadre restano su xi). Serve quando il campionato cambia ritmo da una stagione
+    all'altra (es. 2026/27: 3,1 gol a partita contro 2,5 delle stagioni prima)."""
     teams = sorted({m["h"] for m in matches} | {m["a"] for m in matches} | set(promoted))
     prior = {t: (prom_prior if t in promoted else (1.0, 1.0)) for t in teams}
     att = {t: prior[t][0] for t in teams}; dif = {t: prior[t][1] for t in teams}
@@ -68,6 +71,12 @@ def fit(matches, ref_date, xi=0.004, k=4.0, alpha=0.6, promoted=(), prom_prior=(
         home = hn / hd if hd else 1.1
         an = sum(w * sa for w, h, a, sh, sa in W); ad = sum(w * att[a] * dif[h] for w, h, a, sh, sa in W)
         mu = an / ad if ad else mu
+    if xi_liv > 0 and W:
+        num = den = 0.0
+        for m, (w, h, a, sh, sa) in zip(matches, W):
+            w2 = math.exp(-xi_liv * (ref_date - m["date"]).days)
+            num += w2 * (sh + sa); den += w2 * mu * (home * att[h] * dif[a] + att[a] * dif[h])
+        if den > 0: mu *= num / den
     return dict(mu=mu, home=home, att=att, dif=dif)
 
 def lambdas(par, h, a):

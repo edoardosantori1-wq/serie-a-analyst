@@ -4,7 +4,9 @@
 Per ogni partita della giornata e ogni mercato principale (1X2, doppia chance, Goal/No Goal, Over/Under):
   - probabilita' "giusta" = quote Pinnacle senza margine (il bookmaker piu' preciso: non ci si gioca, fa da termometro);
   - si cerca il bookmaker italiano che paga di piu' quell'esito;
-  - e' un errore di quota (value bet) se  quota x probabilita' giusta - 1  >= 3%.
+  - e' un errore di quota (value bet) se  quota x probabilita' giusta - 1  >= 3%
+  - DOPPIA CONFERMA: anche il nostro modello (analisi delle squadre) deve dire che la quota conviene
+    (quota x probabilita' del modello >= 1). Se modello e Pinnacle non sono d'accordo, la giocata si scarta.
 Al massimo una giocata per partita (la migliore): giocate sulla stessa partita sono legate tra loro.
 Puntata suggerita: frazione di Kelly (1/4), poi divisa in proporzione sul budget che l'utente imposta nel sito.
 Ogni value bet viene registrata nello storico (tipo 'value') alla quota trovata, e verificata a fine partita.
@@ -33,7 +35,9 @@ def main():
     presenti = [BOOKS[s] for s, q in libri.items() if q]
     prossime = {(P.canon(m["homeTeam"]["name"]), P.canon(m["awayTeam"]["name"])): m
                 for m in (P.J("fdorg_prossime.json") or {}).get("matches", [])}
-    giocate = []
+    # probabilita' del nostro modello (pronostici.json della giornata, scritto da predizioni.py)
+    pmod = {(P.canon(r["casa"]), P.canon(r["ospite"])): (r.get("p") or {}) for r in (P.J("pronostici.json") or {}).get("partite", [])}
+    giocate, scartate = [], 0
     for key, pq in pin.items():
         st = inizio.get(key)
         if not st: continue
@@ -47,17 +51,21 @@ def main():
             if not offerte: continue
             book, quota = max(offerte.items(), key=lambda x: x[1])
             ev = quota * pp[k] - 1
+            pm = (pmod.get(key) or {}).get(k)
+            if ev >= EV_MIN and quota <= QUOTA_MAX and (pm is None or quota * pm < 1):
+                scartate += 1; continue                       # il modello non conferma (o manca): si scarta
             if ev >= EV_MIN and quota <= QUOTA_MAX and (not migliore or ev > migliore["ev"]):
                 kelly = (quota * pp[k] - 1) / (quota - 1)
                 migliore = dict(partita=f"{key[0]}-{key[1]}", casa=key[0], ospite=key[1],
                                 inizio=(prossime.get(key) or {}).get("utcDate") or st.replace(".000Z", "Z"), mercato=k,
                                 label=P.LABEL.get(k, k), book=book, quota=quota, p=round(pp[k], 4), ev=round(ev, 4),
                                 kelly=round(kelly * KELLY, 4), quota_giusta=round(1 / pp[k], 2),
+                                p_modello=round(pm, 4), ev_modello=round(quota * pm - 1, 4), quota_modello=round(1 / pm, 2),
                                 altre=dict(sorted(offerte.items(), key=lambda x: -x[1])[:5]),
                                 match_id=(prossime.get(key) or {}).get("id"), giornata=(prossime.get(key) or {}).get("matchday"))
         if migliore: giocate.append(migliore)
     giocate.sort(key=lambda g: g["inizio"])
-    out = dict(aggiornato=now.isoformat(timespec="seconds"), bookmaker=presenti, ev_min=EV_MIN, kelly=KELLY, giocate=giocate)
+    out = dict(aggiornato=now.isoformat(timespec="seconds"), bookmaker=presenti, ev_min=EV_MIN, kelly=KELLY, giocate=giocate, scartate_senza_conferma=scartate)
     json.dump(out, open(os.path.join(D, "valuebet.json"), "w"), ensure_ascii=False, indent=1)
     # registro nello storico (una volta sola per partita e mercato, alla prima quota trovata)
     if os.environ.get("REGISTRA", "1") != "0" and giocate:
@@ -74,7 +82,7 @@ def main():
                        (now.isoformat(timespec="seconds"), g["giornata"], g["match_id"], g["partita"], g["inizio"], g["mercato"],
                         g["quota"], g["p"], g["ev"], "value", g["book"]))
         db.commit(); db.close()
-    print(f"Value bet: {len(giocate)} trovate su {len(presenti)} bookmaker italiani con quote ({', '.join(presenti) or 'nessuno'})")
+    print(f"Value bet: {len(giocate)} con doppia conferma ({scartate} scartate perche' il modello non conferma), su {len(presenti)} bookmaker italiani con quote ({', '.join(presenti) or 'nessuno'})")
 
 if __name__ == "__main__":
     main()

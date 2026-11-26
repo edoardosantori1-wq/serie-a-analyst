@@ -328,8 +328,8 @@ def main():
     for m in storico: m["h"], m["a"] = canon(m["h"]), canon(m["a"])
     storico = [m for m in storico if m["h"] and m["a"]]
     storico.sort(key=lambda m: m["date"])
-    par1 = MD.fit(storico, now.date(), xi=PAR_1X2["xi"], k=PAR_1X2["k"], alpha=PAR_1X2["alpha"], promoted=PROMOSSE)
-    parg = MD.fit(storico, now.date(), xi=PAR_GOL["xi"], k=PAR_GOL["k"], alpha=PAR_GOL["alpha"], promoted=PROMOSSE)
+    par1 = MD.fit(storico, now.date(), xi=PAR_1X2["xi"], k=PAR_1X2["k"], alpha=PAR_1X2["alpha"], promoted=PROMOSSE, xi_liv=PAR_1X2.get("xi_liv", 0.02))
+    parg = MD.fit(storico, now.date(), xi=PAR_GOL["xi"], k=PAR_GOL["k"], alpha=PAR_GOL["alpha"], promoted=PROMOSSE, xi_liv=PAR_GOL.get("xi_liv", 0.02))
     par = parg
     Q = quote_eurobet(); PIN = quote_bookmaker("pinnacle"); out = []; MAN = quote_combo_manuali()
     for m in partite:

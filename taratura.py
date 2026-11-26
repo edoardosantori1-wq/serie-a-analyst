@@ -21,6 +21,7 @@ GRID_ALPHA = [0.0, 0.5, 0.8, 1.0]
 GRID_K = [4.0, 8.0]
 GRID_W = [0.0, 0.25, 0.5, 0.75]   # max 75%: infortuni e formazioni li conosce solo il mercato
 RHO = -0.08
+XI_LIV = 0.02   # livello gol del campionato su peso rapido (emivita ~35 giorni): corregge il cambio di ritmo 2026/27
 
 def stagioni():
     """[(nome, partite)] in ordine cronologico: storico_YYZZ.csv + fdcouk_corrente.csv (stagione in corso)."""
@@ -33,7 +34,7 @@ def stagioni():
         out.append(("corrente", MD.leggi_csv(cur)))
     return [(n, ms) for n, ms in out if ms]
 
-def previsioni(seas, xi, k, alpha):
+def previsioni(seas, xi, k, alpha, xi_liv=0.0):
     """Walk-forward settimanale. Ritorna righe con prob. modello e mercato per 1X2 e Over 2.5."""
     rows, prima = [], []
     teams_prev = set()
@@ -50,7 +51,7 @@ def previsioni(seas, xi, k, alpha):
             if wk not in cache:
                 ref = m["date"] - timedelta(days=m["date"].weekday())
                 hist = [x for x in prima + ms[:idx] if x["date"] < ref]
-                cache[wk] = MD.fit(hist, ref, xi=xi, k=k, alpha=alpha, promoted=prom, iters=30)
+                cache[wk] = MD.fit(hist, ref, xi=xi, k=k, alpha=alpha, promoted=prom, iters=30, xi_liv=xi_liv)
             lh, la = MD.lambdas(cache[wk], m["h"], m["a"])
             mk, _ = MD.mercati(MD.matrice(lh, la, RHO))
             pk = MD.no_vig([m["oH"], m["oD"], m["oA"]])
@@ -91,7 +92,7 @@ def main():
     corrente = seas[-1][0]
     ris = []
     for xi, k, alpha in itertools.product(GRID_XI, GRID_K, GRID_ALPHA):
-        rows = previsioni(seas, xi, k, alpha)
+        rows = previsioni(seas, xi, k, alpha, XI_LIV)
         tun = [r for r in rows if r["s"] != corrente]; ver = [r for r in rows if r["s"] == corrente]
         if len(tun) < 100: tun = rows          # poche stagioni: si usa tutto (segnalato nel report)
         ris.append(dict(xi=xi, k=k, alpha=alpha, rows=rows, tun=tun, ver=ver,
@@ -109,8 +110,8 @@ def main():
     out = dict(
         generato=datetime.now(timezone.utc).isoformat(timespec="seconds"),
         stagioni=[n for n, _ in seas],
-        par_1x2=dict(xi=b1["xi"], k=b1["k"], alpha=b1["alpha"]),
-        par_gol=dict(xi=bg["xi"], k=bg["k"], alpha=bg["alpha"]),
+        par_1x2=dict(xi=b1["xi"], k=b1["k"], alpha=b1["alpha"], xi_liv=XI_LIV),
+        par_gol=dict(xi=bg["xi"], k=bg["k"], alpha=bg["alpha"], xi_liv=XI_LIV),
         w_1x2=w1, w_gol=wg,
         taratura=blocco(b1["tun"], bg["tun"]),
         verifica_stagione_corrente=blocco(b1["ver"], bg["ver"]) if b1["ver"] else None,

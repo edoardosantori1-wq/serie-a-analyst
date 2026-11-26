@@ -244,7 +244,7 @@ def quote_combo_manuali():
         out[((r.get("partita") or "").strip(), (r.get("combo") or "").strip())] = (q, (r.get("rilevata") or "").strip() or mt)
     return out
 
-def scrivi_modello_combo(out, manuali, triple=None):
+def scrivi_modello_combo(out, manuali, triple=None, marcatori=None):
     if not any(r.get("selezioni") for r in out):
         print("Modulo quote combo: quote Eurobet della giornata non ancora disponibili, file lasciato com'e'"); return
     """Modulo da compilare: SOLO le combo che il sistema usa davvero (pronostico della partita + triple
@@ -258,6 +258,8 @@ def scrivi_modello_combo(out, manuali, triple=None):
         for t in g.values():
             for c in (t or {}).get("selezioni", []):
                 if c["k"].startswith("C:"): usate[(c["match"], c["k"][2:])] = c["p"]
+    for x in (marcatori or {}).get("lista", []):            # i 4 marcatori: quota Tandem+ da leggere su Eurobet
+        usate[(x["match"], f"Tandem+ {x['nome']}")] = x["p"]
     ordine = {f'{r["casa"]}-{r["ospite"]}': n for n, r in enumerate(out)}
     path = os.path.join(D, "quote_combo.csv")
     with open(path, "w", encoding="utf-8-sig", newline="") as f:
@@ -455,7 +457,7 @@ def main():
         if s["match"] in viste: continue
         viste.add(s["match"]); sing.append(s)
         if len(sing) == 5: break
-    marcatori = stima_marcatori(out, Q)
+    marcatori = stima_marcatori(out, Q, MAN)
     evitare = [dict(match=f'{r["casa"]}-{r["ospite"]}', motivi=r["avvisi"]) for r in out if r.get("avvisi")]
     res = dict(generato=now.isoformat(timespec="seconds"), giornata=md, partite=out, triple=triple, singole=sing, evitare=evitare, marcatori=marcatori,
                assenze_stato=ASSENZE_STATO, metodo=dict(modalita=MODALITA, W_1X2=W_1X2, W_GOL=W_GOL, par_1x2=PAR_1X2, par_gol=PAR_GOL, rho=RHO, backtest=BACKTEST,
@@ -484,9 +486,9 @@ def main():
         json.dump(dict(n=len(storico_cal), fattore=round(max(0.5, min(fatt, 4.0)), 3), confronti=storico_cal),
                   open(os.path.join(D, "calibrazione.json"), "w"), ensure_ascii=False, indent=1)
     if os.environ.get("SOLO_MODULO") == "1":
-        scrivi_modello_combo(out, MAN, triple); print("Modulo quote combo preparato per la giornata", md); return
+        scrivi_modello_combo(out, MAN, triple, marcatori); print("Modulo quote combo preparato per la giornata", md); return
     json.dump(res, open(os.path.join(D, "pronostici.json"), "w"), ensure_ascii=False, indent=1)
-    scrivi_modello_combo(out, MAN, triple)
+    scrivi_modello_combo(out, MAN, triple, marcatori)
     if os.environ.get("REGISTRA", "1") == "0":
         print("Avvio di prova: previsioni non registrate nello storico."); return
     try:
@@ -521,7 +523,8 @@ import unicodedata
 def _norm(s):
     s = unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode().lower().replace("-", " ").replace(".", "")
     return [t for t in s.replace(",", " ").split() if t]
-def stima_marcatori(out, Q):
+PALO = 0.18   # pali/traverse per gol segnato in Serie A (ordine di grandezza): il Tandem+ vince anche con palo o traversa
+def stima_marcatori(out, Q, man=None):
     """P(segna) = 1 - exp(-lambda). lambda = xG/90 del giocatore (ristretto verso la media del ruolo) x minuti attesi/90
     x (gol attesi della squadra in questa partita / xG medio stagionale della squadra). Minuti attesi = minuti stagionali /
     partite della squadra: incorpora rotazioni e assenze passate, NON la titolarita' di questa partita (ignota fino alle formazioni)."""
@@ -560,6 +563,12 @@ def stima_marcatori(out, Q):
                 if ass and not ass["dubbio"] and not tit: continue          # indisponibile: non puo' segnare
                 if ass and ass["dubbio"] and tit is None: mexp *= 0.5
                 lp = xg90 * mexp / 90 * fatt; pr = 1 - math.exp(-lp)
+                # Tandem+ (come lo gioca l'utente): vince se segna lui O chi entra al suo posto O se colpisce palo/traversa.
+                # Se il giocatore non scende in campo la giocata e' rimborsata: si ragiona sui minuti quando gioca.
+                mgioca = 80 if tit else (15 if tit is False else min(mins / max(p.get("games") or gteam, 1), 90))
+                sub = prior * (90 - mgioca) / 90 if mgioca >= 60 else 0.0      # il sostituto conta solo per chi parte titolare
+                lt = (xg90 * mgioca / 90 + sub) * fatt * (1 + PALO); pt_ = 1 - math.exp(-lt)
+                pgioca = 1 - math.exp(-xg90 * mgioca / 90 * fatt)     # P(segna) quando gioca: base del rapporto con la quota
                 quota = None
                 pt = _norm(p["name"]); cand_q = []
                 for n, pz in eb_raw.get((r["casa"], r["ospite"]), []):
@@ -569,9 +578,17 @@ def stima_marcatori(out, Q):
                 exact = [c for c in cand_q if c[0]]
                 if exact: quota = exact[0][1]
                 elif len(cand_q) == 1: quota = cand_q[0][1]   # cognome unico nella partita
-                righe.append(dict(nome=p["name"], squadra=team, avversario=opp, match=f'{r["casa"]}-{r["ospite"]}', mid=r["id"],
+                # quota Tandem+: inserita a mano dall'utente (modulo combo) oppure stimata dalla quota "segna sempre" Eurobet
+                # mantenendo lo stesso margine: quota_t = quota x P(segna)/P(Tandem+)
+                match = f'{r["casa"]}-{r["ospite"]}'
+                qm = (man or {}).get((match, f"Tandem+ {p['name']}"))
+                if qm: qt, fonte = qm[0], "reale"
+                elif quota: qt, fonte = round(max(1.05, quota * pgioca / pt_), 2), "stimata"
+                else: qt, fonte = None, None
+                righe.append(dict(nome=p["name"], squadra=team, avversario=opp, match=match, mid=r["id"],
                                   xg=xg, minuti=mins, partite=p["games"], xg90=round(xg90, 3), min_attesi=round(mexp), titolare=tit,
-                                  p=round(pr, 4), quota=quota, ev=round(pr*quota-1, 4) if quota else None))
+                                  p_segna=round(pr, 4), quota_segna=quota, p=round(pt_, 4), quota=qt, fonte=fonte,
+                                  ev=round(pt_*qt-1, 4) if qt else None))
     righe.sort(key=lambda x: -x["p"])
     top = []
     for x in righe:

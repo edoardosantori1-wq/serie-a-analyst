@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Costruisce sito/index.html da dati/ e dati/pronostici.json. Solo libreria standard.
 Niente stemmi ne' foto (marchi e immagini di persone reali): badge con sigla e colori sociali."""
-import json, os, csv, html, glob
+import json, os, csv, html, glob, math
 from datetime import datetime, timezone, timedelta
 from zoneinfo import ZoneInfo
 BASE = os.path.dirname(os.path.abspath(__file__)); D = os.path.join(BASE, "dati"); OUTD = os.path.join(BASE, "sito")
@@ -249,16 +249,19 @@ MC = P.get("marcatori") or {}
 if MC.get("stato") == "ok":
     sc = "".join(f'''<div class="scard" style="--c:{T(x['squadra'])['col']}">{avatar(x['nome'], x['squadra'])}<div class="sn"><b>{E(x['nome'])}{stella(x)}</b>
     <span>{badge(x['squadra'],'sm')} {E(x['squadra'])} vs {E(x['avversario'])}</span></div>
-    <div class="sp">{pc(x['p'])}<small>prob. di segnare</small></div>
-    <div class="sg"><div><small>Quota Eurobet</small><b>{f"{x['quota']:.2f}" if x['quota'] else 'NON VERIFICATA'}</b></div>
+    <div class="sp">{pc(x['p'])}<small>prob. Tandem+</small></div>
+    <div class="sg"><div><small>Quota Tandem+{' (stimata)' if x.get('fonte') == 'stimata' else ''}</small><b>{f"{x['quota']:.2f}" if x['quota'] else 'NON VERIFICATA'}</b></div>
+    <div><small>Quota giusta</small><b>{1/x['p']:.2f}</b></div>
+    <div><small>Segna (classico)</small><b>{pc(x.get('p_segna'))}{f" @ {x['quota_segna']:.2f}" if x.get('quota_segna') else ''}</b></div>
     <div><small>xG/90</small><b>{x['xg90']:.2f}</b></div><div><small>Minuti attesi</small><b>{x['min_attesi']}</b></div></div>
     </div>''' for x in MC.get("lista", []))
     cb = MC.get("combinazione")
     cbh = (f'''<div class="combo"><h3>Combinazione dei 4 marcatori</h3><div class="ttot"><div><small>Quota</small><b>{cb['quota']:.2f}</b></div>
     <div><small>Prob. congiunta</small><b>{cb['p']*100:.1f}%</b></div></div>
     <p class="small">Rischio molto alto: basta un'esclusione o un cambio a sorpresa. {'Alcuni giocatori sono nella stessa partita: eventi correlati.' if cb['stessa_partita'] else 'Quattro partite diverse.'}</p></div>''') if cb else '<p class="muted">Combinazione non calcolabile: manca almeno una quota Eurobet.</p>'
-    altri = "".join(f"<tr><td class=l>{badge(x['squadra'],'sm')} {E(x['nome'])}</td><td class=l>{E(x['avversario'])}</td><td>{x['xg90']:.2f}</td><td>{x['min_attesi']}</td><td>{pc(x['p'])}</td><td>{f2(x['quota'])}{stella(x)}</td></tr>" for x in MC.get("altri", []))
-    marc_html = f'''<div class="scards">{sc}</div>{cbh}<h3 class="sec">Altri candidati</h3><div class="scroll"><table class="tbl"><thead><tr><th class=l>Giocatore</th><th class=l>Avversario</th><th>xG/90</th><th>Min.</th><th>Prob.</th><th>Quota</th></tr></thead><tbody>{altri}</tbody></table></div>
+    altri = "".join(f"<tr><td class=l>{badge(x['squadra'],'sm')} {E(x['nome'])}</td><td class=l>{E(x['avversario'])}</td><td>{x['xg90']:.2f}</td><td>{x['min_attesi']}</td><td>{pc(x['p'])}</td><td>{1/x['p']:.2f}</td><td>{f2(x['quota'])}{'*' if x.get('fonte') == 'stimata' else ''}</td></tr>" for x in MC.get("altri", []))
+    marc_html = f'''<div class="scards">{sc}</div>{cbh}<h3 class="sec">Altri candidati</h3><div class="scroll"><table class="tbl"><thead><tr><th class=l>Giocatore</th><th class=l>Avversario</th><th>xG/90</th><th>Min.</th><th>Prob. Tandem+</th><th>Giusta</th><th>Quota</th></tr></thead><tbody>{altri}</tbody></table></div>
+    <p class="hint">Calcolati per il Marcatore Tandem+: vince se segna il giocatore, chi entra al suo posto, o se colpisce palo o traversa (se non gioca, rimborsata). Probabilità = xG del giocatore nei minuti in cui gioca + xG medio di un sostituto dello stesso ruolo nei minuti restanti, + 18% per pali e traverse (rapporto medio pali/gol, stima). * quota Tandem+ stimata dalla quota "segna" di Eurobet: quella vera la leggi tu su Eurobet (modulo calibrazione).</p>
     '''
 else:
     marc_html = f'<p class="warn">{E(MC.get("stato","dati non disponibili"))}</p>'
@@ -441,6 +444,44 @@ def nome_giocata(x):
         return x["mercato"][7:], x["desc"].replace("-", " – ")
     return x["desc"].replace("-", " – "), f'{nome_merc(x["mercato"])} · {dd}'
 STATO_TXT = {1: ("Vinta", "vin"), 0: ("Persa", "per"), 2: ("Rimborsata", "rim"), None: ("In attesa", "att")}
+def _grafico_saldo(G):
+    """Saldo cumulato in unita' (1 a giocata), in ordine di data della partita."""
+    pts = [x for x in sorted(G, key=lambda x: x.get("inizio") or "") if x["esito"] in (0, 1, 2) and x.get("profitto") is not None
+           and not x["cat"].startswith("cl_")]
+    if len(pts) < 2: return ""
+    cum, s = [], 0.0
+    for x in pts: s += x["profitto"]; cum.append(s)
+    W, H, pl, pr, pt, pb = 400, 190, 34, 8, 12, 24
+    lo, hi = min(0, min(cum)), max(0, max(cum)); hi = hi if hi > lo else lo + 1
+    X = lambda i: pl + (W - pl - pr) * i / (len(cum) - 1)
+    Y = lambda v: pt + (H - pt - pb) * (hi - v) / (hi - lo)
+    path = " ".join(f'{"M" if i == 0 else "L"}{X(i):.1f},{Y(v):.1f}' for i, v in enumerate(cum))
+    area = path + f" L{X(len(cum)-1):.1f},{Y(0):.1f} L{X(0):.1f},{Y(0):.1f} Z"
+    fine = cum[-1]; col = "var(--acc)" if fine >= 0 else "var(--neg)"
+    tick = lambda v: f'<text x="{pl-6}" y="{Y(v)+4:.1f}" text-anchor="end" class="gt">{v:+.0f}</text><line x1="{pl}" x2="{W-pr}" y1="{Y(v):.1f}" y2="{Y(v):.1f}" class="gl"/>'
+    step = max(1, round((hi - lo) / 4))
+    ticks = "".join(tick(v) for v in range(int(math.floor(lo)), int(math.ceil(hi)) + 1, step))
+    d0 = (pts[0].get("inizio") or "")[:10]; d1 = (pts[-1].get("inizio") or "")[:10]
+    dd = lambda d: f"{int(d[8:10])}/{int(d[5:7])}" if len(d) == 10 else ""
+    return f'''<div class="graf"><div class="grh"><b>Saldo nel tempo</b><span class="{"okc" if fine >= 0 else "koc"}">{fine:+.2f} unità</span></div>
+    <svg viewBox="0 0 {W} {H}" role="img" aria-label="Saldo cumulato: {fine:+.2f} unità dopo {len(cum)} giocate">{ticks}
+    <line x1="{pl}" x2="{W-pr}" y1="{Y(0):.1f}" y2="{Y(0):.1f}" class="g0"/><path d="{area}" fill="{col}" opacity=".12"/>
+    <path d="{path}" fill="none" stroke="{col}" stroke-width="2.5" stroke-linejoin="round"/>
+    <circle cx="{X(len(cum)-1):.1f}" cy="{Y(fine):.1f}" r="4" fill="{col}"/>
+    <text x="{pl}" y="{H-4}" class="gt">{dd(d0)}</text><text x="{W-pr}" y="{H-4}" text-anchor="end" class="gt">{dd(d1)} · {len(cum)} giocate</text></svg></div>'''
+def _rendimento(cats):
+    rr = [c for c in cats if c["giocate"] and not c["cat"].startswith("cl_")]
+    if not rr: return ""
+    righe = "".join(f'''<tr><td class=l>{E(c["nome"])}</td><td>{c["giocate"]}</td><td>{c["vinte"]}/{c["vinte"]+c["perse"]}</td>
+    <td class="{"okc" if c["unita"] >= 0 else "koc"}"><b>{c["unita"]:+.2f}</b></td><td>{"—" if c["roi"] is None else f"{c['roi']*100:+.0f}%"}</td></tr>''' for c in rr)
+    return f'''<h3 class="sec">Rendimento per tipo</h3><div class="scroll"><table class="tbl"><thead><tr><th class=l>Tipo</th><th>Giocate</th><th>Vinte</th><th>Unità</th><th>Resa</th></tr></thead><tbody>{righe}</tbody></table></div>'''
+def _clv(c):
+    if not c or not c.get("n"): return ""
+    if c.get("battute", 0) == 0 and c.get("peggiori", 0) == 0:
+        txt = "Misura attiva dalla giornata 13 (prima le quote di chiusura non erano disponibili)."
+    else:
+        txt = f'Abbiamo preso una quota migliore di quella finale in <b>{c["battute"]}</b> giocate su {c["n"]}, peggiore in {c["peggiori"]} (in media {c["medio"]*100:+.1f}%).'
+    return f'''<div class="clvb"><b>Battiamo la chiusura?</b><p>{txt}</p><small class="muted">È il test più serio del valore: se nel tempo le nostre quote sono migliori di quelle finali prima del fischio d'inizio, stiamo trovando valore vero, indipendentemente dalla fortuna dei singoli risultati.</small></div>'''
 def riepilogo_html(lst):
     chiuse = [x for x in lst if x["esito"] in (0, 1)]; v = sum(1 for x in chiuse if x["esito"] == 1)
     u = sum(x["profitto"] or 0 for x in lst if x["esito"] in (0, 1, 2))
@@ -466,7 +507,8 @@ if BIL.get("giocate"):
     <div class="bk"><div><small>Vinte</small><b class="okc">{T_.get("vinte", 0)}</b></div><div><small>Perse</small><b class="koc">{T_.get("perse", 0)}</b></div>
     <div><small>Unità (1 a giocata)</small><b class="{uc_t}">{(T_.get("unita") or 0):+.2f}</b></div>
     <div><small>In attesa</small><b>{T_.get("aperte", 0)}</b></div></div>
-    <div class="btabs">{tabs}</div>{pann}
+    {_grafico_saldo(G)}{_clv(BIL.get("clv"))}{_rendimento(BIL.get("categorie") or [])}
+    <h3 class="sec">Tutte le giocate</h3><div class="btabs">{tabs}</div>{pann}
     <p class="hint">Unità: si punta idealmente 1 su ogni giocata (una tripla conta come una giocata). Vinta = quota − 1, persa = −1.</p>'''
 else:
     bil_html = '<div class="nobet"><div class="nb">IN ATTESA</div>Il bilancio parte con la prima giornata giocata dopo l\'uscita del report.</div>'
@@ -803,6 +845,8 @@ sel_opts = "".join(f'<option value="{r["id"]}">{GG[rome(r["data"]).weekday()]} {
 gtitle = f'<div class="gday"><span class="md">GIORNATA {md or "—"}</span><span>{periodo}</span></div>'
 
 CSS = """
+.graf{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;margin:14px 0}.graf svg{width:100%;height:auto;display:block}.grh{display:flex;justify-content:space-between;margin-bottom:6px}.gt{fill:var(--mut);font:12px Inter}.gl{stroke:var(--line);stroke-width:1}.g0{stroke:var(--mut);stroke-width:1;stroke-dasharray:3 3}.clvb{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;margin:14px 0}.clvb p{margin:6px 0}
+
 .nw{font-size:11px;line-height:1.25}.nw2{white-space:nowrap}.stc{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:10px 0;padding:10px 12px}.stc summary{display:flex;align-items:center;gap:8px;flex-wrap:wrap;cursor:pointer;list-style:none}.stc summary::-webkit-details-marker{display:none}.stc summary .muted{font-size:12px;width:100%}.stb{margin-top:12px}.sth{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:4px;flex-wrap:wrap}
 
 .med{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.ed{width:68px;padding:4px 6px;border-radius:8px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:inherit;font:inherit;font-size:13px}

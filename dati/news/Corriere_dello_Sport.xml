@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 26 Nov 2026 12:07:35 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Nov 2026 12:14:09 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Sport e diabete: il secondo incontro firmato Fondazione Lazio]]></title>
+            <description><![CDATA[Si terr&agrave; oggi alle 18 il secondo seminario del ciclo &lsquo;Diabete in Libert&agrave; &ndash; Sport e Diabete&rsquo;, fortemente voluto dalla Fondazione Lazio ETS]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/26-152850842/sport_e_diabete_il_secondo_incontro_firmato_fondazione_lazio/</link>
+            <guid isPermaLink="false">sn:cds:152850842</guid>
+            <category><![CDATA[sport e diabete]]></category>
+            <category><![CDATA[fondazione lazio]]></category>
+            <category><![CDATA[Zverev]]></category>
+            <pubDate>Thu, 26 Nov 2026 12:10:38 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/26/120529184-f6944237-e271-41c5-93ea-f39c1d0d48b7.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/120529184-f6944237-e271-41c5-93ea-f39c1d0d48b7.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/120529184-f6944237-e271-41c5-93ea-f39c1d0d48b7.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Si terr&agrave; oggi alle 18 il secondo seminario del ciclo &lsquo;Diabete in Libert&agrave; &ndash; Sport e Diabete&rsquo;, fortemente voluto dalla Fondazione Lazio ETS]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Serie A, gli arbitri della 13a giornata: c&#39;&egrave; Mariani per Como-Juve, Roma-Monza a Collu]]></title>
             <description><![CDATA[Ufficiali le designazioni arbitrali in vista del prossimo weekend: c&#39;&egrave; Guida di Torre Annunziata per Sassuolo-Napoli]]></description>
@@ -524,24 +542,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Gattuso ha investito per aiutare la Lazio, ora Lotito e Fabiani hanno il compito di ripagare la seriet&agrave; del tecnico]]></dcterms:alternative>
             <dc:creator><![CDATA[Stefano Chioffi]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[I numeri del Milan sono da Champions: ecco la media di Amorim dopo 12 giornate di Serie A]]></title>
-            <description><![CDATA[Ventisette punti nelle prime dodici, l&rsquo;allenatore portoghese sta battendo diversi suoi predecessori]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/milan/2026/11/24-152797660/i_numeri_del_milan_sono_da_champions_ecco_la_media_di_amorim_dopo_12_giornate_di_serie_a/</link>
-            <guid isPermaLink="false">sn:cds:152797660</guid>
-            <category><![CDATA[Amorim]]></category>
-            <category><![CDATA[Milan]]></category>
-            <category><![CDATA[oggi]]></category>
-            <pubDate>Tue, 24 Nov 2026 08:56:41 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/085051969-8c5de84e-4941-4d41-84a6-f0a56c2d59a3.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/085051969-8c5de84e-4941-4d41-84a6-f0a56c2d59a3.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/085051969-8c5de84e-4941-4d41-84a6-f0a56c2d59a3.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Ventisette punti nelle prime dodici, l&rsquo;allenatore portoghese sta battendo diversi suoi predecessori]]></dcterms:alternative>
-            <dc:creator><![CDATA[Antonello Gioia]]></dc:creator>
         </item>
     </channel>
 </rss>

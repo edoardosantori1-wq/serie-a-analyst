@@ -43,7 +43,7 @@ def get(fname, url, headers=(), method="GET", body=None):
         os.replace(tmp, out); META[fname] = NOW.isoformat(timespec="seconds"); print(f"{fname:40s} OK"); return True
     msg = ""
     if os.path.exists(tmp):
-        try: msg = open(tmp, errors="ignore").read(300).replace("\n", " ")
+        try: msg = open(tmp, errors="ignore").read(200).replace("\n", " ")
         except OSError: pass
         os.remove(tmp)
     msg = re.sub(r"(apiKey=)[^&\s\"]+", r"\1***", msg)

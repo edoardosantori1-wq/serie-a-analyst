@@ -845,6 +845,8 @@ sel_opts = "".join(f'<option value="{r["id"]}">{GG[rome(r["data"]).weekday()]} {
 gtitle = f'<div class="gday"><span class="md">GIORNATA {md or "—"}</span><span>{periodo}</span></div>'
 
 CSS = """
+.mexp{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:14px}
+
 .graf{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;margin:14px 0}.graf svg{width:100%;height:auto;display:block}.grh{display:flex;justify-content:space-between;margin-bottom:6px}.gt{fill:var(--mut);font:12px Inter}.gl{stroke:var(--line);stroke-width:1}.g0{stroke:var(--mut);stroke-width:1;stroke-dasharray:3 3}.clvb{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;margin:14px 0}.clvb p{margin:6px 0}
 
 .nw{font-size:11px;line-height:1.25}.nw2{white-space:nowrap}.stc{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:10px 0;padding:10px 12px}.stc summary{display:flex;align-items:center;gap:8px;flex-wrap:wrap;cursor:pointer;list-style:none}.stc summary::-webkit-details-marker{display:none}.stc summary .muted{font-size:12px;width:100%}.stb{margin-top:12px}.sth{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:4px;flex-wrap:wrap}
@@ -1083,6 +1085,10 @@ att.forEach(x=>{const s=Math.floor(x.s*2)/2;x.el.querySelector('.vbs').textConte
 inp.addEventListener('input',calc);calc();})();
 document.querySelectorAll('.btab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.btab').forEach(x=>x.classList.toggle('on',x===b));
 document.querySelectorAll('.bpan').forEach(p=>p.classList.toggle('on',p.dataset.b===b.dataset.b));});
+(function(){if(!location.hash.startsWith('#mieimp='))return;try{const nuove=JSON.parse(decodeURIComponent(escape(atob(location.hash.slice(8)))));
+let cur=[];try{cur=JSON.parse(localStorage.getItem('sa_mie')||'[]')}catch(e){}const visti=new Set(cur.map(x=>JSON.stringify(x)));
+let n=0;if(Array.isArray(nuove))nuove.forEach(x=>{const k=JSON.stringify(x);if(!visti.has(k)){cur.push(x);visti.add(k);n++}});
+localStorage.setItem('sa_mie',JSON.stringify(cur));sessionStorage.setItem('sa_imp',String(n))}catch(e){}history.replaceState(null,'','#mie');show()})();
 (function(){const box=document.getElementById('mpick');if(!box||typeof MIE==='undefined')return;
 const GN={pron:'Pronostici',tri:'Triple',marc:'Marcatori',vb:'Value bet'};const BY={};MIE.forEach(x=>BY[x.id]=x);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -1127,6 +1133,12 @@ document.querySelectorAll('#mlist .fx').forEach(b=>b.onclick=()=>{mie.splice(+b.
 document.querySelectorAll('#mlist button.st').forEach(b=>b.onclick=()=>{const g=mie[+b.dataset.i];const ciclo=[undefined,1,0,2];
 const k=ciclo.indexOf(g.man===null?undefined:g.man);g.man=ciclo[(k+1)%ciclo.length];if(g.man===undefined)delete g.man;save();draw()});}
 draw();})();
+(function(){const b=document.getElementById('mexp');if(!b)return;const m=document.getElementById('mexpm');
+const n=sessionStorage.getItem('sa_imp');if(n!==null){m.textContent=n+' giocate importate.';sessionStorage.removeItem('sa_imp')}
+b.onclick=async()=>{let d='[]';try{d=localStorage.getItem('sa_mie')||'[]'}catch(e){}
+const url=location.href.split('#')[0]+'#mieimp='+btoa(unescape(encodeURIComponent(d)));
+try{await navigator.clipboard.writeText(url);m.textContent='Link copiato: aprilo sull\u2019altro telefono o computer e le giocate si aggiungono.'}
+catch(e){prompt('Copia questo link e aprilo sull\u2019altro dispositivo:',url)}}})();
 """
 gen = datetime.now(timezone.utc).isoformat()
 PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -1157,6 +1169,7 @@ PAGE = f"""<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name
 <div class="fmod" id="mquob"><label for="mquo">Quota multipla</label><input id="mquo" type="number" min="1" step="0.01" inputmode="decimal" class="vbin"></div></div>
 <button id="madd" class="mbtn">Aggiungi</button><div id="mmsg" class="hint"></div></div>
 <div id="mtot"></div><div id="mlist"></div>
+<div class="mexp"><button id="mexp" class="btab">Copia link per un altro dispositivo</button><span id="mexpm" class="hint"></span></div>
 <p class="hint">Restano salvate su questo dispositivo e si aggiornano da sole a fine partita. Puoi cambiare importo e quota se hai giocato a una quota diversa. I marcatori si verificano come Tandem+ (vale anche il gol del sostituto); palo o traversa non sono nei dati: tocca l'esito per segnarla vinta a mano.</p></section>
 <section class="view" id="bilancio">{bil_html}</section>
 <section class="view" id="classifica"><div class="scroll"><table class="tbl"><thead><tr><th>#</th><th class=l>Squadra</th><th>Pt</th><th>G</th><th>V</th><th>N</th><th>P</th><th>GF</th><th>GS</th><th>DR</th><th>xG/p</th><th>xGA/p</th><th>Elo</th></tr></thead><tbody>{cl_rows}</tbody></table></div>

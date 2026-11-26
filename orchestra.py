@@ -53,16 +53,41 @@ FD = [f"X-Auth-Token: {ENV.get('FOOTBALLDATA_KEY','')}"]
 SH = [f"Authorization: Bearer {ENV.get('STRIKER_KEY','')}"]; SB = "https://mcp.strikerapi.com/v1"
 OK = ENV.get("ODDSPAPI_KEY", ""); OP = "https://api.oddspapi.io/v4"
 # quote: Eurobet + Pinnacle (riferimento) + bookmaker italiani ADM per le value bet. Una sola richiesta per tutti.
-LIBRI = "eurobet.it,pinnacle,sisal.it,snai.it,goldbet.it,lottomatica.it,bet365.it,betflag.it,planetwin365.it,admiralbet.it,netbet.it,888sport.it,pokerstars.it,leovegas.it,quigioco.it"
-QURL = f"{OP}/odds-by-tournaments?tournamentIds=23&bookmakers={LIBRI}&verbosity=3&apiKey={OK}"
-QURL_BASE = f"{OP}/odds-by-tournaments?tournamentIds=23&bookmakers=eurobet.it,pinnacle&verbosity=3&apiKey={OK}"
-def quote_get():
-    """Quote con tutti i bookmaker; se la richiesta allargata non va, si torna a Eurobet + Pinnacle."""
-    # OddsPapi impone 1 secondo di pausa tra due richieste allo stesso endpoint (altrimenti errore 429)
-    for i, u in enumerate((QURL, QURL_BASE)):
-        if i: time.sleep(2)
-        if get("oddspapi_quote.json", u): return True
-    return False
+# OddsPapi (dal 18/11/2026) accetta UN SOLO bookmaker per richiesta (parametro "bookmaker").
+# Piano gratuito 250 richieste/mese: Eurobet + Pinnacle sempre; i 5 principali book italiani ADM
+# (per le value bet) solo all'uscita del report e al controllo delle 10 nei giorni di partita.
+LIBRI_BASE = ["eurobet.it", "pinnacle"]
+LIBRI_VB = ["sisal.it", "snai.it", "goldbet.it", "lottomatica.it", "bet365.it"]
+def quote_get(completo=False):
+    """Scarica le quote libro per libro e le unisce in oddspapi_quote.json (stesso formato di prima)."""
+    cont = STATO.setdefault("oddspapi_richieste", {"mese": "", "usate": 0})
+    if cont["mese"] != NOW.strftime("%Y-%m"): cont.update(mese=NOW.strftime("%Y-%m"), usate=0)
+    libri = LIBRI_BASE + (LIBRI_VB if completo else [])
+    if cont["usate"] + len(libri) > 240: libri = LIBRI_BASE          # vicino al limite mensile: solo Eurobet + Pinnacle
+    if cont["usate"] + len(libri) > 245:
+        print("OddsPapi: limite mensile quasi raggiunto, quote non scaricate"); return False
+    # si parte dalle quote gia' salvate (partite non ancora iniziate), cosi' i libri non riscaricati restano
+    limite = (NOW - timedelta(hours=3)).isoformat()
+    uniti = {fx["fixtureId"]: fx for fx in (J("oddspapi_quote.json") or [])
+             if isinstance(fx, dict) and str(fx.get("startTime", "")).replace("Z", "+00:00") >= limite}
+    ok_eurobet = False
+    for i, lib in enumerate(libri):
+        if i: time.sleep(1.5)                  # pausa minima di 1 secondo tra richieste allo stesso endpoint
+        cont["usate"] += 1
+        f = f"oddspapi_libro_{lib}.json"
+        if not get(f, f"{OP}/odds-by-tournaments?tournamentIds=23&bookmaker={lib}&verbosity=3&apiKey={OK}"): continue
+        ok_eurobet |= lib == "eurobet.it"
+        for fx in (J(f) or []):
+            u = uniti.setdefault(fx["fixtureId"], dict(fx, bookmakerOdds={}))
+            u.setdefault("bookmakerOdds", {})
+            u["bookmakerOdds"].update(fx.get("bookmakerOdds") or {})
+        try: os.remove(os.path.join(D, f)); META.pop(f, None)
+        except OSError: pass
+    if not ok_eurobet: return False            # senza Eurobet si tengono le quote precedenti
+    json.dump(list(uniti.values()), open(os.path.join(D, "oddspapi_quote.json"), "w"))
+    META["oddspapi_quote.json"] = NOW.isoformat(timespec="seconds")
+    print(f"oddspapi_quote.json: {len(uniti)} partite, libri {sorted({k for x in uniti.values() for k in x['bookmakerOdds']})}")
+    return True
 s = NOW.year if NOW.month >= 7 else NOW.year - 1; L = {"league": "seriea", "season": s}
 # StrikerAPI: piano gratuito 500 crediti al mese. Si tiene il conto dei crediti spesi nel mese e ci si ferma
 # prima del limite (margine di sicurezza), cosi' il sistema non resta mai senza crediti a meta' giornata.
@@ -126,7 +151,7 @@ if fare_uscita:
     get("fdorg_coppe.json", f"https://api.football-data.org/v4/matches?competitions=CL&dateFrom={d1}&dateTo={d2}", FD)
     if not os.path.exists(os.path.join(D, "oddspapi_mercati.json")):
         get("oddspapi_mercati.json", f"{OP}/markets?sportId=10&apiKey={OK}")
-    quote_get()
+    quote_get(completo=True)
     if not os.path.exists(os.path.join(D, "striker_teams.json")): sget("striker_teams.json", "list_teams", L)
     sget("striker_team_stats.json", "get_team_stats", L)
     sget("striker_elo.json", "get_ratings", L)
@@ -205,12 +230,12 @@ for o_ in orari:
         fatte.add(o_); STATO["chiusure"] = sorted(fatte)[-40:]
         break
 
-# 3d) value bet: nei giorni con partite, un controllo delle quote alle 10 del mattino (1 richiesta OddsPapi)
+# 3d) value bet: nei giorni con partite, un controllo delle quote alle 10 del mattino (7 richieste OddsPapi)
 oggi = NOW.astimezone(ROME).date().isoformat()
 giorni_partita = {datetime.fromisoformat(m["utcDate"].replace("Z", "+00:00")).astimezone(ROME).date().isoformat() for m in giornata}
 if (STATO.get("uscita_giornata") == md and oggi in giorni_partita and NOW.astimezone(ROME).hour >= 10
         and oggi not in STATO.get("vb_giorni", [])):
-    quote_get()
+    quote_get(completo=True)
     subprocess.run([sys.executable, os.path.join(BASE, "valore.py")], check=False)
     STATO["vb_giorni"] = (STATO.get("vb_giorni", []) + [oggi])[-20:]
 

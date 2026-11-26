@@ -59,7 +59,7 @@ get("fdorg_coppe.json", f"https://api.football-data.org/v4/matches?competitions=
 OK = ENV.get("ODDSPAPI_KEY", ""); OP = "https://api.oddspapi.io/v4"
 if not os.path.exists(os.path.join(D, "oddspapi_mercati.json")):
     get("oddspapi_mercati.json", f"{OP}/markets?sportId=10&apiKey={OK}")
-get("oddspapi_quote.json", f"{OP}/odds-by-tournaments?tournamentIds=23&bookmakers=eurobet.it&verbosity=3&apiKey={OK}", cache_ore=3)
+get("oddspapi_quote.json", f"{OP}/odds-by-tournaments?tournamentIds=23&bookmaker=eurobet.it&verbosity=3&apiKey={OK}", cache_ore=3)
 
 SH = [f"Authorization: Bearer {ENV.get('STRIKER_KEY','')}"]; SB = "https://mcp.strikerapi.com/v1"
 L = {"league": "seriea", "season": s}

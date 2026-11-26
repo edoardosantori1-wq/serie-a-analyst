@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 26 Nov 2026 08:58:19 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Nov 2026 10:06:02 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Qualcosa &egrave; cambiato]]></title>
+            <description><![CDATA[Leggi il commento sul momento del Napoli dopo l&#39;ottima prestazione di Manchester in Champions League]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/26-152847218/qualcosa_cambiato/</link>
+            <guid isPermaLink="false">sn:cds:152847218</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[napoli]]></category>
+            <category><![CDATA[Allegri]]></category>
+            <pubDate>Thu, 26 Nov 2026 09:15:00 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/26/090808930-c364e043-8384-46de-88cb-ad3333998307.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/090808930-c364e043-8384-46de-88cb-ad3333998307.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>EPA</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/090808930-c364e043-8384-46de-88cb-ad3333998307.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Leggi il commento sul momento del Napoli dopo l&#39;ottima prestazione di Manchester in Champions League]]></dcterms:alternative>
+            <dc:creator><![CDATA[Massimiliano Gallo]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Sirene inglesi su Mendy: l&#39;Everton pensa all&#39;attaccante del Cagliari per l&#39;anno prossimo]]></title>
             <description><![CDATA[Il diciannovenne ha stregato Moyes che per&ograve; dovr&agrave; battere la concorrenza anche di club italiani]]></description>
@@ -525,24 +543,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Va bene l&#39;inno &quot;Pazza Inter amala&quot;, ma ora i nerazzurri stanno esagerando: passano da uno stato di schizofrenia a un altro]]></dcterms:alternative>
             <dc:creator><![CDATA[Alberto Polverosi]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Sorloth, Scamacca, Balogun e Varela: la lista dei potenziali nuovi centravanti della Juve]]></title>
-            <description><![CDATA[Il dilemma di luglio &egrave; lo stesso rilanciato da Spalletti: chiede una vera prima punta]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/24-152796211/sorloth_scamacca_balogun_e_varela_la_lista_dei_potenziali_nuovi_centravanti_della_juve/</link>
-            <guid isPermaLink="false">sn:cds:152796211</guid>
-            <category><![CDATA[Juventus]]></category>
-            <category><![CDATA[Spalletti]]></category>
-            <category><![CDATA[oggi]]></category>
-            <pubDate>Tue, 24 Nov 2026 07:48:03 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/074534467-085e7c13-cd9b-4511-9895-4dbad5735661.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/074534467-085e7c13-cd9b-4511-9895-4dbad5735661.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/074534467-085e7c13-cd9b-4511-9895-4dbad5735661.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il dilemma di luglio &egrave; lo stesso rilanciato da Spalletti: chiede una vera prima punta]]></dcterms:alternative>
-            <dc:creator><![CDATA[ Fabrizio Patania ]]></dc:creator>
         </item>
     </channel>
 </rss>

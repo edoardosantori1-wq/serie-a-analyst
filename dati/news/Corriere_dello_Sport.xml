@@ -5,7 +5,24 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 26 Nov 2026 11:24:37 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Nov 2026 11:53:19 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Serie A, gli arbitri della 13a giornata: c&#39;&egrave; Mariani per Como-Juve, Roma-Monza a Collu]]></title>
+            <description><![CDATA[Ufficiali le designazioni arbitrali in vista del prossimo weekend: c&#39;&egrave; Guida di Torre Annunziata per Sassuolo-Napoli]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/26-152850034/serie_a_gli_arbitri_della_13a_giornata_c_mariani_per_como-juve_roma-monza_a_collu/</link>
+            <guid isPermaLink="false">sn:cds:152850034</guid>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[Arbitri]]></category>
+            <pubDate>Thu, 26 Nov 2026 11:27:53 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/26/112120834-c623a0fe-c878-4200-9185-4bd89a0b8012.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/112120834-c623a0fe-c878-4200-9185-4bd89a0b8012.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>FOTO SCHICCHI</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/112120834-c623a0fe-c878-4200-9185-4bd89a0b8012.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Ufficiali le designazioni arbitrali in vista del prossimo weekend: c&#39;&egrave; Guida di Torre Annunziata per Sassuolo-Napoli]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Qualcosa &egrave; cambiato]]></title>
             <description><![CDATA[Leggi il commento sul momento del Napoli dopo l&#39;ottima prestazione di Manchester in Champions League]]></description>
@@ -525,24 +542,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Ventisette punti nelle prime dodici, l&rsquo;allenatore portoghese sta battendo diversi suoi predecessori]]></dcterms:alternative>
             <dc:creator><![CDATA[Antonello Gioia]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Il muro del rimpianto]]></title>
-            <description><![CDATA[Va bene l&#39;inno &quot;Pazza Inter amala&quot;, ma ora i nerazzurri stanno esagerando: passano da uno stato di schizofrenia a un altro]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/24-152797656/il_muro_del_rimpianto/</link>
-            <guid isPermaLink="false">sn:cds:152797656</guid>
-            <category><![CDATA[Inter]]></category>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Serie A]]></category>
-            <pubDate>Tue, 24 Nov 2026 08:45:17 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/084506494-21a79aa8-ad02-4c7b-bd92-ce09dcf02554.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/084506494-21a79aa8-ad02-4c7b-bd92-ce09dcf02554.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/084506494-21a79aa8-ad02-4c7b-bd92-ce09dcf02554.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Va bene l&#39;inno &quot;Pazza Inter amala&quot;, ma ora i nerazzurri stanno esagerando: passano da uno stato di schizofrenia a un altro]]></dcterms:alternative>
-            <dc:creator><![CDATA[Alberto Polverosi]]></dc:creator>
         </item>
     </channel>
 </rss>

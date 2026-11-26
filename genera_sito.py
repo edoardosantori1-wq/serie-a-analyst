@@ -2,7 +2,7 @@
 """Costruisce sito/index.html da dati/ e dati/pronostici.json. Solo libreria standard.
 Niente stemmi ne' foto (marchi e immagini di persone reali): badge con sigla e colori sociali."""
 import json, os, csv, html, glob
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from zoneinfo import ZoneInfo
 BASE = os.path.dirname(os.path.abspath(__file__)); D = os.path.join(BASE, "dati"); OUTD = os.path.join(BASE, "sito")
 os.makedirs(OUTD, exist_ok=True); ROME = ZoneInfo("Europe/Rome"); E = html.escape
@@ -470,7 +470,18 @@ SOFA = {}
 for fx in (J("oddspapi_quote.json") or []):
     sid = (fx.get("externalProviders") or {}).get("sofascoreId")
     if sid: SOFA[(canon(fx.get("participant1Name")), canon(fx.get("participant2Name")))] = str(sid)
-sofa_ids = [SOFA[(r["casa"], r["ospite"])] for r in PARTITE if (r["casa"], r["ospite"]) in SOFA]
+# giornata da mostrare nel live: quella in corso, oppure la prossima (indipendente dall'uscita dei pronostici)
+_tutte = {m["id"]: m for f in ("fdorg_giocate.json", "fdorg_prossime.json") for m in (J(f) or {}).get("matches", [])}.values()
+_ora = datetime.now(timezone.utc)
+_fin = sorted((m for m in _tutte if m.get("status") == "FINISHED"), key=lambda m: m["utcDate"])
+_nonfin = sorted((m for m in _tutte if m.get("status") != "FINISHED"), key=lambda m: m["utcDate"])
+md_live = None
+if _fin and _ora - datetime.fromisoformat(_fin[-1]["utcDate"].replace("Z", "+00:00")) < timedelta(hours=14):
+    md_live = _fin[-1].get("matchday")                 # giornata appena giocata: risultati finali ancora in vista
+elif _nonfin:
+    md_live = _nonfin[0].get("matchday")
+live_match = [(canon(m["homeTeam"]["name"]), canon(m["awayTeam"]["name"])) for m in sorted(_tutte, key=lambda m: m["utcDate"]) if m.get("matchday") == md_live]
+sofa_ids = [SOFA[k] for k in live_match if k in SOFA] or [SOFA[(r["casa"], r["ospite"])] for r in PARTITE if (r["casa"], r["ospite"]) in SOFA]
 if sofa_ids:
     ids = ",".join(sofa_ids)
     live_html = f'''<div class="livewrap"><iframe id="sofa-fixtures-embed-{ids}" src="https://widgets.sofascore.com/it/embed/fixtures?eventIds={ids}&showCompetitionLogo=true&widgetTitle=Serie+A&widgetTheme=dark"

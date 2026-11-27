@@ -1,6 +1,6 @@
 {
- "n": 18,
- "fattore": 1.687,
+ "n": 28,
+ "fattore": 1.76,
  "confronti": [
   {
    "partita": "Como-Cagliari",
@@ -163,6 +163,96 @@
    "margine_combo": 0.0923,
    "margine_1x2": 0.0728,
    "rapporto": 1.267
+  },
+  {
+   "partita": "Frosinone-Parma",
+   "combo": "1 + Under 3.5",
+   "quota_reale": 2.9,
+   "p_mercato": 0.3005,
+   "margine_combo": 0.1475,
+   "margine_1x2": 0.0626,
+   "rapporto": 2.356
+  },
+  {
+   "partita": "Torino-Lazio",
+   "combo": "X2 + Under 2.5",
+   "quota_reale": 2.35,
+   "p_mercato": 0.3983,
+   "margine_combo": 0.0684,
+   "margine_1x2": 0.0604,
+   "rapporto": 1.132
+  },
+  {
+   "partita": "Inter-Genoa",
+   "combo": "1 + Over 2.5",
+   "quota_reale": 1.69,
+   "p_mercato": 0.5064,
+   "margine_combo": 0.1685,
+   "margine_1x2": 0.0589,
+   "rapporto": 2.86
+  },
+  {
+   "partita": "Inter-Genoa",
+   "combo": "1 + No Goal",
+   "quota_reale": 2.15,
+   "p_mercato": 0.424,
+   "margine_combo": 0.097,
+   "margine_1x2": 0.0589,
+   "rapporto": 1.646
+  },
+  {
+   "partita": "Udinese-Fiorentina",
+   "combo": "1X + Under 3.5",
+   "quota_reale": 2.35,
+   "p_mercato": 0.3869,
+   "margine_combo": 0.0998,
+   "margine_1x2": 0.0628,
+   "rapporto": 1.59
+  },
+  {
+   "partita": "Udinese-Fiorentina",
+   "combo": "1X + Over 2.5",
+   "quota_reale": 2.86,
+   "p_mercato": 0.2767,
+   "margine_combo": 0.2636,
+   "margine_1x2": 0.0628,
+   "rapporto": 4.198
+  },
+  {
+   "partita": "Sassuolo-Napoli",
+   "combo": "2 + Over 1.5",
+   "quota_reale": 1.8,
+   "p_mercato": 0.4831,
+   "margine_combo": 0.15,
+   "margine_1x2": 0.0615,
+   "rapporto": 2.439
+  },
+  {
+   "partita": "Roma-Monza",
+   "combo": "1 + Under 3.5",
+   "quota_reale": 2.45,
+   "p_mercato": 0.3633,
+   "margine_combo": 0.1235,
+   "margine_1x2": 0.0631,
+   "rapporto": 1.957
+  },
+  {
+   "partita": "Roma-Monza",
+   "combo": "1 + Over 2.5",
+   "quota_reale": 1.4,
+   "p_mercato": 0.6134,
+   "margine_combo": 0.1645,
+   "margine_1x2": 0.0631,
+   "rapporto": 2.606
+  },
+  {
+   "partita": "Como-Juventus",
+   "combo": "X2 + Under 3.5",
+   "quota_reale": 2.4,
+   "p_mercato": 0.3802,
+   "margine_combo": 0.0959,
+   "margine_1x2": 0.0634,
+   "rapporto": 1.513
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-27T07:20:44+00:00",
+ "aggiornato": "2026-11-27T09:11:59+00:00",
  "giornata": 13,
  "partite": [
   {
@@ -10,121 +10,121 @@
    "stat": {
     "corner": {
      "etichetta": "Calci d'angolo",
-     "casa": 4.3,
-     "ospite": 5.17,
-     "totale": 9.46,
+     "casa": 4.2,
+     "ospite": 5.09,
+     "totale": 9.29,
      "linee": [
       {
        "linea": 7.5,
-       "p_over": 0.6428,
-       "giusta_over": 1.56,
-       "giusta_under": 2.8
+       "p_over": 0.6283,
+       "giusta_over": 1.59,
+       "giusta_under": 2.69
       },
       {
        "linea": 8.5,
-       "p_over": 0.5456,
-       "giusta_over": 1.83,
-       "giusta_under": 2.2,
+       "p_over": 0.5299,
+       "giusta_over": 1.89,
+       "giusta_under": 2.13,
        "pin_over": 1.714,
        "pin_under": 2.12,
        "p_pin": 0.5529
       },
       {
        "linea": 9.5,
-       "p_over": 0.4511,
-       "giusta_over": 2.22,
-       "giusta_under": 1.82,
+       "p_over": 0.435,
+       "giusta_over": 2.3,
+       "giusta_under": 1.77,
        "pin_over": 2.14,
        "pin_under": 1.699,
        "p_pin": 0.4426
       },
       {
        "linea": 10.5,
-       "p_over": 0.3638,
-       "giusta_over": 2.75,
-       "giusta_under": 1.57
+       "p_over": 0.3483,
+       "giusta_over": 2.87,
+       "giusta_under": 1.53
       },
       {
        "linea": 11.5,
-       "p_over": 0.2867,
-       "giusta_over": 3.49,
-       "giusta_under": 1.4
+       "p_over": 0.2724,
+       "giusta_over": 3.67,
+       "giusta_under": 1.37
       }
      ]
     },
     "tiri_porta": {
      "etichetta": "Tiri in porta",
-     "casa": 3.58,
-     "ospite": 5.03,
-     "totale": 8.62,
+     "casa": 3.46,
+     "ospite": 4.92,
+     "totale": 8.38,
      "linee": [
       {
        "linea": 6.5,
-       "p_over": 0.6708,
-       "giusta_over": 1.49,
-       "giusta_under": 3.04
+       "p_over": 0.6503,
+       "giusta_over": 1.54,
+       "giusta_under": 2.86
       },
       {
        "linea": 7.5,
-       "p_over": 0.5671,
-       "giusta_over": 1.76,
-       "giusta_under": 2.31
+       "p_over": 0.5443,
+       "giusta_over": 1.84,
+       "giusta_under": 2.19
       },
       {
        "linea": 8.5,
-       "p_over": 0.4652,
-       "giusta_over": 2.15,
-       "giusta_under": 1.87
+       "p_over": 0.4417,
+       "giusta_over": 2.26,
+       "giusta_under": 1.79
       },
       {
        "linea": 9.5,
-       "p_over": 0.371,
-       "giusta_over": 2.7,
-       "giusta_under": 1.59
+       "p_over": 0.3483,
+       "giusta_over": 2.87,
+       "giusta_under": 1.53
       },
       {
        "linea": 10.5,
-       "p_over": 0.2882,
-       "giusta_over": 3.47,
-       "giusta_under": 1.4
+       "p_over": 0.2673,
+       "giusta_over": 3.74,
+       "giusta_under": 1.36
       }
      ]
     },
     "cartellini": {
      "etichetta": "Cartellini",
-     "casa": 1.87,
-     "ospite": 1.52,
-     "totale": 3.39,
+     "casa": 1.68,
+     "ospite": 1.37,
+     "totale": 3.05,
      "linee": [
       {
        "linea": 2.5,
-       "p_over": 0.633,
-       "giusta_over": 1.58,
-       "giusta_under": 2.72
+       "p_over": 0.5677,
+       "giusta_over": 1.76,
+       "giusta_under": 2.31
       },
       {
        "linea": 3.5,
-       "p_over": 0.4317,
-       "giusta_over": 2.32,
-       "giusta_under": 1.76
+       "p_over": 0.3625,
+       "giusta_over": 2.76,
+       "giusta_under": 1.57
       },
       {
        "linea": 4.5,
-       "p_over": 0.2645,
-       "giusta_over": 3.78,
-       "giusta_under": 1.36
+       "p_over": 0.2065,
+       "giusta_over": 4.84,
+       "giusta_under": 1.26
       },
       {
        "linea": 5.5,
-       "p_over": 0.1474,
-       "giusta_over": 6.79,
-       "giusta_under": 1.17
+       "p_over": 0.1065,
+       "giusta_over": 9.39,
+       "giusta_under": 1.12
       },
       {
        "linea": 6.5,
-       "p_over": 0.0756,
-       "giusta_over": 13.23,
-       "giusta_under": 1.08
+       "p_over": 0.0504,
+       "giusta_over": 19.84,
+       "giusta_under": 1.05
       }
      ]
     }
@@ -138,124 +138,124 @@
    "stat": {
     "corner": {
      "etichetta": "Calci d'angolo",
-     "casa": 9.28,
-     "ospite": 4.61,
-     "totale": 13.89,
+     "casa": 9.74,
+     "ospite": 4.41,
+     "totale": 14.14,
      "linee": [
       {
        "linea": 7.5,
-       "p_over": 0.8713,
-       "giusta_over": 1.15,
-       "giusta_under": 7.77
+       "p_over": 0.8769,
+       "giusta_over": 1.14,
+       "giusta_under": 8.12
       },
       {
        "linea": 8.5,
-       "p_over": 0.8178,
-       "giusta_over": 1.22,
-       "giusta_under": 5.49
+       "p_over": 0.8254,
+       "giusta_over": 1.21,
+       "giusta_under": 5.73
       },
       {
        "linea": 9.5,
-       "p_over": 0.7564,
-       "giusta_over": 1.32,
-       "giusta_under": 4.11,
-       "pin_over": 1.497,
-       "pin_under": 2.52,
-       "p_pin": 0.6273
+       "p_over": 0.7661,
+       "giusta_over": 1.31,
+       "giusta_under": 4.28,
+       "pin_over": 1.495,
+       "pin_under": 2.53,
+       "p_pin": 0.6286
       },
       {
        "linea": 10.5,
-       "p_over": 0.6894,
-       "giusta_over": 1.45,
-       "giusta_under": 3.22,
-       "pin_over": 1.847,
-       "pin_under": 1.98,
-       "p_pin": 0.5174
+       "p_over": 0.701,
+       "giusta_over": 1.43,
+       "giusta_under": 3.34,
+       "pin_over": 1.84,
+       "pin_under": 1.99,
+       "p_pin": 0.5196
       },
       {
        "linea": 11.5,
-       "p_over": 0.6192,
-       "giusta_over": 1.62,
-       "giusta_under": 2.63,
+       "p_over": 0.6325,
+       "giusta_over": 1.58,
+       "giusta_under": 2.72,
        "pin_over": 2.3,
-       "pin_under": 1.591,
-       "p_pin": 0.4089
+       "pin_under": 1.595,
+       "p_pin": 0.4095
       }
      ]
     },
     "tiri_porta": {
      "etichetta": "Tiri in porta",
-     "casa": 8.19,
-     "ospite": 4.07,
-     "totale": 12.26,
+     "casa": 8.24,
+     "ospite": 4.35,
+     "totale": 12.59,
      "linee": [
       {
        "linea": 6.5,
-       "p_over": 0.87,
-       "giusta_over": 1.15,
-       "giusta_under": 7.69
+       "p_over": 0.8818,
+       "giusta_over": 1.13,
+       "giusta_under": 8.46
       },
       {
        "linea": 7.5,
-       "p_over": 0.8101,
-       "giusta_over": 1.23,
-       "giusta_under": 5.27
+       "p_over": 0.8255,
+       "giusta_over": 1.21,
+       "giusta_under": 5.73
       },
       {
        "linea": 8.5,
-       "p_over": 0.7409,
-       "giusta_over": 1.35,
-       "giusta_under": 3.86
+       "p_over": 0.7597,
+       "giusta_over": 1.32,
+       "giusta_under": 4.16
       },
       {
        "linea": 9.5,
-       "p_over": 0.6656,
-       "giusta_over": 1.5,
-       "giusta_under": 2.99
+       "p_over": 0.6871,
+       "giusta_over": 1.46,
+       "giusta_under": 3.2
       },
       {
        "linea": 10.5,
-       "p_over": 0.5874,
-       "giusta_over": 1.7,
-       "giusta_under": 2.42
+       "p_over": 0.6108,
+       "giusta_over": 1.64,
+       "giusta_under": 2.57
       }
      ]
     },
     "cartellini": {
      "etichetta": "Cartellini",
-     "casa": 1.36,
-     "ospite": 1.9,
-     "totale": 3.26,
+     "casa": 1.37,
+     "ospite": 1.73,
+     "totale": 3.1,
      "linee": [
       {
        "linea": 2.5,
-       "p_over": 0.6078,
-       "giusta_over": 1.65,
-       "giusta_under": 2.55
+       "p_over": 0.5783,
+       "giusta_over": 1.73,
+       "giusta_under": 2.37
       },
       {
        "linea": 3.5,
-       "p_over": 0.4046,
-       "giusta_over": 2.47,
-       "giusta_under": 1.68
+       "p_over": 0.3733,
+       "giusta_over": 2.68,
+       "giusta_under": 1.6
       },
       {
        "linea": 4.5,
-       "p_over": 0.2413,
-       "giusta_over": 4.14,
-       "giusta_under": 1.32
+       "p_over": 0.2152,
+       "giusta_over": 4.65,
+       "giusta_under": 1.27
       },
       {
        "linea": 5.5,
-       "p_over": 0.1308,
-       "giusta_over": 7.65,
-       "giusta_under": 1.15
+       "p_over": 0.1125,
+       "giusta_over": 8.89,
+       "giusta_under": 1.13
       },
       {
        "linea": 6.5,
-       "p_over": 0.0652,
-       "giusta_over": 15.33,
-       "giusta_under": 1.07
+       "p_over": 0.054,
+       "giusta_over": 18.53,
+       "giusta_under": 1.06
       }
      ]
     }
@@ -269,121 +269,124 @@
    "stat": {
     "corner": {
      "etichetta": "Calci d'angolo",
-     "casa": 4.3,
-     "ospite": 4.37,
-     "totale": 8.67,
+     "casa": 4.33,
+     "ospite": 4.53,
+     "totale": 8.86,
      "linee": [
       {
        "linea": 7.5,
-       "p_over": 0.5736,
-       "giusta_over": 1.74,
-       "giusta_under": 2.35
+       "p_over": 0.591,
+       "giusta_over": 1.69,
+       "giusta_under": 2.44,
+       "pin_over": 1.44,
+       "pin_under": 2.69,
+       "p_pin": 0.6513
       },
       {
        "linea": 8.5,
-       "p_over": 0.4714,
-       "giusta_over": 2.12,
-       "giusta_under": 1.89,
-       "pin_over": 1.714,
-       "pin_under": 2.12,
-       "p_pin": 0.5529
+       "p_over": 0.4897,
+       "giusta_over": 2.04,
+       "giusta_under": 1.96,
+       "pin_over": 1.819,
+       "pin_under": 2.01,
+       "p_pin": 0.5249
       },
       {
        "linea": 9.5,
-       "p_over": 0.3765,
-       "giusta_over": 2.66,
-       "giusta_under": 1.6,
-       "pin_over": 2.14,
-       "pin_under": 1.699,
-       "p_pin": 0.4426
+       "p_over": 0.3946,
+       "giusta_over": 2.53,
+       "giusta_under": 1.65,
+       "pin_over": 2.3,
+       "pin_under": 1.595,
+       "p_pin": 0.4095
       },
       {
        "linea": 10.5,
-       "p_over": 0.2928,
-       "giusta_over": 3.42,
-       "giusta_under": 1.41
+       "p_over": 0.3096,
+       "giusta_over": 3.23,
+       "giusta_under": 1.45
       },
       {
        "linea": 11.5,
-       "p_over": 0.2221,
-       "giusta_over": 4.5,
-       "giusta_under": 1.29
+       "p_over": 0.2371,
+       "giusta_over": 4.22,
+       "giusta_under": 1.31
       }
      ]
     },
     "tiri_porta": {
      "etichetta": "Tiri in porta",
-     "casa": 3.69,
-     "ospite": 4.42,
-     "totale": 8.11,
+     "casa": 3.58,
+     "ospite": 4.7,
+     "totale": 8.27,
      "linee": [
       {
        "linea": 6.5,
-       "p_over": 0.6268,
-       "giusta_over": 1.6,
-       "giusta_under": 2.68
+       "p_over": 0.6414,
+       "giusta_over": 1.56,
+       "giusta_under": 2.79
       },
       {
        "linea": 7.5,
-       "p_over": 0.518,
-       "giusta_over": 1.93,
-       "giusta_under": 2.07
+       "p_over": 0.5342,
+       "giusta_over": 1.87,
+       "giusta_under": 2.15
       },
       {
        "linea": 8.5,
-       "p_over": 0.4146,
-       "giusta_over": 2.41,
-       "giusta_under": 1.71
+       "p_over": 0.4311,
+       "giusta_over": 2.32,
+       "giusta_under": 1.76
       },
       {
        "linea": 9.5,
-       "p_over": 0.3219,
-       "giusta_over": 3.11,
-       "giusta_under": 1.47
+       "p_over": 0.3379,
+       "giusta_over": 2.96,
+       "giusta_under": 1.51
       },
       {
        "linea": 10.5,
-       "p_over": 0.2431,
-       "giusta_over": 4.11,
-       "giusta_under": 1.32
+       "p_over": 0.2577,
+       "giusta_over": 3.88,
+       "giusta_under": 1.35
       }
      ]
     },
     "cartellini": {
      "etichetta": "Cartellini",
-     "casa": 2.14,
-     "ospite": 1.65,
-     "totale": 3.79,
+     "casa": 2.01,
+     "ospite": 1.59,
+     "totale": 3.6,
      "linee": [
       {
        "linea": 2.5,
-       "p_over": 0.6984,
-       "giusta_over": 1.43,
-       "giusta_under": 3.32
+       "p_over": 0.668,
+       "giusta_over": 1.5,
+       "giusta_under": 3.01
       },
       {
        "linea": 3.5,
-       "p_over": 0.5077,
-       "giusta_over": 1.97,
-       "giusta_under": 2.03
+       "p_over": 0.4715,
+       "giusta_over": 2.12,
+       "giusta_under": 1.89
       },
       {
        "linea": 4.5,
-       "p_over": 0.3342,
-       "giusta_over": 2.99,
-       "giusta_under": 1.5
+       "p_over": 0.3002,
+       "giusta_over": 3.33,
+       "giusta_under": 1.43
       },
       {
        "linea": 5.5,
-       "p_over": 0.2012,
-       "giusta_over": 4.97,
-       "giusta_under": 1.25
+       "p_over": 0.1743,
+       "giusta_over": 5.74,
+       "giusta_under": 1.21
       },
       {
        "linea": 6.5,
-       "p_over": 0.1119,
-       "giusta_over": 8.94,
-       "giusta_under": 1.13
+       "p_over": 0.0934,
+       "giusta_over": 10.71,
+       "giusta_under": 1.1
       }
      ]
     }
@@ -397,124 +400,124 @@
    "stat": {
     "corner": {
      "etichetta": "Calci d'angolo",
-     "casa": 7.47,
-     "ospite": 2.63,
-     "totale": 10.1,
+     "casa": 7.46,
+     "ospite": 2.66,
+     "totale": 10.12,
      "linee": [
       {
        "linea": 7.5,
-       "p_over": 0.6778,
-       "giusta_over": 1.48,
-       "giusta_under": 3.1
+       "p_over": 0.6793,
+       "giusta_over": 1.47,
+       "giusta_under": 3.12
       },
       {
        "linea": 8.5,
-       "p_over": 0.5885,
-       "giusta_over": 1.7,
-       "giusta_under": 2.43,
-       "pin_over": 1.46,
-       "pin_under": 2.63,
-       "p_pin": 0.643
+       "p_over": 0.5901,
+       "giusta_over": 1.69,
+       "giusta_under": 2.44,
+       "pin_over": 1.495,
+       "pin_under": 2.53,
+       "p_pin": 0.6286
       },
       {
        "linea": 9.5,
-       "p_over": 0.5001,
-       "giusta_over": 2.0,
-       "giusta_under": 2.0,
-       "pin_over": 1.813,
-       "pin_under": 2.02,
-       "p_pin": 0.527
+       "p_over": 0.5017,
+       "giusta_over": 1.99,
+       "giusta_under": 2.01,
+       "pin_over": 1.877,
+       "pin_under": 1.952,
+       "p_pin": 0.5098
       },
       {
        "linea": 10.5,
-       "p_over": 0.4165,
-       "giusta_over": 2.4,
-       "giusta_under": 1.71,
-       "pin_over": 2.28,
-       "pin_under": 1.602,
-       "p_pin": 0.4127
+       "p_over": 0.418,
+       "giusta_over": 2.39,
+       "giusta_under": 1.72,
+       "pin_over": 2.35,
+       "pin_under": 1.571,
+       "p_pin": 0.4007
       },
       {
        "linea": 11.5,
-       "p_over": 0.3404,
-       "giusta_over": 2.94,
+       "p_over": 0.3418,
+       "giusta_over": 2.93,
        "giusta_under": 1.52
       }
      ]
     },
     "tiri_porta": {
      "etichetta": "Tiri in porta",
-     "casa": 6.45,
-     "ospite": 2.48,
-     "totale": 8.92,
+     "casa": 6.85,
+     "ospite": 2.81,
+     "totale": 9.66,
      "linee": [
       {
        "linea": 6.5,
-       "p_over": 0.6852,
-       "giusta_over": 1.46,
-       "giusta_under": 3.18
+       "p_over": 0.739,
+       "giusta_over": 1.35,
+       "giusta_under": 3.83
       },
       {
        "linea": 7.5,
-       "p_over": 0.5866,
-       "giusta_over": 1.7,
-       "giusta_under": 2.42
+       "p_over": 0.6482,
+       "giusta_over": 1.54,
+       "giusta_under": 2.84
       },
       {
        "linea": 8.5,
-       "p_over": 0.4892,
-       "giusta_over": 2.04,
-       "giusta_under": 1.96
+       "p_over": 0.5548,
+       "giusta_over": 1.8,
+       "giusta_under": 2.25
       },
       {
        "linea": 9.5,
-       "p_over": 0.398,
-       "giusta_over": 2.51,
-       "giusta_under": 1.66
+       "p_over": 0.464,
+       "giusta_over": 2.16,
+       "giusta_under": 1.87
       },
       {
        "linea": 10.5,
-       "p_over": 0.3165,
-       "giusta_over": 3.16,
-       "giusta_under": 1.46
+       "p_over": 0.3796,
+       "giusta_over": 2.63,
+       "giusta_under": 1.61
       }
      ]
     },
     "cartellini": {
      "etichetta": "Cartellini",
-     "casa": 1.6,
-     "ospite": 1.61,
-     "totale": 3.21,
+     "casa": 1.5,
+     "ospite": 1.51,
+     "totale": 3.01,
      "linee": [
       {
        "linea": 2.5,
-       "p_over": 0.5999,
-       "giusta_over": 1.67,
-       "giusta_under": 2.5
+       "p_over": 0.5594,
+       "giusta_over": 1.79,
+       "giusta_under": 2.27
       },
       {
        "linea": 3.5,
-       "p_over": 0.3958,
-       "giusta_over": 2.53,
-       "giusta_under": 1.65
+       "p_over": 0.354,
+       "giusta_over": 2.82,
+       "giusta_under": 1.55
       },
       {
        "linea": 4.5,
-       "p_over": 0.2335,
-       "giusta_over": 4.28,
-       "giusta_under": 1.3
+       "p_over": 0.1996,
+       "giusta_over": 5.01,
+       "giusta_under": 1.25
       },
       {
        "linea": 5.5,
-       "p_over": 0.125,
-       "giusta_over": 8.0,
-       "giusta_under": 1.14
+       "p_over": 0.1018,
+       "giusta_over": 9.82,
+       "giusta_under": 1.11
       },
       {
        "linea": 6.5,
-       "p_over": 0.0615,
-       "giusta_over": 16.26,
-       "giusta_under": 1.07
+       "p_over": 0.0476,
+       "giusta_over": 21.0,
+       "giusta_under": 1.05
       }
      ]
     }
@@ -528,124 +531,124 @@
    "stat": {
     "corner": {
      "etichetta": "Calci d'angolo",
-     "casa": 5.08,
-     "ospite": 4.77,
-     "totale": 9.85,
+     "casa": 5.03,
+     "ospite": 4.95,
+     "totale": 9.98,
      "linee": [
       {
        "linea": 7.5,
-       "p_over": 0.6743,
-       "giusta_over": 1.48,
-       "giusta_under": 3.07
+       "p_over": 0.6838,
+       "giusta_over": 1.46,
+       "giusta_under": 3.16
       },
       {
        "linea": 8.5,
-       "p_over": 0.5802,
-       "giusta_over": 1.72,
-       "giusta_under": 2.38,
-       "pin_over": 1.561,
-       "pin_under": 2.37,
-       "p_pin": 0.6029
+       "p_over": 0.5908,
+       "giusta_over": 1.69,
+       "giusta_under": 2.44,
+       "pin_over": 1.555,
+       "pin_under": 2.38,
+       "p_pin": 0.6048
       },
       {
        "linea": 9.5,
-       "p_over": 0.4869,
-       "giusta_over": 2.05,
-       "giusta_under": 1.95,
-       "pin_over": 1.952,
-       "pin_under": 1.877,
-       "p_pin": 0.4902
+       "p_over": 0.498,
+       "giusta_over": 2.01,
+       "giusta_under": 1.99,
+       "pin_over": 1.943,
+       "pin_under": 1.884,
+       "p_pin": 0.4923
       },
       {
        "linea": 10.5,
-       "p_over": 0.3989,
-       "giusta_over": 2.51,
-       "giusta_under": 1.66,
-       "pin_over": 2.45,
-       "pin_under": 1.526,
-       "p_pin": 0.3838
+       "p_over": 0.4099,
+       "giusta_over": 2.44,
+       "giusta_under": 1.69,
+       "pin_over": 2.43,
+       "pin_under": 1.534,
+       "p_pin": 0.387
       },
       {
        "linea": 11.5,
-       "p_over": 0.3194,
-       "giusta_over": 3.13,
-       "giusta_under": 1.47
+       "p_over": 0.3299,
+       "giusta_over": 3.03,
+       "giusta_under": 1.49
       }
      ]
     },
     "tiri_porta": {
      "etichetta": "Tiri in porta",
-     "casa": 5.26,
-     "ospite": 5.44,
-     "totale": 10.71,
+     "casa": 5.18,
+     "ospite": 5.43,
+     "totale": 10.61,
      "linee": [
       {
        "linea": 6.5,
-       "p_over": 0.8123,
-       "giusta_over": 1.23,
-       "giusta_under": 5.33
+       "p_over": 0.8072,
+       "giusta_over": 1.24,
+       "giusta_under": 5.19
       },
       {
        "linea": 7.5,
-       "p_over": 0.7343,
-       "giusta_over": 1.36,
-       "giusta_under": 3.76
+       "p_over": 0.7279,
+       "giusta_over": 1.37,
+       "giusta_under": 3.68
       },
       {
        "linea": 8.5,
-       "p_over": 0.6486,
-       "giusta_over": 1.54,
-       "giusta_under": 2.85
+       "p_over": 0.6412,
+       "giusta_over": 1.56,
+       "giusta_under": 2.79
       },
       {
        "linea": 9.5,
-       "p_over": 0.56,
-       "giusta_over": 1.79,
-       "giusta_under": 2.27
+       "p_over": 0.552,
+       "giusta_over": 1.81,
+       "giusta_under": 2.23
       },
       {
        "linea": 10.5,
-       "p_over": 0.4729,
-       "giusta_over": 2.11,
-       "giusta_under": 1.9
+       "p_over": 0.4646,
+       "giusta_over": 2.15,
+       "giusta_under": 1.87
       }
      ]
     },
     "cartellini": {
      "etichetta": "Cartellini",
-     "casa": 1.98,
-     "ospite": 1.69,
-     "totale": 3.68,
+     "casa": 1.83,
+     "ospite": 1.58,
+     "totale": 3.41,
      "linee": [
       {
        "linea": 2.5,
-       "p_over": 0.6807,
-       "giusta_over": 1.47,
-       "giusta_under": 3.13
+       "p_over": 0.6364,
+       "giusta_over": 1.57,
+       "giusta_under": 2.75
       },
       {
        "linea": 3.5,
-       "p_over": 0.4863,
-       "giusta_over": 2.06,
-       "giusta_under": 1.95
+       "p_over": 0.4355,
+       "giusta_over": 2.3,
+       "giusta_under": 1.77
       },
       {
        "linea": 4.5,
-       "p_over": 0.3137,
-       "giusta_over": 3.19,
-       "giusta_under": 1.46
+       "p_over": 0.2677,
+       "giusta_over": 3.74,
+       "giusta_under": 1.37
       },
       {
        "linea": 5.5,
-       "p_over": 0.1848,
-       "giusta_over": 5.41,
-       "giusta_under": 1.23
+       "p_over": 0.1497,
+       "giusta_over": 6.68,
+       "giusta_under": 1.18
       },
       {
        "linea": 6.5,
-       "p_over": 0.1004,
-       "giusta_over": 9.96,
-       "giusta_under": 1.11
+       "p_over": 0.077,
+       "giusta_over": 12.98,
+       "giusta_under": 1.08
       }
      ]
     }
@@ -659,124 +662,124 @@
    "stat": {
     "corner": {
      "etichetta": "Calci d'angolo",
-     "casa": 3.87,
-     "ospite": 5.91,
-     "totale": 9.78,
+     "casa": 3.92,
+     "ospite": 5.95,
+     "totale": 9.87,
      "linee": [
       {
        "linea": 7.5,
-       "p_over": 0.6663,
-       "giusta_over": 1.5,
-       "giusta_under": 3.0
+       "p_over": 0.6733,
+       "giusta_over": 1.49,
+       "giusta_under": 3.06
       },
       {
        "linea": 8.5,
-       "p_over": 0.5722,
-       "giusta_over": 1.75,
-       "giusta_under": 2.34,
+       "p_over": 0.5799,
+       "giusta_over": 1.72,
+       "giusta_under": 2.38,
        "pin_over": 1.497,
        "pin_under": 2.52,
        "p_pin": 0.6273
       },
       {
        "linea": 9.5,
-       "p_over": 0.4793,
-       "giusta_over": 2.09,
-       "giusta_under": 1.92,
+       "p_over": 0.4874,
+       "giusta_over": 2.05,
+       "giusta_under": 1.95,
        "pin_over": 1.84,
        "pin_under": 1.99,
        "p_pin": 0.5196
       },
       {
        "linea": 10.5,
-       "p_over": 0.3922,
-       "giusta_over": 2.55,
-       "giusta_under": 1.65,
+       "p_over": 0.4001,
+       "giusta_over": 2.5,
+       "giusta_under": 1.67,
        "pin_over": 2.28,
        "pin_under": 1.606,
        "p_pin": 0.4133
       },
       {
        "linea": 11.5,
-       "p_over": 0.3139,
-       "giusta_over": 3.19,
-       "giusta_under": 1.46
+       "p_over": 0.3214,
+       "giusta_over": 3.11,
+       "giusta_under": 1.47
       }
      ]
     },
     "tiri_porta": {
      "etichetta": "Tiri in porta",
-     "casa": 3.6,
-     "ospite": 6.75,
-     "totale": 10.35,
+     "casa": 3.85,
+     "ospite": 7.05,
+     "totale": 10.89,
      "linee": [
       {
        "linea": 6.5,
-       "p_over": 0.7868,
-       "giusta_over": 1.27,
-       "giusta_under": 4.69
+       "p_over": 0.8155,
+       "giusta_over": 1.23,
+       "giusta_under": 5.42
       },
       {
        "linea": 7.5,
-       "p_over": 0.7041,
-       "giusta_over": 1.42,
-       "giusta_under": 3.38
+       "p_over": 0.7396,
+       "giusta_over": 1.35,
+       "giusta_under": 3.84
       },
       {
        "linea": 8.5,
-       "p_over": 0.6156,
-       "giusta_over": 1.62,
-       "giusta_under": 2.6
+       "p_over": 0.6563,
+       "giusta_over": 1.52,
+       "giusta_under": 2.91
       },
       {
        "linea": 9.5,
-       "p_over": 0.5261,
-       "giusta_over": 1.9,
-       "giusta_under": 2.11
+       "p_over": 0.57,
+       "giusta_over": 1.75,
+       "giusta_under": 2.33
       },
       {
        "linea": 10.5,
-       "p_over": 0.44,
-       "giusta_over": 2.27,
-       "giusta_under": 1.79
+       "p_over": 0.485,
+       "giusta_over": 2.06,
+       "giusta_under": 1.94
       }
      ]
     },
     "cartellini": {
      "etichetta": "Cartellini",
-     "casa": 1.69,
-     "ospite": 1.45,
-     "totale": 3.14,
+     "casa": 1.56,
+     "ospite": 1.36,
+     "totale": 2.93,
      "linee": [
       {
        "linea": 2.5,
-       "p_over": 0.5847,
-       "giusta_over": 1.71,
-       "giusta_under": 2.41
+       "p_over": 0.5424,
+       "giusta_over": 1.84,
+       "giusta_under": 2.19
       },
       {
        "linea": 3.5,
-       "p_over": 0.3799,
-       "giusta_over": 2.63,
-       "giusta_under": 1.61
+       "p_over": 0.3372,
+       "giusta_over": 2.97,
+       "giusta_under": 1.51
       },
       {
        "linea": 4.5,
-       "p_over": 0.2205,
-       "giusta_over": 4.54,
-       "giusta_under": 1.28
+       "p_over": 0.1864,
+       "giusta_over": 5.36,
+       "giusta_under": 1.23
       },
       {
        "linea": 5.5,
-       "p_over": 0.116,
-       "giusta_over": 8.62,
-       "giusta_under": 1.13
+       "p_over": 0.0932,
+       "giusta_over": 10.73,
+       "giusta_under": 1.1
       },
       {
        "linea": 6.5,
-       "p_over": 0.056,
-       "giusta_over": 17.85,
-       "giusta_under": 1.06
+       "p_over": 0.0427,
+       "giusta_over": 23.42,
+       "giusta_under": 1.04
       }
      ]
     }
@@ -790,124 +793,124 @@
    "stat": {
     "corner": {
      "etichetta": "Calci d'angolo",
-     "casa": 6.17,
-     "ospite": 3.06,
-     "totale": 9.24,
+     "casa": 6.39,
+     "ospite": 3.02,
+     "totale": 9.41,
      "linee": [
       {
        "linea": 7.5,
-       "p_over": 0.6178,
-       "giusta_over": 1.62,
-       "giusta_under": 2.62
+       "p_over": 0.6314,
+       "giusta_over": 1.58,
+       "giusta_under": 2.71
       },
       {
        "linea": 8.5,
-       "p_over": 0.5206,
-       "giusta_over": 1.92,
-       "giusta_under": 2.09,
+       "p_over": 0.5355,
+       "giusta_over": 1.87,
+       "giusta_under": 2.15,
        "pin_over": 1.471,
        "pin_under": 2.59,
        "p_pin": 0.6378
       },
       {
        "linea": 9.5,
-       "p_over": 0.4278,
-       "giusta_over": 2.34,
-       "giusta_under": 1.75,
+       "p_over": 0.4433,
+       "giusta_over": 2.26,
+       "giusta_under": 1.8,
        "pin_over": 1.833,
        "pin_under": 2.0,
        "p_pin": 0.5218
       },
       {
        "linea": 10.5,
-       "p_over": 0.3433,
-       "giusta_over": 2.91,
-       "giusta_under": 1.52,
+       "p_over": 0.3586,
+       "giusta_over": 2.79,
+       "giusta_under": 1.56,
        "pin_over": 2.3,
        "pin_under": 1.595,
        "p_pin": 0.4095
       },
       {
        "linea": 11.5,
-       "p_over": 0.2697,
-       "giusta_over": 3.71,
-       "giusta_under": 1.37
+       "p_over": 0.284,
+       "giusta_over": 3.52,
+       "giusta_under": 1.4
       }
      ]
     },
     "tiri_porta": {
      "etichetta": "Tiri in porta",
-     "casa": 7.86,
-     "ospite": 4.87,
-     "totale": 12.72,
+     "casa": 8.54,
+     "ospite": 4.86,
+     "totale": 13.4,
      "linee": [
       {
        "linea": 6.5,
-       "p_over": 0.8885,
-       "giusta_over": 1.13,
-       "giusta_under": 8.97
+       "p_over": 0.9059,
+       "giusta_over": 1.1,
+       "giusta_under": 10.63
       },
       {
        "linea": 7.5,
-       "p_over": 0.8341,
-       "giusta_over": 1.2,
-       "giusta_under": 6.03
+       "p_over": 0.8581,
+       "giusta_over": 1.17,
+       "giusta_under": 7.05
       },
       {
        "linea": 8.5,
-       "p_over": 0.7698,
-       "giusta_over": 1.3,
-       "giusta_under": 4.34
+       "p_over": 0.8004,
+       "giusta_over": 1.25,
+       "giusta_under": 5.01
       },
       {
        "linea": 9.5,
-       "p_over": 0.6983,
-       "giusta_over": 1.43,
-       "giusta_under": 3.31
+       "p_over": 0.7349,
+       "giusta_over": 1.36,
+       "giusta_under": 3.77
       },
       {
        "linea": 10.5,
-       "p_over": 0.6225,
-       "giusta_over": 1.61,
-       "giusta_under": 2.65
+       "p_over": 0.6641,
+       "giusta_over": 1.51,
+       "giusta_under": 2.98
       }
      ]
     },
     "cartellini": {
      "etichetta": "Cartellini",
-     "casa": 1.68,
-     "ospite": 2.34,
-     "totale": 4.02,
+     "casa": 1.5,
+     "ospite": 2.09,
+     "totale": 3.59,
      "linee": [
       {
        "linea": 2.5,
-       "p_over": 0.7305,
-       "giusta_over": 1.37,
-       "giusta_under": 3.71
+       "p_over": 0.6661,
+       "giusta_over": 1.5,
+       "giusta_under": 2.99
       },
       {
        "linea": 3.5,
-       "p_over": 0.5477,
-       "giusta_over": 1.83,
-       "giusta_under": 2.21
+       "p_over": 0.4695,
+       "giusta_over": 2.13,
+       "giusta_under": 1.89
       },
       {
        "linea": 4.5,
-       "p_over": 0.3735,
-       "giusta_over": 2.68,
-       "giusta_under": 1.6
+       "p_over": 0.2985,
+       "giusta_over": 3.35,
+       "giusta_under": 1.43
       },
       {
        "linea": 5.5,
-       "p_over": 0.2338,
-       "giusta_over": 4.28,
-       "giusta_under": 1.31
+       "p_over": 0.1732,
+       "giusta_over": 5.77,
+       "giusta_under": 1.21
       },
       {
        "linea": 6.5,
-       "p_over": 0.1355,
-       "giusta_over": 7.38,
-       "giusta_under": 1.16
+       "p_over": 0.0927,
+       "giusta_over": 10.79,
+       "giusta_under": 1.1
       }
      ]
     }
@@ -921,124 +924,124 @@
    "stat": {
     "corner": {
      "etichetta": "Calci d'angolo",
-     "casa": 5.22,
-     "ospite": 4.61,
-     "totale": 9.83,
+     "casa": 5.04,
+     "ospite": 4.56,
+     "totale": 9.6,
      "linee": [
       {
        "linea": 7.5,
-       "p_over": 0.6726,
-       "giusta_over": 1.49,
-       "giusta_under": 3.05
+       "p_over": 0.6548,
+       "giusta_over": 1.53,
+       "giusta_under": 2.9
       },
       {
        "linea": 8.5,
-       "p_over": 0.5784,
-       "giusta_over": 1.73,
-       "giusta_under": 2.37,
+       "p_over": 0.5587,
+       "giusta_over": 1.79,
+       "giusta_under": 2.27,
        "pin_over": 1.531,
        "pin_under": 2.44,
        "p_pin": 0.6145
       },
       {
        "linea": 9.5,
-       "p_over": 0.485,
-       "giusta_over": 2.06,
-       "giusta_under": 1.94,
+       "p_over": 0.4645,
+       "giusta_over": 2.15,
+       "giusta_under": 1.87,
        "pin_over": 1.9,
        "pin_under": 1.934,
        "p_pin": 0.5044
       },
       {
        "linea": 10.5,
-       "p_over": 0.397,
-       "giusta_over": 2.52,
-       "giusta_under": 1.66,
+       "p_over": 0.3768,
+       "giusta_over": 2.65,
+       "giusta_under": 1.6,
        "pin_over": 2.36,
        "pin_under": 1.561,
        "p_pin": 0.3981
       },
       {
        "linea": 11.5,
-       "p_over": 0.3177,
-       "giusta_over": 3.15,
-       "giusta_under": 1.47
+       "p_over": 0.2986,
+       "giusta_over": 3.35,
+       "giusta_under": 1.43
       }
      ]
     },
     "tiri_porta": {
      "etichetta": "Tiri in porta",
-     "casa": 3.93,
-     "ospite": 3.59,
-     "totale": 7.53,
+     "casa": 3.77,
+     "ospite": 3.48,
+     "totale": 7.25,
      "linee": [
       {
        "linea": 6.5,
-       "p_over": 0.5693,
-       "giusta_over": 1.76,
-       "giusta_under": 2.32
+       "p_over": 0.5394,
+       "giusta_over": 1.85,
+       "giusta_under": 2.17
       },
       {
        "linea": 7.5,
-       "p_over": 0.4567,
-       "giusta_over": 2.19,
-       "giusta_under": 1.84
+       "p_over": 0.4258,
+       "giusta_over": 2.35,
+       "giusta_under": 1.74
       },
       {
        "linea": 8.5,
-       "p_over": 0.3539,
-       "giusta_over": 2.83,
-       "giusta_under": 1.55
+       "p_over": 0.3244,
+       "giusta_over": 3.08,
+       "giusta_under": 1.48
       },
       {
        "linea": 9.5,
-       "p_over": 0.2657,
-       "giusta_over": 3.76,
-       "giusta_under": 1.36
+       "p_over": 0.2392,
+       "giusta_over": 4.18,
+       "giusta_under": 1.31
       },
       {
        "linea": 10.5,
-       "p_over": 0.1936,
-       "giusta_over": 5.16,
-       "giusta_under": 1.24
+       "p_over": 0.1711,
+       "giusta_over": 5.84,
+       "giusta_under": 1.21
       }
      ]
     },
     "cartellini": {
      "etichetta": "Cartellini",
-     "casa": 1.71,
-     "ospite": 1.81,
-     "totale": 3.52,
+     "casa": 1.55,
+     "ospite": 1.64,
+     "totale": 3.19,
      "linee": [
       {
        "linea": 2.5,
-       "p_over": 0.655,
-       "giusta_over": 1.53,
-       "giusta_under": 2.9
+       "p_over": 0.5948,
+       "giusta_over": 1.68,
+       "giusta_under": 2.47
       },
       {
        "linea": 3.5,
-       "p_over": 0.4563,
-       "giusta_over": 2.19,
-       "giusta_under": 1.84
+       "p_over": 0.3904,
+       "giusta_over": 2.56,
+       "giusta_under": 1.64
       },
       {
        "linea": 4.5,
-       "p_over": 0.2861,
-       "giusta_over": 3.49,
-       "giusta_under": 1.4
+       "p_over": 0.2291,
+       "giusta_over": 4.37,
+       "giusta_under": 1.3
       },
       {
        "linea": 5.5,
-       "p_over": 0.1634,
-       "giusta_over": 6.12,
-       "giusta_under": 1.2
+       "p_over": 0.1219,
+       "giusta_over": 8.2,
+       "giusta_under": 1.14
       },
       {
        "linea": 6.5,
-       "p_over": 0.086,
-       "giusta_over": 11.63,
-       "giusta_under": 1.09
+       "p_over": 0.0596,
+       "giusta_over": 16.78,
+       "giusta_under": 1.06
       }
      ]
     }
@@ -1052,124 +1055,124 @@
    "stat": {
     "corner": {
      "etichetta": "Calci d'angolo",
-     "casa": 4.93,
-     "ospite": 5.13,
-     "totale": 10.06,
+     "casa": 4.92,
+     "ospite": 5.3,
+     "totale": 10.21,
      "linee": [
       {
        "linea": 7.5,
-       "p_over": 0.6898,
-       "giusta_over": 1.45,
-       "giusta_under": 3.22
+       "p_over": 0.701,
+       "giusta_over": 1.43,
+       "giusta_under": 3.34
       },
       {
        "linea": 8.5,
-       "p_over": 0.5976,
-       "giusta_over": 1.67,
-       "giusta_under": 2.49,
-       "pin_over": 1.469,
+       "p_over": 0.6103,
+       "giusta_over": 1.64,
+       "giusta_under": 2.57,
+       "pin_over": 1.471,
        "pin_under": 2.6,
-       "p_pin": 0.639
+       "p_pin": 0.6387
       },
       {
        "linea": 9.5,
-       "p_over": 0.5052,
-       "giusta_over": 1.98,
-       "giusta_under": 2.02,
+       "p_over": 0.5186,
+       "giusta_over": 1.93,
+       "giusta_under": 2.08,
        "pin_over": 1.806,
        "pin_under": 2.02,
        "p_pin": 0.528
       },
       {
        "linea": 10.5,
-       "p_over": 0.4171,
-       "giusta_over": 2.4,
-       "giusta_under": 1.72,
+       "p_over": 0.4307,
+       "giusta_over": 2.32,
+       "giusta_under": 1.76,
        "pin_over": 2.24,
        "pin_under": 1.628,
        "p_pin": 0.4209
       },
       {
        "linea": 11.5,
-       "p_over": 0.3368,
-       "giusta_over": 2.97,
-       "giusta_under": 1.51
+       "p_over": 0.3498,
+       "giusta_over": 2.86,
+       "giusta_under": 1.54
       }
      ]
     },
     "tiri_porta": {
      "etichetta": "Tiri in porta",
-     "casa": 5.06,
-     "ospite": 5.28,
-     "totale": 10.33,
+     "casa": 4.97,
+     "ospite": 5.67,
+     "totale": 10.64,
      "linee": [
       {
        "linea": 6.5,
-       "p_over": 0.7922,
-       "giusta_over": 1.26,
-       "giusta_under": 4.81
+       "p_over": 0.8083,
+       "giusta_over": 1.24,
+       "giusta_under": 5.22
       },
       {
        "linea": 7.5,
-       "p_over": 0.7093,
-       "giusta_over": 1.41,
-       "giusta_under": 3.44
+       "p_over": 0.7294,
+       "giusta_over": 1.37,
+       "giusta_under": 3.7
       },
       {
        "linea": 8.5,
-       "p_over": 0.6198,
-       "giusta_over": 1.61,
-       "giusta_under": 2.63
+       "p_over": 0.643,
+       "giusta_over": 1.56,
+       "giusta_under": 2.8
       },
       {
        "linea": 9.5,
-       "p_over": 0.5288,
-       "giusta_over": 1.89,
-       "giusta_under": 2.12
+       "p_over": 0.5539,
+       "giusta_over": 1.81,
+       "giusta_under": 2.24
       },
       {
        "linea": 10.5,
-       "p_over": 0.4409,
-       "giusta_over": 2.27,
-       "giusta_under": 1.79
+       "p_over": 0.4667,
+       "giusta_over": 2.14,
+       "giusta_under": 1.88
       }
      ]
     },
     "cartellini": {
      "etichetta": "Cartellini",
-     "casa": 1.32,
-     "ospite": 1.3,
-     "totale": 2.62,
+     "casa": 1.24,
+     "ospite": 1.24,
+     "totale": 2.48,
      "linee": [
       {
        "linea": 2.5,
-       "p_over": 0.4739,
-       "giusta_over": 2.11,
-       "giusta_under": 1.9
+       "p_over": 0.4416,
+       "giusta_over": 2.26,
+       "giusta_under": 1.79
       },
       {
        "linea": 3.5,
-       "p_over": 0.2732,
-       "giusta_over": 3.66,
-       "giusta_under": 1.38
+       "p_over": 0.2451,
+       "giusta_over": 4.08,
+       "giusta_under": 1.32
       },
       {
        "linea": 4.5,
-       "p_over": 0.1391,
-       "giusta_over": 7.19,
-       "giusta_under": 1.16
+       "p_over": 0.1199,
+       "giusta_over": 8.34,
+       "giusta_under": 1.14
       },
       {
        "linea": 5.5,
-       "p_over": 0.0638,
-       "giusta_over": 15.67,
-       "giusta_under": 1.07
+       "p_over": 0.0527,
+       "giusta_over": 18.98,
+       "giusta_under": 1.06
       },
       {
        "linea": 6.5,
-       "p_over": 0.0267,
-       "giusta_over": 37.39,
-       "giusta_under": 1.03
+       "p_over": 0.0211,
+       "giusta_over": 47.3,
+       "giusta_under": 1.02
       }
      ]
     }
@@ -1183,121 +1186,121 @@
    "stat": {
     "corner": {
      "etichetta": "Calci d'angolo",
-     "casa": 4.33,
-     "ospite": 4.52,
-     "totale": 8.84,
+     "casa": 4.4,
+     "ospite": 4.34,
+     "totale": 8.74,
      "linee": [
       {
        "linea": 7.5,
-       "p_over": 0.5893,
-       "giusta_over": 1.7,
-       "giusta_under": 2.43
+       "p_over": 0.5798,
+       "giusta_over": 1.72,
+       "giusta_under": 2.38
       },
       {
        "linea": 8.5,
-       "p_over": 0.4879,
-       "giusta_over": 2.05,
-       "giusta_under": 1.95,
+       "p_over": 0.478,
+       "giusta_over": 2.09,
+       "giusta_under": 1.92,
        "pin_over": 1.699,
        "pin_under": 2.14,
        "p_pin": 0.5574
       },
       {
        "linea": 9.5,
-       "p_over": 0.3928,
-       "giusta_over": 2.55,
-       "giusta_under": 1.65,
+       "p_over": 0.383,
+       "giusta_over": 2.61,
+       "giusta_under": 1.62,
        "pin_over": 2.12,
        "pin_under": 1.714,
        "p_pin": 0.4471
       },
       {
        "linea": 10.5,
-       "p_over": 0.308,
-       "giusta_over": 3.25,
-       "giusta_under": 1.45
+       "p_over": 0.2988,
+       "giusta_over": 3.35,
+       "giusta_under": 1.43
       },
       {
        "linea": 11.5,
-       "p_over": 0.2356,
-       "giusta_over": 4.24,
-       "giusta_under": 1.31
+       "p_over": 0.2274,
+       "giusta_over": 4.4,
+       "giusta_under": 1.29
       }
      ]
     },
     "tiri_porta": {
      "etichetta": "Tiri in porta",
-     "casa": 4.26,
-     "ospite": 4.79,
-     "totale": 9.05,
+     "casa": 4.0,
+     "ospite": 4.84,
+     "totale": 8.84,
      "linee": [
       {
        "linea": 6.5,
-       "p_over": 0.7075,
-       "giusta_over": 1.41,
-       "giusta_under": 3.42
+       "p_over": 0.69,
+       "giusta_over": 1.45,
+       "giusta_under": 3.23
       },
       {
        "linea": 7.5,
-       "p_over": 0.6083,
-       "giusta_over": 1.64,
-       "giusta_under": 2.55
+       "p_over": 0.5884,
+       "giusta_over": 1.7,
+       "giusta_under": 2.43
       },
       {
        "linea": 8.5,
-       "p_over": 0.5082,
-       "giusta_over": 1.97,
-       "giusta_under": 2.03
+       "p_over": 0.4872,
+       "giusta_over": 2.05,
+       "giusta_under": 1.95
       },
       {
        "linea": 9.5,
-       "p_over": 0.4131,
-       "giusta_over": 2.42,
-       "giusta_under": 1.7
+       "p_over": 0.3922,
+       "giusta_over": 2.55,
+       "giusta_under": 1.65
       },
       {
        "linea": 10.5,
-       "p_over": 0.3272,
-       "giusta_over": 3.06,
-       "giusta_under": 1.49
+       "p_over": 0.3076,
+       "giusta_over": 3.25,
+       "giusta_under": 1.44
       }
      ]
     },
     "cartellini": {
      "etichetta": "Cartellini",
-     "casa": 1.66,
-     "ospite": 1.46,
-     "totale": 3.12,
+     "casa": 1.57,
+     "ospite": 1.34,
+     "totale": 2.91,
      "linee": [
       {
        "linea": 2.5,
-       "p_over": 0.5815,
-       "giusta_over": 1.72,
-       "giusta_under": 2.39
+       "p_over": 0.5389,
+       "giusta_over": 1.86,
+       "giusta_under": 2.17
       },
       {
        "linea": 3.5,
-       "p_over": 0.3766,
-       "giusta_over": 2.66,
-       "giusta_under": 1.6
+       "p_over": 0.3338,
+       "giusta_over": 3.0,
+       "giusta_under": 1.5
       },
       {
        "linea": 4.5,
-       "p_over": 0.2177,
-       "giusta_over": 4.59,
-       "giusta_under": 1.28
+       "p_over": 0.1839,
+       "giusta_over": 5.44,
+       "giusta_under": 1.23
       },
       {
        "linea": 5.5,
-       "p_over": 0.1141,
-       "giusta_over": 8.77,
-       "giusta_under": 1.13
+       "p_over": 0.0916,
+       "giusta_over": 10.92,
+       "giusta_under": 1.1
       },
       {
        "linea": 6.5,
-       "p_over": 0.0549,
-       "giusta_over": 18.22,
-       "giusta_under": 1.06
+       "p_over": 0.0418,
+       "giusta_over": 23.93,
+       "giusta_under": 1.04
       }
      ]
     }

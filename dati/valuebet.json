@@ -1,9 +1,15 @@
 {
- "aggiornato": "2026-11-26T10:38:12+00:00",
+ "aggiornato": "2026-11-27T09:11:56+00:00",
  "bookmaker": [
-  "Eurobet"
+  "Eurobet",
+  "Sisal",
+  "Snai",
+  "Goldbet",
+  "Lottomatica",
+  "bet365"
  ],
  "ev_min": 0.03,
  "kelly": 0.25,
- "giocate": []
+ "giocate": [],
+ "scartate_senza_conferma": 0
 }

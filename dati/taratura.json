@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-20T09:06:43+00:00",
+ "generato": "2026-11-27T09:11:39+00:00",
  "stagioni": [
   "2122",
   "2223",
@@ -11,39 +11,41 @@
  "par_1x2": {
   "xi": 0.002,
   "k": 4.0,
-  "alpha": 0.0
+  "alpha": 0.0,
+  "xi_liv": 0.02
  },
  "par_gol": {
   "xi": 0.002,
   "k": 8.0,
-  "alpha": 0.5
+  "alpha": 0.5,
+  "xi_liv": 0.02
  },
  "w_1x2": 0.0,
  "w_gol": 0.0,
  "taratura": {
   "partite": 1639,
   "logloss_1x2": {
-   "modello": 0.9902,
+   "modello": 0.9897,
    "mercato": 0.9719,
    "finale": 0.9719
   },
   "logloss_gol": {
-   "modello": 0.6866,
+   "modello": 0.6877,
    "mercato": 0.6821,
    "finale": 0.6821
   }
  },
  "verifica_stagione_corrente": {
-  "partite": 69,
+  "partite": 79,
   "logloss_1x2": {
-   "modello": 0.9277,
-   "mercato": 0.9169,
-   "finale": 0.9169
+   "modello": 0.9048,
+   "mercato": 0.8995,
+   "finale": 0.8995
   },
   "logloss_gol": {
-   "modello": 0.7082,
-   "mercato": 0.6934,
-   "finale": 0.6934
+   "modello": 0.6789,
+   "mercato": 0.6804,
+   "finale": 0.6804
   }
  },
  "roi_verifica": {

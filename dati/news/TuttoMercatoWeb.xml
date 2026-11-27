@@ -14,6 +14,15 @@
     </image>
     <atom:link href="https://www.tuttomercatoweb.com/rss/" rel="self" type="application/rss+xml"/>
     <item>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/altre-notizie/i-le-partite-oggi-i-programma-venerdi-27-novembre-2297879</guid>
+      <pubDate>Fri, 27 Nov 2026 04:30:00 +0100</pubDate>
+      <title>Le partite di oggi: il programma di venerdì 27 novembre</title>
+      <link>https://www.tuttomercatoweb.com/altre-notizie/i-le-partite-oggi-i-programma-venerdi-27-novembre-2297879</link>
+      <description>Non mancano le partite da poter seguire quest'oggi, venerdì 27 novembre 2026.</description>
+      <category>Altre Notizie</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/42/42d7fb5685a5c4eefa6867b9c45689c6-65573-oooz0000.jpeg" length="76592" type="image/jpeg"/>
+    </item>
+    <item>
       <guid isPermaLink="false">https://www.tuttomercatoweb.com/editoriale/zitto-zitto-amorim-cucinando-milan-scudetto-juve-smarrita-milano-roma-campo-palazzo-tormenti-abete-2297968</guid>
       <pubDate>Fri, 27 Nov 2026 01:10:00 +0100</pubDate>
       <title>Zitto zitto, Amorim sta cucinando un Milan da scudetto. Juve smarrita: è Milano-Roma sia in campo che nel Palazzo, tra i tormenti di Abete</title>
@@ -181,15 +190,6 @@
       <description>L'indagine avviata al Congresso degli Stati Uniti sui rapporti tra la FIFA di Gianni Infantino e Donald Trump entra in una nuova fase e coinvolge direttamente i vertici tecnici dell'organismo mondiale.</description>
       <category>Calcio estero</category>
       <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/ce/ce680dd88095d388f3cee32400572423-15314-oooz0000.jpeg" length="79172" type="image/jpeg"/>
-    </item>
-    <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/orsato-mantiene-parola-guida-arbitra-napoli-2025-disse-volerlo-2297823</guid>
-      <pubDate>Fri, 27 Nov 2026 00:08:00 +0100</pubDate>
-      <title>Orsato mantiene la parola: Guida arbitra per la prima volta il Napoli. Nel 2025 disse di non volerlo fare</title>
-      <link>https://www.tuttomercatoweb.com/serie-a/orsato-mantiene-parola-guida-arbitra-napoli-2025-disse-volerlo-2297823</link>
-      <description>Una designazione arbitrale che inevitabilmente farà discutere.</description>
-      <category>Serie A</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/dc/dca5b0325998f7fd2eafcc49dde147ef-81675-oooz0000.jpeg" length="59683" type="image/jpeg"/>
     </item>
   </channel>
 </rss>

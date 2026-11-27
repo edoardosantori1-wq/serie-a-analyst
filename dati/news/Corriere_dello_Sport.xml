@@ -5,7 +5,44 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 27 Nov 2026 17:09:56 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Nov 2026 18:58:12 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Raimondo rientra dopo l&#39;infortunio: &egrave; nella lista convocati per Frosinone-Parma]]></title>
+            <description><![CDATA[Sono 26 i giocatori a disposizione di Alvini per la gara valida per la tredicesima giornata di Serie A]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/frosinone/2026/11/27-152885899/raimondo_rientra_dopo_l_infortunio_nella_lista_convocati_per_frosinone-parma/</link>
+            <guid isPermaLink="false">sn:cds:152885899</guid>
+            <category><![CDATA[Frosinone]]></category>
+            <category><![CDATA[Raimondo]]></category>
+            <category><![CDATA[Grillitsch]]></category>
+            <category><![CDATA[Frosinone-Parma]]></category>
+            <pubDate>Fri, 27 Nov 2026 18:29:02 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/27/182810920-4c2de6bf-4cc5-4ad6-b652-45b7ff457769.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/27/182810920-4c2de6bf-4cc5-4ad6-b652-45b7ff457769.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/27/182810920-4c2de6bf-4cc5-4ad6-b652-45b7ff457769.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Sono 26 i giocatori a disposizione di Alvini per la gara valida per la tredicesima giornata di Serie A]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Adzic operato al ginocchio destro dopo l&#39;infortunio in Montenegro-Cipro: il comunicato della Juve]]></title>
+            <description><![CDATA[Il trequartista, girato in prestito al Sassuolo la scorsa estate, &egrave; stato sottoposto a intervento chirurgico a Lione: quando rientra]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/juve/2026/11/27-152884839/adzic_operato_al_ginocchio_destro_dopo_l_infortunio_in_montenegro-cipro_il_comunicato_della_juve/</link>
+            <guid isPermaLink="false">sn:cds:152884839</guid>
+            <category><![CDATA[Adzic]]></category>
+            <category><![CDATA[juve]]></category>
+            <category><![CDATA[Sassuolo]]></category>
+            <pubDate>Fri, 27 Nov 2026 17:20:16 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/27/171359289-8d1f6b94-34f1-44e1-9f0e-42af8bdd045a.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/27/171359289-8d1f6b94-34f1-44e1-9f0e-42af8bdd045a.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/27/171359289-8d1f6b94-34f1-44e1-9f0e-42af8bdd045a.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il trequartista, girato in prestito al Sassuolo la scorsa estate, &egrave; stato sottoposto a intervento chirurgico a Lione: quando rientra]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Juric stuzzica la Roma: &quot;&Egrave; da scudetto, ma ho un modo per metterla in difficolt&agrave;&quot;]]></title>
             <description><![CDATA[Il tecnico del Monza ha presentato la sfida contro il suo passato all&#39;Olimpico, valida per la tredicesima giornata di Serie A]]></description>
@@ -131,7 +168,7 @@
         </item>
         <item>
             <title><![CDATA[Dove vedere Venezia-Bologna in tv? Dazn o Sky, orario]]></title>
-            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida che apre la 13esima giornata di Serie A: le probabili scelte di Nicola e Palladino]]></description>
+            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida che apre la 13esima giornata di Serie A: le scelte ufficiali di Nicola e Palladino]]></description>
             <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/27-152876054/dove_vedere_venezia-bologna_in_tv_dazn_o_sky_orario/</link>
             <guid isPermaLink="false">sn:cds:152876054</guid>
             <category><![CDATA[Serie A]]></category>
@@ -144,7 +181,7 @@
             </media:content>
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/27/095320042-ae5c0f35-cc94-48fe-a1cf-ed89aad4e884.jpg">
             </media:thumbnail>
-            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida che apre la 13esima giornata di Serie A: le probabili scelte di Nicola e Palladino]]></dcterms:alternative>
+            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida che apre la 13esima giornata di Serie A: le scelte ufficiali di Nicola e Palladino]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
         <item>
@@ -504,42 +541,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Dodici mesi di emozioni, passione e orgoglio biancoceleste. Un appuntamento imperdibile per tutti i tifosi della Lazio]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Sneijder esalta Noslin: &quot;Gli dissi che avrebbe fatto strada, ora l&#39;Olanda deve convocarlo!&quot;]]></title>
-            <description><![CDATA[L&rsquo;ex trequartista dell&rsquo;Inter incensa l&rsquo;attaccante di Gattuso. E spiega perch&eacute; deve andare in nazionale]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/25-152826379/sneijder_esalta_noslin_gli_dissi_che_avrebbe_fatto_strada_ora_l_olanda_deve_convocarlo_/</link>
-            <guid isPermaLink="false">sn:cds:152826379</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Noslin]]></category>
-            <category><![CDATA[Sneijder]]></category>
-            <pubDate>Wed, 25 Nov 2026 10:51:44 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/25/104757968-a328f94d-2349-4a9c-87ce-9bb982801b16.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/104757968-a328f94d-2349-4a9c-87ce-9bb982801b16.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/104757968-a328f94d-2349-4a9c-87ce-9bb982801b16.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&rsquo;ex trequartista dell&rsquo;Inter incensa l&rsquo;attaccante di Gattuso. E spiega perch&eacute; deve andare in nazionale]]></dcterms:alternative>
-            <dc:creator><![CDATA[Carlo Roscito]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Senza limiti]]></title>
-            <description><![CDATA[L&#39;Euro Como continua a stupire: anche l&#39;AEK si &egrave; arreso ai lariani, ora terzi in classifica in Champions League]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/como/2026/11/25-152824225/senza_limiti/</link>
-            <guid isPermaLink="false">sn:cds:152824225</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Como]]></category>
-            <category><![CDATA[Champions League]]></category>
-            <pubDate>Wed, 25 Nov 2026 08:32:16 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/25/083208035-d7d4e31b-89e0-4923-b18a-650488b035fd.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/083208035-d7d4e31b-89e0-4923-b18a-650488b035fd.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/083208035-d7d4e31b-89e0-4923-b18a-650488b035fd.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&#39;Euro Como continua a stupire: anche l&#39;AEK si &egrave; arreso ai lariani, ora terzi in classifica in Champions League]]></dcterms:alternative>
-            <dc:creator><![CDATA[Xavier Iacobelli]]></dc:creator>
         </item>
     </channel>
 </rss>

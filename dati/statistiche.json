@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-27T17:13:20+00:00",
+ "aggiornato": "2026-11-27T18:59:42+00:00",
  "giornata": 13,
  "partite": [
   {
@@ -25,18 +25,18 @@
        "p_over": 0.5299,
        "giusta_over": 1.89,
        "giusta_under": 2.13,
-       "pin_over": 1.714,
-       "pin_under": 2.12,
-       "p_pin": 0.5529
+       "pin_over": 1.757,
+       "pin_under": 2.08,
+       "p_pin": 0.5421
       },
       {
        "linea": 9.5,
        "p_over": 0.435,
        "giusta_over": 2.3,
        "giusta_under": 1.77,
-       "pin_over": 2.14,
-       "pin_under": 1.699,
-       "p_pin": 0.4426
+       "pin_over": 2.19,
+       "pin_under": 1.684,
+       "p_pin": 0.4347
       },
       {
        "linea": 10.5,
@@ -159,27 +159,27 @@
        "p_over": 0.7661,
        "giusta_over": 1.31,
        "giusta_under": 4.28,
-       "pin_over": 1.495,
-       "pin_under": 2.53,
-       "p_pin": 0.6286
+       "pin_over": 1.485,
+       "pin_under": 2.56,
+       "p_pin": 0.6329
       },
       {
        "linea": 10.5,
        "p_over": 0.701,
        "giusta_over": 1.43,
        "giusta_under": 3.34,
-       "pin_over": 1.84,
-       "pin_under": 1.99,
-       "p_pin": 0.5196
+       "pin_over": 1.806,
+       "pin_under": 2.02,
+       "p_pin": 0.528
       },
       {
        "linea": 11.5,
        "p_over": 0.6325,
        "giusta_over": 1.58,
        "giusta_under": 2.72,
-       "pin_over": 2.3,
-       "pin_under": 1.595,
-       "p_pin": 0.4095
+       "pin_over": 2.26,
+       "pin_under": 1.613,
+       "p_pin": 0.4165
       }
      ]
     },
@@ -546,27 +546,27 @@
        "p_over": 0.5908,
        "giusta_over": 1.69,
        "giusta_under": 2.44,
-       "pin_over": 1.555,
-       "pin_under": 2.38,
-       "p_pin": 0.6048
+       "pin_over": 1.571,
+       "pin_under": 2.35,
+       "p_pin": 0.5993
       },
       {
        "linea": 9.5,
        "p_over": 0.498,
        "giusta_over": 2.01,
        "giusta_under": 1.99,
-       "pin_over": 1.943,
-       "pin_under": 1.884,
-       "p_pin": 0.4923
+       "pin_over": 1.97,
+       "pin_under": 1.854,
+       "p_pin": 0.4848
       },
       {
        "linea": 10.5,
        "p_over": 0.4099,
        "giusta_over": 2.44,
        "giusta_under": 1.69,
-       "pin_over": 2.43,
-       "pin_under": 1.534,
-       "p_pin": 0.387
+       "pin_over": 2.47,
+       "pin_under": 1.518,
+       "p_pin": 0.3806
       },
       {
        "linea": 11.5,
@@ -957,9 +957,9 @@
        "p_over": 0.3768,
        "giusta_over": 2.65,
        "giusta_under": 1.6,
-       "pin_over": 2.36,
+       "pin_over": 2.37,
        "pin_under": 1.561,
-       "p_pin": 0.3981
+       "p_pin": 0.3971
       },
       {
        "linea": 11.5,

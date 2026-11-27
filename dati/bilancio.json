@@ -1,25 +1,25 @@
 {
- "aggiornato": "2026-11-27T20:58:40+00:00",
+ "aggiornato": "2026-11-27T21:57:54+00:00",
  "totale": {
-  "giocate": 25,
+  "giocate": 27,
   "vinte": 11,
-  "perse": 14,
-  "aperte": 22,
-  "hit": 0.44,
-  "unita": 7.38,
-  "roi": 0.2953
+  "perse": 16,
+  "aperte": 20,
+  "hit": 0.4074,
+  "unita": 5.38,
+  "roi": 0.1993
  },
  "categorie": [
   {
    "cat": "pronostico",
    "nome": "Pronostici partita",
-   "giocate": 10,
+   "giocate": 11,
    "vinte": 5,
-   "perse": 5,
-   "aperte": 10,
-   "hit": 0.5,
-   "unita": -2.78,
-   "roi": -0.278
+   "perse": 6,
+   "aperte": 9,
+   "hit": 0.4545,
+   "unita": -3.78,
+   "roi": -0.3436
   },
   {
    "cat": "tripla_semplice",
@@ -68,13 +68,13 @@
   {
    "cat": "singola",
    "nome": "Singole",
-   "giocate": 5,
+   "giocate": 6,
    "vinte": 1,
-   "perse": 4,
-   "aperte": 3,
-   "hit": 0.2,
-   "unita": -2.5,
-   "roi": -0.5
+   "perse": 5,
+   "aperte": 2,
+   "hit": 0.1667,
+   "unita": -3.5,
+   "roi": -0.5833
   },
   {
    "cat": "value",
@@ -146,13 +146,13 @@
  "giornate": [
   {
    "giornata": 13,
-   "giocate": 0,
+   "giocate": 2,
    "vinte": 0,
-   "perse": 0,
-   "aperte": 22,
-   "hit": null,
-   "unita": 0,
-   "roi": null
+   "perse": 2,
+   "aperte": 20,
+   "hit": 0.0,
+   "unita": -2.0,
+   "roi": -1.0
   },
   {
    "giornata": 12,
@@ -508,10 +508,10 @@
    "mercato": "A_O1.5",
    "quota": 2.25,
    "p": 0.5946,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-27T19:45:00+00:00",
-   "risultato": null
+   "risultato": "0-0"
   },
   {
    "cat": "singola",
@@ -520,10 +520,10 @@
    "mercato": "A_O1.5",
    "quota": 2.25,
    "p": 0.5946,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-27T19:45:00+00:00",
-   "risultato": null
+   "risultato": "0-0"
   },
   {
    "cat": "pronostico",

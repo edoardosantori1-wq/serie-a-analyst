@@ -5,7 +5,24 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 27 Nov 2026 11:59:06 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Nov 2026 13:14:16 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[De Rossi durissimo sulla Coppa Italia: &quot;Costruita male, non piace a nessuno, se non a chi ha altri interessi&quot;]]></title>
+            <description><![CDATA[Doppio confronto con l&#39;Inter tra campionato e ottavi: il tecnico rossobl&ugrave; chiede la partita perfetta e perde Ostigard per San Siro. Ecco cosa ha detto]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/genoa/2026/11/27-152878630/de_rossi_durissimo_sulla_coppa_italia_costruita_male_non_piace_a_nessuno_se_non_a_chi_ha_altri_interessi/</link>
+            <guid isPermaLink="false">sn:cds:152878630</guid>
+            <category><![CDATA[De Rossi]]></category>
+            <category><![CDATA[Genoa]]></category>
+            <pubDate>Fri, 27 Nov 2026 12:34:54 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/02/26/143846169-8e28fdef-4e8d-437d-a85e-b2f57abead79.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/02/26/143846169-8e28fdef-4e8d-437d-a85e-b2f57abead79.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/02/26/143846169-8e28fdef-4e8d-437d-a85e-b2f57abead79.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Doppio confronto con l&#39;Inter tra campionato e ottavi: il tecnico rossobl&ugrave; chiede la partita perfetta e perde Ostigard per San Siro. Ecco cosa ha detto]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Gattuso si emoziona per i tifosi della Lazio, poi la battuta su Allegri: &quot;&Egrave; un fenomeno con le tabelle, quei conti...&quot;]]></title>
             <description><![CDATA[Le dichiarazioni rilasciate dal tecnico biancoceleste in vista del match con la squadra di Abate, con un occhio alla classifica e agli infortunati]]></description>
@@ -521,26 +538,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/071737362-2526e20b-2bb7-4b44-bf15-894541da3863.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Domani titolare contro l&rsquo;Omonia, in Europa League gi&agrave; 3 gol e 2 assist in quattro partite: cerca la svolta]]></dcterms:alternative>
-            <dc:creator><![CDATA[Fabrizio Patania]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Come Gattuso ha costruito l&rsquo;impresa Lazio: i colloqui con Zaccagni e Rovella e quel no al Torino]]></title>
-            <description><![CDATA[<p>Il diario segreto dell&rsquo;ex ct dell&rsquo;Italia: non accett&ograve; la proposta&nbsp;di Cairo a maggio. Lotito lo aveva gi&agrave; preso nel 2019: i segnali del destino</p>
-]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/25-152821337/come_gattuso_ha_costruito_limpresa_lazio_i_colloqui_con_zaccagni_e_rovella_e_quel_no_al_torino/</link>
-            <guid isPermaLink="false">sn:cds:152821337</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Lazio]]></category>
-            <category><![CDATA[Gattuso]]></category>
-            <pubDate>Wed, 25 Nov 2026 06:52:00 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/25/055129375-e6befaba-5316-4764-b605-eee679a9cd66.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/055129375-e6befaba-5316-4764-b605-eee679a9cd66.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/055129375-e6befaba-5316-4764-b605-eee679a9cd66.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[<p>Il diario segreto dell&rsquo;ex ct dell&rsquo;Italia: non accett&ograve; la proposta&nbsp;di Cairo a maggio. Lotito lo aveva gi&agrave; preso nel 2019: i segnali del destino</p>
-]]></dcterms:alternative>
             <dc:creator><![CDATA[Fabrizio Patania]]></dc:creator>
         </item>
     </channel>

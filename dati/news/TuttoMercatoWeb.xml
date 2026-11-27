@@ -14,98 +14,71 @@
     </image>
     <atom:link href="https://www.tuttomercatoweb.com/rss/" rel="self" type="application/rss+xml"/>
     <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/il-talento-del-giorno/i-un-talento-giorno-i-sergi-mayans-pique-sognare-masia-2297928</guid>
-      <pubDate>Fri, 27 Nov 2026 06:00:00 +0100</pubDate>
-      <title>Un talento al giorno, Sergi Mayans: il nuovo Piquè che fa sognare La Masia</title>
-      <link>https://www.tuttomercatoweb.com/il-talento-del-giorno/i-un-talento-giorno-i-sergi-mayans-pique-sognare-masia-2297928</link>
-      <description>Sergi Mayans (nato il 30 gennaio 2009 a L’Hospitalet de l’Infant) è un difensore centrale spagnolo di 17 anni, fiore all'occhiello de La Masia.</description>
-      <category>Il Talento del Giorno</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/11/1153a1864740adfe9f18bccec261775d-04068-oooz0000.jpeg" length="70425" type="image/jpeg"/>
-    </item>
-    <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/altre-notizie/i-oggi-tv-i-torna-serie-a-vedere-venezia-bologna-2298006</guid>
-      <pubDate>Fri, 27 Nov 2026 05:30:29 +0100</pubDate>
-      <title>Oggi in TV, torna la Serie A: dove vedere Venezia-Bologna</title>
-      <link>https://www.tuttomercatoweb.com/altre-notizie/i-oggi-tv-i-torna-serie-a-vedere-venezia-bologna-2298006</link>
-      <description>Dopo la tre giorni europea, torna la Serie A: la sfida fra Venezia e Bologna dà il via alla 13ª giornata del massimo campionato.</description>
-      <category>Altre Notizie</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/67/67737370246e7f1a150f0c4bd06ea0c7-08668-oooz0000.jpeg" length="59766" type="image/jpeg"/>
-    </item>
-    <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/nato-oggi/roberto-mancini-voglia-vincere-mondiale-europeo-fuga-2297092</guid>
-      <pubDate>Fri, 27 Nov 2026 05:00:16 +0100</pubDate>
-      <title>Roberto Mancini, la voglia di vincere un Mondiale dopo l'Europeo. Anche se quella fuga...</title>
-      <link>https://www.tuttomercatoweb.com/nato-oggi/roberto-mancini-voglia-vincere-mondiale-europeo-fuga-2297092</link>
-      <description>Tanto tuonò che piovve.</description>
-      <category>Nato Oggi...</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/d7/d7bb09a7e9610f134930c482b664fd55-34422-oooz0000.jpeg" length="61606" type="image/jpeg"/>
-    </item>
-    <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/altre-notizie/i-le-partite-oggi-i-programma-venerdi-27-novembre-2297879</guid>
-      <pubDate>Fri, 27 Nov 2026 04:30:00 +0100</pubDate>
-      <title>Le partite di oggi: il programma di venerdì 27 novembre</title>
-      <link>https://www.tuttomercatoweb.com/altre-notizie/i-le-partite-oggi-i-programma-venerdi-27-novembre-2297879</link>
-      <description>Non mancano le partite da poter seguire quest'oggi, venerdì 27 novembre 2026.</description>
-      <category>Altre Notizie</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/42/42d7fb5685a5c4eefa6867b9c45689c6-65573-oooz0000.jpeg" length="76592" type="image/jpeg"/>
-    </item>
-    <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/editoriale/zitto-zitto-amorim-cucinando-milan-scudetto-juve-smarrita-milano-roma-campo-palazzo-tormenti-abete-2297968</guid>
-      <pubDate>Fri, 27 Nov 2026 01:10:00 +0100</pubDate>
-      <title>Zitto zitto, Amorim sta cucinando un Milan da scudetto. Juve smarrita: è Milano-Roma sia in campo che nel Palazzo, tra i tormenti di Abete</title>
-      <link>https://www.tuttomercatoweb.com/editoriale/zitto-zitto-amorim-cucinando-milan-scudetto-juve-smarrita-milano-roma-campo-palazzo-tormenti-abete-2297968</link>
-      <description>Il titolo era questo già prima della gara con l’Olympiacos, e forse sarebbe rimasto lo stesso anche se il Milan al Pireo avesse perso.</description>
-      <category>Editoriale</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/fe/fee947f6cbb7aa642a21c96d7d67464e-47924-oooz0000.jpeg" length="77124" type="image/jpeg"/>
-    </item>
-    <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/calciomercato-i-no-stop-i-indiscrezioni-trattative-retroscena-26-novembre-2297860</guid>
-      <pubDate>Fri, 27 Nov 2026 01:00:00 +0100</pubDate>
-      <title>Calciomercato no stop - Indiscrezioni, trattative e retroscena del 26 novembre</title>
-      <link>https://www.tuttomercatoweb.com/serie-a/calciomercato-i-no-stop-i-indiscrezioni-trattative-retroscena-26-novembre-2297860</link>
-      <description>INTER, C'È IL RINNOVO DI CARLOS AUGUSTO: IL BRASILIANO HA FIRMATO FINO AL 2031.</description>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/osmajic-numeri-milito-piatek-momento-magico-de-rossi-carismatico-2298033</guid>
+      <pubDate>Fri, 27 Nov 2026 08:18:00 +0100</pubDate>
+      <title>Osmajic, numeri come Milito e Piatek: "Momento magico. De Rossi? Carismatico"</title>
+      <link>https://www.tuttomercatoweb.com/serie-a/osmajic-numeri-milito-piatek-momento-magico-de-rossi-carismatico-2298033</link>
+      <description>Nella lotta salvezza non c'è solo il fattore-Varela o la sorpresa Raimondo: fra le squadre in lotta per non retrocedere, il Genoa sta beneficiando di un Milutin Osmajic che è stato fin da subito determinante, con già 6 reti realizzate in Serie A.</description>
       <category>Serie A</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/91/9181b64a28f463f2dd9678f478ddaea0-96856-oooz0000.jpeg" length="67019" type="image/jpeg"/>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/9d/9d2a1a315ca61a521844658322ad1d3e-50458-601o277o1666o1342z0f2e.jpeg" length="81911" type="image/jpeg"/>
     </item>
     <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/i-fatti-del-giorno/europa-conference-league-italiana-juve-seconda-milan-atalanta-zona-playoff-2298017</guid>
-      <pubDate>Fri, 27 Nov 2026 00:56:01 +0100</pubDate>
-      <title>Europa e Conference League all'italiana: Juve seconda, Milan e Atalanta in zona playoff</title>
-      <link>https://www.tuttomercatoweb.com/i-fatti-del-giorno/europa-conference-league-italiana-juve-seconda-milan-atalanta-zona-playoff-2298017</link>
-      <description>Tre vittorie, tutte in rimonta, per le italiane impegnate in Europa e Conference League.</description>
-      <category>I fatti del giorno</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/8d/8da676ce47106fa9c7db1f8f0a0bfdcb-19878-oooz0000.jpeg" length="58563" type="image/jpeg"/>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/fantacalcio/fantacalcio-11-consigliati-13a-giornata-krstovic-nico-paz-2298022</guid>
+      <pubDate>Fri, 27 Nov 2026 08:15:00 +0100</pubDate>
+      <title>Fantacalcio, gli 11 consigliati per la 13ª giornata: da Krstovic a Nico Paz</title>
+      <link>https://www.tuttomercatoweb.com/fantacalcio/fantacalcio-11-consigliati-13a-giornata-krstovic-nico-paz-2298022</link>
+      <description>Venerdì alle 20:45 ci sarà l'anticipo Venezia-Bologna che darà inizio alla tredicesima giornata al fantacalcio.</description>
+      <category>Fantacalcio</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/a3/a3e8df5f582e394e9d41fba0a56747d6-97033-oooz0000.jpeg" length="72565" type="image/jpeg"/>
     </item>
     <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/i-fatti-del-giorno/juve-batte-omonia-vola-classifica-europa-league-spalletti-spaziali-2297945</guid>
-      <pubDate>Fri, 27 Nov 2026 00:53:22 +0100</pubDate>
-      <title>La Juve batte l'Omonia e vola al secondo posto della classifica di Europa League. Spalletti: "Gol bellissimi"</title>
-      <link>https://www.tuttomercatoweb.com/i-fatti-del-giorno/juve-batte-omonia-vola-classifica-europa-league-spalletti-spaziali-2297945</link>
-      <description>La Juventus parte piano, 'si incasina', come ammesso dallo stesso Spalletti, ma poi ha ragione dell'Omonia in virtù di una reazione di pancia e di una superiorità tecniche che si concretizza in modo evidente nella ripresa.</description>
-      <category>I fatti del giorno</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/b0/b01d4d7083bb70cb23efa0d4bad51c3c-20074-oooz0000.jpeg" length="77687" type="image/jpeg"/>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/seba-esposito-sfida-napoli-punta-gennaio-incontro-agente-2298036</guid>
+      <pubDate>Fri, 27 Nov 2026 08:12:00 +0100</pubDate>
+      <title>Seba Esposito sfida il Napoli, che lo punta per gennaio: incontro con l'agente</title>
+      <link>https://www.tuttomercatoweb.com/serie-a/seba-esposito-sfida-napoli-punta-gennaio-incontro-agente-2298036</link>
+      <description>In vista della sfida di campionato di domenica alle 15 a Reggio Emilia tra Sassuolo e Napoli, il nome di Sebastiano Esposito incrocia le vicende di campo con le strategie di mercato del club azzurro.</description>
+      <category>Serie A</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/2d/2da9e78c5a1ea39038c3cab29d83ad28-23030-oooz0000.jpeg" length="83178" type="image/jpeg"/>
     </item>
     <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/i-fatti-del-giorno/uragano-milan-ribalta-olympiacos-playoff-avvicinano-2298013</guid>
-      <pubDate>Fri, 27 Nov 2026 00:49:45 +0100</pubDate>
-      <title>Uragano Milan, in un quarto d'ora ribalta l'Olympiacos. E i playoff si avvicinano</title>
-      <link>https://www.tuttomercatoweb.com/i-fatti-del-giorno/uragano-milan-ribalta-olympiacos-playoff-avvicinano-2298013</link>
-      <description>Il Milan torna in corsa per qualificarsi ai playoff di Europa League.</description>
-      <category>I fatti del giorno</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/6a/6a77a8c8c8d4806cbb4886fa56dc14e3-22514-oooz0000.jpeg" length="57268" type="image/jpeg"/>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/lutto-calcio-morto-brasiliano-juary-67-anni-idolo-avellino-passato-inter-2298037</guid>
+      <pubDate>Fri, 27 Nov 2026 08:09:30 +0100</pubDate>
+      <title>Lutto nel calcio: è morto il brasiliano Juary a 67 anni. Idolo di Avellino, passato dall'Inter</title>
+      <link>https://www.tuttomercatoweb.com/serie-a/lutto-calcio-morto-brasiliano-juary-67-anni-idolo-avellino-passato-inter-2298037</link>
+      <description>Nella serata di giovedì 26 novembre si è spento all'età di 67 anni Juary Jorge dos Santos Filho, ex attaccante brasiliano tra i giocatori più rappresentativi nella storia dell'Avellino, che ha vestito anche le maglie di Inter, Cremonese, ed Ascoli, all'estero...</description>
+      <category>Serie A</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/c7/c7aabf57e4aacba7d9df5eee97ff1e2d-93854-oooz0000.jpeg" length="49948" type="image/jpeg"/>
     </item>
     <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/i-fatti-del-giorno/pazza-atalanta-rimonta-banja-luka-0-2-3-2-minuti-battuto-borac-2298018</guid>
-      <pubDate>Fri, 27 Nov 2026 00:45:00 +0100</pubDate>
-      <title>Una pazza Atalanta rimonta a Banja Luka: da 0-2 a 3-2 in otto minuti, battuto il Borac</title>
-      <link>https://www.tuttomercatoweb.com/i-fatti-del-giorno/pazza-atalanta-rimonta-banja-luka-0-2-3-2-minuti-battuto-borac-2298018</link>
-      <description>Succede veramente di tutto a Banja Luka.</description>
-      <category>I fatti del giorno</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/dc/dcd78cb6908bb1d53a04a8f3fc7a9b94-78897-oooz0000.jpeg" length="167826" type="image/jpeg"/>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/altre-notizie/rampulla-juve-pagano-conceicao-prenderei-soldi-e-2297831</guid>
+      <pubDate>Fri, 27 Nov 2026 08:08:00 +0100</pubDate>
+      <title>Rampulla: "Juve, se pagano bene Conceicao prenderei i soldi e..."</title>
+      <link>https://www.tuttomercatoweb.com/altre-notizie/rampulla-juve-pagano-conceicao-prenderei-soldi-e-2297831</link>
+      <description>"Se costa tanto Conceicao, prenderei i soldi e lascerei Woltemade lì, andando su altre soluzioni".</description>
+      <category>Altre Notizie</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/5d/5dcfa197c24bda0e392e27b53485aab2-11849-oooz0000.jpeg" length="84522" type="image/jpeg"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/black-friday-serie-a-napoli-punta-lucca-cede-prezzo-saldo-2297781</guid>
+      <pubDate>Fri, 27 Nov 2026 08:08:00 +0100</pubDate>
+      <title>Black Friday Serie A: il Napoli non punta più su Lorenzo Lucca. Via a prezzo di saldo</title>
+      <link>https://www.tuttomercatoweb.com/serie-a/black-friday-serie-a-napoli-punta-lucca-cede-prezzo-saldo-2297781</link>
+      <description>A gennaio il Napoli cercherà una nuova sistemazione per Lorenzo Lucca, ormai sembra chiaro veramente a tutti.</description>
+      <category>Serie A</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/fb/fb5d3e5be06054d14622659edcd0a516-81686-oooz0000.jpeg" length="74391" type="image/jpeg"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/podcast-tmw/6-miglior-acquisto-estate-milla-centro-como-2297678</guid>
+      <pubDate>Fri, 27 Nov 2026 08:04:00 +0100</pubDate>
+      <title>Solo 6 milioni per il miglior acquisto dell'estate: Milla è al centro del Como</title>
+      <link>https://www.tuttomercatoweb.com/podcast-tmw/6-miglior-acquisto-estate-milla-centro-como-2297678</link>
+      <description>Sei milioni per uno dei centrocampisti più completi arrivati in Serie A.</description>
+      <category>Podcast TMW</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/a6/a60a26a9a24dfb9a4a92175fb2ee7b29-21459-oooz0000.jpeg" length="69634" type="image/jpeg"/>
     </item>
     <item>
       <guid isPermaLink="false">https://www.tuttomercatoweb.com/a-tu-per-tu/stefano-colantuono-lazio-gattuso-roma-psg-spot-calcio-fiorentina-serve-pazienza-2298021</guid>
-      <pubDate>Fri, 27 Nov 2026 00:44:50 +0100</pubDate>
+      <pubDate>Fri, 27 Nov 2026 08:00:00 +0100</pubDate>
       <title>Stefano Colantuono: “Lazio, bravo Gattuso. Roma, contro il PSG spot per il calcio. Fiorentina serve pazienza”</title>
       <link>https://www.tuttomercatoweb.com/a-tu-per-tu/stefano-colantuono-lazio-gattuso-roma-psg-spot-calcio-fiorentina-serve-pazienza-2298021</link>
       <description>“Bravi tutti: allenatore, direttore, presidente.</description>
@@ -113,83 +86,110 @@
       <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/cc/cc057c3ab2badde90d4447909553223f-88440-oooz0000.jpeg" length="55315" type="image/jpeg"/>
     </item>
     <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/i-fatti-del-giorno/inter-carlos-augusto-2031-svolta-giudiziaria-josep-martinez-2298014</guid>
-      <pubDate>Fri, 27 Nov 2026 00:42:00 +0100</pubDate>
-      <title>Inter, Carlos Augusto avanti fino al 2031. Svolta giudiziaria per il caso Josep Martinez</title>
-      <link>https://www.tuttomercatoweb.com/i-fatti-del-giorno/inter-carlos-augusto-2031-svolta-giudiziaria-josep-martinez-2298014</link>
-      <description>"Lo aspettavo da tanto".</description>
-      <category>I fatti del giorno</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/c1/c1e34fdd71ed2953cf078fc472191513-74611-767o383o2243o1859z1484.jpeg" length="61105" type="image/jpeg"/>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/editoriale/zitto-zitto-amorim-cucinando-milan-scudetto-juve-smarrita-milano-roma-campo-palazzo-tormenti-abete-2297968</guid>
+      <pubDate>Fri, 27 Nov 2026 08:00:00 +0100</pubDate>
+      <title>Zitto zitto, Amorim sta cucinando un Milan da scudetto. Juve smarrita: è Milano-Roma sia in campo che nel Palazzo, tra i tormenti di Abete</title>
+      <link>https://www.tuttomercatoweb.com/editoriale/zitto-zitto-amorim-cucinando-milan-scudetto-juve-smarrita-milano-roma-campo-palazzo-tormenti-abete-2297968</link>
+      <description>Il titolo era questo già prima della gara con l’Olympiacos, e forse sarebbe rimasto lo stesso anche se il Milan al Pireo avesse perso.</description>
+      <category>Editoriale</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/fe/fee947f6cbb7aa642a21c96d7d67464e-47924-oooz0000.jpeg" length="77124" type="image/jpeg"/>
     </item>
     <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/vittorie-pareggi-sanno-impresa-no-calcio-italiano-buttare-2298003</guid>
-      <pubDate>Fri, 27 Nov 2026 00:40:01 +0100</pubDate>
-      <title>Cinque vittorie e due pareggi che sanno di impresa: no, il calcio italiano non è da buttare</title>
-      <link>https://www.tuttomercatoweb.com/serie-a/vittorie-pareggi-sanno-impresa-no-calcio-italiano-buttare-2298003</link>
-      <description>Cinque vittorie e due pareggi, questi ultimi mica banali perché arrivati in casa di Manchester City e Paris Saint-Germain, due delle più serie candidate alla vittoria della Champions League.</description>
-      <category>Serie A</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/b0/b0ae13a19c01528b6fd39929c867e58d-15455-oooz0000.jpeg" length="47794" type="image/jpeg"/>
-    </item>
-    <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/i-fatti-del-giorno/italia-sognare-vola-sedicesimi-mondiale-u17-uzbekistan-battuto-3-1-2297942</guid>
-      <pubDate>Fri, 27 Nov 2026 00:38:19 +0100</pubDate>
-      <title>L'Italia che ci fa sognare fa tre su tre e vola ai sedicesimi al Mondiale U17: Uzbekistan battuto 3-1</title>
-      <link>https://www.tuttomercatoweb.com/i-fatti-del-giorno/italia-sognare-vola-sedicesimi-mondiale-u17-uzbekistan-battuto-3-1-2297942</link>
-      <description>Grazie al 3-1 contro l’Uzbekistan, nella terza e ultima giornata del Gruppo E del Mondiale Under 17, in corso in Qatar fino al 13 dicembre, l'Italia va ai sedicesimi sicura di essere nelle prime otto prime, e dunque di sfidare una delle otto terze che...</description>
-      <category>I fatti del giorno</category>
-    </item>
-    <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/i-fatti-del-giorno/napoli-cerca-anche-portiere-mercato-ultima-idea-brasiliano-morisco-2297894</guid>
-      <pubDate>Fri, 27 Nov 2026 00:36:00 +0100</pubDate>
-      <title>Il Napoli cerca (anche) un portiere sul mercato: l'ultima idea è il brasiliano Morisco</title>
-      <link>https://www.tuttomercatoweb.com/i-fatti-del-giorno/napoli-cerca-anche-portiere-mercato-ultima-idea-brasiliano-morisco-2297894</link>
-      <description>Il calciomercato di gennaio si avvicina e tra le squadre di Serie A che vengono pronosticate come più attive rispetto ad altre trova un posto anche il Napoli.</description>
-      <category>I fatti del giorno</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/56/56155c2ecabc63f692ab05d050300786-83559-oooz0000.jpeg" length="50846" type="image/jpeg"/>
-    </item>
-    <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/i-fatti-del-giorno/serie-b-cambio-panchina-bucchi-esonerato-arezzo-tonelli-tecnico-empoli-2297999</guid>
-      <pubDate>Fri, 27 Nov 2026 00:34:50 +0100</pubDate>
-      <title>Serie B, doppio cambio in panchina: Bucchi esonerato dall'Arezzo, Tonelli nuovo tecnico dell'Empoli</title>
-      <link>https://www.tuttomercatoweb.com/i-fatti-del-giorno/serie-b-cambio-panchina-bucchi-esonerato-arezzo-tonelli-tecnico-empoli-2297999</link>
-      <description>Giornata di cambiamenti sulle panchine di Serie B.</description>
-      <category>I fatti del giorno</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/91/917401594cb3d6b54907c0d525d82be8-11739-oooz0000.jpeg" length="69617" type="image/jpeg"/>
-    </item>
-    <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/esordio-16-corte-bayern-vignato-racconta-prima-tornero-europa-2297747</guid>
-      <pubDate>Fri, 27 Nov 2026 00:30:01 +0100</pubDate>
-      <title>L'esordio a 16 anni e la corte del Bayern, Vignato si racconta: "Prima o poi tornerò in Europa"</title>
-      <link>https://www.tuttomercatoweb.com/serie-a/esordio-16-corte-bayern-vignato-racconta-prima-tornero-europa-2297747</link>
-      <description>A soli 16 anni esordiva in Serie A, sul suo talento si era fatto avanti anche il Bayern Monaco, poi ha trovato la sua strada a Bologna e aspetta un giorno di tornare in Italia.</description>
-      <category>Serie A</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/70/703950fcca38065c46b56f833316e09a-92496-oooz0000.jpeg" length="70361" type="image/jpeg"/>
-    </item>
-    <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/calcio-estero/bayern-ceo-kahn-musiala-danneggiato-voleva-pressione-agenti-2298011</guid>
-      <pubDate>Fri, 27 Nov 2026 00:26:00 +0100</pubDate>
-      <title>Bayern, l'ex CEO Kahn: "Musiala danneggiato. Forse si voleva fare pressione sugli agenti"</title>
-      <link>https://www.tuttomercatoweb.com/calcio-estero/bayern-ceo-kahn-musiala-danneggiato-voleva-pressione-agenti-2298011</link>
-      <description>Il Bayern Monaco ha danneggiato Jamal Musiala con le sue dichiarazioni pubbliche? Oliver Kahn, ex CEO del club bavarese, si è espresso a chiare lettere e dettagliatamente sul caso del trequartista tedesco, elogiando il ruolo di Joshua Kimmich come capitano,...</description>
-      <category>Calcio estero</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/89/898acae72abdbb3545e2f1f46130e6b8-67785-oooz0000.jpeg" length="52081" type="image/jpeg"/>
-    </item>
-    <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/ranking-uefa-corsa-5-champions-italia-rimonta-3-europea-2298000</guid>
-      <pubDate>Fri, 27 Nov 2026 00:26:00 +0100</pubDate>
-      <title>Ranking UEFA, corsa al 5° posto Champions: Italia in rimonta dopo la 3 giorni europea</title>
-      <link>https://www.tuttomercatoweb.com/serie-a/ranking-uefa-corsa-5-champions-italia-rimonta-3-europea-2298000</link>
-      <description>Una buona tre giorni di coppe permette all'Italia di essere in scia per conquistare un posto extra per la Champions League 2027/28.</description>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/napoli-vuole-rivoluzionare-reparto-portieri-prendendone-2297844</guid>
+      <pubDate>Fri, 27 Nov 2026 07:56:23 +0100</pubDate>
+      <title>Il Napoli vuole rivoluzionare anche il reparto portieri. Prendendone altri due</title>
+      <link>https://www.tuttomercatoweb.com/serie-a/napoli-vuole-rivoluzionare-reparto-portieri-prendendone-2297844</link>
+      <description>Alex Meret in scadenza, Vanja Milinkovic-Savic bocciato.</description>
       <category>Serie A</category>
     </item>
     <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/carlos-augusto-rinnova-poi-calha-thuram-altri-inter-punto-rinnovi-2297843</guid>
-      <pubDate>Fri, 27 Nov 2026 00:22:30 +0100</pubDate>
-      <title>Carlos Augusto rinnova, e poi? Calha, Thuram e gli altri: Inter, il punto sui rinnovi</title>
-      <link>https://www.tuttomercatoweb.com/serie-a/carlos-augusto-rinnova-poi-calha-thuram-altri-inter-punto-rinnovi-2297843</link>
-      <description>Il primo rinnovo dell'Inter targata Dario Baccin e Simone Lo Schiavo è quello di Carlos Augusto.</description>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/black-friday-calciomercato-migliori-occasioni-vista-gennaio-2297760</guid>
+      <pubDate>Fri, 27 Nov 2026 07:52:00 +0100</pubDate>
+      <title>Black Friday di calciomercato: le migliori occasioni in vista di gennaio</title>
+      <link>https://www.tuttomercatoweb.com/serie-a/black-friday-calciomercato-migliori-occasioni-vista-gennaio-2297760</link>
+      <description>Oggi in Italia e nel mondo è Black Friday, il venerdì di novembre in cui gli esercizi commerciali si sbizzarriscono a suon di offerte e promozioni speciali, per un termine che negli ultimi anni ha preso piede nel senso comune come giornata di grandi occasioni,...</description>
       <category>Serie A</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/c1/c1038b4613eadb33bce864dbdd769279-65284-oooz0000.jpeg" length="64863" type="image/jpeg"/>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/5e/5e685cdb1ab8559e8253e5e6919fb4b2-73313-oooz0000.jpeg" length="160310" type="image/jpeg"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/settimana-europea-pensando-campionato-2298002</guid>
+      <pubDate>Fri, 27 Nov 2026 07:49:00 +0100</pubDate>
+      <title>Ecco che cosa ha detto la settimana europea pensando al campionato</title>
+      <link>https://www.tuttomercatoweb.com/serie-a/settimana-europea-pensando-campionato-2298002</link>
+      <description>Due vittorie e due pareggi in Champions League, successi di Milan e Juve in Europa League.</description>
+      <category>Serie A</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/97/977e77a840eaeb89a00b29e0808c9673-36382-oooz0000.jpeg" length="101952" type="image/jpeg"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/varela-crescendo-benfica-nomi-segnare-taccuino-2297218</guid>
+      <pubDate>Fri, 27 Nov 2026 07:45:00 +0100</pubDate>
+      <title>I nuovi Varela che stanno crescendo al Benfica. I nomi da segnare sul taccuino</title>
+      <link>https://www.tuttomercatoweb.com/serie-a/varela-crescendo-benfica-nomi-segnare-taccuino-2297218</link>
+      <description>Capocannoniere con il Monza con 12 reti, Gustavo Varela guida la classifica marcatori della Serie A di cui è la vera e propria rivelazione.</description>
+      <category>Serie A</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/38/38c4e3cf6a88cf2e667a6bda23fb203e-21294-oooz0000.jpeg" length="81371" type="image/jpeg"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/calcio-femminile/scelta-strategica-giocare-taranto-tifosi-rilanciare-sud-2297955</guid>
+      <pubDate>Fri, 27 Nov 2026 07:40:20 +0100</pubDate>
+      <title>La scelta strategica di giocare a Taranto: per fare il pieno di tifosi e rilanciare il Sud</title>
+      <link>https://www.tuttomercatoweb.com/calcio-femminile/scelta-strategica-giocare-taranto-tifosi-rilanciare-sud-2297955</link>
+      <description>L'Italia in questi giorni sta preparando la sfida più importante dell'anno, quella contro la Finlandia per un posto al Mondiale che si terrà in Brasile in estate.</description>
+      <category>Calcio femminile</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/31/311c6a661e1405760b615da88527d0e6-89816-oooz0000.jpeg" length="127023" type="image/jpeg"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/roma-ryan-friedkin-trigoria-parla-mercato-rinforzi-attesi-gasp-2298032</guid>
+      <pubDate>Fri, 27 Nov 2026 07:36:00 +0100</pubDate>
+      <title>Roma, oggi Ryan Friedkin a Trigoria: si parla anche di mercato. I rinforzi attesi da Gasp</title>
+      <link>https://www.tuttomercatoweb.com/serie-a/roma-ryan-friedkin-trigoria-parla-mercato-rinforzi-attesi-gasp-2298032</link>
+      <description>Oggi è previsto l'arrivo a Trigoria di Ryan Friedkin per fare il punto su diverse questioni societarie e sportive della Roma, tra cui il calciomercato, i parametri del fair play finanziario, il progetto per il nuovo stadio e la possibile apertura di un...</description>
+      <category>Serie A</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/1f/1f87b3895ccad1fe887230032cf63ed7-49933-oooz0000.jpeg" length="106386" type="image/jpeg"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/milan-ricordato-urla-amorim-56esimo-2298020</guid>
+      <pubDate>Fri, 27 Nov 2026 07:30:40 +0100</pubDate>
+      <title>Il Milan si è ricordato delle urla di Amorim solo dopo il 56esimo</title>
+      <link>https://www.tuttomercatoweb.com/serie-a/milan-ricordato-urla-amorim-56esimo-2298020</link>
+      <description>Il primo tempo sembrava ripercorrere le disastrose ultime partite europee del Milan, ma nel secondo, subito dopo il 2-0 greco, il Milan ha rialzato la testa e si è ricordato di ciò che aveva chiesto Amorim alla vigilia del match contro l'Olympiacos: la...</description>
+      <category>Serie A</category>
+    </item>
+    <item>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/gustavo-varela-piatek-vlahovic-operazione-sostenibile-2297743</guid>
+      <pubDate>Fri, 27 Nov 2026 07:26:19 +0100</pubDate>
+      <title>Gustavo Varela come Piatek o come Vlahovic? Sarebbe un'operazione sostenibile</title>
+      <link>https://www.tuttomercatoweb.com/serie-a/gustavo-varela-piatek-vlahovic-operazione-sostenibile-2297743</link>
+      <description>Gustavo Varela è fore il debuttante più sorprendente degli ultimi anni.</description>
+      <category>Serie A</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/14/14621b798218f4cf8e314a12abd097c6-18604-oooz0000.jpeg" length="60715" type="image/jpeg"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/bologna-finalmente-ruolo-beukema-convince-incide-mercato-2298029</guid>
+      <pubDate>Fri, 27 Nov 2026 07:23:57 +0100</pubDate>
+      <title>Come a Bologna, finalmente: nel suo ruolo Beukema convince. E incide pure sul mercato</title>
+      <link>https://www.tuttomercatoweb.com/serie-a/bologna-finalmente-ruolo-beukema-convince-incide-mercato-2298029</link>
+      <description>Prima di emettere sentenze definitive su Sam Beukema, forse sarebbe stato opportuno aspettare di vederlo all'opera nella sua posizione naturale.</description>
+      <category>Serie A</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/66/662d91f6fe8c23b57b91cc22ee448667-69367-oooz0000.jpeg" length="64705" type="image/jpeg"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/cannavaro-rivela-van-dijk-italia-piacerebbe-squadra-2298031</guid>
+      <pubDate>Fri, 27 Nov 2026 07:19:30 +0100</pubDate>
+      <title>Cannavaro rivela: "Van Dijk mi ha detto che l'Italia gli piacerebbe". E fa il nome di una squadra</title>
+      <link>https://www.tuttomercatoweb.com/serie-a/cannavaro-rivela-van-dijk-italia-piacerebbe-squadra-2298031</link>
+      <description>Retroscena di mercato svelato dall'ex Pallone d'Oro, Fabio Cannavaro, che nel corso di un'intervista rilasciata a La Gazzetta dello Sport oggi in edicola ha parlato di Virgil Van Dijk.</description>
+      <category>Serie A</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/c6/c608560a7a9eff59bd18aba27954cfb8-13547-oooz0000.jpeg" length="61408" type="image/jpeg"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/brasile-crescono-5-potenziali-eredi-endrick-shortlist-2297213</guid>
+      <pubDate>Fri, 27 Nov 2026 07:15:17 +0100</pubDate>
+      <title>In Brasile crescono già 5 potenziali eredi di Endrick: la shortlist</title>
+      <link>https://www.tuttomercatoweb.com/serie-a/brasile-crescono-5-potenziali-eredi-endrick-shortlist-2297213</link>
+      <description>Il Brasile continua a produrre talenti.</description>
+      <category>Serie A</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/45/4556ff34a1581aa59456169fcaeebc6c-62201-oooz0000.jpeg" length="88865" type="image/jpeg"/>
     </item>
   </channel>
 </rss>

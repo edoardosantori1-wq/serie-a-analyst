@@ -5,7 +5,79 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 27 Nov 2026 09:01:47 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Nov 2026 10:55:22 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Dove vedere Venezia-Bologna in tv? Dazn o Sky, orario]]></title>
+            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida che apre la 13esima giornata di Serie A: le probabili scelte di Nicola e Palladino]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/27-152876054/dove_vedere_venezia-bologna_in_tv_dazn_o_sky_orario/</link>
+            <guid isPermaLink="false">sn:cds:152876054</guid>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[Venezia]]></category>
+            <category><![CDATA[Bologna]]></category>
+            <pubDate>Fri, 27 Nov 2026 10:13:31 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/27/095320042-ae5c0f35-cc94-48fe-a1cf-ed89aad4e884.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/27/095320042-ae5c0f35-cc94-48fe-a1cf-ed89aad4e884.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/27/095320042-ae5c0f35-cc94-48fe-a1cf-ed89aad4e884.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida che apre la 13esima giornata di Serie A: le probabili scelte di Nicola e Palladino]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[La vera Inter &egrave; in Europa: in coppa corre, in campionato &egrave; meno concentrata]]></title>
+            <description><![CDATA[In Champions le 3 vittorie di fila con altrettanti clean sheet mostrano l&rsquo;altra anima della squadra di Chivu, che in Serie A rincorre Lazio e Roma]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/27-152875553/la_vera_inter_in_europa_in_coppa_corre_in_campionato_meno_concentrata/</link>
+            <guid isPermaLink="false">sn:cds:152875553</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Inter]]></category>
+            <category><![CDATA[Champions League]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[Chivu]]></category>
+            <pubDate>Fri, 27 Nov 2026 09:45:11 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/25/221923216-251327b9-c6ec-4e2a-97ec-6ad57872599c.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/221923216-251327b9-c6ec-4e2a-97ec-6ad57872599c.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/221923216-251327b9-c6ec-4e2a-97ec-6ad57872599c.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[In Champions le 3 vittorie di fila con altrettanti clean sheet mostrano l&rsquo;altra anima della squadra di Chivu, che in Serie A rincorre Lazio e Roma]]></dcterms:alternative>
+            <dc:creator><![CDATA[Pietro Guadagno]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Cresce l&rsquo;attesa per il derby Lazio-Roma: le info biglietti per gli abbonati e non solo&nbsp;]]></title>
+            <description><![CDATA[Si prevede un Olimpico tutto esaurito per la stracittadina: i dettagli]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/27-152875361/cresce_lattesa_per_il_derby_lazio-roma_le_info_biglietti_per_gli_abbonati_e_non_solo/</link>
+            <guid isPermaLink="false">sn:cds:152875361</guid>
+            <pubDate>Fri, 27 Nov 2026 09:24:30 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2021/09/26/185510428-041d9d12-69d9-42f8-8e13-e0d68bfe83c7.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2021/09/26/185510428-041d9d12-69d9-42f8-8e13-e0d68bfe83c7.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2021/09/26/185510428-041d9d12-69d9-42f8-8e13-e0d68bfe83c7.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Si prevede un Olimpico tutto esaurito per la stracittadina: i dettagli]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Che giri fanno due vite]]></title>
+            <description><![CDATA[Leggi il commento sulla vittoria del Milan in Europa League e sul momento della squadra di Ruben Amorim]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/milan/2026/11/27-152874311/che_giri_fanno_due_vite/</link>
+            <guid isPermaLink="false">sn:cds:152874311</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Milan]]></category>
+            <category><![CDATA[Amorim]]></category>
+            <category><![CDATA[Europa League]]></category>
+            <pubDate>Fri, 27 Nov 2026 09:04:34 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/27/090416942-c01c5f85-767e-4bd6-a6cd-37f2bc04642f.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/27/090416942-c01c5f85-767e-4bd6-a6cd-37f2bc04642f.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>LAPRESSE</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/27/090416942-c01c5f85-767e-4bd6-a6cd-37f2bc04642f.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Leggi il commento sulla vittoria del Milan in Europa League e sul momento della squadra di Ruben Amorim]]></dcterms:alternative>
+            <dc:creator><![CDATA[Franco Ordine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Cade il tab&ugrave; di Guida: arbitrer&agrave; il Napoli nella sfida contro il Sassuolo]]></title>
             <description><![CDATA[A Reggio Emilia diriger&agrave; l&#39;incontro il fischietto della sezione di Torre Annunziata, in passato finito al centro di sterili polemiche]]></description>
@@ -468,79 +540,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/180009254-f6371cc1-6276-4df2-bcb8-c27986c2206a.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Problema fisico accusato nel match contro il Frosinone per il centrocampista croato, le sue condizioni]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Ibrahimovic torna a fare l&#39;attore: sar&agrave; tra i cattivi di MobLand con Tom Hardy]]></title>
-            <description><![CDATA[L&#39;ex attaccante svedese si prepara a una nuova avventura davanti alle telecamere a tre anni dal debutto cinematografico: i dettagli]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/milan/2026/11/24-152805333/ibrahimovic_torna_a_fare_l_attore_sar_tra_i_cattivi_di_mobland_con_tom_hardy/</link>
-            <guid isPermaLink="false">sn:cds:152805333</guid>
-            <category><![CDATA[Ibrahimovic]]></category>
-            <category><![CDATA[Milan]]></category>
-            <category><![CDATA[serie tv]]></category>
-            <category><![CDATA[mobland]]></category>
-            <pubDate>Tue, 24 Nov 2026 15:30:11 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/152702153-24f09479-5de6-485d-b2e3-b137da3cdf71.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/152702153-24f09479-5de6-485d-b2e3-b137da3cdf71.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/152702153-24f09479-5de6-485d-b2e3-b137da3cdf71.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[L&#39;ex attaccante svedese si prepara a una nuova avventura davanti alle telecamere a tre anni dal debutto cinematografico: i dettagli]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Infortunio Calhanoglu, l&#39;esito degli esami: come sta il centrocampista dell&#39;Inter]]></title>
-            <description><![CDATA[Il centrocampista turco si &egrave; infortunato in occasione del match a Bergamo contro l&#39;Atalanta: i tempi di recupero]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/24-152804875/infortunio_calhanoglu_l_esito_degli_esami_come_sta_il_centrocampista_dell_inter/</link>
-            <guid isPermaLink="false">sn:cds:152804875</guid>
-            <category><![CDATA[Calhanoglu]]></category>
-            <category><![CDATA[Infortunio Calhanoglu]]></category>
-            <category><![CDATA[Inter]]></category>
-            <pubDate>Tue, 24 Nov 2026 14:33:26 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/143235658-70c79b2e-1a35-4c7a-82d6-fa7115b490ee.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/143235658-70c79b2e-1a35-4c7a-82d6-fa7115b490ee.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/143235658-70c79b2e-1a35-4c7a-82d6-fa7115b490ee.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il centrocampista turco si &egrave; infortunato in occasione del match a Bergamo contro l&#39;Atalanta: i tempi di recupero]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Carnesecchi, intervento effettuato in artroscopia per la pulizia meniscale del ginocchio sinistro]]></title>
-            <description><![CDATA[Gi&agrave; nei prossimi giorni inizier&agrave; l&#39;iter riabilitativo. L&#39;Atalanta gioved&igrave; in campo contro il Borac per la Conference]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/atalanta/2026/11/24-152803314/carnesecchi_intervento_effettuato_in_artroscopia_per_la_pulizia_meniscale_del_ginocchio_sinistro/</link>
-            <guid isPermaLink="false">sn:cds:152803314</guid>
-            <category><![CDATA[atalanta]]></category>
-            <category><![CDATA[carnesecchi]]></category>
-            <category><![CDATA[Sarri]]></category>
-            <pubDate>Tue, 24 Nov 2026 13:04:33 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/130418175-30ca2c13-2309-4ff1-a7d0-f96f77c0ab0e.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/130418175-30ca2c13-2309-4ff1-a7d0-f96f77c0ab0e.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>ANSA</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/130418175-30ca2c13-2309-4ff1-a7d0-f96f77c0ab0e.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Gi&agrave; nei prossimi giorni inizier&agrave; l&#39;iter riabilitativo. L&#39;Atalanta gioved&igrave; in campo contro il Borac per la Conference]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Pozzo ancora in ospedale, la nota dell&#39;Udinese: &quot;Segue la squadra, condizioni in miglioramento&quot;]]></title>
-            <description><![CDATA[Il club bianconero ha diramato un comunicato per aggiornare i tifosi sullo stato di salute del presidente, ricoverato a inizio mese per una polmonite: i dettagli]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/udinese/2026/11/24-152802587/pozzo_ancora_in_ospedale_la_nota_dell_udinese_segue_la_squadra_condizioni_in_miglioramento/</link>
-            <guid isPermaLink="false">sn:cds:152802587</guid>
-            <category><![CDATA[Udinese]]></category>
-            <category><![CDATA[Pozzo]]></category>
-            <category><![CDATA[Serie A]]></category>
-            <pubDate>Tue, 24 Nov 2026 12:00:07 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/24/115649030-6ee8cb72-225b-4c9f-9a0f-eddf6225ac97.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/115649030-6ee8cb72-225b-4c9f-9a0f-eddf6225ac97.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>ANSA</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/24/115649030-6ee8cb72-225b-4c9f-9a0f-eddf6225ac97.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il club bianconero ha diramato un comunicato per aggiornare i tifosi sullo stato di salute del presidente, ricoverato a inizio mese per una polmonite: i dettagli]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

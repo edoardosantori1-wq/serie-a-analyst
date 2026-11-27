@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 27 Nov 2026 15:57:59 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Nov 2026 17:09:56 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Juric stuzzica la Roma: &quot;&Egrave; da scudetto, ma ho un modo per metterla in difficolt&agrave;&quot;]]></title>
+            <description><![CDATA[Il tecnico del Monza ha presentato la sfida contro il suo passato all&#39;Olimpico, valida per la tredicesima giornata di Serie A]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/monza/2026/11/27-152882786/juric_roma_da_scudetto_ma_c_un_modo_per_metterla_in_difficolt/</link>
+            <guid isPermaLink="false">sn:cds:152882786</guid>
+            <category><![CDATA[Juric]]></category>
+            <category><![CDATA[Monza]]></category>
+            <category><![CDATA[Roma]]></category>
+            <pubDate>Fri, 27 Nov 2026 16:58:14 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/27/165147669-fcb721c8-c885-47aa-ad5b-3604e2718cf3.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/27/165147669-fcb721c8-c885-47aa-ad5b-3604e2718cf3.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/27/165147669-fcb721c8-c885-47aa-ad5b-3604e2718cf3.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il tecnico del Monza ha presentato la sfida contro il suo passato all&#39;Olimpico, valida per la tredicesima giornata di Serie A]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Inter in ansia: si ferma Bastoni, le condizioni]]></title>
             <description><![CDATA[Il difensore nerazzurro, uscito al 41&#39; contro lo Stoccarda, affolla l&#39;infermeria di Chivu: rientro da valutare nei prossimi giorni]]></description>
@@ -522,24 +540,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[L&#39;Euro Como continua a stupire: anche l&#39;AEK si &egrave; arreso ai lariani, ora terzi in classifica in Champions League]]></dcterms:alternative>
             <dc:creator><![CDATA[Xavier Iacobelli]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[La Fiorentina &egrave; tutta da rifare, troppi attaccanti e zero carattere: ecco i motivi della crisi&nbsp;]]></title>
-            <description><![CDATA[Dall&rsquo;assenza di Commisso ai problemi tecnici e di carattere: tutto quello che non va in casa viola&nbsp;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/fiorentina/2026/11/25-152824013/la_fiorentina_tutta_da_rifare_troppi_attaccanti_e_zero_carattere_ecco_i_motivi_della_crisi/</link>
-            <guid isPermaLink="false">sn:cds:152824013</guid>
-            <category><![CDATA[Fiorentina]]></category>
-            <category><![CDATA[vanoli]]></category>
-            <category><![CDATA[oggi]]></category>
-            <pubDate>Wed, 25 Nov 2026 08:30:00 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/25/082119528-3424adc2-d3f2-4d53-a321-69e0f8acc542.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/082119528-3424adc2-d3f2-4d53-a321-69e0f8acc542.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/082119528-3424adc2-d3f2-4d53-a321-69e0f8acc542.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Dall&rsquo;assenza di Commisso ai problemi tecnici e di carattere: tutto quello che non va in casa viola&nbsp;]]></dcterms:alternative>
-            <dc:creator><![CDATA[Alberto Polverosi ]]></dc:creator>
         </item>
     </channel>
 </rss>

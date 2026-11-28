@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 28 Nov 2026 05:58:16 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Nov 2026 07:13:16 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Gattuso tentato dal tridente, ma c&#39;&egrave; un&#39;altra opzione: Lazio, ipotesi e dubbi sulla formazione]]></title>
+            <description><![CDATA[Tutte le possibili soluzioni tattiche dell&#39;allenatore biancoceleste in vista della trasferta di Torino contro i granata di Abate]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/28-152891781/gattuso_tentato_dal_tridente_ma_c_un_altra_opzione_lazio_ipotesi_e_dubbi_sulla_formazione/</link>
+            <guid isPermaLink="false">sn:cds:152891781</guid>
+            <category><![CDATA[Gattuso]]></category>
+            <category><![CDATA[Lazio]]></category>
+            <category><![CDATA[oggi]]></category>
+            <pubDate>Sat, 28 Nov 2026 06:58:36 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/28/063134236-9eb38b0e-1743-4cd3-8863-aa59d992130f.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/28/063134236-9eb38b0e-1743-4cd3-8863-aa59d992130f.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/28/063134236-9eb38b0e-1743-4cd3-8863-aa59d992130f.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Tutte le possibili soluzioni tattiche dell&#39;allenatore biancoceleste in vista della trasferta di Torino contro i granata di Abate]]></dcterms:alternative>
+            <dc:creator><![CDATA[Daniele Rindone]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Il Venezia frena il Bologna di Palladino: 0-0 al &#39;Penzo&#39;, primo pari per Nicola]]></title>
             <description><![CDATA[Finisce senza reti l&#39;anticipo della 13&ordf; giornata di Serie A: i lagunari muovono la classifica, rossobl&ugrave; costretti ad accontentarsi del sesto risultato utile di fila]]></description>
@@ -527,23 +545,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Leggi il commento del direttore del Corriere dello Sport-Stadio]]></dcterms:alternative>
             <dc:creator><![CDATA[Ivan Zazzaroni]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Sei anni senza Maradona: l&#39;omaggio emozionante dell&#39;Argentina e del Napoli]]></title>
-            <description><![CDATA[La Federcalcio di Buenos Aires lo celebra come simbolo nazionale, il Boca Juniors scrive &quot;Ci manchi, Pelu&quot;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/25-152833951/sei_anni_senza_maradona_l_omaggio_emozionante_dell_argentina_e_del_napoli/</link>
-            <guid isPermaLink="false">sn:cds:152833951</guid>
-            <category><![CDATA[Maradona]]></category>
-            <category><![CDATA[napoli]]></category>
-            <pubDate>Wed, 25 Nov 2026 17:44:29 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/25/174414731-bb103a66-6824-4f19-87a3-abee65ff9e59.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/174414731-bb103a66-6824-4f19-87a3-abee65ff9e59.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/25/174414731-bb103a66-6824-4f19-87a3-abee65ff9e59.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[La Federcalcio di Buenos Aires lo celebra come simbolo nazionale, il Boca Juniors scrive &quot;Ci manchi, Pelu&quot;]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>
 </rss>

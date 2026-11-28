@@ -5,7 +5,26 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 28 Nov 2026 10:51:28 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Nov 2026 11:41:05 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[<p>EMC Auto &egrave; il nuovo Back Jersey Sponsor del Genoa</p>
+]]></title>
+            <description><![CDATA[Il brand comparir&agrave; su tutte le maglie in dotazione alla Prima Squadra maschile &ndash; home, away e third &ndash; nelle partite di campionato, Coppa Italia e nelle amichevoli]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/genoa/2026/11/28-152896035/emc_auto_il_nuovo_back_jersey_sponsor_del_genoa/</link>
+            <guid isPermaLink="false">sn:cds:152896035</guid>
+            <category><![CDATA[Genoa]]></category>
+            <category><![CDATA[EMC Auto]]></category>
+            <category><![CDATA[Partnership Genoa-EMC Auto]]></category>
+            <pubDate>Sat, 28 Nov 2026 10:53:11 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/28/104922989-dcd46229-3f63-49c2-a5f5-6299f3721690.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/28/104922989-dcd46229-3f63-49c2-a5f5-6299f3721690.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/28/104922989-dcd46229-3f63-49c2-a5f5-6299f3721690.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il brand comparir&agrave; su tutte le maglie in dotazione alla Prima Squadra maschile &ndash; home, away e third &ndash; nelle partite di campionato, Coppa Italia e nelle amichevoli]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Roma straripante, il lunapark di Gasperini: un attacco show a caccia di record]]></title>
             <description><![CDATA[I giallorossi straripanti: hanno gi&agrave; segnato pi&ugrave; di una rete per dieci partite consecutive, gi&agrave; 26 gol in pi&ugrave; di un anno fa con 14 marcatori diversi &nbsp;]]></description>
@@ -526,24 +545,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/140409708-756e84e4-b0b7-4f00-9130-d145d00af4c0.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Comunicato ufficiale della Lazio a firma del presidente biancoceleste che chiama a raccolta i tifosi per scambiarsi gli auguri in vista delle Festivit&agrave;]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Sport e diabete: il secondo incontro firmato Fondazione Lazio]]></title>
-            <description><![CDATA[Si terr&agrave; oggi alle 18 il secondo seminario del ciclo &lsquo;Diabete in Libert&agrave; &ndash; Sport e Diabete&rsquo;, fortemente voluto dalla Fondazione Lazio ETS]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/26-152850842/sport_e_diabete_il_secondo_incontro_firmato_fondazione_lazio/</link>
-            <guid isPermaLink="false">sn:cds:152850842</guid>
-            <category><![CDATA[sport e diabete]]></category>
-            <category><![CDATA[fondazione lazio]]></category>
-            <category><![CDATA[Zverev]]></category>
-            <pubDate>Thu, 26 Nov 2026 12:10:38 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/26/120529184-f6944237-e271-41c5-93ea-f39c1d0d48b7.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/120529184-f6944237-e271-41c5-93ea-f39c1d0d48b7.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit></media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/120529184-f6944237-e271-41c5-93ea-f39c1d0d48b7.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Si terr&agrave; oggi alle 18 il secondo seminario del ciclo &lsquo;Diabete in Libert&agrave; &ndash; Sport e Diabete&rsquo;, fortemente voluto dalla Fondazione Lazio ETS]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

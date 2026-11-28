@@ -81,10 +81,23 @@ def compatibili(chiavi):
     if any(x is None for x in f): return False
     return any(all(x(i, j) for x in f) for i in range(8) for j in range(8))
 
+FAV_RIS = {"1": (1, 0), "X": (1, 1), "2": (0, 1)}   # un risultato tipo per l'esito favorito del modello
+NOMI_GOL = {"Goal": "GG", "No Goal": "NG"}
+def coerente(k, mk):
+    """Si gioca solo cio' che il modello stesso pronostica: mai contro il suo esito favorito sull'1X2
+    (es. X2 quando da' l'1 al 56%); sui gol solo il lato che ritiene piu' probabile (>= 50%)."""
+    fav = FAV_RIS[max("1X2", key=lambda e: mk[e])]
+    for x in (k[2:].split(" + ") if k.startswith("C:") else [k]):
+        x = NOMI_GOL.get(x, x.replace("Over ", "O").replace("Under ", "U"))
+        if x in ("1", "X", "2", "1X", "X2", "12", "DNB1", "DNB2"):
+            if not predicato(x)(*fav): return False
+        elif x in mk and mk[x] < 0.5: return False
+    return True
+
 def pronostico(sel):
     """Un pronostico per partita, dall'analisi dell'AI: tra le giocate che l'AI ritiene probabili (>= 55%) con
     quota >= 1.30, prima quelle con la stella (quota sbagliata a favore), poi quella con l'EV migliore."""
-    c = [s for s in sel if not s["ht"] and s["p"] >= 0.55 and s["quota"] >= 1.30]
+    c = [s for s in sel if not s["ht"] and s["coerente"] and s["p"] >= 0.55 and s["quota"] >= 1.30]
     v = [s for s in c if s["cat"] == "value"]
     if v: return max(v, key=lambda s: s["ev"])
     if not c: return None
@@ -97,7 +110,7 @@ def categoria(s):
     # value (stella): quota Eurobet reale, EV >= +5% sul modello, 4 punti oltre la prob. implicita
     # E Eurobet paga almeno il 2% piu' della quota equa di Pinnacle (senza Pinnacle niente stella)
     # In modalita' AI la stella nasce dall'analisi: basta che l'AI veda almeno +5% di EV e 4 punti di vantaggio.
-    if (s.get("fonte") != "stimata" and s["ev"] >= SING_EV and s["p"] - s["p_impl"] >= SING_EDGE
+    if (s["coerente"] and s.get("fonte") != "stimata" and s["ev"] >= SING_EV and s["p"] - s["p_impl"] >= SING_EDGE
             and (MODALITA == "AI" or (s.get("p_pin") and s["quota"] * s["p_pin"] - 1 >= 0.02))): return "value"
     if s["p"] >= 0.70: return "probabile"
     if s["p"] < 0.35: return "alto rischio"
@@ -388,6 +401,7 @@ def main():
             rec["p_pin"] = {k: round(ppin[k], 4) for k in ("1", "X", "2", "O2.5", "GG") if k in ppin}
             for s in sel:
                 if s["k"] in ppin: s["p_pin"] = round(ppin[s["k"]], 4)
+                s["coerente"] = coerente(s["k"], mk)
                 s["cat"] = categoria(s)
             rec["selezioni"] = sel
             rec["pronostico"] = pronostico(sel)
@@ -412,7 +426,7 @@ def main():
         for r in out:
             if r["wd"] != day_wd or "selezioni" not in r: continue
             for s in r["selezioni"]:
-                if s["ht"] or s["p"] < pmin or s["ev"] < evmin or s["quota"] < 1.12: continue
+                if s["ht"] or not s.get("coerente") or s["p"] < pmin or s["ev"] < evmin or s["quota"] < 1.12: continue
                 c.append(dict(s, match=f'{r["casa"]}-{r["ospite"]}', mid=r["id"]))
         return c
     TIPI = [("semplice", 0.66, -0.07, 1.80, 2.80), ("media", 0.42, -0.08, 3.00, 5.50), ("aggressiva", 0.25, -0.12, 6.00, 15.0)]
@@ -450,7 +464,7 @@ def main():
                 triple[nome_g][tipo] = None
     # Singole: solo quote reali (no stimate), EV >= +5%, vantaggio >= 4 punti sulla prob. implicita, prob >= 30%
     singole = sorted([dict(s, match=f'{r["casa"]}-{r["ospite"]}', giorno=r["giorno"]) for r in out for s in r.get("selezioni", [])
-                      if not s["ht"] and s.get("fonte") != "stimata" and s["ev"] >= SING_EV and s["p"] - s["p_impl"] >= SING_EDGE
+                      if not s["ht"] and s.get("coerente") and s.get("fonte") != "stimata" and s["ev"] >= SING_EV and s["p"] - s["p_impl"] >= SING_EDGE
                       and s["p"] >= 0.30], key=lambda s: -s["ev"])
     viste = set(); sing = []
     for s in singole:

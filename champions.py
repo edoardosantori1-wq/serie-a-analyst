@@ -220,6 +220,7 @@ def main():
                             fonte="stimata", p_mercato=round(CE[n][0], 4)))
         for s in sel:
             if s["k"] in ppin: s["p_pin"] = round(ppin[s["k"]], 4)
+            s["coerente"] = P.coerente(s["k"], mk)
             s["cat"] = P.categoria(s)
         rec["p_pin"] = {k: round(ppin[k], 4) for k in ("1", "X", "2", "O2.5", "GG") if k in ppin}
         rec["selezioni"] = sel; rec["pronostico"] = P.pronostico(sel); rec["avvisi"] = []

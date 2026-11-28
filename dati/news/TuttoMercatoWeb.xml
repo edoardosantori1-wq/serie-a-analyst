@@ -14,6 +14,15 @@
     </image>
     <atom:link href="https://www.tuttomercatoweb.com/rss/" rel="self" type="application/rss+xml"/>
     <item>
+      <guid isPermaLink="false">https://www.tuttomercatoweb.com/altre-notizie/i-le-partite-oggi-i-programma-sabato-28-novembre-2298313</guid>
+      <pubDate>Sat, 28 Nov 2026 04:30:00 +0100</pubDate>
+      <title>Le partite di oggi: il programma di sabato 28 novembre</title>
+      <link>https://www.tuttomercatoweb.com/altre-notizie/i-le-partite-oggi-i-programma-sabato-28-novembre-2298313</link>
+      <description>Sabato ricco di appuntamenti sui campi europei, con le principali competizioni nazionali protagoniste.</description>
+      <category>Altre Notizie</category>
+      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/36/36531afc895de53d92afd53b98b3f8c9-89533-oooz0000.jpeg" length="61509" type="image/jpeg"/>
+    </item>
+    <item>
       <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/calciomercato-i-no-stop-i-indiscrezioni-trattative-retroscena-27-novembre-2298218</guid>
       <pubDate>Sat, 28 Nov 2026 01:00:00 +0100</pubDate>
       <title>Calciomercato no stop - Indiscrezioni, trattative e retroscena del 27 novembre</title>
@@ -183,15 +192,6 @@
       <description>In vista del derby di domenica prossima, il tecnico del Liverpool Andoni Iraola ha fatto il punto della situazione sugli infortuni: "Gakpo sicuramente non ci sarà.</description>
       <category>Calcio estero</category>
       <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/80/800b9ed3852b9a330519f09a664ee66c-78972-720o200o1416o896z0ca0.jpeg" length="72466" type="image/jpeg"/>
-    </item>
-    <item>
-      <guid isPermaLink="false">https://www.tuttomercatoweb.com/serie-a/venezia-hainaut-quando-assist-cosi-vuoi-tenere-2298310</guid>
-      <pubDate>Fri, 27 Nov 2026 23:53:53 +0100</pubDate>
-      <title>Venezia, Hainaut: "Quando fai un assist così, lo vuoi tenere"</title>
-      <link>https://www.tuttomercatoweb.com/serie-a/venezia-hainaut-quando-assist-cosi-vuoi-tenere-2298310</link>
-      <description>Antoine Hainaut, difensore del Venezia, ha parlato ai microfoni di Dazn nel post-partita con il Bologna: "Quando fai un assist così, lo vuoi tenere.</description>
-      <category>Serie A</category>
-      <enclosure url="https://tmw-storage-auto.tcccdn.com/storage/tuttomercatoweb.com/img_notizie/thumb3/7b/7be7989123d5c3c2d9a4ce7f181d0477-27768-oooz0000.jpeg" length="63607" type="image/jpeg"/>
     </item>
   </channel>
 </rss>

@@ -5,7 +5,26 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 28 Nov 2026 11:41:05 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Nov 2026 12:59:45 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Gemitaiz pazzo di Totti: &quot;Cosa gli darei? Tutto perch&eacute;...&quot;. Poi l&#39;ammissione su Frattesi che ruberebbe alla Lazio]]></title>
+            <description><![CDATA[Il rapper &egrave; stato protagonista nella nuova puntata di &quot;Se fossi tu&quot;, il podcast condotto da Giusy Meloni: &quot;Scudetto? Sono scaramantico, ma...&quot;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/28-152896624/gemitaiz_pazzo_di_totti_cosa_gli_darei_tutto_perch_poi_l_ammissione_su_frattesi_che_ruberebbe_alla_lazio/</link>
+            <guid isPermaLink="false">sn:cds:152896624</guid>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[Gemitaiz]]></category>
+            <category><![CDATA[Roma]]></category>
+            <category><![CDATA[Totti]]></category>
+            <pubDate>Sat, 28 Nov 2026 11:53:46 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/28/114916169-e31be678-66e9-445c-a469-e8b34b636e0e.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/28/114916169-e31be678-66e9-445c-a469-e8b34b636e0e.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/28/114916169-e31be678-66e9-445c-a469-e8b34b636e0e.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il rapper &egrave; stato protagonista nella nuova puntata di &quot;Se fossi tu&quot;, il podcast condotto da Giusy Meloni: &quot;Scudetto? Sono scaramantico, ma...&quot;]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[<p>EMC Auto &egrave; il nuovo Back Jersey Sponsor del Genoa</p>
 ]]></title>
@@ -526,25 +545,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/143145754-3cb3c3c1-530d-4ad0-a485-478bbb9c4cf2.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[I media francesi accusano i supporters giallorossi di aver fatto il verso della scimmia durante la partita di Champions contro il Psg]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Il nuovo Natale di Lotito]]></title>
-            <description><![CDATA[Comunicato ufficiale della Lazio a firma del presidente biancoceleste che chiama a raccolta i tifosi per scambiarsi gli auguri in vista delle Festivit&agrave;]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/26-152851569/il_nuovo_natale_di_lotito/</link>
-            <guid isPermaLink="false">sn:cds:152851569</guid>
-            <category><![CDATA[Lazio]]></category>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[Natale]]></category>
-            <category><![CDATA[Lotito]]></category>
-            <pubDate>Thu, 26 Nov 2026 14:17:11 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/26/140409708-756e84e4-b0b7-4f00-9130-d145d00af4c0.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/140409708-756e84e4-b0b7-4f00-9130-d145d00af4c0.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/140409708-756e84e4-b0b7-4f00-9130-d145d00af4c0.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Comunicato ufficiale della Lazio a firma del presidente biancoceleste che chiama a raccolta i tifosi per scambiarsi gli auguri in vista delle Festivit&agrave;]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

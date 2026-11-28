@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-27T23:54:25+00:00",
+ "aggiornato": "2026-11-28T01:13:59+00:00",
  "giornata": 13,
  "partite": [
   {
@@ -28,16 +28,16 @@
       },
       {
        "linea": 9.5,
-       "p_over": 0.7661,
+       "p_over": 0.766,
        "giusta_over": 1.31,
-       "giusta_under": 4.28,
+       "giusta_under": 4.27,
        "pin_over": 1.485,
        "pin_under": 2.56,
        "p_pin": 0.6329
       },
       {
        "linea": 10.5,
-       "p_over": 0.701,
+       "p_over": 0.7009,
        "giusta_over": 1.43,
        "giusta_under": 3.34,
        "pin_over": 1.806,
@@ -46,7 +46,7 @@
       },
       {
        "linea": 11.5,
-       "p_over": 0.6325,
+       "p_over": 0.6324,
        "giusta_over": 1.58,
        "giusta_under": 2.72,
        "pin_over": 2.26,
@@ -59,35 +59,35 @@
      "etichetta": "Tiri in porta",
      "casa": 8.24,
      "ospite": 4.35,
-     "totale": 12.59,
+     "totale": 12.58,
      "linee": [
       {
        "linea": 6.5,
-       "p_over": 0.8818,
+       "p_over": 0.8817,
        "giusta_over": 1.13,
-       "giusta_under": 8.46
+       "giusta_under": 8.45
       },
       {
        "linea": 7.5,
-       "p_over": 0.8255,
+       "p_over": 0.8254,
        "giusta_over": 1.21,
        "giusta_under": 5.73
       },
       {
        "linea": 8.5,
-       "p_over": 0.7597,
+       "p_over": 0.7596,
        "giusta_over": 1.32,
        "giusta_under": 4.16
       },
       {
        "linea": 9.5,
-       "p_over": 0.6871,
+       "p_over": 0.6869,
        "giusta_over": 1.46,
-       "giusta_under": 3.2
+       "giusta_under": 3.19
       },
       {
        "linea": 10.5,
-       "p_over": 0.6108,
+       "p_over": 0.6106,
        "giusta_over": 1.64,
        "giusta_under": 2.57
       }
@@ -174,7 +174,7 @@
       },
       {
        "linea": 10.5,
-       "p_over": 0.3096,
+       "p_over": 0.3097,
        "giusta_over": 3.23,
        "giusta_under": 1.45
       },
@@ -190,35 +190,35 @@
      "etichetta": "Tiri in porta",
      "casa": 3.58,
      "ospite": 4.7,
-     "totale": 8.27,
+     "totale": 8.28,
      "linee": [
       {
        "linea": 6.5,
-       "p_over": 0.6414,
+       "p_over": 0.6415,
        "giusta_over": 1.56,
        "giusta_under": 2.79
       },
       {
        "linea": 7.5,
-       "p_over": 0.5342,
+       "p_over": 0.5343,
        "giusta_over": 1.87,
        "giusta_under": 2.15
       },
       {
        "linea": 8.5,
-       "p_over": 0.4311,
+       "p_over": 0.4313,
        "giusta_over": 2.32,
        "giusta_under": 1.76
       },
       {
        "linea": 9.5,
-       "p_over": 0.3379,
+       "p_over": 0.338,
        "giusta_over": 2.96,
        "giusta_under": 1.51
       },
       {
        "linea": 10.5,
-       "p_over": 0.2577,
+       "p_over": 0.2578,
        "giusta_over": 3.88,
        "giusta_under": 1.35
       }
@@ -331,13 +331,13 @@
       },
       {
        "linea": 7.5,
-       "p_over": 0.6482,
+       "p_over": 0.6483,
        "giusta_over": 1.54,
        "giusta_under": 2.84
       },
       {
        "linea": 8.5,
-       "p_over": 0.5548,
+       "p_over": 0.5549,
        "giusta_over": 1.8,
        "giusta_under": 2.25
       },
@@ -349,7 +349,7 @@
       },
       {
        "linea": 10.5,
-       "p_over": 0.3796,
+       "p_over": 0.3797,
        "giusta_over": 2.63,
        "giusta_under": 1.61
       }
@@ -363,7 +363,7 @@
      "linee": [
       {
        "linea": 2.5,
-       "p_over": 0.5594,
+       "p_over": 0.5595,
        "giusta_over": 1.79,
        "giusta_under": 2.27
       },
@@ -474,7 +474,7 @@
       },
       {
        "linea": 9.5,
-       "p_over": 0.552,
+       "p_over": 0.5519,
        "giusta_over": 1.81,
        "giusta_under": 2.23
       },
@@ -582,12 +582,12 @@
     "tiri_porta": {
      "etichetta": "Tiri in porta",
      "casa": 3.85,
-     "ospite": 7.05,
+     "ospite": 7.04,
      "totale": 10.89,
      "linee": [
       {
        "linea": 6.5,
-       "p_over": 0.8155,
+       "p_over": 0.8154,
        "giusta_over": 1.23,
        "giusta_under": 5.42
       },
@@ -599,19 +599,19 @@
       },
       {
        "linea": 8.5,
-       "p_over": 0.6563,
+       "p_over": 0.6562,
        "giusta_over": 1.52,
        "giusta_under": 2.91
       },
       {
        "linea": 9.5,
-       "p_over": 0.57,
+       "p_over": 0.5699,
        "giusta_over": 1.75,
        "giusta_under": 2.33
       },
       {
        "linea": 10.5,
-       "p_over": 0.485,
+       "p_over": 0.4849,
        "giusta_over": 2.06,
        "giusta_under": 1.94
       }
@@ -637,7 +637,7 @@
       },
       {
        "linea": 4.5,
-       "p_over": 0.1864,
+       "p_over": 0.1865,
        "giusta_over": 5.36,
        "giusta_under": 1.23
       },
@@ -677,7 +677,7 @@
       },
       {
        "linea": 8.5,
-       "p_over": 0.5355,
+       "p_over": 0.5356,
        "giusta_over": 1.87,
        "giusta_under": 2.15,
        "pin_over": 1.471,
@@ -718,31 +718,31 @@
      "linee": [
       {
        "linea": 6.5,
-       "p_over": 0.9059,
+       "p_over": 0.9058,
        "giusta_over": 1.1,
-       "giusta_under": 10.63
+       "giusta_under": 10.62
       },
       {
        "linea": 7.5,
-       "p_over": 0.8581,
+       "p_over": 0.8579,
        "giusta_over": 1.17,
-       "giusta_under": 7.05
+       "giusta_under": 7.04
       },
       {
        "linea": 8.5,
-       "p_over": 0.8004,
+       "p_over": 0.8002,
        "giusta_over": 1.25,
        "giusta_under": 5.01
       },
       {
        "linea": 9.5,
-       "p_over": 0.7349,
+       "p_over": 0.7347,
        "giusta_over": 1.36,
        "giusta_under": 3.77
       },
       {
        "linea": 10.5,
-       "p_over": 0.6641,
+       "p_over": 0.6639,
        "giusta_over": 1.51,
        "giusta_under": 2.98
       }
@@ -764,7 +764,7 @@
        "linea": 3.5,
        "p_over": 0.4695,
        "giusta_over": 2.13,
-       "giusta_under": 1.89
+       "giusta_under": 1.88
       },
       {
        "linea": 4.5,
@@ -835,7 +835,7 @@
       },
       {
        "linea": 11.5,
-       "p_over": 0.2986,
+       "p_over": 0.2987,
        "giusta_over": 3.35,
        "giusta_under": 1.43
       }
@@ -849,31 +849,31 @@
      "linee": [
       {
        "linea": 6.5,
-       "p_over": 0.5394,
+       "p_over": 0.5397,
        "giusta_over": 1.85,
        "giusta_under": 2.17
       },
       {
        "linea": 7.5,
-       "p_over": 0.4258,
+       "p_over": 0.4261,
        "giusta_over": 2.35,
        "giusta_under": 1.74
       },
       {
        "linea": 8.5,
-       "p_over": 0.3244,
+       "p_over": 0.3247,
        "giusta_over": 3.08,
        "giusta_under": 1.48
       },
       {
        "linea": 9.5,
-       "p_over": 0.2392,
+       "p_over": 0.2394,
        "giusta_over": 4.18,
        "giusta_under": 1.31
       },
       {
        "linea": 10.5,
-       "p_over": 0.1711,
+       "p_over": 0.1713,
        "giusta_over": 5.84,
        "giusta_under": 1.21
       }
@@ -912,7 +912,7 @@
       {
        "linea": 6.5,
        "p_over": 0.0596,
-       "giusta_over": 16.78,
+       "giusta_over": 16.79,
        "giusta_under": 1.06
       }
      ]
@@ -1018,7 +1018,7 @@
      "linee": [
       {
        "linea": 2.5,
-       "p_over": 0.4416,
+       "p_over": 0.4417,
        "giusta_over": 2.26,
        "giusta_under": 1.79
       },
@@ -1043,7 +1043,7 @@
       {
        "linea": 6.5,
        "p_over": 0.0211,
-       "giusta_over": 47.3,
+       "giusta_over": 47.28,
        "giusta_under": 1.02
       }
      ]
@@ -1064,7 +1064,7 @@
      "linee": [
       {
        "linea": 7.5,
-       "p_over": 0.5798,
+       "p_over": 0.5799,
        "giusta_over": 1.72,
        "giusta_under": 2.38
       },
@@ -1108,31 +1108,31 @@
      "linee": [
       {
        "linea": 6.5,
-       "p_over": 0.69,
+       "p_over": 0.6901,
        "giusta_over": 1.45,
        "giusta_under": 3.23
       },
       {
        "linea": 7.5,
-       "p_over": 0.5884,
+       "p_over": 0.5885,
        "giusta_over": 1.7,
        "giusta_under": 2.43
       },
       {
        "linea": 8.5,
-       "p_over": 0.4872,
+       "p_over": 0.4873,
        "giusta_over": 2.05,
        "giusta_under": 1.95
       },
       {
        "linea": 9.5,
-       "p_over": 0.3922,
+       "p_over": 0.3924,
        "giusta_over": 2.55,
        "giusta_under": 1.65
       },
       {
        "linea": 10.5,
-       "p_over": 0.3076,
+       "p_over": 0.3077,
        "giusta_over": 3.25,
        "giusta_under": 1.44
       }
@@ -1152,7 +1152,7 @@
       },
       {
        "linea": 3.5,
-       "p_over": 0.3338,
+       "p_over": 0.3339,
        "giusta_over": 3.0,
        "giusta_under": 1.5
       },

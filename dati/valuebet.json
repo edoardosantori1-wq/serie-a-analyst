@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-27T18:59:38+00:00",
+ "aggiornato": "2026-11-28T09:55:37+00:00",
  "bookmaker": [
   "Eurobet",
   "Sisal",
@@ -11,5 +11,5 @@
  "ev_min": 0.03,
  "kelly": 0.25,
  "giocate": [],
- "scartate_senza_conferma": 1
+ "scartate_senza_conferma": 0
 }

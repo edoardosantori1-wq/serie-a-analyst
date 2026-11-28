@@ -5,7 +5,25 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 28 Nov 2026 09:55:12 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Nov 2026 10:51:28 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Roma straripante, il lunapark di Gasperini: un attacco show a caccia di record]]></title>
+            <description><![CDATA[I giallorossi straripanti: hanno gi&agrave; segnato pi&ugrave; di una rete per dieci partite consecutive, gi&agrave; 26 gol in pi&ugrave; di un anno fa con 14 marcatori diversi &nbsp;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/28-152895006/roma_straripante_il_lunapark_di_gasperini_un_attacco_show_a_caccia_di_record/</link>
+            <guid isPermaLink="false">sn:cds:152895006</guid>
+            <category><![CDATA[oggi]]></category>
+            <category><![CDATA[Roma]]></category>
+            <category><![CDATA[Gasperini]]></category>
+            <pubDate>Sat, 28 Nov 2026 09:56:18 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/28/095601204-4750be4a-3538-4f73-8b92-6a9fd4af22d2.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/28/095601204-4750be4a-3538-4f73-8b92-6a9fd4af22d2.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/28/095601204-4750be4a-3538-4f73-8b92-6a9fd4af22d2.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[I giallorossi straripanti: hanno gi&agrave; segnato pi&ugrave; di una rete per dieci partite consecutive, gi&agrave; 26 gol in pi&ugrave; di un anno fa con 14 marcatori diversi &nbsp;]]></dcterms:alternative>
+            <dc:creator><![CDATA[Jacopo Aliprandi]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Dove vedere Inter-Genoa in tv? Dazn o Sky, orario]]></title>
             <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la 13esima giornata di Serie A: le possibili scelte di Chivu e De Rossi]]></description>
@@ -526,23 +544,6 @@
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/120529184-f6944237-e271-41c5-93ea-f39c1d0d48b7.jpg">
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Si terr&agrave; oggi alle 18 il secondo seminario del ciclo &lsquo;Diabete in Libert&agrave; &ndash; Sport e Diabete&rsquo;, fortemente voluto dalla Fondazione Lazio ETS]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Serie A, gli arbitri della 13a giornata: c&#39;&egrave; Mariani per Como-Juve, Roma-Monza a Collu]]></title>
-            <description><![CDATA[Ufficiali le designazioni arbitrali in vista del prossimo weekend: c&#39;&egrave; Guida di Torre Annunziata per Sassuolo-Napoli]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/26-152850034/serie_a_gli_arbitri_della_13a_giornata_c_mariani_per_como-juve_roma-monza_a_collu/</link>
-            <guid isPermaLink="false">sn:cds:152850034</guid>
-            <category><![CDATA[Serie A]]></category>
-            <category><![CDATA[Arbitri]]></category>
-            <pubDate>Thu, 26 Nov 2026 11:27:53 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/26/112120834-c623a0fe-c878-4200-9185-4bd89a0b8012.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/112120834-c623a0fe-c878-4200-9185-4bd89a0b8012.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>FOTO SCHICCHI</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/112120834-c623a0fe-c878-4200-9185-4bd89a0b8012.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Ufficiali le designazioni arbitrali in vista del prossimo weekend: c&#39;&egrave; Guida di Torre Annunziata per Sassuolo-Napoli]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>

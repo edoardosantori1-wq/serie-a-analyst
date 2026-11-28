@@ -5,7 +5,81 @@
         <description><![CDATA[Feed RSS News /cds/calcio/serie-a]]></description>
         <link>https://www.corrieredellosport.it/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 28 Nov 2026 18:43:10 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Nov 2026 19:48:19 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Lazio da sogno: Gattuso eguaglia Maestrelli e mette nel mirino la Juve di Allegri e quella di Capello]]></title>
+            <description><![CDATA[La vittoria in casa del Torino nella 13&ordf; giornata di Serie A consente ai biancocelesti di restare soli in vetta e di bissare un primato stabilito nella stagione 1972/73]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/28-152910481/lazio_da_sogno_gattuso_eguaglia_maestrelli_e_mette_nel_mirino_la_juve_di_allegri_e_quella_di_capello/</link>
+            <guid isPermaLink="false">sn:cds:152910481</guid>
+            <category><![CDATA[Lazio]]></category>
+            <category><![CDATA[Gattuso]]></category>
+            <category><![CDATA[Maestrelli]]></category>
+            <category><![CDATA[juve]]></category>
+            <category><![CDATA[Capello]]></category>
+            <category><![CDATA[Serie A]]></category>
+            <category><![CDATA[record]]></category>
+            <pubDate>Sat, 28 Nov 2026 19:47:53 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/28/194609487-1983123d-e744-429e-8197-782f2e57b24b.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/28/194609487-1983123d-e744-429e-8197-782f2e57b24b.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>Getty Images</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/28/194609487-1983123d-e744-429e-8197-782f2e57b24b.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[La vittoria in casa del Torino nella 13&ordf; giornata di Serie A consente ai biancocelesti di restare soli in vetta e di bissare un primato stabilito nella stagione 1972/73]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Frattesi posta il &quot;cane salvezza&quot; in diretta: &quot;Senn&ograve; mi scrivono tutti...&quot;]]></title>
+            <description><![CDATA[Il siparietto in diretta tv che ha visto protagonista il centrocampista della Lazio, protagonista di un&#39;altra buona prestazione con la squadra di Gattuso]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/28-152910480/frattesi_posta_il_cane_salvezza_in_diretta_senn_mi_scrivono_tutti_/</link>
+            <guid isPermaLink="false">sn:cds:152910480</guid>
+            <category><![CDATA[frattesi]]></category>
+            <category><![CDATA[Lazio]]></category>
+            <category><![CDATA[Torino]]></category>
+            <pubDate>Sat, 28 Nov 2026 19:45:26 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/28/193801837-37ff7d5c-af44-4d13-b595-ae4367391fb6.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/28/193801837-37ff7d5c-af44-4d13-b595-ae4367391fb6.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/28/193801837-37ff7d5c-af44-4d13-b595-ae4367391fb6.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Il siparietto in diretta tv che ha visto protagonista il centrocampista della Lazio, protagonista di un&#39;altra buona prestazione con la squadra di Gattuso]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Gattuso: &quot;Orgoglioso della mia Lazio. Derby? A Roma sono due mesi che mi dicono le stesse cose...&quot;]]></title>
+            <description><![CDATA[Le dichiarazioni rilasciate dal tecnico biancoceleste al termine dei 90 minuti dello stadio Olimpico &quot;Grande Torino&quot;]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/28-152909188/gattuso_orgoglioso_della_mia_lazio_derby_a_roma_sono_due_mesi_che_mi_dicono_le_stesse_cose_/</link>
+            <guid isPermaLink="false">sn:cds:152909188</guid>
+            <category><![CDATA[Gattuso]]></category>
+            <category><![CDATA[Lazio]]></category>
+            <category><![CDATA[Torino]]></category>
+            <pubDate>Sat, 28 Nov 2026 19:35:18 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/28/193513805-2fc40649-777d-44b0-9f46-7c151301e80e.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/28/193513805-2fc40649-777d-44b0-9f46-7c151301e80e.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit></media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/28/193513805-2fc40649-777d-44b0-9f46-7c151301e80e.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[Le dichiarazioni rilasciate dal tecnico biancoceleste al termine dei 90 minuti dello stadio Olimpico &quot;Grande Torino&quot;]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[<p>La Lazio non si ferma pi&ugrave;: Provstgaard e Isaksen, Gattuso batte anche il Torino e vola a +5!</p>
+]]></title>
+            <description><![CDATA[La squadra di Gattuso conferma il primato e sale a 35 punti in classifica, per i granata non basta la rete di Adams]]></description>
+            <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/28-152909559/la_lazio_non_si_ferma_pi_provstgaard_e_isaksen_gattuso_batte_anche_il_torino_e_vola_a_5_/</link>
+            <guid isPermaLink="false">sn:cds:152909559</guid>
+            <pubDate>Sat, 28 Nov 2026 19:05:22 GMT</pubDate>
+            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/28/185922108-c80f1cee-2df7-4770-ae9a-ae174eb1f2ca.jpg" length="0" type="image/jpeg"/>
+            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/28/185922108-c80f1cee-2df7-4770-ae9a-ae174eb1f2ca.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
+                <media:credit>ANSA</media:credit>
+            </media:content>
+            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/28/185922108-c80f1cee-2df7-4770-ae9a-ae174eb1f2ca.jpg">
+            </media:thumbnail>
+            <dcterms:alternative><![CDATA[La squadra di Gattuso conferma il primato e sale a 35 punti in classifica, per i granata non basta la rete di Adams]]></dcterms:alternative>
+            <dc:creator><![CDATA[La Redazine]]></dc:creator>
+        </item>
         <item>
             <title><![CDATA[Bobcek show, tripletta contro il Parma: il Frosinone torna a vincere]]></title>
             <description><![CDATA[Alla prima da titolare, lo slovacco si prende la scena (e la standing ovation) allo Stirpe e riporta i ciociari ai tre punti dopo due sconfitte consecutive]]></description>
@@ -100,7 +174,7 @@
         </item>
         <item>
             <title><![CDATA[Dove vedere Inter-Genoa in tv? Dazn o Sky, orario]]></title>
-            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la 13esima giornata di Serie A: le possibili scelte di Chivu e De Rossi]]></description>
+            <description><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la 13esima giornata di Serie A: le scelte ufficiali di Chivu e De Rossi]]></description>
             <link>https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/28-152893993/dove_vedere_inter-genoa_in_tv_dazn_o_sky_orario/</link>
             <guid isPermaLink="false">sn:cds:152893993</guid>
             <category><![CDATA[Serie A]]></category>
@@ -113,7 +187,7 @@
             </media:content>
             <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/28/083237245-e31c61e8-cc07-4dc7-847e-c0b65e61109b.jpg">
             </media:thumbnail>
-            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la 13esima giornata di Serie A: le possibili scelte di Chivu e De Rossi]]></dcterms:alternative>
+            <dcterms:alternative><![CDATA[Scopri tutto ci&ograve; che c&#39;&egrave; da sapere sulla sfida valida per la 13esima giornata di Serie A: le scelte ufficiali di Chivu e De Rossi]]></dcterms:alternative>
             <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
         <item>
@@ -473,78 +547,6 @@
             </media:thumbnail>
             <dcterms:alternative><![CDATA[Leggi il commento sulla vittoria del Milan in Europa League e sul momento della squadra di Ruben Amorim]]></dcterms:alternative>
             <dc:creator><![CDATA[Franco Ordine]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Cade il tab&ugrave; di Guida: arbitrer&agrave; il Napoli nella sfida contro il Sassuolo]]></title>
-            <description><![CDATA[A Reggio Emilia diriger&agrave; l&#39;incontro il fischietto della sezione di Torre Annunziata, in passato finito al centro di sterili polemiche]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/napoli/2026/11/27-152874210/cade_il_tab_di_guida_arbitrer_il_napoli_nella_sfida_contro_il_sassuolo/</link>
-            <guid isPermaLink="false">sn:cds:152874210</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Marco Guida]]></category>
-            <category><![CDATA[Sassuolo-Napoli]]></category>
-            <pubDate>Fri, 27 Nov 2026 08:55:56 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/27/084854044-f798178f-e835-4e36-b032-7b0bfa88883f.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/27/084854044-f798178f-e835-4e36-b032-7b0bfa88883f.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/27/084854044-f798178f-e835-4e36-b032-7b0bfa88883f.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[A Reggio Emilia diriger&agrave; l&#39;incontro il fischietto della sezione di Torre Annunziata, in passato finito al centro di sterili polemiche]]></dcterms:alternative>
-            <dc:creator><![CDATA[Edmondo Pinna]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Taylor si ferma per infortunio: la speranza &egrave; averlo per il derby. E Gattuso studia le nuove mosse]]></title>
-            <description><![CDATA[Il centrocampista ieri non si &egrave; allenato ma l&rsquo;infortunio risale alla ripresa con il Lecce. Piccolo edema a una coscia: &egrave; out. Noslin da valutare]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/27-152871354/taylor_si_ferma_per_infortunio_la_speranza_averlo_per_il_derby_e_gattuso_studia_le_nuove_mosse/</link>
-            <guid isPermaLink="false">sn:cds:152871354</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Lazio]]></category>
-            <category><![CDATA[Taylor]]></category>
-            <pubDate>Fri, 27 Nov 2026 07:43:39 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/27/060720151-5f0bc5a3-cdad-4691-a78a-4c2e8eca2f65.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/27/060720151-5f0bc5a3-cdad-4691-a78a-4c2e8eca2f65.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>BARTOLETTI</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/27/060720151-5f0bc5a3-cdad-4691-a78a-4c2e8eca2f65.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il centrocampista ieri non si &egrave; allenato ma l&rsquo;infortunio risale alla ripresa con il Lecce. Piccolo edema a una coscia: &egrave; out. Noslin da valutare]]></dcterms:alternative>
-            <dc:creator><![CDATA[Daniele Rindone]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[La Lazio si gode super Mandas: il suo rendimento &egrave; senza precedenti tra tutti i portieri biancocelesti. E negli ultimi 20 anni...]]></title>
-            <description><![CDATA[Il portiere &egrave; secondo per passaggi riusciti. Ha parato l&rsquo;81,63% dei tiri: media record]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/lazio/2026/11/27-152872687/la_lazio_si_gode_super_mandas_il_suo_rendimento_senza_precedenti_tra_tutti_i_portieri_biancocelesti_e_negli_ultimi_20_ann/</link>
-            <guid isPermaLink="false">sn:cds:152872687</guid>
-            <category><![CDATA[oggi]]></category>
-            <category><![CDATA[Mandas]]></category>
-            <category><![CDATA[Lazio]]></category>
-            <pubDate>Fri, 27 Nov 2026 07:41:26 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/27/072110377-aea50e87-bfc1-425c-b435-6043e9140093.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/27/072110377-aea50e87-bfc1-425c-b435-6043e9140093.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>Getty Images</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/27/072110377-aea50e87-bfc1-425c-b435-6043e9140093.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il portiere &egrave; secondo per passaggi riusciti. Ha parato l&rsquo;81,63% dei tiri: media record]]></dcterms:alternative>
-            <dc:creator><![CDATA[Marco Ercole]]></dc:creator>
-        </item>
-        <item>
-            <title><![CDATA[Carlos Augusto rinnova con l&#39;Inter: &quot;Ripagher&ograve; la fiducia&quot;, i dettagli dell&#39;accordo]]></title>
-            <description><![CDATA[Il cursore di fascia mancina brasiliano e il club nerazzurro avanti insieme: c&#39;&egrave; la firma sul nuovo contratto]]></description>
-            <link>https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/26-152856120/carlos_augusto_rinnova_con_l_inter_ripagher_la_fiducia_i_dettagli_dell_accordo/</link>
-            <guid isPermaLink="false">sn:cds:152856120</guid>
-            <category><![CDATA[Carlos Augusto]]></category>
-            <category><![CDATA[Inter]]></category>
-            <category><![CDATA[Rinnovo Carlos Augusto]]></category>
-            <pubDate>Thu, 26 Nov 2026 17:58:09 GMT</pubDate>
-            <enclosure url="https://cdn.corrieredellosport.it/img/2000/1000/2026/11/26/181407676-9210e03e-bbc2-425c-80f6-989b150afe88.jpg" length="0" type="image/jpeg"/>
-            <media:content url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/181407676-9210e03e-bbc2-425c-80f6-989b150afe88.jpg" type="image/jpg" expression="full" width="600" height="400" medium="image">
-                <media:credit>LAPRESSE</media:credit>
-            </media:content>
-            <media:thumbnail url="https://cdn.corrieredellosport.it/img/800/600/2026/11/26/181407676-9210e03e-bbc2-425c-80f6-989b150afe88.jpg">
-            </media:thumbnail>
-            <dcterms:alternative><![CDATA[Il cursore di fascia mancina brasiliano e il club nerazzurro avanti insieme: c&#39;&egrave; la firma sul nuovo contratto]]></dcterms:alternative>
-            <dc:creator><![CDATA[La Redazine]]></dc:creator>
         </item>
     </channel>
 </rss>

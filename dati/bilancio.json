@@ -1,25 +1,25 @@
 {
- "aggiornato": "2026-11-28T18:52:28+00:00",
+ "aggiornato": "2026-11-28T19:55:25+00:00",
  "totale": {
-  "giocate": 31,
-  "vinte": 11,
+  "giocate": 32,
+  "vinte": 12,
   "perse": 20,
-  "aperte": 16,
-  "hit": 0.3548,
-  "unita": 1.38,
-  "roi": 0.0446
+  "aperte": 15,
+  "hit": 0.375,
+  "unita": 2.21,
+  "roi": 0.0691
  },
  "categorie": [
   {
    "cat": "pronostico",
    "nome": "Pronostici partita",
-   "giocate": 12,
-   "vinte": 5,
+   "giocate": 13,
+   "vinte": 6,
    "perse": 7,
-   "aperte": 8,
-   "hit": 0.4167,
-   "unita": -4.78,
-   "roi": -0.3983
+   "aperte": 7,
+   "hit": 0.4615,
+   "unita": -3.95,
+   "roi": -0.3038
   },
   {
    "cat": "tripla_semplice",
@@ -146,13 +146,13 @@
  "giornate": [
   {
    "giornata": 13,
-   "giocate": 6,
-   "vinte": 0,
+   "giocate": 7,
+   "vinte": 1,
    "perse": 6,
-   "aperte": 16,
-   "hit": 0.0,
-   "unita": -6.0,
-   "roi": -1.0
+   "aperte": 15,
+   "hit": 0.1429,
+   "unita": -5.17,
+   "roi": -0.7386
   },
   {
    "giornata": 12,
@@ -423,8 +423,8 @@
     {
      "partita": "Torino-Lazio",
      "mercato": "O1.5",
-     "esito": null,
-     "risultato": null
+     "esito": 1,
+     "risultato": "1-2"
     },
     {
      "partita": "Inter-Genoa",
@@ -454,8 +454,8 @@
     {
      "partita": "Torino-Lazio",
      "mercato": "12",
-     "esito": null,
-     "risultato": null
+     "esito": 1,
+     "risultato": "1-2"
     },
     {
      "partita": "Inter-Genoa",
@@ -472,10 +472,10 @@
    "mercato": "O2.5",
    "quota": 1.83,
    "p": 0.552,
-   "esito": null,
-   "profitto": null,
+   "esito": 1,
+   "profitto": 0.83,
    "inizio": "2026-11-28T17:00:00+00:00",
-   "risultato": null
+   "risultato": "1-2"
   },
   {
    "cat": "pronostico",

@@ -1,28 +1,28 @@
 {
  "1x2": {
-  "previsioni": 6,
+  "previsioni": 9,
   "logloss": {
-   "ai": 0.6089,
-   "pinnacle": 0.4792
+   "ai": 0.5457,
+   "pinnacle": 0.4833
   },
   "brier": {
-   "ai": 0.2119,
-   "pinnacle": 0.1531
+   "ai": 0.1824,
+   "pinnacle": 0.1541
   },
   "piu_precisa": "Pinnacle"
  },
  "gol": {
-  "previsioni": 4,
+  "previsioni": 6,
   "logloss": {
-   "ai": 0.7901,
-   "pinnacle": 0.6677
+   "ai": 0.7187,
+   "pinnacle": 0.6521
   },
   "brier": {
-   "ai": 0.2979,
-   "pinnacle": 0.2385
+   "ai": 0.2625,
+   "pinnacle": 0.2303
   },
   "piu_precisa": "Pinnacle"
  },
- "partite": 2,
- "aggiornato": "2026-11-28T18:52:28+00:00"
+ "partite": 3,
+ "aggiornato": "2026-11-28T19:55:25+00:00"
 }

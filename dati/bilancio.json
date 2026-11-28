@@ -1,46 +1,46 @@
 {
- "aggiornato": "2026-11-28T15:49:46+00:00",
+ "aggiornato": "2026-11-28T16:51:45+00:00",
  "totale": {
-  "giocate": 27,
+  "giocate": 31,
   "vinte": 11,
-  "perse": 16,
-  "aperte": 20,
-  "hit": 0.4074,
-  "unita": 5.38,
-  "roi": 0.1993
+  "perse": 20,
+  "aperte": 16,
+  "hit": 0.3548,
+  "unita": 1.38,
+  "roi": 0.0446
  },
  "categorie": [
   {
    "cat": "pronostico",
    "nome": "Pronostici partita",
-   "giocate": 11,
+   "giocate": 12,
    "vinte": 5,
-   "perse": 6,
-   "aperte": 9,
-   "hit": 0.4545,
-   "unita": -3.78,
-   "roi": -0.3436
+   "perse": 7,
+   "aperte": 8,
+   "hit": 0.4167,
+   "unita": -4.78,
+   "roi": -0.3983
   },
   {
    "cat": "tripla_semplice",
    "nome": "Triple semplici",
-   "giocate": 2,
+   "giocate": 3,
    "vinte": 1,
-   "perse": 1,
-   "aperte": 2,
-   "hit": 0.5,
-   "unita": -0.11,
-   "roi": -0.0535
+   "perse": 2,
+   "aperte": 1,
+   "hit": 0.3333,
+   "unita": -1.11,
+   "roi": -0.369
   },
   {
    "cat": "tripla_media",
    "nome": "Triple medie",
-   "giocate": 2,
+   "giocate": 3,
    "vinte": 0,
-   "perse": 2,
-   "aperte": 2,
+   "perse": 3,
+   "aperte": 1,
    "hit": 0.0,
-   "unita": -2.0,
+   "unita": -3.0,
    "roi": -1.0
   },
   {
@@ -68,13 +68,13 @@
   {
    "cat": "singola",
    "nome": "Singole",
-   "giocate": 6,
+   "giocate": 7,
    "vinte": 1,
-   "perse": 5,
-   "aperte": 2,
-   "hit": 0.1667,
-   "unita": -3.5,
-   "roi": -0.5833
+   "perse": 6,
+   "aperte": 1,
+   "hit": 0.1429,
+   "unita": -4.5,
+   "roi": -0.6429
   },
   {
    "cat": "value",
@@ -146,12 +146,12 @@
  "giornate": [
   {
    "giornata": 13,
-   "giocate": 2,
+   "giocate": 6,
    "vinte": 0,
-   "perse": 2,
-   "aperte": 20,
+   "perse": 6,
+   "aperte": 16,
    "hit": 0.0,
-   "unita": -2.0,
+   "unita": -6.0,
    "roi": -1.0
   },
   {
@@ -410,15 +410,15 @@
    "mercato": "Frosinone-Parma: A_O0.5 · Torino-Lazio: O1.5 · Inter-Genoa: O1.5",
    "quota": 1.85,
    "p": null,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-28T19:45:00+00:00",
    "dettaglio": [
     {
      "partita": "Frosinone-Parma",
      "mercato": "A_O0.5",
-     "esito": null,
-     "risultato": null
+     "esito": 0,
+     "risultato": "3-0"
     },
     {
      "partita": "Torino-Lazio",
@@ -441,15 +441,15 @@
    "mercato": "Frosinone-Parma: X2 · Torino-Lazio: 12 · Inter-Genoa: O2.5",
    "quota": 4.97,
    "p": null,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-28T19:45:00+00:00",
    "dettaglio": [
     {
      "partita": "Frosinone-Parma",
      "mercato": "X2",
-     "esito": null,
-     "risultato": null
+     "esito": 0,
+     "risultato": "3-0"
     },
     {
      "partita": "Torino-Lazio",
@@ -484,10 +484,10 @@
    "mercato": "A_O0.5",
    "quota": 1.3,
    "p": 0.7379,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-28T14:00:00+00:00",
-   "risultato": null
+   "risultato": "3-0"
   },
   {
    "cat": "singola",
@@ -496,10 +496,10 @@
    "mercato": "X2",
    "quota": 2.55,
    "p": 0.4404,
-   "esito": null,
-   "profitto": null,
+   "esito": 0,
+   "profitto": -1.0,
    "inizio": "2026-11-28T14:00:00+00:00",
-   "risultato": null
+   "risultato": "3-0"
   },
   {
    "cat": "pronostico",

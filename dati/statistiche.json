@@ -1,7 +1,135 @@
 {
- "aggiornato": "2026-11-28T15:49:46+00:00",
+ "aggiornato": "2026-11-28T16:51:45+00:00",
  "giornata": 13,
  "partite": [
+  {
+   "id": 558513,
+   "inizio": "2026-11-28T14:00:00Z",
+   "casa": "Frosinone",
+   "ospite": "Parma",
+   "stat": {
+    "corner": {
+     "etichetta": "Calci d'angolo",
+     "casa": 9.74,
+     "ospite": 4.41,
+     "totale": 14.14,
+     "linee": [
+      {
+       "linea": 7.5,
+       "p_over": 0.8769,
+       "giusta_over": 1.14,
+       "giusta_under": 8.12
+      },
+      {
+       "linea": 8.5,
+       "p_over": 0.8254,
+       "giusta_over": 1.21,
+       "giusta_under": 5.73
+      },
+      {
+       "linea": 9.5,
+       "p_over": 0.766,
+       "giusta_over": 1.31,
+       "giusta_under": 4.27
+      },
+      {
+       "linea": 10.5,
+       "p_over": 0.7009,
+       "giusta_over": 1.43,
+       "giusta_under": 3.34,
+       "pin_over": 1.729,
+       "pin_under": 2.11,
+       "p_pin": 0.5496
+      },
+      {
+       "linea": 11.5,
+       "p_over": 0.6324,
+       "giusta_over": 1.58,
+       "giusta_under": 2.72,
+       "pin_over": 2.17,
+       "pin_under": 1.694,
+       "p_pin": 0.4384
+      }
+     ]
+    },
+    "tiri_porta": {
+     "etichetta": "Tiri in porta",
+     "casa": 8.24,
+     "ospite": 4.35,
+     "totale": 12.58,
+     "linee": [
+      {
+       "linea": 6.5,
+       "p_over": 0.8817,
+       "giusta_over": 1.13,
+       "giusta_under": 8.45
+      },
+      {
+       "linea": 7.5,
+       "p_over": 0.8254,
+       "giusta_over": 1.21,
+       "giusta_under": 5.73
+      },
+      {
+       "linea": 8.5,
+       "p_over": 0.7596,
+       "giusta_over": 1.32,
+       "giusta_under": 4.16
+      },
+      {
+       "linea": 9.5,
+       "p_over": 0.6869,
+       "giusta_over": 1.46,
+       "giusta_under": 3.19
+      },
+      {
+       "linea": 10.5,
+       "p_over": 0.6106,
+       "giusta_over": 1.64,
+       "giusta_under": 2.57
+      }
+     ]
+    },
+    "cartellini": {
+     "etichetta": "Cartellini",
+     "casa": 1.37,
+     "ospite": 1.73,
+     "totale": 3.1,
+     "linee": [
+      {
+       "linea": 2.5,
+       "p_over": 0.5783,
+       "giusta_over": 1.73,
+       "giusta_under": 2.37
+      },
+      {
+       "linea": 3.5,
+       "p_over": 0.3733,
+       "giusta_over": 2.68,
+       "giusta_under": 1.6
+      },
+      {
+       "linea": 4.5,
+       "p_over": 0.2152,
+       "giusta_over": 4.65,
+       "giusta_under": 1.27
+      },
+      {
+       "linea": 5.5,
+       "p_over": 0.1125,
+       "giusta_over": 8.89,
+       "giusta_under": 1.13
+      },
+      {
+       "linea": 6.5,
+       "p_over": 0.054,
+       "giusta_over": 18.53,
+       "giusta_under": 1.06
+      }
+     ]
+    }
+   }
+  },
   {
    "id": 558514,
    "inizio": "2026-11-28T17:00:00Z",

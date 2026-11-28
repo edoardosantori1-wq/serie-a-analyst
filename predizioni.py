@@ -94,16 +94,13 @@ def coerente(k, mk):
         elif x in mk and mk[x] < 0.5: return False
     return True
 
+PRINCIPALI = ("1", "X", "2", "O2.5", "U2.5", "GG", "NG")
 def pronostico(sel):
-    """Un pronostico per partita, dall'analisi dell'AI: tra le giocate che l'AI ritiene probabili (>= 55%) con
-    quota >= 1.30, prima quelle con la stella (quota sbagliata a favore), poi quella con l'EV migliore."""
-    c = [s for s in sel if not s["ht"] and s["coerente"] and s["p"] >= 0.55 and s["quota"] >= 1.30]
-    v = [s for s in c if s["cat"] == "value"]
-    if v: return max(v, key=lambda s: s["ev"])
-    if not c: return None
-    # prudenza sulle quote stimate finche' la calibrazione non misura il margine reale delle combo
-    pen = 0.0 if CALIBRATA else 0.04
-    return max(c, key=lambda s: (s["ev"] - (pen if s.get("fonte") == "stimata" else 0), s["p"]))
+    """Un pronostico per partita, solo dall'analisi dei dati: l'esito principale (1X2, Over/Under 2.5,
+    Goal/No Goal) che il modello ritiene piu' probabile. Le quote non entrano nella scelta: si mostrano dopo,
+    con il giudizio sul valore."""
+    c = [s for s in sel if s["k"] in PRINCIPALI and s["coerente"]]
+    return max(c, key=lambda s: s["p"]) if c else None
 
 def categoria(s):
     """Classificazione richiesta dalla specifica: evento molto probabile / value bet / alto rischio / senza valore."""
